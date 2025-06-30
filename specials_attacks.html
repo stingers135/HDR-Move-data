@@ -36,16 +36,17 @@
             border-collapse: collapse;
             margin-bottom: 30px;
             background-color: white;
+            font-size: 0.9em; /* Smaller font for more columns */
         }
         th {
             background-color: #007bff;
             color: white;
-            padding: 12px;
+            padding: 10px 8px; /* Slightly less padding */
             text-align: left;
             font-weight: bold;
         }
         td {
-            padding: 10px 12px;
+            padding: 8px; /* Slightly less padding */
             border-bottom: 1px solid #ddd;
         }
         tr:nth-child(even) {
@@ -61,6 +62,10 @@
         .frame {
             font-weight: bold;
             color: #388e3c;
+        }
+        .value { /* General style for numerical values */
+            font-weight: bold;
+            color: #0056b3;
         }
         .fallback-indicator {
             background-color: #fff3cd;
@@ -110,7 +115,7 @@
 <body>
     <div class="container">
         <h1>Special Attacks</h1>
-        <p style="text-align: center; color: #666;">Attack damage and frame data analysis</p>
+        <p style="text-align: center; color: #666;">Attack damage, knockback, and frame data analysis</p>
 
         <h2>Neutral Special</h2>
 
@@ -119,80 +124,122 @@
                 <tr>
                     <th>Character</th>
                     <th>Damage</th>
+                    <th>Angle</th>
+                    <th>KBG</th>
+                    <th>FKB</th>
+                    <th>BKB</th>
                     <th>Frame</th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr>
-                    <td>Yoshi</td>
-                    <td class="damage">70</td>
-                    <td class="frame">21</td>
-                </tr>
-
-                <tr>
                     <td>Ganondorf</td>
                     <td class="damage">30</td>
+                    <td class="value">50</td>
+                    <td class="value">46</td>
+                    <td class="value">0</td>
+                    <td class="value">120</td>
                     <td class="frame">74</td>
                 </tr>
 
                 <tr>
                     <td>Captain Falcon</td>
                     <td class="damage">25</td>
+                    <td class="value">361</td>
+                    <td class="value">59</td>
+                    <td class="value">0</td>
+                    <td class="value">93</td>
                     <td class="frame">58</td>
                 </tr>
 
                 <tr>
                     <td>Incineroar</td>
-                    <td class="damage">9.5</td>
+                    <td class="damage">17</td>
+                    <td class="value">45</td>
+                    <td class="value">45</td>
+                    <td class="value">0</td>
+                    <td class="value">85</td>
                     <td class="frame">85</td>
                 </tr>
 
                 <tr>
                     <td>Donkey Kong</td>
-                    <td class="damage">9.3</td>
+                    <td class="damage">10</td>
+                    <td class="value">361</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">30</td>
                     <td class="frame">24</td>
                 </tr>
 
                 <tr>
                     <td>iceclimber</td>
                     <td class="damage">9</td>
+                    <td class="value">80</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">22</td>
                 </tr>
 
                 <tr>
                     <td>Mr.Game & Watch</td>
                     <td class="damage">8</td>
+                    <td class="value">10</td>
+                    <td class="value">30</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">48</td>
                 </tr>
 
                 <tr>
                     <td>Jigglypuff</td>
                     <td class="damage">7</td>
+                    <td class="value">30</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">Unknown</td>
                 </tr>
 
                 <tr>
                     <td>R.O.B.</td>
                     <td class="damage">7</td>
+                    <td class="value">361</td>
+                    <td class="value">95</td>
+                    <td class="value">0</td>
+                    <td class="value">40</td>
                     <td class="frame">30</td>
                 </tr>
 
                 <tr>
                     <td>Wolf</td>
                     <td class="damage">7</td>
+                    <td class="value">60</td>
+                    <td class="value">37</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">45</td>
                 </tr>
 
                 <tr>
                     <td>Mythra</td>
-                    <td class="damage">3.0</td>
+                    <td class="damage">6</td>
+                    <td class="value">42</td>
+                    <td class="value">84</td>
+                    <td class="value">0</td>
+                    <td class="value">75</td>
                     <td class="frame">52</td>
                 </tr>
 
                 <tr>
                     <td>Zelda</td>
-                    <td class="damage">2.5</td>
+                    <td class="damage">5</td>
+                    <td class="value">361</td>
+                    <td class="value">111</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
                     <td class="frame">43</td>
                 </tr>
 
@@ -200,7 +247,7 @@
         </table>
 
         <div class="not-found">
-            <h3>Characters Not Found (77)</h3>
+            <h3>Characters Not Found (78)</h3>
             <div class="not-found-list">
                 <div>Banjo & Kazooie</div>
                 <div>Bayonetta</div>
@@ -277,6 +324,7 @@
                 <div>Villager</div>
                 <div>Wario</div>
                 <div>Wii Fit Trainer</div>
+                <div>Yoshi</div>
                 <div>Young Link</div>
                 <div>Zero Suit Samus</div>
 
@@ -284,13 +332,12 @@
         </div>
 
         <div class="fallback-info">
-            <h3>Characters Found in Fallback Location (5)</h3>
+            <h3>Characters Found in Fallback Location (4)</h3>
             <div class="not-found-list">
                 <div>Ganondorf</div>
                 <div>Jigglypuff</div>
                 <div>Mr.Game & Watch</div>
                 <div>R.O.B.</div>
-                <div>Yoshi</div>
 
             </div>
         </div>
@@ -302,152 +349,232 @@
                 <tr>
                     <th>Character</th>
                     <th>Damage</th>
+                    <th>Angle</th>
+                    <th>KBG</th>
+                    <th>FKB</th>
+                    <th>BKB</th>
                     <th>Frame</th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr>
-                    <td>Lucario</td>
-                    <td class="damage">60</td>
+                    <td>Pichu</td>
+                    <td class="damage">25</td>
+                    <td class="value">40</td>
+                    <td class="value">65</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">24</td>
-                </tr>
-
-                <tr>
-                    <td>Ganondorf</td>
-                    <td class="damage">56</td>
-                    <td class="frame">41</td>
-                </tr>
-
-                <tr>
-                    <td>Mewtwo</td>
-                    <td class="damage">50.5</td>
-                    <td class="frame">40</td>
                 </tr>
 
                 <tr>
                     <td>Kirby</td>
                     <td class="damage">19</td>
+                    <td class="value">48</td>
+                    <td class="value">78</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">54</td>
                 </tr>
 
                 <tr>
-                    <td>Pichu</td>
-                    <td class="damage">16</td>
-                    <td class="frame">24</td>
+                    <td>Mythra</td>
+                    <td class="damage">15</td>
+                    <td class="value">90</td>
+                    <td class="value">105</td>
+                    <td class="value">0</td>
+                    <td class="value">45</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Ryu</td>
+                    <td class="damage">13</td>
+                    <td class="value">70</td>
+                    <td class="value">71</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
+                    <td class="frame">9</td>
+                </tr>
+
+                <tr>
+                    <td>Shulk</td>
+                    <td class="damage">13</td>
+                    <td class="value">361</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
+                    <td class="frame">55</td>
                 </tr>
 
                 <tr>
                     <td>Dr.Mario</td>
                     <td class="damage">12</td>
+                    <td class="value">110</td>
+                    <td class="value">100</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
                     <td class="frame">46</td>
-                </tr>
-
-                <tr>
-                    <td>Ryu</td>
-                    <td class="damage">11.8</td>
-                    <td class="frame">9</td>
                 </tr>
 
                 <tr>
                     <td>Kazuya</td>
                     <td class="damage">11</td>
+                    <td class="value">60</td>
+                    <td class="value">50</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">62</td>
                 </tr>
 
                 <tr>
                     <td>Jigglypuff</td>
                     <td class="damage">11</td>
+                    <td class="value">75</td>
+                    <td class="value">75</td>
+                    <td class="value">0</td>
+                    <td class="value">52</td>
                     <td class="frame">29</td>
                 </tr>
 
                 <tr>
-                    <td>Shulk</td>
-                    <td class="damage">10.4</td>
-                    <td class="frame">55</td>
+                    <td>Donkey Kong</td>
+                    <td class="damage">10</td>
+                    <td class="value">270</td>
+                    <td class="value">50</td>
+                    <td class="value">0</td>
+                    <td class="value">40</td>
+                    <td class="frame">28</td>
                 </tr>
 
                 <tr>
                     <td>Luigi</td>
                     <td class="damage">10</td>
+                    <td class="value">361</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">30</td>
                     <td class="frame">34</td>
                 </tr>
 
                 <tr>
-                    <td>Donkey Kong</td>
-                    <td class="damage">9.3</td>
+                    <td>R.O.B.</td>
+                    <td class="damage">9</td>
+                    <td class="value">361</td>
+                    <td class="value">95</td>
+                    <td class="value">0</td>
+                    <td class="value">55</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Zero Suit Samus</td>
+                    <td class="damage">9</td>
+                    <td class="value">50</td>
+                    <td class="value">115</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Bayonetta</td>
+                    <td class="damage">8</td>
+                    <td class="value">361</td>
+                    <td class="value">8</td>
+                    <td class="value">0</td>
+                    <td class="value">85</td>
+                    <td class="frame">51</td>
+                </tr>
+
+                <tr>
+                    <td>Mario</td>
+                    <td class="damage">8</td>
+                    <td class="value">70</td>
+                    <td class="value">40</td>
+                    <td class="value">0</td>
+                    <td class="value">88</td>
                     <td class="frame">28</td>
                 </tr>
 
                 <tr>
                     <td>Squirtle</td>
                     <td class="damage">8</td>
+                    <td class="value">49</td>
+                    <td class="value">48</td>
+                    <td class="value">0</td>
+                    <td class="value">75</td>
                     <td class="frame">Unknown</td>
-                </tr>
-
-                <tr>
-                    <td>Bayonetta</td>
-                    <td class="damage">7.6</td>
-                    <td class="frame">51</td>
-                </tr>
-
-                <tr>
-                    <td>Mythra</td>
-                    <td class="damage">7.5</td>
-                    <td class="frame">30</td>
-                </tr>
-
-                <tr>
-                    <td>Mario</td>
-                    <td class="damage">7</td>
-                    <td class="frame">28</td>
-                </tr>
-
-                <tr>
-                    <td>R.O.B.</td>
-                    <td class="damage">7</td>
-                    <td class="frame">25</td>
                 </tr>
 
                 <tr>
                     <td>Pyra</td>
                     <td class="damage">6</td>
+                    <td class="value">55</td>
+                    <td class="value">100</td>
+                    <td class="value">10</td>
+                    <td class="value">60</td>
                     <td class="frame">22</td>
                 </tr>
 
                 <tr>
                     <td>Charizard</td>
                     <td class="damage">6</td>
+                    <td class="value">366</td>
+                    <td class="value">78</td>
+                    <td class="value">46</td>
+                    <td class="value">60</td>
                     <td class="frame">Unknown</td>
-                </tr>
-
-                <tr>
-                    <td>Zero Suit Samus</td>
-                    <td class="damage">4.5</td>
-                    <td class="frame">32</td>
                 </tr>
 
                 <tr>
                     <td>Bowser Jr.</td>
                     <td class="damage">4</td>
+                    <td class="value">80</td>
+                    <td class="value">95</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">Unknown</td>
                 </tr>
 
                 <tr>
                     <td>Ken</td>
                     <td class="damage">3</td>
+                    <td class="value">45</td>
+                    <td class="value">160</td>
+                    <td class="value">0</td>
+                    <td class="value">26</td>
                     <td class="frame">9</td>
                 </tr>
 
                 <tr>
                     <td>Wolf</td>
                     <td class="damage">3</td>
+                    <td class="value">60</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">68</td>
                     <td class="frame">1</td>
+                </tr>
+
+                <tr>
+                    <td>Mewtwo</td>
+                    <td class="damage">1.1</td>
+                    <td class="value">280</td>
+                    <td class="value">16</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
+                    <td class="frame">40</td>
                 </tr>
 
                 <tr>
                     <td>Pikachu</td>
                     <td class="damage">1</td>
+                    <td class="value">361</td>
+                    <td class="value">78</td>
+                    <td class="value">0</td>
+                    <td class="value">40</td>
                     <td class="frame">13</td>
                 </tr>
 
@@ -455,7 +582,7 @@
         </table>
 
         <div class="not-found">
-            <h3>Characters Not Found (65)</h3>
+            <h3>Characters Not Found (67)</h3>
             <div class="not-found-list">
                 <div>Banjo & Kazooie</div>
                 <div>Bowser</div>
@@ -471,6 +598,7 @@
                 <div>Duck Hunt</div>
                 <div>Falco</div>
                 <div>Fox</div>
+                <div>Ganondorf</div>
                 <div>Greninja</div>
                 <div>Hero</div>
                 <div>Ike</div>
@@ -483,6 +611,7 @@
                 <div>King K. Rool</div>
                 <div>Link</div>
                 <div>Little Mac</div>
+                <div>Lucario</div>
                 <div>Lucas</div>
                 <div>Lucina</div>
                 <div>Marth</div>
@@ -530,8 +659,8 @@
             <h3>Characters Found in Fallback Location (5)</h3>
             <div class="not-found-list">
                 <div>Charizard</div>
-                <div>Ganondorf</div>
                 <div>Ken</div>
+                <div>Mewtwo</div>
                 <div>Pyra</div>
                 <div>Ryu</div>
 
@@ -545,254 +674,412 @@
                 <tr>
                     <th>Character</th>
                     <th>Damage</th>
+                    <th>Angle</th>
+                    <th>KBG</th>
+                    <th>FKB</th>
+                    <th>BKB</th>
                     <th>Frame</th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr>
-                    <td>Captain Falcon</td>
-                    <td class="damage">70</td>
-                    <td class="frame">50</td>
+                    <td>Luigi</td>
+                    <td class="damage">25</td>
+                    <td class="value">90</td>
+                    <td class="value">84</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
+                    <td class="frame">30</td>
                 </tr>
 
                 <tr>
                     <td>Kazuya</td>
-                    <td class="damage">13.7</td>
+                    <td class="damage">18</td>
+                    <td class="value">76</td>
+                    <td class="value">55</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">56</td>
                 </tr>
 
                 <tr>
                     <td>Falco</td>
-                    <td class="damage">13</td>
+                    <td class="damage">16</td>
+                    <td class="value">80</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">9</td>
                 </tr>
 
                 <tr>
                     <td>Fox</td>
-                    <td class="damage">13</td>
+                    <td class="damage">16</td>
+                    <td class="value">60</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
                     <td class="frame">9</td>
                 </tr>
 
                 <tr>
                     <td>Ivysaur</td>
-                    <td class="damage">12.6</td>
+                    <td class="damage">15</td>
+                    <td class="value">50</td>
+                    <td class="value">68</td>
+                    <td class="value">0</td>
+                    <td class="value">52</td>
                     <td class="frame">45</td>
                 </tr>
 
                 <tr>
-                    <td>Luigi</td>
-                    <td class="damage">11.8</td>
-                    <td class="frame">30</td>
-                </tr>
-
-                <tr>
-                    <td>Dark Pit</td>
-                    <td class="damage">11</td>
-                    <td class="frame">48</td>
-                </tr>
-
-                <tr>
                     <td>Ryu</td>
-                    <td class="damage">11</td>
+                    <td class="damage">15</td>
+                    <td class="value">80</td>
+                    <td class="value">69</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">20</td>
                 </tr>
 
                 <tr>
                     <td>Link</td>
-                    <td class="damage">10.3</td>
+                    <td class="damage">14</td>
+                    <td class="value">40</td>
+                    <td class="value">92</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
+                    <td class="frame">48</td>
+                </tr>
+
+                <tr>
+                    <td>Dr.Mario</td>
+                    <td class="damage">14</td>
+                    <td class="value">50</td>
+                    <td class="value">89</td>
+                    <td class="value">0</td>
+                    <td class="value">33</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Pit</td>
+                    <td class="damage">14</td>
+                    <td class="value">75</td>
+                    <td class="value">83</td>
+                    <td class="value">0</td>
+                    <td class="value">43</td>
                     <td class="frame">48</td>
                 </tr>
 
                 <tr>
                     <td>Richter</td>
-                    <td class="damage">9.2</td>
+                    <td class="damage">14</td>
+                    <td class="value">71</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">67</td>
                     <td class="frame">28</td>
                 </tr>
 
                 <tr>
+                    <td>Ken</td>
+                    <td class="damage">13</td>
+                    <td class="value">80</td>
+                    <td class="value">58</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
+                    <td class="frame">20</td>
+                </tr>
+
+                <tr>
+                    <td>Donkey Kong</td>
+                    <td class="damage">12</td>
+                    <td class="value">361</td>
+                    <td class="value">90</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
+                    <td class="frame">62</td>
+                </tr>
+
+                <tr>
+                    <td>Ganondorf</td>
+                    <td class="damage">11</td>
+                    <td class="value">80</td>
+                    <td class="value">99</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
+                    <td class="frame">45</td>
+                </tr>
+
+                <tr>
                     <td>Lucina</td>
-                    <td class="damage">9</td>
+                    <td class="damage">11</td>
+                    <td class="value">361</td>
+                    <td class="value">74</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
                     <td class="frame">12</td>
                 </tr>
 
                 <tr>
                     <td>Marth</td>
-                    <td class="damage">9</td>
+                    <td class="damage">11</td>
+                    <td class="value">361</td>
+                    <td class="value">74</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
                     <td class="frame">12</td>
                 </tr>
 
                 <tr>
-                    <td>Ganondorf</td>
-                    <td class="damage">8.5</td>
-                    <td class="frame">45</td>
-                </tr>
-
-                <tr>
                     <td>Piranha Plant</td>
-                    <td class="damage">8.5</td>
+                    <td class="damage">10</td>
+                    <td class="value">30</td>
+                    <td class="value">70</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
                     <td class="frame">90</td>
                 </tr>
 
                 <tr>
                     <td>Zelda</td>
-                    <td class="damage">8.5</td>
+                    <td class="damage">10</td>
+                    <td class="value">361</td>
+                    <td class="value">89</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">11</td>
                 </tr>
 
                 <tr>
-                    <td>Donkey Kong</td>
-                    <td class="damage">8.2</td>
-                    <td class="frame">62</td>
+                    <td>Meta Knight</td>
+                    <td class="damage">9</td>
+                    <td class="value">86</td>
+                    <td class="value">120</td>
+                    <td class="value">125</td>
+                    <td class="value">0</td>
+                    <td class="frame">48</td>
                 </tr>
 
                 <tr>
-                    <td>Dr.Mario</td>
-                    <td class="damage">7.3</td>
-                    <td class="frame">25</td>
-                </tr>
-
-                <tr>
-                    <td>Ken</td>
-                    <td class="damage">7.2</td>
+                    <td>Roy</td>
+                    <td class="damage">8</td>
+                    <td class="value">70</td>
+                    <td class="value">93</td>
+                    <td class="value">0</td>
+                    <td class="value">75</td>
                     <td class="frame">20</td>
                 </tr>
 
                 <tr>
-                    <td>Meta Knight</td>
-                    <td class="damage">7.2</td>
-                    <td class="frame">48</td>
+                    <td>Mr.Game & Watch</td>
+                    <td class="damage">6</td>
+                    <td class="value">361</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser</td>
+                    <td class="damage">6</td>
+                    <td class="value">55</td>
+                    <td class="value">140</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
+                    <td class="frame">51</td>
+                </tr>
+
+                <tr>
+                    <td>Squirtle</td>
+                    <td class="damage">6</td>
+                    <td class="value">75</td>
+                    <td class="value">117</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
+                    <td class="frame">45</td>
                 </tr>
 
                 <tr>
                     <td>Sheik</td>
                     <td class="damage">6</td>
+                    <td class="value">70</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
                     <td class="frame">6</td>
                 </tr>
 
                 <tr>
                     <td>Shulk</td>
-                    <td class="damage">5.8</td>
+                    <td class="damage">6</td>
+                    <td class="value">76</td>
+                    <td class="value">100</td>
+                    <td class="value">135</td>
+                    <td class="value">0</td>
                     <td class="frame">43</td>
                 </tr>
 
                 <tr>
-                    <td>Mr.Game & Watch</td>
-                    <td class="damage">4</td>
-                    <td class="frame">33</td>
-                </tr>
-
-                <tr>
-                    <td>Roy</td>
-                    <td class="damage">3.9</td>
-                    <td class="frame">20</td>
-                </tr>
-
-                <tr>
-                    <td>Cloud</td>
-                    <td class="damage">3.7</td>
-                    <td class="frame">27</td>
-                </tr>
-
-                <tr>
-                    <td>Pyra</td>
-                    <td class="damage">3.5</td>
-                    <td class="frame">60</td>
-                </tr>
-
-                <tr>
-                    <td>Squirtle</td>
-                    <td class="damage">3.5</td>
-                    <td class="frame">45</td>
-                </tr>
-
-                <tr>
-                    <td>Charizard</td>
-                    <td class="damage">3.4</td>
-                    <td class="frame">47</td>
-                </tr>
-
-                <tr>
                     <td>Simon</td>
-                    <td class="damage">3.2</td>
+                    <td class="damage">6</td>
+                    <td class="value">61</td>
+                    <td class="value">95</td>
+                    <td class="value">0</td>
+                    <td class="value">85</td>
                     <td class="frame">28</td>
                 </tr>
 
                 <tr>
+                    <td>Pyra</td>
+                    <td class="damage">5</td>
+                    <td class="value">70</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">65</td>
+                    <td class="frame">60</td>
+                </tr>
+
+                <tr>
+                    <td>Charizard</td>
+                    <td class="damage">5</td>
+                    <td class="value">100</td>
+                    <td class="value">100</td>
+                    <td class="value">120</td>
+                    <td class="value">0</td>
+                    <td class="frame">47</td>
+                </tr>
+
+                <tr>
                     <td>Zero Suit Samus</td>
-                    <td class="damage">2.9</td>
+                    <td class="damage">5</td>
+                    <td class="value">90</td>
+                    <td class="value">100</td>
+                    <td class="value">150</td>
+                    <td class="value">0</td>
                     <td class="frame">46</td>
                 </tr>
 
                 <tr>
-                    <td>Bayonetta</td>
-                    <td class="damage">2.7</td>
-                    <td class="frame">32</td>
-                </tr>
-
-                <tr>
-                    <td>Bowser</td>
-                    <td class="damage">2.7</td>
-                    <td class="frame">51</td>
-                </tr>
-
-                <tr>
                     <td>Sora</td>
-                    <td class="damage">2.7</td>
+                    <td class="damage">4.6</td>
+                    <td class="value">62</td>
+                    <td class="value">180</td>
+                    <td class="value">0</td>
+                    <td class="value">44</td>
                     <td class="frame">79</td>
                 </tr>
 
                 <tr>
-                    <td>Byleth</td>
-                    <td class="damage">2.3</td>
+                    <td>Corrin</td>
+                    <td class="damage">4.5</td>
+                    <td class="value">75</td>
+                    <td class="value">100</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="frame">49</td>
+                </tr>
+
+                <tr>
+                    <td>Cloud</td>
+                    <td class="damage">4</td>
+                    <td class="value">50</td>
+                    <td class="value">5</td>
+                    <td class="value">0</td>
+                    <td class="value">100</td>
                     <td class="frame">27</td>
                 </tr>
 
                 <tr>
                     <td>Mario</td>
-                    <td class="damage">2.3</td>
+                    <td class="damage">4</td>
+                    <td class="value">60</td>
+                    <td class="value">100</td>
+                    <td class="value">160</td>
+                    <td class="value">0</td>
                     <td class="frame">25</td>
                 </tr>
 
                 <tr>
-                    <td>Corrin</td>
-                    <td class="damage">2.2</td>
-                    <td class="frame">49</td>
-                </tr>
-
-                <tr>
-                    <td>Little Mac</td>
-                    <td class="damage">2</td>
+                    <td>Bayonetta</td>
+                    <td class="damage">3.5</td>
+                    <td class="value">368</td>
+                    <td class="value">10</td>
+                    <td class="value">0</td>
+                    <td class="value">0</td>
                     <td class="frame">32</td>
                 </tr>
 
                 <tr>
+                    <td>Little Mac</td>
+                    <td class="damage">3</td>
+                    <td class="value">80</td>
+                    <td class="value">197</td>
+                    <td class="value">0</td>
+                    <td class="value">45</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Byleth</td>
+                    <td class="damage">3</td>
+                    <td class="value">75</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">40</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
                     <td>Samus</td>
-                    <td class="damage">1.5</td>
+                    <td class="damage">3</td>
+                    <td class="value">92</td>
+                    <td class="value">100</td>
+                    <td class="value">200</td>
+                    <td class="value">0</td>
                     <td class="frame">25</td>
                 </tr>
 
                 <tr>
                     <td>Dark Samus</td>
-                    <td class="damage">1.5</td>
+                    <td class="damage">3</td>
+                    <td class="value">92</td>
+                    <td class="value">100</td>
+                    <td class="value">200</td>
+                    <td class="value">0</td>
                     <td class="frame">25</td>
                 </tr>
 
                 <tr>
-                    <td>Young Link</td>
-                    <td class="damage">1.4</td>
-                    <td class="frame">66</td>
+                    <td>Toon Link</td>
+                    <td class="damage">3</td>
+                    <td class="value">48</td>
+                    <td class="value">180</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
+                    <td class="frame">48</td>
                 </tr>
 
                 <tr>
-                    <td>Toon Link</td>
-                    <td class="damage">1.2</td>
-                    <td class="frame">48</td>
+                    <td>Young Link</td>
+                    <td class="damage">3</td>
+                    <td class="value">70</td>
+                    <td class="value">85</td>
+                    <td class="value">0</td>
+                    <td class="value">90</td>
+                    <td class="frame">66</td>
                 </tr>
 
                 <tr>
                     <td>Wolf</td>
                     <td class="damage">1</td>
+                    <td class="value">40</td>
+                    <td class="value">20</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">26</td>
                 </tr>
 
@@ -800,10 +1087,11 @@
         </table>
 
         <div class="not-found">
-            <h3>Characters Not Found (48)</h3>
+            <h3>Characters Not Found (49)</h3>
             <div class="not-found-list">
                 <div>Banjo & Kazooie</div>
                 <div>Bowser Jr.</div>
+                <div>Captain Falcon</div>
                 <div>Chrom</div>
                 <div>Daisy</div>
                 <div>Diddy Kong</div>
@@ -879,6 +1167,10 @@
                 <tr>
                     <th>Character</th>
                     <th>Damage</th>
+                    <th>Angle</th>
+                    <th>KBG</th>
+                    <th>FKB</th>
+                    <th>BKB</th>
                     <th>Frame</th>
                 </tr>
             </thead>
@@ -887,102 +1179,160 @@
                 <tr>
                     <td>Jigglypuff</td>
                     <td class="damage">25</td>
+                    <td class="value">361</td>
+                    <td class="value">66</td>
+                    <td class="value">0</td>
+                    <td class="value">106</td>
                     <td class="frame">1</td>
                 </tr>
 
                 <tr>
-                    <td>Kazuya</td>
-                    <td class="damage">16.9</td>
-                    <td class="frame">25</td>
-                </tr>
-
-                <tr>
-                    <td>Meta Knight</td>
-                    <td class="damage">15</td>
-                    <td class="frame">21</td>
-                </tr>
-
-                <tr>
-                    <td>Kirby</td>
-                    <td class="damage">14</td>
-                    <td class="frame">2</td>
-                </tr>
-
-                <tr>
-                    <td>Ganondorf</td>
-                    <td class="damage">13.7</td>
-                    <td class="frame">36</td>
+                    <td>Bowser</td>
+                    <td class="damage">20</td>
+                    <td class="value">290</td>
+                    <td class="value">65</td>
+                    <td class="value">0</td>
+                    <td class="value">13</td>
+                    <td class="frame">37</td>
                 </tr>
 
                 <tr>
                     <td>Ken</td>
-                    <td class="damage">13.2</td>
+                    <td class="damage">17</td>
+                    <td class="value">45</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">0</td>
                     <td class="frame">16</td>
                 </tr>
 
                 <tr>
                     <td>Ryu</td>
-                    <td class="damage">13.2</td>
+                    <td class="damage">17</td>
+                    <td class="value">60</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">0</td>
                     <td class="frame">15</td>
                 </tr>
 
                 <tr>
-                    <td>King Dedede</td>
-                    <td class="damage">12.2</td>
-                    <td class="frame">66</td>
-                </tr>
-
-                <tr>
-                    <td>Captain Falcon</td>
-                    <td class="damage">11</td>
+                    <td>Ganondorf</td>
+                    <td class="damage">16</td>
+                    <td class="value">42</td>
+                    <td class="value">70</td>
+                    <td class="value">0</td>
+                    <td class="value">65</td>
                     <td class="frame">36</td>
                 </tr>
 
                 <tr>
+                    <td>Captain Falcon</td>
+                    <td class="damage">15</td>
+                    <td class="value">52</td>
+                    <td class="value">78</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Meta Knight</td>
+                    <td class="damage">15</td>
+                    <td class="value">53</td>
+                    <td class="value">98</td>
+                    <td class="value">0</td>
+                    <td class="value">40</td>
+                    <td class="frame">21</td>
+                </tr>
+
+                <tr>
                     <td>Yoshi</td>
-                    <td class="damage">9.5</td>
+                    <td class="damage">15</td>
+                    <td class="value">80</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">27</td>
                 </tr>
 
                 <tr>
+                    <td>King Dedede</td>
+                    <td class="damage">14</td>
+                    <td class="value">361</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">85</td>
+                    <td class="frame">66</td>
+                </tr>
+
+                <tr>
+                    <td>Kirby</td>
+                    <td class="damage">14</td>
+                    <td class="value">25</td>
+                    <td class="value">30</td>
+                    <td class="value">0</td>
+                    <td class="value">86</td>
+                    <td class="frame">2</td>
+                </tr>
+
+                <tr>
                     <td>Luigi</td>
-                    <td class="damage">9</td>
+                    <td class="damage">10</td>
+                    <td class="value">90</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">48</td>
                 </tr>
 
                 <tr>
                     <td>Sora</td>
                     <td class="damage">9</td>
+                    <td class="value">361</td>
+                    <td class="value">67</td>
+                    <td class="value">0</td>
+                    <td class="value">74</td>
                     <td class="frame">12</td>
                 </tr>
 
                 <tr>
                     <td>Falco</td>
                     <td class="damage">8</td>
+                    <td class="value">84</td>
+                    <td class="value">49</td>
+                    <td class="value">0</td>
+                    <td class="value">107</td>
                     <td class="frame">2</td>
                 </tr>
 
                 <tr>
-                    <td>Bowser</td>
-                    <td class="damage">8</td>
-                    <td class="frame">37</td>
+                    <td>Dr.Mario</td>
+                    <td class="damage">3</td>
+                    <td class="value">46</td>
+                    <td class="value">154</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
+                    <td class="frame">40</td>
                 </tr>
 
                 <tr>
                     <td>Incineroar</td>
                     <td class="damage">2.4</td>
+                    <td class="value">51</td>
+                    <td class="value">100</td>
+                    <td class="value">40</td>
+                    <td class="value">40</td>
                     <td class="frame">8</td>
-                </tr>
-
-                <tr>
-                    <td>Dr.Mario</td>
-                    <td class="damage">2</td>
-                    <td class="frame">40</td>
                 </tr>
 
                 <tr>
                     <td>Cloud</td>
                     <td class="damage">1</td>
+                    <td class="value">80</td>
+                    <td class="value">451</td>
+                    <td class="value">0</td>
+                    <td class="value">51</td>
                     <td class="frame">32</td>
                 </tr>
 
@@ -990,7 +1340,7 @@
         </table>
 
         <div class="not-found">
-            <h3>Characters Not Found (72)</h3>
+            <h3>Characters Not Found (73)</h3>
             <div class="not-found-list">
                 <div>Banjo & Kazooie</div>
                 <div>Bayonetta</div>
@@ -1013,6 +1363,7 @@
                 <div>Isabelle</div>
                 <div>Ivysaur</div>
                 <div>Joker</div>
+                <div>Kazuya</div>
                 <div>King K. Rool</div>
                 <div>Link</div>
                 <div>Little Mac</div>
@@ -1088,100 +1439,150 @@
                 <tr>
                     <th>Character</th>
                     <th>Damage</th>
+                    <th>Angle</th>
+                    <th>KBG</th>
+                    <th>FKB</th>
+                    <th>BKB</th>
                     <th>Frame</th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr>
-                    <td>Yoshi</td>
-                    <td class="damage">70</td>
-                    <td class="frame">21</td>
-                </tr>
-
-                <tr>
                     <td>Ganondorf</td>
                     <td class="damage">38</td>
+                    <td class="value">30</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">30</td>
                     <td class="frame">74</td>
                 </tr>
 
                 <tr>
                     <td>Captain Falcon</td>
                     <td class="damage">22</td>
+                    <td class="value">361</td>
+                    <td class="value">59</td>
+                    <td class="value">0</td>
+                    <td class="value">93</td>
                     <td class="frame">69</td>
                 </tr>
 
                 <tr>
+                    <td>Incineroar</td>
+                    <td class="damage">17</td>
+                    <td class="value">45</td>
+                    <td class="value">47</td>
+                    <td class="value">0</td>
+                    <td class="value">85</td>
+                    <td class="frame">85</td>
+                </tr>
+
+                <tr>
                     <td>Min Min</td>
-                    <td class="damage">10.7</td>
+                    <td class="damage">13</td>
+                    <td class="value">60</td>
+                    <td class="value">95</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
                     <td class="frame">37</td>
                 </tr>
 
                 <tr>
                     <td>Jigglypuff</td>
                     <td class="damage">10</td>
+                    <td class="value">30</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">Unknown</td>
-                </tr>
-
-                <tr>
-                    <td>Incineroar</td>
-                    <td class="damage">9.5</td>
-                    <td class="frame">85</td>
                 </tr>
 
                 <tr>
                     <td>iceclimber</td>
                     <td class="damage">9</td>
+                    <td class="value">80</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">22</td>
+                </tr>
+
+                <tr>
+                    <td>Zelda</td>
+                    <td class="damage">9</td>
+                    <td class="value">77</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
+                    <td class="frame">43</td>
                 </tr>
 
                 <tr>
                     <td>Mr.Game & Watch</td>
                     <td class="damage">8</td>
+                    <td class="value">10</td>
+                    <td class="value">30</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">48</td>
-                </tr>
-
-                <tr>
-                    <td>Zelda</td>
-                    <td class="damage">8</td>
-                    <td class="frame">43</td>
                 </tr>
 
                 <tr>
                     <td>R.O.B.</td>
                     <td class="damage">7</td>
+                    <td class="value">361</td>
+                    <td class="value">95</td>
+                    <td class="value">0</td>
+                    <td class="value">40</td>
                     <td class="frame">30</td>
                 </tr>
 
                 <tr>
                     <td>Wolf</td>
                     <td class="damage">7</td>
+                    <td class="value">60</td>
+                    <td class="value">37</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">45</td>
                 </tr>
 
                 <tr>
                     <td>Donkey Kong</td>
                     <td class="damage">6</td>
+                    <td class="value">361</td>
+                    <td class="value">65</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
                     <td class="frame">21</td>
+                </tr>
+
+                <tr>
+                    <td>Mythra</td>
+                    <td class="damage">6</td>
+                    <td class="value">42</td>
+                    <td class="value">84</td>
+                    <td class="value">0</td>
+                    <td class="value">75</td>
+                    <td class="frame">54</td>
                 </tr>
 
                 <tr>
                     <td>Daisy</td>
                     <td class="damage">5</td>
+                    <td class="value">300</td>
+                    <td class="value">100</td>
+                    <td class="value">50</td>
+                    <td class="value">0</td>
                     <td class="frame">51</td>
-                </tr>
-
-                <tr>
-                    <td>Mythra</td>
-                    <td class="damage">2.8</td>
-                    <td class="frame">54</td>
                 </tr>
 
             </tbody>
         </table>
 
         <div class="not-found">
-            <h3>Characters Not Found (75)</h3>
+            <h3>Characters Not Found (76)</h3>
             <div class="not-found-list">
                 <div>Banjo & Kazooie</div>
                 <div>Bayonetta</div>
@@ -1256,6 +1657,7 @@
                 <div>Villager</div>
                 <div>Wario</div>
                 <div>Wii Fit Trainer</div>
+                <div>Yoshi</div>
                 <div>Young Link</div>
                 <div>Zero Suit Samus</div>
 
@@ -1263,7 +1665,7 @@
         </div>
 
         <div class="fallback-info">
-            <h3>Characters Found in Fallback Location (9)</h3>
+            <h3>Characters Found in Fallback Location (8)</h3>
             <div class="not-found-list">
                 <div>Donkey Kong</div>
                 <div>Ganondorf</div>
@@ -1273,7 +1675,6 @@
                 <div>Mythra</div>
                 <div>R.O.B.</div>
                 <div>Wolf</div>
-                <div>Yoshi</div>
 
             </div>
         </div>
@@ -1285,116 +1686,172 @@
                 <tr>
                     <th>Character</th>
                     <th>Damage</th>
+                    <th>Angle</th>
+                    <th>KBG</th>
+                    <th>FKB</th>
+                    <th>BKB</th>
                     <th>Frame</th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr>
-                    <td>Lucario</td>
-                    <td class="damage">60</td>
-                    <td class="frame">24</td>
-                </tr>
-
-                <tr>
-                    <td>Ganondorf</td>
-                    <td class="damage">37.3</td>
-                    <td class="frame">Unknown</td>
-                </tr>
-
-                <tr>
                     <td>Shulk</td>
-                    <td class="damage">12.2</td>
+                    <td class="damage">16</td>
+                    <td class="value">140</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">30</td>
                     <td class="frame">31</td>
                 </tr>
 
                 <tr>
                     <td>Dr.Mario</td>
                     <td class="damage">12</td>
+                    <td class="value">110</td>
+                    <td class="value">100</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
                     <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Ryu</td>
+                    <td class="damage">12</td>
+                    <td class="value">70</td>
+                    <td class="value">71</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
+                    <td class="frame">9</td>
                 </tr>
 
                 <tr>
                     <td>Kazuya</td>
                     <td class="damage">11</td>
+                    <td class="value">60</td>
+                    <td class="value">50</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">62</td>
+                </tr>
+
+                <tr>
+                    <td>Kirby</td>
+                    <td class="damage">11</td>
+                    <td class="value">50</td>
+                    <td class="value">106</td>
+                    <td class="value">0</td>
+                    <td class="value">67</td>
+                    <td class="frame">54</td>
                 </tr>
 
                 <tr>
                     <td>Jigglypuff</td>
                     <td class="damage">11</td>
+                    <td class="value">75</td>
+                    <td class="value">75</td>
+                    <td class="value">0</td>
+                    <td class="value">52</td>
                     <td class="frame">41</td>
                 </tr>
 
                 <tr>
-                    <td>Ryu</td>
-                    <td class="damage">10.8</td>
-                    <td class="frame">9</td>
-                </tr>
-
-                <tr>
-                    <td>Kirby</td>
-                    <td class="damage">10.5</td>
-                    <td class="frame">54</td>
-                </tr>
-
-                <tr>
                     <td>Donkey Kong</td>
-                    <td class="damage">9</td>
+                    <td class="damage">10</td>
+                    <td class="value">270</td>
+                    <td class="value">40</td>
+                    <td class="value">0</td>
+                    <td class="value">30</td>
                     <td class="frame">20</td>
+                </tr>
+
+                <tr>
+                    <td>Zero Suit Samus</td>
+                    <td class="damage">9</td>
+                    <td class="value">50</td>
+                    <td class="value">115</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
+                    <td class="frame">32</td>
                 </tr>
 
                 <tr>
                     <td>Squirtle</td>
                     <td class="damage">8</td>
+                    <td class="value">45</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">75</td>
                     <td class="frame">Unknown</td>
                 </tr>
 
                 <tr>
                     <td>Mario</td>
                     <td class="damage">7</td>
+                    <td class="value">110</td>
+                    <td class="value">100</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
                     <td class="frame">21</td>
                 </tr>
 
                 <tr>
                     <td>Pyra</td>
                     <td class="damage">6</td>
+                    <td class="value">55</td>
+                    <td class="value">100</td>
+                    <td class="value">10</td>
+                    <td class="value">60</td>
                     <td class="frame">22</td>
                 </tr>
 
                 <tr>
                     <td>Charizard</td>
                     <td class="damage">6</td>
+                    <td class="value">366</td>
+                    <td class="value">78</td>
+                    <td class="value">46</td>
+                    <td class="value">60</td>
                     <td class="frame">Unknown</td>
-                </tr>
-
-                <tr>
-                    <td>Zero Suit Samus</td>
-                    <td class="damage">2.5</td>
-                    <td class="frame">32</td>
                 </tr>
 
                 <tr>
                     <td>Mythra</td>
                     <td class="damage">2</td>
+                    <td class="value">30</td>
+                    <td class="value">100</td>
+                    <td class="value">40</td>
+                    <td class="value">35</td>
                     <td class="frame">32</td>
                 </tr>
 
                 <tr>
                     <td>Ken</td>
                     <td class="damage">2</td>
+                    <td class="value">45</td>
+                    <td class="value">160</td>
+                    <td class="value">0</td>
+                    <td class="value">26</td>
                     <td class="frame">9</td>
                 </tr>
 
                 <tr>
                     <td>Bowser Jr.</td>
                     <td class="damage">2</td>
+                    <td class="value">55</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">65</td>
                     <td class="frame">Unknown</td>
                 </tr>
 
                 <tr>
                     <td>R.O.B.</td>
                     <td class="damage">1.5</td>
+                    <td class="value">367</td>
+                    <td class="value">65</td>
+                    <td class="value">40</td>
+                    <td class="value">0</td>
                     <td class="frame">24</td>
                 </tr>
 
@@ -1402,7 +1859,7 @@
         </table>
 
         <div class="not-found">
-            <h3>Characters Not Found (71)</h3>
+            <h3>Characters Not Found (73)</h3>
             <div class="not-found-list">
                 <div>Banjo & Kazooie</div>
                 <div>Bayonetta</div>
@@ -1419,6 +1876,7 @@
                 <div>Duck Hunt</div>
                 <div>Falco</div>
                 <div>Fox</div>
+                <div>Ganondorf</div>
                 <div>Greninja</div>
                 <div>Hero</div>
                 <div>Ike</div>
@@ -1431,6 +1889,7 @@
                 <div>King K. Rool</div>
                 <div>Link</div>
                 <div>Little Mac</div>
+                <div>Lucario</div>
                 <div>Lucas</div>
                 <div>Lucina</div>
                 <div>Luigi</div>
@@ -1503,230 +1962,362 @@
                 <tr>
                     <th>Character</th>
                     <th>Damage</th>
+                    <th>Angle</th>
+                    <th>KBG</th>
+                    <th>FKB</th>
+                    <th>BKB</th>
                     <th>Frame</th>
                 </tr>
             </thead>
             <tbody>
 
                 <tr>
-                    <td>Captain Falcon</td>
-                    <td class="damage">70</td>
-                    <td class="frame">50</td>
-                </tr>
-
-                <tr>
-                    <td>Ganondorf</td>
-                    <td class="damage">28</td>
-                    <td class="frame">46</td>
-                </tr>
-
-                <tr>
                     <td>Ness</td>
-                    <td class="damage">21.5</td>
+                    <td class="damage">25</td>
+                    <td class="value">361</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">55</td>
                     <td class="frame">33</td>
                 </tr>
 
                 <tr>
-                    <td>Ivysaur</td>
-                    <td class="damage">11.4</td>
-                    <td class="frame">25</td>
+                    <td>Luigi</td>
+                    <td class="damage">20</td>
+                    <td class="value">90</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">40</td>
+                    <td class="frame">24</td>
                 </tr>
 
                 <tr>
                     <td>Young Link</td>
-                    <td class="damage">11</td>
+                    <td class="damage">15</td>
+                    <td class="value">361</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">20</td>
                     <td class="frame">66</td>
                 </tr>
 
                 <tr>
                     <td>Dr.Mario</td>
-                    <td class="damage">10.5</td>
+                    <td class="damage">14</td>
+                    <td class="value">50</td>
+                    <td class="value">89</td>
+                    <td class="value">0</td>
+                    <td class="value">33</td>
                     <td class="frame">25</td>
                 </tr>
 
                 <tr>
-                    <td>Joker</td>
-                    <td class="damage">10</td>
-                    <td class="frame">45</td>
+                    <td>Ryu</td>
+                    <td class="damage">14</td>
+                    <td class="value">80</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
+                    <td class="frame">20</td>
                 </tr>
 
                 <tr>
-                    <td>Ryu</td>
-                    <td class="damage">10</td>
+                    <td>Ivysaur</td>
+                    <td class="damage">13</td>
+                    <td class="value">50</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Ken</td>
+                    <td class="damage">12</td>
+                    <td class="value">80</td>
+                    <td class="value">55</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">20</td>
                 </tr>
 
                 <tr>
                     <td>Zelda</td>
-                    <td class="damage">10</td>
+                    <td class="damage">12</td>
+                    <td class="value">55</td>
+                    <td class="value">93</td>
+                    <td class="value">0</td>
+                    <td class="value">80</td>
                     <td class="frame">15</td>
                 </tr>
 
                 <tr>
                     <td>Lucina</td>
-                    <td class="damage">9</td>
+                    <td class="damage">11</td>
+                    <td class="value">361</td>
+                    <td class="value">74</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
                     <td class="frame">12</td>
                 </tr>
 
                 <tr>
                     <td>Marth</td>
-                    <td class="damage">9</td>
+                    <td class="damage">11</td>
+                    <td class="value">361</td>
+                    <td class="value">74</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
                     <td class="frame">12</td>
                 </tr>
 
                 <tr>
+                    <td>Donkey Kong</td>
+                    <td class="damage">10</td>
+                    <td class="value">361</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">40</td>
+                    <td class="frame">75</td>
+                </tr>
+
+                <tr>
+                    <td>Joker</td>
+                    <td class="damage">10</td>
+                    <td class="value">70</td>
+                    <td class="value">60</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
+                    <td class="frame">45</td>
+                </tr>
+
+                <tr>
+                    <td>Lucas</td>
+                    <td class="damage">10</td>
+                    <td class="value">50</td>
+                    <td class="value">74</td>
+                    <td class="value">0</td>
+                    <td class="value">90</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Byleth</td>
+                    <td class="damage">10</td>
+                    <td class="value">75</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">40</td>
+                    <td class="frame">54</td>
+                </tr>
+
+                <tr>
                     <td>Piranha Plant</td>
-                    <td class="damage">8.5</td>
+                    <td class="damage">10</td>
+                    <td class="value">40</td>
+                    <td class="value">70</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
                     <td class="frame">90</td>
                 </tr>
 
                 <tr>
-                    <td>Luigi</td>
-                    <td class="damage">7.3</td>
-                    <td class="frame">24</td>
+                    <td>Bowser</td>
+                    <td class="damage">7</td>
+                    <td class="value">367</td>
+                    <td class="value">0</td>
+                    <td class="value">0</td>
+                    <td class="value">50</td>
+                    <td class="frame">51</td>
                 </tr>
 
                 <tr>
-                    <td>Ken</td>
-                    <td class="damage">6.9</td>
+                    <td>Mr.Game & Watch</td>
+                    <td class="damage">6</td>
+                    <td class="value">361</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">60</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Richter</td>
+                    <td class="damage">6</td>
+                    <td class="value">61</td>
+                    <td class="value">86</td>
+                    <td class="value">0</td>
+                    <td class="value">85</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Roy</td>
+                    <td class="damage">6</td>
+                    <td class="value">70</td>
+                    <td class="value">78</td>
+                    <td class="value">0</td>
+                    <td class="value">75</td>
                     <td class="frame">20</td>
                 </tr>
 
                 <tr>
                     <td>Sheik</td>
                     <td class="damage">6</td>
+                    <td class="value">70</td>
+                    <td class="value">80</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
                     <td class="frame">16</td>
                 </tr>
 
                 <tr>
-                    <td>Lucas</td>
-                    <td class="damage">5.7</td>
-                    <td class="frame">29</td>
-                </tr>
-
-                <tr>
                     <td>Shulk</td>
-                    <td class="damage">5.4</td>
+                    <td class="damage">6</td>
+                    <td class="value">78</td>
+                    <td class="value">100</td>
+                    <td class="value">140</td>
+                    <td class="value">0</td>
                     <td class="frame">43</td>
                 </tr>
 
                 <tr>
-                    <td>Byleth</td>
-                    <td class="damage">4.7</td>
-                    <td class="frame">54</td>
+                    <td>Simon</td>
+                    <td class="damage">6</td>
+                    <td class="value">61</td>
+                    <td class="value">86</td>
+                    <td class="value">0</td>
+                    <td class="value">85</td>
+                    <td class="frame">32</td>
                 </tr>
 
                 <tr>
-                    <td>Donkey Kong</td>
-                    <td class="damage">4</td>
-                    <td class="frame">75</td>
-                </tr>
-
-                <tr>
-                    <td>Mr.Game & Watch</td>
-                    <td class="damage">4</td>
-                    <td class="frame">33</td>
+                    <td>Mario</td>
+                    <td class="damage">5</td>
+                    <td class="value">60</td>
+                    <td class="value">100</td>
+                    <td class="value">160</td>
+                    <td class="value">0</td>
+                    <td class="frame">17</td>
                 </tr>
 
                 <tr>
                     <td>Steve</td>
-                    <td class="damage">4</td>
+                    <td class="damage">5</td>
+                    <td class="value">70</td>
+                    <td class="value">100</td>
+                    <td class="value">0</td>
+                    <td class="value">30</td>
                     <td class="frame">60</td>
                 </tr>
 
                 <tr>
-                    <td>Cloud</td>
-                    <td class="damage">3.7</td>
-                    <td class="frame">27</td>
-                </tr>
-
-                <tr>
                     <td>Charizard</td>
-                    <td class="damage">3.4</td>
+                    <td class="damage">5</td>
+                    <td class="value">100</td>
+                    <td class="value">100</td>
+                    <td class="value">120</td>
+                    <td class="value">0</td>
                     <td class="frame">46</td>
                 </tr>
 
                 <tr>
-                    <td>Bowser</td>
-                    <td class="damage">3.3</td>
-                    <td class="frame">51</td>
-                </tr>
-
-                <tr>
-                    <td>Richter</td>
-                    <td class="damage">3.2</td>
-                    <td class="frame">32</td>
-                </tr>
-
-                <tr>
-                    <td>Simon</td>
-                    <td class="damage">3.2</td>
-                    <td class="frame">32</td>
-                </tr>
-
-                <tr>
-                    <td>Roy</td>
-                    <td class="damage">3.1</td>
-                    <td class="frame">20</td>
-                </tr>
-
-                <tr>
                     <td>Zero Suit Samus</td>
-                    <td class="damage">2.9</td>
+                    <td class="damage">5</td>
+                    <td class="value">90</td>
+                    <td class="value">100</td>
+                    <td class="value">150</td>
+                    <td class="value">0</td>
                     <td class="frame">47</td>
                 </tr>
 
                 <tr>
                     <td>Sora</td>
-                    <td class="damage">2.7</td>
+                    <td class="damage">4.6</td>
+                    <td class="value">62</td>
+                    <td class="value">176</td>
+                    <td class="value">0</td>
+                    <td class="value">44</td>
                     <td class="frame">79</td>
                 </tr>
 
                 <tr>
-                    <td>Mario</td>
-                    <td class="damage">2.6</td>
-                    <td class="frame">17</td>
+                    <td>Corrin</td>
+                    <td class="damage">4.5</td>
+                    <td class="value">85</td>
+                    <td class="value">100</td>
+                    <td class="value">160</td>
+                    <td class="value">0</td>
+                    <td class="frame">49</td>
+                </tr>
+
+                <tr>
+                    <td>Cloud</td>
+                    <td class="damage">4</td>
+                    <td class="value">94</td>
+                    <td class="value">100</td>
+                    <td class="value">121</td>
+                    <td class="value">0</td>
+                    <td class="frame">27</td>
                 </tr>
 
                 <tr>
                     <td>Link</td>
-                    <td class="damage">2.5</td>
+                    <td class="damage">4</td>
+                    <td class="value">367</td>
+                    <td class="value">100</td>
+                    <td class="value">107</td>
+                    <td class="value">0</td>
                     <td class="frame">50</td>
                 </tr>
 
                 <tr>
                     <td>Toon Link</td>
-                    <td class="damage">2.4</td>
-                    <td class="frame">49</td>
-                </tr>
-
-                <tr>
-                    <td>Squirtle</td>
-                    <td class="damage">2.2</td>
-                    <td class="frame">43</td>
-                </tr>
-
-                <tr>
-                    <td>Corrin</td>
-                    <td class="damage">2.1</td>
+                    <td class="damage">4</td>
+                    <td class="value">88</td>
+                    <td class="value">100</td>
+                    <td class="value">90</td>
+                    <td class="value">0</td>
                     <td class="frame">49</td>
                 </tr>
 
                 <tr>
                     <td>Bayonetta</td>
-                    <td class="damage">1.2</td>
+                    <td class="damage">3</td>
+                    <td class="value">96</td>
+                    <td class="value">100</td>
+                    <td class="value">120</td>
+                    <td class="value">0</td>
                     <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Squirtle</td>
+                    <td class="damage">3</td>
+                    <td class="value">55</td>
+                    <td class="value">152</td>
+                    <td class="value">0</td>
+                    <td class="value">70</td>
+                    <td class="frame">43</td>
                 </tr>
 
                 <tr>
                     <td>Samus</td>
                     <td class="damage">1</td>
+                    <td class="value">93</td>
+                    <td class="value">100</td>
+                    <td class="value">115</td>
+                    <td class="value">0</td>
                     <td class="frame">35</td>
                 </tr>
 
                 <tr>
                     <td>Dark Samus</td>
                     <td class="damage">1</td>
+                    <td class="value">93</td>
+                    <td class="value">100</td>
+                    <td class="value">115</td>
+                    <td class="value">0</td>
                     <td class="frame">27</td>
                 </tr>
 
@@ -1734,10 +2325,11 @@
         </table>
 
         <div class="not-found">
-            <h3>Characters Not Found (52)</h3>
+            <h3>Characters Not Found (54)</h3>
             <div class="not-found-list">
                 <div>Banjo & Kazooie</div>
                 <div>Bowser Jr.</div>
+                <div>Captain Falcon</div>
                 <div>Chrom</div>
                 <div>Daisy</div>
                 <div>Dark Pit</div>
@@ -1745,6 +2337,7 @@
                 <div>Duck Hunt</div>
                 <div>Falco</div>
                 <div>Fox</div>
+                <div>Ganondorf</div>
                 <div>Greninja</div>
                 <div>Hero</div>
                 <div>Ike</div>
@@ -1793,16 +2386,14 @@
         </div>
 
         <div class="fallback-info">
-            <h3>Characters Found in Fallback Location (22)</h3>
+            <h3>Characters Found in Fallback Location (20)</h3>
             <div class="not-found-list">
                 <div>Bayonetta</div>
                 <div>Bowser</div>
-                <div>Captain Falcon</div>
                 <div>Charizard</div>
                 <div>Cloud</div>
                 <div>Corrin</div>
                 <div>Dark Samus</div>
-                <div>Ganondorf</div>
                 <div>Ivysaur</div>
                 <div>Ken</div>
                 <div>Lucina</div>
@@ -1922,7 +2513,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-06-30 18:42:14
+            Generated on: 2025-06-30 19:04:22
         </div>
     </div>
 </body>
