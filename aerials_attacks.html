@@ -1,0 +1,2899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerial Attacks - Attack Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        .damage {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+        .frame {
+            font-weight: bold;
+            color: #388e3c;
+        }
+        .fallback-indicator {
+            background-color: #fff3cd;
+            font-size: 0.8em;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        .not-found {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .not-found h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .not-found-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .fallback-info {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .fallback-info h3 {
+            color: #0c5460;
+            margin-top: 0;
+        }
+        .timestamp {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aerial Attacks</h1>
+        <p style="text-align: center; color: #666;">Attack damage and frame data analysis</p>
+
+        <h2>Neutral Air</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Damage</th>
+                    <th>Frame</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Dr.Mario</td>
+                    <td class="damage">12</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Samus</td>
+                    <td class="damage">12</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Zero Suit Samus</td>
+                    <td class="damage">12</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Peach</td>
+                    <td class="damage">11.8</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Donkey Kong</td>
+                    <td class="damage">11</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser</td>
+                    <td class="damage">11</td>
+                    <td class="frame">39</td>
+                </tr>
+
+                <tr>
+                    <td>Sora</td>
+                    <td class="damage">11</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Yoshi</td>
+                    <td class="damage">11</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Ike</td>
+                    <td class="damage">10.9</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Hero</td>
+                    <td class="damage">10.8</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Robin</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Falco</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Fox</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Kirby</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">51</td>
+                </tr>
+
+                <tr>
+                    <td>King K. Rool</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Mario</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Pyra</td>
+                    <td class="damage">10.3</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Luigi</td>
+                    <td class="damage">10</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Gunner</td>
+                    <td class="damage">10</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Villager</td>
+                    <td class="damage">10</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Wolf</td>
+                    <td class="damage">10</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Toon Link</td>
+                    <td class="damage">9.8</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>King Dedede</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Duck Hunt</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">44</td>
+                </tr>
+
+                <tr>
+                    <td>Incineroar</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Greninja</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Sonic</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">48</td>
+                </tr>
+
+                <tr>
+                    <td>Banjo & Kazooie</td>
+                    <td class="damage">9.4</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>R.O.B.</td>
+                    <td class="damage">9.4</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Link</td>
+                    <td class="damage">9.2</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Swordfighter</td>
+                    <td class="damage">9.2</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Cloud</td>
+                    <td class="damage">9</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Daisy</td>
+                    <td class="damage">9</td>
+                    <td class="frame">49</td>
+                </tr>
+
+                <tr>
+                    <td>Isabelle</td>
+                    <td class="damage">9</td>
+                    <td class="frame">59</td>
+                </tr>
+
+                <tr>
+                    <td>Shulk</td>
+                    <td class="damage">9</td>
+                    <td class="frame">54</td>
+                </tr>
+
+                <tr>
+                    <td>Min Min</td>
+                    <td class="damage">9</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Richter</td>
+                    <td class="damage">8.9</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Rosalina & Luma</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">77</td>
+                </tr>
+
+                <tr>
+                    <td>Diddy Kong</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Brawler</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Pichu</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Jigglypuff</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Squirtle</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Ridley</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Young Link</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Meta Knight</td>
+                    <td class="damage">8.3</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Pac-man</td>
+                    <td class="damage">8</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Charizard</td>
+                    <td class="damage">7.8</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Kazuya</td>
+                    <td class="damage">7.7</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Sephiroth</td>
+                    <td class="damage">7.5</td>
+                    <td class="frame">45</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser Jr.</td>
+                    <td class="damage">7.2</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Bayonetta</td>
+                    <td class="damage">7</td>
+                    <td class="frame">48</td>
+                </tr>
+
+                <tr>
+                    <td>iceclimber</td>
+                    <td class="damage">7</td>
+                    <td class="frame">24</td>
+                </tr>
+
+                <tr>
+                    <td>Inkling</td>
+                    <td class="damage">7</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Pikachu</td>
+                    <td class="damage">7</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Joker</td>
+                    <td class="damage">6.6</td>
+                    <td class="frame">52</td>
+                </tr>
+
+                <tr>
+                    <td>Terry</td>
+                    <td class="damage">6.5</td>
+                    <td class="frame">24</td>
+                </tr>
+
+                <tr>
+                    <td>Corrin</td>
+                    <td class="damage">6.5</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Pit</td>
+                    <td class="damage">6.5</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Captain Falcon</td>
+                    <td class="damage">6.2</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Ken</td>
+                    <td class="damage">6.2</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Ryu</td>
+                    <td class="damage">6.2</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Ganondorf</td>
+                    <td class="damage">6</td>
+                    <td class="frame">20</td>
+                </tr>
+
+                <tr>
+                    <td>Lucario</td>
+                    <td class="damage">6</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Marth</td>
+                    <td class="damage">6</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Ness</td>
+                    <td class="damage">6</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>Roy</td>
+                    <td class="damage">6</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Sheik</td>
+                    <td class="damage">6</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Chrom</td>
+                    <td class="damage">5.5</td>
+                    <td class="frame">47</td>
+                </tr>
+
+                <tr>
+                    <td>Wario</td>
+                    <td class="damage">5.5</td>
+                    <td class="frame">51</td>
+                </tr>
+
+                <tr>
+                    <td>Wii Fit Trainer</td>
+                    <td class="damage">5.3</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Little Mac</td>
+                    <td class="damage">5</td>
+                    <td class="frame">11</td>
+                </tr>
+
+                <tr>
+                    <td>Lucina</td>
+                    <td class="damage">5</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Olimar</td>
+                    <td class="damage">4.5</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Simon</td>
+                    <td class="damage">3.8</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Mr.Game & Watch</td>
+                    <td class="damage">3.7</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Mythra</td>
+                    <td class="damage">3.5</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Steve</td>
+                    <td class="damage">3.4</td>
+                    <td class="frame">16</td>
+                </tr>
+
+                <tr>
+                    <td>Byleth</td>
+                    <td class="damage">3.1</td>
+                    <td class="frame">53</td>
+                </tr>
+
+                <tr>
+                    <td>Zelda</td>
+                    <td class="damage">3</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Lucas</td>
+                    <td class="damage">2.9</td>
+                    <td class="frame">72</td>
+                </tr>
+
+                <tr>
+                    <td>Snake</td>
+                    <td class="damage">2.7</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Mewtwo</td>
+                    <td class="damage">2.7</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Piranha Plant</td>
+                    <td class="damage">2.5</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Ivysaur</td>
+                    <td class="damage">2.5</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Pit</td>
+                    <td class="damage">2.5</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Palutena</td>
+                    <td class="damage">2.1</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Samus</td>
+                    <td class="damage">2.1</td>
+                    <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Mega Man</td>
+                    <td class="damage">2</td>
+                    <td class="frame">34</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="fallback-info">
+            <h3>Characters Found in Fallback Location (4)</h3>
+            <div class="not-found-list">
+                <div>Mega Man</div>
+                <div>Mii Gunner</div>
+                <div>Rosalina & Luma</div>
+                <div>Steve</div>
+
+            </div>
+        </div>
+
+        <h2>Forward Air</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Damage</th>
+                    <th>Frame</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Ganondorf</td>
+                    <td class="damage">18</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Donkey Kong</td>
+                    <td class="damage">17.3</td>
+                    <td class="frame">49</td>
+                </tr>
+
+                <tr>
+                    <td>Dr.Mario</td>
+                    <td class="damage">16.5</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Daisy</td>
+                    <td class="damage">15</td>
+                    <td class="frame">45</td>
+                </tr>
+
+                <tr>
+                    <td>Yoshi</td>
+                    <td class="damage">15</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Snake</td>
+                    <td class="damage">14.8</td>
+                    <td class="frame">63</td>
+                </tr>
+
+                <tr>
+                    <td>Mario</td>
+                    <td class="damage">14.5</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Ness</td>
+                    <td class="damage">14.5</td>
+                    <td class="frame">20</td>
+                </tr>
+
+                <tr>
+                    <td>Peach</td>
+                    <td class="damage">14.5</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Banjo & Kazooie</td>
+                    <td class="damage">14.1</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>King Dedede</td>
+                    <td class="damage">14</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Min Min</td>
+                    <td class="damage">13.8</td>
+                    <td class="frame">45</td>
+                </tr>
+
+                <tr>
+                    <td>Cloud</td>
+                    <td class="damage">13.5</td>
+                    <td class="frame">54</td>
+                </tr>
+
+                <tr>
+                    <td>Ike</td>
+                    <td class="damage">13.4</td>
+                    <td class="frame">45</td>
+                </tr>
+
+                <tr>
+                    <td>Mr.Game & Watch</td>
+                    <td class="damage">13.3</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser</td>
+                    <td class="damage">13</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>King K. Rool</td>
+                    <td class="damage">13</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Luigi</td>
+                    <td class="damage">13</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Mewtwo</td>
+                    <td class="damage">13</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Toon Link</td>
+                    <td class="damage">13</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Hero</td>
+                    <td class="damage">12.8</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Pyra</td>
+                    <td class="damage">12.5</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Link</td>
+                    <td class="damage">12</td>
+                    <td class="frame">52</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Samus</td>
+                    <td class="damage">12</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>iceclimber</td>
+                    <td class="damage">11.7</td>
+                    <td class="frame">49</td>
+                </tr>
+
+                <tr>
+                    <td>Captain Falcon</td>
+                    <td class="damage">11.5</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Ken</td>
+                    <td class="damage">11.3</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Greninja</td>
+                    <td class="damage">11</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Diddy Kong</td>
+                    <td class="damage">10.8</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Ryu</td>
+                    <td class="damage">10.8</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Marth</td>
+                    <td class="damage">10.7</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Mega Man</td>
+                    <td class="damage">10.3</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Roy</td>
+                    <td class="damage">10.3</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Wolf</td>
+                    <td class="damage">10.3</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Ivysaur</td>
+                    <td class="damage">10.2</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Sonic</td>
+                    <td class="damage">10.2</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Terry</td>
+                    <td class="damage">10</td>
+                    <td class="frame">24</td>
+                </tr>
+
+                <tr>
+                    <td>Incineroar</td>
+                    <td class="damage">10</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Piranha Plant</td>
+                    <td class="damage">10</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Pit</td>
+                    <td class="damage">10</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Robin</td>
+                    <td class="damage">9.9</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Duck Hunt</td>
+                    <td class="damage">9.8</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Palutena</td>
+                    <td class="damage">9.8</td>
+                    <td class="frame">24</td>
+                </tr>
+
+                <tr>
+                    <td>Shulk</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Zelda</td>
+                    <td class="damage">9.4</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Byleth</td>
+                    <td class="damage">9.4</td>
+                    <td class="frame">54</td>
+                </tr>
+
+                <tr>
+                    <td>Wii Fit Trainer</td>
+                    <td class="damage">9.3</td>
+                    <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Pichu</td>
+                    <td class="damage">9.2</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Inkling</td>
+                    <td class="damage">9.2</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Kazuya</td>
+                    <td class="damage">9.1</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Chrom</td>
+                    <td class="damage">9</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Lucina</td>
+                    <td class="damage">9</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Charizard</td>
+                    <td class="damage">9</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Jigglypuff</td>
+                    <td class="damage">9</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Squirtle</td>
+                    <td class="damage">9</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Isabelle</td>
+                    <td class="damage">9</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Simon</td>
+                    <td class="damage">9</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Corrin</td>
+                    <td class="damage">8.8</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser Jr.</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Lucas</td>
+                    <td class="damage">8.3</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Mythra</td>
+                    <td class="damage">8</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Sephiroth</td>
+                    <td class="damage">7.8</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Wario</td>
+                    <td class="damage">7.8</td>
+                    <td class="frame">21</td>
+                </tr>
+
+                <tr>
+                    <td>R.O.B.</td>
+                    <td class="damage">7.2</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Pac-man</td>
+                    <td class="damage">7</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Richter</td>
+                    <td class="damage">7</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Young Link</td>
+                    <td class="damage">7</td>
+                    <td class="frame">49</td>
+                </tr>
+
+                <tr>
+                    <td>Zero Suit Samus</td>
+                    <td class="damage">6.7</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Lucario</td>
+                    <td class="damage">6.2</td>
+                    <td class="frame">24</td>
+                </tr>
+
+                <tr>
+                    <td>Sheik</td>
+                    <td class="damage">6</td>
+                    <td class="frame">12</td>
+                </tr>
+
+                <tr>
+                    <td>Joker</td>
+                    <td class="damage">5.4</td>
+                    <td class="frame">39</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Brawler</td>
+                    <td class="damage">5.3</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Little Mac</td>
+                    <td class="damage">5</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Olimar</td>
+                    <td class="damage">5</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Kirby</td>
+                    <td class="damage">4.7</td>
+                    <td class="frame">39</td>
+                </tr>
+
+                <tr>
+                    <td>Sora</td>
+                    <td class="damage">4.5</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Swordfighter</td>
+                    <td class="damage">4.2</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Ridley</td>
+                    <td class="damage">4.2</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Pit</td>
+                    <td class="damage">4</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Samus</td>
+                    <td class="damage">3.6</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Steve</td>
+                    <td class="damage">3.6</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Meta Knight</td>
+                    <td class="damage">3.5</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Pikachu</td>
+                    <td class="damage">3.5</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Bayonetta</td>
+                    <td class="damage">3</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Falco</td>
+                    <td class="damage">2.8</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Fox</td>
+                    <td class="damage">2.5</td>
+                    <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Rosalina & Luma</td>
+                    <td class="damage">1.5</td>
+                    <td class="frame">44</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="not-found">
+            <h3>Characters Not Found (2)</h3>
+            <div class="not-found-list">
+                <div>Mii Gunner</div>
+                <div>Villager</div>
+
+            </div>
+        </div>
+
+        <h2>Back Air</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Damage</th>
+                    <th>Frame</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>King K. Rool</td>
+                    <td class="damage">17</td>
+                    <td class="frame">51</td>
+                </tr>
+
+                <tr>
+                    <td>Ike</td>
+                    <td class="damage">14.8</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Hero</td>
+                    <td class="damage">14.8</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Ridley</td>
+                    <td class="damage">14.7</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Pyra</td>
+                    <td class="damage">14.5</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Ganondorf</td>
+                    <td class="damage">14.2</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Lucas</td>
+                    <td class="damage">14.2</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Terry</td>
+                    <td class="damage">14</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Chrom</td>
+                    <td class="damage">13.7</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser</td>
+                    <td class="damage">13.2</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Joker</td>
+                    <td class="damage">13</td>
+                    <td class="frame">24</td>
+                </tr>
+
+                <tr>
+                    <td>Lucina</td>
+                    <td class="damage">13</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Min Min</td>
+                    <td class="damage">13</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Wolf</td>
+                    <td class="damage">13</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Kazuya</td>
+                    <td class="damage">12.7</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Duck Hunt</td>
+                    <td class="damage">12.7</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Swordfighter</td>
+                    <td class="damage">12.7</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Ken</td>
+                    <td class="damage">12.5</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Lucario</td>
+                    <td class="damage">12.5</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Palutena</td>
+                    <td class="damage">12.5</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Ryu</td>
+                    <td class="damage">12.5</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Sora</td>
+                    <td class="damage">12.4</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Brawler</td>
+                    <td class="damage">12.2</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Roy</td>
+                    <td class="damage">12.2</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Richter</td>
+                    <td class="damage">12.2</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Shulk</td>
+                    <td class="damage">12.2</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Robin</td>
+                    <td class="damage">12.1</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Cloud</td>
+                    <td class="damage">12</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Incineroar</td>
+                    <td class="damage">12</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Kirby</td>
+                    <td class="damage">12</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Meta Knight</td>
+                    <td class="damage">12</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Mewtwo</td>
+                    <td class="damage">12</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Gunner</td>
+                    <td class="damage">12</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Jigglypuff</td>
+                    <td class="damage">12</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>King Dedede</td>
+                    <td class="damage">11.7</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>Diddy Kong</td>
+                    <td class="damage">11.7</td>
+                    <td class="frame">23</td>
+                </tr>
+
+                <tr>
+                    <td>Corrin</td>
+                    <td class="damage">11.5</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Peach</td>
+                    <td class="damage">11.5</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Pikachu</td>
+                    <td class="damage">11.5</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Wario</td>
+                    <td class="damage">11.5</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Charizard</td>
+                    <td class="damage">11.4</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Samus</td>
+                    <td class="damage">11.3</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Simon</td>
+                    <td class="damage">11.3</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Captain Falcon</td>
+                    <td class="damage">11</td>
+                    <td class="frame">22</td>
+                </tr>
+
+                <tr>
+                    <td>Falco</td>
+                    <td class="damage">11</td>
+                    <td class="frame">22</td>
+                </tr>
+
+                <tr>
+                    <td>Fox</td>
+                    <td class="damage">11</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Samus</td>
+                    <td class="damage">11</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Sonic</td>
+                    <td class="damage">11</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Zero Suit Samus</td>
+                    <td class="damage">11</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Sephiroth</td>
+                    <td class="damage">10.8</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser Jr.</td>
+                    <td class="damage">10.8</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Marth</td>
+                    <td class="damage">10.7</td>
+                    <td class="frame">23</td>
+                </tr>
+
+                <tr>
+                    <td>Pit</td>
+                    <td class="damage">10.7</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>R.O.B.</td>
+                    <td class="damage">10.7</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Donkey Kong</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">22</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Pit</td>
+                    <td class="damage">10.3</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>Dr.Mario</td>
+                    <td class="damage">10.2</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Pac-man</td>
+                    <td class="damage">10.2</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Luigi</td>
+                    <td class="damage">10</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Ness</td>
+                    <td class="damage">10</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>Wii Fit Trainer</td>
+                    <td class="damage">9.8</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Byleth</td>
+                    <td class="damage">9.6</td>
+                    <td class="frame">55</td>
+                </tr>
+
+                <tr>
+                    <td>Mario</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Rosalina & Luma</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">44</td>
+                </tr>
+
+                <tr>
+                    <td>Snake</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Bayonetta</td>
+                    <td class="damage">9.4</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Zelda</td>
+                    <td class="damage">9.2</td>
+                    <td class="frame">39</td>
+                </tr>
+
+                <tr>
+                    <td>iceclimber</td>
+                    <td class="damage">9</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Toon Link</td>
+                    <td class="damage">9</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Daisy</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Sheik</td>
+                    <td class="damage">8.4</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Inkling</td>
+                    <td class="damage">7.8</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Piranha Plant</td>
+                    <td class="damage">7.7</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Mythra</td>
+                    <td class="damage">7.5</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Little Mac</td>
+                    <td class="damage">7</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Olimar</td>
+                    <td class="damage">6</td>
+                    <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Young Link</td>
+                    <td class="damage">6</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Link</td>
+                    <td class="damage">5.7</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Steve</td>
+                    <td class="damage">5.4</td>
+                    <td class="frame">47</td>
+                </tr>
+
+                <tr>
+                    <td>Ivysaur</td>
+                    <td class="damage">5.3</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Yoshi</td>
+                    <td class="damage">4.8</td>
+                    <td class="frame">44</td>
+                </tr>
+
+                <tr>
+                    <td>Mega Man</td>
+                    <td class="damage">4.7</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Mr.Game & Watch</td>
+                    <td class="damage">4</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Villager</td>
+                    <td class="damage">3.5</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Squirtle</td>
+                    <td class="damage">3.5</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Greninja</td>
+                    <td class="damage">3.4</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Banjo & Kazooie</td>
+                    <td class="damage">3.4</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Pichu</td>
+                    <td class="damage">2.1</td>
+                    <td class="frame">38</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="not-found">
+            <h3>Characters Not Found (1)</h3>
+            <div class="not-found-list">
+                <div>Isabelle</div>
+
+            </div>
+        </div>
+
+        <div class="fallback-info">
+            <h3>Characters Found in Fallback Location (1)</h3>
+            <div class="not-found-list">
+                <div>Mii Gunner</div>
+
+            </div>
+        </div>
+
+        <h2>Up Air</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Damage</th>
+                    <th>Frame</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Bowser</td>
+                    <td class="damage">17</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Ike</td>
+                    <td class="damage">14</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Pyra</td>
+                    <td class="damage">13</td>
+                    <td class="frame">23</td>
+                </tr>
+
+                <tr>
+                    <td>Link</td>
+                    <td class="damage">13</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Ness</td>
+                    <td class="damage">13</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>Yoshi</td>
+                    <td class="damage">13</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Young Link</td>
+                    <td class="damage">13</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Swordfighter</td>
+                    <td class="damage">12.8</td>
+                    <td class="frame">24</td>
+                </tr>
+
+                <tr>
+                    <td>Diddy Kong</td>
+                    <td class="damage">12</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Donkey Kong</td>
+                    <td class="damage">12</td>
+                    <td class="frame">18</td>
+                </tr>
+
+                <tr>
+                    <td>Jigglypuff</td>
+                    <td class="damage">12</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Lucario</td>
+                    <td class="damage">11.7</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>Captain Falcon</td>
+                    <td class="damage">11.5</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Snake</td>
+                    <td class="damage">11.5</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Wario</td>
+                    <td class="damage">11.5</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Ridley</td>
+                    <td class="damage">11.4</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Zelda</td>
+                    <td class="damage">11.2</td>
+                    <td class="frame">54</td>
+                </tr>
+
+                <tr>
+                    <td>Luigi</td>
+                    <td class="damage">11</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Mewtwo</td>
+                    <td class="damage">11</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Robin</td>
+                    <td class="damage">11</td>
+                    <td class="frame">27</td>
+                </tr>
+
+                <tr>
+                    <td>Wolf</td>
+                    <td class="damage">11</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Marth</td>
+                    <td class="damage">10.7</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Pit</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Ganondorf</td>
+                    <td class="damage">10.3</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Kirby</td>
+                    <td class="damage">10</td>
+                    <td class="frame">10</td>
+                </tr>
+
+                <tr>
+                    <td>Lucas</td>
+                    <td class="damage">10</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Pac-man</td>
+                    <td class="damage">10</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Charizard</td>
+                    <td class="damage">10</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Isabelle</td>
+                    <td class="damage">10</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Sora</td>
+                    <td class="damage">10</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Wii Fit Trainer</td>
+                    <td class="damage">10</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Corrin</td>
+                    <td class="damage">9.8</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Cloud</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Mario</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Dr.Mario</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser Jr.</td>
+                    <td class="damage">9</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Lucina</td>
+                    <td class="damage">9</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Brawler</td>
+                    <td class="damage">9</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Piranha Plant</td>
+                    <td class="damage">9</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Richter</td>
+                    <td class="damage">9</td>
+                    <td class="frame">28</td>
+                </tr>
+
+                <tr>
+                    <td>Roy</td>
+                    <td class="damage">9</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Samus</td>
+                    <td class="damage">9</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Kazuya</td>
+                    <td class="damage">8.8</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Sephiroth</td>
+                    <td class="damage">8.8</td>
+                    <td class="frame">52</td>
+                </tr>
+
+                <tr>
+                    <td>Rosalina & Luma</td>
+                    <td class="damage">8.6</td>
+                    <td class="frame">45</td>
+                </tr>
+
+                <tr>
+                    <td>Villager</td>
+                    <td class="damage">8.6</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Falco</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">9</td>
+                </tr>
+
+                <tr>
+                    <td>Incineroar</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>Zero Suit Samus</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Simon</td>
+                    <td class="damage">8.2</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Hero</td>
+                    <td class="damage">8</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Banjo & Kazooie</td>
+                    <td class="damage">8</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Daisy</td>
+                    <td class="damage">8</td>
+                    <td class="frame">21</td>
+                </tr>
+
+                <tr>
+                    <td>Terry</td>
+                    <td class="damage">8</td>
+                    <td class="frame">18</td>
+                </tr>
+
+                <tr>
+                    <td>Mr.Game & Watch</td>
+                    <td class="damage">8</td>
+                    <td class="frame">14</td>
+                </tr>
+
+                <tr>
+                    <td>Ivysaur</td>
+                    <td class="damage">7.8</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Bayonetta</td>
+                    <td class="damage">7.5</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Fox</td>
+                    <td class="damage">7.5</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>iceclimber</td>
+                    <td class="damage">7.5</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Min Min</td>
+                    <td class="damage">7.5</td>
+                    <td class="frame">24</td>
+                </tr>
+
+                <tr>
+                    <td>Pikachu</td>
+                    <td class="damage">7.3</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Chrom</td>
+                    <td class="damage">7</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Mythra</td>
+                    <td class="damage">7</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>King K. Rool</td>
+                    <td class="damage">7</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Pichu</td>
+                    <td class="damage">7</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Sonic</td>
+                    <td class="damage">6.6</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Shulk</td>
+                    <td class="damage">6.2</td>
+                    <td class="frame">53</td>
+                </tr>
+
+                <tr>
+                    <td>Ken</td>
+                    <td class="damage">6</td>
+                    <td class="frame">18</td>
+                </tr>
+
+                <tr>
+                    <td>Squirtle</td>
+                    <td class="damage">6</td>
+                    <td class="frame">22</td>
+                </tr>
+
+                <tr>
+                    <td>Peach</td>
+                    <td class="damage">5.6</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Ryu</td>
+                    <td class="damage">5.5</td>
+                    <td class="frame">18</td>
+                </tr>
+
+                <tr>
+                    <td>Palutena</td>
+                    <td class="damage">5.2</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Inkling</td>
+                    <td class="damage">5.2</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Little Mac</td>
+                    <td class="damage">5</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Olimar</td>
+                    <td class="damage">5</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Toon Link</td>
+                    <td class="damage">4.8</td>
+                    <td class="frame">39</td>
+                </tr>
+
+                <tr>
+                    <td>Joker</td>
+                    <td class="damage">4.7</td>
+                    <td class="frame">30</td>
+                </tr>
+
+                <tr>
+                    <td>Pit</td>
+                    <td class="damage">4.5</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Byleth</td>
+                    <td class="damage">4.4</td>
+                    <td class="frame">65</td>
+                </tr>
+
+                <tr>
+                    <td>Meta Knight</td>
+                    <td class="damage">4</td>
+                    <td class="frame">19</td>
+                </tr>
+
+                <tr>
+                    <td>Sheik</td>
+                    <td class="damage">3.8</td>
+                    <td class="frame">44</td>
+                </tr>
+
+                <tr>
+                    <td>King Dedede</td>
+                    <td class="damage">3.1</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>Duck Hunt</td>
+                    <td class="damage">3</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Steve</td>
+                    <td class="damage">3</td>
+                    <td class="frame">16</td>
+                </tr>
+
+                <tr>
+                    <td>Greninja</td>
+                    <td class="damage">2.7</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>R.O.B.</td>
+                    <td class="damage">2.7</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Samus</td>
+                    <td class="damage">2.7</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Gunner</td>
+                    <td class="damage">2.2</td>
+                    <td class="frame">60</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="not-found">
+            <h3>Characters Not Found (1)</h3>
+            <div class="not-found-list">
+                <div>Mega Man</div>
+
+            </div>
+        </div>
+
+        <div class="fallback-info">
+            <h3>Characters Found in Fallback Location (1)</h3>
+            <div class="not-found-list">
+                <div>Mii Gunner</div>
+
+            </div>
+        </div>
+
+        <h2>Down Air</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Character</th>
+                    <th>Damage</th>
+                    <th>Frame</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Ganondorf</td>
+                    <td class="damage">18</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Link</td>
+                    <td class="damage">16.3</td>
+                    <td class="frame">65</td>
+                </tr>
+
+                <tr>
+                    <td>Byleth</td>
+                    <td class="damage">16.3</td>
+                    <td class="frame">60</td>
+                </tr>
+
+                <tr>
+                    <td>Captain Falcon</td>
+                    <td class="damage">16</td>
+                    <td class="frame">39</td>
+                </tr>
+
+                <tr>
+                    <td>Samus</td>
+                    <td class="damage">16</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Young Link</td>
+                    <td class="damage">16</td>
+                    <td class="frame">72</td>
+                </tr>
+
+                <tr>
+                    <td>Toon Link</td>
+                    <td class="damage">15.3</td>
+                    <td class="frame">71</td>
+                </tr>
+
+                <tr>
+                    <td>Dr.Mario</td>
+                    <td class="damage">15</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Brawler</td>
+                    <td class="damage">15</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Mewtwo</td>
+                    <td class="damage">14.5</td>
+                    <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Hero</td>
+                    <td class="damage">14.3</td>
+                    <td class="frame">47</td>
+                </tr>
+
+                <tr>
+                    <td>Pyra</td>
+                    <td class="damage">14.2</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Diddy Kong</td>
+                    <td class="damage">14</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Terry</td>
+                    <td class="damage">14</td>
+                    <td class="frame">24</td>
+                </tr>
+
+                <tr>
+                    <td>Donkey Kong</td>
+                    <td class="damage">14</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Luigi</td>
+                    <td class="damage">14</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Wolf</td>
+                    <td class="damage">14</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>King K. Rool</td>
+                    <td class="damage">13.7</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Zelda</td>
+                    <td class="damage">13.5</td>
+                    <td class="frame">45</td>
+                </tr>
+
+                <tr>
+                    <td>Ness</td>
+                    <td class="damage">13.3</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Mr.Game & Watch</td>
+                    <td class="damage">13.2</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Ridley</td>
+                    <td class="damage">12.8</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Banjo & Kazooie</td>
+                    <td class="damage">12.7</td>
+                    <td class="frame">69</td>
+                </tr>
+
+                <tr>
+                    <td>Pikachu</td>
+                    <td class="damage">12.7</td>
+                    <td class="frame">39</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Samus</td>
+                    <td class="damage">12.7</td>
+                    <td class="frame">34</td>
+                </tr>
+
+                <tr>
+                    <td>Wii Fit Trainer</td>
+                    <td class="damage">12.7</td>
+                    <td class="frame">40</td>
+                </tr>
+
+                <tr>
+                    <td>Pichu</td>
+                    <td class="damage">12.6</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Incineroar</td>
+                    <td class="damage">12.5</td>
+                    <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Roy</td>
+                    <td class="damage">12.5</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Ike</td>
+                    <td class="damage">12.4</td>
+                    <td class="frame">48</td>
+                </tr>
+
+                <tr>
+                    <td>Cloud</td>
+                    <td class="damage">12.2</td>
+                    <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Ken</td>
+                    <td class="damage">12.2</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Ryu</td>
+                    <td class="damage">12.2</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Lucina</td>
+                    <td class="damage">12</td>
+                    <td class="frame">55</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Gunner</td>
+                    <td class="damage">12</td>
+                    <td class="frame">54</td>
+                </tr>
+
+                <tr>
+                    <td>Palutena</td>
+                    <td class="damage">12</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Zero Suit Samus</td>
+                    <td class="damage">12</td>
+                    <td class="frame">58</td>
+                </tr>
+
+                <tr>
+                    <td>Robin</td>
+                    <td class="damage">12.0</td>
+                    <td class="frame">48</td>
+                </tr>
+
+                <tr>
+                    <td>Sephiroth</td>
+                    <td class="damage">11.8</td>
+                    <td class="frame">53</td>
+                </tr>
+
+                <tr>
+                    <td>King Dedede</td>
+                    <td class="damage">11.7</td>
+                    <td class="frame">44</td>
+                </tr>
+
+                <tr>
+                    <td>Inkling</td>
+                    <td class="damage">11.7</td>
+                    <td class="frame">33</td>
+                </tr>
+
+                <tr>
+                    <td>Piranha Plant</td>
+                    <td class="damage">11.7</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Wario</td>
+                    <td class="damage">11.3</td>
+                    <td class="frame">58</td>
+                </tr>
+
+                <tr>
+                    <td>Marth</td>
+                    <td class="damage">11.2</td>
+                    <td class="frame">55</td>
+                </tr>
+
+                <tr>
+                    <td>Ivysaur</td>
+                    <td class="damage">11</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Charizard</td>
+                    <td class="damage">11</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Min Min</td>
+                    <td class="damage">11</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Pit</td>
+                    <td class="damage">10.8</td>
+                    <td class="frame">35</td>
+                </tr>
+
+                <tr>
+                    <td>Dark Pit</td>
+                    <td class="damage">10.8</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Kazuya</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">55</td>
+                </tr>
+
+                <tr>
+                    <td>Falco</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">44</td>
+                </tr>
+
+                <tr>
+                    <td>Richter</td>
+                    <td class="damage">10.5</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Chrom</td>
+                    <td class="damage">10.3</td>
+                    <td class="frame">52</td>
+                </tr>
+
+                <tr>
+                    <td>Simon</td>
+                    <td class="damage">10.3</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Sheik</td>
+                    <td class="damage">10.2</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>iceclimber</td>
+                    <td class="damage">10</td>
+                    <td class="frame">63</td>
+                </tr>
+
+                <tr>
+                    <td>Isabelle</td>
+                    <td class="damage">10</td>
+                    <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Villager</td>
+                    <td class="damage">9.7</td>
+                    <td class="frame">36</td>
+                </tr>
+
+                <tr>
+                    <td>Pac-man</td>
+                    <td class="damage">9.5</td>
+                    <td class="frame">60</td>
+                </tr>
+
+                <tr>
+                    <td>Shulk</td>
+                    <td class="damage">8.9</td>
+                    <td class="frame">53</td>
+                </tr>
+
+                <tr>
+                    <td>Bayonetta</td>
+                    <td class="damage">8.9</td>
+                    <td class="frame">57</td>
+                </tr>
+
+                <tr>
+                    <td>Rosalina & Luma</td>
+                    <td class="damage">8.8</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Sonic</td>
+                    <td class="damage">8.8</td>
+                    <td class="frame">61</td>
+                </tr>
+
+                <tr>
+                    <td>Mythra</td>
+                    <td class="damage">8.5</td>
+                    <td class="frame">51</td>
+                </tr>
+
+                <tr>
+                    <td>Little Mac</td>
+                    <td class="damage">8.3</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Joker</td>
+                    <td class="damage">8.1</td>
+                    <td class="frame">29</td>
+                </tr>
+
+                <tr>
+                    <td>Greninja</td>
+                    <td class="damage">8</td>
+                    <td class="frame">53</td>
+                </tr>
+
+                <tr>
+                    <td>Sora</td>
+                    <td class="damage">8</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Meta Knight</td>
+                    <td class="damage">6</td>
+                    <td class="frame">26</td>
+                </tr>
+
+                <tr>
+                    <td>Duck Hunt</td>
+                    <td class="damage">5.7</td>
+                    <td class="frame">39</td>
+                </tr>
+
+                <tr>
+                    <td>Lucario</td>
+                    <td class="damage">5.4</td>
+                    <td class="frame">25</td>
+                </tr>
+
+                <tr>
+                    <td>Olimar</td>
+                    <td class="damage">4.5</td>
+                    <td class="frame">32</td>
+                </tr>
+
+                <tr>
+                    <td>Snake</td>
+                    <td class="damage">4.3</td>
+                    <td class="frame">53</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser</td>
+                    <td class="damage">4</td>
+                    <td class="frame">67</td>
+                </tr>
+
+                <tr>
+                    <td>Lucas</td>
+                    <td class="damage">4</td>
+                    <td class="frame">37</td>
+                </tr>
+
+                <tr>
+                    <td>Daisy</td>
+                    <td class="damage">3.2</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Peach</td>
+                    <td class="damage">3.2</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Corrin</td>
+                    <td class="damage">3</td>
+                    <td class="frame">41</td>
+                </tr>
+
+                <tr>
+                    <td>Mii Swordfighter</td>
+                    <td class="damage">3</td>
+                    <td class="frame">43</td>
+                </tr>
+
+                <tr>
+                    <td>R.O.B.</td>
+                    <td class="damage">2.4</td>
+                    <td class="frame">38</td>
+                </tr>
+
+                <tr>
+                    <td>Yoshi</td>
+                    <td class="damage">2.1</td>
+                    <td class="frame">50</td>
+                </tr>
+
+                <tr>
+                    <td>Fox</td>
+                    <td class="damage">2</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Kirby</td>
+                    <td class="damage">2</td>
+                    <td class="frame">46</td>
+                </tr>
+
+                <tr>
+                    <td>Squirtle</td>
+                    <td class="damage">2</td>
+                    <td class="frame">31</td>
+                </tr>
+
+                <tr>
+                    <td>Jigglypuff</td>
+                    <td class="damage">1.8</td>
+                    <td class="frame">42</td>
+                </tr>
+
+                <tr>
+                    <td>Bowser Jr.</td>
+                    <td class="damage">1.5</td>
+                    <td class="frame">68</td>
+                </tr>
+
+                <tr>
+                    <td>Mario</td>
+                    <td class="damage">1.1</td>
+                    <td class="frame">30</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="not-found">
+            <h3>Characters Not Found (2)</h3>
+            <div class="not-found-list">
+                <div>Mega Man</div>
+                <div>Steve</div>
+
+            </div>
+        </div>
+
+        <div class="fallback-info">
+            <h3>Characters Found in Fallback Location (2)</h3>
+            <div class="not-found-list">
+                <div>Kazuya</div>
+                <div>Mii Gunner</div>
+
+            </div>
+        </div>
+
+        <div class="timestamp">
+            Generated on: 2025-06-30 18:42:14
+        </div>
+    </div>
+</body>
+</html>
