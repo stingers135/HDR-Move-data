@@ -65,6 +65,16 @@
             font-size: 1.2em;
             display: block; /* Make the whole block clickable */
         }
+
+        /* Style for the WIP disclaimer text */
+        .wip-disclaimer {
+            text-align: center;
+            font-size: 0.95em;
+            color: #dc3545; /* Red color for emphasis */
+            margin-top: -15px; /* Pull it up a bit closer to the nav grid */
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -73,14 +83,18 @@
         <p>Explore detailed attack data and frame information for various characters in HewDraw Remix. Damage values shown are the average value of all hitboxes. Frame values shown are the first frame of the attack.</p>
 
         <div class="nav-grid">
-            <div class="nav-item"><a href="output_html/jabs_attacks.html">Jab Attacks</a></div>
-            <div class="nav-item"><a href="output_html/tilts_attacks.html">Tilt Attacks</a></div>
-            <div class="nav-item"><a href="output_html/smashes_attacks.html">Smash Attacks</a></div>
-            <div class="nav-item"><a href="output_html/aerials_attacks.html">Aerial Attacks</a></div>
-            <div class="nav-item"><a href="output_html/dash_attacks.html">Dash Attack</a></div>
-            <div class="nav-item"><a href="output_html/grabs_attacks.html">Throws</a></div>
-            <div class="nav-item nav-item-wip"><a href="output_html/specials_attacks.html">Special Attacks<br>(Work In Progress - Not Yet Accurate)</a></div>
+            <div class="nav-item"><a href="jabs_attacks.html">Jab Attacks</a></div>
+            <div class="nav-item"><a href="tilts_attacks.html">Tilt Attacks</a></div>
+            <div class="nav-item"><a href="smashes_attacks.html">Smash Attacks</a></div>
+            <div class="nav-item"><a href="aerials_attacks.html">Aerial Attacks</a></div>
+            <div class="nav-item"><a href="dash_attacks.html">Dash Attack</a></div>
+            <div class="nav-item"><a href="grabs_attacks.html">Throws</a></div>
+            <div class="nav-item nav-item-wip"><a href="output_html/specials_attacks.html">Special Attacks</a></div>
         </div>
+
+        <p class="wip-disclaimer">
+            *Note: Special Attacks data is a Work In Progress and may not yet be fully accurate.
+        </p>
 
         <p style="margin-top: 40px; font-size: 0.9em; color: #666;">Data generated from game scripts, the pages are updated manually. Last updated 6/30/25.</p>
     </div>
