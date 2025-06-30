@@ -40,15 +40,24 @@
             border-radius: 8px;
         }
         .nav-item {
-            background-color: #007bff;
+            background-color: #007bff; /* Default blue for most items */
             border-radius: 5px;
             text-align: center;
             padding: 15px 10px;
             transition: background-color 0.3s ease;
         }
         .nav-item:hover {
-            background-color: #0056b3;
+            background-color: #0056b3; /* Darker blue on hover */
         }
+
+        /* New styles for Work In Progress item */
+        .nav-item-wip {
+            background-color: #dc3545; /* Red color for WIP */
+        }
+        .nav-item-wip:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+
         .nav-item a {
             color: white;
             text-decoration: none;
@@ -64,13 +73,13 @@
         <p>Explore detailed attack data and frame information for various characters in HewDraw Remix. Damage values shown are the average value of all hitboxes. Frame values shown are the first frame of the attack.</p>
 
         <div class="nav-grid">
-            <div class="nav-item"><a href="jabs_attacks.html">Jab Attacks</a></div>
-            <div class="nav-item"><a href="tilts_attacks.html">Tilt Attacks</a></div>
-            <div class="nav-item"><a href="smashes_attacks.html">Smash Attacks</a></div>
-            <div class="nav-item"><a href="aerials_attacks.html">Aerial Attacks</a></div>
-            <div class="nav-item"><a href="dash_attacks.html">Dash Attack</a></div>
-            <div class="nav-item"><a href="grabs_attacks.html">Throws</a></div>
-            <div class="nav-item"><a href="specials_attacks.html">Special Attacks</a></div>
+            <div class="nav-item"><a href="output_html/jabs_attacks.html">Jab Attacks</a></div>
+            <div class="nav-item"><a href="output_html/tilts_attacks.html">Tilt Attacks</a></div>
+            <div class="nav-item"><a href="output_html/smashes_attacks.html">Smash Attacks</a></div>
+            <div class="nav-item"><a href="output_html/aerials_attacks.html">Aerial Attacks</a></div>
+            <div class="nav-item"><a href="output_html/dash_attacks.html">Dash Attack</a></div>
+            <div class="nav-item"><a href="output_html/grabs_attacks.html">Throws</a></div>
+            <div class="nav-item nav-item-wip"><a href="output_html/specials_attacks.html">Special Attacks<br>(Work In Progress - Not Yet Accurate)</a></div>
         </div>
 
         <p style="margin-top: 40px; font-size: 0.9em; color: #666;">Data generated from game scripts, the pages are updated manually. Last updated 6/30/25.</p>
