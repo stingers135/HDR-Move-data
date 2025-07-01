@@ -18,6 +18,23 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        .return-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            position: absolute; /* Position the button */
+            top: 20px; /* From the top */
+            left: 20px; /* From the left */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+        .return-button:hover {
+            background-color: #5a6268;
+        }
         h1 {
             color: #333;
             text-align: center;
@@ -44,6 +61,26 @@
             padding: 10px 8px; /* Slightly less padding */
             text-align: left;
             font-weight: bold;
+            cursor: pointer; /* Indicate sortable */
+        }
+        th:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        th.sortable {
+            position: relative;
+            padding-right: 25px; /* Make space for the icon */
+        }
+        th.sortable .sort-icon {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.8em;
+            color: #fff; /* White icon on blue background */
+            opacity: 0.6; /* Slightly transparent */
+        }
+        th.sortable:hover .sort-icon {
+            opacity: 1; /* Fully opaque on hover */
         }
         td {
             padding: 8px; /* Slightly less padding */
@@ -111,24 +148,121 @@
             padding-top: 10px;
         }
     </style>
+    <script>
+        function sortTable(tableId, n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById(tableId);
+            switching = true;
+            // Set the sorting direction to ascending:
+            dir = "asc";
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // Start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /* Loop through all table rows (except the
+                first, which contains table headers): */
+                for (i = 1; i < (rows.length - 1); i++) {
+                    // Start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* Get the two elements you want to compare,
+                    one from current row and one from the next: */
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+                    /* Check if the two rows should switch place,
+                    based on the direction, asc or desc: */
+                    var xContent = x.innerHTML.replace(/<[^>]*>/g, "").trim(); // Remove HTML tags and trim
+                    var yContent = y.innerHTML.replace(/<[^>]*>/g, "").trim(); // Remove HTML tags and trim
+
+                    var xValue = parseFloat(xContent);
+                    var yValue = parseFloat(yContent);
+
+                    // Determine if comparison should be numeric or string
+                    var isNumericComparison = !isNaN(xValue) && !isNaN(yValue) && 
+                                              xContent !== "N/A" && yContent !== "N/A";
+
+                    if (dir == "asc") {
+                        if (isNumericComparison) {
+                            if (xValue > yValue) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else {
+                            if (xContent.toLowerCase() > yContent.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+                    } else if (dir == "desc") {
+                        if (isNumericComparison) {
+                            if (xValue < yValue) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else {
+                            if (xContent.toLowerCase() < yContent.toLowerCase()) {
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    /* If a switch has been marked, make the switch
+                    and mark that a switch has been done: */
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    // Each time a switch is done, increase this count by 1:
+                    switchcount ++;
+                } else {
+                    /* If no switching has been done AND the direction is "asc",
+                    set the direction to "desc" and run the while loop again. */
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+
+        // Function to attach sortable behavior to all tables
+        document.addEventListener('DOMContentLoaded', function() {
+            var tables = document.querySelectorAll('table');
+            tables.forEach(function(table) {
+                var ths = table.querySelectorAll('th');
+                ths.forEach(function(th, index) {
+                    // Enable sorting for all columns, including 'Character' (index 0)
+                    th.addEventListener('click', function() {
+                        sortTable(table.id, index);
+                    });
+                });
+                // Assign a unique ID to each table for the sortTable function
+                if (!table.id) {
+                    table.id = 'sortableTable_' + Math.random().toString(36).substr(2, 9);
+                }
+            });
+        });
+    </script>
 </head>
 <body>
+    <a href="index.html" class="return-button">Return to Index</a>
     <div class="container">
         <h1>Jab Attacks</h1>
         <p style="text-align: center; color: #666;">Attack damage, knockback, and frame data analysis</p>
 
         <h2>Jab 1</h2>
 
-        <table>
+        <table id="jab1_table">
             <thead>
                 <tr>
-                    <th>Character</th>
-                    <th>Damage</th>
-                    <th>Angle</th>
-                    <th>KBG</th>
-                    <th>FKB</th>
-                    <th>BKB</th>
-                    <th>Frame</th>
+                    <th class="sortable">Character <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">Damage <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">Angle <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">KBG <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">FKB <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">BKB <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">Frame <span class="sort-icon">&#x2195;</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -140,7 +274,7 @@
                     <td class="value">80</td>
                     <td class="value">0</td>
                     <td class="value">45</td>
-                    <td class="frame">7</td>
+                    <td class="frame">6</td>
                 </tr>
 
                 <tr>
@@ -170,7 +304,7 @@
                     <td class="value">100</td>
                     <td class="value">20</td>
                     <td class="value">0</td>
-                    <td class="frame">9</td>
+                    <td class="frame">8</td>
                 </tr>
 
                 <tr>
@@ -180,7 +314,7 @@
                     <td class="value">27</td>
                     <td class="value">0</td>
                     <td class="value">20</td>
-                    <td class="frame">5</td>
+                    <td class="frame">4</td>
                 </tr>
 
                 <tr>
@@ -190,7 +324,7 @@
                     <td class="value">50</td>
                     <td class="value">0</td>
                     <td class="value">45</td>
-                    <td class="frame">9</td>
+                    <td class="frame">8</td>
                 </tr>
 
                 <tr>
@@ -200,7 +334,7 @@
                     <td class="value">40</td>
                     <td class="value">0</td>
                     <td class="value">95</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -290,7 +424,7 @@
                     <td class="value">25</td>
                     <td class="value">0</td>
                     <td class="value">30</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -450,7 +584,7 @@
                     <td class="value">100</td>
                     <td class="value">25</td>
                     <td class="value">0</td>
-                    <td class="frame">4</td>
+                    <td class="frame">3</td>
                 </tr>
 
                 <tr>
@@ -530,7 +664,7 @@
                     <td class="value">50</td>
                     <td class="value">0</td>
                     <td class="value">8</td>
-                    <td class="frame">3</td>
+                    <td class="frame">2</td>
                 </tr>
 
                 <tr>
@@ -600,7 +734,7 @@
                     <td class="value">18</td>
                     <td class="value">0</td>
                     <td class="value">31</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -650,7 +784,7 @@
                     <td class="value">40</td>
                     <td class="value">0</td>
                     <td class="value">10</td>
-                    <td class="frame">5</td>
+                    <td class="frame">4</td>
                 </tr>
 
                 <tr>
@@ -660,7 +794,7 @@
                     <td class="value">40</td>
                     <td class="value">0</td>
                     <td class="value">10</td>
-                    <td class="frame">5</td>
+                    <td class="frame">4</td>
                 </tr>
 
                 <tr>
@@ -700,7 +834,7 @@
                     <td class="value">25</td>
                     <td class="value">0</td>
                     <td class="value">30</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -770,7 +904,7 @@
                     <td class="value">66</td>
                     <td class="value">0</td>
                     <td class="value">21</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -780,7 +914,7 @@
                     <td class="value">35</td>
                     <td class="value">0</td>
                     <td class="value">10</td>
-                    <td class="frame">5</td>
+                    <td class="frame">4</td>
                 </tr>
 
                 <tr>
@@ -790,7 +924,7 @@
                     <td class="value">42</td>
                     <td class="value">0</td>
                     <td class="value">24</td>
-                    <td class="frame">7</td>
+                    <td class="frame">6</td>
                 </tr>
 
                 <tr>
@@ -820,7 +954,7 @@
                     <td class="value">10</td>
                     <td class="value">0</td>
                     <td class="value">35</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -910,7 +1044,7 @@
                     <td class="value">35</td>
                     <td class="value">0</td>
                     <td class="value">25</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -940,7 +1074,7 @@
                     <td class="value">100</td>
                     <td class="value">30</td>
                     <td class="value">0</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -1011,16 +1145,16 @@
 
         <h2>Jab 2</h2>
 
-        <table>
+        <table id="jab2_table">
             <thead>
                 <tr>
-                    <th>Character</th>
-                    <th>Damage</th>
-                    <th>Angle</th>
-                    <th>KBG</th>
-                    <th>FKB</th>
-                    <th>BKB</th>
-                    <th>Frame</th>
+                    <th class="sortable">Character <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">Damage <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">Angle <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">KBG <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">FKB <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">BKB <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">Frame <span class="sort-icon">&#x2195;</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -1042,7 +1176,7 @@
                     <td class="value">84</td>
                     <td class="value">0</td>
                     <td class="value">27</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -1102,7 +1236,7 @@
                     <td class="value">33</td>
                     <td class="value">0</td>
                     <td class="value">22</td>
-                    <td class="frame">8</td>
+                    <td class="frame">7</td>
                 </tr>
 
                 <tr>
@@ -1122,7 +1256,7 @@
                     <td class="value">65</td>
                     <td class="value">0</td>
                     <td class="value">73</td>
-                    <td class="frame">3</td>
+                    <td class="frame">2</td>
                 </tr>
 
                 <tr>
@@ -1212,7 +1346,7 @@
                     <td class="value">80</td>
                     <td class="value">0</td>
                     <td class="value">40</td>
-                    <td class="frame">5</td>
+                    <td class="frame">4</td>
                 </tr>
 
                 <tr>
@@ -1232,7 +1366,7 @@
                     <td class="value">12</td>
                     <td class="value">0</td>
                     <td class="value">25</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -1272,7 +1406,7 @@
                     <td class="value">10</td>
                     <td class="value">0</td>
                     <td class="value">40</td>
-                    <td class="frame">8</td>
+                    <td class="frame">7</td>
                 </tr>
 
                 <tr>
@@ -1342,7 +1476,7 @@
                     <td class="value">24</td>
                     <td class="value">0</td>
                     <td class="value">26</td>
-                    <td class="frame">4</td>
+                    <td class="frame">3</td>
                 </tr>
 
                 <tr>
@@ -1422,7 +1556,7 @@
                     <td class="value">40</td>
                     <td class="value">70</td>
                     <td class="value">0</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -1432,7 +1566,7 @@
                     <td class="value">40</td>
                     <td class="value">70</td>
                     <td class="value">0</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -1442,7 +1576,7 @@
                     <td class="value">50</td>
                     <td class="value">0</td>
                     <td class="value">50</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -1452,7 +1586,7 @@
                     <td class="value">20</td>
                     <td class="value">0</td>
                     <td class="value">20</td>
-                    <td class="frame">5</td>
+                    <td class="frame">4</td>
                 </tr>
 
                 <tr>
@@ -1552,7 +1686,7 @@
                     <td class="value">16</td>
                     <td class="value">0</td>
                     <td class="value">30</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -1632,7 +1766,7 @@
                     <td class="value">100</td>
                     <td class="value">30</td>
                     <td class="value">5</td>
-                    <td class="frame">5</td>
+                    <td class="frame">4</td>
                 </tr>
 
                 <tr>
@@ -1843,16 +1977,16 @@
 
         <h2>Jab 3</h2>
 
-        <table>
+        <table id="jab3_table">
             <thead>
                 <tr>
-                    <th>Character</th>
-                    <th>Damage</th>
-                    <th>Angle</th>
-                    <th>KBG</th>
-                    <th>FKB</th>
-                    <th>BKB</th>
-                    <th>Frame</th>
+                    <th class="sortable">Character <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">Damage <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">Angle <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">KBG <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">FKB <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">BKB <span class="sort-icon">&#x2195;</span></th>
+                    <th class="sortable">Frame <span class="sort-icon">&#x2195;</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -1864,7 +1998,7 @@
                     <td class="value">65</td>
                     <td class="value">0</td>
                     <td class="value">60</td>
-                    <td class="frame">10</td>
+                    <td class="frame">9</td>
                 </tr>
 
                 <tr>
@@ -1924,7 +2058,7 @@
                     <td class="value">83</td>
                     <td class="value">0</td>
                     <td class="value">45</td>
-                    <td class="frame">4</td>
+                    <td class="frame">3</td>
                 </tr>
 
                 <tr>
@@ -1984,7 +2118,7 @@
                     <td class="value">101</td>
                     <td class="value">0</td>
                     <td class="value">57</td>
-                    <td class="frame">8</td>
+                    <td class="frame">7</td>
                 </tr>
 
                 <tr>
@@ -2014,7 +2148,7 @@
                     <td class="value">70</td>
                     <td class="value">0</td>
                     <td class="value">55</td>
-                    <td class="frame">7</td>
+                    <td class="frame">6</td>
                 </tr>
 
                 <tr>
@@ -2034,7 +2168,7 @@
                     <td class="value">80</td>
                     <td class="value">0</td>
                     <td class="value">60</td>
-                    <td class="frame">4</td>
+                    <td class="frame">3</td>
                 </tr>
 
                 <tr>
@@ -2054,7 +2188,7 @@
                     <td class="value">80</td>
                     <td class="value">0</td>
                     <td class="value">40</td>
-                    <td class="frame">7</td>
+                    <td class="frame">6</td>
                 </tr>
 
                 <tr>
@@ -2084,7 +2218,7 @@
                     <td class="value">83</td>
                     <td class="value">0</td>
                     <td class="value">35</td>
-                    <td class="frame">4</td>
+                    <td class="frame">3</td>
                 </tr>
 
                 <tr>
@@ -2164,7 +2298,7 @@
                     <td class="value">86</td>
                     <td class="value">0</td>
                     <td class="value">64</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -2184,7 +2318,7 @@
                     <td class="value">98</td>
                     <td class="value">0</td>
                     <td class="value">72</td>
-                    <td class="frame">5</td>
+                    <td class="frame">4</td>
                 </tr>
 
                 <tr>
@@ -2214,7 +2348,7 @@
                     <td class="value">98</td>
                     <td class="value">0</td>
                     <td class="value">46</td>
-                    <td class="frame">5</td>
+                    <td class="frame">4</td>
                 </tr>
 
                 <tr>
@@ -2244,7 +2378,7 @@
                     <td class="value">80</td>
                     <td class="value">0</td>
                     <td class="value">50</td>
-                    <td class="frame">7</td>
+                    <td class="frame">6</td>
                 </tr>
 
                 <tr>
@@ -2274,7 +2408,7 @@
                     <td class="value">100</td>
                     <td class="value">0</td>
                     <td class="value">60</td>
-                    <td class="frame">4</td>
+                    <td class="frame">3</td>
                 </tr>
 
                 <tr>
@@ -2284,7 +2418,7 @@
                     <td class="value">100</td>
                     <td class="value">0</td>
                     <td class="value">60</td>
-                    <td class="frame">4</td>
+                    <td class="frame">3</td>
                 </tr>
 
                 <tr>
@@ -2314,7 +2448,7 @@
                     <td class="value">95</td>
                     <td class="value">0</td>
                     <td class="value">65</td>
-                    <td class="frame">8</td>
+                    <td class="frame">7</td>
                 </tr>
 
                 <tr>
@@ -2374,7 +2508,7 @@
                     <td class="value">115</td>
                     <td class="value">0</td>
                     <td class="value">30</td>
-                    <td class="frame">6</td>
+                    <td class="frame">5</td>
                 </tr>
 
                 <tr>
@@ -2529,7 +2663,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-07-01 01:09:54
+            Generated on: 2025-07-01 03:45:18
         </div>
     </div>
 </body>
