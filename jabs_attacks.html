@@ -27,10 +27,10 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
-            position: absolute; /* Position the button */
-            top: 20px; /* From the top */
-            left: 20px; /* From the left */
-            z-index: 1000; /* Ensure it's above other content */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
         }
         .return-button:hover {
             background-color: #5a6268;
@@ -53,22 +53,22 @@
             border-collapse: collapse;
             margin-bottom: 30px;
             background-color: white;
-            font-size: 0.9em; /* Smaller font for more columns */
+            font-size: 0.9em;
         }
         th {
             background-color: #007bff;
             color: white;
-            padding: 10px 8px; /* Slightly less padding */
+            padding: 10px 8px;
             text-align: left;
             font-weight: bold;
-            cursor: pointer; /* Indicate sortable */
+            cursor: pointer;
         }
         th:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #0056b3;
         }
         th.sortable {
             position: relative;
-            padding-right: 25px; /* Make space for the icon */
+            padding-right: 25px;
         }
         th.sortable .sort-icon {
             position: absolute;
@@ -76,14 +76,14 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 0.8em;
-            color: #fff; /* White icon on blue background */
-            opacity: 0.6; /* Slightly transparent */
+            color: #fff;
+            opacity: 0.6;
         }
         th.sortable:hover .sort-icon {
-            opacity: 1; /* Fully opaque on hover */
+            opacity: 1;
         }
         td {
-            padding: 8px; /* Slightly less padding */
+            padding: 8px;
             border-bottom: 1px solid #ddd;
         }
         tr:nth-child(even) {
@@ -100,16 +100,9 @@
             font-weight: bold;
             color: #388e3c;
         }
-        .value { /* General style for numerical values */
+        .value {
             font-weight: bold;
             color: #0056b3;
-        }
-        .fallback-indicator {
-            background-color: #fff3cd;
-            font-size: 0.8em;
-            padding: 2px 6px;
-            border-radius: 3px;
-            margin-left: 5px;
         }
         .not-found {
             background-color: #fff3cd;
@@ -153,32 +146,20 @@
             var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
             table = document.getElementById(tableId);
             switching = true;
-            // Set the sorting direction to ascending:
             dir = "asc";
-            /* Make a loop that will continue until
-            no switching has been done: */
             while (switching) {
-                // Start by saying: no switching is done:
                 switching = false;
                 rows = table.rows;
-                /* Loop through all table rows (except the
-                first, which contains table headers): */
                 for (i = 1; i < (rows.length - 1); i++) {
-                    // Start by saying there should be no switching:
                     shouldSwitch = false;
-                    /* Get the two elements you want to compare,
-                    one from current row and one from the next: */
                     x = rows[i].getElementsByTagName("TD")[n];
                     y = rows[i + 1].getElementsByTagName("TD")[n];
-                    /* Check if the two rows should switch place,
-                    based on the direction, asc or desc: */
-                    var xContent = x.innerHTML.replace(/<[^>]*>/g, "").trim(); // Remove HTML tags and trim
-                    var yContent = y.innerHTML.replace(/<[^>]*>/g, "").trim(); // Remove HTML tags and trim
+                    var xContent = x.innerHTML.replace(/<[^>]*>/g, "").trim();
+                    var yContent = y.innerHTML.replace(/<[^>]*>/g, "").trim();
 
                     var xValue = parseFloat(xContent);
                     var yValue = parseFloat(yContent);
 
-                    // Determine if comparison should be numeric or string
                     var isNumericComparison = !isNaN(xValue) && !isNaN(yValue) && 
                                               xContent !== "N/A" && yContent !== "N/A";
 
@@ -209,15 +190,10 @@
                     }
                 }
                 if (shouldSwitch) {
-                    /* If a switch has been marked, make the switch
-                    and mark that a switch has been done: */
                     rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
                     switching = true;
-                    // Each time a switch is done, increase this count by 1:
                     switchcount ++;
                 } else {
-                    /* If no switching has been done AND the direction is "asc",
-                    set the direction to "desc" and run the while loop again. */
                     if (switchcount == 0 && dir == "asc") {
                         dir = "desc";
                         switching = true;
@@ -226,18 +202,15 @@
             }
         }
 
-        // Function to attach sortable behavior to all tables
         document.addEventListener('DOMContentLoaded', function() {
             var tables = document.querySelectorAll('table');
             tables.forEach(function(table) {
                 var ths = table.querySelectorAll('th');
                 ths.forEach(function(th, index) {
-                    // Enable sorting for all columns, including 'Character' (index 0)
                     th.addEventListener('click', function() {
                         sortTable(table.id, index);
                     });
                 });
-                // Assign a unique ID to each table for the sortTable function
                 if (!table.id) {
                     table.id = 'sortableTable_' + Math.random().toString(36).substr(2, 9);
                 }
@@ -2731,7 +2704,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-07-03 00:08:07
+            Generated on: 2025-07-03 15:26:56
         </div>
     </div>
 </body>
