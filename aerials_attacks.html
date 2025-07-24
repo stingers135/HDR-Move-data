@@ -153,18 +153,51 @@
             color: #f57c00;  /* Orange for neutral/small advantage */
         }
         
-        /* Add this explanation section styling too */
-        .shield-advantage-explanation {
-            background-color: #e8f5e8;
-            border: 2px solid #4caf50;
-            border-radius: 8px;
-            padding: 15px;
-            margin-top: 20px;
-            font-size: 0.9em;
+        /* Tooltip styles */
+        .tooltip {
+            position: relative;
+            cursor: help;
         }
-        .shield-advantage-explanation h4 {
-            color: #2e7d32;
-            margin-top: 0;
+        .tooltip .tooltip-content {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            z-index: 1000;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            line-height: 1.4;
+            white-space: nowrap;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: opacity 0.3s, visibility 0.3s;
+            max-width: 300px;
+            white-space: normal;
+        }
+        .tooltip .tooltip-content::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #333 transparent transparent transparent;
+        }
+        .tooltip:hover .tooltip-content {
+            visibility: visible;
+            opacity: 1;
+        }
+        .has-tooltip {
+            background-color: #fff3e0 !important;
+        }
+        .has-tooltip:hover {
+            background-color: #ffe0b2 !important;
         }
     </style>
     <script>
@@ -268,7 +301,7 @@
             </thead>
             <tbody>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Banjo & Kazooie</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -280,7 +313,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bayonetta</td>
                     <td class="damage">8</td>
                     <td class="value">48</td>
@@ -292,7 +325,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser</td>
                     <td class="damage">12</td>
                     <td class="value">51</td>
@@ -304,7 +337,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser Jr.</td>
                     <td class="damage">8</td>
                     <td class="value">60</td>
@@ -316,7 +349,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Byleth</td>
                     <td class="damage">5</td>
                     <td class="value">54</td>
@@ -328,7 +361,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Captain Falcon</td>
                     <td class="damage">6.5</td>
                     <td class="value">361</td>
@@ -340,7 +373,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Charizard</td>
                     <td class="damage">9</td>
                     <td class="value">70</td>
@@ -352,7 +385,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Chrom</td>
                     <td class="damage">7</td>
                     <td class="value">55</td>
@@ -364,7 +397,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Cloud</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -376,7 +409,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Corrin</td>
                     <td class="damage">10</td>
                     <td class="value">50</td>
@@ -388,7 +421,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Daisy</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -400,7 +433,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Pit</td>
                     <td class="damage">7</td>
                     <td class="value">361</td>
@@ -412,7 +445,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Samus</td>
                     <td class="damage">6.4</td>
                     <td class="value">48</td>
@@ -424,7 +457,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Diddy Kong</td>
                     <td class="damage">10</td>
                     <td class="value">75</td>
@@ -436,7 +469,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Donkey Kong</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -448,7 +481,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dr.Mario</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -460,7 +493,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Duck Hunt</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -472,7 +505,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Falco</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -484,7 +517,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Fox</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -496,7 +529,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ganondorf</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -508,7 +541,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Greninja</td>
                     <td class="damage">11</td>
                     <td class="value">65</td>
@@ -520,7 +553,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Hero</td>
                     <td class="damage">10</td>
                     <td class="value">60</td>
@@ -532,7 +565,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ice Climbers</td>
                     <td class="damage">7</td>
                     <td class="value">361</td>
@@ -544,7 +577,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ike</td>
                     <td class="damage">14</td>
                     <td class="value">65</td>
@@ -556,7 +589,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Incineroar</td>
                     <td class="damage">10</td>
                     <td class="value">64</td>
@@ -568,7 +601,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Inkling</td>
                     <td class="damage">7</td>
                     <td class="value">55</td>
@@ -580,7 +613,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Isabelle</td>
                     <td class="damage">11</td>
                     <td class="value">50</td>
@@ -592,7 +625,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ivysaur</td>
                     <td class="damage">4</td>
                     <td class="value">361</td>
@@ -604,7 +637,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Jigglypuff</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -616,7 +649,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Joker</td>
                     <td class="damage">9</td>
                     <td class="value">52</td>
@@ -628,7 +661,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kazuya</td>
                     <td class="damage">10</td>
                     <td class="value">280</td>
@@ -640,7 +673,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ken</td>
                     <td class="damage">8</td>
                     <td class="value">361</td>
@@ -652,7 +685,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King Dedede</td>
                     <td class="damage">12</td>
                     <td class="value">60</td>
@@ -664,7 +697,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King K. Rool</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -676,7 +709,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kirby</td>
                     <td class="damage">12</td>
                     <td class="value">45</td>
@@ -688,7 +721,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Link</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -700,7 +733,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Little Mac</td>
                     <td class="damage">6</td>
                     <td class="value">361</td>
@@ -712,7 +745,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucario</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -724,7 +757,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucas</td>
                     <td class="damage">6</td>
                     <td class="value">50</td>
@@ -736,7 +769,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucina</td>
                     <td class="damage">7</td>
                     <td class="value">361</td>
@@ -748,7 +781,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Luigi</td>
                     <td class="damage">12</td>
                     <td class="value">90</td>
@@ -760,7 +793,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mario</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -772,7 +805,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Marth</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -784,7 +817,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mega Man</td>
                     <td class="damage">7</td>
                     <td class="value">62</td>
@@ -796,7 +829,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Meta Knight</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -808,7 +841,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mewtwo</td>
                     <td class="damage">4</td>
                     <td class="value">361</td>
@@ -820,7 +853,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Brawler</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -832,7 +865,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Gunner</td>
                     <td class="damage">13</td>
                     <td class="value">50</td>
@@ -844,7 +877,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Swordfighter</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -856,7 +889,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Min Min</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -868,7 +901,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mr.Game & Watch</td>
                     <td class="damage">7.3</td>
                     <td class="value">40</td>
@@ -880,7 +913,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mythra</td>
                     <td class="damage">5</td>
                     <td class="value">361</td>
@@ -892,7 +925,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ness</td>
                     <td class="damage">8</td>
                     <td class="value">53</td>
@@ -904,8 +937,12 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Blue*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Blue*<div class="tooltip-content"><strong>Blue Pikmin - Neutral Air</strong><br>
+                             <em>Base Damage:</em> 8.8<br>
+                             <em>Base Angle:</em> 75°<br>
+                             <em>Damage Multiplier:</em> ×1<br><em>Final Damage:</em> 8.8<br>
+                              <em>Final Angle:</em> 75°</div></td>
                     <td class="damage">8.8*</td>
                     <td class="value">75*</td>
                     <td class="value">100</td>
@@ -916,7 +953,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Olimar - No Pikmin</td>
                     <td class="damage">5</td>
                     <td class="value">75</td>
@@ -928,8 +965,12 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Purple*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Purple*<div class="tooltip-content"><strong>Purple Pikmin - Neutral Air</strong><br>
+                             <em>Base Damage:</em> 8.8<br>
+                             <em>Base Angle:</em> 75°<br>
+                             <em>Damage Multiplier:</em> ×1.2<br><em>Final Damage:</em> 10.6<br>
+                              <em>Final Angle:</em> 75°</div></td>
                     <td class="damage">10.6*</td>
                     <td class="value">75*</td>
                     <td class="value">100</td>
@@ -940,8 +981,12 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Red*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Red*<div class="tooltip-content"><strong>Red Pikmin - Neutral Air</strong><br>
+                             <em>Base Damage:</em> 8.8<br>
+                             <em>Base Angle:</em> 75°<br>
+                             <em>Damage Multiplier:</em> ×1.05<br><em>Final Damage:</em> 9.2<br>
+                              <em>Final Angle:</em> 75°</div></td>
                     <td class="damage">9.2*</td>
                     <td class="value">75*</td>
                     <td class="value">100</td>
@@ -952,8 +997,12 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - White*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - White*<div class="tooltip-content"><strong>White Pikmin - Neutral Air</strong><br>
+                             <em>Base Damage:</em> 8.8<br>
+                             <em>Base Angle:</em> 75°<br>
+                             <em>Damage Multiplier:</em> ×0.75<br><em>Final Damage:</em> 6.6<br>
+                              <em>Final Angle:</em> 75°</div></td>
                     <td class="damage">6.6*</td>
                     <td class="value">75*</td>
                     <td class="value">100</td>
@@ -964,8 +1013,12 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Yellow*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Yellow*<div class="tooltip-content"><strong>Yellow Pikmin - Neutral Air</strong><br>
+                             <em>Base Damage:</em> 8.8<br>
+                             <em>Base Angle:</em> 75°<br>
+                             <em>Damage Multiplier:</em> ×0.94<br><em>Angle Modifier:</em> +8°<br><em>Final Damage:</em> 8.3<br>
+                              <em>Final Angle:</em> 83°</div></td>
                     <td class="damage">8.3*</td>
                     <td class="value">83*</td>
                     <td class="value">100</td>
@@ -976,7 +1029,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pac-Man</td>
                     <td class="damage">10</td>
                     <td class="value">50</td>
@@ -988,7 +1041,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Palutena</td>
                     <td class="damage">5</td>
                     <td class="value">50</td>
@@ -1000,7 +1053,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Peach</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -1012,7 +1065,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pichu</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -1024,7 +1077,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pikachu</td>
                     <td class="damage">9</td>
                     <td class="value">361</td>
@@ -1036,7 +1089,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Piranha Plant</td>
                     <td class="damage">3</td>
                     <td class="value">55</td>
@@ -1048,7 +1101,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pit</td>
                     <td class="damage">4.5</td>
                     <td class="value">361</td>
@@ -1060,7 +1113,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pyra</td>
                     <td class="damage">12</td>
                     <td class="value">73</td>
@@ -1072,7 +1125,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>R.O.B.</td>
                     <td class="damage">11</td>
                     <td class="value">75</td>
@@ -1084,7 +1137,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Richter</td>
                     <td class="damage">10</td>
                     <td class="value">45</td>
@@ -1096,7 +1149,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ridley</td>
                     <td class="damage">12</td>
                     <td class="value">44</td>
@@ -1108,7 +1161,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Robin</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -1120,7 +1173,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Rosalina & Luma</td>
                     <td class="damage">10</td>
                     <td class="value">72</td>
@@ -1132,7 +1185,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Roy</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -1144,7 +1197,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ryu</td>
                     <td class="damage">8</td>
                     <td class="value">361</td>
@@ -1156,7 +1209,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Samus</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -1168,7 +1221,7 @@
                     <td class="shield-advantage-positive">2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sephiroth</td>
                     <td class="damage">8.5</td>
                     <td class="value">60</td>
@@ -1180,7 +1233,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sheik</td>
                     <td class="damage">8</td>
                     <td class="value">361</td>
@@ -1192,7 +1245,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Shulk</td>
                     <td class="damage">10</td>
                     <td class="value">68</td>
@@ -1204,7 +1257,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Simon</td>
                     <td class="damage">5</td>
                     <td class="value">60</td>
@@ -1216,7 +1269,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Snake</td>
                     <td class="damage">7</td>
                     <td class="value">361</td>
@@ -1228,7 +1281,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sonic</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -1240,7 +1293,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sora</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -1252,7 +1305,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Squirtle</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -1264,7 +1317,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Steve</td>
                     <td class="damage">2.5</td>
                     <td class="value">45</td>
@@ -1276,7 +1329,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Terry</td>
                     <td class="damage">8</td>
                     <td class="value">70</td>
@@ -1288,7 +1341,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Toon Link</td>
                     <td class="damage">10.5</td>
                     <td class="value">50</td>
@@ -1300,7 +1353,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Villager</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -1312,7 +1365,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wario</td>
                     <td class="damage">6</td>
                     <td class="value">40</td>
@@ -1324,7 +1377,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wii Fit Trainer</td>
                     <td class="damage">6</td>
                     <td class="value">361</td>
@@ -1336,7 +1389,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wolf</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -1348,7 +1401,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Yoshi</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -1360,7 +1413,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Young Link</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -1372,7 +1425,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zelda</td>
                     <td class="damage">5</td>
                     <td class="value">50</td>
@@ -1384,7 +1437,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zero Suit Samus</td>
                     <td class="damage">12</td>
                     <td class="value">55</td>
@@ -1398,83 +1451,6 @@
 
             </tbody>
         </table>
-
-        <div style="background-color: #f0e6ff; border: 2px solid #9c88ff; border-radius: 8px; padding: 20px; margin-top: 20px;">
-            <h3 style="color: #5a4fcf; margin-top: 0; font-size: 1.1em;">* Olimar Neutral Air Pikmin Multipliers</h3>
-            
-            <div style="margin-bottom: 15px;">
-                <strong>Base Values from Script:</strong>
-                <ul style="margin: 5px 0; padding-left: 20px;">
-                    <li>Damage: 8.8</li>
-                    <li>Angle: 75°</li>
-                    <li>KBG: 100°</li>
-                    <li>BKB: 40</li>
-                </ul>
-            </div>
-            
-            <div style="margin-bottom: 15px;"><strong>Pikmin Multipliers:</strong></div>
-            
-            <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 15px;">
-                <thead>
-                    <tr style="background-color: #4285f4; color: white;">
-                        <th style="padding: 8px; text-align: left; border: 1px solid #ddd;">Pikmin</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Damage Multiplier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Angle Modifier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Damage</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Angle</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Red</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.05</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">9.2</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">75°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Yellow</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.94</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+8°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">8.3</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">83°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Blue</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">8.8</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">75°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">White</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.75</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">6.6</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">75°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Purple</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.2</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">10.6</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">75°</td>
-                    </tr>
-
-                </tbody>
-            </table>
-            
-            <div style="font-style: italic; margin-top: 10px;">
-                <em>Final damage = Base damage × Pikmin multiplier</em><br>
-                <em>Final angle = Base angle + Pikmin angle modifier</em><br>
-                <strong>Note:</strong> <em>"No Pikmin" entries use Olimar's base aerial attacks without Pikmin assistance.</em>
-            </div>
-        </div>
 
         <div class="fallback-info">
             <h3>Characters Found in Fallback Location (1)</h3>
@@ -1502,7 +1478,7 @@
             </thead>
             <tbody>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Banjo & Kazooie</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -1514,7 +1490,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bayonetta</td>
                     <td class="damage">3</td>
                     <td class="value">65</td>
@@ -1526,7 +1502,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -1538,7 +1514,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser Jr.</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -1550,7 +1526,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Byleth</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -1562,7 +1538,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Captain Falcon</td>
                     <td class="damage">17</td>
                     <td class="value">32</td>
@@ -1574,7 +1550,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Charizard</td>
                     <td class="damage">11</td>
                     <td class="value">45</td>
@@ -1586,7 +1562,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Chrom</td>
                     <td class="damage">9</td>
                     <td class="value">45</td>
@@ -1598,7 +1574,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Cloud</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -1610,7 +1586,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Corrin</td>
                     <td class="damage">11</td>
                     <td class="value">67</td>
@@ -1622,7 +1598,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Daisy</td>
                     <td class="damage">15</td>
                     <td class="value">42</td>
@@ -1634,7 +1610,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Pit</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -1646,7 +1622,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Samus</td>
                     <td class="damage">12</td>
                     <td class="value">38</td>
@@ -1658,7 +1634,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Diddy Kong</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -1670,7 +1646,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Donkey Kong</td>
                     <td class="damage">18</td>
                     <td class="value">361</td>
@@ -1682,7 +1658,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dr.Mario</td>
                     <td class="damage">17</td>
                     <td class="value">50</td>
@@ -1694,7 +1670,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Duck Hunt</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -1706,7 +1682,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Falco</td>
                     <td class="damage">4</td>
                     <td class="value">50</td>
@@ -1718,7 +1694,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Fox</td>
                     <td class="damage">5.8</td>
                     <td class="value">60</td>
@@ -1730,7 +1706,7 @@
                     <td class="shield-advantage-negative">-10</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ganondorf</td>
                     <td class="damage">18</td>
                     <td class="value">361</td>
@@ -1742,7 +1718,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Greninja</td>
                     <td class="damage">14</td>
                     <td class="value">45</td>
@@ -1754,7 +1730,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Hero</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -1766,7 +1742,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ice Climbers</td>
                     <td class="damage">12</td>
                     <td class="value">285</td>
@@ -1778,7 +1754,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ike</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -1790,7 +1766,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Incineroar</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -1802,7 +1778,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Inkling</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -1814,7 +1790,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Isabelle</td>
                     <td class="damage">9</td>
                     <td class="value">70</td>
@@ -1826,7 +1802,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ivysaur</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -1838,7 +1814,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Jigglypuff</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -1850,7 +1826,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Joker</td>
                     <td class="damage">9</td>
                     <td class="value">361</td>
@@ -1862,7 +1838,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kazuya</td>
                     <td class="damage">11</td>
                     <td class="value">45</td>
@@ -1874,7 +1850,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ken</td>
                     <td class="damage">14</td>
                     <td class="value">48</td>
@@ -1886,7 +1862,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King Dedede</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -1898,7 +1874,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King K. Rool</td>
                     <td class="damage">16</td>
                     <td class="value">361</td>
@@ -1910,7 +1886,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kirby</td>
                     <td class="damage">8</td>
                     <td class="value">361</td>
@@ -1922,7 +1898,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Link</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -1934,7 +1910,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Little Mac</td>
                     <td class="damage">5</td>
                     <td class="value">50</td>
@@ -1946,7 +1922,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucario</td>
                     <td class="damage">6.5</td>
                     <td class="value">71</td>
@@ -1958,7 +1934,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucas</td>
                     <td class="damage">10</td>
                     <td class="value">45</td>
@@ -1970,7 +1946,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucina</td>
                     <td class="damage">9</td>
                     <td class="value">55</td>
@@ -1982,7 +1958,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Luigi</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -1994,7 +1970,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mario</td>
                     <td class="damage">15</td>
                     <td class="value">280</td>
@@ -2006,7 +1982,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Marth</td>
                     <td class="damage">13</td>
                     <td class="value">67</td>
@@ -2018,7 +1994,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mega Man</td>
                     <td class="damage">13</td>
                     <td class="value">55</td>
@@ -2030,7 +2006,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Meta Knight</td>
                     <td class="damage">4</td>
                     <td class="value">361</td>
@@ -2042,7 +2018,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mewtwo</td>
                     <td class="damage">13</td>
                     <td class="value">84</td>
@@ -2054,7 +2030,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Brawler</td>
                     <td class="damage">6</td>
                     <td class="value">361</td>
@@ -2066,7 +2042,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Gunner</td>
                     <td class="damage">8</td>
                     <td class="value">48</td>
@@ -2078,7 +2054,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Swordfighter</td>
                     <td class="damage">6</td>
                     <td class="value">50</td>
@@ -2090,7 +2066,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Min Min</td>
                     <td class="damage">15</td>
                     <td class="value">274</td>
@@ -2102,7 +2078,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mr.Game & Watch</td>
                     <td class="damage">16</td>
                     <td class="value">50</td>
@@ -2114,7 +2090,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mythra</td>
                     <td class="damage">9</td>
                     <td class="value">50</td>
@@ -2126,7 +2102,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ness</td>
                     <td class="damage">16</td>
                     <td class="value">361</td>
@@ -2138,8 +2114,12 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Blue*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Blue*<div class="tooltip-content"><strong>Blue Pikmin - Forward Air</strong><br>
+                             <em>Base Damage:</em> 8.0<br>
+                             <em>Base Angle:</em> 50°<br>
+                             <em>Damage Multiplier:</em> ×1<br><em>Final Damage:</em> 8.0<br>
+                              <em>Final Angle:</em> 50°</div></td>
                     <td class="damage">8.0*</td>
                     <td class="value">50*</td>
                     <td class="value">76</td>
@@ -2150,7 +2130,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Olimar - No Pikmin</td>
                     <td class="damage">5</td>
                     <td class="value">55</td>
@@ -2162,8 +2142,12 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Purple*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Purple*<div class="tooltip-content"><strong>Purple Pikmin - Forward Air</strong><br>
+                             <em>Base Damage:</em> 8.0<br>
+                             <em>Base Angle:</em> 50°<br>
+                             <em>Damage Multiplier:</em> ×1.2<br><em>Final Damage:</em> 9.6<br>
+                              <em>Final Angle:</em> 50°</div></td>
                     <td class="damage">9.6*</td>
                     <td class="value">50*</td>
                     <td class="value">76</td>
@@ -2174,8 +2158,12 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Red*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Red*<div class="tooltip-content"><strong>Red Pikmin - Forward Air</strong><br>
+                             <em>Base Damage:</em> 8.0<br>
+                             <em>Base Angle:</em> 50°<br>
+                             <em>Damage Multiplier:</em> ×1.05<br><em>Final Damage:</em> 8.4<br>
+                              <em>Final Angle:</em> 50°</div></td>
                     <td class="damage">8.4*</td>
                     <td class="value">50*</td>
                     <td class="value">76</td>
@@ -2186,8 +2174,12 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - White*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - White*<div class="tooltip-content"><strong>White Pikmin - Forward Air</strong><br>
+                             <em>Base Damage:</em> 8.0<br>
+                             <em>Base Angle:</em> 50°<br>
+                             <em>Damage Multiplier:</em> ×0.75<br><em>Final Damage:</em> 6.0<br>
+                              <em>Final Angle:</em> 50°</div></td>
                     <td class="damage">6.0*</td>
                     <td class="value">50*</td>
                     <td class="value">76</td>
@@ -2198,8 +2190,12 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Yellow*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Yellow*<div class="tooltip-content"><strong>Yellow Pikmin - Forward Air</strong><br>
+                             <em>Base Damage:</em> 8.0<br>
+                             <em>Base Angle:</em> 50°<br>
+                             <em>Damage Multiplier:</em> ×0.94<br><em>Angle Modifier:</em> +8°<br><em>Final Damage:</em> 7.5<br>
+                              <em>Final Angle:</em> 58°</div></td>
                     <td class="damage">7.5*</td>
                     <td class="value">58*</td>
                     <td class="value">76</td>
@@ -2210,7 +2206,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pac-Man</td>
                     <td class="damage">7</td>
                     <td class="value">46</td>
@@ -2222,7 +2218,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Palutena</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -2234,7 +2230,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Peach</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -2246,7 +2242,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pichu</td>
                     <td class="damage">13</td>
                     <td class="value">45</td>
@@ -2258,7 +2254,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pikachu</td>
                     <td class="damage">5</td>
                     <td class="value">361</td>
@@ -2270,7 +2266,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Piranha Plant</td>
                     <td class="damage">11</td>
                     <td class="value">40</td>
@@ -2282,7 +2278,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pit</td>
                     <td class="damage">8</td>
                     <td class="value">361</td>
@@ -2294,7 +2290,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pyra</td>
                     <td class="damage">14</td>
                     <td class="value">43</td>
@@ -2306,7 +2302,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>R.O.B.</td>
                     <td class="damage">9</td>
                     <td class="value">50</td>
@@ -2318,7 +2314,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Richter</td>
                     <td class="damage">10</td>
                     <td class="value">120</td>
@@ -2330,7 +2326,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ridley</td>
                     <td class="damage">7</td>
                     <td class="value">361</td>
@@ -2342,7 +2338,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Robin</td>
                     <td class="damage">13</td>
                     <td class="value">67</td>
@@ -2354,7 +2350,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Rosalina & Luma</td>
                     <td class="damage">4</td>
                     <td class="value">361</td>
@@ -2366,7 +2362,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Roy</td>
                     <td class="damage">11</td>
                     <td class="value">50</td>
@@ -2378,7 +2374,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ryu</td>
                     <td class="damage">14</td>
                     <td class="value">61</td>
@@ -2390,7 +2386,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Samus</td>
                     <td class="damage">6</td>
                     <td class="value">361</td>
@@ -2402,7 +2398,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sephiroth</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -2414,7 +2410,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sheik</td>
                     <td class="damage">7</td>
                     <td class="value">60</td>
@@ -2426,7 +2422,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Shulk</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -2438,7 +2434,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Simon</td>
                     <td class="damage">12</td>
                     <td class="value">45</td>
@@ -2450,7 +2446,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Snake</td>
                     <td class="damage">15</td>
                     <td class="value">269</td>
@@ -2462,7 +2458,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sonic</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -2474,7 +2470,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sora</td>
                     <td class="damage">4.5</td>
                     <td class="value">82</td>
@@ -2486,7 +2482,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Squirtle</td>
                     <td class="damage">9</td>
                     <td class="value">48</td>
@@ -2498,7 +2494,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Steve</td>
                     <td class="damage">8</td>
                     <td class="value">361</td>
@@ -2510,7 +2506,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Terry</td>
                     <td class="damage">11</td>
                     <td class="value">67</td>
@@ -2522,7 +2518,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Toon Link</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -2534,7 +2530,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Villager</td>
                     <td class="damage">7</td>
                     <td class="value">60</td>
@@ -2546,7 +2542,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wario</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -2558,7 +2554,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wii Fit Trainer</td>
                     <td class="damage">12</td>
                     <td class="value">50</td>
@@ -2570,7 +2566,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wolf</td>
                     <td class="damage">11</td>
                     <td class="value">60</td>
@@ -2582,7 +2578,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Yoshi</td>
                     <td class="damage">16</td>
                     <td class="value">270</td>
@@ -2594,7 +2590,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Young Link</td>
                     <td class="damage">8</td>
                     <td class="value">50</td>
@@ -2606,7 +2602,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zelda</td>
                     <td class="damage">18</td>
                     <td class="value">361</td>
@@ -2618,7 +2614,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zero Suit Samus</td>
                     <td class="damage">10</td>
                     <td class="value">40</td>
@@ -2632,83 +2628,6 @@
 
             </tbody>
         </table>
-
-        <div style="background-color: #f0e6ff; border: 2px solid #9c88ff; border-radius: 8px; padding: 20px; margin-top: 20px;">
-            <h3 style="color: #5a4fcf; margin-top: 0; font-size: 1.1em;">* Olimar Forward Air Pikmin Multipliers</h3>
-            
-            <div style="margin-bottom: 15px;">
-                <strong>Base Values from Script:</strong>
-                <ul style="margin: 5px 0; padding-left: 20px;">
-                    <li>Damage: 8.0</li>
-                    <li>Angle: 50°</li>
-                    <li>KBG: 76°</li>
-                    <li>BKB: 60</li>
-                </ul>
-            </div>
-            
-            <div style="margin-bottom: 15px;"><strong>Pikmin Multipliers:</strong></div>
-            
-            <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 15px;">
-                <thead>
-                    <tr style="background-color: #4285f4; color: white;">
-                        <th style="padding: 8px; text-align: left; border: 1px solid #ddd;">Pikmin</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Damage Multiplier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Angle Modifier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Damage</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Angle</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Red</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.05</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">8.4</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">50°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Yellow</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.94</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+8°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">7.5</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">58°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Blue</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">8</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">50°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">White</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.75</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">6</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">50°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Purple</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.2</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">9.6</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">50°</td>
-                    </tr>
-
-                </tbody>
-            </table>
-            
-            <div style="font-style: italic; margin-top: 10px;">
-                <em>Final damage = Base damage × Pikmin multiplier</em><br>
-                <em>Final angle = Base angle + Pikmin angle modifier</em><br>
-                <strong>Note:</strong> <em>"No Pikmin" entries use Olimar's base aerial attacks without Pikmin assistance.</em>
-            </div>
-        </div>
 
         <h2>Back Air</h2>
 
@@ -2728,7 +2647,7 @@
             </thead>
             <tbody>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Banjo & Kazooie</td>
                     <td class="damage">5</td>
                     <td class="value">50</td>
@@ -2740,7 +2659,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bayonetta</td>
                     <td class="damage">12</td>
                     <td class="value">38</td>
@@ -2752,7 +2671,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser</td>
                     <td class="damage">16</td>
                     <td class="value">361</td>
@@ -2764,7 +2683,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser Jr.</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -2776,7 +2695,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Byleth</td>
                     <td class="damage">15</td>
                     <td class="value">38</td>
@@ -2788,7 +2707,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Captain Falcon</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -2800,7 +2719,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Charizard</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -2812,7 +2731,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Chrom</td>
                     <td class="damage">15</td>
                     <td class="value">42</td>
@@ -2824,7 +2743,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Cloud</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -2836,7 +2755,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Corrin</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -2848,7 +2767,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Daisy</td>
                     <td class="damage">10</td>
                     <td class="value">55</td>
@@ -2860,7 +2779,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Pit</td>
                     <td class="damage">13</td>
                     <td class="value">43</td>
@@ -2872,7 +2791,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Samus</td>
                     <td class="damage">15</td>
                     <td class="value">43</td>
@@ -2884,7 +2803,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Diddy Kong</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -2896,7 +2815,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Donkey Kong</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -2908,7 +2827,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dr.Mario</td>
                     <td class="damage">13</td>
                     <td class="value">38</td>
@@ -2920,7 +2839,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Duck Hunt</td>
                     <td class="damage">13.5</td>
                     <td class="value">361</td>
@@ -2932,7 +2851,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Falco</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -2944,7 +2863,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Fox</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -2956,7 +2875,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ganondorf</td>
                     <td class="damage">16.5</td>
                     <td class="value">361</td>
@@ -2968,7 +2887,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Greninja</td>
                     <td class="damage">6</td>
                     <td class="value">55</td>
@@ -2980,7 +2899,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Hero</td>
                     <td class="damage">14</td>
                     <td class="value">40</td>
@@ -2992,7 +2911,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ice Climbers</td>
                     <td class="damage">9</td>
                     <td class="value">361</td>
@@ -3004,7 +2923,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ike</td>
                     <td class="damage">17</td>
                     <td class="value">361</td>
@@ -3016,7 +2935,7 @@
                     <td class="shield-advantage-positive">2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Incineroar</td>
                     <td class="damage">14</td>
                     <td class="value">45</td>
@@ -3028,7 +2947,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Inkling</td>
                     <td class="damage">9</td>
                     <td class="value">361</td>
@@ -3040,7 +2959,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Isabelle</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -3052,7 +2971,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ivysaur</td>
                     <td class="damage">9</td>
                     <td class="value">80</td>
@@ -3064,7 +2983,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Jigglypuff</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -3076,7 +2995,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Joker</td>
                     <td class="damage">14</td>
                     <td class="value">45</td>
@@ -3088,7 +3007,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kazuya</td>
                     <td class="damage">16</td>
                     <td class="value">40</td>
@@ -3100,7 +3019,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ken</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -3112,7 +3031,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King Dedede</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3124,7 +3043,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King K. Rool</td>
                     <td class="damage">19</td>
                     <td class="value">270</td>
@@ -3136,7 +3055,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kirby</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -3148,7 +3067,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Link</td>
                     <td class="damage">7</td>
                     <td class="value">45</td>
@@ -3160,7 +3079,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Little Mac</td>
                     <td class="damage">7</td>
                     <td class="value">354</td>
@@ -3172,7 +3091,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucario</td>
                     <td class="damage">14.5</td>
                     <td class="value">361</td>
@@ -3184,7 +3103,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucas</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -3196,7 +3115,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucina</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3208,7 +3127,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Luigi</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -3220,7 +3139,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mario</td>
                     <td class="damage">11</td>
                     <td class="value">38</td>
@@ -3232,7 +3151,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Marth</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3244,7 +3163,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mega Man</td>
                     <td class="damage">5</td>
                     <td class="value">361</td>
@@ -3256,7 +3175,7 @@
                     <td class="shield-advantage-negative">-10</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Meta Knight</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -3268,7 +3187,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mewtwo</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3280,7 +3199,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Brawler</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3292,7 +3211,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Gunner</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3304,7 +3223,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Swordfighter</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -3316,7 +3235,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Min Min</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3328,7 +3247,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mr.Game & Watch</td>
                     <td class="damage">5</td>
                     <td class="value">60</td>
@@ -3340,7 +3259,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mythra</td>
                     <td class="damage">8.5</td>
                     <td class="value">77</td>
@@ -3352,7 +3271,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ness</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -3364,8 +3283,12 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Blue*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Blue*<div class="tooltip-content"><strong>Blue Pikmin - Back Air</strong><br>
+                             <em>Base Damage:</em> 12.0<br>
+                             <em>Base Angle:</em> 40°<br>
+                             <em>Damage Multiplier:</em> ×1<br><em>Final Damage:</em> 12.0<br>
+                              <em>Final Angle:</em> 40°</div></td>
                     <td class="damage">12.0*</td>
                     <td class="value">40*</td>
                     <td class="value">110</td>
@@ -3376,7 +3299,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Olimar - No Pikmin</td>
                     <td class="damage">6</td>
                     <td class="value">35</td>
@@ -3388,8 +3311,12 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Purple*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Purple*<div class="tooltip-content"><strong>Purple Pikmin - Back Air</strong><br>
+                             <em>Base Damage:</em> 12.0<br>
+                             <em>Base Angle:</em> 40°<br>
+                             <em>Damage Multiplier:</em> ×1.2<br><em>Final Damage:</em> 14.4<br>
+                              <em>Final Angle:</em> 40°</div></td>
                     <td class="damage">14.4*</td>
                     <td class="value">40*</td>
                     <td class="value">110</td>
@@ -3400,8 +3327,12 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Red*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Red*<div class="tooltip-content"><strong>Red Pikmin - Back Air</strong><br>
+                             <em>Base Damage:</em> 12.0<br>
+                             <em>Base Angle:</em> 40°<br>
+                             <em>Damage Multiplier:</em> ×1.05<br><em>Final Damage:</em> 12.6<br>
+                              <em>Final Angle:</em> 40°</div></td>
                     <td class="damage">12.6*</td>
                     <td class="value">40*</td>
                     <td class="value">110</td>
@@ -3412,8 +3343,12 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - White*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - White*<div class="tooltip-content"><strong>White Pikmin - Back Air</strong><br>
+                             <em>Base Damage:</em> 12.0<br>
+                             <em>Base Angle:</em> 40°<br>
+                             <em>Damage Multiplier:</em> ×0.75<br><em>Final Damage:</em> 9.0<br>
+                              <em>Final Angle:</em> 40°</div></td>
                     <td class="damage">9.0*</td>
                     <td class="value">40*</td>
                     <td class="value">110</td>
@@ -3424,8 +3359,12 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Yellow*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Yellow*<div class="tooltip-content"><strong>Yellow Pikmin - Back Air</strong><br>
+                             <em>Base Damage:</em> 12.0<br>
+                             <em>Base Angle:</em> 40°<br>
+                             <em>Damage Multiplier:</em> ×0.94<br><em>Angle Modifier:</em> +8°<br><em>Final Damage:</em> 11.3<br>
+                              <em>Final Angle:</em> 48°</div></td>
                     <td class="damage">11.3*</td>
                     <td class="value">48*</td>
                     <td class="value">110</td>
@@ -3436,7 +3375,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pac-Man</td>
                     <td class="damage">13.5</td>
                     <td class="value">361</td>
@@ -3448,7 +3387,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Palutena</td>
                     <td class="damage">16</td>
                     <td class="value">361</td>
@@ -3460,7 +3399,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Peach</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3472,7 +3411,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pichu</td>
                     <td class="damage">2.5</td>
                     <td class="value">42</td>
@@ -3484,7 +3423,7 @@
                     <td class="shield-advantage-negative">-10</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pikachu</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3496,7 +3435,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Piranha Plant</td>
                     <td class="damage">15</td>
                     <td class="value">50</td>
@@ -3508,7 +3447,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pit</td>
                     <td class="damage">13</td>
                     <td class="value">43</td>
@@ -3520,7 +3459,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pyra</td>
                     <td class="damage">16</td>
                     <td class="value">60</td>
@@ -3532,7 +3471,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>R.O.B.</td>
                     <td class="damage">12</td>
                     <td class="value">35</td>
@@ -3544,7 +3483,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Richter</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -3556,7 +3495,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ridley</td>
                     <td class="damage">16</td>
                     <td class="value">361</td>
@@ -3568,7 +3507,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Robin</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -3580,7 +3519,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Rosalina & Luma</td>
                     <td class="damage">11</td>
                     <td class="value">43</td>
@@ -3592,7 +3531,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Roy</td>
                     <td class="damage">14</td>
                     <td class="value">50</td>
@@ -3604,7 +3543,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ryu</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -3616,7 +3555,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Samus</td>
                     <td class="damage">14</td>
                     <td class="value">40</td>
@@ -3628,7 +3567,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sephiroth</td>
                     <td class="damage">14.5</td>
                     <td class="value">42</td>
@@ -3640,7 +3579,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sheik</td>
                     <td class="damage">11</td>
                     <td class="value">361</td>
@@ -3652,7 +3591,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Shulk</td>
                     <td class="damage">15.5</td>
                     <td class="value">361</td>
@@ -3664,7 +3603,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Simon</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -3676,7 +3615,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Snake</td>
                     <td class="damage">14</td>
                     <td class="value">50</td>
@@ -3688,7 +3627,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sonic</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -3700,7 +3639,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sora</td>
                     <td class="damage">13.5</td>
                     <td class="value">361</td>
@@ -3712,7 +3651,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Squirtle</td>
                     <td class="damage">5</td>
                     <td class="value">361</td>
@@ -3724,7 +3663,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Steve</td>
                     <td class="damage">9</td>
                     <td class="value">50</td>
@@ -3736,7 +3675,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Terry</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -3748,7 +3687,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Toon Link</td>
                     <td class="damage">9</td>
                     <td class="value">67</td>
@@ -3760,7 +3699,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Villager</td>
                     <td class="damage">7</td>
                     <td class="value">361</td>
@@ -3772,7 +3711,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wario</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -3784,7 +3723,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wii Fit Trainer</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3796,7 +3735,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wolf</td>
                     <td class="damage">14</td>
                     <td class="value">361</td>
@@ -3808,7 +3747,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Yoshi</td>
                     <td class="damage">5.5</td>
                     <td class="value">60</td>
@@ -3820,7 +3759,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Young Link</td>
                     <td class="damage">8</td>
                     <td class="value">55</td>
@@ -3832,7 +3771,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zelda</td>
                     <td class="damage">15</td>
                     <td class="value">361</td>
@@ -3844,7 +3783,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zero Suit Samus</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -3858,83 +3797,6 @@
 
             </tbody>
         </table>
-
-        <div style="background-color: #f0e6ff; border: 2px solid #9c88ff; border-radius: 8px; padding: 20px; margin-top: 20px;">
-            <h3 style="color: #5a4fcf; margin-top: 0; font-size: 1.1em;">* Olimar Back Air Pikmin Multipliers</h3>
-            
-            <div style="margin-bottom: 15px;">
-                <strong>Base Values from Script:</strong>
-                <ul style="margin: 5px 0; padding-left: 20px;">
-                    <li>Damage: 12.0</li>
-                    <li>Angle: 40°</li>
-                    <li>KBG: 110°</li>
-                    <li>BKB: 30</li>
-                </ul>
-            </div>
-            
-            <div style="margin-bottom: 15px;"><strong>Pikmin Multipliers:</strong></div>
-            
-            <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 15px;">
-                <thead>
-                    <tr style="background-color: #4285f4; color: white;">
-                        <th style="padding: 8px; text-align: left; border: 1px solid #ddd;">Pikmin</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Damage Multiplier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Angle Modifier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Damage</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Angle</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Red</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.05</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">12.6</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">40°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Yellow</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.94</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+8°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">11.3</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">48°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Blue</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">12</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">40°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">White</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.75</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">9</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">40°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Purple</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.2</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">14.4</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">40°</td>
-                    </tr>
-
-                </tbody>
-            </table>
-            
-            <div style="font-style: italic; margin-top: 10px;">
-                <em>Final damage = Base damage × Pikmin multiplier</em><br>
-                <em>Final angle = Base angle + Pikmin angle modifier</em><br>
-                <strong>Note:</strong> <em>"No Pikmin" entries use Olimar's base aerial attacks without Pikmin assistance.</em>
-            </div>
-        </div>
 
         <h2>Up Air</h2>
 
@@ -3954,7 +3816,7 @@
             </thead>
             <tbody>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Banjo & Kazooie</td>
                     <td class="damage">8</td>
                     <td class="value">70</td>
@@ -3966,7 +3828,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bayonetta</td>
                     <td class="damage">8</td>
                     <td class="value">75</td>
@@ -3978,7 +3840,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser</td>
                     <td class="damage">17</td>
                     <td class="value">74</td>
@@ -3990,7 +3852,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser Jr.</td>
                     <td class="damage">9</td>
                     <td class="value">74</td>
@@ -4002,7 +3864,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Byleth</td>
                     <td class="damage">7.5</td>
                     <td class="value">79</td>
@@ -4014,7 +3876,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Captain Falcon</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -4026,7 +3888,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Charizard</td>
                     <td class="damage">10</td>
                     <td class="value">80</td>
@@ -4038,7 +3900,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Chrom</td>
                     <td class="damage">7</td>
                     <td class="value">65</td>
@@ -4050,7 +3912,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Cloud</td>
                     <td class="damage">11</td>
                     <td class="value">78</td>
@@ -4062,7 +3924,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Corrin</td>
                     <td class="damage">12</td>
                     <td class="value">70</td>
@@ -4074,7 +3936,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Daisy</td>
                     <td class="damage">8</td>
                     <td class="value">78</td>
@@ -4086,7 +3948,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Pit</td>
                     <td class="damage">12</td>
                     <td class="value">75</td>
@@ -4098,7 +3960,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Samus</td>
                     <td class="damage">9</td>
                     <td class="value">71</td>
@@ -4110,7 +3972,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Diddy Kong</td>
                     <td class="damage">12</td>
                     <td class="value">361</td>
@@ -4122,7 +3984,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Donkey Kong</td>
                     <td class="damage">12</td>
                     <td class="value">90</td>
@@ -4134,7 +3996,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dr.Mario</td>
                     <td class="damage">10</td>
                     <td class="value">54</td>
@@ -4146,7 +4008,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Duck Hunt</td>
                     <td class="damage">7</td>
                     <td class="value">91</td>
@@ -4158,7 +4020,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Falco</td>
                     <td class="damage">8.5</td>
                     <td class="value">70</td>
@@ -4170,7 +4032,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Fox</td>
                     <td class="damage">10</td>
                     <td class="value">85</td>
@@ -4182,7 +4044,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ganondorf</td>
                     <td class="damage">13</td>
                     <td class="value">361</td>
@@ -4194,7 +4056,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Greninja</td>
                     <td class="damage">6</td>
                     <td class="value">75</td>
@@ -4206,7 +4068,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Hero</td>
                     <td class="damage">9</td>
                     <td class="value">75</td>
@@ -4218,7 +4080,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ice Climbers</td>
                     <td class="damage">9</td>
                     <td class="value">70</td>
@@ -4230,7 +4092,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ike</td>
                     <td class="damage">16</td>
                     <td class="value">70</td>
@@ -4242,7 +4104,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Incineroar</td>
                     <td class="damage">9</td>
                     <td class="value">71</td>
@@ -4254,7 +4116,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Inkling</td>
                     <td class="damage">6.5</td>
                     <td class="value">80</td>
@@ -4266,7 +4128,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Isabelle</td>
                     <td class="damage">12</td>
                     <td class="value">76</td>
@@ -4278,7 +4140,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ivysaur</td>
                     <td class="damage">12</td>
                     <td class="value">88</td>
@@ -4290,7 +4152,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Jigglypuff</td>
                     <td class="damage">12</td>
                     <td class="value">85</td>
@@ -4302,7 +4164,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Joker</td>
                     <td class="damage">10</td>
                     <td class="value">80</td>
@@ -4314,7 +4176,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kazuya</td>
                     <td class="damage">11</td>
                     <td class="value">77</td>
@@ -4326,7 +4188,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ken</td>
                     <td class="damage">6</td>
                     <td class="value">78</td>
@@ -4338,7 +4200,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King Dedede</td>
                     <td class="damage">5</td>
                     <td class="value">78</td>
@@ -4350,7 +4212,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King K. Rool</td>
                     <td class="damage">8</td>
                     <td class="value">82</td>
@@ -4362,7 +4224,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kirby</td>
                     <td class="damage">10</td>
                     <td class="value">70</td>
@@ -4374,7 +4236,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Link</td>
                     <td class="damage">14</td>
                     <td class="value">80</td>
@@ -4386,7 +4248,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Little Mac</td>
                     <td class="damage">5</td>
                     <td class="value">78</td>
@@ -4398,7 +4260,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucario</td>
                     <td class="damage">13</td>
                     <td class="value">94</td>
@@ -4410,7 +4272,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucas</td>
                     <td class="damage">10</td>
                     <td class="value">70</td>
@@ -4422,7 +4284,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucina</td>
                     <td class="damage">9</td>
                     <td class="value">85</td>
@@ -4434,7 +4296,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Luigi</td>
                     <td class="damage">11</td>
                     <td class="value">70</td>
@@ -4446,7 +4308,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mario</td>
                     <td class="damage">10</td>
                     <td class="value">68</td>
@@ -4458,7 +4320,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Marth</td>
                     <td class="damage">13</td>
                     <td class="value">90</td>
@@ -4470,7 +4332,7 @@
                     <td class="shield-advantage-positive">1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mega Man</td>
                     <td class="damage">4</td>
                     <td class="value">90</td>
@@ -4482,7 +4344,7 @@
                     <td class="shield-advantage-negative">-13</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Meta Knight</td>
                     <td class="damage">4</td>
                     <td class="value">67</td>
@@ -4494,7 +4356,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mewtwo</td>
                     <td class="damage">12</td>
                     <td class="value">55</td>
@@ -4506,7 +4368,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Brawler</td>
                     <td class="damage">9</td>
                     <td class="value">69</td>
@@ -4518,7 +4380,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Gunner</td>
                     <td class="damage">4</td>
                     <td class="value">72</td>
@@ -4530,7 +4392,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Swordfighter</td>
                     <td class="damage">16</td>
                     <td class="value">80</td>
@@ -4542,7 +4404,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Min Min</td>
                     <td class="damage">7.5</td>
                     <td class="value">70</td>
@@ -4554,7 +4416,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mr.Game & Watch</td>
                     <td class="damage">8</td>
                     <td class="value">82</td>
@@ -4566,7 +4428,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mythra</td>
                     <td class="damage">8</td>
                     <td class="value">81</td>
@@ -4578,7 +4440,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ness</td>
                     <td class="damage">13</td>
                     <td class="value">85</td>
@@ -4590,8 +4452,12 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Blue*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Blue*<div class="tooltip-content"><strong>Blue Pikmin - Up Air</strong><br>
+                             <em>Base Damage:</em> 7.2<br>
+                             <em>Base Angle:</em> 95°<br>
+                             <em>Damage Multiplier:</em> ×1<br><em>Final Damage:</em> 7.2<br>
+                              <em>Final Angle:</em> 95°</div></td>
                     <td class="damage">7.2*</td>
                     <td class="value">95*</td>
                     <td class="value">74</td>
@@ -4602,7 +4468,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Olimar - No Pikmin</td>
                     <td class="damage">5</td>
                     <td class="value">95</td>
@@ -4614,8 +4480,12 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Purple*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Purple*<div class="tooltip-content"><strong>Purple Pikmin - Up Air</strong><br>
+                             <em>Base Damage:</em> 7.2<br>
+                             <em>Base Angle:</em> 95°<br>
+                             <em>Damage Multiplier:</em> ×1.2<br><em>Final Damage:</em> 8.6<br>
+                              <em>Final Angle:</em> 95°</div></td>
                     <td class="damage">8.6*</td>
                     <td class="value">95*</td>
                     <td class="value">74</td>
@@ -4626,8 +4496,12 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Red*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Red*<div class="tooltip-content"><strong>Red Pikmin - Up Air</strong><br>
+                             <em>Base Damage:</em> 7.2<br>
+                             <em>Base Angle:</em> 95°<br>
+                             <em>Damage Multiplier:</em> ×1.05<br><em>Final Damage:</em> 7.6<br>
+                              <em>Final Angle:</em> 95°</div></td>
                     <td class="damage">7.6*</td>
                     <td class="value">95*</td>
                     <td class="value">74</td>
@@ -4638,8 +4512,12 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - White*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - White*<div class="tooltip-content"><strong>White Pikmin - Up Air</strong><br>
+                             <em>Base Damage:</em> 7.2<br>
+                             <em>Base Angle:</em> 95°<br>
+                             <em>Damage Multiplier:</em> ×0.75<br><em>Final Damage:</em> 5.4<br>
+                              <em>Final Angle:</em> 95°</div></td>
                     <td class="damage">5.4*</td>
                     <td class="value">95*</td>
                     <td class="value">74</td>
@@ -4650,8 +4528,12 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Yellow*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Yellow*<div class="tooltip-content"><strong>Yellow Pikmin - Up Air</strong><br>
+                             <em>Base Damage:</em> 7.2<br>
+                             <em>Base Angle:</em> 95°<br>
+                             <em>Damage Multiplier:</em> ×0.94<br><em>Angle Modifier:</em> +8°<br><em>Final Damage:</em> 6.8<br>
+                              <em>Final Angle:</em> 103°</div></td>
                     <td class="damage">6.8*</td>
                     <td class="value">103*</td>
                     <td class="value">74</td>
@@ -4662,7 +4544,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pac-Man</td>
                     <td class="damage">10</td>
                     <td class="value">70</td>
@@ -4674,7 +4556,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Palutena</td>
                     <td class="damage">8</td>
                     <td class="value">88</td>
@@ -4686,7 +4568,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Peach</td>
                     <td class="damage">7</td>
                     <td class="value">79</td>
@@ -4698,7 +4580,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pichu</td>
                     <td class="damage">7</td>
                     <td class="value">63</td>
@@ -4710,7 +4592,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pikachu</td>
                     <td class="damage">8</td>
                     <td class="value">20</td>
@@ -4722,7 +4604,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Piranha Plant</td>
                     <td class="damage">9</td>
                     <td class="value">N/A</td>
@@ -4734,7 +4616,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pit</td>
                     <td class="damage">8</td>
                     <td class="value">68</td>
@@ -4746,7 +4628,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pyra</td>
                     <td class="damage">14</td>
                     <td class="value">81</td>
@@ -4758,7 +4640,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>R.O.B.</td>
                     <td class="damage">4</td>
                     <td class="value">70</td>
@@ -4770,7 +4652,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Richter</td>
                     <td class="damage">9</td>
                     <td class="value">57</td>
@@ -4782,7 +4664,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ridley</td>
                     <td class="damage">14</td>
                     <td class="value">90</td>
@@ -4794,7 +4676,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Robin</td>
                     <td class="damage">14</td>
                     <td class="value">80</td>
@@ -4806,7 +4688,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Rosalina & Luma</td>
                     <td class="damage">10</td>
                     <td class="value">88</td>
@@ -4818,7 +4700,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Roy</td>
                     <td class="damage">10</td>
                     <td class="value">74</td>
@@ -4830,7 +4712,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ryu</td>
                     <td class="damage">6</td>
                     <td class="value">75</td>
@@ -4842,7 +4724,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Samus</td>
                     <td class="damage">4</td>
                     <td class="value">76</td>
@@ -4854,7 +4736,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sephiroth</td>
                     <td class="damage">11</td>
                     <td class="value">106</td>
@@ -4866,7 +4748,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sheik</td>
                     <td class="damage">6</td>
                     <td class="value">80</td>
@@ -4878,7 +4760,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Shulk</td>
                     <td class="damage">12</td>
                     <td class="value">88</td>
@@ -4890,7 +4772,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Simon</td>
                     <td class="damage">13</td>
                     <td class="value">90</td>
@@ -4902,7 +4784,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Snake</td>
                     <td class="damage">14</td>
                     <td class="value">80</td>
@@ -4914,7 +4796,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sonic</td>
                     <td class="damage">10</td>
                     <td class="value">90</td>
@@ -4926,7 +4808,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sora</td>
                     <td class="damage">10</td>
                     <td class="value">75</td>
@@ -4938,7 +4820,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Squirtle</td>
                     <td class="damage">7</td>
                     <td class="value">52</td>
@@ -4950,7 +4832,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Steve</td>
                     <td class="damage">3</td>
                     <td class="value">65</td>
@@ -4962,7 +4844,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Terry</td>
                     <td class="damage">8</td>
                     <td class="value">84</td>
@@ -4974,7 +4856,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Toon Link</td>
                     <td class="damage">8</td>
                     <td class="value">80</td>
@@ -4986,7 +4868,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Villager</td>
                     <td class="damage">13.5</td>
                     <td class="value">85</td>
@@ -4998,7 +4880,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wario</td>
                     <td class="damage">14</td>
                     <td class="value">80</td>
@@ -5010,7 +4892,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wii Fit Trainer</td>
                     <td class="damage">10</td>
                     <td class="value">72</td>
@@ -5022,7 +4904,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wolf</td>
                     <td class="damage">11</td>
                     <td class="value">55</td>
@@ -5034,7 +4916,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Yoshi</td>
                     <td class="damage">13</td>
                     <td class="value">90</td>
@@ -5046,7 +4928,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Young Link</td>
                     <td class="damage">14</td>
                     <td class="value">80</td>
@@ -5058,7 +4940,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zelda</td>
                     <td class="damage">17</td>
                     <td class="value">90</td>
@@ -5070,7 +4952,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zero Suit Samus</td>
                     <td class="damage">10</td>
                     <td class="value">60</td>
@@ -5084,83 +4966,6 @@
 
             </tbody>
         </table>
-
-        <div style="background-color: #f0e6ff; border: 2px solid #9c88ff; border-radius: 8px; padding: 20px; margin-top: 20px;">
-            <h3 style="color: #5a4fcf; margin-top: 0; font-size: 1.1em;">* Olimar Up Air Pikmin Multipliers</h3>
-            
-            <div style="margin-bottom: 15px;">
-                <strong>Base Values from Script:</strong>
-                <ul style="margin: 5px 0; padding-left: 20px;">
-                    <li>Damage: 7.2</li>
-                    <li>Angle: 95°</li>
-                    <li>KBG: 74°</li>
-                    <li>BKB: 65</li>
-                </ul>
-            </div>
-            
-            <div style="margin-bottom: 15px;"><strong>Pikmin Multipliers:</strong></div>
-            
-            <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 15px;">
-                <thead>
-                    <tr style="background-color: #4285f4; color: white;">
-                        <th style="padding: 8px; text-align: left; border: 1px solid #ddd;">Pikmin</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Damage Multiplier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Angle Modifier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Damage</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Angle</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Red</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.05</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">7.6</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">95°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Yellow</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.94</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+8°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">6.8</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">103°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Blue</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">7.2</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">95°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">White</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.75</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">5.4</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">95°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Purple</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.2</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">8.6</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">95°</td>
-                    </tr>
-
-                </tbody>
-            </table>
-            
-            <div style="font-style: italic; margin-top: 10px;">
-                <em>Final damage = Base damage × Pikmin multiplier</em><br>
-                <em>Final angle = Base angle + Pikmin angle modifier</em><br>
-                <strong>Note:</strong> <em>"No Pikmin" entries use Olimar's base aerial attacks without Pikmin assistance.</em>
-            </div>
-        </div>
 
         <h2>Down Air</h2>
 
@@ -5180,7 +4985,7 @@
             </thead>
             <tbody>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Banjo & Kazooie</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -5192,7 +4997,7 @@
                     <td class="shield-advantage-negative">-9</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bayonetta</td>
                     <td class="damage">10</td>
                     <td class="value">270</td>
@@ -5204,7 +5009,7 @@
                     <td class="shield-advantage-negative">-13</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser</td>
                     <td class="damage">5</td>
                     <td class="value">55</td>
@@ -5216,7 +5021,7 @@
                     <td class="shield-advantage-negative">-17</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Bowser Jr.</td>
                     <td class="damage">1.5</td>
                     <td class="value">290</td>
@@ -5228,7 +5033,7 @@
                     <td class="shield-advantage-negative">-10</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Byleth</td>
                     <td class="damage">19</td>
                     <td class="value">270</td>
@@ -5240,7 +5045,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Captain Falcon</td>
                     <td class="damage">16</td>
                     <td class="value">270</td>
@@ -5252,7 +5057,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Charizard</td>
                     <td class="damage">11</td>
                     <td class="value">270</td>
@@ -5264,7 +5069,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Chrom</td>
                     <td class="damage">12</td>
                     <td class="value">270</td>
@@ -5276,7 +5081,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Cloud</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -5288,7 +5093,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Corrin</td>
                     <td class="damage">5</td>
                     <td class="value">78</td>
@@ -5300,7 +5105,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Daisy</td>
                     <td class="damage">5</td>
                     <td class="value">280</td>
@@ -5312,7 +5117,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Pit</td>
                     <td class="damage">11</td>
                     <td class="value">54</td>
@@ -5324,7 +5129,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dark Samus</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -5336,7 +5141,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Diddy Kong</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -5348,7 +5153,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Donkey Kong</td>
                     <td class="damage">16</td>
                     <td class="value">270</td>
@@ -5360,7 +5165,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Dr.Mario</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -5372,7 +5177,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Duck Hunt</td>
                     <td class="damage">7</td>
                     <td class="value">270</td>
@@ -5384,7 +5189,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Falco</td>
                     <td class="damage">12</td>
                     <td class="value">290</td>
@@ -5396,7 +5201,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Fox</td>
                     <td class="damage">2</td>
                     <td class="value">290</td>
@@ -5408,7 +5213,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ganondorf</td>
                     <td class="damage">19</td>
                     <td class="value">270</td>
@@ -5420,7 +5225,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Greninja</td>
                     <td class="damage">8</td>
                     <td class="value">270</td>
@@ -5432,7 +5237,7 @@
                     <td class="shield-advantage-negative">-14</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Hero</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -5444,7 +5249,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ice Climbers</td>
                     <td class="damage">10</td>
                     <td class="value">65</td>
@@ -5456,7 +5261,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ike</td>
                     <td class="damage">17</td>
                     <td class="value">270</td>
@@ -5468,7 +5273,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Incineroar</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -5480,7 +5285,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Inkling</td>
                     <td class="damage">12</td>
                     <td class="value">270</td>
@@ -5492,7 +5297,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Isabelle</td>
                     <td class="damage">12</td>
                     <td class="value">270</td>
@@ -5504,7 +5309,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ivysaur</td>
                     <td class="damage">12</td>
                     <td class="value">270</td>
@@ -5516,7 +5321,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Jigglypuff</td>
                     <td class="damage">2</td>
                     <td class="value">55</td>
@@ -5528,7 +5333,7 @@
                     <td class="shield-advantage-negative">-9</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Joker</td>
                     <td class="damage">10</td>
                     <td class="value">361</td>
@@ -5540,7 +5345,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kazuya</td>
                     <td class="damage">15</td>
                     <td class="value">48</td>
@@ -5552,7 +5357,7 @@
                     <td class="shield-advantage-negative">-12</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ken</td>
                     <td class="damage">13.5</td>
                     <td class="value">300</td>
@@ -5564,7 +5369,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King Dedede</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -5576,7 +5381,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>King K. Rool</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -5588,7 +5393,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Kirby</td>
                     <td class="damage">2</td>
                     <td class="value">365</td>
@@ -5600,7 +5405,7 @@
                     <td class="shield-advantage-negative">-9</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Link</td>
                     <td class="damage">18</td>
                     <td class="value">270</td>
@@ -5612,7 +5417,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Little Mac</td>
                     <td class="damage">9</td>
                     <td class="value">270</td>
@@ -5624,7 +5429,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucario</td>
                     <td class="damage">6</td>
                     <td class="value">64</td>
@@ -5636,7 +5441,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucas</td>
                     <td class="damage">5</td>
                     <td class="value">270</td>
@@ -5648,7 +5453,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Lucina</td>
                     <td class="damage">12</td>
                     <td class="value">80</td>
@@ -5660,7 +5465,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Luigi</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -5672,7 +5477,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mario</td>
                     <td class="damage">1.1</td>
                     <td class="value">80</td>
@@ -5684,7 +5489,7 @@
                     <td class="shield-advantage-negative">-10</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Marth</td>
                     <td class="damage">13</td>
                     <td class="value">300</td>
@@ -5696,7 +5501,7 @@
                     <td class="shield-advantage-negative">-7</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mega Man</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -5708,7 +5513,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Meta Knight</td>
                     <td class="damage">6</td>
                     <td class="value">70</td>
@@ -5720,7 +5525,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mewtwo</td>
                     <td class="damage">16</td>
                     <td class="value">270</td>
@@ -5732,7 +5537,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Brawler</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -5744,7 +5549,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Gunner</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -5756,7 +5561,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mii Swordfighter</td>
                     <td class="damage">5</td>
                     <td class="value">55</td>
@@ -5768,7 +5573,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Min Min</td>
                     <td class="damage">11</td>
                     <td class="value">80</td>
@@ -5780,7 +5585,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mr.Game & Watch</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -5792,7 +5597,7 @@
                     <td class="shield-advantage-neutral">0</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Mythra</td>
                     <td class="damage">10</td>
                     <td class="value">58</td>
@@ -5804,7 +5609,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ness</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -5816,8 +5621,12 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Blue*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Blue*<div class="tooltip-content"><strong>Blue Pikmin - Down Air</strong><br>
+                             <em>Base Damage:</em> 10.1<br>
+                             <em>Base Angle:</em> 270°<br>
+                             <em>Damage Multiplier:</em> ×1<br><em>Final Damage:</em> 10.1<br>
+                              <em>Final Angle:</em> 270°</div></td>
                     <td class="damage">10.1*</td>
                     <td class="value">270*</td>
                     <td class="value">79</td>
@@ -5828,7 +5637,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Olimar - No Pikmin</td>
                     <td class="damage">5</td>
                     <td class="value">270</td>
@@ -5840,8 +5649,12 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Purple*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Purple*<div class="tooltip-content"><strong>Purple Pikmin - Down Air</strong><br>
+                             <em>Base Damage:</em> 10.1<br>
+                             <em>Base Angle:</em> 270°<br>
+                             <em>Damage Multiplier:</em> ×1.2<br><em>Final Damage:</em> 12.1<br>
+                              <em>Final Angle:</em> 270°</div></td>
                     <td class="damage">12.1*</td>
                     <td class="value">270*</td>
                     <td class="value">79</td>
@@ -5852,8 +5665,12 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Red*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Red*<div class="tooltip-content"><strong>Red Pikmin - Down Air</strong><br>
+                             <em>Base Damage:</em> 10.1<br>
+                             <em>Base Angle:</em> 270°<br>
+                             <em>Damage Multiplier:</em> ×1.05<br><em>Final Damage:</em> 10.6<br>
+                              <em>Final Angle:</em> 270°</div></td>
                     <td class="damage">10.6*</td>
                     <td class="value">270*</td>
                     <td class="value">79</td>
@@ -5864,8 +5681,12 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - White*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - White*<div class="tooltip-content"><strong>White Pikmin - Down Air</strong><br>
+                             <em>Base Damage:</em> 10.1<br>
+                             <em>Base Angle:</em> 270°<br>
+                             <em>Damage Multiplier:</em> ×0.75<br><em>Final Damage:</em> 7.6<br>
+                              <em>Final Angle:</em> 270°</div></td>
                     <td class="damage">7.6*</td>
                     <td class="value">270*</td>
                     <td class="value">79</td>
@@ -5876,8 +5697,12 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
-                    <td>Olimar - Yellow*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Olimar - Yellow*<div class="tooltip-content"><strong>Yellow Pikmin - Down Air</strong><br>
+                             <em>Base Damage:</em> 10.1<br>
+                             <em>Base Angle:</em> 270°<br>
+                             <em>Damage Multiplier:</em> ×0.94<br><em>Angle Modifier:</em> +8°<br><em>Final Damage:</em> 9.5<br>
+                              <em>Final Angle:</em> 278°</div></td>
                     <td class="damage">9.5*</td>
                     <td class="value">278*</td>
                     <td class="value">79</td>
@@ -5888,7 +5713,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pac-Man</td>
                     <td class="damage">10</td>
                     <td class="value">90</td>
@@ -5900,7 +5725,7 @@
                     <td class="shield-advantage-negative">-11</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Palutena</td>
                     <td class="damage">13</td>
                     <td class="value">270</td>
@@ -5912,7 +5737,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Peach</td>
                     <td class="damage">5</td>
                     <td class="value">75</td>
@@ -5924,7 +5749,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pichu</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -5936,7 +5761,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pikachu</td>
                     <td class="damage">13</td>
                     <td class="value">270</td>
@@ -5948,7 +5773,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Piranha Plant</td>
                     <td class="damage">13</td>
                     <td class="value">270</td>
@@ -5960,7 +5785,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pit</td>
                     <td class="damage">11</td>
                     <td class="value">75</td>
@@ -5972,7 +5797,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Pyra</td>
                     <td class="damage">16</td>
                     <td class="value">270</td>
@@ -5984,7 +5809,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>R.O.B.</td>
                     <td class="damage">6</td>
                     <td class="value">40</td>
@@ -5996,7 +5821,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Richter</td>
                     <td class="damage">12</td>
                     <td class="value">80</td>
@@ -6008,7 +5833,7 @@
                     <td class="shield-advantage-negative">-10</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ridley</td>
                     <td class="damage">14</td>
                     <td class="value">50</td>
@@ -6020,7 +5845,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Robin</td>
                     <td class="damage">15</td>
                     <td class="value">40</td>
@@ -6032,7 +5857,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Rosalina & Luma</td>
                     <td class="damage">10</td>
                     <td class="value">270</td>
@@ -6044,7 +5869,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Roy</td>
                     <td class="damage">15</td>
                     <td class="value">290</td>
@@ -6056,7 +5881,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Ryu</td>
                     <td class="damage">13.5</td>
                     <td class="value">300</td>
@@ -6068,7 +5893,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Samus</td>
                     <td class="damage">16</td>
                     <td class="value">270</td>
@@ -6080,7 +5905,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sephiroth</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -6092,7 +5917,7 @@
                     <td class="shield-advantage-negative">-20</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sheik</td>
                     <td class="damage">11</td>
                     <td class="value">80</td>
@@ -6104,7 +5929,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Shulk</td>
                     <td class="damage">11.5</td>
                     <td class="value">270</td>
@@ -6116,7 +5941,7 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Simon</td>
                     <td class="damage">12</td>
                     <td class="value">280</td>
@@ -6128,7 +5953,7 @@
                     <td class="shield-advantage-negative">-10</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Snake</td>
                     <td class="damage">5</td>
                     <td class="value">275</td>
@@ -6140,7 +5965,7 @@
                     <td class="shield-advantage-negative">-8</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sonic</td>
                     <td class="damage">10</td>
                     <td class="value">287</td>
@@ -6152,7 +5977,7 @@
                     <td class="shield-advantage-negative">-9</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Sora</td>
                     <td class="damage">8</td>
                     <td class="value">62</td>
@@ -6164,7 +5989,7 @@
                     <td class="shield-advantage-negative">-4</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Squirtle</td>
                     <td class="damage">3</td>
                     <td class="value">60</td>
@@ -6176,8 +6001,11 @@
                     <td class="shield-advantage-negative">-5</td>
                 </tr>
 
-                <tr>
-                    <td>Steve - Release (8.0+)*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Steve - Release*<div class="tooltip-content"><strong>Steve Dair - Release Mode</strong><br>
+                     <em>Damage:</em> 8.0 + (fall_distance ÷ 5.0)<br>
+                     <em>KBG:</em> 100 - (fall_distance ÷ 1.5)<br>
+                     <em>Note:</em> Fall distance measured from anvil generation</div></td>
                     <td class="damage">8.0+</td>
                     <td class="value">70</td>
                     <td class="value">100-</td>
@@ -6188,8 +6016,11 @@
                     <td class="shield-advantage-negative">-12</td>
                 </tr>
 
-                <tr>
-                    <td>Steve - Ride (12.0+)*</td>
+                <tr class="tooltip has-tooltip">
+                    <td>Steve - Ride*<div class="tooltip-content"><strong>Steve Dair - Ride Mode</strong><br>
+                     <em>Damage:</em> 12.0 + (fall_distance ÷ 5.0)<br>
+                     <em>KBG:</em> 100 - (fall_distance ÷ 1.5)<br>
+                     <em>Note:</em> Fall distance measured from anvil generation</div></td>
                     <td class="damage">12.0+</td>
                     <td class="value">70</td>
                     <td class="value">100-</td>
@@ -6200,7 +6031,7 @@
                     <td class="shield-advantage-negative">-10</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Terry</td>
                     <td class="damage">15</td>
                     <td class="value">300</td>
@@ -6212,7 +6043,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Toon Link</td>
                     <td class="damage">16</td>
                     <td class="value">268</td>
@@ -6224,7 +6055,7 @@
                     <td class="shield-advantage-negative">-12</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Villager</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -6236,7 +6067,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wario</td>
                     <td class="damage">12</td>
                     <td class="value">270</td>
@@ -6248,7 +6079,7 @@
                     <td class="shield-advantage-negative">-21</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wii Fit Trainer</td>
                     <td class="damage">14</td>
                     <td class="value">270</td>
@@ -6260,7 +6091,7 @@
                     <td class="shield-advantage-negative">-3</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Wolf</td>
                     <td class="damage">15</td>
                     <td class="value">270</td>
@@ -6272,7 +6103,7 @@
                     <td class="shield-advantage-neutral">-2</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Yoshi</td>
                     <td class="damage">2.8</td>
                     <td class="value">80</td>
@@ -6284,7 +6115,7 @@
                     <td class="shield-advantage-negative">-11</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Young Link</td>
                     <td class="damage">16</td>
                     <td class="value">70</td>
@@ -6296,7 +6127,7 @@
                     <td class="shield-advantage-negative">-6</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zelda</td>
                     <td class="damage">16</td>
                     <td class="value">270</td>
@@ -6308,7 +6139,7 @@
                     <td class="shield-advantage-neutral">-1</td>
                 </tr>
 
-                <tr>
+                <tr class="tooltip">
                     <td>Zero Suit Samus</td>
                     <td class="damage">12</td>
                     <td class="value">100</td>
@@ -6323,106 +6154,6 @@
             </tbody>
         </table>
 
-        <div style="background-color: #f0e6ff; border: 2px solid #9c88ff; border-radius: 8px; padding: 20px; margin-top: 20px;">
-            <h3 style="color: #5a4fcf; margin-top: 0; font-size: 1.1em;">* Olimar Down Air Pikmin Multipliers</h3>
-            
-            <div style="margin-bottom: 15px;">
-                <strong>Base Values from Script:</strong>
-                <ul style="margin: 5px 0; padding-left: 20px;">
-                    <li>Damage: 10.08</li>
-                    <li>Angle: 270°</li>
-                    <li>KBG: 79°</li>
-                    <li>BKB: 30</li>
-                </ul>
-            </div>
-            
-            <div style="margin-bottom: 15px;"><strong>Pikmin Multipliers:</strong></div>
-            
-            <table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 15px;">
-                <thead>
-                    <tr style="background-color: #4285f4; color: white;">
-                        <th style="padding: 8px; text-align: left; border: 1px solid #ddd;">Pikmin</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Damage Multiplier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Angle Modifier</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Damage</th>
-                        <th style="padding: 8px; text-align: center; border: 1px solid #ddd;">Final Angle</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Red</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.05</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">10.6</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">270°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Yellow</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.94</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+8°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">9.5</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">278°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Blue</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">10.1</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">270°</td>
-                    </tr>
-
-                    <tr style="background-color: #f8f9fa;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">White</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x0.75</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">7.6</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">270°</td>
-                    </tr>
-
-                    <tr style="background-color: white;">
-                        <td style="padding: 8px; border: 1px solid #ddd;">Purple</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">x1.2</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd;">+0°</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #d32f2f;">12.1</td>
-                        <td style="padding: 8px; text-align: center; border: 1px solid #ddd; font-weight: bold; color: #0056b3;">270°</td>
-                    </tr>
-
-                </tbody>
-            </table>
-            
-            <div style="font-style: italic; margin-top: 10px;">
-                <em>Final damage = Base damage × Pikmin multiplier</em><br>
-                <em>Final angle = Base angle + Pikmin angle modifier</em><br>
-                <strong>Note:</strong> <em>"No Pikmin" entries use Olimar's base aerial attacks without Pikmin assistance.</em>
-            </div>
-        </div>
-
-        <div style="background-color: #e3f2fd; border: 2px solid #2196f3; border-radius: 8px; padding: 20px; margin-top: 20px;">
-            <h3 style="color: #1565c0; margin-top: 0; font-size: 1.1em;">* Steve Dair Variable Damage</h3>
-            
-            <div style="margin-bottom: 15px;">
-                <strong>Damage Calculation:</strong>
-                <ul style="margin: 5px 0; padding-left: 20px;">
-                    <li>Release: 8.0 + (fall_distance / 5.0)</li>
-                    <li>Ride: 12.0 + (fall_distance / 5.0)</li>
-                </ul>
-            </div>
-            
-            <div style="margin-bottom: 15px;">
-                <strong>KBG Calculation:</strong>
-                <ul style="margin: 5px 0; padding-left: 20px;">
-                    <li>Both variants: 100 - (fall_distance / 1.5)</li>
-                </ul>
-            </div>
-            
-            <div style="font-style: italic; margin-top: 10px;">
-                <em>Fall distance is measured in game units from when the anvil is generated.</em>
-            </div>
-        </div>
-
         <div class="fallback-info">
             <h3>Characters Found in Fallback Location (1)</h3>
             <div class="not-found-list">
@@ -6432,7 +6163,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-07-24 14:13:45
+            Generated on: 2025-07-24 14:39:34
         </div>
     </div>
 </body>
