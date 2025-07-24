@@ -140,6 +140,32 @@
             border-top: 1px solid #ddd;
             padding-top: 10px;
         }
+        .shield-advantage-positive {
+            font-weight: bold;
+            color: #2e7d32;  /* Green for positive advantage (safe on shield) */
+        }
+        .shield-advantage-negative {
+            font-weight: bold;
+            color: #d32f2f;  /* Red for negative advantage (punishable) */
+        }
+        .shield-advantage-neutral {
+            font-weight: bold;
+            color: #f57c00;  /* Orange for neutral/small advantage */
+        }
+        
+        /* Add this explanation section styling too */
+        .shield-advantage-explanation {
+            background-color: #e8f5e8;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .shield-advantage-explanation h4 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
     </style>
     <script>
         function sortTable(tableId, n) {
@@ -831,7 +857,7 @@
                 </tr>
 
                 <tr>
-                    <td>Pac-man</td>
+                    <td>Pac-Man</td>
                     <td class="damage">16</td>
                     <td class="value">361</td>
                     <td class="value">100</td>
@@ -1880,7 +1906,7 @@
                 </tr>
 
                 <tr>
-                    <td>Pac-man</td>
+                    <td>Pac-Man</td>
                     <td class="damage">14</td>
                     <td class="value">83</td>
                     <td class="value">102</td>
@@ -2921,7 +2947,7 @@
                 </tr>
 
                 <tr>
-                    <td>Pac-man</td>
+                    <td>Pac-Man</td>
                     <td class="damage">13</td>
                     <td class="value">29</td>
                     <td class="value">91</td>
@@ -3365,7 +3391,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-07-24 08:26:13
+            Generated on: 2025-07-24 13:52:42
         </div>
     </div>
 </body>
