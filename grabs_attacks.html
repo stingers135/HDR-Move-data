@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Throws - Attack Data</title>
+    <title>Grabs & Throws - Attack Data</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -280,11 +280,643 @@
 <body>
     <a href="index.html" class="return-button">Return to Index</a>
     <div class="container">
-        <h1>Throws</h1>
+        <h1>Grabs & Throws</h1>
         <p style="text-align: center; color: #666;">Attack damage, knockback, and frame data analysis</p>
 
-        <h2>Pummel</h2>
-
+                <h2>Grabs</h2>
+        
+                <table id="grabs_table">
+                    <thead>
+                        <tr>
+                            <th class="sortable">Character <span class="sort-icon">&#x2195;</span></th>
+                            <th class="sortable">Grab Frame <span class="sort-icon">&#x2195;</span></th>
+                            <th class="sortable">Dash Grab Frame <span class="sort-icon">&#x2195;</span></th>
+                            <th class="sortable">Pivot Grab Frame <span class="sort-icon">&#x2195;</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                        <tr>
+                            <td>Banjo & Kazooie</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Bayonetta</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Bowser</td>
+                            <td class="frame">7</td>
+                            <td class="frame">12</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Bowser Jr.</td>
+                            <td class="frame">8</td>
+                            <td class="frame">14</td>
+                            <td class="frame">15</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Byleth</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Captain Falcon</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Charizard</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Chrom</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Cloud</td>
+                            <td class="frame">8</td>
+                            <td class="frame">12</td>
+                            <td class="frame">13</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Corrin</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Daisy</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dark Pit</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dark Samus</td>
+                            <td class="frame">15</td>
+                            <td class="frame">17</td>
+                            <td class="frame">18</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Diddy Kong</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Donkey Kong</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dr.Mario</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Duck Hunt</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Falco</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Fox</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ganondorf</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Greninja</td>
+                            <td class="frame">9</td>
+                            <td class="frame">13</td>
+                            <td class="frame">14</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Hero</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ice Climbers</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ike</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Incineroar</td>
+                            <td class="frame">8</td>
+                            <td class="frame">12</td>
+                            <td class="frame">13</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Inkling</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Isabelle</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                            <td class="frame">13</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ivysaur</td>
+                            <td class="frame">12</td>
+                            <td class="frame">13</td>
+                            <td class="frame">13</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Jigglypuff</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Joker</td>
+                            <td class="frame">7</td>
+                            <td class="frame">8</td>
+                            <td class="frame">9</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Kazuya</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ken</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>King Dedede</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>King K. Rool</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Kirby</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Link</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Little Mac</td>
+                            <td class="frame">6</td>
+                            <td class="frame">13</td>
+                            <td class="frame">14</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Lucario</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Lucas</td>
+                            <td class="frame">12</td>
+                            <td class="frame">14</td>
+                            <td class="frame">15</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Lucina</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Luigi</td>
+                            <td class="frame">7</td>
+                            <td class="frame">16</td>
+                            <td class="frame">17</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mario</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Marth</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mega Man</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Meta Knight</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mewtwo</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mii Brawler</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mii Gunner</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mii Swordfighter</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">9</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Min Min</td>
+                            <td class="frame">8</td>
+                            <td class="frame">N/A</td>
+                            <td class="frame">N/A</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mr.Game & Watch</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Mythra</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ness</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Pac-Man</td>
+                            <td class="frame">12</td>
+                            <td class="frame">14</td>
+                            <td class="frame">15</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Palutena</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Peach</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Pichu</td>
+                            <td class="frame">7</td>
+                            <td class="frame">8</td>
+                            <td class="frame">9</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Pikachu</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Piranha Plant</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">9</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Pit</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Pyra</td>
+                            <td class="frame">7</td>
+                            <td class="frame">12</td>
+                            <td class="frame">13</td>
+                        </tr>
+        
+                        <tr>
+                            <td>R.O.B.</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Richter</td>
+                            <td class="frame">7</td>
+                            <td class="frame">13</td>
+                            <td class="frame">14</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ridley</td>
+                            <td class="frame">8</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Robin</td>
+                            <td class="frame">8</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Rosalina & Luma</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Roy</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Ryu</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Samus</td>
+                            <td class="frame">15</td>
+                            <td class="frame">17</td>
+                            <td class="frame">18</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Sephiroth</td>
+                            <td class="frame">8</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Sheik</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Shulk</td>
+                            <td class="frame">8</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Simon</td>
+                            <td class="frame">7</td>
+                            <td class="frame">13</td>
+                            <td class="frame">14</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Snake</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Sonic</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Sora</td>
+                            <td class="frame">7</td>
+                            <td class="frame">10</td>
+                            <td class="frame">11</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Squirtle</td>
+                            <td class="frame">7</td>
+                            <td class="frame">8</td>
+                            <td class="frame">9</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Steve</td>
+                            <td class="frame">13</td>
+                            <td class="frame">16</td>
+                            <td class="frame">17</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Terry</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Toon Link</td>
+                            <td class="frame">12</td>
+                            <td class="frame">14</td>
+                            <td class="frame">15</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Villager</td>
+                            <td class="frame">10</td>
+                            <td class="frame">13</td>
+                            <td class="frame">14</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Wario</td>
+                            <td class="frame">7</td>
+                            <td class="frame">11</td>
+                            <td class="frame">12</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Wii Fit Trainer</td>
+                            <td class="frame">7</td>
+                            <td class="frame">9</td>
+                            <td class="frame">10</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Wolf</td>
+                            <td class="frame">7</td>
+                            <td class="frame">8</td>
+                            <td class="frame">9</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Yoshi</td>
+                            <td class="frame">12</td>
+                            <td class="frame">16</td>
+                            <td class="frame">17</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Young Link</td>
+                            <td class="frame">12</td>
+                            <td class="frame">14</td>
+                            <td class="frame">15</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Zelda</td>
+                            <td class="frame">7</td>
+                            <td class="frame">13</td>
+                            <td class="frame">14</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Zero Suit Samus</td>
+                            <td class="frame">7</td>
+                            <td class="frame">17</td>
+                            <td class="frame">18</td>
+                        </tr>
+        
+                    </tbody>
+                </table>
+        
+            <h2>Pummel</h2>
+        
         <table id="pummel_table">
             <thead>
                 <tr>
@@ -1279,8 +1911,8 @@
             </div>
         </div>
 
-        <h2>Forward Throw</h2>
-
+            <h2>Forward Throw</h2>
+        
         <table id="fthrow_table">
             <thead>
                 <tr>
@@ -1677,11 +2309,11 @@
 
                 <tr class="tooltip">
                     <td>Link</td>
-                    <td class="damage">5.5</td>
-                    <td class="value">33</td>
-                    <td class="value">85</td>
+                    <td class="damage">7</td>
+                    <td class="value">66</td>
+                    <td class="value">132</td>
                     <td class="value">0</td>
-                    <td class="value">75</td>
+                    <td class="value">60</td>
                     <td class="frame">13</td>
                 </tr>
 
@@ -2279,7 +2911,7 @@
         </table>
 
         <div class="fallback-info">
-            <h3>Characters Found in Fallback Location (30)</h3>
+            <h3>Characters Found in Fallback Location (29)</h3>
             <div class="not-found-list">
                 <div>Bowser</div>
                 <div>Bowser Jr.</div>
@@ -2293,7 +2925,6 @@
                 <div>Fox</div>
                 <div>Ivysaur</div>
                 <div>Joker</div>
-                <div>Link</div>
                 <div>Lucina</div>
                 <div>Mega Man</div>
                 <div>Mewtwo</div>
@@ -2315,8 +2946,8 @@
             </div>
         </div>
 
-        <h2>Back Throw</h2>
-
+            <h2>Back Throw</h2>
+        
         <table id="bthrow_table">
             <thead>
                 <tr>
@@ -2684,10 +3315,10 @@
                 <tr class="tooltip">
                     <td>Link</td>
                     <td class="damage">7</td>
-                    <td class="value">106</td>
-                    <td class="value">150</td>
+                    <td class="value">113</td>
+                    <td class="value">135</td>
                     <td class="value">0</td>
-                    <td class="value">48</td>
+                    <td class="value">55</td>
                     <td class="frame">14</td>
                 </tr>
 
@@ -3314,8 +3945,8 @@
             </div>
         </div>
 
-        <h2>Up Throw</h2>
-
+            <h2>Up Throw</h2>
+        
         <table id="uthrow_table">
             <thead>
                 <tr>
@@ -3684,10 +4315,10 @@
                     <td>Link</td>
                     <td class="damage">11</td>
                     <td class="value">90</td>
-                    <td class="value">115</td>
+                    <td class="value">145</td>
                     <td class="value">0</td>
-                    <td class="value">69</td>
-                    <td class="frame">28</td>
+                    <td class="value">39</td>
+                    <td class="frame">29</td>
                 </tr>
 
                 <tr class="tooltip">
@@ -4311,8 +4942,8 @@
             </div>
         </div>
 
-        <h2>Down Throw</h2>
-
+            <h2>Down Throw</h2>
+        
         <table id="dthrow_table">
             <thead>
                 <tr>
@@ -4679,12 +5310,12 @@
 
                 <tr class="tooltip">
                     <td>Link</td>
-                    <td class="damage">6</td>
-                    <td class="value">66</td>
-                    <td class="value">142</td>
+                    <td class="damage">7</td>
+                    <td class="value">43</td>
+                    <td class="value">105</td>
                     <td class="value">0</td>
-                    <td class="value">63</td>
-                    <td class="frame">18</td>
+                    <td class="value">52</td>
+                    <td class="frame">24</td>
                 </tr>
 
                 <tr class="tooltip">
@@ -5307,7 +5938,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-07-24 17:51:35
+            Generated on: 2025-08-06 11:13:17
         </div>
     </div>
 </body>
