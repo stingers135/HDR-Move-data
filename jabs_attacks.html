@@ -199,6 +199,60 @@
         .has-tooltip:hover {
             background-color: #ffe0b2 !important;
         }
+
+        .section-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-nav-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .dropdown-btn {
+            background-color: #FF8400;
+            color: white;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .dropdown-btn:hover {
+            background-color: #D6812D;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown-content a.current-section {
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+        .show {
+            display: block;
+        }
     </style>
     <script>
         function sortTable(tableId, n) {
@@ -260,7 +314,33 @@
                 }
             }
         }
+        
+        /* NEW: Dropdown functionality */
+        function toggleDropdown(dropdownId) {
+            document.getElementById(dropdownId).classList.toggle("show");
+        }
 
+        // Close dropdowns when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        // Smooth scrolling for section links
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
         document.addEventListener('DOMContentLoaded', function() {
             var tables = document.querySelectorAll('table');
             tables.forEach(function(table) {
@@ -283,7 +363,31 @@
         <h1>Jab Attacks</h1>
         <p style="text-align: center; color: #666;">Attack damage, knockback, and frame data analysis</p>
 
-            <h2>Jab 1</h2>
+            <h2 id="section_jab1" class="section-header">
+                <span>Jab 1</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_jab1')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_jab1" class="dropdown-content">
+        
+                    <a href="#section_jab1" onclick="scrollToSection('section_jab1'); toggleDropdown('dropdown_jab1')"  class="current-section">
+                        Jab 1
+                    </a>
+            
+                    <a href="#section_jab2" onclick="scrollToSection('section_jab2'); toggleDropdown('dropdown_jab1')" >
+                        Jab 2
+                    </a>
+            
+                    <a href="#section_jab3" onclick="scrollToSection('section_jab3'); toggleDropdown('dropdown_jab1')" >
+                        Jab 3
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="jab1_table">
             <thead>
@@ -1223,7 +1327,31 @@
             </div>
         </div>
 
-            <h2>Jab 2</h2>
+            <h2 id="section_jab2" class="section-header">
+                <span>Jab 2</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_jab2')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_jab2" class="dropdown-content">
+        
+                    <a href="#section_jab1" onclick="scrollToSection('section_jab1'); toggleDropdown('dropdown_jab2')" >
+                        Jab 1
+                    </a>
+            
+                    <a href="#section_jab2" onclick="scrollToSection('section_jab2'); toggleDropdown('dropdown_jab2')"  class="current-section">
+                        Jab 2
+                    </a>
+            
+                    <a href="#section_jab3" onclick="scrollToSection('section_jab3'); toggleDropdown('dropdown_jab2')" >
+                        Jab 3
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="jab2_table">
             <thead>
@@ -2075,7 +2203,31 @@
             </div>
         </div>
 
-            <h2>Jab 3</h2>
+            <h2 id="section_jab3" class="section-header">
+                <span>Jab 3</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_jab3')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_jab3" class="dropdown-content">
+        
+                    <a href="#section_jab1" onclick="scrollToSection('section_jab1'); toggleDropdown('dropdown_jab3')" >
+                        Jab 1
+                    </a>
+            
+                    <a href="#section_jab2" onclick="scrollToSection('section_jab2'); toggleDropdown('dropdown_jab3')" >
+                        Jab 2
+                    </a>
+            
+                    <a href="#section_jab3" onclick="scrollToSection('section_jab3'); toggleDropdown('dropdown_jab3')"  class="current-section">
+                        Jab 3
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="jab3_table">
             <thead>
@@ -2763,7 +2915,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-08-14 04:16:21
+            Generated on: 2025-08-14 04:38:24
         </div>
     </div>
 </body>

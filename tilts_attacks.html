@@ -199,6 +199,60 @@
         .has-tooltip:hover {
             background-color: #ffe0b2 !important;
         }
+
+        .section-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-nav-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .dropdown-btn {
+            background-color: #FF8400;
+            color: white;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .dropdown-btn:hover {
+            background-color: #D6812D;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown-content a.current-section {
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+        .show {
+            display: block;
+        }
     </style>
     <script>
         function sortTable(tableId, n) {
@@ -260,7 +314,33 @@
                 }
             }
         }
+        
+        /* NEW: Dropdown functionality */
+        function toggleDropdown(dropdownId) {
+            document.getElementById(dropdownId).classList.toggle("show");
+        }
 
+        // Close dropdowns when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        // Smooth scrolling for section links
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
         document.addEventListener('DOMContentLoaded', function() {
             var tables = document.querySelectorAll('table');
             tables.forEach(function(table) {
@@ -283,7 +363,31 @@
         <h1>Tilt Attacks</h1>
         <p style="text-align: center; color: #666;">Attack damage, knockback, and frame data analysis</p>
 
-            <h2>Forward Tilt</h2>
+            <h2 id="section_ftilt" class="section-header">
+                <span>Forward Tilt</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_ftilt')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_ftilt" class="dropdown-content">
+        
+                    <a href="#section_ftilt" onclick="scrollToSection('section_ftilt'); toggleDropdown('dropdown_ftilt')"  class="current-section">
+                        Forward Tilt
+                    </a>
+            
+                    <a href="#section_utilt" onclick="scrollToSection('section_utilt'); toggleDropdown('dropdown_ftilt')" >
+                        Up Tilt
+                    </a>
+            
+                    <a href="#section_dtilt" onclick="scrollToSection('section_dtilt'); toggleDropdown('dropdown_ftilt')" >
+                        Down Tilt
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="ftilt_table">
             <thead>
@@ -1220,7 +1324,31 @@
             </div>
         </div>
 
-            <h2>Up Tilt</h2>
+            <h2 id="section_utilt" class="section-header">
+                <span>Up Tilt</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_utilt')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_utilt" class="dropdown-content">
+        
+                    <a href="#section_ftilt" onclick="scrollToSection('section_ftilt'); toggleDropdown('dropdown_utilt')" >
+                        Forward Tilt
+                    </a>
+            
+                    <a href="#section_utilt" onclick="scrollToSection('section_utilt'); toggleDropdown('dropdown_utilt')"  class="current-section">
+                        Up Tilt
+                    </a>
+            
+                    <a href="#section_dtilt" onclick="scrollToSection('section_dtilt'); toggleDropdown('dropdown_utilt')" >
+                        Down Tilt
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="utilt_table">
             <thead>
@@ -2149,7 +2277,31 @@
             </tbody>
         </table>
 
-            <h2>Down Tilt</h2>
+            <h2 id="section_dtilt" class="section-header">
+                <span>Down Tilt</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_dtilt')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_dtilt" class="dropdown-content">
+        
+                    <a href="#section_ftilt" onclick="scrollToSection('section_ftilt'); toggleDropdown('dropdown_dtilt')" >
+                        Forward Tilt
+                    </a>
+            
+                    <a href="#section_utilt" onclick="scrollToSection('section_utilt'); toggleDropdown('dropdown_dtilt')" >
+                        Up Tilt
+                    </a>
+            
+                    <a href="#section_dtilt" onclick="scrollToSection('section_dtilt'); toggleDropdown('dropdown_dtilt')"  class="current-section">
+                        Down Tilt
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="dtilt_table">
             <thead>
@@ -3079,7 +3231,7 @@
         </table>
 
         <div class="timestamp">
-            Generated on: 2025-08-14 04:16:21
+            Generated on: 2025-08-14 04:38:24
         </div>
     </div>
 </body>

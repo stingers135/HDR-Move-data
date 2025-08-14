@@ -199,6 +199,60 @@
         .has-tooltip:hover {
             background-color: #ffe0b2 !important;
         }
+
+        .section-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-nav-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .dropdown-btn {
+            background-color: #FF8400;
+            color: white;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .dropdown-btn:hover {
+            background-color: #D6812D;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown-content a.current-section {
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+        .show {
+            display: block;
+        }
     </style>
     <script>
         function sortTable(tableId, n) {
@@ -260,7 +314,33 @@
                 }
             }
         }
+        
+        /* NEW: Dropdown functionality */
+        function toggleDropdown(dropdownId) {
+            document.getElementById(dropdownId).classList.toggle("show");
+        }
 
+        // Close dropdowns when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        // Smooth scrolling for section links
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
         document.addEventListener('DOMContentLoaded', function() {
             var tables = document.querySelectorAll('table');
             tables.forEach(function(table) {
@@ -283,7 +363,39 @@
         <h1>Aerial Attacks</h1>
         <p style="text-align: center; color: #666;">Attack damage, knockback, and frame data analysis</p>
 
-            <h2>Neutral Air</h2>
+            <h2 id="section_nair" class="section-header">
+                <span>Neutral Air</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_nair')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_nair" class="dropdown-content">
+        
+                    <a href="#section_nair" onclick="scrollToSection('section_nair'); toggleDropdown('dropdown_nair')"  class="current-section">
+                        Neutral Air
+                    </a>
+            
+                    <a href="#section_fair" onclick="scrollToSection('section_fair'); toggleDropdown('dropdown_nair')" >
+                        Forward Air
+                    </a>
+            
+                    <a href="#section_bair" onclick="scrollToSection('section_bair'); toggleDropdown('dropdown_nair')" >
+                        Back Air
+                    </a>
+            
+                    <a href="#section_uair" onclick="scrollToSection('section_uair'); toggleDropdown('dropdown_nair')" >
+                        Up Air
+                    </a>
+            
+                    <a href="#section_dair" onclick="scrollToSection('section_dair'); toggleDropdown('dropdown_nair')" >
+                        Down Air
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="nair_table">
             <thead>
@@ -1460,7 +1572,39 @@
             </div>
         </div>
 
-            <h2>Forward Air</h2>
+            <h2 id="section_fair" class="section-header">
+                <span>Forward Air</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_fair')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_fair" class="dropdown-content">
+        
+                    <a href="#section_nair" onclick="scrollToSection('section_nair'); toggleDropdown('dropdown_fair')" >
+                        Neutral Air
+                    </a>
+            
+                    <a href="#section_fair" onclick="scrollToSection('section_fair'); toggleDropdown('dropdown_fair')"  class="current-section">
+                        Forward Air
+                    </a>
+            
+                    <a href="#section_bair" onclick="scrollToSection('section_bair'); toggleDropdown('dropdown_fair')" >
+                        Back Air
+                    </a>
+            
+                    <a href="#section_uair" onclick="scrollToSection('section_uair'); toggleDropdown('dropdown_fair')" >
+                        Up Air
+                    </a>
+            
+                    <a href="#section_dair" onclick="scrollToSection('section_dair'); toggleDropdown('dropdown_fair')" >
+                        Down Air
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="fair_table">
             <thead>
@@ -2629,7 +2773,39 @@
             </tbody>
         </table>
 
-            <h2>Back Air</h2>
+            <h2 id="section_bair" class="section-header">
+                <span>Back Air</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_bair')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_bair" class="dropdown-content">
+        
+                    <a href="#section_nair" onclick="scrollToSection('section_nair'); toggleDropdown('dropdown_bair')" >
+                        Neutral Air
+                    </a>
+            
+                    <a href="#section_fair" onclick="scrollToSection('section_fair'); toggleDropdown('dropdown_bair')" >
+                        Forward Air
+                    </a>
+            
+                    <a href="#section_bair" onclick="scrollToSection('section_bair'); toggleDropdown('dropdown_bair')"  class="current-section">
+                        Back Air
+                    </a>
+            
+                    <a href="#section_uair" onclick="scrollToSection('section_uair'); toggleDropdown('dropdown_bair')" >
+                        Up Air
+                    </a>
+            
+                    <a href="#section_dair" onclick="scrollToSection('section_dair'); toggleDropdown('dropdown_bair')" >
+                        Down Air
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="bair_table">
             <thead>
@@ -3798,7 +3974,39 @@
             </tbody>
         </table>
 
-            <h2>Up Air</h2>
+            <h2 id="section_uair" class="section-header">
+                <span>Up Air</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_uair')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_uair" class="dropdown-content">
+        
+                    <a href="#section_nair" onclick="scrollToSection('section_nair'); toggleDropdown('dropdown_uair')" >
+                        Neutral Air
+                    </a>
+            
+                    <a href="#section_fair" onclick="scrollToSection('section_fair'); toggleDropdown('dropdown_uair')" >
+                        Forward Air
+                    </a>
+            
+                    <a href="#section_bair" onclick="scrollToSection('section_bair'); toggleDropdown('dropdown_uair')" >
+                        Back Air
+                    </a>
+            
+                    <a href="#section_uair" onclick="scrollToSection('section_uair'); toggleDropdown('dropdown_uair')"  class="current-section">
+                        Up Air
+                    </a>
+            
+                    <a href="#section_dair" onclick="scrollToSection('section_dair'); toggleDropdown('dropdown_uair')" >
+                        Down Air
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="uair_table">
             <thead>
@@ -4967,7 +5175,39 @@
             </tbody>
         </table>
 
-            <h2>Down Air</h2>
+            <h2 id="section_dair" class="section-header">
+                <span>Down Air</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_dair')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_dair" class="dropdown-content">
+        
+                    <a href="#section_nair" onclick="scrollToSection('section_nair'); toggleDropdown('dropdown_dair')" >
+                        Neutral Air
+                    </a>
+            
+                    <a href="#section_fair" onclick="scrollToSection('section_fair'); toggleDropdown('dropdown_dair')" >
+                        Forward Air
+                    </a>
+            
+                    <a href="#section_bair" onclick="scrollToSection('section_bair'); toggleDropdown('dropdown_dair')" >
+                        Back Air
+                    </a>
+            
+                    <a href="#section_uair" onclick="scrollToSection('section_uair'); toggleDropdown('dropdown_dair')" >
+                        Up Air
+                    </a>
+            
+                    <a href="#section_dair" onclick="scrollToSection('section_dair'); toggleDropdown('dropdown_dair')"  class="current-section">
+                        Down Air
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="dair_table">
             <thead>
@@ -6163,7 +6403,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-08-14 04:16:21
+            Generated on: 2025-08-14 04:38:24
         </div>
     </div>
 </body>

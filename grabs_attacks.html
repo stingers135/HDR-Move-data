@@ -199,6 +199,60 @@
         .has-tooltip:hover {
             background-color: #ffe0b2 !important;
         }
+
+        .section-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-nav-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .dropdown-btn {
+            background-color: #FF8400;
+            color: white;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .dropdown-btn:hover {
+            background-color: #D6812D;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown-content a.current-section {
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+        .show {
+            display: block;
+        }
     </style>
     <script>
         function sortTable(tableId, n) {
@@ -260,7 +314,33 @@
                 }
             }
         }
+        
+        /* NEW: Dropdown functionality */
+        function toggleDropdown(dropdownId) {
+            document.getElementById(dropdownId).classList.toggle("show");
+        }
 
+        // Close dropdowns when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        // Smooth scrolling for section links
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
         document.addEventListener('DOMContentLoaded', function() {
             var tables = document.querySelectorAll('table');
             tables.forEach(function(table) {
@@ -283,7 +363,43 @@
         <h1>Grabs & Throws</h1>
         <p style="text-align: center; color: #666;">Attack damage, knockback, and frame data analysis</p>
 
-                <h2>Grabs</h2>
+        <h2 id="section_grabs" class="section-header">
+            <span>Grabs</span>
+            
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_grab')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_grab" class="dropdown-content">
+        
+                    <a href="#section_grab" onclick="scrollToSection('section_grab'); toggleDropdown('dropdown_grab')"  class="current-section">
+                        Grabs
+                    </a>
+            
+                    <a href="#section_pummel" onclick="scrollToSection('section_pummel'); toggleDropdown('dropdown_grab')" >
+                        Pummel
+                    </a>
+            
+                    <a href="#section_fthrow" onclick="scrollToSection('section_fthrow'); toggleDropdown('dropdown_grab')" >
+                        Forward Throw
+                    </a>
+            
+                    <a href="#section_bthrow" onclick="scrollToSection('section_bthrow'); toggleDropdown('dropdown_grab')" >
+                        Back Throw
+                    </a>
+            
+                    <a href="#section_uthrow" onclick="scrollToSection('section_uthrow'); toggleDropdown('dropdown_grab')" >
+                        Up Throw
+                    </a>
+            
+                    <a href="#section_dthrow" onclick="scrollToSection('section_dthrow'); toggleDropdown('dropdown_grab')" >
+                        Down Throw
+                    </a>
+            
+                </div>
+            </div>
+        
+        </h2>
         
                 <table id="grabs_table">
                     <thead>
@@ -915,7 +1031,51 @@
                     </tbody>
                 </table>
         
-            <h2>Pummel</h2>
+            <h2 id="section_pummel" class="section-header">
+                <span>Pummel</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_pummel')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_pummel" class="dropdown-content">
+        
+                    <a href="#section_grab" onclick="scrollToSection('section_grab'); toggleDropdown('dropdown_pummel')" >
+                        Grab
+                    </a>
+            
+                    <a href="#section_dash_grab" onclick="scrollToSection('section_dash_grab'); toggleDropdown('dropdown_pummel')" >
+                        Dash Grab
+                    </a>
+            
+                    <a href="#section_pivot_grab" onclick="scrollToSection('section_pivot_grab'); toggleDropdown('dropdown_pummel')" >
+                        Pivot Grab
+                    </a>
+            
+                    <a href="#section_pummel" onclick="scrollToSection('section_pummel'); toggleDropdown('dropdown_pummel')"  class="current-section">
+                        Pummel
+                    </a>
+            
+                    <a href="#section_fthrow" onclick="scrollToSection('section_fthrow'); toggleDropdown('dropdown_pummel')" >
+                        Forward Throw
+                    </a>
+            
+                    <a href="#section_bthrow" onclick="scrollToSection('section_bthrow'); toggleDropdown('dropdown_pummel')" >
+                        Back Throw
+                    </a>
+            
+                    <a href="#section_uthrow" onclick="scrollToSection('section_uthrow'); toggleDropdown('dropdown_pummel')" >
+                        Up Throw
+                    </a>
+            
+                    <a href="#section_dthrow" onclick="scrollToSection('section_dthrow'); toggleDropdown('dropdown_pummel')" >
+                        Down Throw
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="pummel_table">
             <thead>
@@ -1911,7 +2071,51 @@
             </div>
         </div>
 
-            <h2>Forward Throw</h2>
+            <h2 id="section_fthrow" class="section-header">
+                <span>Forward Throw</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_fthrow')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_fthrow" class="dropdown-content">
+        
+                    <a href="#section_grab" onclick="scrollToSection('section_grab'); toggleDropdown('dropdown_fthrow')" >
+                        Grab
+                    </a>
+            
+                    <a href="#section_dash_grab" onclick="scrollToSection('section_dash_grab'); toggleDropdown('dropdown_fthrow')" >
+                        Dash Grab
+                    </a>
+            
+                    <a href="#section_pivot_grab" onclick="scrollToSection('section_pivot_grab'); toggleDropdown('dropdown_fthrow')" >
+                        Pivot Grab
+                    </a>
+            
+                    <a href="#section_pummel" onclick="scrollToSection('section_pummel'); toggleDropdown('dropdown_fthrow')" >
+                        Pummel
+                    </a>
+            
+                    <a href="#section_fthrow" onclick="scrollToSection('section_fthrow'); toggleDropdown('dropdown_fthrow')"  class="current-section">
+                        Forward Throw
+                    </a>
+            
+                    <a href="#section_bthrow" onclick="scrollToSection('section_bthrow'); toggleDropdown('dropdown_fthrow')" >
+                        Back Throw
+                    </a>
+            
+                    <a href="#section_uthrow" onclick="scrollToSection('section_uthrow'); toggleDropdown('dropdown_fthrow')" >
+                        Up Throw
+                    </a>
+            
+                    <a href="#section_dthrow" onclick="scrollToSection('section_dthrow'); toggleDropdown('dropdown_fthrow')" >
+                        Down Throw
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="fthrow_table">
             <thead>
@@ -2946,7 +3150,51 @@
             </div>
         </div>
 
-            <h2>Back Throw</h2>
+            <h2 id="section_bthrow" class="section-header">
+                <span>Back Throw</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_bthrow')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_bthrow" class="dropdown-content">
+        
+                    <a href="#section_grab" onclick="scrollToSection('section_grab'); toggleDropdown('dropdown_bthrow')" >
+                        Grab
+                    </a>
+            
+                    <a href="#section_dash_grab" onclick="scrollToSection('section_dash_grab'); toggleDropdown('dropdown_bthrow')" >
+                        Dash Grab
+                    </a>
+            
+                    <a href="#section_pivot_grab" onclick="scrollToSection('section_pivot_grab'); toggleDropdown('dropdown_bthrow')" >
+                        Pivot Grab
+                    </a>
+            
+                    <a href="#section_pummel" onclick="scrollToSection('section_pummel'); toggleDropdown('dropdown_bthrow')" >
+                        Pummel
+                    </a>
+            
+                    <a href="#section_fthrow" onclick="scrollToSection('section_fthrow'); toggleDropdown('dropdown_bthrow')" >
+                        Forward Throw
+                    </a>
+            
+                    <a href="#section_bthrow" onclick="scrollToSection('section_bthrow'); toggleDropdown('dropdown_bthrow')"  class="current-section">
+                        Back Throw
+                    </a>
+            
+                    <a href="#section_uthrow" onclick="scrollToSection('section_uthrow'); toggleDropdown('dropdown_bthrow')" >
+                        Up Throw
+                    </a>
+            
+                    <a href="#section_dthrow" onclick="scrollToSection('section_dthrow'); toggleDropdown('dropdown_bthrow')" >
+                        Down Throw
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="bthrow_table">
             <thead>
@@ -3945,7 +4193,51 @@
             </div>
         </div>
 
-            <h2>Up Throw</h2>
+            <h2 id="section_uthrow" class="section-header">
+                <span>Up Throw</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_uthrow')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_uthrow" class="dropdown-content">
+        
+                    <a href="#section_grab" onclick="scrollToSection('section_grab'); toggleDropdown('dropdown_uthrow')" >
+                        Grab
+                    </a>
+            
+                    <a href="#section_dash_grab" onclick="scrollToSection('section_dash_grab'); toggleDropdown('dropdown_uthrow')" >
+                        Dash Grab
+                    </a>
+            
+                    <a href="#section_pivot_grab" onclick="scrollToSection('section_pivot_grab'); toggleDropdown('dropdown_uthrow')" >
+                        Pivot Grab
+                    </a>
+            
+                    <a href="#section_pummel" onclick="scrollToSection('section_pummel'); toggleDropdown('dropdown_uthrow')" >
+                        Pummel
+                    </a>
+            
+                    <a href="#section_fthrow" onclick="scrollToSection('section_fthrow'); toggleDropdown('dropdown_uthrow')" >
+                        Forward Throw
+                    </a>
+            
+                    <a href="#section_bthrow" onclick="scrollToSection('section_bthrow'); toggleDropdown('dropdown_uthrow')" >
+                        Back Throw
+                    </a>
+            
+                    <a href="#section_uthrow" onclick="scrollToSection('section_uthrow'); toggleDropdown('dropdown_uthrow')"  class="current-section">
+                        Up Throw
+                    </a>
+            
+                    <a href="#section_dthrow" onclick="scrollToSection('section_dthrow'); toggleDropdown('dropdown_uthrow')" >
+                        Down Throw
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="uthrow_table">
             <thead>
@@ -4942,7 +5234,51 @@
             </div>
         </div>
 
-            <h2>Down Throw</h2>
+            <h2 id="section_dthrow" class="section-header">
+                <span>Down Throw</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_dthrow')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_dthrow" class="dropdown-content">
+        
+                    <a href="#section_grab" onclick="scrollToSection('section_grab'); toggleDropdown('dropdown_dthrow')" >
+                        Grab
+                    </a>
+            
+                    <a href="#section_dash_grab" onclick="scrollToSection('section_dash_grab'); toggleDropdown('dropdown_dthrow')" >
+                        Dash Grab
+                    </a>
+            
+                    <a href="#section_pivot_grab" onclick="scrollToSection('section_pivot_grab'); toggleDropdown('dropdown_dthrow')" >
+                        Pivot Grab
+                    </a>
+            
+                    <a href="#section_pummel" onclick="scrollToSection('section_pummel'); toggleDropdown('dropdown_dthrow')" >
+                        Pummel
+                    </a>
+            
+                    <a href="#section_fthrow" onclick="scrollToSection('section_fthrow'); toggleDropdown('dropdown_dthrow')" >
+                        Forward Throw
+                    </a>
+            
+                    <a href="#section_bthrow" onclick="scrollToSection('section_bthrow'); toggleDropdown('dropdown_dthrow')" >
+                        Back Throw
+                    </a>
+            
+                    <a href="#section_uthrow" onclick="scrollToSection('section_uthrow'); toggleDropdown('dropdown_dthrow')" >
+                        Up Throw
+                    </a>
+            
+                    <a href="#section_dthrow" onclick="scrollToSection('section_dthrow'); toggleDropdown('dropdown_dthrow')"  class="current-section">
+                        Down Throw
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="dthrow_table">
             <thead>
@@ -5938,7 +6274,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-08-14 04:16:21
+            Generated on: 2025-08-14 04:38:24
         </div>
     </div>
 </body>

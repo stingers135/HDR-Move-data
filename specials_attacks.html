@@ -199,6 +199,60 @@
         .has-tooltip:hover {
             background-color: #ffe0b2 !important;
         }
+
+        .section-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-nav-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .dropdown-btn {
+            background-color: #FF8400;
+            color: white;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .dropdown-btn:hover {
+            background-color: #D6812D;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown-content a.current-section {
+            background-color: #e3f2fd;
+            font-weight: bold;
+        }
+        .show {
+            display: block;
+        }
     </style>
     <script>
         function sortTable(tableId, n) {
@@ -260,7 +314,33 @@
                 }
             }
         }
+        
+        /* NEW: Dropdown functionality */
+        function toggleDropdown(dropdownId) {
+            document.getElementById(dropdownId).classList.toggle("show");
+        }
 
+        // Close dropdowns when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        // Smooth scrolling for section links
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
         document.addEventListener('DOMContentLoaded', function() {
             var tables = document.querySelectorAll('table');
             tables.forEach(function(table) {
@@ -283,7 +363,51 @@
         <h1>Special Attacks</h1>
         <p style="text-align: center; color: #666;">Attack damage, knockback, and frame data analysis</p>
 
-            <h2>Neutral Special</h2>
+            <h2 id="section_neutral_b" class="section-header">
+                <span>Neutral Special</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_neutral_b')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_neutral_b" class="dropdown-content">
+        
+                    <a href="#section_neutral_b" onclick="scrollToSection('section_neutral_b'); toggleDropdown('dropdown_neutral_b')"  class="current-section">
+                        Neutral Special
+                    </a>
+            
+                    <a href="#section_side_b" onclick="scrollToSection('section_side_b'); toggleDropdown('dropdown_neutral_b')" >
+                        Side Special
+                    </a>
+            
+                    <a href="#section_up_b" onclick="scrollToSection('section_up_b'); toggleDropdown('dropdown_neutral_b')" >
+                        Up Special
+                    </a>
+            
+                    <a href="#section_down_b" onclick="scrollToSection('section_down_b'); toggleDropdown('dropdown_neutral_b')" >
+                        Down Special
+                    </a>
+            
+                    <a href="#section_neutral_b_air" onclick="scrollToSection('section_neutral_b_air'); toggleDropdown('dropdown_neutral_b')" >
+                        Neutral Special (Air)
+                    </a>
+            
+                    <a href="#section_side_b_air" onclick="scrollToSection('section_side_b_air'); toggleDropdown('dropdown_neutral_b')" >
+                        Side Special (Air)
+                    </a>
+            
+                    <a href="#section_up_b_air" onclick="scrollToSection('section_up_b_air'); toggleDropdown('dropdown_neutral_b')" >
+                        Up Special (Air)
+                    </a>
+            
+                    <a href="#section_down_b_air" onclick="scrollToSection('section_down_b_air'); toggleDropdown('dropdown_neutral_b')" >
+                        Down Special (Air)
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="neutral_b_table">
             <thead>
@@ -529,7 +653,51 @@
             </div>
         </div>
 
-            <h2>Side Special</h2>
+            <h2 id="section_side_b" class="section-header">
+                <span>Side Special</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_side_b')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_side_b" class="dropdown-content">
+        
+                    <a href="#section_neutral_b" onclick="scrollToSection('section_neutral_b'); toggleDropdown('dropdown_side_b')" >
+                        Neutral Special
+                    </a>
+            
+                    <a href="#section_side_b" onclick="scrollToSection('section_side_b'); toggleDropdown('dropdown_side_b')"  class="current-section">
+                        Side Special
+                    </a>
+            
+                    <a href="#section_up_b" onclick="scrollToSection('section_up_b'); toggleDropdown('dropdown_side_b')" >
+                        Up Special
+                    </a>
+            
+                    <a href="#section_down_b" onclick="scrollToSection('section_down_b'); toggleDropdown('dropdown_side_b')" >
+                        Down Special
+                    </a>
+            
+                    <a href="#section_neutral_b_air" onclick="scrollToSection('section_neutral_b_air'); toggleDropdown('dropdown_side_b')" >
+                        Neutral Special (Air)
+                    </a>
+            
+                    <a href="#section_side_b_air" onclick="scrollToSection('section_side_b_air'); toggleDropdown('dropdown_side_b')" >
+                        Side Special (Air)
+                    </a>
+            
+                    <a href="#section_up_b_air" onclick="scrollToSection('section_up_b_air'); toggleDropdown('dropdown_side_b')" >
+                        Up Special (Air)
+                    </a>
+            
+                    <a href="#section_down_b_air" onclick="scrollToSection('section_down_b_air'); toggleDropdown('dropdown_side_b')" >
+                        Down Special (Air)
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="side_b_table">
             <thead>
@@ -872,7 +1040,51 @@
             </div>
         </div>
 
-            <h2>Up Special</h2>
+            <h2 id="section_up_b" class="section-header">
+                <span>Up Special</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_up_b')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_up_b" class="dropdown-content">
+        
+                    <a href="#section_neutral_b" onclick="scrollToSection('section_neutral_b'); toggleDropdown('dropdown_up_b')" >
+                        Neutral Special
+                    </a>
+            
+                    <a href="#section_side_b" onclick="scrollToSection('section_side_b'); toggleDropdown('dropdown_up_b')" >
+                        Side Special
+                    </a>
+            
+                    <a href="#section_up_b" onclick="scrollToSection('section_up_b'); toggleDropdown('dropdown_up_b')"  class="current-section">
+                        Up Special
+                    </a>
+            
+                    <a href="#section_down_b" onclick="scrollToSection('section_down_b'); toggleDropdown('dropdown_up_b')" >
+                        Down Special
+                    </a>
+            
+                    <a href="#section_neutral_b_air" onclick="scrollToSection('section_neutral_b_air'); toggleDropdown('dropdown_up_b')" >
+                        Neutral Special (Air)
+                    </a>
+            
+                    <a href="#section_side_b_air" onclick="scrollToSection('section_side_b_air'); toggleDropdown('dropdown_up_b')" >
+                        Side Special (Air)
+                    </a>
+            
+                    <a href="#section_up_b_air" onclick="scrollToSection('section_up_b_air'); toggleDropdown('dropdown_up_b')" >
+                        Up Special (Air)
+                    </a>
+            
+                    <a href="#section_down_b_air" onclick="scrollToSection('section_down_b_air'); toggleDropdown('dropdown_up_b')" >
+                        Down Special (Air)
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="up_b_table">
             <thead>
@@ -1375,7 +1587,51 @@
             </div>
         </div>
 
-            <h2>Down Special</h2>
+            <h2 id="section_down_b" class="section-header">
+                <span>Down Special</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_down_b')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_down_b" class="dropdown-content">
+        
+                    <a href="#section_neutral_b" onclick="scrollToSection('section_neutral_b'); toggleDropdown('dropdown_down_b')" >
+                        Neutral Special
+                    </a>
+            
+                    <a href="#section_side_b" onclick="scrollToSection('section_side_b'); toggleDropdown('dropdown_down_b')" >
+                        Side Special
+                    </a>
+            
+                    <a href="#section_up_b" onclick="scrollToSection('section_up_b'); toggleDropdown('dropdown_down_b')" >
+                        Up Special
+                    </a>
+            
+                    <a href="#section_down_b" onclick="scrollToSection('section_down_b'); toggleDropdown('dropdown_down_b')"  class="current-section">
+                        Down Special
+                    </a>
+            
+                    <a href="#section_neutral_b_air" onclick="scrollToSection('section_neutral_b_air'); toggleDropdown('dropdown_down_b')" >
+                        Neutral Special (Air)
+                    </a>
+            
+                    <a href="#section_side_b_air" onclick="scrollToSection('section_side_b_air'); toggleDropdown('dropdown_down_b')" >
+                        Side Special (Air)
+                    </a>
+            
+                    <a href="#section_up_b_air" onclick="scrollToSection('section_up_b_air'); toggleDropdown('dropdown_down_b')" >
+                        Up Special (Air)
+                    </a>
+            
+                    <a href="#section_down_b_air" onclick="scrollToSection('section_down_b_air'); toggleDropdown('dropdown_down_b')" >
+                        Down Special (Air)
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="down_b_table">
             <thead>
@@ -1657,7 +1913,51 @@
             </div>
         </div>
 
-            <h2>Neutral Special (Air)</h2>
+            <h2 id="section_neutral_b_air" class="section-header">
+                <span>Neutral Special (Air)</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_neutral_b_air')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_neutral_b_air" class="dropdown-content">
+        
+                    <a href="#section_neutral_b" onclick="scrollToSection('section_neutral_b'); toggleDropdown('dropdown_neutral_b_air')" >
+                        Neutral Special
+                    </a>
+            
+                    <a href="#section_side_b" onclick="scrollToSection('section_side_b'); toggleDropdown('dropdown_neutral_b_air')" >
+                        Side Special
+                    </a>
+            
+                    <a href="#section_up_b" onclick="scrollToSection('section_up_b'); toggleDropdown('dropdown_neutral_b_air')" >
+                        Up Special
+                    </a>
+            
+                    <a href="#section_down_b" onclick="scrollToSection('section_down_b'); toggleDropdown('dropdown_neutral_b_air')" >
+                        Down Special
+                    </a>
+            
+                    <a href="#section_neutral_b_air" onclick="scrollToSection('section_neutral_b_air'); toggleDropdown('dropdown_neutral_b_air')"  class="current-section">
+                        Neutral Special (Air)
+                    </a>
+            
+                    <a href="#section_side_b_air" onclick="scrollToSection('section_side_b_air'); toggleDropdown('dropdown_neutral_b_air')" >
+                        Side Special (Air)
+                    </a>
+            
+                    <a href="#section_up_b_air" onclick="scrollToSection('section_up_b_air'); toggleDropdown('dropdown_neutral_b_air')" >
+                        Up Special (Air)
+                    </a>
+            
+                    <a href="#section_down_b_air" onclick="scrollToSection('section_down_b_air'); toggleDropdown('dropdown_neutral_b_air')" >
+                        Down Special (Air)
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="neutral_b_air_table">
             <thead>
@@ -1914,7 +2214,51 @@
             </div>
         </div>
 
-            <h2>Side Special (Air)</h2>
+            <h2 id="section_side_b_air" class="section-header">
+                <span>Side Special (Air)</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_side_b_air')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_side_b_air" class="dropdown-content">
+        
+                    <a href="#section_neutral_b" onclick="scrollToSection('section_neutral_b'); toggleDropdown('dropdown_side_b_air')" >
+                        Neutral Special
+                    </a>
+            
+                    <a href="#section_side_b" onclick="scrollToSection('section_side_b'); toggleDropdown('dropdown_side_b_air')" >
+                        Side Special
+                    </a>
+            
+                    <a href="#section_up_b" onclick="scrollToSection('section_up_b'); toggleDropdown('dropdown_side_b_air')" >
+                        Up Special
+                    </a>
+            
+                    <a href="#section_down_b" onclick="scrollToSection('section_down_b'); toggleDropdown('dropdown_side_b_air')" >
+                        Down Special
+                    </a>
+            
+                    <a href="#section_neutral_b_air" onclick="scrollToSection('section_neutral_b_air'); toggleDropdown('dropdown_side_b_air')" >
+                        Neutral Special (Air)
+                    </a>
+            
+                    <a href="#section_side_b_air" onclick="scrollToSection('section_side_b_air'); toggleDropdown('dropdown_side_b_air')"  class="current-section">
+                        Side Special (Air)
+                    </a>
+            
+                    <a href="#section_up_b_air" onclick="scrollToSection('section_up_b_air'); toggleDropdown('dropdown_side_b_air')" >
+                        Up Special (Air)
+                    </a>
+            
+                    <a href="#section_down_b_air" onclick="scrollToSection('section_down_b_air'); toggleDropdown('dropdown_side_b_air')" >
+                        Down Special (Air)
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="side_b_air_table">
             <thead>
@@ -2208,7 +2552,51 @@
             </div>
         </div>
 
-            <h2>Up Special (Air)</h2>
+            <h2 id="section_up_b_air" class="section-header">
+                <span>Up Special (Air)</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_up_b_air')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_up_b_air" class="dropdown-content">
+        
+                    <a href="#section_neutral_b" onclick="scrollToSection('section_neutral_b'); toggleDropdown('dropdown_up_b_air')" >
+                        Neutral Special
+                    </a>
+            
+                    <a href="#section_side_b" onclick="scrollToSection('section_side_b'); toggleDropdown('dropdown_up_b_air')" >
+                        Side Special
+                    </a>
+            
+                    <a href="#section_up_b" onclick="scrollToSection('section_up_b'); toggleDropdown('dropdown_up_b_air')" >
+                        Up Special
+                    </a>
+            
+                    <a href="#section_down_b" onclick="scrollToSection('section_down_b'); toggleDropdown('dropdown_up_b_air')" >
+                        Down Special
+                    </a>
+            
+                    <a href="#section_neutral_b_air" onclick="scrollToSection('section_neutral_b_air'); toggleDropdown('dropdown_up_b_air')" >
+                        Neutral Special (Air)
+                    </a>
+            
+                    <a href="#section_side_b_air" onclick="scrollToSection('section_side_b_air'); toggleDropdown('dropdown_up_b_air')" >
+                        Side Special (Air)
+                    </a>
+            
+                    <a href="#section_up_b_air" onclick="scrollToSection('section_up_b_air'); toggleDropdown('dropdown_up_b_air')"  class="current-section">
+                        Up Special (Air)
+                    </a>
+            
+                    <a href="#section_down_b_air" onclick="scrollToSection('section_down_b_air'); toggleDropdown('dropdown_up_b_air')" >
+                        Down Special (Air)
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="up_b_air_table">
             <thead>
@@ -2686,7 +3074,51 @@
             </div>
         </div>
 
-            <h2>Down Special (Air)</h2>
+            <h2 id="section_down_b_air" class="section-header">
+                <span>Down Special (Air)</span>
+                
+            <div class="section-nav-dropdown">
+                <button onclick="toggleDropdown('dropdown_down_b_air')" class="dropdown-btn">
+                    Quick Nav ▼
+                </button>
+                <div id="dropdown_down_b_air" class="dropdown-content">
+        
+                    <a href="#section_neutral_b" onclick="scrollToSection('section_neutral_b'); toggleDropdown('dropdown_down_b_air')" >
+                        Neutral Special
+                    </a>
+            
+                    <a href="#section_side_b" onclick="scrollToSection('section_side_b'); toggleDropdown('dropdown_down_b_air')" >
+                        Side Special
+                    </a>
+            
+                    <a href="#section_up_b" onclick="scrollToSection('section_up_b'); toggleDropdown('dropdown_down_b_air')" >
+                        Up Special
+                    </a>
+            
+                    <a href="#section_down_b" onclick="scrollToSection('section_down_b'); toggleDropdown('dropdown_down_b_air')" >
+                        Down Special
+                    </a>
+            
+                    <a href="#section_neutral_b_air" onclick="scrollToSection('section_neutral_b_air'); toggleDropdown('dropdown_down_b_air')" >
+                        Neutral Special (Air)
+                    </a>
+            
+                    <a href="#section_side_b_air" onclick="scrollToSection('section_side_b_air'); toggleDropdown('dropdown_down_b_air')" >
+                        Side Special (Air)
+                    </a>
+            
+                    <a href="#section_up_b_air" onclick="scrollToSection('section_up_b_air'); toggleDropdown('dropdown_down_b_air')" >
+                        Up Special (Air)
+                    </a>
+            
+                    <a href="#section_down_b_air" onclick="scrollToSection('section_down_b_air'); toggleDropdown('dropdown_down_b_air')"  class="current-section">
+                        Down Special (Air)
+                    </a>
+            
+                </div>
+            </div>
+        
+            </h2>
         
         <table id="down_b_air_table">
             <thead>
@@ -2981,7 +3413,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-08-14 04:16:21
+            Generated on: 2025-08-14 04:38:24
         </div>
     </div>
 </body>
