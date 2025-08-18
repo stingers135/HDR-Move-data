@@ -199,6 +199,24 @@
         .has-tooltip:hover {
             background-color: #ffe0b2 !important;
         }
+        .info-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 12px;
+            line-height: 16px;
+            margin-left: 5px;
+            cursor: help;
+            font-weight: bold;
+        }
+
+        .info-icon:hover {
+            background-color: #0056b3;
+        }
 
         .section-header {
             position: relative;
@@ -252,6 +270,22 @@
         }
         .show {
             display: block;
+        }
+        /* Specific styling for tooltips in table headers - position below */
+        th.tooltip .tooltip-content {
+            bottom: auto;
+            top: 125%;
+        }
+
+        th.tooltip .tooltip-content::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #333 transparent;
         }
     </style>
     <script>
@@ -407,8 +441,10 @@
                     <th class="sortable">FKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">BKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">Frame <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Optimal Shield Advantage <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable tooltip">Optimal Shield Advantage <span class="info-icon">?</span> <span class="sort-icon">&#x2195;</span>
+                                        <div class="tooltip-content">Optimal Shield Advantage is calculated assuming you are landing while using the move, entering landing lag on the first possible frame after the moves hitbox comes out. Using aerials in other contexts, such as rising on shield and letting the full animation complete, is not accounted for here and cannot be calculated algorithmically at this time.</div>
+                                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -1616,8 +1652,10 @@
                     <th class="sortable">FKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">BKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">Frame <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Optimal Shield Advantage <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable tooltip">Optimal Shield Advantage <span class="info-icon">?</span> <span class="sort-icon">&#x2195;</span>
+                                        <div class="tooltip-content">Optimal Shield Advantage is calculated assuming you are landing while using the move, entering landing lag on the first possible frame after the moves hitbox comes out. Using aerials in other contexts, such as rising on shield and letting the full animation complete, is not accounted for here and cannot be calculated algorithmically at this time.</div>
+                                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -2817,8 +2855,10 @@
                     <th class="sortable">FKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">BKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">Frame <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Optimal Shield Advantage <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable tooltip">Optimal Shield Advantage <span class="info-icon">?</span> <span class="sort-icon">&#x2195;</span>
+                                        <div class="tooltip-content">Optimal Shield Advantage is calculated assuming you are landing while using the move, entering landing lag on the first possible frame after the moves hitbox comes out. Using aerials in other contexts, such as rising on shield and letting the full animation complete, is not accounted for here and cannot be calculated algorithmically at this time.</div>
+                                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -4018,8 +4058,10 @@
                     <th class="sortable">FKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">BKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">Frame <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Optimal Shield Advantage <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable tooltip">Optimal Shield Advantage <span class="info-icon">?</span> <span class="sort-icon">&#x2195;</span>
+                                        <div class="tooltip-content">Optimal Shield Advantage is calculated assuming you are landing while using the move, entering landing lag on the first possible frame after the moves hitbox comes out. Using aerials in other contexts, such as rising on shield and letting the full animation complete, is not accounted for here and cannot be calculated algorithmically at this time.</div>
+                                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -5219,8 +5261,10 @@
                     <th class="sortable">FKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">BKB <span class="sort-icon">&#x2195;</span></th>
                     <th class="sortable">Frame <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
-                    <th class="sortable">Optimal Shield Advantage <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable">Landing Lag <span class="sort-icon">&#x2195;</span></th>
+                                    <th class="sortable tooltip">Optimal Shield Advantage <span class="info-icon">?</span> <span class="sort-icon">&#x2195;</span>
+                                        <div class="tooltip-content">Optimal Shield Advantage is calculated assuming you are landing while using the move, entering landing lag on the first possible frame after the moves hitbox comes out. Using aerials in other contexts, such as rising on shield and letting the full animation complete, is not accounted for here and cannot be calculated algorithmically at this time.</div>
+                                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -6403,7 +6447,7 @@
         </div>
 
         <div class="timestamp">
-            Generated on: 2025-08-14 04:46:17
+            Generated on: 2025-08-18 11:53:26
         </div>
     </div>
 </body>
