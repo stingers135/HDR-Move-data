@@ -1139,6 +1139,19 @@
                 named[bone.name.toLowerCase()] = { matrix: worldTransforms[i], parentIndex: bone.parent_index };
             });
             
+            
+            // Virtual bones for ATTACK macros (injected by generator)
+            const identity = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]];
+            if (!named['top']) {
+                named['top'] = { matrix: identity, parentIndex: null };
+            }
+            if (!named['attach']) {
+                // Article hitboxes use 'attach' - map to the 'Throw' bone where articles connect
+                named['attach'] = named['throw'] || named['Throw'] || { matrix: identity, parentIndex: null };
+            }
+            if (!named['hip']) {
+                named['hip'] = named['waist'] || named['hip'] || { matrix: identity, parentIndex: null };
+            }
             return named;
         }
         
