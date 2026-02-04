@@ -251,7 +251,6 @@
             'bthrow': 'e01throwb',
             'uthrow': 'e01throwhi',
             'dthrow': 'e01throwlw',
-            'ftilt3': 'c01attacks3s3',
             // DK fthrow variants
             'fthrow_forward': 'e01throwff',
             'fthrow_back': 'e01throwfb',
@@ -450,9 +449,10 @@
         // Output: 0-indexed animation frame for array lookup
         function getAnimationFrame(realFrame) {
             if (!motionEvents || motionEvents.length === 0) {
-                // No rate changes: game advances 1 anim frame per tick,
-                // and at displayed Frame N (realFrame N-1) has advanced N times.
-                return realFrame + 1;
+                // No rate changes: 1:1 mapping between game frames and animation.
+                // At displayed Frame N (realFrame = N-1), the animation is at
+                // position N-1 (0-indexed), so transforms[realFrame] is correct.
+                return realFrame;
             }
             
             const sortedEvents = [...motionEvents].sort((a, b) => a.frame - b.frame);
@@ -494,12 +494,10 @@
             
             pendingTriggers.sort((a, b) => a.triggerFrame - b.triggerFrame);
             
-            // Simulate ticks: the game engine advances animation THEN renders,
-            // so at displayed Frame N (realFrame N-1), the animation has been
-            // advanced N times. The Python extractor counts the same way:
-            // game_frame increments after each advance, and returns game_frame
-            // when the target is reached. So we need realFrame+1 advances here.
-            const tickCount = Math.max(0, realFrame + 1);
+            // Simulate ticks: at displayed Frame N (realFrame = N-1),
+            // the animation has been advanced N-1 times (matching the
+            // continuous fallback's -1 adjustment). We need realFrame ticks.
+            const tickCount = Math.max(0, realFrame);
             let currentAnim = 0.0;
             let remaining = [...pendingTriggers];
             
@@ -916,19 +914,6 @@
                 named[bone.name.toLowerCase()] = { matrix: worldTransforms[i], parentIndex: bone.parent_index };
             });
             
-            
-            // Virtual bones for ATTACK macros (injected by generator)
-            const identity = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]];
-            if (!named['top']) {
-                named['top'] = { matrix: identity, parentIndex: null };
-            }
-            if (!named['attach']) {
-                // Article hitboxes use 'attach' - map to the 'Throw' bone where articles connect
-                named['attach'] = named['throw'] || named['Throw'] || { matrix: identity, parentIndex: null };
-            }
-            if (!named['hip']) {
-                named['hip'] = named['waist'] || named['hip'] || { matrix: identity, parentIndex: null };
-            }
             return named;
         }
         
