@@ -189,7 +189,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 19
     },
     "jab2": {
       "total_frames": 31,
@@ -521,7 +522,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 22
     },
     "jab3": {
       "total_frames": 49,
@@ -745,7 +747,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 31
     },
     "rapid_jab": {
       "total_frames": 17,
@@ -1005,7 +1008,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 40
     },
     "combo3": {
       "total_frames": 17,
@@ -1528,7 +1532,8 @@
           "frame": 10.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 33
     },
     "utilt": {
       "total_frames": 59,
@@ -1973,7 +1978,8 @@
           "frame": 20.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 33
     },
     "dtilt": {
       "total_frames": 45,
@@ -2256,7 +2262,8 @@
           "frame": 5.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 28
     },
     "fsmash": {
       "total_frames": 65,
@@ -2500,16 +2507,28 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 0.8
+          "type": "range",
+          "frame": 10.0,
+          "start_orig": 10.0,
+          "end_orig": 19.0,
+          "new_duration": 6.0,
+          "scale_factor": 0.6666666666666666
         },
         {
           "type": "FT_MOTION_RATE",
+          "frame": 19.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
           "frame": 35.0,
-          "rate_value": 1.2
+          "start_orig": 35.0,
+          "end_orig": 61.0,
+          "new_duration": 29.0,
+          "scale_factor": 1.1153846153846154
         }
-      ]
+      ],
+      "faf": 61
     },
     "usmash": {
       "total_frames": 63,
@@ -3046,7 +3065,8 @@
           "frame": 9.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 55
     },
     "dsmash": {
       "total_frames": 65,
@@ -3602,7 +3622,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 53
     },
     "nair": {
       "total_frames": 61,
@@ -5704,7 +5725,8 @@
           "frame": 15.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 40
     },
     "fair": {
       "total_frames": 60,
@@ -6169,7 +6191,8 @@
           "frame": 14.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 33
     },
     "bair": {
       "total_frames": 55,
@@ -6328,7 +6351,8 @@
           "frame": 12.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 42
     },
     "uair": {
       "total_frames": 57,
@@ -6880,7 +6904,8 @@
           "frame": 11.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 43
     },
     "dair": {
       "total_frames": 59,
@@ -7991,7 +8016,8 @@
           "frame": 26.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 49
     },
     "dash_attack": {
       "total_frames": 65,
@@ -8419,7 +8445,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 50
     },
     "grab": {
       "total_frames": 39,
@@ -8485,7 +8512,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 36
     },
     "dash_grab": {
       "total_frames": 49,
@@ -8551,7 +8579,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 42
     },
     "pivot_grab": {
       "total_frames": 44,
@@ -8617,7 +8646,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 39
     },
     "pummel": {
       "total_frames": 19,
@@ -8649,7 +8679,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 7
     },
     "fthrow": {
       "total_frames": 60,
@@ -8734,7 +8765,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 35
     },
     "bthrow": {
       "total_frames": 45,
@@ -8833,7 +8865,8 @@
           "frame": 12.0,
           "rate_value": 0.5
         }
-      ]
+      ],
+      "faf": 24
     },
     "uthrow": {
       "total_frames": 59,
@@ -8889,7 +8922,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 37
     },
     "dthrow": {
       "total_frames": 64,
@@ -8949,8 +8983,9 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 50
     }
   },
-  "generated_at": "2026-02-03T21:21:44.326798"
+  "generated_at": "2026-02-04T15:43:25.387805"
 }

@@ -189,7 +189,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 17
     },
     "jab2": {
       "total_frames": 39,
@@ -545,7 +546,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 20
     },
     "jab3": {
       "total_frames": 59,
@@ -973,7 +975,8 @@
           "frame": 12.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 33
     },
     "combo3": {
       "total_frames": 23,
@@ -1967,7 +1970,8 @@
           "frame": 10.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 34
     },
     "utilt": {
       "total_frames": 54,
@@ -2392,7 +2396,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 35
     },
     "dtilt": {
       "total_frames": 50,
@@ -2764,7 +2769,8 @@
           "frame": 41.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 35
     },
     "fsmash": {
       "total_frames": 90,
@@ -4072,7 +4078,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 78
     },
     "usmash": {
       "total_frames": 67,
@@ -4748,7 +4755,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 56
     },
     "dsmash": {
       "total_frames": 64,
@@ -5176,7 +5184,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 53
     },
     "nair": {
       "total_frames": 55,
@@ -7004,7 +7013,8 @@
           "frame": 5.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 37
     },
     "fair": {
       "total_frames": 62,
@@ -7059,16 +7069,16 @@
             "bone": "top",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 2.0,
-            "angle": 90,
+            "damage": 3.0,
+            "angle": 361,
             "kbg": 100,
-            "fkb": 20,
+            "fkb": 3,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
             "offset2": null,
             "is_capsule": false,
@@ -7105,16 +7115,16 @@
             "bone": "top",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 3.0,
-            "angle": 361,
+            "damage": 2.0,
+            "angle": 90,
             "kbg": 100,
-            "fkb": 3,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7153,16 +7163,16 @@
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 2.0,
-            "angle": 90,
+            "damage": 3.0,
+            "angle": 361,
             "kbg": 100,
-            "fkb": 20,
+            "fkb": 3,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
             "offset2": null,
             "is_capsule": false,
@@ -7199,16 +7209,16 @@
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 3.0,
-            "angle": 361,
+            "damage": 2.0,
+            "angle": 90,
             "kbg": 100,
-            "fkb": 3,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7247,19 +7257,23 @@
             "bone": "top",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 2.0,
-            "angle": 90,
+            "damage": 3.0,
+            "angle": 361,
             "kbg": 100,
-            "fkb": 20,
+            "fkb": 3,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
             "character": "miigunner",
             "move": "fair"
           },
@@ -7293,23 +7307,19 @@
             "bone": "top",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 3.0,
-            "angle": 361,
+            "damage": 2.0,
+            "angle": 90,
             "kbg": 100,
-            "fkb": 3,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 9.0
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "miigunner",
             "move": "fair"
           }
@@ -7345,19 +7355,23 @@
             "bone": "top",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 2.0,
-            "angle": 90,
+            "damage": 3.0,
+            "angle": 361,
             "kbg": 100,
-            "fkb": 20,
+            "fkb": 3,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
             "character": "miigunner",
             "move": "fair"
           },
@@ -7391,23 +7405,19 @@
             "bone": "top",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 3.0,
-            "angle": 361,
+            "damage": 2.0,
+            "angle": 90,
             "kbg": 100,
-            "fkb": 3,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 9.0
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "miigunner",
             "move": "fair"
           }
@@ -7443,19 +7453,23 @@
             "bone": "top",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 2.0,
-            "angle": 90,
+            "damage": 3.0,
+            "angle": 361,
             "kbg": 100,
-            "fkb": 20,
+            "fkb": 3,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
             "character": "miigunner",
             "move": "fair"
           },
@@ -7489,23 +7503,19 @@
             "bone": "top",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 3.0,
-            "angle": 361,
+            "damage": 2.0,
+            "angle": 90,
             "kbg": 100,
-            "fkb": 3,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 9.0
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "miigunner",
             "move": "fair"
           }
@@ -7541,19 +7551,23 @@
             "bone": "top",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 2.0,
-            "angle": 90,
+            "damage": 3.0,
+            "angle": 361,
             "kbg": 100,
-            "fkb": 20,
+            "fkb": 3,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
             "character": "miigunner",
             "move": "fair"
           },
@@ -7587,23 +7601,19 @@
             "bone": "top",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 3.0,
-            "angle": 361,
+            "damage": 2.0,
+            "angle": 90,
             "kbg": 100,
-            "fkb": 3,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 9.0
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "miigunner",
             "move": "fair"
           }
@@ -7639,19 +7649,23 @@
             "bone": "top",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 2.0,
-            "angle": 90,
+            "damage": 3.0,
+            "angle": 361,
             "kbg": 100,
-            "fkb": 20,
+            "fkb": 3,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
             "character": "miigunner",
             "move": "fair"
           },
@@ -7685,23 +7699,19 @@
             "bone": "top",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 3.0,
-            "angle": 361,
+            "damage": 2.0,
+            "angle": 90,
             "kbg": 100,
-            "fkb": 3,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 9.0
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "miigunner",
             "move": "fair"
           }
@@ -7738,18 +7748,22 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 2.0,
-            "angle": 90,
-            "kbg": 100,
-            "fkb": 20,
+            "angle": 361,
+            "kbg": 0,
+            "fkb": 0,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
             "character": "miigunner",
             "move": "fair"
           },
@@ -7784,22 +7798,18 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 2.0,
-            "angle": 361,
-            "kbg": 0,
-            "fkb": 0,
+            "angle": 90,
+            "kbg": 100,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 9.0
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "miigunner",
             "move": "fair"
           }
@@ -7836,18 +7846,22 @@
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 2.0,
-            "angle": 90,
-            "kbg": 100,
-            "fkb": 20,
+            "angle": 361,
+            "kbg": 0,
+            "fkb": 0,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
             "character": "miigunner",
             "move": "fair"
           },
@@ -7882,22 +7896,18 @@
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 2.0,
-            "angle": 361,
-            "kbg": 0,
-            "fkb": 0,
+            "angle": 90,
+            "kbg": 100,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 9.0
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "miigunner",
             "move": "fair"
           }
@@ -7934,18 +7944,22 @@
             "animation_frame": 19.0,
             "real_frame": 19,
             "damage": 2.0,
-            "angle": 90,
-            "kbg": 100,
-            "fkb": 20,
+            "angle": 361,
+            "kbg": 0,
+            "fkb": 0,
             "bkb": 0,
-            "size": 2.0,
+            "size": 1.4,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 0.8
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
             "character": "miigunner",
             "move": "fair"
           },
@@ -7980,22 +7994,18 @@
             "animation_frame": 19.0,
             "real_frame": 19,
             "damage": 2.0,
-            "angle": 361,
-            "kbg": 0,
-            "fkb": 0,
+            "angle": 90,
+            "kbg": 100,
+            "fkb": 20,
             "bkb": 0,
-            "size": 1.4,
+            "size": 2.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.8
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 9.0
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "miigunner",
             "move": "fair"
           }
@@ -8031,31 +8041,6 @@
             "bone": "top",
             "animation_frame": 20.0,
             "real_frame": 20,
-            "damage": 6.0,
-            "angle": 52,
-            "kbg": 91,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 1.8,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": -1.0,
-              "z": 0.0
-            },
-            "is_capsule": true,
-            "character": "miigunner",
-            "move": "fair"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 20.0,
-            "real_frame": 20,
             "damage": 2.0,
             "angle": 361,
             "kbg": 0,
@@ -8071,6 +8056,31 @@
               "x": 0.0,
               "y": 0.0,
               "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "miigunner",
+            "move": "fair"
+          },
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 6.0,
+            "angle": 52,
+            "kbg": 91,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 1.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
             },
             "is_capsule": true,
             "character": "miigunner",
@@ -8108,31 +8118,6 @@
             "bone": "top",
             "animation_frame": 21.0,
             "real_frame": 21,
-            "damage": 6.0,
-            "angle": 52,
-            "kbg": 91,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 1.8,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": -1.0,
-              "z": 0.0
-            },
-            "is_capsule": true,
-            "character": "miigunner",
-            "move": "fair"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 21.0,
-            "real_frame": 21,
             "damage": 2.0,
             "angle": 361,
             "kbg": 0,
@@ -8148,6 +8133,31 @@
               "x": 0.0,
               "y": 0.0,
               "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "miigunner",
+            "move": "fair"
+          },
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 6.0,
+            "angle": 52,
+            "kbg": 91,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 1.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
             },
             "is_capsule": true,
             "character": "miigunner",
@@ -8185,31 +8195,6 @@
             "bone": "top",
             "animation_frame": 22.0,
             "real_frame": 22,
-            "damage": 6.0,
-            "angle": 52,
-            "kbg": 91,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 1.8,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": -1.0,
-              "z": 0.0
-            },
-            "is_capsule": true,
-            "character": "miigunner",
-            "move": "fair"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 22.0,
-            "real_frame": 22,
             "damage": 2.0,
             "angle": 361,
             "kbg": 0,
@@ -8225,6 +8210,31 @@
               "x": 0.0,
               "y": 0.0,
               "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "miigunner",
+            "move": "fair"
+          },
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 6.0,
+            "angle": 52,
+            "kbg": 91,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 1.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
             },
             "is_capsule": true,
             "character": "miigunner",
@@ -8262,31 +8272,6 @@
             "bone": "top",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 6.0,
-            "angle": 52,
-            "kbg": 91,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 1.8,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": -1.0,
-              "z": 0.0
-            },
-            "is_capsule": true,
-            "character": "miigunner",
-            "move": "fair"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 23.0,
-            "real_frame": 23,
             "damage": 2.0,
             "angle": 361,
             "kbg": 0,
@@ -8302,6 +8287,31 @@
               "x": 0.0,
               "y": 0.0,
               "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "miigunner",
+            "move": "fair"
+          },
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 6.0,
+            "angle": 52,
+            "kbg": 91,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 1.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
             },
             "is_capsule": true,
             "character": "miigunner",
@@ -8339,31 +8349,6 @@
             "bone": "top",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 6.0,
-            "angle": 52,
-            "kbg": 91,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 1.8,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": -1.0,
-              "z": 0.0
-            },
-            "is_capsule": true,
-            "character": "miigunner",
-            "move": "fair"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 24.0,
-            "real_frame": 24,
             "damage": 2.0,
             "angle": 361,
             "kbg": 0,
@@ -8379,6 +8364,31 @@
               "x": 0.0,
               "y": 0.0,
               "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "miigunner",
+            "move": "fair"
+          },
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 6.0,
+            "angle": 52,
+            "kbg": 91,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 1.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
             },
             "is_capsule": true,
             "character": "miigunner",
@@ -8441,6 +8451,7 @@
         ]
       },
       "motion_events": [],
+      "faf": 41,
       "is_projectile": true,
       "projectile": {
         "spawn_offset": {
@@ -9151,7 +9162,8 @@
           "frame": 9.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 42
     },
     "uair": {
       "total_frames": 79,
@@ -11695,7 +11707,8 @@
           "frame": 22.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 57
     },
     "dair": {
       "total_frames": 63,
@@ -12426,7 +12439,8 @@
           "frame": 50.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 51
     },
     "dash_attack": {
       "total_frames": 51,
@@ -12962,7 +12976,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 46
     },
     "grab": {
       "total_frames": 42,
@@ -13039,7 +13054,8 @@
           "frame": 6.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 36
     },
     "dash_grab": {
       "total_frames": 43,
@@ -13105,7 +13121,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 41
     },
     "pivot_grab": {
       "total_frames": 45,
@@ -13171,7 +13188,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 38
     },
     "pummel": {
       "total_frames": 15,
@@ -13203,7 +13221,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 7
     },
     "fthrow": {
       "total_frames": 55,
@@ -13297,7 +13316,8 @@
           "frame": 34.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 30
     },
     "bthrow": {
       "total_frames": 58,
@@ -13452,7 +13472,8 @@
           "frame": 50.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 35
     },
     "uthrow": {
       "total_frames": 56,
@@ -13791,7 +13812,8 @@
           "frame": 52.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 43
     },
     "dthrow": {
       "total_frames": 49,
@@ -14039,8 +14061,9 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 41
     }
   },
-  "generated_at": "2026-02-03T21:21:54.228899"
+  "generated_at": "2026-02-04T15:43:34.980992"
 }

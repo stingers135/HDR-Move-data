@@ -181,7 +181,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 16
     },
     "jab2": {
       "total_frames": 47,
@@ -321,7 +322,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 18
     },
     "rapid_jab": {
       "total_frames": 30,
@@ -1002,7 +1004,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 40
     },
     "combo3": {
       "total_frames": 18,
@@ -1616,7 +1619,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 29
     },
     "utilt": {
       "total_frames": 41,
@@ -2216,7 +2220,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 32
     },
     "dtilt": {
       "total_frames": 44,
@@ -2818,7 +2823,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 40
     },
     "fsmash": {
       "total_frames": 65,
@@ -3716,7 +3722,8 @@
           "frame": 11.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 64
     },
     "usmash": {
       "total_frames": 65,
@@ -4666,7 +4673,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 55
     },
     "dsmash": {
       "total_frames": 71,
@@ -5002,7 +5010,8 @@
           "frame": 19.0,
           "rate_value": 0.88
         }
-      ]
+      ],
+      "faf": 55
     },
     "nair": {
       "total_frames": 51,
@@ -6157,7 +6166,8 @@
           "frame": 20.0,
           "rate_value": 1.2666666666666666
         }
-      ]
+      ],
+      "faf": 38
     },
     "fair": {
       "total_frames": 57,
@@ -7100,7 +7110,8 @@
           "frame": 9.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 38
     },
     "bair": {
       "total_frames": 59,
@@ -7764,7 +7775,8 @@
           "frame": 29.0,
           "rate_value": 0.833
         }
-      ]
+      ],
+      "faf": 43
     },
     "uair": {
       "total_frames": 43,
@@ -8474,7 +8486,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 29
     },
     "dair": {
       "total_frames": 74,
@@ -11348,7 +11361,8 @@
           "frame": 15.0,
           "rate_value": 0.8444444444444444
         }
-      ]
+      ],
+      "faf": 46
     },
     "dash_attack": {
       "total_frames": 51,
@@ -12260,7 +12274,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 50
     },
     "grab": {
       "total_frames": 40,
@@ -12369,7 +12384,8 @@
           "frame": 13.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 38
     },
     "dash_grab": {
       "total_frames": 49,
@@ -12478,7 +12494,8 @@
           "frame": 13.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 46
     },
     "pivot_grab": {
       "total_frames": 49,
@@ -12573,7 +12590,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 42
     },
     "pummel": {
       "total_frames": 19,
@@ -12605,7 +12623,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 7
     },
     "fthrow": {
       "total_frames": 59,
@@ -12691,7 +12710,8 @@
           "frame": 16.0,
           "rate_value": 0.85
         }
-      ]
+      ],
+      "faf": 35
     },
     "bthrow": {
       "total_frames": 69,
@@ -12939,7 +12959,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 62
     },
     "uthrow": {
       "total_frames": 49,
@@ -13145,7 +13166,8 @@
           "frame": 18.0,
           "rate_value": 0.7
         }
-      ]
+      ],
+      "faf": 33
     },
     "dthrow": {
       "total_frames": 87,
@@ -14007,8 +14029,9 @@
           "frame": 78.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 64
     }
   },
-  "generated_at": "2026-02-03T21:21:42.696230"
+  "generated_at": "2026-02-04T15:43:23.775740"
 }

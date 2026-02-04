@@ -231,7 +231,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 16
     },
     "jab2": {
       "total_frames": 31,
@@ -463,7 +464,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 26
     },
     "jab3": {
       "total_frames": 59,
@@ -669,7 +671,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 41
     },
     "combo3": {
       "total_frames": 20,
@@ -1559,7 +1562,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 35
     },
     "dtilt": {
       "total_frames": 43,
@@ -1849,7 +1853,8 @@
           "frame": 33.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 28
     },
     "fsmash": {
       "total_frames": 76,
@@ -2239,7 +2244,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 62
     },
     "dsmash": {
       "total_frames": 77,
@@ -2524,7 +2530,8 @@
           "frame": 34.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 59
     },
     "nair": {
       "total_frames": 66,
@@ -4574,7 +4581,8 @@
           "frame": 38.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 48
     },
     "fair": {
       "total_frames": 73,
@@ -4857,7 +4865,8 @@
           "frame": 22.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 41
     },
     "bair": {
       "total_frames": 47,
@@ -5921,7 +5930,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 41
     },
     "uair": {
       "total_frames": 57,
@@ -6853,7 +6863,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 43
     },
     "dair": {
       "total_frames": 79,
@@ -7448,7 +7459,8 @@
           "frame": 2.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 56
     },
     "dash_attack": {
       "total_frames": 55,
@@ -7984,7 +7996,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 42
     },
     "grab": {
       "total_frames": 37,
@@ -8061,7 +8074,8 @@
           "frame": 8.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 35
     },
     "dash_grab": {
       "total_frames": 39,
@@ -8133,7 +8147,8 @@
           "frame": 30.0,
           "rate_value": 1.3
         }
-      ]
+      ],
+      "faf": 43
     },
     "pivot_grab": {
       "total_frames": 29,
@@ -8181,7 +8196,8 @@
           "frame": 15.0,
           "rate_value": 1.43
         }
-      ]
+      ],
+      "faf": 39
     },
     "pummel": {
       "total_frames": 19,
@@ -8213,7 +8229,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 7
     },
     "fthrow": {
       "total_frames": 47,
@@ -8461,7 +8478,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 40
     },
     "bthrow": {
       "total_frames": 43,
@@ -8709,7 +8727,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 31
     },
     "uthrow": {
       "total_frames": 57,
@@ -8765,7 +8784,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 48
     },
     "dthrow": {
       "total_frames": 57,
@@ -8923,7 +8943,8 @@
           "frame": 36.0,
           "rate_value": 0.5
         }
-      ]
+      ],
+      "faf": 42
     },
     "fsmash2": {
       "total_frames": 21,
@@ -9534,5 +9555,5 @@
       ]
     }
   },
-  "generated_at": "2026-02-03T21:21:32.643870"
+  "generated_at": "2026-02-04T15:43:13.286513"
 }

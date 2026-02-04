@@ -90,12 +90,99 @@
         
         .frame-slider { flex: 1; min-width: 200px; accent-color: var(--hdr-green); }
         
+        /* Custom slider track container */
+        .slider-container {
+            flex: 1;
+            min-width: 200px;
+            position: relative;
+            height: 28px;
+            display: flex;
+            align-items: center;
+        }
+        .slider-track {
+            position: absolute;
+            left: 8px;
+            right: 8px;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--hdr-green);
+            z-index: 1;
+            pointer-events: none;
+        }
+        .slider-container .frame-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 28px;
+            margin: 0;
+            cursor: pointer;
+            flex: unset;
+            min-width: unset;
+        }
+        .slider-container .frame-slider::-webkit-slider-runnable-track {
+            background: transparent;
+            height: 6px;
+        }
+        .slider-container .frame-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            cursor: pointer;
+            margin-top: -5px;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+        }
+        .slider-container .frame-slider::-moz-range-track {
+            background: transparent;
+            height: 6px;
+            border: none;
+        }
+        .slider-container .frame-slider::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+        }
+        /* FAF marker */
+        .faf-marker {
+            position: absolute;
+            z-index: 3;
+            pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(-50%);
+        }
+        .faf-tick {
+            width: 2px;
+            height: 20px;
+            background: #B0B8C0;
+            border-radius: 1px;
+        }
+        .faf-label {
+            font-size: 0.65em;
+            color: #B0B8C0;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin-top: 1px;
+            white-space: nowrap;
+        }
+        
         .frame-display {
             font-size: 1.5em;
             font-weight: bold;
             color: var(--hdr-green);
-            min-width: 120px;
-            text-align: center;
+            width: 260px;
+            flex-shrink: 0;
+            text-align: right;
             text-shadow: 0 0 10px var(--hdr-green-glow);
         }
         
@@ -192,6 +279,7 @@
             <h2 id="character-name">Loading...</h2>
             <div class="move-info">
                 <div><span class="label">Move: </span><span class="value" id="move-name">-</span></div>
+                <div id="faf-info" style="display:none;"><span class="label">FAF: </span><span class="value" id="faf-value">-</span></div>
             </div>
             
             <h3>Active Hitboxes</h3>
@@ -220,7 +308,7 @@
             <canvas id="canvas"></canvas>
             
             <div class="controls">
-                <button class="btn" id="play-btn" onclick="togglePlay()">▶ Play</button>
+                <button class="btn" id="play-btn" onclick="togglePlay()" style="width:90px; text-align:center;">▶ Play</button>
                 <div class="speed-control">
                     <button class="speed-option" onclick="setSpeed(0.25, this)">0.25x</button>
                     <button class="speed-option" onclick="setSpeed(0.5, this)">0.5x</button>
@@ -228,7 +316,14 @@
                 </div>
                 <button class="btn" onclick="changeFrame(-1)">← Prev</button>
                 <button class="btn" onclick="changeFrame(1)">Next →</button>
-                <input type="range" id="frame-slider" class="frame-slider" min="0" max="40" value="0">
+                <div class="slider-container" id="slider-container">
+                    <div class="slider-track" id="slider-track"></div>
+                    <div class="faf-marker" id="faf-marker" style="display:none;">
+                        <div class="faf-tick"></div>
+                        <div class="faf-label">FAF</div>
+                    </div>
+                    <input type="range" id="frame-slider" class="frame-slider" min="0" max="40" value="0">
+                </div>
                 <div class="frame-display">Frame <span id="frame-num">0</span> <span id="anim-frame-display" style="font-size: 0.7em; color: #888;"></span></div>
             </div>
         </div>
@@ -378,6 +473,11 @@
                 'fsmash__Prickly': ['c03attacks4s2'],      // Prickly lunge animation
                 'bair__Prickly': ['c05attackairbs'],       // Prickly bair-S (spike)
             },
+            // Mega Man uses non-standard slot prefixes
+            'rockman': {
+                'ftilt': ['c02attacks3s'],
+                'nair': ['c05attackairnmelee', 'c05attackairn'],
+            },
         };
         
         // Helper function to get animation filenames for a character/move
@@ -401,9 +501,9 @@
             if (moveType === 'rapid_jab_finisher') {
                 return ['c00attack100end', 'c00attackend'];
             }
-            // ftilt2: packun uses same anim as ftilt, snake uses attacks3s2
+            // ftilt2: snake/metaknight use attacks3s2, packun reuses ftilt anim
             if (moveType === 'ftilt2') {
-                return ['c01attacks3s', 'c01attacks3s2'];
+                return ['c01attacks3s2', 'c01attacks3s'];
             }
             // Return default as single-item array
             return [ANIM_FILENAMES[moveType] || moveType];
@@ -463,6 +563,10 @@
         let allHitboxesCache = null;  // Full hitbox JSON for stance-switching
         let currentStance = null;     // Currently selected stance name
         
+        // FAF (First Actionable Frame) for slider visualization
+        // This is a 1-indexed game frame loaded from hitbox data
+        let fafFrame = null;
+        
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
         let SCALE = 20;
@@ -477,95 +581,32 @@
         
         // Calculate animation frame from real frame using motion events
         // Input: realFrame is 0-indexed internal frame
-        // Motion events use 1-indexed game frames
+        // Motion events have 'frame' = animation frame where rate changes
+        // FT_MOTION_RATE rate_value is a duration multiplier (speed = 1/rate)
         // Output: 0-indexed animation frame for array lookup
         function getAnimationFrame(realFrame) {
             if (!motionEvents || motionEvents.length === 0) {
-                // No rate changes: 1:1 mapping between game frames and animation.
-                // At displayed Frame N (realFrame = N-1), the animation is at
-                // position N-1 (0-indexed), so transforms[realFrame] is correct.
                 return realFrame;
             }
             
-            const sortedEvents = [...motionEvents].sort((a, b) => a.frame - b.frame);
-            
-            // Check for complex rate types that need the continuous fallback
-            const hasComplexRates = sortedEvents.some(e => 
-                e.type === 'range' || e.type === 'desired_rate'
-            );
-            
-            if (hasComplexRates) {
-                return getAnimationFrameContinuous(realFrame);
-            }
-            
-            // Discrete tick-by-tick simulation matching the game engine
-            // The game advances animation by current_speed each tick, then
-            // checks frame() thresholds and applies rate changes for subsequent ticks.
-            // This avoids the fractional errors of continuous division.
-            
-            // Build rate triggers from motion events
-            let currentSpeed = 1.0;
-            const pendingTriggers = [];
-            
-            for (const event of sortedEvents) {
-                let speed;
-                if (event.type === 'FT_MOTION_RATE') {
-                    speed = event.rate_value > 0 ? 1.0 / event.rate_value : 1.0;
-                } else if (event.type === 'MotionModule::set_rate') {
-                    speed = event.rate_value > 0 ? event.rate_value : 1.0;
-                } else {
-                    continue;
-                }
-                
-                if (event.frame <= 0) {
-                    currentSpeed = speed;
-                } else {
-                    pendingTriggers.push({ triggerFrame: event.frame, speed });
-                }
-            }
-            
-            pendingTriggers.sort((a, b) => a.triggerFrame - b.triggerFrame);
-            
-            // Simulate ticks: at displayed Frame N (realFrame = N-1),
-            // the animation has been advanced N-1 times (matching the
-            // continuous fallback's -1 adjustment). We need realFrame ticks.
-            const tickCount = Math.max(0, realFrame);
-            let currentAnim = 0.0;
-            let remaining = [...pendingTriggers];
-            
-            for (let tick = 0; tick < tickCount; tick++) {
-                currentAnim += currentSpeed;
-                
-                // Apply rate triggers whose animation thresholds have been passed
-                const stillPending = [];
-                for (const trigger of remaining) {
-                    if (currentAnim >= trigger.triggerFrame) {
-                        currentSpeed = trigger.speed;
-                    } else {
-                        stillPending.push(trigger);
-                    }
-                }
-                remaining = stillPending;
-            }
-            
-            // Return animation position (caller floors for array index)
-            return currentAnim;
+            return getAnimationFrameUnified(realFrame);
         }
         
-        // Continuous fallback for complex rate types (range, desired_rate)
-        function getAnimationFrameContinuous(realFrame) {
+        // Unified calculation for all motion event types.
+        // Processes ALL events (FT_MOTION_RATE, FT_MOTION_RATE_RANGE,
+        // MotionModule::set_rate, FT_DESIRED_RATE) in a single sorted loop.
+        // This is the inverse of calculate_real_frame from hdr_move_analysis.py:
+        // given real time (game ticks), find the animation frame.
+        function getAnimationFrameUnified(realFrame) {
             if (!motionEvents || motionEvents.length === 0) {
                 return realFrame;
             }
             
-            // Convert to 1-indexed game frame for motion event calculations
-            const gameFrame = realFrame + 1;
-            
-            // Sort events by frame
+            // Sort events by animation frame
             const sortedEvents = [...motionEvents].sort((a, b) => a.frame - b.frame);
             
-            // Check for initial motion rate change (at frame <= 0)
-            // The extractor adds final_frame_offset=1 when this happens
+            // Check for initial motion rate change (at frame <= 0).
+            // Matches hdr_move_analysis.py: has_initial_motion_rate_change → offset +1
             let offset = 0;
             for (const event of sortedEvents) {
                 if (event.frame <= 0) {
@@ -578,132 +619,240 @@
                 }
             }
             
-            // Remove the extractor's offset to get pure real time
-            const targetRealTime = gameFrame - offset;
-            if (targetRealTime <= 0) return 0;  // Before animation starts, show first frame
+            const targetRealTime = realFrame + offset;
+            if (targetRealTime <= 0) return 0;
             
-            // Check for FT_DESIRED_RATE segments first
-            const desiredRateEvents = sortedEvents.filter(e => e.type === 'desired_rate');
-            if (desiredRateEvents.length > 0) {
-                // Walk through animation time, tracking cumulative real time consumed
-                let cumulativeRealTime = 0;
-                let lastAnimEnd = 0;
+            // --- Handle FT_DESIRED_RATE segments first ---
+            const desiredSegs = [];
+            for (const event of sortedEvents) {
+                if (event.type === 'desired_rate') {
+                    desiredSegs.push({
+                        start: event.frame,
+                        end: event.frame + event.original_frames,
+                        scaleFactor: event.scale_factor
+                    });
+                }
+            }
+            
+            if (desiredSegs.length > 0) {
+                desiredSegs.sort((a, b) => a.start - b.start);
+                let cumReal = 0;
+                let lastEnd = 0;
                 
-                for (const event of desiredRateEvents) {
-                    const segStart = event.frame;
-                    const segEnd = event.frame + event.original_frames;
-                    const scaleFactor = event.scale_factor;
-                    
-                    // Normal-rate gap before this segment (1:1 anim-to-real mapping)
-                    if (segStart > lastAnimEnd) {
-                        const gapDuration = segStart - lastAnimEnd;
-                        
-                        if (cumulativeRealTime + gapDuration >= targetRealTime) {
-                            // Target is in this normal-rate gap
-                            const realIntoGap = targetRealTime - cumulativeRealTime;
-                            return Math.max(0, (lastAnimEnd + realIntoGap) - 1);
+                for (const seg of desiredSegs) {
+                    if (seg.start > lastEnd) {
+                        const gapDur = seg.start - lastEnd;
+                        if (cumReal + gapDur >= targetRealTime) {
+                            return Math.max(0, lastEnd + (targetRealTime - cumReal));
                         }
-                        cumulativeRealTime += gapDuration;
+                        cumReal += gapDur;
                     }
-                    
-                    // Inside this desired_rate segment
-                    const segAnimDuration = segEnd - segStart;
-                    const segRealDuration = segAnimDuration * scaleFactor;
-                    
-                    if (cumulativeRealTime + segRealDuration >= targetRealTime) {
-                        // Target is inside this segment
-                        const realIntoSeg = targetRealTime - cumulativeRealTime;
-                        const animIntoSeg = realIntoSeg / scaleFactor;
-                        return Math.max(0, (segStart + animIntoSeg) - 1);
+                    const segAnimDur = seg.end - seg.start;
+                    const segRealDur = segAnimDur * seg.scaleFactor;
+                    if (cumReal + segRealDur >= targetRealTime) {
+                        const realInto = targetRealTime - cumReal;
+                        return Math.max(0, seg.start + realInto / seg.scaleFactor);
                     }
-                    
-                    cumulativeRealTime += segRealDuration;
-                    lastAnimEnd = segEnd;
+                    cumReal += segRealDur;
+                    lastEnd = seg.end;
                 }
-                
-                // After all segments, normal rate
-                const realRemaining = targetRealTime - cumulativeRealTime;
-                return Math.max(0, (lastAnimEnd + realRemaining) - 1);
+                return Math.max(0, lastEnd + (targetRealTime - cumReal));
             }
             
-            // Handle range events (FT_MOTION_RATE_RANGE)
-            const rangeEvents = sortedEvents.filter(e => e.type === 'range');
-            if (rangeEvents.length > 0) {
-                for (const range of rangeEvents) {
-                    const startOrig = range.start_orig;
-                    const endOrig = range.end_orig;
-                    const scaleFactor = range.scale_factor;
-                    
-                    // Before the range: 1:1 mapping
-                    if (targetRealTime <= startOrig) {
-                        return Math.max(0, targetRealTime - 1);
-                    }
-                    
-                    // Real-time duration and end of the range
-                    const rangeDuration = (endOrig - startOrig) * scaleFactor;
-                    const rangeRealEnd = startOrig + rangeDuration;
-                    
-                    if (targetRealTime >= rangeRealEnd) {
-                        // After the range
-                        const animFrame = endOrig + (targetRealTime - rangeRealEnd);
-                        return Math.max(0, animFrame - 1);
-                    } else {
-                        // Inside the range
-                        const realIntoRange = targetRealTime - startOrig;
-                        const animIntoRange = realIntoRange / scaleFactor;
-                        return Math.max(0, (startOrig + animIntoRange) - 1);
-                    }
-                }
+            // --- Handle FT_MOTION_RATE_RANGE via tick-by-tick simulation ---
+            // The game processes range events differently from simple rate changes:
+            // 1. Each tick, check if (anim + speed) would reach the next event's frame
+            // 2. If so, the event fires and its speed applies for the ENTIRE tick
+            // 3. Range events have a finite duration; after expiry, speed reverts to 1.0
+            // 4. This means the rate change effectively starts from the current anim
+            //    position (before the event frame), not from the event frame itself.
+            const hasRangeEvents = sortedEvents.some(e => e.type === 'range');
+            if (hasRangeEvents) {
+                return simulateTickBased(realFrame, sortedEvents);
             }
             
-            // Handle simple rate changes (FT_MOTION_RATE and MotionModule::set_rate)
-            const rateEvents = sortedEvents.filter(e => 
-                e.type === 'FT_MOTION_RATE' || e.type === 'MotionModule::set_rate'
-            );
+            // --- Continuous interpolation for FT_MOTION_RATE / set_rate only ---
+            let currentAnimFrame = 0;
+            let currentRealTime = 0;
+            let currentSpeed = 1.0;
             
-            if (rateEvents.length > 0) {
-                // Walk through rate events, converting real time to animation time
-                let animFrame = 0;
-                let currentRealTime = 0;
-                let currentSpeed = 1.0;  // animation frames per real frame
+            for (const event of sortedEvents) {
+                if (event.type === 'desired_rate') continue;
                 
-                for (const event of rateEvents) {
-                    // Get real-time position of this event (without offset)
-                    const eventRealTime = calculateRealFrameForEvent(event.frame, rateEvents, 0);
-                    
-                    if (targetRealTime <= eventRealTime) {
-                        // Target is before this event
+                const animGap = event.frame - currentAnimFrame;
+                if (animGap > 0 && currentSpeed > 0) {
+                    const realGap = animGap / currentSpeed;
+                    if (currentRealTime + realGap >= targetRealTime) {
                         const realRemaining = targetRealTime - currentRealTime;
-                        animFrame += realRemaining * currentSpeed;
-                        return Math.max(0, animFrame - 1);
+                        return Math.max(0, currentAnimFrame + realRemaining * currentSpeed);
                     }
-                    
-                    // Advance to this event
-                    const realSegment = eventRealTime - currentRealTime;
-                    if (realSegment > 0) {
-                        animFrame += realSegment * currentSpeed;
-                    }
-                    currentRealTime = eventRealTime;
-                    
-                    // Update speed
-                    if (event.type === 'FT_MOTION_RATE') {
-                        // Duration multiplier - speed is inverse
-                        currentSpeed = event.rate_value > 0 ? 1.0 / event.rate_value : 1.0;
-                    } else {
-                        // Speed multiplier directly
-                        currentSpeed = event.rate_value > 0 ? event.rate_value : 1.0;
+                    currentRealTime += realGap;
+                    currentAnimFrame = event.frame;
+                } else if (animGap <= 0) {
+                    currentAnimFrame = Math.max(currentAnimFrame, event.frame);
+                }
+                
+                if (event.type === 'FT_MOTION_RATE') {
+                    const dur = event.rate_value;
+                    currentSpeed = (dur && dur > 0) ? 1.0 / dur : 1.0;
+                } else if (event.type === 'MotionModule::set_rate') {
+                    currentSpeed = event.rate_value > 0 ? event.rate_value : 1.0;
+                }
+            }
+            
+            const realRemaining = targetRealTime - currentRealTime;
+            if (realRemaining > 0 && currentSpeed > 0) {
+                return Math.max(0, currentAnimFrame + realRemaining * currentSpeed);
+            }
+            return Math.max(0, currentAnimFrame);
+        }
+        
+        // Tick-by-tick simulation for moves with FT_MOTION_RATE_RANGE events.
+        // Models the game's actual behavior:
+        // - An event fires when (anim + current_speed) would reach its frame value
+        // - The new speed applies for the ENTIRE tick (from current anim, not event frame)
+        // - Range events have finite duration; after expiry speed reverts to 1.0
+        // - Non-range events (FT_MOTION_RATE, set_rate) set speed permanently
+        function simulateTickBased(numTicks, sortedEvents) {
+            if (numTicks <= 0) return 0;
+            
+            let anim = 0;
+            let speed = 1.0;
+            let rangeTicksRemaining = 0;
+            
+            // Create event list with fired tracking (skip desired_rate events)
+            const events = [];
+            for (let i = 0; i < sortedEvents.length; i++) {
+                if (sortedEvents[i].type === 'desired_rate') continue;
+                events.push({ ...sortedEvents[i], index: i, fired: false });
+            }
+            
+            for (let tick = 1; tick <= numTicks; tick++) {
+                // 1. If a range is active, count down. When it expires, revert speed.
+                if (rangeTicksRemaining > 0) {
+                    rangeTicksRemaining--;
+                    if (rangeTicksRemaining === 0) {
+                        speed = 1.0;
                     }
                 }
                 
-                // After all events
-                const realRemaining = targetRealTime - currentRealTime;
-                if (realRemaining > 0) {
-                    animFrame += realRemaining * currentSpeed;
+                // 2. Check for events that fire this tick.
+                // An event fires if the animation would reach/pass its frame value
+                // during this tick: (anim + speed >= event.frame)
+                for (let i = 0; i < events.length; i++) {
+                    const event = events[i];
+                    if (event.fired) continue;
+                    
+                    if (anim + speed >= event.frame - 0.001) {
+                        event.fired = true;
+                        
+                        if (event.type === 'range') {
+                            speed = event.scale_factor > 0 ? 1.0 / event.scale_factor : 1.0;
+                            
+                            // Calculate duration: find next unfired event's frame
+                            let nextFrame = null;
+                            for (let j = i + 1; j < events.length; j++) {
+                                if (!events[j].fired) {
+                                    nextFrame = events[j].frame;
+                                    break;
+                                }
+                            }
+                            if (nextFrame !== null) {
+                                const animSpan = nextFrame - event.frame;
+                                rangeTicksRemaining = Math.round(animSpan * event.scale_factor);
+                            } else {
+                                rangeTicksRemaining = 9999; // last event, run indefinitely
+                            }
+                        } else if (event.type === 'FT_MOTION_RATE') {
+                            speed = event.rate_value > 0 ? 1.0 / event.rate_value : 1.0;
+                            rangeTicksRemaining = 0; // permanent until next event
+                        } else if (event.type === 'MotionModule::set_rate') {
+                            speed = event.rate_value > 0 ? event.rate_value : 1.0;
+                            rangeTicksRemaining = 0;
+                        }
+                        break; // only one event fires per tick
+                    }
                 }
-                return Math.max(0, animFrame - 1);
+                
+                // 3. Advance animation by current speed
+                anim += speed;
             }
             
-            return realFrame;
+            return Math.max(0, anim);
+        }
+        
+        // Compute the effective maximum real frame, accounting for motion rate.
+        // Without motion events, real frames == animation frames and the raw count is correct.
+        // With motion events the animation may finish sooner (speed-up) or later (slow-down)
+        // than the raw animation frame count suggests.
+        function getMaxFrame() {
+            let animFrameCount = null;
+            
+            if (hitboxData && hitboxData.total_frames) {
+                animFrameCount = hitboxData.total_frames;
+            } else if (animationData && animationData.final_frame_index) {
+                animFrameCount = Math.floor(animationData.final_frame_index);
+            }
+            
+            if (!animFrameCount) return 39;
+            
+            // If no motion events, animation frames == real frames
+            if (!motionEvents || motionEvents.length === 0) {
+                return animFrameCount - 1;  // 0-indexed max
+            }
+            
+            // Check if any motion event actually changes the rate
+            const hasNonTrivialRate = motionEvents.some(e => {
+                if (e.type === 'FT_MOTION_RATE' || e.type === 'MotionModule::set_rate') {
+                    return e.rate_value !== 1.0;
+                }
+                if (e.type === 'range' || e.type === 'desired_rate') {
+                    return e.scale_factor !== 1.0;
+                }
+                return false;
+            });
+            
+            if (!hasNonTrivialRate) {
+                return animFrameCount - 1;
+            }
+            
+            // Binary search: find the first real frame where getAnimationFrame >= animFrameCount.
+            // That's the first frame past the animation's natural end (the pose clamps here).
+            // The last meaningful real frame is one before that.
+            let lo = 0;
+            let hi = animFrameCount * 5;
+            
+            // Ensure upper bound is sufficient (handles extreme slow-downs)
+            while (hi < 100000 && getAnimationFrame(hi) < animFrameCount) {
+                hi *= 2;
+            }
+            
+            while (lo < hi) {
+                const mid = Math.floor((lo + hi) / 2);
+                if (getAnimationFrame(mid) >= animFrameCount) {
+                    hi = mid;
+                } else {
+                    lo = mid + 1;
+                }
+            }
+            
+            // lo = first real frame where animation >= animFrameCount (past the end)
+            let maxFrame = Math.max(0, lo - 1);
+            
+            // Ensure all hitbox frames remain visible
+            // (hitbox_by_frame keys are 1-indexed game frames which are already real frames)
+            if (hitboxData && hitboxData.hitboxes_by_frame) {
+                const hitboxFrames = Object.keys(hitboxData.hitboxes_by_frame)
+                    .map(Number)
+                    .filter(f => hitboxData.hitboxes_by_frame[String(f)].length > 0);
+                if (hitboxFrames.length > 0) {
+                    const lastHitboxGameFrame = Math.max(...hitboxFrames);
+                    // game frame N → 0-indexed currentFrame = N - 1
+                    maxFrame = Math.max(maxFrame, lastHitboxGameFrame - 1);
+                }
+            }
+            
+            return maxFrame;
         }
         
         // Helper to calculate real frame for a given animation frame
@@ -748,8 +897,12 @@
             const movesStartLeft = ['dash_attack', 'dash_grab'];
             // Simon/Richter fsmash (whip) needs left positioning too
             const charsWithLongFsmash = ['simon', 'richter'];
+            // Characters with sliding dtilts that travel far
+            const charsWithSlidingDtilt = ['rockman'];
             
-            if (movesStartLeft.includes(move) || (move === 'fsmash' && charsWithLongFsmash.includes(character))) {
+            if (movesStartLeft.includes(move)
+                || (move === 'fsmash' && charsWithLongFsmash.includes(character))
+                || (move === 'dtilt' && charsWithSlidingDtilt.includes(character))) {
                 CENTER_X = canvas.width * 0.15;  // Start 15% from left edge
             } else {
                 CENTER_X = canvas.width / 2;
@@ -770,6 +923,45 @@
             render();
         }
         window.addEventListener('resize', resizeCanvas);
+        
+        // Update the custom slider track to show FAF boundary
+        function updateSliderTrack() {
+            const slider = document.getElementById('frame-slider');
+            const track = document.getElementById('slider-track');
+            const marker = document.getElementById('faf-marker');
+            const container = document.getElementById('slider-container');
+            const max = parseInt(slider.max) || 1;
+            
+            if (fafFrame !== null && max > 0) {
+                // fafFrame is 1-indexed game frame; slider is 0-indexed
+                // FAF means the character can act on this frame, so the move's
+                // committed portion ends just before it. Color frames >= FAF as silver.
+                const faf0 = fafFrame - 1;  // convert to 0-indexed
+                const fafPercent = Math.min(100, Math.max(0, (faf0 / max) * 100));
+                
+                track.style.background = `linear-gradient(to right, ` +
+                    `var(--hdr-green) 0%, var(--hdr-green) ${fafPercent}%, ` +
+                    `#8A9199 ${fafPercent}%, #8A9199 100%)`;
+                
+                // Position the FAF marker
+                // Thumb padding: the range thumb center at 0% is ~8px from left,
+                // at 100% is ~8px from right. Compute position accordingly.
+                const containerWidth = container.offsetWidth;
+                const thumbPad = 8;
+                const trackWidth = containerWidth - thumbPad * 2;
+                const markerLeft = thumbPad + (faf0 / max) * trackWidth;
+                
+                marker.style.display = '';
+                marker.style.left = markerLeft + 'px';
+                marker.style.top = '0px';
+            } else {
+                track.style.background = 'var(--hdr-green)';
+                marker.style.display = 'none';
+            }
+        }
+        
+        // Update track on resize
+        window.addEventListener('resize', updateSliderTrack);
         
         // Matrix math (column-major)
         function multiplyMatrix(a, b) {
@@ -865,7 +1057,7 @@
             return out;
         }
         
-        function calculateWorldTransformsForFrame(realFrame) {
+        function calculateWorldTransformsForFrame(realFrame, animFrameOverride) {
             if (!skeletonData) return {};
             
             const worldTransforms = {};
@@ -873,7 +1065,8 @@
             
             // Calculate the animation frame based on motion rate
             // realFrame is the REAL frame (game time), we need the animation frame
-            const animPos = Math.max(0, getAnimationFrame(realFrame));
+            // If animFrameOverride is provided, use it directly (for debug skeleton positioning)
+            const animPos = (animFrameOverride !== undefined) ? animFrameOverride : Math.max(0, getAnimationFrame(realFrame));
             const animFrameFloor = Math.floor(animPos);
             const animFrameCeil = Math.min(animFrameFloor + 1, animFrameFloor + 1); // will be clamped below
             const animFrac = animPos - animFrameFloor;
@@ -1009,8 +1202,13 @@
                     const boneName = remapBone(hitbox.bone.toLowerCase(), positions);
                     let useBone = positions[boneName];
                     
-                    if (!useBone && (boneName === 'top' || boneName === 'throw')) {
-                        useBone = positions['trans'] || positions['rot'] || positions['hip'];
+                    // 'top' is the skeleton root bone and stays at origin (0,0,0).
+                    // In-game, hitboxes on 'top' use the character's physics position,
+                    // which tracks with the body. Use 'trans' bone instead (first bone
+                    // that actually translates) so hitboxes follow the body during
+                    // sliding moves like Mega Man dtilt.
+                    if (boneName === 'top' || boneName === 'throw') {
+                        useBone = positions['trans'] || positions['rot'] || positions['hip'] || useBone;
                     }
                     
                     if (!useBone) return;
@@ -1063,12 +1261,12 @@
             document.getElementById('frame-num').textContent = currentFrame + 1;
             document.getElementById('frame-slider').value = currentFrame;
             
-            // Show animation frame if different from real frame (both 1-indexed for display)
+            // Show animation frame if different from real frame
             const animPos2 = Math.max(0, getAnimationFrame(currentFrame));
             const animFrameDisplay = Math.floor(animPos2);
             if (animFrameDisplay !== currentFrame) {
-                // Show fractional animation position (e.g. "anim: 10.2")
-                const displayVal = (animPos2 + 1).toFixed(1).replace(/\.0$/, '');
+                // Show the animation position (0-indexed, matches script frame() values)
+                const displayVal = animPos2.toFixed(1).replace(/\.0$/, '');
                 document.getElementById('anim-frame-display').textContent = `(anim: ${displayVal})`;
             } else {
                 document.getElementById('anim-frame-display').textContent = '';
@@ -1223,9 +1421,9 @@
                         const boneName = remapBone(hitbox.bone.toLowerCase(), positions);
                         let useBone = positions[boneName];
                         
-                        // Handle "top" bone specially - use trans/rot/hip as fallback
-                        if (!useBone && (boneName === 'top' || boneName === 'throw')) {
-                            useBone = positions['trans'] || positions['rot'] || positions['hip'];
+                        // Use trans bone for 'top'/'throw' hitboxes (see main hitbox code comment)
+                        if (boneName === 'top' || boneName === 'throw') {
+                            useBone = positions['trans'] || positions['rot'] || positions['hip'] || useBone;
                         }
                         
                         if (!useBone) {
@@ -1322,8 +1520,8 @@
                                 const boneName = remapBone(hitbox.bone.toLowerCase(), prevBonePositions);
                                 let useBone = prevBonePositions[boneName];
                                 
-                                if (!useBone && (boneName === 'top' || boneName === 'throw')) {
-                                    useBone = prevBonePositions['trans'] || prevBonePositions['rot'] || prevBonePositions['hip'];
+                                if (boneName === 'top' || boneName === 'throw') {
+                                    useBone = prevBonePositions['trans'] || prevBonePositions['rot'] || prevBonePositions['hip'] || useBone;
                                 }
                                 
                                 if (!useBone) return;
@@ -1344,7 +1542,9 @@
                             prevPositions[hitbox.id] = {
                                 x: screenX,
                                 y: screenY,
-                                size: hitbox.size || 3
+                                size: hitbox.size || 3,
+                                bone: hitbox.bone,
+                                is_capsule: !!hitbox.is_capsule
                             };
                         });
                     }
@@ -1357,30 +1557,33 @@
                     
                     const prev = prevPositions[hitbox.id];
                     
-                    // Determine if this hitbox uses projectile positioning
-                    const isProj = hitbox.is_projectile ? true : !!projectileData;
-                    
                     let startX, startY, endX, endY;
                     
                     if (curr.isCapsule && curr.x2 !== undefined) {
-                        // Capsule hitbox: draw between offset1 and offset2
+                        // Capsule hitbox: draw between offset1 and offset2 (no interpolation)
                         startX = curr.x;
                         startY = curr.y;
                         endX = curr.x2;
                         endY = curr.y2;
                     } else {
-                        // Non-capsule: single point, optionally interpolated
+                        // Non-capsule (sphere): single point, optionally interpolated
                         startX = curr.x;
                         startY = curr.y;
                         endX = curr.x;
                         endY = curr.y;
                         
-                        if (showInterpolation && prev && !isProj) {
-                            // Draw from previous position to current position
-                            startX = prev.x;
-                            startY = prev.y;
-                            endX = curr.x;
-                            endY = curr.y;
+                        if (showInterpolation && prev) {
+                            // Skip interpolation if either frame's hitbox is capsule-shaped.
+                            // In-game, capsule hitboxes don't produce interpolation trails.
+                            // Also skip if the hitbox is a projectile (not bone-attached).
+                            const prevIsCapsule = prev.is_capsule;
+                            const currIsCapsule = !!hitbox.is_capsule;
+                            if (!prevIsCapsule && !currIsCapsule && !hitbox.is_projectile) {
+                                startX = prev.x;
+                                startY = prev.y;
+                                endX = curr.x;
+                                endY = curr.y;
+                            }
                         }
                     }
                     
@@ -1474,15 +1677,7 @@
         function startPlayTimer() {
             clearInterval(playTimer);
             playTimer = setInterval(() => {
-                // Use hitbox total_frames if available, otherwise animation data
-                let max;
-                if (hitboxData && hitboxData.total_frames) {
-                    max = hitboxData.total_frames - 1;  // 0-indexed
-                } else if (animationData) {
-                    max = Math.floor(animationData.final_frame_index) - 1;
-                } else {
-                    max = 39;  // fallback
-                }
+                const max = getMaxFrame();
                 const nextFrame = (currentFrame + 1) % (max + 1);
                 currentFrame = nextFrame;
                 updateHitboxFrameHighlight();
@@ -1511,14 +1706,7 @@
         }
         
         function changeFrame(delta) {
-            let max;
-            if (hitboxData && hitboxData.total_frames) {
-                max = hitboxData.total_frames - 1;  // 0-indexed
-            } else if (animationData) {
-                max = Math.floor(animationData.final_frame_index) - 1;
-            } else {
-                max = 39;  // fallback
-            }
+            const max = getMaxFrame();
             
             const nextFrame = (currentFrame + delta + max + 1) % (max + 1);
             currentFrame = nextFrame;
@@ -1735,6 +1923,17 @@
                         loaded.push('hitboxes');
                         // Get motion events for frame calculation
                         motionEvents = hitboxData.motion_events || null;
+                        // Load FAF (First Actionable Frame) if available
+                        fafFrame = hitboxData.faf || null;
+                        // Update FAF display in info panel
+                        const fafInfoEl = document.getElementById('faf-info');
+                        const fafValueEl = document.getElementById('faf-value');
+                        if (fafFrame !== null && fafInfoEl && fafValueEl) {
+                            fafInfoEl.style.display = '';
+                            fafValueEl.textContent = fafFrame;
+                        } else if (fafInfoEl) {
+                            fafInfoEl.style.display = 'none';
+                        }
                         // Get projectile data if this is a projectile move
                         if (hitboxData.is_projectile && hitboxData.projectile) {
                             projectileData = hitboxData.projectile;
@@ -1744,24 +1943,27 @@
                             projectileSpawnPos = null;
                         }
                         
-                        // Detect if any hitboxes have per-hitbox projectile flags (articles)
-                        let hasArticleHitboxes = !!projectileData;
-                        if (!hasArticleHitboxes) {
-                            for (const frameHbs of Object.values(hitboxData.hitboxes_by_frame || {})) {
-                                if (frameHbs.some(hb => hb.is_projectile)) {
-                                    hasArticleHitboxes = true;
-                                    break;
-                                }
+                        // Check if all hitboxes across all frames are capsule-shaped.
+                        // Capsule hitboxes (offset2 is not None, even if all zeros)
+                        // don't interpolate in-game, so we disable the trail for them.
+                        // If ALL hitboxes are capsule → grey out checkbox entirely.
+                        // If mixed → leave clickable, per-frame skipping in render loop.
+                        let totalHitboxes = 0;
+                        let capsuleHitboxes = 0;
+                        for (const frameHbs of Object.values(hitboxData.hitboxes_by_frame || {})) {
+                            for (const hb of frameHbs) {
+                                totalHitboxes++;
+                                if (hb.is_capsule) capsuleHitboxes++;
                             }
                         }
+                        const allCapsule = totalHitboxes > 0 && capsuleHitboxes === totalHitboxes;
                         
-                        // Disable interpolation for moves with article/projectile hitboxes
                         const interpCheckbox = document.getElementById('show-interpolation');
-                        if (hasArticleHitboxes) {
+                        if (allCapsule) {
                             interpCheckbox.checked = false;
                             interpCheckbox.disabled = true;
                             interpCheckbox.parentElement.style.opacity = '0.4';
-                            interpCheckbox.parentElement.title = 'Interpolation not available for article/projectile moves';
+                            interpCheckbox.parentElement.title = 'Interpolation not available (all hitboxes are capsule-shaped)';
                         } else {
                             interpCheckbox.checked = true;
                             interpCheckbox.disabled = false;
@@ -1839,13 +2041,9 @@
                     failed.push('animation');
                 }
                 
-                // Update slider max - use hitbox data if available (real frames), otherwise animation
-                // Internally 0-indexed, so max = total_frames - 1
-                if (hitboxData && hitboxData.total_frames) {
-                    document.getElementById('frame-slider').max = hitboxData.total_frames - 1;
-                } else if (animationData) {
-                    document.getElementById('frame-slider').max = Math.floor(animationData.final_frame_index) - 1;
-                }
+                // Update slider max - use getMaxFrame which accounts for motion rate
+                document.getElementById('frame-slider').max = getMaxFrame();
+                updateSliderTrack();
                 
                 currentFrame = 0;
                 
@@ -1872,6 +2070,16 @@
                         hasData = true;
                     }
                     
+                    // Include skeleton bounds at frame 0 so the character is visible at start
+                    const frame0Positions = calculateWorldTransformsForFrame(0);
+                    if (frame0Positions) {
+                        for (const [boneName, boneData] of Object.entries(frame0Positions)) {
+                            const by = boneData.matrix[3][1];
+                            const bz = boneData.matrix[3][2];
+                            expandBounds(by, bz, 0);
+                        }
+                    }
+                    
                     for (const [frameStr, frameHbs] of Object.entries(hitboxData.hitboxes_by_frame)) {
                         if (!frameHbs || frameHbs.length === 0) continue;
                         const realFrame = parseInt(frameStr) - 1;
@@ -1882,8 +2090,8 @@
                             const r = hb.size || 3;
                             const boneName = remapBone((hb.bone || 'top').toLowerCase(), positions);
                             let useBone = positions[boneName];
-                            if (!useBone && (boneName === 'top' || boneName === 'throw')) {
-                                useBone = positions['trans'] || positions['rot'] || positions['hip'];
+                            if (boneName === 'top' || boneName === 'throw') {
+                                useBone = positions['trans'] || positions['rot'] || positions['hip'] || useBone;
                             }
                             if (!useBone) continue;
                             
@@ -1944,7 +2152,10 @@
                             // Default positions from resizeCanvas logic
                             const movesStartLeft = ['dash_attack', 'dash_grab'];
                             const charsWithLongFsmash = ['simon', 'richter'];
-                            let defaultCX = (movesStartLeft.includes(move) || (move === 'fsmash' && charsWithLongFsmash.includes(character)))
+                            const charsWithSlidingDtilt = ['rockman'];
+                            let defaultCX = (movesStartLeft.includes(move)
+                                || (move === 'fsmash' && charsWithLongFsmash.includes(character))
+                                || (move === 'dtilt' && charsWithSlidingDtilt.includes(character)))
                                 ? canvasW * 0.15 : canvasW / 2;
                             let defaultCY = (move === 'dair') ? canvasH * 0.6 : canvasH - 80;
                             
@@ -1956,15 +2167,27 @@
                             
                             if (!topOK || !botOK || !leftOK || !rightOK) {
                                 // Default doesn't fit — reposition
-                                // Only adjust axes that need it, keep default for axes that fit
-                                if (!topOK || !botOK) {
+                                // Shift minimally: only move enough to bring the off-screen edge visible,
+                                // rather than fully centering (which pushes the other edge away)
+                                if (!topOK && !botOK) {
+                                    // Both off — must center
                                     autoFitCenterY = idealCY;
-                                    console.log(`[AutoFit] Repositioned CENTER_Y: ${defaultCY.toFixed(0)} → ${idealCY.toFixed(0)} (worldY: ${minWorldY.toFixed(1)}..${maxWorldY.toFixed(1)})`);
+                                } else if (!topOK) {
+                                    // Only top off — shift up just enough
+                                    autoFitCenterY = margin + maxWorldY * SCALE;
+                                } else if (!botOK) {
+                                    // Only bottom off — shift down just enough
+                                    autoFitCenterY = (canvasH - margin) + minWorldY * SCALE;
                                 }
-                                if (!leftOK || !rightOK) {
+                                if (!leftOK && !rightOK) {
                                     autoFitCenterX = idealCX;
-                                    console.log(`[AutoFit] Repositioned CENTER_X: ${defaultCX.toFixed(0)} → ${idealCX.toFixed(0)} (worldZ: ${minWorldZ.toFixed(1)}..${maxWorldZ.toFixed(1)})`);
+                                } else if (!leftOK) {
+                                    autoFitCenterX = margin - minWorldZ * SCALE;
+                                } else if (!rightOK) {
+                                    autoFitCenterX = (canvasW - margin) - maxWorldZ * SCALE;
                                 }
+                                if (autoFitCenterY !== null) console.log(`[AutoFit] Repositioned CENTER_Y: ${defaultCY.toFixed(0)} → ${autoFitCenterY.toFixed(0)} (worldY: ${minWorldY.toFixed(1)}..${maxWorldY.toFixed(1)})`);
+                                if (autoFitCenterX !== null) console.log(`[AutoFit] Repositioned CENTER_X: ${defaultCX.toFixed(0)} → ${autoFitCenterX.toFixed(0)} (worldZ: ${minWorldZ.toFixed(1)}..${maxWorldZ.toFixed(1)})`);
                             }
                         } else {
                             // Doesn't fit at default SCALE — zoom out

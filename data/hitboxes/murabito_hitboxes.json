@@ -213,7 +213,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 16
     },
     "jab2": {
       "total_frames": 29,
@@ -369,7 +370,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 18
     },
     "ftilt": {
       "total_frames": 44,
@@ -836,7 +838,8 @@
           "frame": 37.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 31
     },
     "utilt": {
       "total_frames": 54,
@@ -1872,7 +1875,8 @@
           "frame": 24.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 47
     },
     "dtilt": {
       "total_frames": 43,
@@ -2177,7 +2181,8 @@
           "frame": 8.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 31
     },
     "fsmash": {
       "total_frames": 59,
@@ -2231,12 +2236,12 @@
             "bone": "top",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 15.0,
-            "angle": 45,
-            "kbg": 95,
+            "damage": 5.0,
+            "angle": 55,
+            "kbg": 75,
             "fkb": 0,
-            "bkb": 70,
-            "size": 6.0,
+            "bkb": 60,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2252,12 +2257,12 @@
             "bone": "top",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 5.0,
-            "angle": 55,
-            "kbg": 75,
+            "damage": 15.0,
+            "angle": 45,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 3.0,
+            "bkb": 70,
+            "size": 6.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2296,12 +2301,12 @@
             "bone": "top",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 15.0,
-            "angle": 45,
-            "kbg": 95,
+            "damage": 5.0,
+            "angle": 55,
+            "kbg": 75,
             "fkb": 0,
-            "bkb": 70,
-            "size": 6.0,
+            "bkb": 60,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2317,12 +2322,12 @@
             "bone": "top",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 5.0,
-            "angle": 55,
-            "kbg": 75,
+            "damage": 15.0,
+            "angle": 45,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 3.0,
+            "bkb": 70,
+            "size": 6.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2361,12 +2366,12 @@
             "bone": "top",
             "animation_frame": 25.0,
             "real_frame": 25,
-            "damage": 15.0,
-            "angle": 45,
-            "kbg": 95,
+            "damage": 5.0,
+            "angle": 55,
+            "kbg": 75,
             "fkb": 0,
-            "bkb": 70,
-            "size": 6.0,
+            "bkb": 60,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2382,12 +2387,12 @@
             "bone": "top",
             "animation_frame": 25.0,
             "real_frame": 25,
-            "damage": 5.0,
-            "angle": 55,
-            "kbg": 75,
+            "damage": 15.0,
+            "angle": 45,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 3.0,
+            "bkb": 70,
+            "size": 6.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2426,12 +2431,12 @@
             "bone": "top",
             "animation_frame": 26.0,
             "real_frame": 26,
-            "damage": 15.0,
-            "angle": 45,
-            "kbg": 95,
+            "damage": 5.0,
+            "angle": 55,
+            "kbg": 75,
             "fkb": 0,
-            "bkb": 70,
-            "size": 6.0,
+            "bkb": 60,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2447,12 +2452,12 @@
             "bone": "top",
             "animation_frame": 26.0,
             "real_frame": 26,
-            "damage": 5.0,
-            "angle": 55,
-            "kbg": 75,
+            "damage": 15.0,
+            "angle": 45,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 3.0,
+            "bkb": 70,
+            "size": 6.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2491,12 +2496,12 @@
             "bone": "top",
             "animation_frame": 27.0,
             "real_frame": 27,
-            "damage": 15.0,
-            "angle": 45,
-            "kbg": 95,
+            "damage": 5.0,
+            "angle": 55,
+            "kbg": 75,
             "fkb": 0,
-            "bkb": 70,
-            "size": 6.0,
+            "bkb": 60,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2512,12 +2517,12 @@
             "bone": "top",
             "animation_frame": 27.0,
             "real_frame": 27,
-            "damage": 5.0,
-            "angle": 55,
-            "kbg": 75,
+            "damage": 15.0,
+            "angle": 45,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 3.0,
+            "bkb": 70,
+            "size": 6.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2556,12 +2561,12 @@
             "bone": "top",
             "animation_frame": 28.0,
             "real_frame": 28,
-            "damage": 15.0,
-            "angle": 45,
-            "kbg": 95,
+            "damage": 5.0,
+            "angle": 55,
+            "kbg": 75,
             "fkb": 0,
-            "bkb": 70,
-            "size": 6.0,
+            "bkb": 60,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2577,12 +2582,12 @@
             "bone": "top",
             "animation_frame": 28.0,
             "real_frame": 28,
-            "damage": 5.0,
-            "angle": 55,
-            "kbg": 75,
+            "damage": 15.0,
+            "angle": 45,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 3.0,
+            "bkb": 70,
+            "size": 6.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2621,12 +2626,12 @@
             "bone": "top",
             "animation_frame": 29.0,
             "real_frame": 29,
-            "damage": 15.0,
-            "angle": 45,
-            "kbg": 95,
+            "damage": 5.0,
+            "angle": 55,
+            "kbg": 75,
             "fkb": 0,
-            "bkb": 70,
-            "size": 6.0,
+            "bkb": 60,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -2642,12 +2647,12 @@
             "bone": "top",
             "animation_frame": 29.0,
             "real_frame": 29,
-            "damage": 5.0,
-            "angle": 55,
-            "kbg": 75,
+            "damage": 15.0,
+            "angle": 45,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 3.0,
+            "bkb": 70,
+            "size": 6.0,
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -3170,6 +3175,7 @@
         ]
       },
       "motion_events": [],
+      "faf": 60,
       "is_projectile": true,
       "projectile": {
         "spawn_offset": {
@@ -3386,7 +3392,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 54
     },
     "dsmash": {
       "total_frames": 55,
@@ -3688,7 +3695,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 50
     },
     "nair": {
       "total_frames": 44,
@@ -5082,7 +5090,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 36
     },
     "fair": {
       "total_frames": 54,
@@ -5946,6 +5955,7 @@
         ]
       },
       "motion_events": [],
+      "faf": 40,
       "is_projectile": true,
       "projectile": {
         "spawn_offset": {
@@ -7272,7 +7282,8 @@
           "frame": 28.0,
           "rate_value": 1.4615384615384615
         }
-      ]
+      ],
+      "faf": 45
     },
     "uair": {
       "total_frames": 49,
@@ -7778,7 +7789,8 @@
           "frame": 23.0,
           "rate_value": 0.7
         }
-      ]
+      ],
+      "faf": 37
     },
     "dair": {
       "total_frames": 59,
@@ -8345,7 +8357,8 @@
           "frame": 13.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 43
     },
     "grab": {
       "total_frames": 61,
@@ -8451,7 +8464,8 @@
           "frame": 9.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 40
     },
     "dash_grab": {
       "total_frames": 65,
@@ -8557,7 +8571,8 @@
           "frame": 11.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 45
     },
     "pivot_grab": {
       "total_frames": 62,
@@ -8663,7 +8678,8 @@
           "frame": 11.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 42
     },
     "pummel": {
       "total_frames": 29,
@@ -8695,7 +8711,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 7
     },
     "fthrow": {
       "total_frames": 55,
@@ -8943,7 +8960,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 35
     },
     "bthrow": {
       "total_frames": 55,
@@ -9191,7 +9209,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 30
     },
     "uthrow": {
       "total_frames": 55,
@@ -9439,7 +9458,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 38
     },
     "dthrow": {
       "total_frames": 49,
@@ -9687,8 +9707,9 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 31
     }
   },
-  "generated_at": "2026-02-03T21:21:38.648710"
+  "generated_at": "2026-02-04T15:43:19.416835"
 }
