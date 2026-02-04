@@ -2,7 +2,7 @@
   "character": "samus",
   "moves": {
     "jab1": {
-      "total_frames": 14,
+      "total_frames": 34,
       "active_frames": [
         3,
         4
@@ -116,7 +116,7 @@
       "motion_events": []
     },
     "jab2": {
-      "total_frames": 19,
+      "total_frames": 46,
       "active_frames": [
         6,
         7,
@@ -304,7 +304,7 @@
       "motion_events": []
     },
     "ftilt": {
-      "total_frames": 19,
+      "total_frames": 47,
       "active_frames": [
         6,
         7,
@@ -671,7 +671,7 @@
       ]
     },
     "utilt": {
-      "total_frames": 28,
+      "total_frames": 54,
       "active_frames": [
         15,
         16,
@@ -1027,7 +1027,7 @@
       "motion_events": []
     },
     "dtilt": {
-      "total_frames": 18,
+      "total_frames": 56,
       "active_frames": [
         6,
         7,
@@ -1233,7 +1233,7 @@
       "motion_events": []
     },
     "fsmash": {
-      "total_frames": 27,
+      "total_frames": 54,
       "active_frames": [
         10,
         11,
@@ -1769,7 +1769,7 @@
       "motion_events": []
     },
     "usmash": {
-      "total_frames": 35,
+      "total_frames": 63,
       "active_frames": [
         13,
         14,
@@ -1953,7 +1953,7 @@
       ]
     },
     "dsmash": {
-      "total_frames": 28,
+      "total_frames": 72,
       "active_frames": [
         9,
         10,
@@ -2073,7 +2073,7 @@
       "motion_events": []
     },
     "nair": {
-      "total_frames": 34,
+      "total_frames": 41,
       "active_frames": [
         5,
         6,
@@ -3401,7 +3401,7 @@
       "motion_events": []
     },
     "fair": {
-      "total_frames": 37,
+      "total_frames": 63,
       "active_frames": [
         6,
         7,
@@ -4014,7 +4014,7 @@
       ]
     },
     "bair": {
-      "total_frames": 22,
+      "total_frames": 54,
       "active_frames": [
         9,
         10,
@@ -4308,7 +4308,7 @@
       ]
     },
     "uair": {
-      "total_frames": 33,
+      "total_frames": 53,
       "active_frames": [
         5,
         6,
@@ -5092,7 +5092,7 @@
       ]
     },
     "dair": {
-      "total_frames": 27,
+      "total_frames": 59,
       "active_frames": [
         13,
         14,
@@ -5339,7 +5339,7 @@
       ]
     },
     "dash_attack": {
-      "total_frames": 27,
+      "total_frames": 54,
       "active_frames": [
         8,
         9,
@@ -5811,7 +5811,7 @@
       ]
     },
     "grab": {
-      "total_frames": 35,
+      "total_frames": 78,
       "active_frames": [
         16,
         17,
@@ -6296,7 +6296,7 @@
       ]
     },
     "dash_grab": {
-      "total_frames": 34,
+      "total_frames": 80,
       "active_frames": [
         17,
         18,
@@ -6668,7 +6668,7 @@
       "motion_events": []
     },
     "pivot_grab": {
-      "total_frames": 38,
+      "total_frames": 81,
       "active_frames": [
         19,
         20,
@@ -7153,7 +7153,7 @@
       ]
     },
     "pummel": {
-      "total_frames": 11,
+      "total_frames": 25,
       "active_frames": [
         1
       ],
@@ -7185,7 +7185,7 @@
       "motion_events": []
     },
     "fthrow": {
-      "total_frames": 35,
+      "total_frames": 61,
       "active_frames": [
         16,
         17,
@@ -7433,7 +7433,7 @@
       "motion_events": []
     },
     "bthrow": {
-      "total_frames": 31,
+      "total_frames": 62,
       "active_frames": [
         12,
         13,
@@ -7681,7 +7681,7 @@
       "motion_events": []
     },
     "uthrow": {
-      "total_frames": 26,
+      "total_frames": 55,
       "active_frames": [
         15,
         16
@@ -7737,7 +7737,7 @@
       "motion_events": []
     },
     "dthrow": {
-      "total_frames": 40,
+      "total_frames": 66,
       "active_frames": [
         21,
         22,
@@ -7991,5 +7991,5 @@
       ]
     }
   },
-  "generated_at": "2026-02-03T18:40:10.721211"
+  "generated_at": "2026-02-03T21:21:17.908752"
 }

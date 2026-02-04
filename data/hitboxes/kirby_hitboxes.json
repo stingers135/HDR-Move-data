@@ -2,7 +2,7 @@
   "character": "kirby",
   "moves": {
     "jab1": {
-      "total_frames": 14,
+      "total_frames": 28,
       "active_frames": [
         2,
         3,
@@ -294,7 +294,7 @@
       ]
     },
     "jab2": {
-      "total_frames": 15,
+      "total_frames": 30,
       "active_frames": [
         3,
         4,
@@ -512,7 +512,7 @@
       "motion_events": []
     },
     "rapid_jab": {
-      "total_frames": 24,
+      "total_frames": 17,
       "active_frames": [
         0,
         2,
@@ -744,7 +744,7 @@
       "motion_events": []
     },
     "rapid_jab_finisher": {
-      "total_frames": 14,
+      "total_frames": 60,
       "active_frames": [
         3,
         4
@@ -982,7 +982,7 @@
       "motion_events": []
     },
     "ftilt": {
-      "total_frames": 18,
+      "total_frames": 32,
       "active_frames": [
         5,
         6,
@@ -1254,7 +1254,7 @@
       "motion_events": []
     },
     "utilt": {
-      "total_frames": 20,
+      "total_frames": 33,
       "active_frames": [
         4,
         5,
@@ -1577,7 +1577,7 @@
       "motion_events": []
     },
     "dtilt": {
-      "total_frames": 17,
+      "total_frames": 29,
       "active_frames": [
         5,
         6,
@@ -1691,7 +1691,7 @@
       ]
     },
     "fsmash": {
-      "total_frames": 29,
+      "total_frames": 61,
       "active_frames": [
         13,
         14,
@@ -1895,7 +1895,7 @@
       "motion_events": []
     },
     "usmash": {
-      "total_frames": 27,
+      "total_frames": 49,
       "active_frames": [
         13,
         14,
@@ -2255,7 +2255,7 @@
       ]
     },
     "dsmash": {
-      "total_frames": 28,
+      "total_frames": 63,
       "active_frames": [
         7,
         8,
@@ -3184,7 +3184,7 @@
       ]
     },
     "nair": {
-      "total_frames": 33,
+      "total_frames": 72,
       "active_frames": [
         5,
         6,
@@ -4856,7 +4856,7 @@
       ]
     },
     "fair": {
-      "total_frames": 33,
+      "total_frames": 68,
       "active_frames": [
         7,
         8,
@@ -5148,7 +5148,7 @@
       ]
     },
     "bair": {
-      "total_frames": 29,
+      "total_frames": 43,
       "active_frames": [
         6,
         7,
@@ -5849,7 +5849,7 @@
       "motion_events": []
     },
     "uair": {
-      "total_frames": 23,
+      "total_frames": 47,
       "active_frames": [
         8,
         9,
@@ -6138,7 +6138,7 @@
       ]
     },
     "dair": {
-      "total_frames": 40,
+      "total_frames": 59,
       "active_frames": [
         14,
         15,
@@ -7061,7 +7061,7 @@
       ]
     },
     "dash_attack": {
-      "total_frames": 34,
+      "total_frames": 74,
       "active_frames": [
         9,
         10,
@@ -7547,7 +7547,7 @@
       ]
     },
     "grab": {
-      "total_frames": 18,
+      "total_frames": 41,
       "active_frames": [
         7,
         8
@@ -7624,7 +7624,7 @@
       ]
     },
     "dash_grab": {
-      "total_frames": 20,
+      "total_frames": 52,
       "active_frames": [
         9,
         10
@@ -7690,7 +7690,7 @@
       "motion_events": []
     },
     "pivot_grab": {
-      "total_frames": 21,
+      "total_frames": 48,
       "active_frames": [
         10,
         11
@@ -7756,7 +7756,7 @@
       "motion_events": []
     },
     "pummel": {
-      "total_frames": 11,
+      "total_frames": 27,
       "active_frames": [
         1
       ],
@@ -7792,7 +7792,7 @@
       "motion_events": []
     },
     "fthrow": {
-      "total_frames": 64,
+      "total_frames": 72,
       "active_frames": [
         45,
         46,
@@ -8040,7 +8040,7 @@
       "motion_events": []
     },
     "bthrow": {
-      "total_frames": 60,
+      "total_frames": 61,
       "active_frames": [
         41,
         42,
@@ -8288,7 +8288,7 @@
       "motion_events": []
     },
     "uthrow": {
-      "total_frames": 70,
+      "total_frames": 83,
       "active_frames": [
         51,
         52,
@@ -8536,7 +8536,7 @@
       "motion_events": []
     },
     "dthrow": {
-      "total_frames": 68,
+      "total_frames": 94,
       "active_frames": [
         9,
         10,
@@ -9048,5 +9048,5 @@
       "motion_events": []
     }
   },
-  "generated_at": "2026-02-03T18:40:11.051248"
+  "generated_at": "2026-02-03T21:21:18.767186"
 }

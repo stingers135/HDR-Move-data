@@ -2,7 +2,7 @@
   "character": "richter",
   "moves": {
     "jab1": {
-      "total_frames": 17,
+      "total_frames": 34,
       "active_frames": [
         5,
         6,
@@ -283,7 +283,7 @@
       "motion_events": []
     },
     "jab2": {
-      "total_frames": 18,
+      "total_frames": 28,
       "active_frames": [
         5,
         6,
@@ -807,7 +807,7 @@
       "motion_events": []
     },
     "jab3": {
-      "total_frames": 19,
+      "total_frames": 39,
       "active_frames": [
         4,
         5,
@@ -983,7 +983,7 @@
       "motion_events": []
     },
     "rapid_jab": {
-      "total_frames": 24,
+      "total_frames": 19,
       "active_frames": [
         0,
         2,
@@ -1159,7 +1159,7 @@
       "motion_events": []
     },
     "rapid_jab_finisher": {
-      "total_frames": 14,
+      "total_frames": 57,
       "active_frames": [
         3,
         4
@@ -1399,7 +1399,7 @@
       "motion_events": []
     },
     "ftilt": {
-      "total_frames": 24,
+      "total_frames": 40,
       "active_frames": [
         12,
         13,
@@ -1617,7 +1617,7 @@
       "motion_events": []
     },
     "utilt": {
-      "total_frames": 26,
+      "total_frames": 49,
       "active_frames": [
         11,
         12,
@@ -1919,7 +1919,7 @@
       "motion_events": []
     },
     "dtilt": {
-      "total_frames": 34,
+      "total_frames": 59,
       "active_frames": [
         10,
         11,
@@ -2621,7 +2621,7 @@
       ]
     },
     "fsmash": {
-      "total_frames": 45,
+      "total_frames": 109,
       "active_frames": [
         24,
         26,
@@ -2875,7 +2875,7 @@
       "motion_events": []
     },
     "usmash": {
-      "total_frames": 34,
+      "total_frames": 75,
       "active_frames": [
         17,
         18,
@@ -3443,7 +3443,7 @@
       "motion_events": []
     },
     "dsmash": {
-      "total_frames": 30,
+      "total_frames": 63,
       "active_frames": [
         13,
         14,
@@ -3792,7 +3792,7 @@
       ]
     },
     "nair": {
-      "total_frames": 29,
+      "total_frames": 54,
       "active_frames": [
         10,
         11,
@@ -4290,7 +4290,7 @@
       "motion_events": []
     },
     "fair": {
-      "total_frames": 27,
+      "total_frames": 52,
       "active_frames": [
         15,
         16,
@@ -4508,7 +4508,7 @@
       "motion_events": []
     },
     "bair": {
-      "total_frames": 28,
+      "total_frames": 63,
       "active_frames": [
         11,
         12,
@@ -5043,19 +5043,17 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
-          "frame": 1.0,
-          "rate_value": 0.5
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 3.0,
-          "rate_value": 1.0
+          "type": "range",
+          "frame": 0.0,
+          "start_orig": 1.0,
+          "end_orig": 12.0,
+          "new_duration": 9.0,
+          "scale_factor": 0.8181818181818182
         }
       ]
     },
     "uair": {
-      "total_frames": 23,
+      "total_frames": 43,
       "active_frames": [
         6,
         7,
@@ -5423,7 +5421,7 @@
       "motion_events": []
     },
     "dair": {
-      "total_frames": 49,
+      "total_frames": 68,
       "active_frames": [
         16,
         17,
@@ -6007,7 +6005,7 @@
       "motion_events": []
     },
     "dash_attack": {
-      "total_frames": 24,
+      "total_frames": 49,
       "active_frames": [
         8,
         9,
@@ -6211,7 +6209,7 @@
       "motion_events": []
     },
     "grab": {
-      "total_frames": 18,
+      "total_frames": 39,
       "active_frames": [
         8
       ],
@@ -6259,7 +6257,7 @@
       ]
     },
     "dash_grab": {
-      "total_frames": 24,
+      "total_frames": 47,
       "active_frames": [
         13,
         14
@@ -6325,7 +6323,7 @@
       "motion_events": []
     },
     "pivot_grab": {
-      "total_frames": 25,
+      "total_frames": 44,
       "active_frames": [
         14,
         15
@@ -6391,7 +6389,7 @@
       "motion_events": []
     },
     "pummel": {
-      "total_frames": 11,
+      "total_frames": 19,
       "active_frames": [
         1
       ],
@@ -6423,7 +6421,7 @@
       "motion_events": []
     },
     "fthrow": {
-      "total_frames": 43,
+      "total_frames": 58,
       "active_frames": [
         24,
         25,
@@ -6671,7 +6669,7 @@
       "motion_events": []
     },
     "bthrow": {
-      "total_frames": 37,
+      "total_frames": 54,
       "active_frames": [
         18,
         19,
@@ -6919,7 +6917,7 @@
       "motion_events": []
     },
     "uthrow": {
-      "total_frames": 34,
+      "total_frames": 52,
       "active_frames": [
         15,
         16,
@@ -7181,7 +7179,7 @@
       ]
     },
     "dthrow": {
-      "total_frames": 43,
+      "total_frames": 60,
       "active_frames": [
         24,
         25,
@@ -7429,5 +7427,5 @@
       "motion_events": []
     }
   },
-  "generated_at": "2026-02-03T18:40:17.922708"
+  "generated_at": "2026-02-03T21:21:46.072256"
 }

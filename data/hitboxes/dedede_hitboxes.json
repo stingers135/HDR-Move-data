@@ -2,7 +2,7 @@
   "character": "dedede",
   "moves": {
     "jab1": {
-      "total_frames": 20,
+      "total_frames": 39,
       "active_frames": [
         8,
         9,
@@ -272,7 +272,7 @@
       ]
     },
     "jab2": {
-      "total_frames": 19,
+      "total_frames": 47,
       "active_frames": [
         7,
         8,
@@ -567,7 +567,7 @@
       ]
     },
     "rapid_jab": {
-      "total_frames": 27,
+      "total_frames": 22,
       "active_frames": [
         0,
         2,
@@ -918,7 +918,7 @@
       "motion_events": []
     },
     "rapid_jab_finisher": {
-      "total_frames": 15,
+      "total_frames": 62,
       "active_frames": [
         4,
         5
@@ -1301,7 +1301,7 @@
       "motion_events": []
     },
     "ftilt": {
-      "total_frames": 31,
+      "total_frames": 71,
       "active_frames": [
         12,
         13,
@@ -1777,7 +1777,7 @@
       ]
     },
     "utilt": {
-      "total_frames": 22,
+      "total_frames": 61,
       "active_frames": [
         7,
         8,
@@ -2055,7 +2055,7 @@
       "motion_events": []
     },
     "dtilt": {
-      "total_frames": 23,
+      "total_frames": 36,
       "active_frames": [
         5,
         6,
@@ -2474,7 +2474,7 @@
       ]
     },
     "fsmash": {
-      "total_frames": 55,
+      "total_frames": 95,
       "active_frames": [
         40,
         41,
@@ -2928,7 +2928,7 @@
       "motion_events": []
     },
     "usmash": {
-      "total_frames": 33,
+      "total_frames": 75,
       "active_frames": [
         16,
         17,
@@ -3646,7 +3646,7 @@
       ]
     },
     "dsmash": {
-      "total_frames": 31,
+      "total_frames": 64,
       "active_frames": [
         13,
         14,
@@ -4086,7 +4086,7 @@
       ]
     },
     "nair": {
-      "total_frames": 38,
+      "total_frames": 39,
       "active_frames": [
         5,
         6,
@@ -4681,7 +4681,7 @@
       ]
     },
     "fair": {
-      "total_frames": 26,
+      "total_frames": 39,
       "active_frames": [
         11,
         12,
@@ -5031,7 +5031,7 @@
       ]
     },
     "bair": {
-      "total_frames": 30,
+      "total_frames": 31,
       "active_frames": [
         6,
         7,
@@ -5720,7 +5720,7 @@
       ]
     },
     "uair": {
-      "total_frames": 33,
+      "total_frames": 59,
       "active_frames": [
         10,
         11,
@@ -6799,7 +6799,7 @@
       ]
     },
     "dair": {
-      "total_frames": 32,
+      "total_frames": 55,
       "active_frames": [
         18,
         19,
@@ -7253,7 +7253,7 @@
       ]
     },
     "dash_attack": {
-      "total_frames": 43,
+      "total_frames": 84,
       "active_frames": [
         21,
         22,
@@ -7860,7 +7860,7 @@
       ]
     },
     "grab": {
-      "total_frames": 18,
+      "total_frames": 39,
       "active_frames": [
         7,
         8
@@ -7937,7 +7937,7 @@
       ]
     },
     "dash_grab": {
-      "total_frames": 23,
+      "total_frames": 48,
       "active_frames": [
         11,
         12,
@@ -8032,7 +8032,7 @@
       "motion_events": []
     },
     "pivot_grab": {
-      "total_frames": 24,
+      "total_frames": 45,
       "active_frames": [
         12,
         13,
@@ -8127,7 +8127,7 @@
       "motion_events": []
     },
     "pummel": {
-      "total_frames": 12,
+      "total_frames": 29,
       "active_frames": [
         2
       ],
@@ -8159,7 +8159,7 @@
       "motion_events": []
     },
     "fthrow": {
-      "total_frames": 24,
+      "total_frames": 49,
       "active_frames": [
         12,
         13,
@@ -8365,7 +8365,7 @@
       "motion_events": []
     },
     "bthrow": {
-      "total_frames": 26,
+      "total_frames": 56,
       "active_frames": [
         13,
         14,
@@ -8672,7 +8672,7 @@
       ]
     },
     "uthrow": {
-      "total_frames": 29,
+      "total_frames": 49,
       "active_frames": [
         16,
         17,
@@ -8776,7 +8776,7 @@
       "motion_events": []
     },
     "dthrow": {
-      "total_frames": 36,
+      "total_frames": 56,
       "active_frames": [
         24,
         25,
@@ -8864,5 +8864,5 @@
       "motion_events": []
     }
   },
-  "generated_at": "2026-02-03T18:40:14.916531"
+  "generated_at": "2026-02-03T21:21:36.929059"
 }

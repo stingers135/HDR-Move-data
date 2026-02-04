@@ -2,7 +2,7 @@
   "character": "pikmin",
   "moves": {
     "jab1": {
-      "total_frames": 15,
+      "total_frames": 29,
       "active_frames": [
         4,
         5
@@ -142,7 +142,7 @@
       "motion_events": []
     },
     "jab2": {
-      "total_frames": 15,
+      "total_frames": 37,
       "active_frames": [
         4,
         5
@@ -246,7 +246,7 @@
       ]
     },
     "ftilt": {
-      "total_frames": 23,
+      "total_frames": 64,
       "active_frames": [
         10,
         11,
@@ -427,7 +427,7 @@
       ]
     },
     "utilt": {
-      "total_frames": 24,
+      "total_frames": 59,
       "active_frames": [
         7,
         8,
@@ -977,7 +977,7 @@
       ]
     },
     "dtilt": {
-      "total_frames": 22,
+      "total_frames": 37,
       "active_frames": [
         6,
         7,
@@ -1300,7 +1300,7 @@
       "motion_events": []
     },
     "nair": {
-      "total_frames": 34,
+      "total_frames": 42,
       "active_frames": [
         5,
         6,
@@ -2690,30 +2690,35 @@
       },
       "motion_events": [
         {
-          "type": "range",
-          "frame": 2.0,
-          "start_orig": 2.0,
-          "end_orig": 7.0,
-          "new_duration": 3.0,
-          "scale_factor": 0.6
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 1.0
         },
         {
           "type": "range",
-          "frame": 7.0,
-          "start_orig": 7.0,
-          "end_orig": 23.0,
+          "frame": 2.0,
+          "start_orig": 2.0,
+          "end_orig": 6.0,
+          "new_duration": 2.0,
+          "scale_factor": 0.5
+        },
+        {
+          "type": "range",
+          "frame": 6.0,
+          "start_orig": 6.0,
+          "end_orig": 22.0,
           "new_duration": 20.0,
           "scale_factor": 1.25
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 23.0,
+          "frame": 22.0,
           "rate_value": 1.0
         }
       ]
     },
     "fair": {
-      "total_frames": 18,
+      "total_frames": 51,
       "active_frames": [
         5,
         6,
@@ -2900,22 +2905,14 @@
       },
       "motion_events": [
         {
-          "type": "range",
-          "frame": 1.0,
-          "start_orig": 1.0,
-          "end_orig": 3.0,
-          "new_duration": 1.0,
-          "scale_factor": 0.5
-        },
-        {
           "type": "FT_MOTION_RATE",
-          "frame": 3.0,
+          "frame": 0.0,
           "rate_value": 1.0
         }
       ]
     },
     "bair": {
-      "total_frames": 24,
+      "total_frames": 57,
       "active_frames": [
         9,
         10,
@@ -3199,7 +3196,7 @@
       ]
     },
     "uair": {
-      "total_frames": 28,
+      "total_frames": 42,
       "active_frames": [
         7,
         8,
@@ -3746,22 +3743,14 @@
       },
       "motion_events": [
         {
-          "type": "range",
-          "frame": 1.0,
-          "start_orig": 1.0,
-          "end_orig": 3.0,
-          "new_duration": 1.0,
-          "scale_factor": 0.5
-        },
-        {
           "type": "FT_MOTION_RATE",
-          "frame": 3.0,
+          "frame": 0.0,
           "rate_value": 1.0
         }
       ]
     },
     "dair": {
-      "total_frames": 34,
+      "total_frames": 59,
       "active_frames": [
         9,
         10,
@@ -4495,7 +4484,7 @@
       ]
     },
     "dash_attack": {
-      "total_frames": 24,
+      "total_frames": 45,
       "active_frames": [
         8,
         9,
@@ -4671,7 +4660,7 @@
       "motion_events": []
     },
     "pummel": {
-      "total_frames": 11,
+      "total_frames": 21,
       "active_frames": [
         1
       ],
@@ -4703,7 +4692,7 @@
       "motion_events": []
     },
     "fthrow": {
-      "total_frames": 19,
+      "total_frames": 53,
       "active_frames": [
         0,
         1,
@@ -5046,7 +5035,7 @@
       ]
     },
     "bthrow": {
-      "total_frames": 19,
+      "total_frames": 54,
       "active_frames": [
         0,
         1,
@@ -5389,7 +5378,7 @@
       ]
     },
     "uthrow": {
-      "total_frames": 19,
+      "total_frames": 61,
       "active_frames": [
         0,
         1,
@@ -5732,7 +5721,7 @@
       ]
     },
     "dthrow": {
-      "total_frames": 19,
+      "total_frames": 49,
       "active_frames": [
         0,
         1,
@@ -6075,5 +6064,5 @@
       ]
     }
   },
-  "generated_at": "2026-02-03T18:40:15.029113"
+  "generated_at": "2026-02-03T21:21:37.355542"
 }

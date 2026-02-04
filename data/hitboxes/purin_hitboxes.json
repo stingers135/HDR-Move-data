@@ -2,7 +2,7 @@
   "character": "purin",
   "moves": {
     "jab1": {
-      "total_frames": 16,
+      "total_frames": 17,
       "active_frames": [
         5,
         6
@@ -192,7 +192,7 @@
       "motion_events": []
     },
     "jab2": {
-      "total_frames": 16,
+      "total_frames": 19,
       "active_frames": [
         5,
         6
@@ -309,7 +309,7 @@
       ]
     },
     "ftilt": {
-      "total_frames": 20,
+      "total_frames": 27,
       "active_frames": [
         7,
         8,
@@ -581,7 +581,7 @@
       "motion_events": []
     },
     "utilt": {
-      "total_frames": 23,
+      "total_frames": 24,
       "active_frames": [
         9,
         10,
@@ -814,7 +814,7 @@
       "motion_events": []
     },
     "dtilt": {
-      "total_frames": 22,
+      "total_frames": 39,
       "active_frames": [
         10,
         11,
@@ -1020,7 +1020,7 @@
       "motion_events": []
     },
     "fsmash": {
-      "total_frames": 34,
+      "total_frames": 53,
       "active_frames": [
         16,
         17,
@@ -1433,7 +1433,7 @@
       "motion_events": []
     },
     "usmash": {
-      "total_frames": 29,
+      "total_frames": 65,
       "active_frames": [
         16,
         17,
@@ -1621,7 +1621,7 @@
       "motion_events": []
     },
     "dsmash": {
-      "total_frames": 26,
+      "total_frames": 59,
       "active_frames": [
         14,
         15,
@@ -1788,7 +1788,7 @@
       "motion_events": []
     },
     "nair": {
-      "total_frames": 40,
+      "total_frames": 51,
       "active_frames": [
         6,
         7,
@@ -3032,7 +3032,7 @@
       ]
     },
     "fair": {
-      "total_frames": 32,
+      "total_frames": 58,
       "active_frames": [
         8,
         9,
@@ -3715,7 +3715,7 @@
       "motion_events": []
     },
     "bair": {
-      "total_frames": 22,
+      "total_frames": 51,
       "active_frames": [
         10,
         11,
@@ -3881,7 +3881,7 @@
       ]
     },
     "uair": {
-      "total_frames": 27,
+      "total_frames": 49,
       "active_frames": [
         9,
         10,
@@ -4497,7 +4497,7 @@
       ]
     },
     "dair": {
-      "total_frames": 42,
+      "total_frames": 54,
       "active_frames": [
         7,
         8,
@@ -5379,7 +5379,7 @@
       "motion_events": []
     },
     "dash_attack": {
-      "total_frames": 30,
+      "total_frames": 59,
       "active_frames": [
         5,
         6,
@@ -5771,7 +5771,7 @@
       "motion_events": []
     },
     "grab": {
-      "total_frames": 18,
+      "total_frames": 29,
       "active_frames": [
         7,
         8
@@ -5848,7 +5848,7 @@
       ]
     },
     "dash_grab": {
-      "total_frames": 20,
+      "total_frames": 40,
       "active_frames": [
         9,
         10
@@ -5914,7 +5914,7 @@
       "motion_events": []
     },
     "pivot_grab": {
-      "total_frames": 21,
+      "total_frames": 38,
       "active_frames": [
         10,
         11
@@ -5980,7 +5980,7 @@
       "motion_events": []
     },
     "pummel": {
-      "total_frames": 12,
+      "total_frames": 17,
       "active_frames": [
         1,
         2
@@ -6036,7 +6036,7 @@
       "motion_events": []
     },
     "fthrow": {
-      "total_frames": 22,
+      "total_frames": 35,
       "active_frames": [
         10,
         11,
@@ -6116,7 +6116,7 @@
       "motion_events": []
     },
     "bthrow": {
-      "total_frames": 45,
+      "total_frames": 52,
       "active_frames": [
         26,
         27,
@@ -6364,7 +6364,7 @@
       "motion_events": []
     },
     "uthrow": {
-      "total_frames": 28,
+      "total_frames": 41,
       "active_frames": [
         9,
         10,
@@ -6618,7 +6618,7 @@
       ]
     },
     "dthrow": {
-      "total_frames": 72,
+      "total_frames": 84,
       "active_frames": [
         60,
         61,
@@ -6698,5 +6698,5 @@
       "motion_events": []
     }
   },
-  "generated_at": "2026-02-03T18:40:11.807112"
+  "generated_at": "2026-02-03T21:21:20.776598"
 }

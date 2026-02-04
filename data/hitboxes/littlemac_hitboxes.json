@@ -2,7 +2,7 @@
   "character": "littlemac",
   "moves": {
     "jab1": {
-      "total_frames": 12,
+      "total_frames": 25,
       "active_frames": [
         1,
         2
@@ -242,7 +242,7 @@
       "motion_events": []
     },
     "jab2": {
-      "total_frames": 13,
+      "total_frames": 37,
       "active_frames": [
         1,
         2,
@@ -598,7 +598,7 @@
       "motion_events": []
     },
     "jab3": {
-      "total_frames": 15,
+      "total_frames": 34,
       "active_frames": [
         4,
         5
@@ -710,7 +710,7 @@
       ]
     },
     "rapid_jab": {
-      "total_frames": 27,
+      "total_frames": 20,
       "active_frames": [
         0,
         1,
@@ -998,7 +998,7 @@
       "motion_events": []
     },
     "rapid_jab_finisher": {
-      "total_frames": 15,
+      "total_frames": 39,
       "active_frames": [
         5
       ],
@@ -1171,7 +1171,7 @@
       ]
     },
     "ftilt": {
-      "total_frames": 21,
+      "total_frames": 55,
       "active_frames": [
         4,
         5,
@@ -1709,7 +1709,7 @@
       ]
     },
     "utilt": {
-      "total_frames": 20,
+      "total_frames": 42,
       "active_frames": [
         4,
         5,
@@ -2326,7 +2326,7 @@
       "motion_events": []
     },
     "dtilt": {
-      "total_frames": 17,
+      "total_frames": 36,
       "active_frames": [
         4,
         5,
@@ -2696,7 +2696,7 @@
       ]
     },
     "fsmash": {
-      "total_frames": 26,
+      "total_frames": 51,
       "active_frames": [
         14,
         15,
@@ -3042,7 +3042,7 @@
       ]
     },
     "usmash": {
-      "total_frames": 27,
+      "total_frames": 52,
       "active_frames": [
         10,
         11,
@@ -3746,7 +3746,7 @@
       "motion_events": []
     },
     "dsmash": {
-      "total_frames": 28,
+      "total_frames": 54,
       "active_frames": [
         10,
         11,
@@ -4018,7 +4018,7 @@
       "motion_events": []
     },
     "nair": {
-      "total_frames": 26,
+      "total_frames": 44,
       "active_frames": [
         3,
         4,
@@ -4977,7 +4977,7 @@
       ]
     },
     "fair": {
-      "total_frames": 18,
+      "total_frames": 41,
       "active_frames": [
         5,
         6,
@@ -5260,7 +5260,7 @@
       ]
     },
     "bair": {
-      "total_frames": 21,
+      "total_frames": 59,
       "active_frames": [
         7,
         8,
@@ -5609,7 +5609,7 @@
       ]
     },
     "uair": {
-      "total_frames": 20,
+      "total_frames": 71,
       "active_frames": [
         4,
         5,
@@ -6109,7 +6109,7 @@
       ]
     },
     "dair": {
-      "total_frames": 23,
+      "total_frames": 49,
       "active_frames": [
         8,
         9,
@@ -6513,7 +6513,7 @@
       "motion_events": []
     },
     "dash_attack": {
-      "total_frames": 21,
+      "total_frames": 55,
       "active_frames": [
         6,
         7,
@@ -6917,7 +6917,7 @@
       "motion_events": []
     },
     "grab": {
-      "total_frames": 18,
+      "total_frames": 52,
       "active_frames": [
         7,
         8
@@ -6994,7 +6994,7 @@
       ]
     },
     "dash_grab": {
-      "total_frames": 24,
+      "total_frames": 57,
       "active_frames": [
         13,
         14
@@ -7060,7 +7060,7 @@
       "motion_events": []
     },
     "pivot_grab": {
-      "total_frames": 25,
+      "total_frames": 60,
       "active_frames": [
         14,
         15
@@ -7126,7 +7126,7 @@
       "motion_events": []
     },
     "pummel": {
-      "total_frames": 11,
+      "total_frames": 15,
       "active_frames": [
         1
       ],
@@ -7158,7 +7158,7 @@
       "motion_events": []
     },
     "fthrow": {
-      "total_frames": 27,
+      "total_frames": 44,
       "active_frames": [
         15,
         16,
@@ -7238,7 +7238,7 @@
       "motion_events": []
     },
     "bthrow": {
-      "total_frames": 27,
+      "total_frames": 54,
       "active_frames": [
         14,
         15,
@@ -7377,7 +7377,7 @@
       ]
     },
     "uthrow": {
-      "total_frames": 22,
+      "total_frames": 40,
       "active_frames": [
         10,
         11,
@@ -7457,7 +7457,7 @@
       "motion_events": []
     },
     "dthrow": {
-      "total_frames": 26,
+      "total_frames": 44,
       "active_frames": [
         14,
         15,
@@ -7537,5 +7537,5 @@
       "motion_events": []
     }
   },
-  "generated_at": "2026-02-03T18:40:16.014839"
+  "generated_at": "2026-02-03T21:21:40.250757"
 }

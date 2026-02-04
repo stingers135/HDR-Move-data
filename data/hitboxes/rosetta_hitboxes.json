@@ -2,7 +2,7 @@
   "character": "rosetta",
   "moves": {
     "jab1": {
-      "total_frames": 15,
+      "total_frames": 35,
       "active_frames": [
         5
       ],
@@ -87,7 +87,7 @@
       ]
     },
     "jab2": {
-      "total_frames": 17,
+      "total_frames": 46,
       "active_frames": [
         6,
         7
@@ -185,7 +185,7 @@
       "motion_events": []
     },
     "jab3": {
-      "total_frames": 18,
+      "total_frames": 47,
       "active_frames": [
         7,
         8
@@ -283,7 +283,7 @@
       "motion_events": []
     },
     "rapid_jab": {
-      "total_frames": 18,
+      "total_frames": 12,
       "active_frames": [
         0,
         2,
@@ -403,7 +403,7 @@
       "motion_events": []
     },
     "rapid_jab_finisher": {
-      "total_frames": 17,
+      "total_frames": 54,
       "active_frames": [
         6,
         7
@@ -641,7 +641,7 @@
       "motion_events": []
     },
     "ftilt": {
-      "total_frames": 20,
+      "total_frames": 53,
       "active_frames": [
         7,
         8,
@@ -913,7 +913,7 @@
       "motion_events": []
     },
     "utilt": {
-      "total_frames": 25,
+      "total_frames": 51,
       "active_frames": [
         7,
         8,
@@ -1362,7 +1362,7 @@
       "motion_events": []
     },
     "dtilt": {
-      "total_frames": 18,
+      "total_frames": 47,
       "active_frames": [
         5,
         6,
@@ -1718,7 +1718,7 @@
       "motion_events": []
     },
     "fsmash": {
-      "total_frames": 28,
+      "total_frames": 64,
       "active_frames": [
         16,
         17,
@@ -1902,7 +1902,7 @@
       "motion_events": []
     },
     "usmash": {
-      "total_frames": 26,
+      "total_frames": 63,
       "active_frames": [
         8,
         9,
@@ -2483,7 +2483,7 @@
       "motion_events": []
     },
     "dsmash": {
-      "total_frames": 29,
+      "total_frames": 77,
       "active_frames": [
         6,
         7,
@@ -2759,7 +2759,7 @@
       "motion_events": []
     },
     "nair": {
-      "total_frames": 43,
+      "total_frames": 77,
       "active_frames": [
         9,
         10,
@@ -4433,7 +4433,7 @@
       ]
     },
     "fair": {
-      "total_frames": 33,
+      "total_frames": 83,
       "active_frames": [
         10,
         11,
@@ -5925,7 +5925,7 @@
       "motion_events": []
     },
     "bair": {
-      "total_frames": 26,
+      "total_frames": 73,
       "active_frames": [
         9,
         10,
@@ -5940,6 +5940,27 @@
         "9": [
           {
             "id": 0,
+            "bone": "legr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 4.0,
+            "angle": 43,
+            "kbg": 150,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "rosetta",
+            "move": "bair"
+          },
+          {
+            "id": 0,
             "bone": "top",
             "animation_frame": 9.0,
             "real_frame": 9,
@@ -5995,27 +6016,6 @@
               "x": 0.0,
               "y": 10.0,
               "z": -5.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "rosetta",
-            "move": "bair"
-          },
-          {
-            "id": 0,
-            "bone": "legr",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 4.0,
-            "angle": 43,
-            "kbg": 150,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -6026,6 +6026,27 @@
         "10": [
           {
             "id": 0,
+            "bone": "legr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 4.0,
+            "angle": 43,
+            "kbg": 150,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "rosetta",
+            "move": "bair"
+          },
+          {
+            "id": 0,
             "bone": "top",
             "animation_frame": 10.0,
             "real_frame": 10,
@@ -6081,27 +6102,6 @@
               "x": 0.0,
               "y": 10.0,
               "z": -5.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "rosetta",
-            "move": "bair"
-          },
-          {
-            "id": 0,
-            "bone": "legr",
-            "animation_frame": 10.0,
-            "real_frame": 10,
-            "damage": 4.0,
-            "angle": 43,
-            "kbg": 150,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -6112,6 +6112,27 @@
         "11": [
           {
             "id": 0,
+            "bone": "legr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 4.0,
+            "angle": 43,
+            "kbg": 150,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "rosetta",
+            "move": "bair"
+          },
+          {
+            "id": 0,
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
@@ -6172,12 +6193,14 @@
             "is_capsule": false,
             "character": "rosetta",
             "move": "bair"
-          },
+          }
+        ],
+        "12": [
           {
             "id": 0,
             "bone": "legr",
-            "animation_frame": 11.0,
-            "real_frame": 11,
+            "animation_frame": 12.0,
+            "real_frame": 12,
             "damage": 4.0,
             "angle": 43,
             "kbg": 150,
@@ -6193,9 +6216,7 @@
             "is_capsule": false,
             "character": "rosetta",
             "move": "bair"
-          }
-        ],
-        "12": [
+          },
           {
             "id": 0,
             "bone": "top",
@@ -6253,27 +6274,6 @@
               "x": 0.0,
               "y": 10.0,
               "z": -5.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "rosetta",
-            "move": "bair"
-          },
-          {
-            "id": 0,
-            "bone": "legr",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 4.0,
-            "angle": 43,
-            "kbg": 150,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -6284,6 +6284,27 @@
         "13": [
           {
             "id": 0,
+            "bone": "legr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 4.0,
+            "angle": 43,
+            "kbg": 150,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "rosetta",
+            "move": "bair"
+          },
+          {
+            "id": 0,
             "bone": "top",
             "animation_frame": 13.0,
             "real_frame": 13,
@@ -6339,27 +6360,6 @@
               "x": 0.0,
               "y": 10.0,
               "z": -5.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "rosetta",
-            "move": "bair"
-          },
-          {
-            "id": 0,
-            "bone": "legr",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 4.0,
-            "angle": 43,
-            "kbg": 150,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -6370,6 +6370,27 @@
         "14": [
           {
             "id": 0,
+            "bone": "legr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 43,
+            "kbg": 150,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "rosetta",
+            "move": "bair"
+          },
+          {
+            "id": 0,
             "bone": "top",
             "animation_frame": 14.0,
             "real_frame": 14,
@@ -6425,27 +6446,6 @@
               "x": 0.0,
               "y": 10.0,
               "z": -5.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "rosetta",
-            "move": "bair"
-          },
-          {
-            "id": 0,
-            "bone": "legr",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 4.0,
-            "angle": 43,
-            "kbg": 150,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -6587,7 +6587,7 @@
       "motion_events": []
     },
     "uair": {
-      "total_frames": 23,
+      "total_frames": 57,
       "active_frames": [
         5,
         6,
@@ -6600,7 +6600,113 @@
         13
       ],
       "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 88,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.5,
+              "z": 2.0
+            },
+            "is_capsule": true,
+            "character": "rosetta",
+            "move": "uair"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 4.0,
+            "angle": 88,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.5,
+              "z": 2.0
+            },
+            "is_capsule": true,
+            "character": "rosetta",
+            "move": "uair"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 4.0,
+            "angle": 88,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.5,
+              "z": 2.0
+            },
+            "is_capsule": true,
+            "character": "rosetta",
+            "move": "uair"
+          }
+        ],
         "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 4.0,
+            "angle": 88,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.5,
+              "z": 2.0
+            },
+            "is_capsule": true,
+            "character": "rosetta",
+            "move": "uair"
+          },
           {
             "id": 3,
             "bone": "throw",
@@ -6686,37 +6792,37 @@
             },
             "offset2": null,
             "is_capsule": false,
-            "character": "rosetta",
-            "move": "uair"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 4.0,
-            "angle": 88,
-            "kbg": 140,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 6.5,
-              "z": 2.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": 2.0
-            },
-            "is_capsule": true,
             "character": "rosetta",
             "move": "uair"
           }
         ],
         "9": [
           {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 4.0,
+            "angle": 88,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.5,
+              "z": 2.0
+            },
+            "is_capsule": true,
+            "character": "rosetta",
+            "move": "uair"
+          },
+          {
             "id": 3,
             "bone": "throw",
             "animation_frame": 9.0,
@@ -6801,37 +6907,37 @@
             },
             "offset2": null,
             "is_capsule": false,
-            "character": "rosetta",
-            "move": "uair"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 4.0,
-            "angle": 88,
-            "kbg": 140,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 6.5,
-              "z": 2.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": 2.0
-            },
-            "is_capsule": true,
             "character": "rosetta",
             "move": "uair"
           }
         ],
         "10": [
           {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 4.0,
+            "angle": 88,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.5,
+              "z": 2.0
+            },
+            "is_capsule": true,
+            "character": "rosetta",
+            "move": "uair"
+          },
+          {
             "id": 3,
             "bone": "throw",
             "animation_frame": 10.0,
@@ -6916,31 +7022,6 @@
             },
             "offset2": null,
             "is_capsule": false,
-            "character": "rosetta",
-            "move": "uair"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 10.0,
-            "real_frame": 10,
-            "damage": 4.0,
-            "angle": 88,
-            "kbg": 140,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 6.5,
-              "z": 2.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": 2.0
-            },
-            "is_capsule": true,
             "character": "rosetta",
             "move": "uair"
           }
@@ -7214,93 +7295,12 @@
             "character": "rosetta",
             "move": "uair"
           }
-        ],
-        "5": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 4.0,
-            "angle": 88,
-            "kbg": 140,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 6.5,
-              "z": 2.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": 2.0
-            },
-            "is_capsule": true,
-            "character": "rosetta",
-            "move": "uair"
-          }
-        ],
-        "6": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 4.0,
-            "angle": 88,
-            "kbg": 140,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 6.5,
-              "z": 2.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": 2.0
-            },
-            "is_capsule": true,
-            "character": "rosetta",
-            "move": "uair"
-          }
-        ],
-        "7": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 4.0,
-            "angle": 88,
-            "kbg": 140,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 6.5,
-              "z": 2.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": 2.0
-            },
-            "is_capsule": true,
-            "character": "rosetta",
-            "move": "uair"
-          }
         ]
       },
       "motion_events": []
     },
     "dair": {
-      "total_frames": 35,
+      "total_frames": 65,
       "active_frames": [
         14,
         15,
@@ -7316,62 +7316,12 @@
         25
       ],
       "hitboxes_by_frame": {
-        "17": [
-          {
-            "id": 0,
-            "bone": "kneel",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 9.0,
-            "angle": 270,
-            "kbg": 62,
-            "fkb": 0,
-            "bkb": 16,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": {
-              "x": 3.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "is_capsule": true,
-            "character": "rosetta",
-            "move": "dair"
-          },
-          {
-            "id": 1,
-            "bone": "throw",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 10.0,
-            "angle": 270,
-            "kbg": 62,
-            "fkb": 0,
-            "bkb": 16,
-            "size": 3.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": -4.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 4.0
-            },
-            "is_capsule": true,
-            "character": "rosetta",
-            "move": "dair"
-          },
+        "14": [
           {
             "id": 0,
             "bone": "legl",
-            "animation_frame": 17.0,
-            "real_frame": 17,
+            "animation_frame": 14.0,
+            "real_frame": 14,
             "damage": 5.0,
             "angle": 45,
             "kbg": 153,
@@ -7389,7 +7339,147 @@
             "move": "dair"
           }
         ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 5.0,
+            "angle": 45,
+            "kbg": 153,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "rosetta",
+            "move": "dair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 5.0,
+            "angle": 45,
+            "kbg": 153,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "rosetta",
+            "move": "dair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 5.0,
+            "angle": 45,
+            "kbg": 153,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "rosetta",
+            "move": "dair"
+          },
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 9.0,
+            "angle": 270,
+            "kbg": 62,
+            "fkb": 0,
+            "bkb": 16,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "is_capsule": true,
+            "character": "rosetta",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "throw",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 10.0,
+            "angle": 270,
+            "kbg": 62,
+            "fkb": 0,
+            "bkb": 16,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 4.0
+            },
+            "is_capsule": true,
+            "character": "rosetta",
+            "move": "dair"
+          }
+        ],
         "18": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 5.0,
+            "angle": 45,
+            "kbg": 153,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "rosetta",
+            "move": "dair"
+          },
           {
             "id": 0,
             "bone": "kneel",
@@ -7437,27 +7527,6 @@
               "z": 4.0
             },
             "is_capsule": true,
-            "character": "rosetta",
-            "move": "dair"
-          },
-          {
-            "id": 0,
-            "bone": "legl",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 5.0,
-            "angle": 45,
-            "kbg": 153,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 5.0,
-            "offset": {
-              "x": 1.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "rosetta",
             "move": "dair"
           }
@@ -7825,81 +7894,12 @@
             "character": "rosetta",
             "move": "dair"
           }
-        ],
-        "14": [
-          {
-            "id": 0,
-            "bone": "legl",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 5.0,
-            "angle": 45,
-            "kbg": 153,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 5.0,
-            "offset": {
-              "x": 1.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "rosetta",
-            "move": "dair"
-          }
-        ],
-        "15": [
-          {
-            "id": 0,
-            "bone": "legl",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 5.0,
-            "angle": 45,
-            "kbg": 153,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 5.0,
-            "offset": {
-              "x": 1.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "rosetta",
-            "move": "dair"
-          }
-        ],
-        "16": [
-          {
-            "id": 0,
-            "bone": "legl",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 5.0,
-            "angle": 45,
-            "kbg": 153,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 5.0,
-            "offset": {
-              "x": 1.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "rosetta",
-            "move": "dair"
-          }
         ]
       },
       "motion_events": []
     },
     "dash_attack": {
-      "total_frames": 29,
+      "total_frames": 64,
       "active_frames": [
         6,
         7,
@@ -8404,7 +8404,7 @@
       "motion_events": []
     },
     "grab": {
-      "total_frames": 18,
+      "total_frames": 44,
       "active_frames": [
         7,
         8
@@ -8481,7 +8481,7 @@
       ]
     },
     "dash_grab": {
-      "total_frames": 20,
+      "total_frames": 46,
       "active_frames": [
         9,
         10
@@ -8568,7 +8568,7 @@
       ]
     },
     "pivot_grab": {
-      "total_frames": 21,
+      "total_frames": 52,
       "active_frames": [
         10,
         11
@@ -8655,7 +8655,7 @@
       ]
     },
     "pummel": {
-      "total_frames": 11,
+      "total_frames": 16,
       "active_frames": [
         1
       ],
@@ -8687,7 +8687,7 @@
       "motion_events": []
     },
     "fthrow": {
-      "total_frames": 38,
+      "total_frames": 74,
       "active_frames": [
         28
       ],
@@ -8719,7 +8719,7 @@
       "motion_events": []
     },
     "bthrow": {
-      "total_frames": 40,
+      "total_frames": 74,
       "active_frames": [
         30
       ],
@@ -8751,7 +8751,7 @@
       "motion_events": []
     },
     "uthrow": {
-      "total_frames": 23,
+      "total_frames": 60,
       "active_frames": [
         13
       ],
@@ -8783,7 +8783,7 @@
       "motion_events": []
     },
     "dthrow": {
-      "total_frames": 23,
+      "total_frames": 65,
       "active_frames": [
         13
       ],
@@ -8815,5 +8815,5 @@
       "motion_events": []
     }
   },
-  "generated_at": "2026-02-03T18:40:15.912496"
+  "generated_at": "2026-02-03T21:21:39.626136"
 }
