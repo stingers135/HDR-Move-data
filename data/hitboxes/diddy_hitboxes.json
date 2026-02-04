@@ -1,0 +1,7598 @@
+{
+  "character": "diddy",
+  "moves": {
+    "jab1": {
+      "total_frames": 14,
+      "active_frames": [
+        3,
+        4
+      ],
+      "hitboxes_by_frame": {
+        "3": [
+          {
+            "id": 0,
+            "bone": "shoulderr",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "armr",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 3.5,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "jab1"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "shoulderr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "armr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 3.5,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "jab1"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "jab2": {
+      "total_frames": 16,
+      "active_frames": [
+        5,
+        6
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab2"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab2"
+          },
+          {
+            "id": 2,
+            "bone": "arml",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 3.5,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab2"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "jab2"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab2"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab2"
+          },
+          {
+            "id": 2,
+            "bone": "arml",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 3.5,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab2"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "jab2"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "jab3": {
+      "total_frames": 16,
+      "active_frames": [
+        5,
+        6
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab3"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab3"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab3"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab3"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab3"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "jab3"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "combo3": {
+      "total_frames": 16,
+      "active_frames": [
+        5,
+        6
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "combo3"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "combo3"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "combo3"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "combo3"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "combo3"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "combo3"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "ftilt": {
+      "total_frames": 26,
+      "active_frames": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 7.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 0,
+            "bone": "handr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "handl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          }
+        ],
+        "11": [
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 7.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 0,
+            "bone": "handr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "handl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "handr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "handl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "handr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "handl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "handr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "handl",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "handr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "handl",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "handr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "handl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.8,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "ftilt"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "utilt": {
+      "total_frames": 21,
+      "active_frames": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0.9,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0.9,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0.9,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0.9,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0.9,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0.9,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 100,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "utilt"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dtilt": {
+      "total_frames": 15,
+      "active_frames": [
+        4,
+        5
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 7.0,
+            "angle": 50,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 7.0,
+            "angle": 55,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 11.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dtilt"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 7.0,
+            "angle": 65,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 4.0,
+              "y": 2.5,
+              "z": 16.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dtilt"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 7.0,
+            "angle": 50,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 7.0,
+            "angle": 55,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 11.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dtilt"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 7.0,
+            "angle": 65,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 4.0,
+              "y": 2.5,
+              "z": 16.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dtilt"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "fsmash": {
+      "total_frames": 28,
+      "active_frames": [
+        12,
+        13,
+        18
+      ],
+      "hitboxes_by_frame": {
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 5.0,
+            "angle": 10,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 4.2,
+            "offset": {
+              "x": 0.0,
+              "y": 9.7,
+              "z": 9.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 5.0,
+            "angle": 45,
+            "kbg": 100,
+            "fkb": 35,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          },
+          {
+            "id": 2,
+            "bone": "armr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 5.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 25,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 4.8,
+              "y": -0.5,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          },
+          {
+            "id": 3,
+            "bone": "shoulderr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 5.0,
+            "angle": 22,
+            "kbg": 100,
+            "fkb": 42,
+            "bkb": 0,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 5.0,
+            "angle": 0,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 13.5,
+              "z": 9.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 5.0,
+            "angle": 45,
+            "kbg": 100,
+            "fkb": 35,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          },
+          {
+            "id": 2,
+            "bone": "armr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 5.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 25,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 4.8,
+              "y": -0.5,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          },
+          {
+            "id": 3,
+            "bone": "shoulderr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 5.0,
+            "angle": 22,
+            "kbg": 100,
+            "fkb": 42,
+            "bkb": 0,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 11.0,
+            "angle": 46,
+            "kbg": 116,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 5.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 11.0,
+            "angle": 50,
+            "kbg": 116,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.5,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 9.0,
+            "angle": 60,
+            "kbg": 116,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.5,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fsmash"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 14.0,
+          "rate_value": 0.42857142857142855
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 21.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "usmash": {
+      "total_frames": 33,
+      "active_frames": [
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 2.5,
+            "angle": 110,
+            "kbg": 100,
+            "fkb": 110,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 2.5,
+            "angle": 125,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 2.5,
+            "angle": 95,
+            "kbg": 100,
+            "fkb": 50,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "6": [
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 15,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 2.5,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 25,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 2.5,
+            "angle": 95,
+            "kbg": 100,
+            "fkb": 50,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "7": [
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 15,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 2.5,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 25,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 2.5,
+            "angle": 95,
+            "kbg": 100,
+            "fkb": 50,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 2.5,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 25,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 15,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 2.5,
+            "angle": 95,
+            "kbg": 100,
+            "fkb": 50,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "12": [
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 65,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 5.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "13": [
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 65,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 5.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "14": [
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 65,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 5.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 65,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 80,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 2.5,
+            "angle": 140,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 5.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 7.5,
+            "offset": {
+              "x": 4.5,
+              "y": 0.6,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 7.5,
+            "offset": {
+              "x": 4.5,
+              "y": 0.6,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 7.5,
+            "offset": {
+              "x": 4.5,
+              "y": 0.6,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 7.5,
+            "offset": {
+              "x": 4.5,
+              "y": 0.6,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 7.5,
+            "offset": {
+              "x": 4.5,
+              "y": 0.6,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 6.0,
+            "angle": 85,
+            "kbg": 148,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "usmash"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dsmash": {
+      "total_frames": 25,
+      "active_frames": [
+        9,
+        10,
+        14,
+        15
+      ],
+      "hitboxes_by_frame": {
+        "9": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
+              "x": 5.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
+              "x": 5.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.5,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.5,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dsmash"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "nair": {
+      "total_frames": 27,
+      "active_frames": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "kneel",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 60,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "nair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 1.0,
+          "rate_value": 0.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 7.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 30.0,
+          "rate_value": 0.7272727272727273
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 41.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "fair": {
+      "total_frames": 24,
+      "active_frames": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": -0.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": -0.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": -0.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "fair"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "bair": {
+      "total_frames": 19,
+      "active_frames": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.5,
+            "offset": {
+              "x": -1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 6.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.5,
+            "offset": {
+              "x": -1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 6.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.5,
+            "offset": {
+              "x": -1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 6.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.5,
+            "offset": {
+              "x": -1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 6.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "bair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 3.0,
+          "new_duration": 3.0,
+          "scale_factor": 1.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 3.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "uair": {
+      "total_frames": 19,
+      "active_frames": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uair"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dair": {
+      "total_frames": 23,
+      "active_frames": [
+        11,
+        12,
+        13
+      ],
+      "hitboxes_by_frame": {
+        "11": [
+          {
+            "id": 0,
+            "bone": "shoulderr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 14.0,
+            "angle": 270,
+            "kbg": 51,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
+            "offset": {
+              "x": 3.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 14.0,
+            "angle": 270,
+            "kbg": 51,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 4.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "shoulderr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 14.0,
+            "angle": 270,
+            "kbg": 51,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
+            "offset": {
+              "x": 3.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 14.0,
+            "angle": 270,
+            "kbg": 51,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 4.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "shoulderr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 14.0,
+            "angle": 270,
+            "kbg": 51,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
+            "offset": {
+              "x": 3.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 14.0,
+            "angle": 270,
+            "kbg": 51,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 4.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 1.0,
+          "rate_value": 0.4
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 10.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dash_attack": {
+      "total_frames": 32,
+      "active_frames": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "legl",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "legr",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "dash_attack"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 26.0,
+          "rate_value": 0.7
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 40.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "grab": {
+      "total_frames": 18,
+      "active_frames": [
+        7,
+        8
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 8.3
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "grab",
+            "is_grab": true
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 8.3
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dash_grab": {
+      "total_frames": 21,
+      "active_frames": [
+        10,
+        11
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "pivot_grab": {
+      "total_frames": 22,
+      "active_frames": [
+        11,
+        12
+      ],
+      "hitboxes_by_frame": {
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -13.3
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "pivot_grab",
+            "is_grab": true
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -13.3
+            },
+            "is_capsule": true,
+            "character": "diddy",
+            "move": "pivot_grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "pummel": {
+      "total_frames": 11,
+      "active_frames": [
+        1
+      ],
+      "hitboxes_by_frame": {
+        "1": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 1.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 9.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "pummel"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "fthrow": {
+      "total_frames": 40,
+      "active_frames": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "hitboxes_by_frame": {
+        "21": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ],
+        "28": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ],
+        "29": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ],
+        "30": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 30.0,
+            "real_frame": 30,
+            "damage": 9.0,
+            "angle": 46,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 69,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "fthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "bthrow": {
+      "total_frames": 41,
+      "active_frames": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "hitboxes_by_frame": {
+        "22": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ],
+        "28": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ],
+        "29": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ],
+        "30": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 30.0,
+            "real_frame": 30,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ],
+        "31": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 31.0,
+            "real_frame": 31,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "bthrow"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 18.0,
+          "new_duration": 21.0,
+          "scale_factor": 1.2352941176470589
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 18.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "uthrow": {
+      "total_frames": 29,
+      "active_frames": [
+        17,
+        18,
+        19
+      ],
+      "hitboxes_by_frame": {
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.0,
+            "angle": 75,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 23.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uthrow"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.0,
+            "angle": 75,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 23.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "diddy",
+            "move": "uthrow"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 7.0,
+            "angle": 80,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "uthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dthrow": {
+      "total_frames": 41,
+      "active_frames": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "hitboxes_by_frame": {
+        "22": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ],
+        "28": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ],
+        "29": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ],
+        "30": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 30.0,
+            "real_frame": 30,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ],
+        "31": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 31.0,
+            "real_frame": 31,
+            "damage": 7.0,
+            "angle": 115,
+            "kbg": 53,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "diddy",
+            "move": "dthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    }
+  },
+  "generated_at": "2026-02-03T18:40:14.620369"
+}

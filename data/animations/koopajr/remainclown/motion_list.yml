@@ -1,0 +1,100 @@
+motion_path: fighter/koopajr/motion/remainclown/c00
+list:
+  landing:
+    game_script: game_specialhiclownfall
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations:
+    - name: d02specialhiclownfall.nuanmb
+      unk: 0
+    scripts:
+    - sound_specialhiclownfall
+    - effect_specialhiclownfall
+    extra: null
+  fall:
+    game_script: game_specialairhiclownfall
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations:
+    - name: d02specialairhiclownfall.nuanmb
+      unk: 0
+    scripts:
+    - sound_specialairhiclownfall
+    - effect_specialairhiclownfall
+    extra: null
+  burst:
+    game_script: game_specialhiburst
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations: []
+    scripts:
+    - sound_specialhiburst
+    - effect_specialhiburst
+    extra: null
+  appear:
+    game_script: game_specialhiclownappear
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations:
+    - name: d02specialhiclownappear.nuanmb
+      unk: 0
+    scripts:
+    - sound_specialhiclownappear
+    - effect_specialhiclownappear
+    extra: null

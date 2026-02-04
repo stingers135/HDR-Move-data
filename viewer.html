@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HDR Hitbox Viewer</title>
+    <style>
+        :root {
+            --hdr-green: #00cc44;
+            --hdr-green-dark: #00aa33;
+            --hdr-green-glow: rgba(0, 204, 68, 0.3);
+            --hdr-bg-dark: #0a0a0a;
+            --hdr-bg-lighter: #141414;
+            --hdr-bg-card: #1a1a1a;
+            --hdr-border: #2a2a2a;
+            --hdr-text: #e0e0e0;
+            --hdr-text-dim: #888;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--hdr-bg-dark); color: var(--hdr-text); height: 100vh; overflow: hidden; }
+        
+        .viewer-container { display: flex; height: 100vh; }
+        
+        /* Left info panel */
+        .info-panel {
+            width: 280px;
+            background: var(--hdr-bg-lighter);
+            padding: 15px;
+            overflow-y: auto;
+            border-right: 1px solid var(--hdr-green);
+        }
+        
+        .info-panel h2 { color: var(--hdr-green); font-size: 1.2em; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; text-shadow: 0 0 10px var(--hdr-green-glow); }
+        .info-panel h3 { color: var(--hdr-text-dim); font-size: 0.9em; margin: 15px 0 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        .move-info { background: var(--hdr-bg-card); padding: 10px; border-radius: 4px; margin-bottom: 15px; border: 1px solid var(--hdr-border); }
+        .move-info .label { color: var(--hdr-text-dim); font-size: 0.85em; }
+        .move-info .value { color: var(--hdr-green); font-weight: bold; }
+        
+        .hitbox-card {
+            background: var(--hdr-bg-card);
+            border-left: 3px solid #ff4444;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.85em;
+            border: 1px solid var(--hdr-border);
+            border-left: 3px solid #ff4444;
+        }
+        
+        .hitbox-card .stat { display: flex; justify-content: space-between; margin: 3px 0; }
+        .hitbox-card .stat-label { color: var(--hdr-text-dim); }
+        .hitbox-card .stat-value { color: var(--hdr-text); }
+        
+        /* Main canvas */
+        .canvas-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: var(--hdr-bg-dark);
+        }
+        
+        #canvas { flex: 1; }
+        
+        /* Controls */
+        .controls {
+            background: var(--hdr-bg-lighter);
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            border-top: 1px solid var(--hdr-border);
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            background: linear-gradient(180deg, var(--hdr-green) 0%, var(--hdr-green-dark) 100%);
+            border: none;
+            border-radius: 4px;
+            color: #000;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.2s;
+        }
+        .btn:hover { box-shadow: 0 0 15px var(--hdr-green-glow); transform: scale(1.02); }
+        
+        .frame-slider { flex: 1; min-width: 200px; accent-color: var(--hdr-green); }
+        
+        .frame-display {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--hdr-green);
+            min-width: 120px;
+            text-align: center;
+            text-shadow: 0 0 10px var(--hdr-green-glow);
+        }
+        
+        .toggle-group { display: flex; gap: 15px; }
+        .toggle-group label { display: flex; align-items: center; gap: 5px; color: var(--hdr-text-dim); font-size: 0.85em; cursor: pointer; }
+        .toggle-group label input[type="checkbox"] { accent-color: var(--hdr-green); }
+        
+        /* Loading state */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 1.2em;
+            color: var(--hdr-text-dim);
+        }
+        
+        .error { color: #ff4444; }
+        .status-msg { font-size: 0.8em; color: var(--hdr-text-dim); margin-top: 10px; }
+        
+        /* Hitbox frame buttons */
+        .frame-btn {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 2px;
+            background: var(--hdr-bg-card);
+            border: 1px solid var(--hdr-border);
+            border-radius: 3px;
+            color: var(--hdr-text-dim);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .frame-btn:hover {
+            background: #2a2a2a;
+            border-color: var(--hdr-green);
+            color: var(--hdr-text);
+        }
+        .frame-btn.active {
+            background: var(--hdr-green);
+            border-color: var(--hdr-green);
+            color: #000;
+        }
+        .frame-range {
+            display: inline-block;
+            padding: 4px 10px;
+            margin: 2px;
+            background: rgba(0, 204, 68, 0.1);
+            border: 1px solid var(--hdr-green);
+            border-radius: 3px;
+            color: var(--hdr-green);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .frame-range:hover {
+            background: rgba(0, 204, 68, 0.2);
+            color: #fff;
+        }
+        .frame-range.active {
+            background: var(--hdr-green);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="viewer-container">
+        <div class="info-panel">
+            <h2 id="character-name">Loading...</h2>
+            <div class="move-info">
+                <div><span class="label">Move: </span><span class="value" id="move-name">-</span></div>
+            </div>
+            
+            <h3>Active Hitboxes</h3>
+            <div id="hitbox-list">
+                <p style="color: #666;">No hitboxes active</p>
+            </div>
+            
+            <h3>Hitbox Frames</h3>
+            <div id="hitbox-frames-list" style="margin-bottom: 15px;">
+                <p style="color: #666; font-size: 0.85em;">Loading...</p>
+            </div>
+            
+            <h3>Display Options</h3>
+            <div class="toggle-group" style="flex-direction: column; gap: 8px; margin-top: 10px;">
+                <label><input type="checkbox" id="show-skeleton" checked> Show Skeleton</label>
+                <label><input type="checkbox" id="show-hurtboxes" checked> Show Hurtboxes</label>
+                <label><input type="checkbox" id="show-hitboxes" checked> Show Hitboxes</label>
+                <label><input type="checkbox" id="show-interpolation" checked> Interpolate Hitboxes</label>
+                <label><input type="checkbox" id="show-names"> Show Bone Names</label>
+            </div>
+            
+            <div class="status-msg" id="status-msg"></div>
+        </div>
+        
+        <div class="canvas-area">
+            <canvas id="canvas"></canvas>
+            
+            <div class="controls">
+                <button class="btn" id="play-btn" onclick="togglePlay()">▶ Play</button>
+                <button class="btn" onclick="changeFrame(-1)">← Prev</button>
+                <button class="btn" onclick="changeFrame(1)">Next →</button>
+                <input type="range" id="frame-slider" class="frame-slider" min="0" max="40" value="0">
+                <div class="frame-display">Frame <span id="frame-num">0</span> <span id="anim-frame-display" style="font-size: 0.7em; color: #888;"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get parameters from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const character = urlParams.get('character') || 'mario';
+        const move = urlParams.get('move') || 'fair';
+        const stanceParam = urlParams.get('stance') || null;
+        
+        // Animation filename mapping (default)
+        const ANIM_FILENAMES = {
+            'jab1': 'c00attack11',
+            'jab2': 'c00attack12',
+            'jab3': 'c00attack13',
+            'rapid_jab': 'c00attack100',
+            'rapid_jab_finisher': 'c00attackend',
+            'combo3': 'c00attack1combo3',
+            'combo4': 'c00attack1combo4',
+            'combo5': 'c00attack1combo5',
+            'combo6': 'c00attack1combo6',
+            'combo7': 'c00attack1combo7',
+            'combo8': 'c00attack1combo8',
+            'combo9': 'c00attack1combo9',
+            'combo10': 'c00attack1combo10',
+            'ftilt': 'c01attacks3s',
+            'ftilt2': 'c01attacks3s2',  // Snake ftilt hit 2
+            'utilt': 'c02attackhi3',
+            'dtilt': 'c02attacklw3',
+            'fsmash': 'c03attacks4s',
+            'fsmash2': 'c03attacks4s2',  // Link/Snake fsmash hit 2
+            'fsmash3': 'c03attacks4s3',  // Snake fsmash hit 3
+            'usmash': 'c04attackhi4',
+            'dsmash': 'c04attacklw4',
+            'nair': 'c05attackairn',
+            'fair': 'c05attackairf',
+            'bair': 'c05attackairb',
+            'uair': 'c05attackairhi',
+            'dair': 'c05attackairlw',
+            'dash_attack': 'c00attackdash',
+            // Grabs
+            'grab': 'e00catch',
+            'dash_grab': 'e00catchdash',
+            'pivot_grab': 'e00catchturn',
+            'pummel': 'e00catchattack',
+            // Throws
+            'fthrow': 'e01throwf',
+            'bthrow': 'e01throwb',
+            'uthrow': 'e01throwhi',
+            'dthrow': 'e01throwlw',
+            'ftilt3': 'c01attacks3s3',
+            // DK fthrow variants
+            'fthrow_forward': 'e01throwff',
+            'fthrow_back': 'e01throwfb',
+            'fthrow_high': 'e01throwfhi',
+            'fthrow_low': 'e01throwflw',
+        };
+        
+        // Character-specific animation filename overrides
+        // Format: character -> { move -> [array of filenames to try] }
+        const CHARACTER_ANIM_OVERRIDES = {
+            // Ken and Ryu have weak/strong variants
+            'ryu': {
+                'jab1': ['c00attack11w', 'c00attack11s', 'c00attack11'],
+                'jab1_weak': ['c00attack11w'],
+                'jab1_strong': ['c00attack11s'],
+                'jab2': ['c00attack12s', 'c00attack12'],
+                'jab2_strong': ['c00attack12s'],
+                'ftilt': ['c01attacks3sw', 'c01attacks3ss', 'c01attacks3s'],
+                'ftilt_weak': ['c01attacks3sw', 'c01attacks3s'],
+                'ftilt_strong': ['c01attacks3ss', 'c01attacks3s'],
+                'utilt': ['c02attackhi3w', 'c02attackhi3s', 'c02attackhi3'],
+                'utilt_weak': ['c02attackhi3w', 'c02attackhi3'],
+                'utilt_strong': ['c02attackhi3s', 'c02attackhi3'],
+                'dtilt': ['c02attacklw3w', 'c02attacklw3s', 'c02attacklw3'],
+                'dtilt_weak': ['c02attacklw3w', 'c02attacklw3'],
+                'dtilt_strong': ['c02attacklw3s', 'c02attacklw3'],
+            },
+            'ken': {
+                'jab1': ['c00attack11w', 'c00attack11s', 'c00attack11'],
+                'jab1_weak': ['c00attack11w'],
+                'jab1_strong': ['c00attack11s'],
+                'jab2': ['c00attack12s', 'c00attack12'],
+                'jab2_strong': ['c00attack12s'],
+                'ftilt': ['c01attacks3sw', 'c01attacks3ss', 'c01attacks3s'],
+                'ftilt_weak': ['c01attacks3sw', 'c01attacks3s'],
+                'ftilt_strong': ['c01attacks3ss', 'c01attacks3s'],
+                'utilt': ['c02attackhi3w', 'c02attackhi3s', 'c02attackhi3'],
+                'utilt_weak': ['c02attackhi3w', 'c02attackhi3'],
+                'utilt_strong': ['c02attackhi3s', 'c02attackhi3'],
+                'dtilt': ['c02attacklw3w', 'c02attacklw3s', 'c02attacklw3'],
+                'dtilt_weak': ['c02attacklw3w', 'c02attacklw3'],
+                'dtilt_strong': ['c02attacklw3s', 'c02attacklw3'],
+            },
+            // Kazuya 10-hit combo - uses different animation filenames
+            'demon': {
+                'jab3': ['c00attack13'],  // Jab finisher (uses flashpunch hitbox data)
+                'combo3': ['c00attack1combo3'],
+                'combo4': ['c00attack1combo4'],
+                'combo5': ['c00attack1combo5'],
+                'combo6': ['c00attack1combo6'],
+                'combo7': ['c00attack1combo7'],
+                'combo8': ['c00attack1combo8'],
+                'combo9': ['c00attack1combo9'],
+                'combo10': ['c00attack1combo10'],
+            },
+            // Meta Knight rapid jab
+            'metaknight': {
+                'jab1': ['c00attack100', 'c00attack11'],
+            },
+            // Steve uses ftilt for jab/nair
+            'pickel': {
+                'jab1': ['c01attacks3s', 'c00attack11'],
+                'nair': ['c01attacks3s', 'c05attackairn'],
+            },
+            // Ice Climbers folder mapping
+            // Skeleton/hurtbox/hitbox use 'iceclimber', animations are only in 'popo' folder
+            'popo': {
+                '_folder': 'iceclimber',
+                '_animFolder': 'popo',
+            },
+            'nana': {
+                '_folder': 'iceclimber',
+                '_animFolder': 'popo',  // Nana uses popo's animations (HDR only has popo folder)
+            },
+            // Mii characters use miienemy skeleton/hurtbox files,
+            // but animations are under their own folder (miifighter/, etc.)
+            'miifighter': {
+                '_skeleton': 'miienemyf',
+                '_hurtbox': 'miienemyf',
+            },
+            'miiswordsman': {
+                '_skeleton': 'miienemys',
+                '_hurtbox': 'miienemys',
+            },
+            'miigunner': {
+                '_skeleton': 'miienemyg',
+                '_hurtbox': 'miienemyg',
+            },
+            // Piranha Plant stance-specific animations
+            // Key format: 'move__StanceName' checked first, then 'move', then default
+            'packun': {
+                'ftilt__Regular': ['c01attacks3sa'],       // Fire breath animation
+                'ftilt__Prickly': ['c01attacks3s'],        // Same animation as Putrid ftilt
+                'fsmash__Prickly': ['c03attacks4s2'],      // Prickly lunge animation
+                'bair__Prickly': ['c05attackairbs'],       // Prickly bair-S (spike)
+            },
+        };
+        
+        // Helper function to get animation filenames for a character/move
+        function getAnimFilenames(char, moveType) {
+            const overrides = CHARACTER_ANIM_OVERRIDES[char];
+            if (overrides) {
+                // Check for stance-specific override first (e.g. 'ftilt__Regular')
+                if (stanceParam && overrides[moveType + '__' + stanceParam]) {
+                    return overrides[moveType + '__' + stanceParam];
+                }
+                // Then check for regular override
+                if (overrides[moveType]) {
+                    return overrides[moveType];
+                }
+            }
+            // jab3 often uses rapid jab finisher animation (attack100end) instead of attack13
+            if (moveType === 'jab3') {
+                return ['c00attack100end', 'c00attack13'];
+            }
+            // rapid_jab_finisher: some characters use attack100end, others use attackend
+            if (moveType === 'rapid_jab_finisher') {
+                return ['c00attack100end', 'c00attackend'];
+            }
+            // ftilt2: packun uses same anim as ftilt, snake uses attacks3s2
+            if (moveType === 'ftilt2') {
+                return ['c01attacks3s', 'c01attacks3s2'];
+            }
+            // Return default as single-item array
+            return [ANIM_FILENAMES[moveType] || moveType];
+        }
+        
+        // Helper function to get character folder (handles Ice Climbers etc)
+        function getCharacterFolder(char) {
+            const overrides = CHARACTER_ANIM_OVERRIDES[char];
+            if (overrides && overrides['_folder']) {
+                return overrides['_folder'];
+            }
+            return char;
+        }
+        
+        // Helper function to get skeleton filename (handles Mii characters)
+        function getSkeletonName(char) {
+            const overrides = CHARACTER_ANIM_OVERRIDES[char];
+            if (overrides && overrides['_skeleton']) {
+                return overrides['_skeleton'];
+            }
+            return char;
+        }
+        
+        // Helper function to get hurtbox filename (handles Mii characters)
+        function getHurtboxName(char) {
+            const overrides = CHARACTER_ANIM_OVERRIDES[char];
+            if (overrides && overrides['_hurtbox']) {
+                return overrides['_hurtbox'];
+            }
+            return char;
+        }
+        
+        // Helper function to get animation folder (handles Mii characters)
+        function getAnimFolder(char) {
+            const overrides = CHARACTER_ANIM_OVERRIDES[char];
+            if (overrides && overrides['_animFolder']) {
+                return overrides['_animFolder'];
+            }
+            // Fall back to regular folder mapping
+            return getCharacterFolder(char);
+        }
+        
+        // Data storage
+        let skeletonData = null;
+        let animationData = null;
+        let hurtboxData = null;
+        let hitboxData = null;
+        let projectileData = null;  // Projectile trajectory data for moves like Villager fair
+        let projectileSpawnPos = null;  // Cached character position at projectile spawn frame
+        let motionEvents = null;  // Motion rate events for frame calculation
+        let currentFrame = 0;     // 0-indexed internal frame (displays as Frame 1)
+        let isPlaying = false;
+        let playTimer = null;
+        
+        // Stance system (Piranha Plant etc.)
+        let allHitboxesCache = null;  // Full hitbox JSON for stance-switching
+        let currentStance = null;     // Currently selected stance name
+        
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let SCALE = 20;
+        let CENTER_X = 400;
+        let CENTER_Y = 500;
+        let autoFitCenterX = null;
+        let autoFitCenterY = null;
+        
+        function setStatus(msg) {
+            document.getElementById('status-msg').textContent = msg;
+        }
+        
+        // Calculate animation frame from real frame using motion events
+        // Input: realFrame is 0-indexed internal frame
+        // Motion events use 1-indexed game frames
+        // Output: 0-indexed animation frame for array lookup
+        function getAnimationFrame(realFrame) {
+            if (!motionEvents || motionEvents.length === 0) {
+                // No rate changes: game advances 1 anim frame per tick,
+                // and at displayed Frame N (realFrame N-1) has advanced N times.
+                return realFrame + 1;
+            }
+            
+            const sortedEvents = [...motionEvents].sort((a, b) => a.frame - b.frame);
+            
+            // Check for complex rate types that need the continuous fallback
+            const hasComplexRates = sortedEvents.some(e => 
+                e.type === 'range' || e.type === 'desired_rate'
+            );
+            
+            if (hasComplexRates) {
+                return getAnimationFrameContinuous(realFrame);
+            }
+            
+            // Discrete tick-by-tick simulation matching the game engine
+            // The game advances animation by current_speed each tick, then
+            // checks frame() thresholds and applies rate changes for subsequent ticks.
+            // This avoids the fractional errors of continuous division.
+            
+            // Build rate triggers from motion events
+            let currentSpeed = 1.0;
+            const pendingTriggers = [];
+            
+            for (const event of sortedEvents) {
+                let speed;
+                if (event.type === 'FT_MOTION_RATE') {
+                    speed = event.rate_value > 0 ? 1.0 / event.rate_value : 1.0;
+                } else if (event.type === 'MotionModule::set_rate') {
+                    speed = event.rate_value > 0 ? event.rate_value : 1.0;
+                } else {
+                    continue;
+                }
+                
+                if (event.frame <= 0) {
+                    currentSpeed = speed;
+                } else {
+                    pendingTriggers.push({ triggerFrame: event.frame, speed });
+                }
+            }
+            
+            pendingTriggers.sort((a, b) => a.triggerFrame - b.triggerFrame);
+            
+            // Simulate ticks: the game engine advances animation THEN renders,
+            // so at displayed Frame N (realFrame N-1), the animation has been
+            // advanced N times. The Python extractor counts the same way:
+            // game_frame increments after each advance, and returns game_frame
+            // when the target is reached. So we need realFrame+1 advances here.
+            const tickCount = Math.max(0, realFrame + 1);
+            let currentAnim = 0.0;
+            let remaining = [...pendingTriggers];
+            
+            for (let tick = 0; tick < tickCount; tick++) {
+                currentAnim += currentSpeed;
+                
+                // Apply rate triggers whose animation thresholds have been passed
+                const stillPending = [];
+                for (const trigger of remaining) {
+                    if (currentAnim >= trigger.triggerFrame) {
+                        currentSpeed = trigger.speed;
+                    } else {
+                        stillPending.push(trigger);
+                    }
+                }
+                remaining = stillPending;
+            }
+            
+            // Return animation position (caller floors for array index)
+            return currentAnim;
+        }
+        
+        // Continuous fallback for complex rate types (range, desired_rate)
+        function getAnimationFrameContinuous(realFrame) {
+            if (!motionEvents || motionEvents.length === 0) {
+                return realFrame;
+            }
+            
+            // Convert to 1-indexed game frame for motion event calculations
+            const gameFrame = realFrame + 1;
+            
+            // Sort events by frame
+            const sortedEvents = [...motionEvents].sort((a, b) => a.frame - b.frame);
+            
+            // Check for initial motion rate change (at frame <= 0)
+            // The extractor adds final_frame_offset=1 when this happens
+            let offset = 0;
+            for (const event of sortedEvents) {
+                if (event.frame <= 0) {
+                    const isRateChange = 
+                        (event.type === 'FT_MOTION_RATE' && event.rate_value !== 1.0) ||
+                        (event.type === 'MotionModule::set_rate' && event.rate_value !== 1.0) ||
+                        (event.type === 'range' && event.scale_factor !== 1.0) ||
+                        (event.type === 'desired_rate' && event.scale_factor !== 1.0);
+                    if (isRateChange) { offset = 1; break; }
+                }
+            }
+            
+            // Remove the extractor's offset to get pure real time
+            const targetRealTime = gameFrame - offset;
+            if (targetRealTime <= 0) return 0;  // Before animation starts, show first frame
+            
+            // Check for FT_DESIRED_RATE segments first
+            const desiredRateEvents = sortedEvents.filter(e => e.type === 'desired_rate');
+            if (desiredRateEvents.length > 0) {
+                // Walk through animation time, tracking cumulative real time consumed
+                let cumulativeRealTime = 0;
+                let lastAnimEnd = 0;
+                
+                for (const event of desiredRateEvents) {
+                    const segStart = event.frame;
+                    const segEnd = event.frame + event.original_frames;
+                    const scaleFactor = event.scale_factor;
+                    
+                    // Normal-rate gap before this segment (1:1 anim-to-real mapping)
+                    if (segStart > lastAnimEnd) {
+                        const gapDuration = segStart - lastAnimEnd;
+                        
+                        if (cumulativeRealTime + gapDuration >= targetRealTime) {
+                            // Target is in this normal-rate gap
+                            const realIntoGap = targetRealTime - cumulativeRealTime;
+                            return Math.max(0, (lastAnimEnd + realIntoGap) - 1);
+                        }
+                        cumulativeRealTime += gapDuration;
+                    }
+                    
+                    // Inside this desired_rate segment
+                    const segAnimDuration = segEnd - segStart;
+                    const segRealDuration = segAnimDuration * scaleFactor;
+                    
+                    if (cumulativeRealTime + segRealDuration >= targetRealTime) {
+                        // Target is inside this segment
+                        const realIntoSeg = targetRealTime - cumulativeRealTime;
+                        const animIntoSeg = realIntoSeg / scaleFactor;
+                        return Math.max(0, (segStart + animIntoSeg) - 1);
+                    }
+                    
+                    cumulativeRealTime += segRealDuration;
+                    lastAnimEnd = segEnd;
+                }
+                
+                // After all segments, normal rate
+                const realRemaining = targetRealTime - cumulativeRealTime;
+                return Math.max(0, (lastAnimEnd + realRemaining) - 1);
+            }
+            
+            // Handle range events (FT_MOTION_RATE_RANGE)
+            const rangeEvents = sortedEvents.filter(e => e.type === 'range');
+            if (rangeEvents.length > 0) {
+                for (const range of rangeEvents) {
+                    const startOrig = range.start_orig;
+                    const endOrig = range.end_orig;
+                    const scaleFactor = range.scale_factor;
+                    
+                    // Before the range: 1:1 mapping
+                    if (targetRealTime <= startOrig) {
+                        return Math.max(0, targetRealTime - 1);
+                    }
+                    
+                    // Real-time duration and end of the range
+                    const rangeDuration = (endOrig - startOrig) * scaleFactor;
+                    const rangeRealEnd = startOrig + rangeDuration;
+                    
+                    if (targetRealTime >= rangeRealEnd) {
+                        // After the range
+                        const animFrame = endOrig + (targetRealTime - rangeRealEnd);
+                        return Math.max(0, animFrame - 1);
+                    } else {
+                        // Inside the range
+                        const realIntoRange = targetRealTime - startOrig;
+                        const animIntoRange = realIntoRange / scaleFactor;
+                        return Math.max(0, (startOrig + animIntoRange) - 1);
+                    }
+                }
+            }
+            
+            // Handle simple rate changes (FT_MOTION_RATE and MotionModule::set_rate)
+            const rateEvents = sortedEvents.filter(e => 
+                e.type === 'FT_MOTION_RATE' || e.type === 'MotionModule::set_rate'
+            );
+            
+            if (rateEvents.length > 0) {
+                // Walk through rate events, converting real time to animation time
+                let animFrame = 0;
+                let currentRealTime = 0;
+                let currentSpeed = 1.0;  // animation frames per real frame
+                
+                for (const event of rateEvents) {
+                    // Get real-time position of this event (without offset)
+                    const eventRealTime = calculateRealFrameForEvent(event.frame, rateEvents, 0);
+                    
+                    if (targetRealTime <= eventRealTime) {
+                        // Target is before this event
+                        const realRemaining = targetRealTime - currentRealTime;
+                        animFrame += realRemaining * currentSpeed;
+                        return Math.max(0, animFrame - 1);
+                    }
+                    
+                    // Advance to this event
+                    const realSegment = eventRealTime - currentRealTime;
+                    if (realSegment > 0) {
+                        animFrame += realSegment * currentSpeed;
+                    }
+                    currentRealTime = eventRealTime;
+                    
+                    // Update speed
+                    if (event.type === 'FT_MOTION_RATE') {
+                        // Duration multiplier - speed is inverse
+                        currentSpeed = event.rate_value > 0 ? 1.0 / event.rate_value : 1.0;
+                    } else {
+                        // Speed multiplier directly
+                        currentSpeed = event.rate_value > 0 ? event.rate_value : 1.0;
+                    }
+                }
+                
+                // After all events
+                const realRemaining = targetRealTime - currentRealTime;
+                if (realRemaining > 0) {
+                    animFrame += realRemaining * currentSpeed;
+                }
+                return Math.max(0, animFrame - 1);
+            }
+            
+            return realFrame;
+        }
+        
+        // Helper to calculate real frame for a given animation frame
+        function calculateRealFrameForEvent(animFrame, rateEvents, offset) {
+            let realFrame = offset;
+            let lastAnimFrame = 0;
+            let currentSpeedMultiplier = 1.0;
+            
+            const sorted = [...rateEvents].sort((a, b) => a.frame - b.frame);
+            
+            for (const event of sorted) {
+                if (event.frame >= animFrame) break;
+                
+                const segment = event.frame - lastAnimFrame;
+                if (segment > 0) {
+                    realFrame += segment / currentSpeedMultiplier;
+                }
+                lastAnimFrame = event.frame;
+                
+                if (event.type === 'FT_MOTION_RATE') {
+                    currentSpeedMultiplier = event.rate_value > 0 ? 1.0 / event.rate_value : 1.0;
+                } else {
+                    currentSpeedMultiplier = event.rate_value > 0 ? event.rate_value : 1.0;
+                }
+            }
+            
+            const remaining = animFrame - lastAnimFrame;
+            if (remaining > 0) {
+                realFrame += remaining / currentSpeedMultiplier;
+            }
+            
+            return realFrame;
+        }
+        
+        // Resize canvas
+        function resizeCanvas() {
+            const rect = canvas.parentElement.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height - 70;
+            
+            // For dash attacks and other moves that travel far horizontally, start on the left side
+            const movesStartLeft = ['dash_attack', 'dash_grab'];
+            // Simon/Richter fsmash (whip) needs left positioning too
+            const charsWithLongFsmash = ['simon', 'richter'];
+            
+            if (movesStartLeft.includes(move) || (move === 'fsmash' && charsWithLongFsmash.includes(character))) {
+                CENTER_X = canvas.width * 0.15;  // Start 15% from left edge
+            } else {
+                CENTER_X = canvas.width / 2;
+            }
+            
+            // For down airs, position higher on screen to show the move better
+            const aerialMoves = ['dair'];
+            if (aerialMoves.includes(move)) {
+                CENTER_Y = canvas.height * 0.6;  // Position 60% from top
+            } else {
+                CENTER_Y = canvas.height - 80;
+            }
+            
+            // Apply auto-fit overrides (set during loadData when hitboxes overflow)
+            if (autoFitCenterX !== null) CENTER_X = autoFitCenterX;
+            if (autoFitCenterY !== null) CENTER_Y = autoFitCenterY;
+            
+            render();
+        }
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Matrix math (column-major)
+        function multiplyMatrix(a, b) {
+            const result = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
+            for (let col = 0; col < 4; col++) {
+                for (let row = 0; row < 4; row++) {
+                    for (let k = 0; k < 4; k++) {
+                        result[col][row] += a[k][row] * b[col][k];
+                    }
+                }
+            }
+            return result;
+        }
+        
+        // Quaternion spherical linear interpolation (slerp)
+        function quatSlerp(a, b, t) {
+            // Compute dot product
+            let dot = a.x*b.x + a.y*b.y + a.z*b.z + a.w*b.w;
+            
+            // If negative dot, negate one quaternion to take shorter path
+            let bx = b.x, by = b.y, bz = b.z, bw = b.w;
+            if (dot < 0) {
+                dot = -dot;
+                bx = -bx; by = -by; bz = -bz; bw = -bw;
+            }
+            
+            let s0, s1;
+            if (dot > 0.9995) {
+                // Very close - use linear interpolation to avoid division by zero
+                s0 = 1 - t;
+                s1 = t;
+            } else {
+                const theta = Math.acos(Math.min(1, dot));
+                const sinTheta = Math.sin(theta);
+                s0 = Math.sin((1 - t) * theta) / sinTheta;
+                s1 = Math.sin(t * theta) / sinTheta;
+            }
+            
+            return {
+                x: s0*a.x + s1*bx,
+                y: s0*a.y + s1*by,
+                z: s0*a.z + s1*bz,
+                w: s0*a.w + s1*bw
+            };
+        }
+        
+        // Linear interpolation for vec3-like objects {x, y, z}
+        function vec3Lerp(a, b, t) {
+            return {
+                x: a.x + (b.x - a.x) * t,
+                y: a.y + (b.y - a.y) * t,
+                z: a.z + (b.z - a.z) * t
+            };
+        }
+        
+        function quaternionToMatrix(q, t, s) {
+            const x = q.x, y = q.y, z = q.z, w = q.w;
+            const x2 = x*x, y2 = y*y, z2 = z*z;
+            const xy = x*y, xz = x*z, yz = y*z;
+            const wx = w*x, wy = w*y, wz = w*z;
+            
+            return [
+                [(1 - 2*(y2 + z2)) * s.x, (2*(xy + wz)) * s.x, (2*(xz - wy)) * s.x, 0],
+                [(2*(xy - wz)) * s.y, (1 - 2*(x2 + z2)) * s.y, (2*(yz + wx)) * s.y, 0],
+                [(2*(xz + wy)) * s.z, (2*(yz - wx)) * s.z, (1 - 2*(x2 + y2)) * s.z, 0],
+                [t.x, t.y, t.z, 1]
+            ];
+        }
+        
+        function transformPoint(point, matrix) {
+            return {
+                x: point.x * matrix[0][0] + point.y * matrix[1][0] + point.z * matrix[2][0] + matrix[3][0],
+                y: point.x * matrix[0][1] + point.y * matrix[1][1] + point.z * matrix[2][1] + matrix[3][1],
+                z: point.x * matrix[0][2] + point.y * matrix[1][2] + point.z * matrix[2][2] + matrix[3][2]
+            };
+        }
+        
+        // Return a copy of the matrix with rotation columns normalized
+        // (strips scale so offsets are transformed by rotation only).
+        // Smash Ultimate applies ATTACK offsets using bone rotation, not bone scale.
+        function normalizeMatrixRotation(m) {
+            const out = [
+                [...m[0]], [...m[1]], [...m[2]], [...m[3]]
+            ];
+            for (let c = 0; c < 3; c++) {
+                const len = Math.sqrt(out[c][0]**2 + out[c][1]**2 + out[c][2]**2);
+                if (len > 1e-6) {
+                    out[c][0] /= len;
+                    out[c][1] /= len;
+                    out[c][2] /= len;
+                }
+            }
+            return out;
+        }
+        
+        function calculateWorldTransformsForFrame(realFrame) {
+            if (!skeletonData) return {};
+            
+            const worldTransforms = {};
+            const processed = new Set();
+            
+            // Calculate the animation frame based on motion rate
+            // realFrame is the REAL frame (game time), we need the animation frame
+            const animPos = Math.max(0, getAnimationFrame(realFrame));
+            const animFrameFloor = Math.floor(animPos);
+            const animFrameCeil = Math.min(animFrameFloor + 1, animFrameFloor + 1); // will be clamped below
+            const animFrac = animPos - animFrameFloor;
+            
+            const animTransforms = {};
+            if (animationData) {
+                const skelBoneNames = new Set(skeletonData.bones.map(b => b.name));
+                animationData.groups[0].nodes.forEach(node => {
+                    if (!skelBoneNames.has(node.name)) return;
+                    const transforms = node.tracks[0].values.Transform;
+                    const maxIdx = transforms.length - 1;
+                    const idxA = Math.min(animFrameFloor, maxIdx);
+                    const idxB = Math.min(animFrameFloor + 1, maxIdx);
+                    
+                    if (idxA >= 0 && idxA <= maxIdx) {
+                        if (animFrac < 0.001 || idxA === idxB) {
+                            // No interpolation needed - exactly on a frame or at end
+                            const anim = transforms[idxA];
+                            animTransforms[node.name] = quaternionToMatrix(anim.rotation, anim.translation, anim.scale);
+                        } else {
+                            // Interpolate between floor and ceil frames
+                            const a = transforms[idxA];
+                            const b = transforms[idxB];
+                            const rot = quatSlerp(a.rotation, b.rotation, animFrac);
+                            const pos = vec3Lerp(a.translation, b.translation, animFrac);
+                            const scl = vec3Lerp(a.scale, b.scale, animFrac);
+                            animTransforms[node.name] = quaternionToMatrix(rot, pos, scl);
+                        }
+                    }
+                });
+            }
+            
+            function calcWorld(boneIndex) {
+                if (processed.has(boneIndex)) return worldTransforms[boneIndex];
+                
+                const bone = skeletonData.bones[boneIndex];
+                let localTransform = animTransforms[bone.name] || bone.transform;
+                
+                if (bone.parent_index !== null && bone.parent_index >= 0) {
+                    const parentWorld = calcWorld(bone.parent_index);
+                    
+                    // Scale compensation: strip accumulated scale from parent's
+                    // rotation columns so child positions aren't stretched.
+                    // In Smash Ultimate (NUSKTB), most bones have compensate_scale.
+                    // If the skeleton provides the flag, use it; else default to true.
+                    const shouldCompensate = bone.compensate_scale !== undefined
+                        ? bone.compensate_scale : true;
+                    
+                    if (shouldCompensate) {
+                        const comp = normalizeMatrixRotation(parentWorld);
+                        localTransform = multiplyMatrix(comp, localTransform);
+                    } else {
+                        localTransform = multiplyMatrix(parentWorld, localTransform);
+                    }
+                }
+                
+                worldTransforms[boneIndex] = localTransform;
+                processed.add(boneIndex);
+                return localTransform;
+            }
+            
+            for (let i = 0; i < skeletonData.bones.length; i++) {
+                calcWorld(i);
+            }
+            
+            // Create lookup with BOTH original name AND lowercase name for case-insensitive matching
+            const named = {};
+            skeletonData.bones.forEach((bone, i) => {
+                named[bone.name] = { matrix: worldTransforms[i], parentIndex: bone.parent_index };
+                named[bone.name.toLowerCase()] = { matrix: worldTransforms[i], parentIndex: bone.parent_index };
+            });
+            
+            
+            // Virtual bones for ATTACK macros (injected by generator)
+            const identity = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]];
+            if (!named['top']) {
+                named['top'] = { matrix: identity, parentIndex: null };
+            }
+            if (!named['attach']) {
+                // Article hitboxes use 'attach' - map to the 'Throw' bone where articles connect
+                named['attach'] = named['throw'] || named['Throw'] || { matrix: identity, parentIndex: null };
+            }
+            if (!named['hip']) {
+                named['hip'] = named['waist'] || named['hip'] || { matrix: identity, parentIndex: null };
+            }
+            return named;
+        }
+        
+        // Wrapper for backwards compatibility
+        function calculateWorldTransforms() {
+            return calculateWorldTransformsForFrame(currentFrame);
+        }
+        
+        // Bone remap: some bones exist in skeletons but aren't properly animated
+        // (the game positions them via mesh skinning, not bone transforms).
+        // Remap them to a nearby bone so hitboxes/hurtboxes render correctly.
+        const BONE_REMAP = { 'potc': ['hip', 'waist', 'trans', 'rot'] };
+        
+        function remapBone(boneName, positions) {
+            const remaps = BONE_REMAP[boneName];
+            if (remaps) {
+                for (const target of remaps) {
+                    if (positions[target]) return target;
+                }
+            }
+            return boneName;
+        }
+        
+        // Calculate hitbox screen positions for a given frame
+        function calculateHitboxPositionsForFrame(realFrame, positions) {
+            if (!hitboxData) return {};
+            
+            const gameFrame = realFrame + 1;  // Convert to 1-indexed
+            const frameHitboxes = hitboxData.hitboxes_by_frame[String(gameFrame)] || [];
+            const hitboxPositions = {};
+            
+            frameHitboxes.forEach(hitbox => {
+                let screenX, screenY;
+                let sX2, sY2;  // Second endpoint for capsule hitboxes
+                
+                // Check if this hitbox uses projectile positioning (per-hitbox or move-level)
+                const useProj = hitbox.is_projectile ? true : !!projectileData;
+                const projData = hitbox.is_projectile ? (hitbox.projectile_data || projectileData) : projectileData;
+                if (useProj && projData && hitbox.bone === 'top') {
+                    const spawn = projData.spawn_offset || {x: 0, y: 0, z: 0};
+                    const vel = projData.velocity || {x: 0, y: 0, z: 0};
+                    
+                    // Get first active frame for this move
+                    const activeFrames = Object.keys(hitboxData.hitboxes_by_frame).map(Number).sort((a,b) => a-b);
+                    const firstActiveFrame = activeFrames[0] || gameFrame;
+                    const projSpawnFrame = hitbox.projectile_spawn_frame || firstActiveFrame;
+                    
+                    // Frames since spawn
+                    const framesSinceSpawn = Math.max(0, gameFrame - projSpawnFrame);
+                    
+                    if (projectileSpawnPos) {
+                        const projZ = projectileSpawnPos.z + spawn.z + vel.z * framesSinceSpawn;
+                        const projY = projectileSpawnPos.y + spawn.y + vel.y * framesSinceSpawn;
+                        screenX = projZ * SCALE + CENTER_X;
+                        screenY = -projY * SCALE + CENTER_Y;
+                    } else {
+                        return;  // No spawn position cached
+                    }
+                } else {
+                    // Normal bone-attached hitbox
+                    const boneName = remapBone(hitbox.bone.toLowerCase(), positions);
+                    let useBone = positions[boneName];
+                    
+                    if (!useBone && (boneName === 'top' || boneName === 'throw')) {
+                        useBone = positions['trans'] || positions['rot'] || positions['hip'];
+                    }
+                    
+                    if (!useBone) return;
+                    
+                    const offset = hitbox.offset || {x: 0, y: 0, z: 0};
+                    const rotOnly = normalizeMatrixRotation(useBone.matrix);
+                    const worldPos = transformPoint(offset, rotOnly);
+                    
+                    if (boneName === 'top' || boneName === 'throw') {
+                        screenX = (useBone.worldZ + offset.z) * SCALE + CENTER_X;
+                        screenY = -(useBone.worldY + offset.y) * SCALE + CENTER_Y;
+                    } else {
+                        screenX = worldPos.z * SCALE + CENTER_X;
+                        screenY = -worldPos.y * SCALE + CENTER_Y;
+                    }
+                    
+                    // Capsule second endpoint
+                    if (hitbox.is_capsule && hitbox.offset2) {
+                        const off2 = hitbox.offset2;
+                        if (boneName === 'top' || boneName === 'throw') {
+                            sX2 = (useBone.worldZ + off2.z) * SCALE + CENTER_X;
+                            sY2 = -(useBone.worldY + off2.y) * SCALE + CENTER_Y;
+                        } else {
+                            const wp2 = transformPoint(off2, rotOnly);
+                            sX2 = wp2.z * SCALE + CENTER_X;
+                            sY2 = -wp2.y * SCALE + CENTER_Y;
+                        }
+                    }
+                }
+                
+                hitboxPositions[hitbox.id] = {
+                    x: screenX,
+                    y: screenY,
+                    x2: sX2,
+                    y2: sY2,
+                    isCapsule: !!(hitbox.is_capsule && hitbox.offset2),
+                    size: hitbox.size || 3,
+                    damage: hitbox.damage,
+                    bone: hitbox.bone
+                };
+            });
+            
+            return hitboxPositions;
+        }
+        
+        function render() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Display frames as 1-indexed (game convention)
+            document.getElementById('frame-num').textContent = currentFrame + 1;
+            document.getElementById('frame-slider').value = currentFrame;
+            
+            // Show animation frame if different from real frame (both 1-indexed for display)
+            const animPos2 = Math.max(0, getAnimationFrame(currentFrame));
+            const animFrameDisplay = Math.floor(animPos2);
+            if (animFrameDisplay !== currentFrame) {
+                // Show fractional animation position (e.g. "anim: 10.2")
+                const displayVal = (animPos2 + 1).toFixed(1).replace(/\.0$/, '');
+                document.getElementById('anim-frame-display').textContent = `(anim: ${displayVal})`;
+            } else {
+                document.getElementById('anim-frame-display').textContent = '';
+            }
+            
+            if (!skeletonData) {
+                ctx.fillStyle = '#666';
+                ctx.font = '16px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('Loading skeleton...', canvas.width/2, canvas.height/2);
+                return;
+            }
+            
+            const worldTransforms = calculateWorldTransforms();
+            
+            const positions = {};
+            Object.entries(worldTransforms).forEach(([name, data]) => {
+                const m = data.matrix;
+                // Use -Z for hitbox alignment, then negate for display (character faces right)
+                // The double negation means we use +Z for skeleton display
+                positions[name] = {
+                    x: m[3][2] * SCALE + CENTER_X,  // +Z = character faces right
+                    y: -m[3][1] * SCALE + CENTER_Y,
+                    z: m[3][0],
+                    worldX: m[3][0],
+                    worldY: m[3][1],
+                    worldZ: m[3][2],
+                    matrix: m,
+                    parentIndex: data.parentIndex
+                };
+            });
+            
+            // Draw skeleton
+            if (document.getElementById('show-skeleton').checked) {
+                ctx.strokeStyle = '#555';
+                ctx.lineWidth = 2;
+                
+                // Only draw connections for original bone names (not lowercase duplicates)
+                skeletonData.bones.forEach((bone, i) => {
+                    const pos = positions[bone.name];
+                    if (!pos) return;
+                    
+                    if (bone.parent_index !== null && bone.parent_index >= 0) {
+                        const parentName = skeletonData.bones[bone.parent_index].name;
+                        const parentPos = positions[parentName];
+                        if (parentPos) {
+                            ctx.beginPath();
+                            ctx.moveTo(parentPos.x, parentPos.y);
+                            ctx.lineTo(pos.x, pos.y);
+                            ctx.stroke();
+                        }
+                    }
+                });
+                
+                ctx.fillStyle = '#2196F3';
+                skeletonData.bones.forEach(bone => {
+                    const pos = positions[bone.name];
+                    if (!pos) return;
+                    ctx.beginPath();
+                    ctx.arc(pos.x, pos.y, 4, 0, 2 * Math.PI);
+                    ctx.fill();
+                });
+                
+                if (document.getElementById('show-names').checked) {
+                    ctx.fillStyle = '#2196F3';
+                    ctx.font = '10px monospace';
+                    ctx.textAlign = 'left';
+                    skeletonData.bones.forEach(bone => {
+                        const pos = positions[bone.name];
+                        if (!pos) return;
+                        ctx.fillText(bone.name, pos.x + 6, pos.y);
+                    });
+                }
+            }
+            
+            // Draw hurtboxes
+            if (hurtboxData && document.getElementById('show-hurtboxes').checked) {
+                hurtboxData.forEach(hurtbox => {
+                    if (!hurtbox.bone_name) return;
+                    // Use lowercase for case-insensitive matching
+                    const hurtBoneName = remapBone(hurtbox.bone_name.toLowerCase(), positions);
+                    const bonePos = positions[hurtBoneName];
+                    if (!bonePos) return;
+                    
+                    const start = transformPoint(hurtbox.start, bonePos.matrix);
+                    const end = transformPoint(hurtbox.end, bonePos.matrix);
+                    
+                    // Use +Z for horizontal (matches skeleton)
+                    drawCapsule(
+                        { x: start.z * SCALE + CENTER_X, y: -start.y * SCALE + CENTER_Y },
+                        { x: end.z * SCALE + CENTER_X, y: -end.y * SCALE + CENTER_Y },
+                        hurtbox.radius * SCALE,
+                        'rgba(255, 235, 59, 0.3)', 'rgba(255, 235, 59, 0.8)'
+                    );
+                });
+            }
+            
+            // Draw hitboxes with frame interpolation
+            if (hitboxData && document.getElementById('show-hitboxes').checked) {
+                // Hitbox JSON uses 1-indexed game frame numbers as keys
+                const gameFrame = currentFrame + 1;
+                const frameHitboxes = hitboxData.hitboxes_by_frame[String(gameFrame)] || [];
+                
+                // Calculate current frame positions for all hitboxes
+                const currentPositions = {};
+                
+                // Get first active frame for projectile calculation
+                const firstActiveFrame = hitboxData.active_frames && hitboxData.active_frames.length > 0 
+                    ? hitboxData.active_frames[0] : gameFrame;
+                
+                frameHitboxes.forEach(hitbox => {
+                    let screenX, screenY;
+                    let screenX2, screenY2;  // Second endpoint for capsule hitboxes
+                    
+                    // Determine if this hitbox uses projectile positioning:
+                    // Per-hitbox is_projectile flag takes priority, then move-level projectileData
+                    const useProjectile = hitbox.is_projectile ? true : !!projectileData;
+                    const projData = hitbox.is_projectile ? (hitbox.projectile_data || projectileData) : projectileData;
+                    
+                    if (useProjectile && projData) {
+                        // Get character center position for reference
+                        const charCenter = positions['trans'] || positions['rot'] || positions['hip'];
+                        
+                        // On the first active frame, cache the spawn position
+                        if (gameFrame === firstActiveFrame || !projectileSpawnPos) {
+                            if (charCenter) {
+                                projectileSpawnPos = {
+                                    z: charCenter.worldZ,
+                                    y: charCenter.worldY
+                                };
+                            } else {
+                                projectileSpawnPos = { z: 0, y: 0 };
+                            }
+                        }
+                        
+                        // Calculate projectile position based on trajectory from SPAWN position
+                        const spawn = projData.spawn_offset || {x: 0, y: 0, z: 0};
+                        const vel = projData.velocity || {x: 0, y: 0, z: 0};
+                        // For per-hitbox projectiles, use the hitbox's own spawn frame if available
+                        const projSpawnFrame = hitbox.projectile_spawn_frame || firstActiveFrame;
+                        const framesSinceSpawn = gameFrame - projSpawnFrame;
+                        
+                        // Position = spawn_position + spawn_offset + velocity * frames
+                        const projZ = projectileSpawnPos.z + spawn.z + vel.z * Math.max(0, framesSinceSpawn);
+                        const projY = projectileSpawnPos.y + spawn.y + vel.y * Math.max(0, framesSinceSpawn);
+                        
+                        // Convert to screen coordinates
+                        screenX = projZ * SCALE + CENTER_X;
+                        screenY = -projY * SCALE + CENTER_Y;
+                    } else {
+                        // Normal bone-attached hitbox
+                        const boneName = remapBone(hitbox.bone.toLowerCase(), positions);
+                        let useBone = positions[boneName];
+                        
+                        // Handle "top" bone specially - use trans/rot/hip as fallback
+                        if (!useBone && (boneName === 'top' || boneName === 'throw')) {
+                            useBone = positions['trans'] || positions['rot'] || positions['hip'];
+                        }
+                        
+                        if (!useBone) {
+                            return;
+                        }
+                        
+                        const offset = hitbox.offset || {x: 0, y: 0, z: 0};
+                        // Normalize rotation columns so offsets are rotated but not
+                        // scaled — matches how Smash Ultimate applies ATTACK offsets.
+                        const rotOnly = normalizeMatrixRotation(useBone.matrix);
+                        const worldPos = transformPoint(offset, rotOnly);
+                        
+                        if (boneName === 'top' || boneName === 'throw') {
+                            screenX = (useBone.worldZ + offset.z) * SCALE + CENTER_X;
+                            screenY = -(useBone.worldY + offset.y) * SCALE + CENTER_Y;
+                        } else {
+                            screenX = worldPos.z * SCALE + CENTER_X;
+                            screenY = -worldPos.y * SCALE + CENTER_Y;
+                        }
+                        
+                        // Compute second endpoint for capsule hitboxes
+                        if (hitbox.is_capsule && hitbox.offset2) {
+                            const off2 = hitbox.offset2;
+                            if (boneName === 'top' || boneName === 'throw') {
+                                screenX2 = (useBone.worldZ + off2.z) * SCALE + CENTER_X;
+                                screenY2 = -(useBone.worldY + off2.y) * SCALE + CENTER_Y;
+                            } else {
+                                const wp2 = transformPoint(off2, rotOnly);
+                                screenX2 = wp2.z * SCALE + CENTER_X;
+                                screenY2 = -wp2.y * SCALE + CENTER_Y;
+                            }
+                        }
+                    }
+                    
+                    // Store position for this hitbox
+                    currentPositions[hitbox.id] = {
+                        x: screenX,
+                        y: screenY,
+                        x2: screenX2,
+                        y2: screenY2,
+                        isCapsule: !!(hitbox.is_capsule && hitbox.offset2),
+                        size: hitbox.size || 3,
+                        damage: hitbox.damage,
+                        bone: hitbox.bone
+                    };
+                });
+                
+                // Calculate previous frame positions on-demand for interpolation
+                const showInterpolation = document.getElementById('show-interpolation').checked;
+                let prevPositions = {};
+                
+                if (showInterpolation && currentFrame > 0) {
+                    // Check if previous frame has hitboxes
+                    const prevGameFrame = currentFrame;  // currentFrame is 0-indexed, so this is prev game frame
+                    const prevFrameHitboxes = hitboxData.hitboxes_by_frame[String(prevGameFrame)] || [];
+                    
+                    if (prevFrameHitboxes.length > 0) {
+                        // Calculate world transforms for previous frame
+                        const prevWorldTransforms = calculateWorldTransformsForFrame(currentFrame - 1);
+                        
+                        // Build positions lookup for previous frame
+                        const prevBonePositions = {};
+                        Object.entries(prevWorldTransforms).forEach(([name, data]) => {
+                            const m = data.matrix;
+                            prevBonePositions[name] = {
+                                x: m[3][2] * SCALE + CENTER_X,
+                                y: -m[3][1] * SCALE + CENTER_Y,
+                                z: m[3][0],
+                                worldZ: m[3][2],
+                                worldY: m[3][1],
+                                matrix: m,
+                                parentIndex: data.parentIndex
+                            };
+                        });
+                        
+                        // Calculate hitbox positions for previous frame
+                        prevFrameHitboxes.forEach(hitbox => {
+                            let screenX, screenY;
+                            
+                            const useProj = hitbox.is_projectile ? true : !!projectileData;
+                            const projData = hitbox.is_projectile ? (hitbox.projectile_data || projectileData) : projectileData;
+                            if (useProj && projData && projectileSpawnPos) {
+                                const spawn = projData.spawn_offset || {x: 0, y: 0, z: 0};
+                                const vel = projData.velocity || {x: 0, y: 0, z: 0};
+                                const projSpawnFrame = hitbox.projectile_spawn_frame || firstActiveFrame;
+                                const framesSinceSpawn = prevGameFrame - projSpawnFrame;
+                                
+                                const projZ = projectileSpawnPos.z + spawn.z + vel.z * Math.max(0, framesSinceSpawn);
+                                const projY = projectileSpawnPos.y + spawn.y + vel.y * Math.max(0, framesSinceSpawn);
+                                
+                                screenX = projZ * SCALE + CENTER_X;
+                                screenY = -projY * SCALE + CENTER_Y;
+                            } else {
+                                const boneName = remapBone(hitbox.bone.toLowerCase(), prevBonePositions);
+                                let useBone = prevBonePositions[boneName];
+                                
+                                if (!useBone && (boneName === 'top' || boneName === 'throw')) {
+                                    useBone = prevBonePositions['trans'] || prevBonePositions['rot'] || prevBonePositions['hip'];
+                                }
+                                
+                                if (!useBone) return;
+                                
+                                const offset = hitbox.offset || {x: 0, y: 0, z: 0};
+                                const rotOnly = normalizeMatrixRotation(useBone.matrix);
+                                const worldPos = transformPoint(offset, rotOnly);
+                                
+                                if (boneName === 'top' || boneName === 'throw') {
+                                    screenX = (useBone.worldZ + offset.z) * SCALE + CENTER_X;
+                                    screenY = -(useBone.worldY + offset.y) * SCALE + CENTER_Y;
+                                } else {
+                                    screenX = worldPos.z * SCALE + CENTER_X;
+                                    screenY = -worldPos.y * SCALE + CENTER_Y;
+                                }
+                            }
+                            
+                            prevPositions[hitbox.id] = {
+                                x: screenX,
+                                y: screenY,
+                                size: hitbox.size || 3
+                            };
+                        });
+                    }
+                }
+                
+                // Draw hitboxes
+                frameHitboxes.forEach(hitbox => {
+                    const curr = currentPositions[hitbox.id];
+                    if (!curr) return;
+                    
+                    const prev = prevPositions[hitbox.id];
+                    
+                    // Determine if this hitbox uses projectile positioning
+                    const isProj = hitbox.is_projectile ? true : !!projectileData;
+                    
+                    let startX, startY, endX, endY;
+                    
+                    if (curr.isCapsule && curr.x2 !== undefined) {
+                        // Capsule hitbox: draw between offset1 and offset2
+                        startX = curr.x;
+                        startY = curr.y;
+                        endX = curr.x2;
+                        endY = curr.y2;
+                    } else {
+                        // Non-capsule: single point, optionally interpolated
+                        startX = curr.x;
+                        startY = curr.y;
+                        endX = curr.x;
+                        endY = curr.y;
+                        
+                        if (showInterpolation && prev && !isProj) {
+                            // Draw from previous position to current position
+                            startX = prev.x;
+                            startY = prev.y;
+                            endX = curr.x;
+                            endY = curr.y;
+                        }
+                    }
+                    
+                    drawCapsule(
+                        { x: startX, y: startY },
+                        { x: endX, y: endY },
+                        curr.size * SCALE,
+                        'rgba(244, 67, 54, 0.4)', 'rgba(244, 67, 54, 0.9)'
+                    );
+                    
+                    // Draw damage label at midpoint for capsules, current pos otherwise
+                    const labelX = curr.isCapsule ? (curr.x + curr.x2) / 2 : curr.x;
+                    const labelY = curr.isCapsule
+                        ? Math.min(curr.y, curr.y2) - curr.size * SCALE - 5
+                        : curr.y - curr.size * SCALE - 5;
+                    if (curr.damage) {
+                        ctx.fillStyle = '#fff';
+                        ctx.font = 'bold 11px Arial';
+                        ctx.textAlign = 'center';
+                        ctx.fillText(curr.damage + '%', labelX, labelY);
+                    }
+                });
+                
+                updateHitboxList(frameHitboxes);
+            } else {
+                // No hitboxes this frame
+            }
+        }
+        
+        function drawCapsule(start, end, radius, fill, stroke) {
+            ctx.strokeStyle = stroke;
+            ctx.fillStyle = fill;
+            ctx.lineWidth = 2;
+            
+            // If start and end are same, just draw a circle
+            if (Math.abs(start.x - end.x) < 0.1 && Math.abs(start.y - end.y) < 0.1) {
+                ctx.beginPath();
+                ctx.arc(start.x, start.y, radius, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                return;
+            }
+            
+            // Draw a proper capsule (stadium shape)
+            const dx = end.x - start.x;
+            const dy = end.y - start.y;
+            const angle = Math.atan2(dy, dx);
+            const perpAngle = angle + Math.PI / 2;
+            
+            // Calculate the four corners of the rectangle part
+            const offsetX = Math.cos(perpAngle) * radius;
+            const offsetY = Math.sin(perpAngle) * radius;
+            
+            ctx.beginPath();
+            // Start cap (semicircle)
+            ctx.arc(start.x, start.y, radius, angle + Math.PI/2, angle - Math.PI/2);
+            // Top edge
+            ctx.lineTo(end.x - offsetX, end.y - offsetY);
+            // End cap (semicircle)
+            ctx.arc(end.x, end.y, radius, angle - Math.PI/2, angle + Math.PI/2);
+            // Bottom edge
+            ctx.lineTo(start.x + offsetX, start.y + offsetY);
+            ctx.closePath();
+            
+            ctx.fill();
+            ctx.stroke();
+        }
+        
+        function updateHitboxList(hitboxes) {
+            const container = document.getElementById('hitbox-list');
+            if (!hitboxes || hitboxes.length === 0) {
+                container.innerHTML = '<p style="color: #666;">No hitboxes active</p>';
+                return;
+            }
+            
+            let html = '';
+            hitboxes.forEach(hb => {
+                html += `
+                    <div class="hitbox-card">
+                        <strong>ID ${hb.id}</strong> (${hb.bone})
+                        <div class="stat"><span class="stat-label">Damage:</span><span class="stat-value">${hb.damage || 'N/A'}%</span></div>
+                        <div class="stat"><span class="stat-label">Angle:</span><span class="stat-value">${hb.angle || 'N/A'}°</span></div>
+                        <div class="stat"><span class="stat-label">KBG:</span><span class="stat-value">${hb.kbg || 'N/A'}</span></div>
+                        <div class="stat"><span class="stat-label">BKB:</span><span class="stat-value">${hb.bkb || 'N/A'}</span></div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+        
+        function togglePlay() {
+            isPlaying = !isPlaying;
+            document.getElementById('play-btn').textContent = isPlaying ? '⏸ Pause' : '▶ Play';
+            
+            if (isPlaying) {
+                playTimer = setInterval(() => {
+                    // Use hitbox total_frames if available, otherwise animation data
+                    let max;
+                    if (hitboxData && hitboxData.total_frames) {
+                        max = hitboxData.total_frames - 1;  // 0-indexed
+                    } else if (animationData) {
+                        max = Math.floor(animationData.final_frame_index) - 1;
+                    } else {
+                        max = 39;  // fallback
+                    }
+                    const nextFrame = (currentFrame + 1) % (max + 1);
+                    currentFrame = nextFrame;
+                    updateHitboxFrameHighlight();
+                    render();
+                }, 1000 / 30);
+            } else {
+                clearInterval(playTimer);
+            }
+        }
+        
+        function changeFrame(delta) {
+            let max;
+            if (hitboxData && hitboxData.total_frames) {
+                max = hitboxData.total_frames - 1;  // 0-indexed
+            } else if (animationData) {
+                max = Math.floor(animationData.final_frame_index) - 1;
+            } else {
+                max = 39;  // fallback
+            }
+            
+            const nextFrame = (currentFrame + delta + max + 1) % (max + 1);
+            currentFrame = nextFrame;
+            updateHitboxFrameHighlight();
+            render();
+        }
+        
+        document.getElementById('frame-slider').addEventListener('input', (e) => {
+            const newFrame = parseInt(e.target.value);
+            currentFrame = newFrame;
+            updateHitboxFrameHighlight();
+            render();
+        });
+        
+        ['show-skeleton', 'show-hurtboxes', 'show-hitboxes', 'show-interpolation', 'show-names'].forEach(id => {
+            document.getElementById(id).addEventListener('change', render);
+        });
+        
+        // Load data
+        function populateHitboxFramesList() {
+            const container = document.getElementById('hitbox-frames-list');
+            
+            if (!hitboxData || !hitboxData.hitboxes_by_frame) {
+                container.innerHTML = '<p style="color: #666; font-size: 0.85em;">No hitbox data</p>';
+                return;
+            }
+            
+            // Get all frames that have hitboxes
+            const framesWithHitboxes = Object.keys(hitboxData.hitboxes_by_frame)
+                .map(Number)
+                .filter(f => hitboxData.hitboxes_by_frame[String(f)].length > 0)
+                .sort((a, b) => a - b);
+            
+            if (framesWithHitboxes.length === 0) {
+                container.innerHTML = '<p style="color: #666; font-size: 0.85em;">No active hitboxes</p>';
+                return;
+            }
+            
+            // Group consecutive frames into ranges
+            const ranges = [];
+            let rangeStart = framesWithHitboxes[0];
+            let rangeEnd = framesWithHitboxes[0];
+            
+            for (let i = 1; i < framesWithHitboxes.length; i++) {
+                if (framesWithHitboxes[i] === rangeEnd + 1) {
+                    rangeEnd = framesWithHitboxes[i];
+                } else {
+                    ranges.push({ start: rangeStart, end: rangeEnd });
+                    rangeStart = framesWithHitboxes[i];
+                    rangeEnd = framesWithHitboxes[i];
+                }
+            }
+            ranges.push({ start: rangeStart, end: rangeEnd });
+            
+            // Build HTML - display as ranges with clickable buttons
+            // Note: hitbox data keys are already 1-indexed game frames, so don't add 1
+            let html = '<div style="display: flex; flex-wrap: wrap; gap: 4px;">';
+            
+            for (const range of ranges) {
+                // Data keys are game frame numbers (1-indexed), display them directly
+                // But jumpToFrame needs 0-indexed currentFrame, so subtract 1
+                const displayStart = range.start;
+                const displayEnd = range.end;
+                const jumpStart = range.start - 1;  // Convert to 0-indexed for currentFrame
+                
+                if (range.start === range.end) {
+                    // Single frame
+                    html += `<span class="frame-btn" data-frame="${jumpStart}" onclick="jumpToFrame(${jumpStart})">${displayStart}</span>`;
+                } else {
+                    // Range of frames - clicking goes to start of range
+                    html += `<span class="frame-range" data-frame-start="${jumpStart}" data-frame-end="${range.end - 1}" onclick="jumpToFrame(${jumpStart})">${displayStart}-${displayEnd}</span>`;
+                }
+            }
+            
+            html += '</div>';
+            container.innerHTML = html;
+            
+            // Update active state for current frame
+            updateHitboxFrameHighlight();
+        }
+        
+        function jumpToFrame(frame) {
+            currentFrame = frame;
+            document.getElementById('frame-slider').value = frame;
+            updateHitboxFrameHighlight();
+            render();
+        }
+        
+        function updateHitboxFrameHighlight() {
+            // Remove active class from all frame buttons
+            document.querySelectorAll('.frame-btn, .frame-range').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Add active class to current frame's button
+            const singleFrameBtn = document.querySelector(`.frame-btn[data-frame="${currentFrame}"]`);
+            if (singleFrameBtn) {
+                singleFrameBtn.classList.add('active');
+            }
+            
+            // Check if current frame is in a range
+            document.querySelectorAll('.frame-range').forEach(rangeBtn => {
+                const start = parseInt(rangeBtn.dataset.frameStart);
+                const end = parseInt(rangeBtn.dataset.frameEnd);
+                if (currentFrame >= start && currentFrame <= end) {
+                    rangeBtn.classList.add('active');
+                }
+            });
+        }
+        
+        async function loadData() {
+            document.getElementById('character-name').textContent = character;
+            document.getElementById('move-name').textContent = move + (stanceParam ? ' (' + stanceParam + ')' : '');
+            
+            let loaded = [];
+            let failed = [];
+            
+            // Get folder name for characters with special folder mappings (e.g., Ice Climbers)
+            const charFolder = getCharacterFolder(character);
+            // Get special skeleton/hurtbox names (e.g., Mii characters)
+            const skelName = getSkeletonName(character);
+            const hurtName = getHurtboxName(character);
+            
+            // Cache-busting parameter to prevent stale JSON data
+            const cacheBust = `?v=${Date.now()}`;
+            
+            try {
+                // Load skeleton - try character name, folder name, and special skeleton name
+                let skelRes = await fetch(`data/skeletons/${character}_skeleton.json${cacheBust}`);
+                if (!skelRes.ok && charFolder !== character) {
+                    skelRes = await fetch(`data/skeletons/${charFolder}_skeleton.json${cacheBust}`);
+                }
+                if (!skelRes.ok && skelName !== character) {
+                    skelRes = await fetch(`data/skeletons/${skelName}_skeleton.json${cacheBust}`);
+                }
+                if (skelRes.ok) {
+                    skeletonData = await skelRes.json();
+                    loaded.push('skeleton');
+                } else {
+                    failed.push('skeleton');
+                }
+                
+                // Load hurtboxes - try character name, folder name, and special hurtbox name
+                let hurtRes = await fetch(`data/hurtboxes/${character}_hurtboxes.json${cacheBust}`);
+                if (!hurtRes.ok && charFolder !== character) {
+                    hurtRes = await fetch(`data/hurtboxes/${charFolder}_hurtboxes.json${cacheBust}`);
+                }
+                if (!hurtRes.ok && hurtName !== character) {
+                    hurtRes = await fetch(`data/hurtboxes/${hurtName}_hurtboxes.json${cacheBust}`);
+                }
+                if (hurtRes.ok) {
+                    hurtboxData = await hurtRes.json();
+                    loaded.push('hurtboxes');
+                } else {
+                    failed.push('hurtboxes');
+                }
+                
+                // Load hitboxes - try both character name and folder name
+                let hitRes = await fetch(`data/hitboxes/${character}_hitboxes.json${cacheBust}`);
+                if (!hitRes.ok && charFolder !== character) {
+                    hitRes = await fetch(`data/hitboxes/${charFolder}_hitboxes.json${cacheBust}`);
+                }
+                if (hitRes.ok) {
+                    const allHitboxes = await hitRes.json();
+                    allHitboxesCache = allHitboxes;  // Cache for stance switching
+                    
+                    // Map variant move types to their base move for hitbox lookup
+                    const HITBOX_MOVE_FALLBACK = {
+                        'ftilt2': 'ftilt',
+                        'fsmash2': 'fsmash',
+                        'fsmash3': 'fsmash',
+                        'fthrow_forward': 'fthrow',
+                        'fthrow_back': 'fthrow',
+                        'fthrow_high': 'fthrow',
+                        'fthrow_low': 'fthrow',
+                        'jab1_weak': 'jab1',
+                        'jab1_strong': 'jab1',
+                        'jab2_weak': 'jab2',
+                        'jab2_strong': 'jab2',
+                        'ftilt_weak': 'ftilt',
+                        'ftilt_strong': 'ftilt',
+                        'utilt_weak': 'utilt',
+                        'utilt_strong': 'utilt',
+                        'dtilt_weak': 'dtilt',
+                        'dtilt_strong': 'dtilt',
+                    };
+                    
+                    // Check for stance system
+                    if (allHitboxes.has_stances && allHitboxes.stance_data && stanceParam) {
+                        // Stance-based character - use stance from URL param
+                        currentStance = stanceParam;
+                        const stanceMoves = allHitboxes.stance_data[currentStance] || {};
+                        hitboxData = stanceMoves[move] || null;
+                        if (!hitboxData && HITBOX_MOVE_FALLBACK[move]) {
+                            hitboxData = stanceMoves[HITBOX_MOVE_FALLBACK[move]] || null;
+                        }
+                    } else if (allHitboxes.has_stances && allHitboxes.stance_data) {
+                        // Stance character but no stance param - default to first stance
+                        const stanceNames = allHitboxes.stance_names || Object.keys(allHitboxes.stance_data);
+                        currentStance = stanceNames[0];
+                        const stanceMoves = allHitboxes.stance_data[currentStance] || {};
+                        hitboxData = stanceMoves[move] || null;
+                        if (!hitboxData && HITBOX_MOVE_FALLBACK[move]) {
+                            hitboxData = stanceMoves[HITBOX_MOVE_FALLBACK[move]] || null;
+                        }
+                    } else {
+                        hitboxData = allHitboxes.moves ? allHitboxes.moves[move] : null;
+                        if (!hitboxData && HITBOX_MOVE_FALLBACK[move]) {
+                            hitboxData = allHitboxes.moves ? allHitboxes.moves[HITBOX_MOVE_FALLBACK[move]] : null;
+                        }
+                    }
+                    
+                    if (hitboxData) {
+                        loaded.push('hitboxes');
+                        // Get motion events for frame calculation
+                        motionEvents = hitboxData.motion_events || null;
+                        // Get projectile data if this is a projectile move
+                        if (hitboxData.is_projectile && hitboxData.projectile) {
+                            projectileData = hitboxData.projectile;
+                            projectileSpawnPos = null;  // Reset spawn position cache for new move
+                        } else {
+                            projectileData = null;
+                            projectileSpawnPos = null;
+                        }
+                        
+                        // Detect if any hitboxes have per-hitbox projectile flags (articles)
+                        let hasArticleHitboxes = !!projectileData;
+                        if (!hasArticleHitboxes) {
+                            for (const frameHbs of Object.values(hitboxData.hitboxes_by_frame || {})) {
+                                if (frameHbs.some(hb => hb.is_projectile)) {
+                                    hasArticleHitboxes = true;
+                                    break;
+                                }
+                            }
+                        }
+                        
+                        // Disable interpolation for moves with article/projectile hitboxes
+                        const interpCheckbox = document.getElementById('show-interpolation');
+                        if (hasArticleHitboxes) {
+                            interpCheckbox.checked = false;
+                            interpCheckbox.disabled = true;
+                            interpCheckbox.parentElement.style.opacity = '0.4';
+                            interpCheckbox.parentElement.title = 'Interpolation not available for article/projectile moves';
+                        } else {
+                            interpCheckbox.checked = true;
+                            interpCheckbox.disabled = false;
+                            interpCheckbox.parentElement.style.opacity = '1';
+                            interpCheckbox.parentElement.title = '';
+                        }
+                        
+                        // Populate the hitbox frames list
+                        populateHitboxFramesList();
+                    } else {
+                        failed.push('hitboxes (no data for ' + move + ')');
+                        document.getElementById('hitbox-frames-list').innerHTML = '<p style="color: #666; font-size: 0.85em;">No hitbox data for this move</p>';
+                    }
+                } else {
+                    failed.push('hitboxes');
+                    document.getElementById('hitbox-frames-list').innerHTML = '<p style="color: #666; font-size: 0.85em;">No hitbox data available</p>';
+                }
+                
+                // Load animation - try character-specific filenames first
+                const animFolder = getAnimFolder(character);
+                const animFilenames = getAnimFilenames(character, move);
+                
+                console.log(`[Anim] Loading animation for ${character}/${move}`);
+                console.log(`[Anim] animFolder: "${animFolder}", charFolder: "${charFolder}", animFilenames:`, animFilenames);
+                
+                // Build list of paths to try
+                const animPaths = [];
+                // HDR mods store override animations in numbered subfolders (c00, c01, ...)
+                // Try subfolders FIRST so HDR overrides take priority over base game animations
+                const subfolders = ['c00', 'c01', 'c02', 'c03', 'c04', 'c05', ''];
+                for (const animFilename of animFilenames) {
+                    for (const sub of subfolders) {
+                        const subPath = sub ? `body/${sub}` : 'body';
+                        // Try animation folder first (handles Mii characters -> miienemyf etc)
+                        animPaths.push(`data/animations/${animFolder}/${subPath}/${animFilename}.json`);
+                        // Also try original character name if different
+                        if (animFolder !== character) {
+                            animPaths.push(`data/animations/${character}/${subPath}/${animFilename}.json`);
+                        }
+                        // Also try charFolder if different from both
+                        if (charFolder !== character && charFolder !== animFolder) {
+                            animPaths.push(`data/animations/${charFolder}/${subPath}/${animFilename}.json`);
+                        }
+                    }
+                    // Also try flat (no body/ folder) as a last resort
+                    animPaths.push(`data/animations/${animFolder}/${animFilename}.json`);
+                    if (animFolder !== character) {
+                        animPaths.push(`data/animations/${character}/${animFilename}.json`);
+                    }
+                    if (charFolder !== character && charFolder !== animFolder) {
+                        animPaths.push(`data/animations/${charFolder}/${animFilename}.json`);
+                    }
+                }
+                
+                console.log(`[Anim] Trying ${animPaths.length} paths in order:`, animPaths);
+                
+                for (const path of animPaths) {
+                    try {
+                        const animRes = await fetch(path);
+                        if (animRes.ok) {
+                            console.log(`[Anim] ✅ LOADED: ${path}`);
+                            animationData = await animRes.json();
+                            loaded.push('animation');
+                            break;
+                        } else {
+                            console.log(`[Anim]    miss: ${path} (${animRes.status})`);
+                        }
+                    } catch (e) {
+                        console.log(`[Anim]    miss: ${path} (fetch error)`);
+                    }
+                }
+                
+                if (!animationData) {
+                    console.log(`[Anim] ❌ No animation found for ${character}/${move}`);
+                    failed.push('animation');
+                }
+                
+                // Update slider max - use hitbox data if available (real frames), otherwise animation
+                // Internally 0-indexed, so max = total_frames - 1
+                if (hitboxData && hitboxData.total_frames) {
+                    document.getElementById('frame-slider').max = hitboxData.total_frames - 1;
+                } else if (animationData) {
+                    document.getElementById('frame-slider').max = Math.floor(animationData.final_frame_index) - 1;
+                }
+                
+                currentFrame = 0;
+                
+                setStatus('');
+                
+                // Auto-fit: first try repositioning CENTER to fit all hitboxes at default SCALE.
+                // Only zoom out if the total world-space span exceeds the canvas.
+                SCALE = 20;  // Reset to default first
+                autoFitCenterX = null;
+                autoFitCenterY = null;
+                
+                if (hitboxData && hitboxData.hitboxes_by_frame && skeletonData) {
+                    let maxWorldY = -Infinity;
+                    let minWorldY = Infinity;
+                    let maxWorldZ = -Infinity;
+                    let minWorldZ = Infinity;
+                    let hasData = false;
+                    
+                    function expandBounds(wy, wz, r) {
+                        maxWorldY = Math.max(maxWorldY, wy + r);
+                        minWorldY = Math.min(minWorldY, wy - r);
+                        maxWorldZ = Math.max(maxWorldZ, wz + r);
+                        minWorldZ = Math.min(minWorldZ, wz - r);
+                        hasData = true;
+                    }
+                    
+                    for (const [frameStr, frameHbs] of Object.entries(hitboxData.hitboxes_by_frame)) {
+                        if (!frameHbs || frameHbs.length === 0) continue;
+                        const realFrame = parseInt(frameStr) - 1;
+                        const positions = calculateWorldTransformsForFrame(realFrame);
+                        if (!positions) continue;
+                        
+                        for (const hb of frameHbs) {
+                            const r = hb.size || 3;
+                            const boneName = remapBone((hb.bone || 'top').toLowerCase(), positions);
+                            let useBone = positions[boneName];
+                            if (!useBone && (boneName === 'top' || boneName === 'throw')) {
+                                useBone = positions['trans'] || positions['rot'] || positions['hip'];
+                            }
+                            if (!useBone) continue;
+                            
+                            const offset = hb.offset || {x: 0, y: 0, z: 0};
+                            let worldY, worldZ;
+                            if (boneName === 'top' || boneName === 'throw') {
+                                worldZ = useBone.matrix[3][2] + offset.z;
+                                worldY = useBone.matrix[3][1] + offset.y;
+                            } else {
+                                const rotOnly = normalizeMatrixRotation(useBone.matrix);
+                                const wp = transformPoint(offset, rotOnly);
+                                worldZ = wp.z;
+                                worldY = wp.y;
+                            }
+                            expandBounds(worldY, worldZ, r);
+                            
+                            if (hb.is_capsule && hb.offset2) {
+                                const o2 = hb.offset2;
+                                let wy2, wz2;
+                                if (boneName === 'top' || boneName === 'throw') {
+                                    wz2 = useBone.matrix[3][2] + o2.z;
+                                    wy2 = useBone.matrix[3][1] + o2.y;
+                                } else {
+                                    const rotOnly = normalizeMatrixRotation(useBone.matrix);
+                                    const wp2 = transformPoint(o2, rotOnly);
+                                    wz2 = wp2.z;
+                                    wy2 = wp2.y;
+                                }
+                                expandBounds(wy2, wz2, r);
+                            }
+                        }
+                    }
+                    
+                    if (hasData) {
+                        const rect = canvas.parentElement.getBoundingClientRect();
+                        const canvasH = rect.height - 70;
+                        const canvasW = rect.width;
+                        const margin = 30;
+                        
+                        // Screen mapping: screenY = -worldY * SCALE + CENTER_Y
+                        //                 screenX =  worldZ * SCALE + CENTER_X
+                        // Pixel span needed at current SCALE:
+                        const pixelSpanY = (maxWorldY - minWorldY) * SCALE;
+                        const pixelSpanZ = (maxWorldZ - minWorldZ) * SCALE;
+                        
+                        const availH = canvasH - 2 * margin;
+                        const availW = canvasW - 2 * margin;
+                        
+                        if (pixelSpanY <= availH && pixelSpanZ <= availW) {
+                            // Fits at default SCALE — just reposition CENTER
+                            // Ideal CENTER_Y: center the content vertically
+                            // screenY_top = -maxWorldY * SCALE + CY = margin  → want top at margin
+                            // screenY_bot = -minWorldY * SCALE + CY = canvasH - margin  → want bottom at canvasH-margin
+                            // Ideal CY = (margin + maxWorldY*SCALE + canvasH - margin + minWorldY*SCALE) / 2
+                            const idealCY = (canvasH + (maxWorldY + minWorldY) * SCALE) / 2;
+                            const idealCX = (canvasW - (maxWorldZ + minWorldZ) * SCALE) / 2;
+                            
+                            // Default positions from resizeCanvas logic
+                            const movesStartLeft = ['dash_attack', 'dash_grab'];
+                            const charsWithLongFsmash = ['simon', 'richter'];
+                            let defaultCX = (movesStartLeft.includes(move) || (move === 'fsmash' && charsWithLongFsmash.includes(character)))
+                                ? canvasW * 0.15 : canvasW / 2;
+                            let defaultCY = (move === 'dair') ? canvasH * 0.6 : canvasH - 80;
+                            
+                            // Check if default center already fits
+                            const topOK = -maxWorldY * SCALE + defaultCY >= margin;
+                            const botOK = -minWorldY * SCALE + defaultCY <= canvasH - margin;
+                            const leftOK = minWorldZ * SCALE + defaultCX >= margin;
+                            const rightOK = maxWorldZ * SCALE + defaultCX <= canvasW - margin;
+                            
+                            if (!topOK || !botOK || !leftOK || !rightOK) {
+                                // Default doesn't fit — reposition
+                                // Only adjust axes that need it, keep default for axes that fit
+                                if (!topOK || !botOK) {
+                                    autoFitCenterY = idealCY;
+                                    console.log(`[AutoFit] Repositioned CENTER_Y: ${defaultCY.toFixed(0)} → ${idealCY.toFixed(0)} (worldY: ${minWorldY.toFixed(1)}..${maxWorldY.toFixed(1)})`);
+                                }
+                                if (!leftOK || !rightOK) {
+                                    autoFitCenterX = idealCX;
+                                    console.log(`[AutoFit] Repositioned CENTER_X: ${defaultCX.toFixed(0)} → ${idealCX.toFixed(0)} (worldZ: ${minWorldZ.toFixed(1)}..${maxWorldZ.toFixed(1)})`);
+                                }
+                            }
+                        } else {
+                            // Doesn't fit at default SCALE — zoom out
+                            const scaleForH = availH / (maxWorldY - minWorldY);
+                            const scaleForW = availW / (maxWorldZ - minWorldZ);
+                            SCALE = Math.max(6, Math.floor(Math.min(scaleForH, scaleForW)));
+                            
+                            // Center at the new scale
+                            autoFitCenterY = (canvasH + (maxWorldY + minWorldY) * SCALE) / 2;
+                            autoFitCenterX = (canvasW - (maxWorldZ + minWorldZ) * SCALE) / 2;
+                            console.log(`[AutoFit] Zoomed out to SCALE=${SCALE} and centered (worldY: ${minWorldY.toFixed(1)}..${maxWorldY.toFixed(1)}, worldZ: ${minWorldZ.toFixed(1)}..${maxWorldZ.toFixed(1)})`);
+                        }
+                    }
+                }
+                
+                resizeCanvas();
+                
+            } catch (error) {
+                console.error('Error loading data:', error);
+                setStatus('Error: ' + error.message);
+            }
+        }
+        
+        loadData();
+    </script>
+</body>
+</html>

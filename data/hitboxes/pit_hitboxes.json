@@ -1,0 +1,7606 @@
+{
+  "character": "pit",
+  "moves": {
+    "jab1": {
+      "total_frames": 15,
+      "active_frames": [
+        4,
+        5
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "armr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 4,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 5,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "armr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 4,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          },
+          {
+            "id": 5,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab1"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 5.0,
+          "new_duration": 3.0,
+          "scale_factor": 0.75
+        },
+        {
+          "type": "range",
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 5.5,
+          "new_duration": 1.0,
+          "scale_factor": 2.0
+        },
+        {
+          "type": "range",
+          "frame": 5.5,
+          "start_orig": 5.5,
+          "end_orig": 7.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.6666666666666666
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 7.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "jab2": {
+      "total_frames": 16,
+      "active_frames": [
+        5,
+        6
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 60,
+            "kbg": 40,
+            "fkb": 70,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 1,
+            "bone": "bowl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 90,
+            "kbg": 40,
+            "fkb": 70,
+            "bkb": 0,
+            "size": 3.2,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 2,
+            "bone": "bowl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 145,
+            "kbg": 40,
+            "fkb": 85,
+            "bkb": 0,
+            "size": 3.2,
+            "offset": {
+              "x": 0.0,
+              "y": -7.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 3,
+            "bone": "arml",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 4,
+            "bone": "bowl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.2,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 5,
+            "bone": "bowl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.2,
+            "offset": {
+              "x": 0.0,
+              "y": -7.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 60,
+            "kbg": 40,
+            "fkb": 70,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 1,
+            "bone": "bowl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 90,
+            "kbg": 40,
+            "fkb": 70,
+            "bkb": 0,
+            "size": 3.2,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 2,
+            "bone": "bowl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 145,
+            "kbg": 40,
+            "fkb": 85,
+            "bkb": 0,
+            "size": 3.2,
+            "offset": {
+              "x": 0.0,
+              "y": -7.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 3,
+            "bone": "arml",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 4,
+            "bone": "bowl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.2,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          },
+          {
+            "id": 5,
+            "bone": "bowl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.2,
+            "offset": {
+              "x": 0.0,
+              "y": -7.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab2"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 5.5,
+          "new_duration": 1.0,
+          "scale_factor": 2.0
+        },
+        {
+          "type": "range",
+          "frame": 5.5,
+          "start_orig": 5.5,
+          "end_orig": 7.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.6666666666666666
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 7.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "jab3": {
+      "total_frames": 15,
+      "active_frames": [
+        3,
+        4,
+        5
+      ],
+      "hitboxes_by_frame": {
+        "3": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab3"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab3"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab3"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab3"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab3"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab3"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab3"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab3"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "jab3"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 3.0,
+          "start_orig": 3.0,
+          "end_orig": 4.0,
+          "new_duration": 3.0,
+          "scale_factor": 3.0
+        },
+        {
+          "type": "range",
+          "frame": 4.0,
+          "start_orig": 4.0,
+          "end_orig": 32.0,
+          "new_duration": 25.0,
+          "scale_factor": 0.8928571428571429
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 32.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "rapid_jab": {
+      "total_frames": 24,
+      "active_frames": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "hitboxes_by_frame": {
+        "0": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 0.0,
+            "real_frame": 0,
+            "damage": 0.5,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 19.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "rapid_jab"
+          }
+        ],
+        "2": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 0.5,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 19.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "rapid_jab"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 0.5,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 19.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "rapid_jab"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 0.5,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 19.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "rapid_jab"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 0.5,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 19.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "rapid_jab"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 0.5,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 19.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "rapid_jab"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 0.5,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 19.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "rapid_jab"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 0.5,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 19.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "rapid_jab"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "rapid_jab_finisher": {
+      "total_frames": 15,
+      "active_frames": [
+        4,
+        5
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 185,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.3,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "rapid_jab_finisher"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 185,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.3,
+              "z": 10.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "rapid_jab_finisher"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 185,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.3,
+              "z": 13.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "rapid_jab_finisher"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 185,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.3,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "rapid_jab_finisher"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 185,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.3,
+              "z": 10.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "rapid_jab_finisher"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 185,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 8.3,
+              "z": 13.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "rapid_jab_finisher"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "combo3": {
+      "total_frames": 15,
+      "active_frames": [
+        3,
+        4,
+        5
+      ],
+      "hitboxes_by_frame": {
+        "3": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "combo3"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "combo3"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "combo3"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "combo3"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "combo3"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "combo3"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "combo3"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "combo3"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "combo3"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 3.0,
+          "start_orig": 3.0,
+          "end_orig": 4.0,
+          "new_duration": 3.0,
+          "scale_factor": 3.0
+        },
+        {
+          "type": "range",
+          "frame": 4.0,
+          "start_orig": 4.0,
+          "end_orig": 32.0,
+          "new_duration": 25.0,
+          "scale_factor": 0.8928571428571429
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 32.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "ftilt": {
+      "total_frames": 24,
+      "active_frames": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 15.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 15.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 15.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 15.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 15.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "ftilt"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "utilt": {
+      "total_frames": 26,
+      "active_frames": [
+        6,
+        7,
+        8,
+        15,
+        16
+      ],
+      "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 4.0,
+            "angle": 368,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 2.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": 8.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "utilt"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 4.0,
+            "angle": 368,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 2.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": 8.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "utilt"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 4.0,
+            "angle": 368,
+            "kbg": 100,
+            "fkb": 45,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 2.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": 8.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "utilt"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 71,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 23.5,
+              "z": 6.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "utilt"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 71,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 23.5,
+              "z": 6.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "utilt"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 17.0,
+          "start_orig": 17.0,
+          "end_orig": 34.0,
+          "new_duration": 11.0,
+          "scale_factor": 0.6470588235294118
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 34.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dtilt": {
+      "total_frames": 17,
+      "active_frames": [
+        6,
+        7
+      ],
+      "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 8.0,
+            "angle": 75,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 71,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 19.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "dtilt"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.0,
+            "angle": 75,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 71,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 19.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "dtilt"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 8.0,
+          "start_orig": 8.0,
+          "end_orig": 30.0,
+          "new_duration": 17.0,
+          "scale_factor": 0.7727272727272727
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 30.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "fsmash": {
+      "total_frames": 28,
+      "active_frames": [
+        10,
+        16,
+        17,
+        18
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 5.0,
+            "angle": 366,
+            "kbg": 100,
+            "fkb": 53,
+            "bkb": 0,
+            "size": 5.4,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 5.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 12.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fsmash"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 121,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fsmash"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 121,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fsmash"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 121,
+            "fkb": 0,
+            "bkb": 42,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 13.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fsmash"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 10.0,
+          "start_orig": 10.0,
+          "end_orig": 21.0,
+          "new_duration": 6.0,
+          "scale_factor": 0.5454545454545454
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 21.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 24.0,
+          "start_orig": 24.0,
+          "end_orig": 55.0,
+          "new_duration": 36.0,
+          "scale_factor": 1.1612903225806452
+        }
+      ]
+    },
+    "usmash": {
+      "total_frames": 24,
+      "active_frames": [
+        6,
+        7,
+        9,
+        13,
+        14
+      ],
+      "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 4.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": -6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 26.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": -6.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": -4.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": -6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 5,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 18.0,
+              "z": -5.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 18.0,
+              "z": -4.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 6,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 18.0,
+              "z": -5.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 18.0,
+              "z": -4.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          }
+        ],
+        "7": [
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 14.0,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 12.0,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 14.0,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 12.0,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 5,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 18.0,
+              "z": -5.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 18.0,
+              "z": -4.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 6,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 5.0,
+            "angle": 105,
+            "kbg": 159,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 18.0,
+              "z": -5.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 18.0,
+              "z": -4.5
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "usmash"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.0,
+            "angle": 94,
+            "kbg": 139,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 28.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.0,
+            "angle": 94,
+            "kbg": 139,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.0,
+            "angle": 94,
+            "kbg": 139,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": -6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 90,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 34.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 90,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 90,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 31.0,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 90,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 31.0,
+              "z": -6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 90,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 34.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 90,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 24.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 90,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 31.0,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 90,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 31.0,
+              "z": -6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "usmash"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 7.0,
+          "start_orig": 7.0,
+          "end_orig": 9.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 9.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 10.0,
+          "start_orig": 10.0,
+          "end_orig": 12.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.5
+        },
+        {
+          "type": "range",
+          "frame": 12.0,
+          "start_orig": 12.0,
+          "end_orig": 16.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.25
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 16.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dsmash": {
+      "total_frames": 30,
+      "active_frames": [
+        5,
+        6,
+        18,
+        19,
+        20
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.0,
+            "angle": 48,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 3.3,
+              "z": 6.4
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.0,
+            "angle": 48,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 2.8,
+              "z": 12.4
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 10.0,
+            "angle": 48,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.4,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 17.4
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 48,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 3.3,
+              "z": 6.4
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 48,
+            "kbg": 98,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 2.8,
+              "z": 12.4
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 10.0,
+            "angle": 48,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.4,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 17.4
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 12.0,
+            "angle": 30,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 3.3,
+              "z": -6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 12.0,
+            "angle": 30,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 2.8,
+              "z": -12.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 10.0,
+            "angle": 30,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.4,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": -17.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 12.0,
+            "angle": 30,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 3.3,
+              "z": -6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 12.0,
+            "angle": 30,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 2.8,
+              "z": -12.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 10.0,
+            "angle": 30,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.4,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": -17.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 12.0,
+            "angle": 30,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 3.3,
+              "z": -6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 12.0,
+            "angle": 30,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 2.8,
+              "z": -12.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 10.0,
+            "angle": 30,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.4,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": -17.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dsmash"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "nair": {
+      "total_frames": 35,
+      "active_frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "bowr",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "bowr",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 1.5,
+            "angle": 363,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "bowr",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "bowr",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 1.5,
+            "angle": 80,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 4.5,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 1.0,
+            "offset": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 4.5,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 10.5,
+            "offset": {
+              "x": 0.0,
+              "y": 9.5,
+              "z": 3.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "nair"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "fair": {
+      "total_frames": 28,
+      "active_frames": [
+        11,
+        12,
+        14,
+        15,
+        17,
+        18
+      ],
+      "hitboxes_by_frame": {
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 2.0,
+            "angle": 365,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 22.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 2.0,
+            "angle": 345,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "fair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 2.0,
+            "angle": 365,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 22.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 2.0,
+            "angle": 345,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "fair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 2.0,
+            "angle": 365,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 22.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 2.0,
+            "angle": 345,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "fair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 2.0,
+            "angle": 365,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 22.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 2.0,
+            "angle": 345,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "fair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 135,
+            "fkb": 0,
+            "bkb": 26,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 22.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 142,
+            "fkb": 0,
+            "bkb": 26,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "fair"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 135,
+            "fkb": 0,
+            "bkb": 26,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 22.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderr",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 142,
+            "fkb": 0,
+            "bkb": 26,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "fair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 12.0,
+          "new_duration": 10.0,
+          "scale_factor": 0.9090909090909091
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 12.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "bair": {
+      "total_frames": 25,
+      "active_frames": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 11.0,
+            "angle": 66,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 31,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 13.0,
+            "angle": 43,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 31,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -18.9
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -15.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "bair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 11.0,
+            "angle": 66,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 31,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 13.0,
+            "angle": 43,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 31,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -18.9
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -15.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "bair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 11.0,
+            "angle": 66,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 31,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 13.0,
+            "angle": 43,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 31,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -18.9
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -15.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "bair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 78,
+            "fkb": 0,
+            "bkb": 22,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -16.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "bair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 78,
+            "fkb": 0,
+            "bkb": 22,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -16.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "bair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 78,
+            "fkb": 0,
+            "bkb": 22,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -16.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -6.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "bair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 10.0,
+          "start_orig": 10.0,
+          "end_orig": 11.0,
+          "new_duration": 3.0,
+          "scale_factor": 3.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 11.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "uair": {
+      "total_frames": 34,
+      "active_frames": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24
+      ],
+      "hitboxes_by_frame": {
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 36,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 8.0,
+            "angle": 68,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 8.0,
+            "angle": 68,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 8.0,
+            "angle": 68,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 8.0,
+            "angle": 68,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 8.0,
+            "angle": 68,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 8.0,
+            "angle": 68,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 8.0,
+            "angle": 68,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 8.0,
+            "angle": 68,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "uair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 13.0,
+          "new_duration": 7.0,
+          "scale_factor": 0.875
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 13.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dair": {
+      "total_frames": 23,
+      "active_frames": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "hitboxes_by_frame": {
+        "9": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 11.0,
+            "angle": 75,
+            "kbg": 81,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "bowl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 11.0,
+            "angle": 75,
+            "kbg": 81,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 2,
+            "bone": "bowl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 11.0,
+            "angle": 75,
+            "kbg": 81,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -7.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 11.0,
+            "angle": 270,
+            "kbg": 52,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "bowl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 11.0,
+            "angle": 270,
+            "kbg": 52,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 2,
+            "bone": "bowl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 11.0,
+            "angle": 270,
+            "kbg": 52,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -7.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 11.0,
+            "angle": 270,
+            "kbg": 52,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "bowl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 11.0,
+            "angle": 270,
+            "kbg": 52,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 2,
+            "bone": "bowl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 11.0,
+            "angle": 270,
+            "kbg": 52,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -7.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "bowl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 2,
+            "bone": "bowl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -7.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "bowl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          },
+          {
+            "id": 2,
+            "bone": "bowl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 10.0,
+            "angle": 75,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -7.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 9.0,
+          "start_orig": 9.0,
+          "end_orig": 10.0,
+          "new_duration": 2.0,
+          "scale_factor": 2.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 10.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dash_attack": {
+      "total_frames": 19,
+      "active_frames": [
+        7,
+        8,
+        9
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 9.0,
+            "angle": 70,
+            "kbg": 113,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 11.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 4.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "dash_attack"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 9.0,
+            "angle": 70,
+            "kbg": 113,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 11.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 4.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "dash_attack"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 70,
+            "kbg": 113,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 11.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 4.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "dash_attack"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 7.0,
+          "start_orig": 7.0,
+          "end_orig": 8.0,
+          "new_duration": 3.0,
+          "scale_factor": 3.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 8.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "grab": {
+      "total_frames": 18,
+      "active_frames": [
+        7,
+        8
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.1,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 10.4
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "grab",
+            "is_grab": true
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.1,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 10.4
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 1.0,
+          "rate_value": 1.2
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 6.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dash_grab": {
+      "total_frames": 20,
+      "active_frames": [
+        9,
+        10
+      ],
+      "hitboxes_by_frame": {
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.1,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 9.7
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.1,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 9.7
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "pivot_grab": {
+      "total_frames": 21,
+      "active_frames": [
+        10,
+        11
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.1,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": -4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": -15.4
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "pivot_grab",
+            "is_grab": true
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.1,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": -4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": -15.4
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "pivot_grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "pummel": {
+      "total_frames": 11,
+      "active_frames": [
+        1
+      ],
+      "hitboxes_by_frame": {
+        "1": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 1.3,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 11.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "pummel"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "fthrow": {
+      "total_frames": 24,
+      "active_frames": [
+        12,
+        13,
+        14
+      ],
+      "hitboxes_by_frame": {
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 12.0,
+              "z": 9.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "fthrow"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 12.0,
+              "z": 9.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "fthrow"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 48,
+            "kbg": 180,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "fthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "bthrow": {
+      "total_frames": 39,
+      "active_frames": [
+        29
+      ],
+      "hitboxes_by_frame": {
+        "29": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 8.0,
+            "angle": 45,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "bthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "uthrow": {
+      "total_frames": 25,
+      "active_frames": [
+        13,
+        14,
+        15
+      ],
+      "hitboxes_by_frame": {
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 21.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 13.0,
+              "z": 0.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "uthrow"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 21.0,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 13.0,
+              "z": 0.0
+            },
+            "is_capsule": true,
+            "character": "pit",
+            "move": "uthrow"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 72,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "uthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dthrow": {
+      "total_frames": 35,
+      "active_frames": [
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "hitboxes_by_frame": {
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": -4.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": -4.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 4.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "pit",
+            "move": "dthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    }
+  },
+  "generated_at": "2026-02-03T18:40:13.683816"
+}

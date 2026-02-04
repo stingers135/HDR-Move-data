@@ -1,0 +1,125 @@
+motion_path: fighter/ptrainer/motion/mball/c00
+list:
+  fly:
+    game_script: game_fly
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations: []
+    scripts:
+    - sound_fly
+    - effect_fly
+    extra: null
+  open:
+    game_script: game_open
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations:
+    - name: open.nuanmb
+      unk: 0
+    scripts:
+    - sound_open
+    - effect_open
+    extra: null
+  entry_open:
+    game_script: game_entryopen
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations:
+    - name: entryopen.nuanmb
+      unk: 0
+    scripts:
+    - sound_entryopen
+    - effect_entryopen
+    extra: null
+  restart_open:
+    game_script: game_restartopen
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations:
+    - name: open.nuanmb
+      unk: 0
+    scripts:
+    - sound_restartopen
+    - effect_restartopen
+    extra: null
+  final_open:
+    game_script: game_finalopen
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations:
+    - name: open.nuanmb
+      unk: 0
+    scripts:
+    - sound_finalopen
+    - effect_finalopen
+    extra: null

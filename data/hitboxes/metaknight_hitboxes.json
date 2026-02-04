@@ -1,0 +1,5358 @@
+{
+  "character": "metaknight",
+  "moves": {
+    "rapid_jab": {
+      "total_frames": 29,
+      "active_frames": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10,
+        14,
+        15,
+        18,
+        19
+      ],
+      "hitboxes_by_frame": {
+        "1": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 8,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 13.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ],
+        "2": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 8,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 13.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 8,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 13.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 8,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 13.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 8,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -3.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -9.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 8,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -3.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -9.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 13.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 13.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -3.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -9.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -3.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -9.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "rapid_jab"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 20.0,
+          "start_orig": 20.0,
+          "end_orig": 26.0,
+          "new_duration": 13.0,
+          "scale_factor": 2.1666666666666665
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 26.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "rapid_jab_finisher": {
+      "total_frames": 13,
+      "active_frames": [
+        3
+      ],
+      "hitboxes_by_frame": {
+        "3": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 11.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "rapid_jab_finisher"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 16.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "rapid_jab_finisher"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 22.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "rapid_jab_finisher"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 4.0,
+          "rate_value": 0.87
+        }
+      ]
+    },
+    "ftilt": {
+      "total_frames": 16,
+      "active_frames": [
+        5,
+        6
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 72,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 8.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 10.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 361,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 8.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 10.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.5,
+            "angle": 72,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 8.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 10.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.5,
+            "angle": 361,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 8.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 10.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 6.0,
+          "new_duration": 4.0,
+          "scale_factor": 0.8
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 6.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "utilt": {
+      "total_frames": 24,
+      "active_frames": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": 4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.2,
+              "z": -4.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "utilt"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 15.7,
+              "z": 2.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 20.5,
+              "z": 1.4
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 25.2,
+              "z": 0.9
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 6.0,
+            "angle": 95,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "utilt"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dtilt": {
+      "total_frames": 15,
+      "active_frames": [
+        4,
+        5
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 5.0,
+            "angle": 40,
+            "kbg": 116,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 2.1,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 2.5,
+              "z": 4.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 5.0,
+            "angle": 40,
+            "kbg": 116,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.2,
+            "offset": {
+              "x": 0.0,
+              "y": 1.3,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 2.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dtilt"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 5.0,
+            "angle": 40,
+            "kbg": 116,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 2.1,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 2.5,
+              "z": 4.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 5.0,
+            "angle": 40,
+            "kbg": 116,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.2,
+            "offset": {
+              "x": 0.0,
+              "y": 1.3,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 2.5,
+              "z": 6.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dtilt"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 3.0,
+          "new_duration": 3.0,
+          "scale_factor": 1.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 3.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 10.0,
+          "rate_value": 0.75
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 22.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "fsmash": {
+      "total_frames": 36,
+      "active_frames": [
+        24,
+        25,
+        26
+      ],
+      "hitboxes_by_frame": {
+        "24": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 112,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 17.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fsmash"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 112,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 17.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fsmash"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 112,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 13.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 17.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fsmash"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "usmash": {
+      "total_frames": 28,
+      "active_frames": [
+        8,
+        9,
+        11,
+        12,
+        13,
+        17,
+        18
+      ],
+      "hitboxes_by_frame": {
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 4.0,
+            "angle": 366,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": -3.8
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": 3.2
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 4.0,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": -10.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 4.0,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": 8.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 4.0,
+            "angle": 366,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": -3.8
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": 3.2
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 4.0,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": -10.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 4.0,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": 8.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 3.0,
+            "angle": 366,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": -3.8
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": 3.2
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 3.0,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": -10.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 3.0,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": 8.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 3.0,
+            "angle": 366,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": -3.8
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": 3.2
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 3.0,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": -10.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 3.0,
+            "angle": 130,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": 8.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 5.0,
+            "angle": 83,
+            "kbg": 177,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -10.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 5.0,
+            "angle": 83,
+            "kbg": 177,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 8.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 175,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": -3.8
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": 3.2
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "usmash"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 5.0,
+            "angle": 83,
+            "kbg": 177,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": -10.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 5.0,
+            "angle": 83,
+            "kbg": 177,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 17.0,
+              "z": 8.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "usmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 175,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": -3.8
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 20.0,
+              "z": 3.2
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "usmash"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "damage": 4.0,
+            "angle": 96,
+            "kbg": 100,
+            "fkb": 120,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 1.0
+            },
+            "is_capsule": true,
+            "real_frame": 11,
+            "animation_frame": 11.0
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "damage": 4.0,
+            "angle": 96,
+            "kbg": 100,
+            "fkb": 120,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "real_frame": 11,
+            "animation_frame": 11.0
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dsmash": {
+      "total_frames": 20,
+      "active_frames": [
+        4,
+        5,
+        9,
+        10
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 13.0,
+            "angle": 35,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 9.8,
+              "z": 17.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dsmash"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 13.0,
+            "angle": 35,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 9.8,
+              "z": 17.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dsmash"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 13.0,
+            "angle": 35,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -9.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 13.0,
+            "angle": 35,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -15.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dsmash"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 13.0,
+            "angle": 35,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -9.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 13.0,
+            "angle": 35,
+            "kbg": 86,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": -15.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dsmash"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "nair": {
+      "total_frames": 30,
+      "active_frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "nair"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "fair": {
+      "total_frames": 22,
+      "active_frames": [
+        7,
+        8,
+        11,
+        12
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 11.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.5,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fair"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 11.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.5,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 11.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 11.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.5,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 11.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 11.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.5,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 9.0,
+          "new_duration": 6.0,
+          "scale_factor": 0.75
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 9.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 10.0,
+          "rate_value": 2.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 11.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "bair": {
+      "total_frames": 21,
+      "active_frames": [
+        10,
+        11
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 114,
+            "fkb": 0,
+            "bkb": 28,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": -11.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": -12.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 114,
+            "fkb": 0,
+            "bkb": 28,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 16.5,
+              "z": -9.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": -12.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 114,
+            "fkb": 0,
+            "bkb": 28,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.5,
+              "z": -6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": -11.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "bair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 114,
+            "fkb": 0,
+            "bkb": 28,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.5,
+              "z": -6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 16.5,
+              "z": -9.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "bair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 114,
+            "fkb": 0,
+            "bkb": 28,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": -11.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": -12.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 114,
+            "fkb": 0,
+            "bkb": 28,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 16.5,
+              "z": -9.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": -12.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 114,
+            "fkb": 0,
+            "bkb": 28,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.5,
+              "z": -6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": -11.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "bair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 114,
+            "fkb": 0,
+            "bkb": 28,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.5,
+              "z": -6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 16.5,
+              "z": -9.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "bair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "desired_rate",
+          "frame": 1.0,
+          "original_frames": 11.0,
+          "desired_frames": 9.0,
+          "scale_factor": 0.8181818181818182
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 12.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "uair": {
+      "total_frames": 13,
+      "active_frames": [
+        2,
+        3
+      ],
+      "hitboxes_by_frame": {
+        "2": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 4.0,
+            "angle": 67,
+            "kbg": 128,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.4,
+            "offset": {
+              "x": 0.0,
+              "y": 18.074,
+              "z": 0.844
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 17.032,
+              "z": -5.065
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 4.0,
+            "angle": 67,
+            "kbg": 128,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.4,
+            "offset": {
+              "x": 0.0,
+              "y": 18.074,
+              "z": 0.844
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 17.059,
+              "z": 6.608
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 4.0,
+            "angle": 67,
+            "kbg": 128,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.4,
+            "offset": {
+              "x": 0.0,
+              "y": 17.032,
+              "z": -5.065
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 14.107,
+              "z": -10.134
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 4.0,
+            "angle": 67,
+            "kbg": 128,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.4,
+            "offset": {
+              "x": 0.0,
+              "y": 14.107,
+              "z": -10.134
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 17.059,
+              "z": 6.608
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "uair"
+          }
+        ],
+        "3": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 67,
+            "kbg": 128,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.4,
+            "offset": {
+              "x": 0.0,
+              "y": 18.074,
+              "z": 0.844
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 17.032,
+              "z": -5.065
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 67,
+            "kbg": 128,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.4,
+            "offset": {
+              "x": 0.0,
+              "y": 18.074,
+              "z": 0.844
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 17.059,
+              "z": 6.608
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 67,
+            "kbg": 128,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.4,
+            "offset": {
+              "x": 0.0,
+              "y": 17.032,
+              "z": -5.065
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 14.107,
+              "z": -10.134
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "uair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 4.0,
+            "angle": 67,
+            "kbg": 128,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.4,
+            "offset": {
+              "x": 0.0,
+              "y": 14.107,
+              "z": -10.134
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 17.059,
+              "z": 6.608
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "uair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 0.25
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 4.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dair": {
+      "total_frames": 15,
+      "active_frames": [
+        4,
+        5
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 6.0,
+            "angle": 70,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": -4.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 6.0,
+            "angle": 70,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -4.5,
+              "z": 7.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 6.0,
+            "angle": 70,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": -4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -4.5,
+              "z": -9.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 6.0,
+            "angle": 70,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -4.5,
+              "z": -9.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -4.5,
+              "z": 7.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dair"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 6.0,
+            "angle": 70,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": -4.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 6.0,
+            "angle": 70,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -4.5,
+              "z": 7.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 6.0,
+            "angle": 70,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": -4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -4.5,
+              "z": -9.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 6.0,
+            "angle": 70,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -4.5,
+              "z": -9.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -4.5,
+              "z": 7.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dair"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dash_attack": {
+      "total_frames": 19,
+      "active_frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 8.0,
+            "angle": 60,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -9.3,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 8.0,
+            "angle": 60,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -9.3,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 8.0,
+            "angle": 60,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -9.3,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.0,
+            "angle": 60,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -9.3,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.0,
+            "angle": 60,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -9.3,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.0,
+            "angle": 60,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -9.3,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dash_attack"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 7.0,
+          "new_duration": 3.0,
+          "scale_factor": 0.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 7.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "grab": {
+      "total_frames": 18,
+      "active_frames": [
+        7,
+        8
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "grab",
+            "is_grab": true
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 9.0,
+          "rate_value": 1.217
+        }
+      ]
+    },
+    "dash_grab": {
+      "total_frames": 22,
+      "active_frames": [
+        11,
+        12
+      ],
+      "hitboxes_by_frame": {
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 9.1
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 9.1
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 13.0,
+          "rate_value": 1.18
+        }
+      ]
+    },
+    "pivot_grab": {
+      "total_frames": 23,
+      "active_frames": [
+        12,
+        13
+      ],
+      "hitboxes_by_frame": {
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": -4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": -13.8
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "pivot_grab",
+            "is_grab": true
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": -4.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": -13.8
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "pivot_grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 14.0,
+          "rate_value": 1.08
+        }
+      ]
+    },
+    "pummel": {
+      "total_frames": 11,
+      "active_frames": [
+        1
+      ],
+      "hitboxes_by_frame": {
+        "1": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 1.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 9.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "pummel"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "fthrow": {
+      "total_frames": 20,
+      "active_frames": [
+        8,
+        9,
+        10
+      ],
+      "hitboxes_by_frame": {
+        "8": [
+          {
+            "id": 0,
+            "bone": "toer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.0,
+            "angle": 40,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 6.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "fthrow"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "toer",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.0,
+            "angle": 60,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 6.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "fthrow"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.0,
+            "angle": 60,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 10.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "fthrow"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 3.0,
+            "angle": 65,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "metaknight",
+            "move": "fthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "bthrow": {
+      "total_frames": 28,
+      "active_frames": [
+        16,
+        17,
+        18
+      ],
+      "hitboxes_by_frame": {
+        "16": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 75,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "bthrow"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 75,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 4.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "bthrow"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 75,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "bthrow"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 75,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 4.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "bthrow"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 3.0,
+            "angle": 45,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "metaknight",
+            "move": "bthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "uthrow": {
+      "total_frames": 56,
+      "active_frames": [
+        46
+      ],
+      "hitboxes_by_frame": {
+        "46": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 46.0,
+            "real_frame": 46,
+            "damage": 10.0,
+            "angle": 83,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "metaknight",
+            "move": "uthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dthrow": {
+      "total_frames": 70,
+      "active_frames": [
+        9,
+        10,
+        11,
+        59,
+        60
+      ],
+      "hitboxes_by_frame": {
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 0.5,
+            "angle": 270,
+            "kbg": 100,
+            "fkb": 10,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dthrow"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 0.5,
+            "angle": 270,
+            "kbg": 100,
+            "fkb": 10,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dthrow"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 0.5,
+            "angle": 270,
+            "kbg": 100,
+            "fkb": 10,
+            "bkb": 0,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dthrow"
+          }
+        ],
+        "59": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 59.0,
+            "real_frame": 59,
+            "damage": 1.0,
+            "angle": 80,
+            "kbg": 200,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dthrow"
+          }
+        ],
+        "60": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 60.0,
+            "real_frame": 60,
+            "damage": 2.0,
+            "angle": 60,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "metaknight",
+            "move": "dthrow"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 0.8
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 82.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "ftilt2": {
+      "total_frames": 13,
+      "active_frames": [
+        2,
+        3
+      ],
+      "hitboxes_by_frame": {
+        "2": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.5,
+            "angle": 72,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 7.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 7.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.5,
+            "angle": 72,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 16.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.5,
+            "angle": 361,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 7.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 7.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.5,
+            "angle": 361,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 16.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          }
+        ],
+        "3": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.5,
+            "angle": 72,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 7.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 7.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.5,
+            "angle": 72,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 16.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.5,
+            "angle": 361,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 7.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 7.5
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.5,
+            "angle": 361,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 23,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 16.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "ftilt3": {
+      "total_frames": 13,
+      "active_frames": [
+        2,
+        3
+      ],
+      "hitboxes_by_frame": {
+        "2": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 6.0,
+            "angle": 75,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 51,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 15.0,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 11.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 6.0,
+            "angle": 75,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 51,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.2,
+              "z": 14.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.2,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          }
+        ],
+        "3": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 6.0,
+            "angle": 75,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 51,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 15.0,
+              "z": 8.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 11.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 6.0,
+            "angle": 75,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 51,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.2,
+              "z": 14.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.2,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "ftilt"
+          }
+        ]
+      },
+      "motion_events": []
+    }
+  },
+  "generated_at": "2026-02-03T18:40:13.593834"
+}

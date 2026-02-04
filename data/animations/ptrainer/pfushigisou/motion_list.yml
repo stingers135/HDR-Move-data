@@ -1,0 +1,52 @@
+motion_path: fighter/ptrainer/motion/pfushigisou/c00
+list:
+  final:
+    game_script: game_final
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations:
+    - name: d04finalfushigisou.nuanmb
+      unk: 0
+    scripts:
+    - sound_final
+    - effect_final
+    extra: null
+  final_air:
+    game_script: game_finalair
+    flags:
+      turn: false
+      loop: false
+      move: false
+      fix_trans: false
+      fix_rot: false
+      fix_scale: false
+      unk_40: false
+      unk_80: false
+      unk_100: false
+      unk_200: false
+      unk_400: false
+      unk_800: false
+      unk_1000: false
+      unk_2000: false
+    blend_frames: 0
+    animations:
+    - name: d04finalairfushigisou.nuanmb
+      unk: 0
+    scripts:
+    - sound_finalair
+    - effect_finalair
+    extra: null

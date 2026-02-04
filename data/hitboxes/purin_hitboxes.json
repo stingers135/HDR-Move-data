@@ -1,0 +1,6702 @@
+{
+  "character": "purin",
+  "moves": {
+    "jab1": {
+      "total_frames": 16,
+      "active_frames": [
+        5,
+        6
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 44,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.8,
+              "z": 7.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 44,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.8,
+              "z": 10.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 44,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.8,
+              "z": 10.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 10.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "jab1"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 44,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.8,
+              "z": 7.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 44,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.8,
+              "z": 10.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 44,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.8,
+              "z": 10.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 10.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "jab1"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "jab2": {
+      "total_frames": 16,
+      "active_frames": [
+        5,
+        6
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 4.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "jab2"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.9,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 8.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "jab2"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 4.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "jab2"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 361,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.9,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 8.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "jab2"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 11.0,
+          "rate_value": 0.66
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 19.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "ftilt": {
+      "total_frames": 20,
+      "active_frames": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "ftilt"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "utilt": {
+      "total_frames": 23,
+      "active_frames": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "hitboxes_by_frame": {
+        "9": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 96,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.15,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "footr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 96,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 96,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.15,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "footr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 96,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 88,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.15,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "footr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 88,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.0,
+            "angle": 88,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.15,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "footr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.0,
+            "angle": 88,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.0,
+            "angle": 88,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.15,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "footr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.0,
+            "angle": 88,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.3,
+            "offset": {
+              "x": 0.0,
+              "y": -3.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "utilt"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dtilt": {
+      "total_frames": 22,
+      "active_frames": [
+        10,
+        11,
+        12
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 20,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": -8.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 20,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": -4.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dtilt"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 10.0,
+            "angle": 20,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dtilt"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 10.0,
+            "angle": 20,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": -8.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 10.0,
+            "angle": 20,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": -4.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dtilt"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 10.0,
+            "angle": 20,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dtilt"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 20,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": -8.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 20,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": -4.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dtilt"
+          },
+          {
+            "id": 2,
+            "bone": "footl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 20,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dtilt"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "fsmash": {
+      "total_frames": 34,
+      "active_frames": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "hitboxes_by_frame": {
+        "16": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 16.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "footl",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 85,
+            "fkb": 0,
+            "bkb": 6,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fsmash"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "usmash": {
+      "total_frames": 29,
+      "active_frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "hitboxes_by_frame": {
+        "16": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 15.0,
+            "angle": 87,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 4.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "head",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 15.0,
+            "angle": 87,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 4.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "usmash"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 15.0,
+            "angle": 87,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 4.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "head",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 15.0,
+            "angle": 87,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 4.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "usmash"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 15.0,
+            "angle": 87,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 4.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "head",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 15.0,
+            "angle": 87,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 4.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "usmash"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 15.0,
+            "angle": 87,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 4.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "head",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 15.0,
+            "angle": 87,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.0,
+            "offset": {
+              "x": 4.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "usmash"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dsmash": {
+      "total_frames": 26,
+      "active_frames": [
+        14,
+        15,
+        16
+      ],
+      "hitboxes_by_frame": {
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 11.0,
+            "angle": 12,
+            "kbg": 103,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -10.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 11.0,
+            "angle": 12,
+            "kbg": 103,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": -2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dsmash"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 11.0,
+            "angle": 12,
+            "kbg": 103,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -10.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 11.0,
+            "angle": 12,
+            "kbg": 103,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": -2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dsmash"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 11.0,
+            "angle": 12,
+            "kbg": 103,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -10.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 11.0,
+            "angle": 12,
+            "kbg": 103,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": -2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dsmash"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "nair": {
+      "total_frames": 40,
+      "active_frames": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.7,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 9.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "28": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "29": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ],
+        "30": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 30.0,
+            "real_frame": 30,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.0,
+              "z": 2.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 30.0,
+            "real_frame": 30,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "nair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 31.0,
+          "rate_value": 1.125
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 40.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "fair": {
+      "total_frames": 32,
+      "active_frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "hitboxes_by_frame": {
+        "8": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 104,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "footr",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "toer",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fair"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "bair": {
+      "total_frames": 22,
+      "active_frames": [
+        10,
+        11,
+        12
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 46,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.6,
+              "z": -12.6
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.6,
+              "z": -15.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 46,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 3.6,
+              "z": -7.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "bair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 46,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.6,
+              "z": -12.6
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.6,
+              "z": -15.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 46,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 3.6,
+              "z": -7.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "bair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 12.0,
+            "angle": 46,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.6,
+              "z": -12.6
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.6,
+              "z": -15.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 12.0,
+            "angle": 46,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 3.6,
+              "z": -7.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "bair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 1.0,
+          "rate_value": 0.8
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 10.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "uair": {
+      "total_frames": 27,
+      "active_frames": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hitboxes_by_frame": {
+        "9": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 7.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 7.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 7.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 7.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 7.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "offset": {
+              "x": 7.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 6.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 6.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 6.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 12.0,
+            "angle": 85,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "uair"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 9.0,
+          "start_orig": 9.0,
+          "end_orig": 20.0,
+          "new_duration": 6.0,
+          "scale_factor": 0.5454545454545454
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 20.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dair": {
+      "total_frames": 42,
+      "active_frames": [
+        7,
+        8,
+        10,
+        11,
+        13,
+        14,
+        16,
+        17,
+        19,
+        20,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        31,
+        32
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "28": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "29": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 1.5,
+            "angle": 145,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": -2.3,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": -1.3,
+              "z": 3.5
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 1.5,
+            "angle": 280,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "31": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 31.0,
+            "real_frame": 31,
+            "damage": 2.0,
+            "angle": 55,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.4,
+              "z": 3.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 31.0,
+            "real_frame": 31,
+            "damage": 2.0,
+            "angle": 55,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ],
+        "32": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 32.0,
+            "real_frame": 32,
+            "damage": 2.0,
+            "angle": 55,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": -2.4,
+              "z": 3.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 32.0,
+            "real_frame": 32,
+            "damage": 2.0,
+            "angle": 55,
+            "kbg": 140,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dair"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "dash_attack": {
+      "total_frames": 30,
+      "active_frames": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "rot",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.0,
+            "angle": 43,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 2.3,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "rot",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.0,
+            "angle": 43,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 2.3,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "rot",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 43,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 5.5,
+            "offset": {
+              "x": 0.0,
+              "y": 2.3,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "head",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 8,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dash_attack"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "grab": {
+      "total_frames": 18,
+      "active_frames": [
+        7,
+        8
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 8.35
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "grab",
+            "is_grab": true
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 0.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 8.35
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 1.0,
+          "rate_value": 1.2
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 6.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dash_grab": {
+      "total_frames": 20,
+      "active_frames": [
+        9,
+        10
+      ],
+      "hitboxes_by_frame": {
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 3.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 9.7
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 3.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": 9.7
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "pivot_grab": {
+      "total_frames": 21,
+      "active_frames": [
+        10,
+        11
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": -3.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": -14.8
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "pivot_grab",
+            "is_grab": true
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": -3.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.2,
+              "z": -14.8
+            },
+            "is_capsule": true,
+            "character": "purin",
+            "move": "pivot_grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "pummel": {
+      "total_frames": 12,
+      "active_frames": [
+        1,
+        2
+      ],
+      "hitboxes_by_frame": {
+        "1": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 1.3,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 5.7,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 12.8
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "pummel"
+          }
+        ],
+        "2": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.3,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 5.7,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 12.8
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "pummel"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "fthrow": {
+      "total_frames": 22,
+      "active_frames": [
+        10,
+        11,
+        12
+      ],
+      "hitboxes_by_frame": {
+        "10": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 5.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 10.6,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fthrow"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "bust",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 5.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 10.6,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "fthrow"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 5.0,
+            "angle": 45,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 103,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "fthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "bthrow": {
+      "total_frames": 45,
+      "active_frames": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "hitboxes_by_frame": {
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ],
+        "28": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ],
+        "29": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ],
+        "30": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 30.0,
+            "real_frame": 30,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ],
+        "31": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 31.0,
+            "real_frame": 31,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ],
+        "32": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 32.0,
+            "real_frame": 32,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ],
+        "33": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 33.0,
+            "real_frame": 33,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ],
+        "34": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 34.0,
+            "real_frame": 34,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ],
+        "35": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 35.0,
+            "real_frame": 35,
+            "damage": 10.0,
+            "angle": 135,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "bthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    },
+    "uthrow": {
+      "total_frames": 28,
+      "active_frames": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "hitboxes_by_frame": {
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 115,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "uthrow"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 35.0,
+          "rate_value": 0.14285714285714285
+        }
+      ]
+    },
+    "dthrow": {
+      "total_frames": 72,
+      "active_frames": [
+        60,
+        61,
+        62
+      ],
+      "hitboxes_by_frame": {
+        "60": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 60.0,
+            "real_frame": 60,
+            "damage": 6.0,
+            "angle": 35,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 3.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dthrow"
+          }
+        ],
+        "61": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 61.0,
+            "real_frame": 61,
+            "damage": 6.0,
+            "angle": 35,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 10,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 3.2
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "purin",
+            "move": "dthrow"
+          }
+        ],
+        "62": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 62.0,
+            "real_frame": 62,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "purin",
+            "move": "dthrow"
+          }
+        ]
+      },
+      "motion_events": []
+    }
+  },
+  "generated_at": "2026-02-03T18:40:11.807112"
+}

@@ -3,100 +3,829 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HDR Move Data - Homepage</title>
+    <title>HDR Frame Data</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 960px;
-            margin: 30px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #007bff;
-            text-align: center;
-            margin-bottom: 25px;
-            font-size: 2.5em;
-        }
-        p {
-            text-align: center;
-            font-size: 1.1em;
-            margin-bottom: 30px;
-        }
-        .nav-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            background-color: #e9f5ff;
-            border-radius: 8px;
-        }
-        .nav-item {
-            background-color: #007bff;
-            border-radius: 5px;
-            text-align: center;
-            padding: 15px 10px;
-            transition: background-color 0.3s ease;
-        }
-        .nav-item:hover {
-            background-color: #0056b3;
-        }
 
-        .nav-item-wip {
-            background-color: #dc3545; 
-        }
-        .nav-item-wip:hover {
-            background-color: #c82333;
-        }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-        .nav-item a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em;
-            display: block;
-        }
+:root {
+    --hdr-green: #00cc44;
+    --hdr-green-dark: #00aa33;
+    --hdr-green-glow: rgba(0, 204, 68, 0.3);
+    --hdr-bg-dark: #0a0a0a;
+    --hdr-bg-lighter: #141414;
+    --hdr-bg-card: #1a1a1a;
+    --hdr-border: #2a2a2a;
+    --hdr-text: #e0e0e0;
+    --hdr-text-dim: #888;
+}
 
-        .wip-disclaimer {
-            text-align: center;
-            font-size: 0.95em;
-            color: #dc3545;
-            margin-top: -15px;
-            margin-bottom: 30px;
-            font-weight: bold;
-        }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--hdr-bg-dark);
+    min-height: 100vh;
+    color: var(--hdr-text);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: var(--hdr-green);
+    text-shadow: 0 0 20px var(--hdr-green-glow), 0 0 40px var(--hdr-green-glow);
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header p {
+    color: var(--hdr-text-dim);
+    font-size: 1.1em;
+}
+
+/* Navigation */
+.nav-bar {
+    background: var(--hdr-bg-lighter);
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    border: 1px solid var(--hdr-border);
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+    border: 1px solid var(--hdr-green);
+    border-radius: 4px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    background: var(--hdr-green);
+    color: #000;
+    box-shadow: 0 0 15px var(--hdr-green-glow);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: var(--hdr-green);
+    color: #000;
+    font-weight: bold;
+}
+
+/* Character Grid */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.character-card {
+    background: var(--hdr-bg-card);
+    border-radius: 4px;
+    padding: 15px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+    border: 1px solid var(--hdr-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+}
+
+.character-card .sprite {
+    width: 56px;
+    height: 48px;
+    background-image: url('sprites.png');
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.character-card:hover {
+    background: linear-gradient(180deg, #1f1f1f 0%, #141414 100%);
+    border-color: var(--hdr-green);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 15px var(--hdr-green-glow);
+}
+
+.character-card:hover .sprite {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.character-card .name {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Section Headers */
+.section-header {
+    background: linear-gradient(90deg, var(--hdr-green) 0%, transparent 100%);
+    padding: 15px 20px;
+    border-radius: 4px 4px 0 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h2 {
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Tables */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--hdr-bg-card);
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    border: 1px solid var(--hdr-border);
+    border-top: none;
+}
+
+.data-table th {
+    background: var(--hdr-bg-lighter);
+    color: var(--hdr-green);
+    padding: 12px 10px;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--hdr-green);
+}
+
+.data-table th:hover {
+    background: #1f1f1f;
+}
+
+.data-table td {
+    padding: 10px;
+    border-bottom: 1px solid var(--hdr-border);
+}
+
+.data-table tr:hover {
+    background: rgba(0, 204, 68, 0.05);
+}
+
+.data-table .move-name {
+    font-weight: bold;
+    color: var(--hdr-green);
+}
+
+.data-table .damage { color: #ff4444; font-weight: bold; }
+.data-table .frame { color: #4db8ff; }
+.data-table .angle { color: #ffaa00; }
+.data-table .advantage { color: var(--hdr-green); font-weight: bold; }
+.data-table .disadvantage { color: #ff4444; font-weight: bold; }
+
+/* View Button */
+.view-btn {
+    background: linear-gradient(180deg, var(--hdr-green) 0%, var(--hdr-green-dark) 100%);
+    color: #000;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: bold;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.view-btn:hover {
+    box-shadow: 0 0 15px var(--hdr-green-glow);
+    transform: scale(1.05);
+}
+
+.view-btn:disabled {
+    background: #333;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--hdr-green);
+    text-decoration: none;
+    padding: 10px 20px;
+    background: var(--hdr-bg-card);
+    border: 1px solid var(--hdr-green);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.back-btn:hover {
+    background: var(--hdr-green);
+    color: #000;
+    box-shadow: 0 0 15px var(--hdr-green-glow);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    color: var(--hdr-text-dim);
+    border-top: 1px solid var(--hdr-border);
+}
+
+.footer a {
+    color: var(--hdr-green);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .character-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .data-table {
+        font-size: 0.85em;
+    }
+    
+    .data-table th, .data-table td {
+        padding: 8px 5px;
+    }
+}
+
+
+/* Additional index page styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-title {
+    text-align: center;
+    flex: 1;
+}
+
+.header-title h1 {
+    margin: 0;
+}
+
+.header-title p {
+    margin: 10px 0 0 0;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--hdr-green);
+    text-decoration: none;
+    padding: 10px 20px;
+    background: var(--hdr-bg-card);
+    border: 1px solid var(--hdr-green);
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.nav-link:hover {
+    background: var(--hdr-green);
+    color: #000;
+    box-shadow: 0 0 15px var(--hdr-green-glow);
+    transform: translateY(-2px);
+}
+
+.nav-link .icon {
+    font-size: 1.2em;
+}
+
+/* Spacer to balance the layout */
+.header-spacer {
+    width: 140px;  /* Approximate width of the nav-link button */
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+    .header-spacer {
+        display: none;
+    }
+}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to HDR Move Data</h1>
-        <p>Explore detailed attack data and frame information for various characters in HewDraw Remix. Damage and knockback values shown are the strongest hit for the attack (should be the finishing hit for multihits). For throws, the combined damage of all hitboxes that connect is shown instead. Frame values shown are the first frame of the attack.</p>
-		<p><span style="color: #dc3545; text-decoration: underline;">"Characters Found in Fallback Location"</span> means that the data that is used in HDR is the same as base Ultimate.</p>
-		
-        <div class="nav-grid">
-			<div class="nav-item"><a href="fighter_stats.html">Fighter Stats</a></div>
-            <div class="nav-item"><a href="jabs_attacks.html">Jab Attacks</a></div>
-            <div class="nav-item"><a href="tilts_attacks.html">Tilt Attacks</a></div>
-            <div class="nav-item"><a href="smashes_attacks.html">Smash Attacks</a></div>
-            <div class="nav-item"><a href="aerials_attacks.html">Aerial Attacks</a></div>
-            <div class="nav-item"><a href="dash_attacks.html">Dash Attack</a></div>
-            <div class="nav-item"><a href="grabs_attacks.html">Throws</a></div>
-            <div class="nav-item nav-item-wip"><a href="specials_attacks.html">Special Attacks</a></div>
+        <div class="header">
+            <div class="header-spacer"></div>
+            <div class="header-title">
+                <h1>HDR Frame Data</h1>
+                <p>Select a character to view their complete move data</p>
+            </div>
+            <a href="fighter_stats.html" class="nav-link">
+                <span class="icon">📊</span>
+                <span>Fighter Stats</span>
+            </a>
         </div>
+        
+        <div class="character-grid">
 
-        <p class="wip-disclaimer">
-            *Note: Special Attacks data is not actively being worked on and should be used with extreme caution.
-        </p>
+            <a href="characters/buddy.html" class="character-card">
+                <div class="sprite" style="background-position: -392px -252px;"></div>
+                <div class="name">Banjo & Kazooie</div>
+            </a>
 
-        <p style="margin-top: 40px; font-size: 0.9em; color: #666;">Data scraped from game scripts, cannot guarantee 100% accuracy. Last updated 12/17/25.</p>
+            <a href="characters/bayonetta.html" class="character-card">
+                <div class="sprite" style="background-position: -448px -192px;"></div>
+                <div class="name">Bayonetta</div>
+            </a>
+
+            <a href="characters/koopa.html" class="character-card">
+                <div class="sprite" style="background-position: -728px -12px;"></div>
+                <div class="name">Bowser</div>
+            </a>
+
+            <a href="characters/koopajr.html" class="character-card">
+                <div class="sprite" style="background-position: -168px -192px;"></div>
+                <div class="name">Bowser Jr.</div>
+            </a>
+
+            <a href="characters/master.html" class="character-card">
+                <div class="sprite" style="background-position: -504px -252px;"></div>
+                <div class="name">Byleth</div>
+            </a>
+
+            <a href="characters/captain.html" class="character-card">
+                <div class="sprite" style="background-position: -560px -12px;"></div>
+                <div class="name">Captain Falcon</div>
+            </a>
+
+            <a href="characters/plizardon.html" class="character-card">
+                <div class="sprite" style="background-position: -896px -72px;"></div>
+                <div class="name">Charizard</div>
+            </a>
+
+            <a href="characters/chrom.html" class="character-card">
+                <div class="sprite" style="background-position: 0px -252px;"></div>
+                <div class="name">Chrom</div>
+            </a>
+
+            <a href="characters/cloud.html" class="character-card">
+                <div class="sprite" style="background-position: -336px -192px;"></div>
+                <div class="name">Cloud</div>
+            </a>
+
+            <a href="characters/kamui.html" class="character-card">
+                <div class="sprite" style="background-position: -392px -192px;"></div>
+                <div class="name">Corrin</div>
+            </a>
+
+            <a href="characters/daisy.html" class="character-card">
+                <div class="sprite" style="background-position: -896px -192px;"></div>
+                <div class="name">Daisy</div>
+            </a>
+
+            <a href="characters/pitb.html" class="character-card">
+                <div class="sprite" style="background-position: -56px -252px;"></div>
+                <div class="name">Dark Pit</div>
+            </a>
+
+            <a href="characters/samusd.html" class="character-card">
+                <div class="sprite" style="background-position: -840px -192px;"></div>
+                <div class="name">Dark Samus</div>
+            </a>
+
+            <a href="characters/diddy.html" class="character-card">
+                <div class="sprite" style="background-position: -952px -72px;"></div>
+                <div class="name">Diddy Kong</div>
+            </a>
+
+            <a href="characters/donkey.html" class="character-card">
+                <div class="sprite" style="background-position: -56px -12px;"></div>
+                <div class="name">Donkey Kong</div>
+            </a>
+
+            <a href="characters/mariod.html" class="character-card">
+                <div class="sprite" style="background-position: -952px -12px;"></div>
+                <div class="name">Dr. Mario</div>
+            </a>
+
+            <a href="characters/duckhunt.html" class="character-card">
+                <div class="sprite" style="background-position: -224px -192px;"></div>
+                <div class="name">Duck Hunt</div>
+            </a>
+
+            <a href="characters/falco.html" class="character-card">
+                <div class="sprite" style="background-position: -56px -72px;"></div>
+                <div class="name">Falco</div>
+            </a>
+
+            <a href="characters/fox.html" class="character-card">
+                <div class="sprite" style="background-position: -336px -12px;"></div>
+                <div class="name">Fox</div>
+            </a>
+
+            <a href="characters/ganon.html" class="character-card">
+                <div class="sprite" style="background-position: -224px -72px;"></div>
+                <div class="name">Ganondorf</div>
+            </a>
+
+            <a href="characters/gekkouga.html" class="character-card">
+                <div class="sprite" style="background-position: -728px -132px;"></div>
+                <div class="name">Greninja</div>
+            </a>
+
+            <a href="characters/brave.html" class="character-card">
+                <div class="sprite" style="background-position: -336px -252px;"></div>
+                <div class="name">Hero</div>
+            </a>
+
+            <a href="characters/nana.html" class="character-card">
+                <div class="sprite" style="background-position: -784px -12px;"></div>
+                <div class="name">Ice Climbers</div>
+            </a>
+
+            <a href="characters/ike.html" class="character-card">
+                <div class="sprite" style="background-position: -728px -72px;"></div>
+                <div class="name">Ike</div>
+            </a>
+
+            <a href="characters/gaogaen.html" class="character-card">
+                <div class="sprite" style="background-position: -784px -192px;"></div>
+                <div class="name">Incineroar</div>
+            </a>
+
+            <a href="characters/inkling.html" class="character-card">
+                <div class="sprite" style="background-position: -504px -192px;"></div>
+                <div class="name">Inkling</div>
+            </a>
+
+            <a href="characters/shizue.html" class="character-card">
+                <div class="sprite" style="background-position: -728px -192px;"></div>
+                <div class="name">Isabelle</div>
+            </a>
+
+            <a href="characters/pfushigisou.html" class="character-card">
+                <div class="sprite" style="background-position: -840px -72px;"></div>
+                <div class="name">Ivysaur</div>
+            </a>
+
+            <a href="characters/purin.html" class="character-card">
+                <div class="sprite" style="background-position: -616px -12px;"></div>
+                <div class="name">Jigglypuff</div>
+            </a>
+
+            <a href="characters/jack.html" class="character-card">
+                <div class="sprite" style="background-position: -280px -252px;"></div>
+                <div class="name">Joker</div>
+            </a>
+
+            <a href="characters/demon.html" class="character-card">
+                <div class="sprite" style="background-position: -840px -252px;"></div>
+                <div class="name">Kazuya</div>
+            </a>
+
+            <a href="characters/ken.html" class="character-card">
+                <div class="sprite" style="background-position: -112px -252px;"></div>
+                <div class="name">Ken</div>
+            </a>
+
+            <a href="characters/dedede.html" class="character-card">
+                <div class="sprite" style="background-position: -112px -132px;"></div>
+                <div class="name">King Dedede</div>
+            </a>
+
+            <a href="characters/krool.html" class="character-card">
+                <div class="sprite" style="background-position: -672px -192px;"></div>
+                <div class="name">King K. Rool</div>
+            </a>
+
+            <a href="characters/kirby.html" class="character-card">
+                <div class="sprite" style="background-position: -280px -12px;"></div>
+                <div class="name">Kirby</div>
+            </a>
+
+            <a href="characters/link.html" class="character-card">
+                <div class="sprite" style="background-position: -112px -12px;"></div>
+                <div class="name">Link</div>
+            </a>
+
+            <a href="characters/littlemac.html" class="character-card">
+                <div class="sprite" style="background-position: -672px -132px;"></div>
+                <div class="name">Little Mac</div>
+            </a>
+
+            <a href="characters/lucario.html" class="character-card">
+                <div class="sprite" style="background-position: -224px -132px;"></div>
+                <div class="name">Lucario</div>
+            </a>
+
+            <a href="characters/lucas.html" class="character-card">
+                <div class="sprite" style="background-position: 0px -132px;"></div>
+                <div class="name">Lucas</div>
+            </a>
+
+            <a href="characters/lucina.html" class="character-card">
+                <div class="sprite" style="background-position: -952px -192px;"></div>
+                <div class="name">Lucina</div>
+            </a>
+
+            <a href="characters/luigi.html" class="character-card">
+                <div class="sprite" style="background-position: -448px -12px;"></div>
+                <div class="name">Luigi</div>
+            </a>
+
+            <a href="characters/mario.html" class="character-card">
+                <div class="sprite" style="background-position: 0px -12px;"></div>
+                <div class="name">Mario</div>
+            </a>
+
+            <a href="characters/marth.html" class="character-card">
+                <div class="sprite" style="background-position: -112px -72px;"></div>
+                <div class="name">Marth</div>
+            </a>
+
+            <a href="characters/rockman.html" class="character-card">
+                <div class="sprite" style="background-position: -504px -132px;"></div>
+                <div class="name">Mega Man</div>
+            </a>
+
+            <a href="characters/metaknight.html" class="character-card">
+                <div class="sprite" style="background-position: -448px -72px;"></div>
+                <div class="name">Meta Knight</div>
+            </a>
+
+            <a href="characters/mewtwo.html" class="character-card">
+                <div class="sprite" style="background-position: -280px -72px;"></div>
+                <div class="name">Mewtwo</div>
+            </a>
+
+            <a href="characters/miifighter.html" class="character-card">
+                <div class="sprite" style="background-position: -784px -132px;"></div>
+                <div class="name">Mii Brawler</div>
+            </a>
+
+            <a href="characters/miigunner.html" class="character-card">
+                <div class="sprite" style="background-position: -896px -132px;"></div>
+                <div class="name">Mii Gunner</div>
+            </a>
+
+            <a href="characters/miiswordsman.html" class="character-card">
+                <div class="sprite" style="background-position: -840px -132px;"></div>
+                <div class="name">Mii Swordfighter</div>
+            </a>
+
+            <a href="characters/tantan.html" class="character-card">
+                <div class="sprite" style="background-position: -560px -252px;"></div>
+                <div class="name">Min Min</div>
+            </a>
+
+            <a href="characters/gamewatch.html" class="character-card">
+                <div class="sprite" style="background-position: -392px -72px;"></div>
+                <div class="name">Mr. Game & Watch</div>
+            </a>
+
+            <a href="characters/elight.html" class="character-card">
+                <div class="sprite" style="background-position: -784px -252px;"></div>
+                <div class="name">Mythra</div>
+            </a>
+
+            <a href="characters/ness.html" class="character-card">
+                <div class="sprite" style="background-position: -504px -12px;"></div>
+                <div class="name">Ness</div>
+            </a>
+
+            <a href="characters/pikmin.html" class="character-card">
+                <div class="sprite" style="background-position: -168px -132px;"></div>
+                <div class="name">Olimar</div>
+            </a>
+
+            <a href="characters/pacman.html" class="character-card">
+                <div class="sprite" style="background-position: 0px -192px;"></div>
+                <div class="name">Pac-Man</div>
+            </a>
+
+            <a href="characters/palutena.html" class="character-card">
+                <div class="sprite" style="background-position: -952px -132px;"></div>
+                <div class="name">Palutena</div>
+            </a>
+
+            <a href="characters/peach.html" class="character-card">
+                <div class="sprite" style="background-position: -672px -12px;"></div>
+                <div class="name">Peach</div>
+            </a>
+
+            <a href="characters/pichu.html" class="character-card">
+                <div class="sprite" style="background-position: 0px -72px;"></div>
+                <div class="name">Pichu</div>
+            </a>
+
+            <a href="characters/pikachu.html" class="character-card">
+                <div class="sprite" style="background-position: -392px -12px;"></div>
+                <div class="name">Pikachu</div>
+            </a>
+
+            <a href="characters/packun.html" class="character-card">
+                <div class="sprite" style="background-position: -224px -252px;"></div>
+                <div class="name">Piranha Plant</div>
+            </a>
+
+            <a href="characters/pit.html" class="character-card">
+                <div class="sprite" style="background-position: -504px -72px;"></div>
+                <div class="name">Pit</div>
+            </a>
+
+            <a href="characters/eflame.html" class="character-card">
+                <div class="sprite" style="background-position: -728px -252px;"></div>
+                <div class="name">Pyra</div>
+            </a>
+
+            <a href="characters/robot.html" class="character-card">
+                <div class="sprite" style="background-position: -280px -132px;"></div>
+                <div class="name">R.O.B.</div>
+            </a>
+
+            <a href="characters/richter.html" class="character-card">
+                <div class="sprite" style="background-position: -168px -252px;"></div>
+                <div class="name">Richter</div>
+            </a>
+
+            <a href="characters/ridley.html" class="character-card">
+                <div class="sprite" style="background-position: -560px -192px;"></div>
+                <div class="name">Ridley</div>
+            </a>
+
+            <a href="characters/reflet.html" class="character-card">
+                <div class="sprite" style="background-position: -56px -192px;"></div>
+                <div class="name">Robin</div>
+            </a>
+
+            <a href="characters/rosetta.html" class="character-card">
+                <div class="sprite" style="background-position: -616px -132px;"></div>
+                <div class="name">Rosalina & Luma</div>
+            </a>
+
+            <a href="characters/roy.html" class="character-card">
+                <div class="sprite" style="background-position: -336px -72px;"></div>
+                <div class="name">Roy</div>
+            </a>
+
+            <a href="characters/ryu.html" class="character-card">
+                <div class="sprite" style="background-position: -280px -192px;"></div>
+                <div class="name">Ryu</div>
+            </a>
+
+            <a href="characters/samus.html" class="character-card">
+                <div class="sprite" style="background-position: -168px -12px;"></div>
+                <div class="name">Samus</div>
+            </a>
+
+            <a href="characters/edge.html" class="character-card">
+                <div class="sprite" style="background-position: -672px -252px;"></div>
+                <div class="name">Sephiroth</div>
+            </a>
+
+            <a href="characters/sheik.html" class="character-card">
+                <div class="sprite" style="background-position: -840px -12px;"></div>
+                <div class="name">Sheik</div>
+            </a>
+
+            <a href="characters/shulk.html" class="character-card">
+                <div class="sprite" style="background-position: -112px -192px;"></div>
+                <div class="name">Shulk</div>
+            </a>
+
+            <a href="characters/simon.html" class="character-card">
+                <div class="sprite" style="background-position: -616px -192px;"></div>
+                <div class="name">Simon</div>
+            </a>
+
+            <a href="characters/snake.html" class="character-card">
+                <div class="sprite" style="background-position: -672px -72px;"></div>
+                <div class="name">Snake</div>
+            </a>
+
+            <a href="characters/sonic.html" class="character-card">
+                <div class="sprite" style="background-position: -56px -132px;"></div>
+                <div class="name">Sonic</div>
+            </a>
+
+            <a href="characters/trail.html" class="character-card">
+                <div class="sprite" style="background-position: -896px -252px;"></div>
+                <div class="name">Sora</div>
+            </a>
+
+            <a href="characters/pzenigame.html" class="character-card">
+                <div class="sprite" style="background-position: -784px -72px;"></div>
+                <div class="name">Squirtle</div>
+            </a>
+
+            <a href="characters/pickel.html" class="character-card">
+                <div class="sprite" style="background-position: -616px -252px;"></div>
+                <div class="name">Steve</div>
+            </a>
+
+            <a href="characters/dolly.html" class="character-card">
+                <div class="sprite" style="background-position: -448px -252px;"></div>
+                <div class="name">Terry</div>
+            </a>
+
+            <a href="characters/toonlink.html" class="character-card">
+                <div class="sprite" style="background-position: -336px -132px;"></div>
+                <div class="name">Toon Link</div>
+            </a>
+
+            <a href="characters/murabito.html" class="character-card">
+                <div class="sprite" style="background-position: -448px -132px;"></div>
+                <div class="name">Villager</div>
+            </a>
+
+            <a href="characters/wario.html" class="character-card">
+                <div class="sprite" style="background-position: -616px -72px;"></div>
+                <div class="name">Wario</div>
+            </a>
+
+            <a href="characters/wiifit.html" class="character-card">
+                <div class="sprite" style="background-position: -560px -132px;"></div>
+                <div class="name">Wii Fit Trainer</div>
+            </a>
+
+            <a href="characters/wolf.html" class="character-card">
+                <div class="sprite" style="background-position: -392px -132px;"></div>
+                <div class="name">Wolf</div>
+            </a>
+
+            <a href="characters/yoshi.html" class="character-card">
+                <div class="sprite" style="background-position: -224px -12px;"></div>
+                <div class="name">Yoshi</div>
+            </a>
+
+            <a href="characters/younglink.html" class="character-card">
+                <div class="sprite" style="background-position: -168px -72px;"></div>
+                <div class="name">Young Link</div>
+            </a>
+
+            <a href="characters/zelda.html" class="character-card">
+                <div class="sprite" style="background-position: -896px -12px;"></div>
+                <div class="name">Zelda</div>
+            </a>
+
+            <a href="characters/szerosuit.html" class="character-card">
+                <div class="sprite" style="background-position: -560px -72px;"></div>
+                <div class="name">Zero Suit Samus</div>
+            </a>
+
+        </div>
+        
+        <div class="footer">
+            <p>Generated on 2026-02-03 19:07:15</p>
+            <p>HDR Frame Data Viewer</p>
+            <p style="margin-top: 10px; font-size: 0.85em;">Character sprites by <a href="https://www.deviantart.com/icejkai" style="color: var(--hdr-green);">IceJkai</a></p>
+        </div>
     </div>
 </body>
 </html>

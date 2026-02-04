@@ -1,0 +1,200 @@
+[
+  {
+    "id": 0,
+    "bone_name": "Waist",
+    "start": {
+      "x": 1.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "end": {
+      "x": 1.5,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "radius": 2.0,
+    "part": "collision_part_body",
+    "height": "hit_height_center",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 1,
+    "bone_name": "Head",
+    "start": {
+      "x": 2.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "end": {
+      "x": 2.0,
+      "y": -1.0,
+      "z": 0.0
+    },
+    "radius": 3.0,
+    "part": "collision_part_head",
+    "height": "hit_height_high",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 2,
+    "bone_name": "KneeR",
+    "start": {
+      "x": 0.0,
+      "y": 0.3,
+      "z": 0.0
+    },
+    "end": {
+      "x": 1.5,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "radius": 1.0,
+    "part": "collision_part_body_legs",
+    "height": "hit_height_low",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 3,
+    "bone_name": "KneeL",
+    "start": {
+      "x": 0.0,
+      "y": 0.3,
+      "z": 0.0
+    },
+    "end": {
+      "x": 1.5,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "radius": 1.0,
+    "part": "collision_part_body_legs",
+    "height": "hit_height_low",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 4,
+    "bone_name": "Hip",
+    "start": {
+      "x": -0.5,
+      "y": 0.0,
+      "z": 0.1
+    },
+    "end": {
+      "x": -0.5,
+      "y": 0.0,
+      "z": -0.1
+    },
+    "radius": 1.8,
+    "part": "collision_part_body_legs",
+    "height": "hit_height_center",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 5,
+    "bone_name": "ShoulderR",
+    "start": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "end": {
+      "x": 2.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "radius": 1.0,
+    "part": "collision_part_body",
+    "height": "hit_height_center",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 6,
+    "bone_name": "ShoulderL",
+    "start": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "end": {
+      "x": 2.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "radius": 1.0,
+    "part": "collision_part_body",
+    "height": "hit_height_center",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 7,
+    "bone_name": "ArmR",
+    "start": {
+      "x": 0.0,
+      "y": 0.3,
+      "z": 0.0
+    },
+    "end": {
+      "x": 2.3,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "radius": 1.0,
+    "part": "collision_part_etc",
+    "height": "hit_height_center",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 8,
+    "bone_name": "ArmL",
+    "start": {
+      "x": 0.0,
+      "y": 0.3,
+      "z": 0.0
+    },
+    "end": {
+      "x": 2.3,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "radius": 1.0,
+    "part": "collision_part_etc",
+    "height": "hit_height_center",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 9,
+    "bone_name": "LegR",
+    "start": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "end": {
+      "x": 2.7,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "radius": 1.0,
+    "part": "collision_part_body_legs",
+    "height": "hit_height_low",
+    "status": "hit_status_normal"
+  },
+  {
+    "id": 10,
+    "bone_name": "LegL",
+    "start": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "end": {
+      "x": 2.7,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "radius": 1.0,
+    "part": "collision_part_body_legs",
+    "height": "hit_height_low",
+    "status": "hit_status_normal"
+  }
+]
