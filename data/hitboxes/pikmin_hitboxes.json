@@ -2695,29 +2695,24 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 1.0
-        },
-        {
           "type": "range",
           "frame": 2.0,
           "start_orig": 2.0,
-          "end_orig": 6.0,
-          "new_duration": 2.0,
-          "scale_factor": 0.5
+          "end_orig": 7.0,
+          "new_duration": 3.0,
+          "scale_factor": 0.6
         },
         {
           "type": "range",
-          "frame": 6.0,
-          "start_orig": 6.0,
-          "end_orig": 22.0,
+          "frame": 7.0,
+          "start_orig": 7.0,
+          "end_orig": 23.0,
           "new_duration": 20.0,
           "scale_factor": 1.25
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 22.0,
+          "frame": 23.0,
           "rate_value": 1.0
         }
       ],
@@ -2911,12 +2906,20 @@
       },
       "motion_events": [
         {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 3.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.5
+        },
+        {
           "type": "FT_MOTION_RATE",
-          "frame": 0.0,
+          "frame": 3.0,
           "rate_value": 1.0
         }
       ],
-      "faf": 30
+      "faf": 29
     },
     "bair": {
       "total_frames": 57,
@@ -3751,12 +3754,20 @@
       },
       "motion_events": [
         {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 3.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.5
+        },
+        {
           "type": "FT_MOTION_RATE",
-          "frame": 0.0,
+          "frame": 3.0,
           "rate_value": 1.0
         }
       ],
-      "faf": 34
+      "faf": 33
     },
     "dair": {
       "total_frames": 59,
@@ -6080,5 +6091,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-02-04T15:43:17.197262"
+  "generated_at": "2026-02-04T17:51:04.211713"
 }

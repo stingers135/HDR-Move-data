@@ -659,6 +659,14 @@
                 return Math.max(0, lastEnd + (targetRealTime - cumReal));
             }
             
+            // --- Handle MotionModule::set_rate specially (discrete tick behavior) ---
+            const hasSetRateEvents = sortedEvents.some(e => e.type === 'MotionModule::set_rate');
+            if (hasSetRateEvents) {
+                // set_rate needs discrete tick simulation
+                // realFrame is 0-indexed, but "Frame N" means N ticks have passed
+                return simulateSetRate(realFrame + 1, sortedEvents);
+            }
+            
             // --- Handle FT_MOTION_RATE_RANGE via tick-by-tick simulation ---
             // The game processes range events differently from simple rate changes:
             // 1. Each tick, check if (anim + speed) would reach the next event's frame
@@ -671,7 +679,7 @@
                 return simulateTickBased(realFrame, sortedEvents);
             }
             
-            // --- Continuous interpolation for FT_MOTION_RATE / set_rate only ---
+            // --- Continuous interpolation for FT_MOTION_RATE only ---
             let currentAnimFrame = 0;
             let currentRealTime = 0;
             let currentSpeed = 1.0;
@@ -695,8 +703,6 @@
                 if (event.type === 'FT_MOTION_RATE') {
                     const dur = event.rate_value;
                     currentSpeed = (dur && dur > 0) ? 1.0 / dur : 1.0;
-                } else if (event.type === 'MotionModule::set_rate') {
-                    currentSpeed = event.rate_value > 0 ? event.rate_value : 1.0;
                 }
             }
             
@@ -776,6 +782,43 @@
                 
                 // 3. Advance animation by current speed
                 anim += speed;
+            }
+            
+            return Math.max(0, anim);
+        }
+        
+        // Separate simulation for MotionModule::set_rate events.
+        // set_rate has different timing: rate change takes effect on the tick AFTER
+        // the threshold is crossed, giving it a +1 frame offset compared to FT_MOTION_RATE.
+        function simulateSetRate(numTicks, sortedEvents) {
+            if (numTicks <= 0) return 0;
+            
+            let anim = 0;
+            let speed = 1.0;
+            
+            // Build set_rate events only
+            const events = [];
+            for (let i = 0; i < sortedEvents.length; i++) {
+                if (sortedEvents[i].type === 'MotionModule::set_rate') {
+                    events.push({ ...sortedEvents[i], fired: false });
+                }
+            }
+            events.sort((a, b) => a.frame - b.frame);
+            
+            for (let tick = 1; tick <= numTicks; tick++) {
+                // 1. Advance animation first
+                anim += speed;
+                
+                // 2. Check for set_rate events after advancing (fire when anim >= threshold)
+                for (let i = 0; i < events.length; i++) {
+                    const event = events[i];
+                    if (event.fired) continue;
+                    
+                    if (anim >= event.frame - 0.001) {
+                        event.fired = true;
+                        speed = event.rate_value > 0 ? event.rate_value : 1.0;
+                    }
+                }
             }
             
             return Math.max(0, anim);
