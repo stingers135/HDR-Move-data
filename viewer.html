@@ -1193,7 +1193,22 @@
         // Bone remap: some bones exist in skeletons but aren't properly animated
         // (the game positions them via mesh skinning, not bone transforms).
         // Remap them to a nearby bone so hitboxes/hurtboxes render correctly.
-        const BONE_REMAP = { 'potc': ['hip', 'waist', 'trans', 'rot'] };
+        const BONE_REMAP = { 
+            'potc': ['hip', 'waist', 'trans', 'rot'],
+            // Inkling's ink tank bone isn't properly animated - remap to back/bust
+            'tank': ['bust', 'hip', 'waist', 'trans'],
+            'tankroot': ['bust', 'hip', 'waist', 'trans'],
+            // Inkling's ink gun bones (Splattershot) - remap to hand
+            'muzzle': ['haver', 'handl', 'handr', 'armr', 'arml', 'bust', 'trans'],
+            'foreend': ['haver', 'handl', 'handr', 'armr', 'arml', 'bust', 'trans'],
+        };
+        
+        // Bones to skip entirely for hurtbox rendering (animated but to wrong positions)
+        // These are typically weapon/accessory bones that use mesh skinning in-game
+        // Note: Most problematic bones have hit_status_off which is filtered separately
+        const SKIP_HURTBOX_BONES = {
+            'inkling': ['muzzle', 'foreend'],  // Gun bones don't animate correctly
+        };
         
         function remapBone(boneName, positions) {
             const remaps = BONE_REMAP[boneName];
@@ -1387,12 +1402,40 @@
             
             // Draw hurtboxes
             if (hurtboxData && document.getElementById('show-hurtboxes').checked) {
+                // Get current character for bone skip list
+                const charLower = (character || '').toLowerCase();
+                const skipBones = SKIP_HURTBOX_BONES[charLower] || [];
+                
                 hurtboxData.forEach(hurtbox => {
                     if (!hurtbox.bone_name) return;
+                    
+                    // Skip hurtboxes that are disabled (hit_status_off)
+                    if (hurtbox.status === 'hit_status_off') return;
+                    
+                    const boneLower = hurtbox.bone_name.toLowerCase();
+                    
+                    // Skip bones that don't animate correctly for this character
+                    if (skipBones.includes(boneLower)) return;
+                    
                     // Use lowercase for case-insensitive matching
-                    const hurtBoneName = remapBone(hurtbox.bone_name.toLowerCase(), positions);
+                    const hurtBoneName = remapBone(boneLower, positions);
                     const bonePos = positions[hurtBoneName];
                     if (!bonePos) return;
+                    
+                    // Skip bones that appear to be unanimated (at or very close to origin)
+                    // These are typically weapon/accessory bones that aren't in the animation data
+                    const boneWorldPos = { 
+                        x: bonePos.matrix[3][0], 
+                        y: bonePos.matrix[3][1], 
+                        z: bonePos.matrix[3][2] 
+                    };
+                    const distFromOrigin = Math.sqrt(
+                        boneWorldPos.x * boneWorldPos.x + 
+                        boneWorldPos.y * boneWorldPos.y + 
+                        boneWorldPos.z * boneWorldPos.z
+                    );
+                    // If bone is within 0.5 units of origin, it's likely unanimated - skip it
+                    if (distFromOrigin < 0.5) return;
                     
                     const start = transformPoint(hurtbox.start, bonePos.matrix);
                     const end = transformPoint(hurtbox.end, bonePos.matrix);
