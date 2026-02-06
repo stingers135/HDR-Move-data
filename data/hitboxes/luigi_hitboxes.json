@@ -5227,38 +5227,10 @@
     "grab": {
       "total_frames": 63,
       "active_frames": [
-        7,
-        8
+        8,
+        9
       ],
       "hitboxes_by_frame": {
-        "7": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 0,
-            "angle": null,
-            "kbg": null,
-            "fkb": null,
-            "bkb": null,
-            "size": 3.5,
-            "offset": {
-              "x": 0.0,
-              "y": 6.6,
-              "z": 1.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 6.6,
-              "z": 9.0
-            },
-            "is_capsule": true,
-            "character": "luigi",
-            "move": "grab",
-            "is_grab": true
-          }
-        ],
         "8": [
           {
             "id": 0,
@@ -5286,12 +5258,40 @@
             "move": "grab",
             "is_grab": true
           }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.6,
+              "z": 1.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.6,
+              "z": 9.0
+            },
+            "is_capsule": true,
+            "character": "luigi",
+            "move": "grab",
+            "is_grab": true
+          }
         ]
       },
       "motion_events": [
         {
           "type": "range",
-          "frame": 0.0,
+          "frame": 1.0,
           "start_orig": 1.0,
           "end_orig": 13.0,
           "new_duration": 5.0,
@@ -6384,14 +6384,12 @@
       },
       "motion_events": [
         {
-          "type": "MotionModule::set_rate",
+          "type": "range",
           "frame": 1.0,
-          "rate_value": 0.8461538461538461
-        },
-        {
-          "type": "MotionModule::set_rate",
-          "frame": 12.0,
-          "rate_value": 1.0
+          "start_orig": 1.0,
+          "end_orig": 12.0,
+          "new_duration": 13.0,
+          "scale_factor": 1.1818181818181819
         },
         {
           "type": "FT_MOTION_RATE",
@@ -6399,12 +6397,15 @@
           "rate_value": 1.0
         },
         {
-          "type": "MotionModule::set_rate",
+          "type": "range",
           "frame": 30.0,
-          "rate_value": 1.25
+          "start_orig": 30.0,
+          "end_orig": 40.0,
+          "new_duration": 8.0,
+          "scale_factor": 0.8
         },
         {
-          "type": "MotionModule::set_rate",
+          "type": "FT_MOTION_RATE",
           "frame": 40.0,
           "rate_value": 1.0
         }
@@ -6637,5 +6638,5 @@
       "faf": 41
     }
   },
-  "generated_at": "2026-02-04T17:50:44.494878"
+  "generated_at": "2026-02-06T16:58:43.325412"
 }

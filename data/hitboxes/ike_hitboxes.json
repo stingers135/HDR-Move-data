@@ -1483,119 +1483,11 @@
     "ftilt": {
       "total_frames": 61,
       "active_frames": [
-        8,
         9,
         10,
         11
       ],
       "hitboxes_by_frame": {
-        "8": [
-          {
-            "id": 0,
-            "bone": "bust",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 13.0,
-            "angle": 361,
-            "kbg": 97,
-            "fkb": 0,
-            "bkb": 35,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "ftilt"
-          },
-          {
-            "id": 1,
-            "bone": "armr",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 13.0,
-            "angle": 361,
-            "kbg": 97,
-            "fkb": 0,
-            "bkb": 35,
-            "size": 2.7,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "ftilt"
-          },
-          {
-            "id": 2,
-            "bone": "sword",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 15.0,
-            "angle": 361,
-            "kbg": 97,
-            "fkb": 0,
-            "bkb": 35,
-            "size": 3.8,
-            "offset": {
-              "x": 0.0,
-              "y": 2.5,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "ftilt"
-          },
-          {
-            "id": 3,
-            "bone": "sword",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 13.0,
-            "angle": 361,
-            "kbg": 97,
-            "fkb": 0,
-            "bkb": 35,
-            "size": 3.8,
-            "offset": {
-              "x": 0.0,
-              "y": 7.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "ftilt"
-          },
-          {
-            "id": 4,
-            "bone": "sword",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 11.0,
-            "angle": 361,
-            "kbg": 97,
-            "fkb": 0,
-            "bkb": 35,
-            "size": 3.8,
-            "offset": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "ftilt"
-          }
-        ],
         "9": [
           {
             "id": 0,
@@ -1921,7 +1813,7 @@
       "motion_events": [
         {
           "type": "range",
-          "frame": 0.0,
+          "frame": 1.0,
           "start_orig": 1.0,
           "end_orig": 11.0,
           "new_duration": 6.0,
@@ -1962,7 +1854,7 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 35
+      "faf": 34
     },
     "utilt": {
       "total_frames": 59,
@@ -11098,5 +10990,5 @@
       "faf": 60
     }
   },
-  "generated_at": "2026-02-04T17:50:59.709479"
+  "generated_at": "2026-02-06T16:59:07.937695"
 }

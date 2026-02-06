@@ -2552,8 +2552,7 @@
         26,
         27,
         28,
-        29,
-        30
+        29
       ],
       "hitboxes_by_frame": {
         "6": [
@@ -4479,71 +4478,6 @@
             "character": "snake",
             "move": "nair"
           }
-        ],
-        "30": [
-          {
-            "id": 0,
-            "bone": "kneer",
-            "animation_frame": 30.0,
-            "real_frame": 30,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 4.5,
-            "offset": {
-              "x": 6.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "snake",
-            "move": "nair"
-          },
-          {
-            "id": 1,
-            "bone": "kneer",
-            "animation_frame": 30.0,
-            "real_frame": 30,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 4.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "snake",
-            "move": "nair"
-          },
-          {
-            "id": 2,
-            "bone": "hip",
-            "animation_frame": 30.0,
-            "real_frame": 30,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "snake",
-            "move": "nair"
-          }
         ]
       },
       "motion_events": [
@@ -4570,7 +4504,7 @@
         },
         {
           "type": "range",
-          "frame": 35.0,
+          "frame": 35.5,
           "start_orig": 35.5,
           "end_orig": 38.0,
           "new_duration": 4.0,
@@ -4582,7 +4516,7 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 48
+      "faf": 47
     },
     "fair": {
       "total_frames": 73,
@@ -9555,5 +9489,5 @@
       ]
     }
   },
-  "generated_at": "2026-02-04T17:50:59.017682"
+  "generated_at": "2026-02-06T16:59:06.847920"
 }

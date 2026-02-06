@@ -1386,10 +1386,75 @@
     "dtilt": {
       "total_frames": 29,
       "active_frames": [
-        7,
-        8
+        6,
+        7
       ],
       "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.0,
+            "offset": {
+              "x": -1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "lucas",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "lucas",
+            "move": "dtilt"
+          },
+          {
+            "id": 2,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 6.0,
+            "angle": 84,
+            "kbg": 75,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 6.0,
+              "y": 0.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "lucas",
+            "move": "dtilt"
+          }
+        ],
         "7": [
           {
             "id": 0,
@@ -1454,77 +1519,12 @@
             "character": "lucas",
             "move": "dtilt"
           }
-        ],
-        "8": [
-          {
-            "id": 0,
-            "bone": "kneer",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 5.0,
-            "angle": 361,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.0,
-            "offset": {
-              "x": -1.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "lucas",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "kneer",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 5.0,
-            "angle": 361,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "lucas",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "kneer",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 6.0,
-            "angle": 84,
-            "kbg": 75,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 6.0,
-              "y": 0.0,
-              "z": -1.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "lucas",
-            "move": "dtilt"
-          }
         ]
       },
       "motion_events": [
         {
           "type": "range",
-          "frame": 0.0,
+          "frame": 1.0,
           "start_orig": 1.0,
           "end_orig": 3.0,
           "new_duration": 4.0,
@@ -1536,7 +1536,7 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 20
+      "faf": 18
     },
     "fsmash": {
       "total_frames": 60,
@@ -6426,7 +6426,6 @@
     "fthrow": {
       "total_frames": 67,
       "active_frames": [
-        20,
         21,
         22,
         23,
@@ -6439,29 +6438,6 @@
         30
       ],
       "hitboxes_by_frame": {
-        "20": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 20.0,
-            "real_frame": 20,
-            "damage": 10.0,
-            "angle": 45,
-            "kbg": 65,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "lucas",
-            "move": "fthrow"
-          }
-        ],
         "21": [
           {
             "id": 0,
@@ -6696,7 +6672,7 @@
       "motion_events": [
         {
           "type": "range",
-          "frame": 0.0,
+          "frame": 1.0,
           "start_orig": 1.0,
           "end_orig": 23.0,
           "new_duration": 19.0,
@@ -6708,7 +6684,7 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 41
+      "faf": 40
     },
     "bthrow": {
       "total_frames": 65,
@@ -7469,5 +7445,5 @@
       "faf": 39
     }
   },
-  "generated_at": "2026-02-04T17:51:02.460625"
+  "generated_at": "2026-02-06T16:59:12.388355"
 }

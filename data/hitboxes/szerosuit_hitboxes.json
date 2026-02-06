@@ -3239,7 +3239,6 @@
     "nair": {
       "total_frames": 51,
       "active_frames": [
-        5,
         6,
         7,
         8,
@@ -3250,54 +3249,6 @@
         13
       ],
       "hitboxes_by_frame": {
-        "5": [
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 12.0,
-            "angle": 55,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": 7.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 9.0,
-              "z": 13.5
-            },
-            "is_capsule": true,
-            "character": "szerosuit",
-            "move": "nair"
-          },
-          {
-            "id": 0,
-            "bone": "shoulderr",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 12.0,
-            "angle": 55,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 3.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "szerosuit",
-            "move": "nair"
-          }
-        ],
         "6": [
           {
             "id": 1,
@@ -3319,31 +3270,6 @@
               "x": 0.0,
               "y": 9.0,
               "z": 13.5
-            },
-            "is_capsule": true,
-            "character": "szerosuit",
-            "move": "nair"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 12.0,
-            "angle": 55,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": 7.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 16.0
             },
             "is_capsule": true,
             "character": "szerosuit",
@@ -3391,31 +3317,6 @@
             "offset2": {
               "x": 0.0,
               "y": 4.0,
-              "z": 16.0
-            },
-            "is_capsule": true,
-            "character": "szerosuit",
-            "move": "nair"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 12.0,
-            "angle": 55,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 10.0,
-              "z": 7.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 3.0,
               "z": 16.0
             },
             "is_capsule": true,
@@ -3471,31 +3372,6 @@
             "move": "nair"
           },
           {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 12.0,
-            "angle": 55,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 15.0,
-              "z": -1.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 11.0
-            },
-            "is_capsule": true,
-            "character": "szerosuit",
-            "move": "nair"
-          },
-          {
             "id": 0,
             "bone": "shoulderr",
             "animation_frame": 8.0,
@@ -3544,31 +3420,6 @@
             "move": "nair"
           },
           {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 12.0,
-            "angle": 55,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": -3.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 15.0,
-              "z": -9.0
-            },
-            "is_capsule": true,
-            "character": "szerosuit",
-            "move": "nair"
-          },
-          {
             "id": 0,
             "bone": "shoulderr",
             "animation_frame": 9.0,
@@ -3611,31 +3462,6 @@
               "x": 0.0,
               "y": 15.0,
               "z": -9.0
-            },
-            "is_capsule": true,
-            "character": "szerosuit",
-            "move": "nair"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 10.0,
-            "real_frame": 10,
-            "damage": 12.0,
-            "angle": 55,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": -3.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 16.0,
-              "z": -13.0
             },
             "is_capsule": true,
             "character": "szerosuit",
@@ -3707,31 +3533,6 @@
             },
             "offset2": null,
             "is_capsule": false,
-            "character": "szerosuit",
-            "move": "nair"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 11.0,
-            "real_frame": 11,
-            "damage": 12.0,
-            "angle": 55,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": -3.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 17.0,
-              "z": -13.0
-            },
-            "is_capsule": true,
             "character": "szerosuit",
             "move": "nair"
           }
@@ -8439,17 +8240,17 @@
     "uthrow": {
       "total_frames": 55,
       "active_frames": [
-        14,
-        15,
-        16
+        9,
+        10,
+        11
       ],
       "hitboxes_by_frame": {
-        "14": [
+        "9": [
           {
             "id": 0,
             "bone": "kneer",
-            "animation_frame": 14.0,
-            "real_frame": 14,
+            "animation_frame": 9.0,
+            "real_frame": 9,
             "damage": 2.0,
             "angle": 45,
             "kbg": 130,
@@ -8467,12 +8268,12 @@
             "move": "uthrow"
           }
         ],
-        "15": [
+        "10": [
           {
             "id": 0,
             "bone": "kneer",
-            "animation_frame": 15.0,
-            "real_frame": 15,
+            "animation_frame": 10.0,
+            "real_frame": 10,
             "damage": 2.0,
             "angle": 45,
             "kbg": 130,
@@ -8490,12 +8291,12 @@
             "move": "uthrow"
           }
         ],
-        "16": [
+        "11": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 16.0,
-            "real_frame": 16,
+            "animation_frame": 11.0,
+            "real_frame": 11,
             "damage": 4.0,
             "angle": 105,
             "kbg": 100,
@@ -8517,7 +8318,7 @@
       "motion_events": [
         {
           "type": "range",
-          "frame": 0.0,
+          "frame": 1.0,
           "start_orig": 1.0,
           "end_orig": 2.0,
           "new_duration": 6.0,
@@ -8529,44 +8330,16 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 41
+      "faf": 35
     },
     "dthrow": {
       "total_frames": 59,
       "active_frames": [
-        16,
         17,
         18,
         19
       ],
       "hitboxes_by_frame": {
-        "16": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 5.0,
-            "angle": 270,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 0,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 0.0
-            },
-            "offset2": {
-              "x": -2.5,
-              "y": 4.0,
-              "z": 0.0
-            },
-            "is_capsule": true,
-            "character": "szerosuit",
-            "move": "dthrow"
-          }
-        ],
         "17": [
           {
             "id": 0,
@@ -8619,27 +8392,6 @@
             "is_capsule": true,
             "character": "szerosuit",
             "move": "dthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 2.0,
-            "angle": 70,
-            "kbg": 78,
-            "fkb": 0,
-            "bkb": 68,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "szerosuit",
-            "move": "dthrow"
           }
         ],
         "19": [
@@ -8669,7 +8421,7 @@
       "motion_events": [
         {
           "type": "range",
-          "frame": 0.0,
+          "frame": 1.0,
           "start_orig": 1.0,
           "end_orig": 12.0,
           "new_duration": 7.0,
@@ -8681,8 +8433,8 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 42
+      "faf": 41
     }
   },
-  "generated_at": "2026-02-04T17:50:57.874600"
+  "generated_at": "2026-02-06T16:59:05.025388"
 }

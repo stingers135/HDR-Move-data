@@ -5111,78 +5111,13 @@
     "uair": {
       "total_frames": 55,
       "active_frames": [
-        4,
         5,
         6,
         7,
-        8
+        8,
+        9
       ],
       "hitboxes_by_frame": {
-        "4": [
-          {
-            "id": 0,
-            "bone": "armr",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 9.0,
-            "angle": 85,
-            "kbg": 87,
-            "fkb": 0,
-            "bkb": 43,
-            "size": 3.5,
-            "offset": {
-              "x": -1.0,
-              "y": 1.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "lucina",
-            "move": "uair"
-          },
-          {
-            "id": 1,
-            "bone": "sword1",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 9.0,
-            "angle": 85,
-            "kbg": 87,
-            "fkb": 0,
-            "bkb": 43,
-            "size": 3.5,
-            "offset": {
-              "x": 2.0,
-              "y": 0.0,
-              "z": 1.75
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "lucina",
-            "move": "uair"
-          },
-          {
-            "id": 2,
-            "bone": "sword1",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 9.0,
-            "angle": 85,
-            "kbg": 87,
-            "fkb": 0,
-            "bkb": 43,
-            "size": 3.5,
-            "offset": {
-              "x": 2.0,
-              "y": 0.0,
-              "z": 7.75
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "lucina",
-            "move": "uair"
-          }
-        ],
         "5": [
           {
             "id": 0,
@@ -5442,12 +5377,77 @@
             "character": "lucina",
             "move": "uair"
           }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 85,
+            "kbg": 87,
+            "fkb": 0,
+            "bkb": 43,
+            "size": 3.5,
+            "offset": {
+              "x": -1.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "lucina",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "sword1",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 85,
+            "kbg": 87,
+            "fkb": 0,
+            "bkb": 43,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.75
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "lucina",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "sword1",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 9.0,
+            "angle": 85,
+            "kbg": 87,
+            "fkb": 0,
+            "bkb": 43,
+            "size": 3.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 7.75
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "lucina",
+            "move": "uair"
+          }
         ]
       },
       "motion_events": [
         {
           "type": "range",
-          "frame": 4.0,
+          "frame": 5.0,
           "start_orig": 5.0,
           "end_orig": 13.0,
           "new_duration": 6.0,
@@ -7271,5 +7271,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-02-04T17:51:31.887260"
+  "generated_at": "2026-02-06T16:59:51.511678"
 }
