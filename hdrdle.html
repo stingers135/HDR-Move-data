@@ -2089,7 +2089,7 @@
                     const otherMatches = availableOptions.filter(opt => 
                         opt.toLowerCase() !== aliasMatch.toLowerCase() && opt.toLowerCase().includes(filter)
                     );
-                    matches = [aliasMatch, ...otherMatches].slice(0, 15);
+                    matches = [aliasMatch, ...otherMatches];
                 } else if (filter) {
                     // Check if any alias partially matches and include those results
                     const aliasMatches = [];
@@ -2109,10 +2109,10 @@
                     );
                     
                     // Combine alias matches first, then text matches
-                    matches = [...aliasMatches, ...textMatches].slice(0, 15);
+                    matches = [...aliasMatches, ...textMatches];
                 } else {
                     // Show all available options (empty input)
-                    matches = availableOptions.slice(0, 30);
+                    matches = availableOptions;
                 }
                 
                 if (matches.length === 0) {
