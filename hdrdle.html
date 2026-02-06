@@ -528,9 +528,31 @@
         .header-row {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             gap: 15px;
             margin-bottom: 10px;
+        }
+        
+        .back-link {
+            color: var(--hdr-green);
+            text-decoration: none;
+            font-size: 0.85em;
+            padding: 10px 20px;
+            background: var(--hdr-bg-card);
+            border: 1px solid var(--hdr-green);
+            border-radius: 4px;
+            transition: all 0.2s;
+            white-space: nowrap;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            background: var(--hdr-green);
+            color: #000;
+            box-shadow: 0 0 15px var(--hdr-green-glow);
+            transform: translateY(-2px);
         }
         
         .info-btn {
@@ -723,6 +745,7 @@
             gap: 10px;
             margin-bottom: 20px;
             justify-content: center;
+            flex-wrap: wrap;
         }
         
         .leaderboard-tab {
@@ -857,6 +880,7 @@
 <body>
     <div class="game-container">
         <div class="header-row">
+            <a href="index.html" class="back-link">🏠 Back</a>
             <div class="logo-container">
                 <img src="hdrdle-logo.png" alt="HDRdle" />
             </div>
@@ -1002,7 +1026,8 @@
             </div>
             
             <div class="leaderboard-tabs">
-                <button class="leaderboard-tab active" onclick="switchLeaderboardTab('streak')">Best Streak</button>
+                <button class="leaderboard-tab active" onclick="switchLeaderboardTab('today')">Today</button>
+                <button class="leaderboard-tab" onclick="switchLeaderboardTab('streak')">Best Streak</button>
                 <button class="leaderboard-tab" onclick="switchLeaderboardTab('wins')">Total Wins</button>
                 <button class="leaderboard-tab" onclick="switchLeaderboardTab('winrate')">Win Rate</button>
             </div>
@@ -1152,11 +1177,13 @@
                     existing.wins += 1;
                     existing.currentStreak += 1;
                     existing.totalGuesses += guessCount;
+                    existing.todayGuessesLeft = MAX_GUESSES - guessCount;
                     if (existing.currentStreak > existing.bestStreak) {
                         existing.bestStreak = existing.currentStreak;
                     }
                 } else {
                     existing.currentStreak = 0;
+                    existing.todayGuessesLeft = 0;
                 }
                 
                 ref.set(existing).then(() => {
@@ -1166,7 +1193,7 @@
         }
         
         // Load leaderboard data
-        let currentLeaderboardTab = 'streak';
+        let currentLeaderboardTab = 'today';
         
         function loadLeaderboard() {
             if (!firebaseEnabled) {
@@ -1187,9 +1214,18 @@
                 }
                 
                 // Convert to array and sort based on current tab
+                const today = new Date().toDateString();
                 let entries = Object.values(data).filter(e => e.played > 0);
                 
+                // For "today" tab, only show users who played today
+                if (currentLeaderboardTab === 'today') {
+                    entries = entries.filter(e => e.lastPlayed === today);
+                }
+                
                 switch (currentLeaderboardTab) {
+                    case 'today':
+                        entries.sort((a, b) => (b.todayGuessesLeft || 0) - (a.todayGuessesLeft || 0) || a.totalGuesses - b.totalGuesses);
+                        break;
                     case 'streak':
                         entries.sort((a, b) => b.bestStreak - a.bestStreak || b.wins - a.wins);
                         break;
@@ -1209,6 +1245,7 @@
                 entries = entries.slice(0, 50);
                 
                 const currentUserId = getUserId();
+                const isToday = currentLeaderboardTab === 'today';
                 
                 let html = `
                     <table class="leaderboard-table">
@@ -1216,6 +1253,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>Player</th>
+                                ${isToday ? '<th>Left</th>' : ''}
                                 <th>Wins</th>
                                 <th>Played</th>
                                 <th>Win%</th>
@@ -1226,16 +1264,24 @@
                         <tbody>
                 `;
                 
+                if (isToday && entries.length === 0) {
+                    html = '<div class="leaderboard-empty">No one has completed today\'s puzzle yet!</div>';
+                    document.getElementById('leaderboard-data').innerHTML = html;
+                    return;
+                }
+                
                 entries.forEach((entry, index) => {
                     const rank = index + 1;
                     const winRate = entry.played > 0 ? Math.round((entry.wins / entry.played) * 100) : 0;
                     const isCurrentUser = entry.oderId === currentUserId;
                     const rankClass = rank <= 3 ? `rank-${rank}` : '';
+                    const guessesLeft = entry.todayGuessesLeft != null ? entry.todayGuessesLeft : '-';
                     
                     html += `
                         <tr class="${isCurrentUser ? 'current-user' : ''}">
                             <td class="rank ${rankClass}">${rank}</td>
                             <td class="player-name">${escapeHtml(entry.name || 'Anonymous')}</td>
+                            ${isToday ? `<td>${guessesLeft}</td>` : ''}
                             <td>${entry.wins}</td>
                             <td>${entry.played}</td>
                             <td>${winRate}%</td>
