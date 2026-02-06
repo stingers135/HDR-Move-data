@@ -912,17 +912,21 @@
                 <span class="guesses-remaining" id="guesses-remaining">10 guesses left</span>
             </div>
             <div class="hints-row">
-                <button class="hint-btn" id="hint-skeleton" onclick="unlockHint('skeleton')">
-                    Show Skeleton
+                <button class="hint-btn" id="hint-damage" onclick="unlockHint('damage')">
+                    Show Damage
+                    <span class="hint-cost">(-1 guess)</span>
+                </button>
+                <button class="hint-btn" id="hint-angle" onclick="unlockHint('angle')">
+                    Show Angle
                     <span class="hint-cost">(-1 guess)</span>
                 </button>
                 <button class="hint-btn" id="hint-frame" onclick="unlockHint('frame')">
                     Show Frame #
-                    <span class="hint-cost">(-1 guess)</span>
-                </button>
-                <button class="hint-btn" id="hint-hurtboxes" onclick="unlockHint('hurtboxes')">
-                    Show Hurtboxes
                     <span class="hint-cost">(-2 guesses)</span>
+                </button>
+                <button class="hint-btn" id="hint-skeleton" onclick="unlockHint('skeleton')">
+                    Show Skeleton
+                    <span class="hint-cost">(-4 guesses)</span>
                 </button>
             </div>
         </div>
@@ -1006,9 +1010,10 @@
             <p><strong>Hints:</strong></p>
             <ul>
                 <li>Spend guesses to reveal helpful information</li>
-                <li>Show Skeleton (-1 guess) - reveals the character's pose</li>
-                <li>Show Frame # (-1 guess) - shows which frame the hitbox is on</li>
-                <li>Show Hurtboxes (-2 guesses) - reveals the character's hurtboxes</li>
+                <li>Show Damage (-1 guess) - reveals hitbox damage values</li>
+                <li>Show Angle (-1 guess) - reveals knockback angles</li>
+                <li>Show Frame # (-2 guesses) - shows a live frame counter</li>
+                <li>Show Skeleton (-4 guesses) - reveals the character's pose</li>
             </ul>
             <p>A new puzzle is available every day at midnight!</p>
             <button class="close-btn" onclick="hideInfo()">Got it!</button>
@@ -1603,14 +1608,16 @@
         
         // Hint state
         let hints = {
+            damage: false,
+            angle: false,
             skeleton: false,
-            frame: false,
-            hurtboxes: false
+            frame: false
         };
         const HINT_COSTS = {
-            skeleton: 1,
-            frame: 1,
-            hurtboxes: 2
+            damage: 1,
+            angle: 1,
+            skeleton: 4,
+            frame: 2
         };
         const MAX_GUESSES = 12;
 
@@ -1689,7 +1696,7 @@
             wrongMoveGuesses = [];
             gameOver = false;
             currentDisplayFrame = null;
-            hints = { skeleton: false, frame: false, hurtboxes: false };
+            hints = { damage: false, angle: false, skeleton: false, frame: false };
             
             loadViewer();
             resetUI();
@@ -1736,7 +1743,9 @@
                     characterGuessed = data.characterGuessed || false;
                     moveGuessed = data.moveGuessed || false;
                     gameOver = data.gameOver || false;
-                    hints = data.hints || { skeleton: false, frame: false, hurtboxes: false };
+                    hints = data.hints || { damage: false, angle: false, skeleton: false };
+                    // Migrate old hint keys
+                    if (!('damage' in hints)) hints = { damage: false, angle: false, skeleton: hints.skeleton || false, frame: false };
                     currentDisplayFrame = data.currentDisplayFrame || null;
                     wrongCharacterGuesses = data.wrongCharacterGuesses || [];
                     wrongMoveGuesses = data.wrongMoveGuesses || [];
@@ -1766,7 +1775,7 @@
             moveGuessed = false;
             gameOver = false;
             currentDisplayFrame = null;
-            hints = { skeleton: false, frame: false, hurtboxes: false };
+            hints = { damage: false, angle: false, skeleton: false, frame: false };
             wrongCharacterGuesses = [];
             wrongMoveGuesses = [];
             
@@ -1776,11 +1785,13 @@
 
         function loadViewer(frameOverride = null) {
             const frame = document.getElementById('viewer-frame');
-            let viewerUrl = `viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}&hdrdle=true`;
+            let viewerUrl = `viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}&hdrdle=true&autoPlay=true`;
             
             // Add hint parameters
             if (hints.skeleton) viewerUrl += '&showSkeleton=true';
-            if (hints.hurtboxes) viewerUrl += '&showHurtboxes=true';
+            if (hints.damage) viewerUrl += '&hideDamage=false';
+            if (hints.angle) viewerUrl += '&hideAngle=false';
+            if (hints.frame) viewerUrl += '&showFrameCounter=true';
             
             // Add frame parameter if provided (for restoring saved games)
             if (frameOverride) viewerUrl += `&frame=${frameOverride}`;
@@ -1792,11 +1803,6 @@
         window.addEventListener('message', function(event) {
             if (event.data && event.data.type === 'hdrdleFrame') {
                 currentDisplayFrame = event.data.frame;
-                // Update frame hint button if unlocked
-                if (hints.frame) {
-                    document.getElementById('hint-frame').innerHTML = 
-                        `Frame ${currentDisplayFrame}<span class="hint-cost">(unlocked)</span>`;
-                }
                 // Update view link if game is over (in case frame arrived after result was shown)
                 if (gameOver && currentPuzzle) {
                     const frameParam = `&frame=${currentDisplayFrame}`;
@@ -1831,17 +1837,10 @@
             const btn = document.getElementById(`hint-${hintType}`);
             btn.classList.add('unlocked');
             btn.disabled = true;
+            btn.innerHTML = btn.textContent.split('(')[0].trim() + `<span class="hint-cost">(unlocked)</span>`;
             
-            if (hintType === 'frame' && currentDisplayFrame) {
-                btn.innerHTML = `Frame ${currentDisplayFrame}<span class="hint-cost">(unlocked)</span>`;
-            } else {
-                btn.innerHTML = btn.textContent.split('(')[0].trim() + `<span class="hint-cost">(unlocked)</span>`;
-            }
-            
-            // Reload viewer with new hint if skeleton or hurtboxes
-            if (hintType === 'skeleton' || hintType === 'hurtboxes') {
-                loadViewer();
-            }
+            // Reload viewer with updated hint params
+            loadViewer();
             
             updateGuessesRemaining();
             updateHintButtons();
@@ -1913,27 +1912,24 @@
         }
         
         function resetHintButtons() {
+            const HINT_LABELS = {
+                damage: 'Show Damage',
+                angle: 'Show Angle',
+                skeleton: 'Show Skeleton',
+                frame: 'Show Frame #'
+            };
             // Reset hint button appearances
             for (const hintType of Object.keys(HINT_COSTS)) {
                 const btn = document.getElementById(`hint-${hintType}`);
                 if (!hints[hintType]) {
                     btn.classList.remove('unlocked');
                     btn.disabled = false;
-                    if (hintType === 'skeleton') {
-                        btn.innerHTML = 'Show Skeleton<span class="hint-cost">(-1 guess)</span>';
-                    } else if (hintType === 'frame') {
-                        btn.innerHTML = 'Show Frame #<span class="hint-cost">(-1 guess)</span>';
-                    } else if (hintType === 'hurtboxes') {
-                        btn.innerHTML = 'Show Hurtboxes<span class="hint-cost">(-2 guesses)</span>';
-                    }
+                    const cost = HINT_COSTS[hintType];
+                    btn.innerHTML = `${HINT_LABELS[hintType]}<span class="hint-cost">(-${cost} guess${cost > 1 ? 'es' : ''})</span>`;
                 } else {
                     btn.classList.add('unlocked');
                     btn.disabled = true;
-                    if (hintType === 'frame' && currentDisplayFrame) {
-                        btn.innerHTML = `Frame ${currentDisplayFrame}<span class="hint-cost">(unlocked)</span>`;
-                    } else {
-                        btn.innerHTML = btn.textContent.split('(')[0].trim() + `<span class="hint-cost">(unlocked)</span>`;
-                    }
+                    btn.innerHTML = btn.textContent.split('(')[0].trim() + `<span class="hint-cost">(unlocked)</span>`;
                 }
             }
         }
@@ -2338,7 +2334,7 @@
             
             // Reload viewer with full data visible (reveal the answer)
             const frame = document.getElementById('viewer-frame');
-            const revealUrl = `viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}&hdrdle=true&showSkeleton=true&showHurtboxes=true${frameParam}`;
+            const revealUrl = `viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}&hdrdle=true&autoPlay=true&showSkeleton=true&showHurtboxes=true&hideDamage=false&hideAngle=false&showFrameCounter=true${frameParam}`;
             frame.innerHTML = `<iframe src="${revealUrl}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
             
             // On win, trigger celebration animation

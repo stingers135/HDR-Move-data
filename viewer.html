@@ -24,7 +24,9 @@
         /* HDRDLE MODE: Hide UI via CSS immediately using URL param detection */
         /* This runs before JS loads, preventing answer from flashing */
         body.hdrdle-mode .info-panel { display: none !important; }
-        body.hdrdle-mode .controls { display: none !important; }
+        body.hdrdle-mode .speed-control { display: none !important; }
+        body.hdrdle-mode .slider-container { display: none !important; }
+        body.hdrdle-mode .frame-display { display: none !important; }
         body.hdrdle-mode .canvas-area { flex: 1; }
         
         /* Left info panel */
@@ -355,14 +357,14 @@
         const hdrdleFrame = urlParams.get('frame') ? parseInt(urlParams.get('frame')) : null;
         const hdrdleShowSkeleton = urlParams.get('showSkeleton') === 'true';
         const hdrdleShowHurtboxes = urlParams.get('showHurtboxes') === 'true';
+        const hdrdleHideDamage = urlParams.get('hideDamage') !== 'false';  // default true in hdrdle
+        const hdrdleHideAngle = urlParams.get('hideAngle') !== 'false';    // default true in hdrdle
+        const hdrdleAutoPlay = urlParams.get('autoPlay') === 'true';
+        const hdrdleShowFrameCounter = urlParams.get('showFrameCounter') === 'true';
         
         // Apply hdrdle mode settings after data loads
         function applyHdrdleMode() {
             if (!hdrdleMode) return;
-            
-            // Hide controls
-            const controls = document.querySelector('.controls');
-            if (controls) controls.style.display = 'none';
             
             // Hide info panel
             const infoPanel = document.querySelector('.info-panel');
@@ -994,7 +996,7 @@
             const rect = canvas.parentElement.getBoundingClientRect();
             canvas.width = rect.width;
             // In hdrdle mode, controls are hidden so use full height
-            canvas.height = hdrdleMode ? rect.height : rect.height - 70;
+            canvas.height = rect.height - 70;
             
             // For dash attacks and other moves that travel far horizontally, start on the left side
             const movesStartLeft = ['dash_attack', 'dash_grab'];
@@ -1242,19 +1244,6 @@
                 named[bone.name.toLowerCase()] = { matrix: worldTransforms[i], parentIndex: bone.parent_index };
             });
             
-            
-            // Virtual bones for ATTACK macros (injected by generator)
-            const identity = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]];
-            if (!named['top']) {
-                named['top'] = { matrix: identity, parentIndex: null };
-            }
-            if (!named['attach']) {
-                // Article hitboxes use 'attach' - map to the 'Throw' bone where articles connect
-                named['attach'] = named['throw'] || named['Throw'] || { matrix: identity, parentIndex: null };
-            }
-            if (!named['hip']) {
-                named['hip'] = named['waist'] || named['hip'] || { matrix: identity, parentIndex: null };
-            }
             return named;
         }
         
@@ -1365,6 +1354,7 @@
                     isCapsule: !!(hitbox.is_capsule && hitbox.offset2),
                     size: hitbox.size || 3,
                     damage: hitbox.damage,
+                    angle: hitbox.angle,
                     bone: hitbox.bone
                 };
             });
@@ -1591,6 +1581,7 @@
                         isCapsule: !!(hitbox.is_capsule && hitbox.offset2),
                         size: hitbox.size || 3,
                         damage: hitbox.damage,
+                        angle: hitbox.angle,
                         bone: hitbox.bone
                     };
                 });
@@ -1718,22 +1709,47 @@
                         'rgba(244, 67, 54, 0.4)', 'rgba(244, 67, 54, 0.9)'
                     );
                     
-                    // Draw damage label at midpoint for capsules, current pos otherwise
+                    // Draw damage/angle labels at midpoint for capsules, current pos otherwise
                     const labelX = curr.isCapsule ? (curr.x + curr.x2) / 2 : curr.x;
                     const labelY = curr.isCapsule
                         ? Math.min(curr.y, curr.y2) - curr.size * SCALE - 5
                         : curr.y - curr.size * SCALE - 5;
-                    if (curr.damage) {
-                        ctx.fillStyle = '#fff';
-                        ctx.font = 'bold 11px Arial';
-                        ctx.textAlign = 'center';
-                        ctx.fillText(curr.damage + '%', labelX, labelY);
+                    
+                    const showDamage = !(hdrdleMode && hdrdleHideDamage);
+                    const showAngle = !(hdrdleMode && hdrdleHideAngle);
+                    
+                    ctx.fillStyle = '#fff';
+                    ctx.font = 'bold 11px Arial';
+                    ctx.textAlign = 'center';
+                    
+                    if (showDamage && showAngle) {
+                        if (curr.damage) ctx.fillText(curr.damage + '%', labelX, labelY);
+                        if (curr.angle != null) ctx.fillText(curr.angle + '°', labelX, labelY - 14);
+                    } else if (showDamage) {
+                        if (curr.damage) ctx.fillText(curr.damage + '%', labelX, labelY);
+                    } else if (showAngle) {
+                        if (curr.angle != null) ctx.fillText(curr.angle + '°', labelX, labelY);
                     }
                 });
                 
                 updateHitboxList(frameHitboxes);
             } else {
                 // No hitboxes this frame
+            }
+            
+            // Draw frame counter overlay in hdrdle mode (top-right corner)
+            if (hdrdleMode && hdrdleShowFrameCounter) {
+                const frameText = `Frame ${currentFrame + 1}`;
+                ctx.save();
+                ctx.font = 'bold 16px monospace';
+                ctx.textAlign = 'right';
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
+                const metrics = ctx.measureText(frameText);
+                const pad = 6;
+                ctx.fillRect(canvas.width - metrics.width - pad * 3, 4, metrics.width + pad * 2, 24);
+                ctx.fillStyle = '#00cc44';
+                ctx.fillText(frameText, canvas.width - pad * 2, 22);
+                ctx.restore();
             }
         }
         
@@ -1798,15 +1814,36 @@
             container.innerHTML = html;
         }
         
+        function frameHasHitboxes(frame) {
+            if (!hitboxData || !hitboxData.hitboxes_by_frame) return false;
+            const gameFrame = frame + 1;
+            const hbs = hitboxData.hitboxes_by_frame[String(gameFrame)];
+            return hbs && hbs.length > 0;
+        }
+        
+        function getEffectiveSpeed() {
+            if (!hdrdleMode || !hdrdleAutoPlay) return playbackSpeed;
+            return frameHasHitboxes(currentFrame) ? 0.2 : 4;  // 0.1x vs 2x
+        }
+        
         function startPlayTimer() {
-            clearInterval(playTimer);
-            playTimer = setInterval(() => {
+            clearTimeout(playTimer);
+            
+            function tick() {
                 const max = getMaxFrame();
                 const nextFrame = (currentFrame + 1) % (max + 1);
                 currentFrame = nextFrame;
                 updateHitboxFrameHighlight();
                 render();
-            }, 1000 / (30 * playbackSpeed));
+                
+                if (isPlaying) {
+                    const speed = getEffectiveSpeed();
+                    playTimer = setTimeout(tick, 1000 / (30 * speed));
+                }
+            }
+            
+            const speed = getEffectiveSpeed();
+            playTimer = setTimeout(tick, 1000 / (30 * speed));
         }
         
         function togglePlay() {
@@ -1816,7 +1853,7 @@
             if (isPlaying) {
                 startPlayTimer();
             } else {
-                clearInterval(playTimer);
+                clearTimeout(playTimer);
             }
         }
         
@@ -2319,7 +2356,7 @@
                 
                 resizeCanvas();
                 
-                // In hdrdle mode, apply UI changes and jump to first active hitbox frame
+                // In hdrdle mode, apply UI changes and auto-play animation
                 if (hdrdleMode) {
                     // Apply UI changes (hide controls, info panel, uncheck skeleton/hurtboxes)
                     applyHdrdleMode();
@@ -2329,23 +2366,22 @@
                         // Resize canvas now that UI elements are hidden
                         resizeCanvas();
                         
-                        if (hitboxData && hitboxData.hitboxes_by_frame) {
-                            const activeFrames = Object.keys(hitboxData.hitboxes_by_frame)
-                                .map(Number)
-                                .filter(f => hitboxData.hitboxes_by_frame[String(f)].length > 0)
-                                .sort((a, b) => a - b);
-                            
-                            if (hdrdleFrame !== null && hdrdleFrame >= 0) {
-                                // Use specified frame (convert from 1-indexed game frame to 0-indexed)
-                                currentFrame = hdrdleFrame - 1;
-                            } else if (activeFrames.length > 0) {
-                                // Use first active frame (convert from 1-indexed game frame to 0-indexed)
-                                currentFrame = activeFrames[0] - 1;
-                            }
+                        if (hdrdleFrame !== null && hdrdleFrame >= 0) {
+                            currentFrame = hdrdleFrame - 1;
+                        } else {
+                            currentFrame = 0;
                         }
                         
                         // Always notify parent of current frame (for hdrdle hints)
                         notifyParentFrame(currentFrame + 1);  // Send 1-indexed game frame
+                        
+                        // Auto-play animation in hdrdle mode
+                        if (hdrdleAutoPlay && !isPlaying) {
+                            isPlaying = true;
+                            const playBtn = document.getElementById('play-btn');
+                            if (playBtn) playBtn.textContent = '⏸ Pause';
+                            startPlayTimer();
+                        }
                         
                         // Force a render with the new settings
                         render();
