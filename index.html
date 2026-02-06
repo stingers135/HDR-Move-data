@@ -120,7 +120,7 @@ body {
 .character-card .sprite {
     width: 56px;
     height: 48px;
-    background-image: url('sprites.png');
+    background-image: url('sprites.png?v=2');
     background-repeat: no-repeat;
     margin-bottom: 8px;
     image-rendering: pixelated;
@@ -315,6 +315,7 @@ body {
 }
 
 .nav-link {
+    position: relative;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -343,17 +344,26 @@ body {
     font-size: 1.2em;
 }
 
-/* Spacer to balance the layout */
-.header-spacer {
-    width: 140px;  /* Approximate width of the nav-link button */
+/* NEW badge for nav links */
+.new-badge {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    background: #FFD700;
+    color: #000;
+    font-size: 0.55em;
+    font-weight: 700;
+    padding: 2px 5px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    pointer-events: none;
 }
 
 @media (max-width: 600px) {
     .header {
         flex-direction: column;
-    }
-    .header-spacer {
-        display: none;
     }
 }
     </style>
@@ -361,7 +371,11 @@ body {
 <body>
     <div class="container">
         <div class="header">
-            <div class="header-spacer"></div>
+            <a href="hdrdle.html" class="nav-link">
+                <span class="new-badge">★ NEW</span>
+                <span class="icon">🎯</span>
+                <span>HDRdle</span>
+            </a>
             <div class="header-title">
                 <h1>HDR Frame Data</h1>
                 <p>Select a character to view their complete move data</p>
@@ -822,7 +836,7 @@ body {
         </div>
         
         <div class="footer">
-            <p>Generated on 2026-02-04 17:00:46 Eastern Standard Time</p>
+            <p>Generated on 2026-02-06 11:08:55 Eastern Standard Time</p>
             <p>HDR Frame Data Viewer</p>
             <p style="margin-top: 10px; font-size: 0.85em;">Character sprites by <a href="https://www.deviantart.com/icejkai" style="color: var(--hdr-green);">IceJkai</a></p>
         </div>

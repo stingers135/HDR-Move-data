@@ -1,0 +1,2555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDRdle - Daily Hitbox Guessing Game</title>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    
+    <style>
+        :root {
+            --hdr-green: #00cc44;
+            --hdr-green-dark: #00aa33;
+            --hdr-green-glow: rgba(0, 204, 68, 0.3);
+            --hdr-bg-dark: #0a0a0a;
+            --hdr-bg-lighter: #141414;
+            --hdr-bg-card: #1a1a1a;
+            --hdr-border: #2a2a2a;
+            --hdr-text: #e0e0e0;
+            --hdr-text-dim: #888;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--hdr-bg-dark);
+            color: var(--hdr-text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .logo-container {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .logo-container img {
+            max-width: 450px;
+            height: auto;
+        }
+        
+        .subtitle {
+            color: var(--hdr-text-dim);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .user-tag {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 4px;
+            padding-left: 1.2em;
+            cursor: pointer;
+            color: var(--hdr-green);
+            font-size: 0.8em;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+        
+        .user-tag:hover {
+            opacity: 1;
+        }
+        
+        .user-tag .edit-hint {
+            font-size: 0.9em;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .user-tag:hover .edit-hint {
+            opacity: 1;
+        }
+        
+        .game-container {
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .viewer-frame {
+            background: var(--hdr-bg-dark);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            height: 450px;
+            border: 1px solid var(--hdr-green);
+            box-shadow: 0 0 20px var(--hdr-green-glow);
+        }
+        
+        .viewer-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .loading {
+            color: var(--hdr-green);
+            font-size: 18px;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .guess-section {
+            background: var(--hdr-bg-lighter);
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid var(--hdr-border);
+        }
+        
+        .hints-section {
+            background: var(--hdr-bg-card);
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid var(--hdr-border);
+        }
+        
+        .hints-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .hints-title {
+            font-size: 0.9em;
+            color: var(--hdr-text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .guesses-remaining {
+            font-size: 0.85em;
+            color: var(--hdr-green);
+        }
+        
+        .hints-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .hint-btn {
+            flex: 1;
+            min-width: 120px;
+            padding: 10px 12px;
+            font-size: 12px;
+            font-weight: bold;
+            background: var(--hdr-bg-dark);
+            color: var(--hdr-text);
+            border: 1px solid var(--hdr-border);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .hint-btn:hover:not(:disabled) {
+            border-color: var(--hdr-green);
+            box-shadow: 0 0 10px var(--hdr-green-glow);
+        }
+        
+        .hint-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .hint-btn.unlocked {
+            background: linear-gradient(180deg, var(--hdr-green) 0%, var(--hdr-green-dark) 100%);
+            color: #000;
+            border-color: var(--hdr-green);
+        }
+        
+        .hint-cost {
+            font-size: 10px;
+            opacity: 0.7;
+            display: block;
+            margin-top: 2px;
+        }
+        
+        .guess-label {
+            font-size: 0.9em;
+            color: var(--hdr-text-dim);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .input-row {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .guess-columns {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .guess-column {
+            flex: 1;
+            transition: all 0.3s ease;
+        }
+        
+        .guess-column.correct {
+            background: rgba(0, 204, 68, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            margin: -10px;
+        }
+        
+        .guess-column.correct .guess-label {
+            color: var(--hdr-green);
+        }
+        
+        .guess-input {
+            flex: 1;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: 1px solid var(--hdr-border);
+            border-radius: 4px;
+            background: var(--hdr-bg-dark);
+            color: var(--hdr-text);
+            outline: none;
+            font-family: inherit;
+        }
+        
+        .guess-input:focus {
+            border-color: var(--hdr-green);
+            box-shadow: 0 0 10px var(--hdr-green-glow);
+        }
+        
+        .guess-input:disabled {
+            opacity: 0.5;
+        }
+        
+        .guess-input.correct {
+            border-color: var(--hdr-green);
+            background: rgba(0, 204, 68, 0.2);
+            color: var(--hdr-green);
+            opacity: 1;
+        }
+        
+        .guess-input.correct:disabled {
+            opacity: 1;
+        }
+        
+        .submit-btn.correct {
+            background: var(--hdr-green);
+            opacity: 0.7;
+        }
+        
+        .submit-btn {
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: bold;
+            background: linear-gradient(180deg, var(--hdr-green) 0%, var(--hdr-green-dark) 100%);
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .submit-btn:hover:not(:disabled) {
+            box-shadow: 0 0 15px var(--hdr-green-glow);
+        }
+        
+        .submit-btn:disabled {
+            background: var(--hdr-border);
+            color: var(--hdr-text-dim);
+            cursor: not-allowed;
+        }
+        
+        .autocomplete-container {
+            position: relative;
+        }
+        
+        .autocomplete-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--hdr-bg-lighter);
+            border: 1px solid var(--hdr-green);
+            border-radius: 4px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+        }
+        
+        .autocomplete-list.show {
+            display: block;
+        }
+        
+        .autocomplete-item {
+            padding: 10px 16px;
+            cursor: pointer;
+            border-bottom: 1px solid var(--hdr-border);
+        }
+        
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+        
+        .autocomplete-item:hover,
+        .autocomplete-item.selected {
+            background: var(--hdr-bg-card);
+            color: var(--hdr-green);
+        }
+        
+        .guess-history {
+            margin-top: 15px;
+        }
+        
+        .guess-row {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            margin-bottom: 6px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .guess-row.correct {
+            background: rgba(0, 204, 68, 0.2);
+            border: 1px solid var(--hdr-green);
+            color: var(--hdr-green);
+        }
+        
+        .guess-row.incorrect {
+            background: rgba(255, 68, 68, 0.15);
+            border: 1px solid #ff4444;
+            color: #ff6666;
+        }
+        
+        .guess-row .icon {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .result-section {
+            background: var(--hdr-bg-lighter);
+            border-radius: 4px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid var(--hdr-border);
+        }
+        
+        .result-section h2 {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .result-section.win h2 {
+            color: var(--hdr-green);
+            text-shadow: 0 0 10px var(--hdr-green-glow);
+        }
+        
+        .result-section.lose h2 {
+            color: #ff4444;
+        }
+        
+        .answer-reveal {
+            font-size: 1.3em;
+            margin: 15px 0;
+        }
+        
+        .answer-reveal .character {
+            color: #60a5fa;
+            font-weight: bold;
+        }
+        
+        .answer-reveal .move {
+            color: var(--hdr-green);
+            font-weight: bold;
+        }
+        
+        .view-link {
+            margin-top: 10px;
+        }
+        
+        .view-link a {
+            color: var(--hdr-green);
+            text-decoration: none;
+        }
+        
+        .view-link a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 5px var(--hdr-green-glow);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: var(--hdr-bg-dark);
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid var(--hdr-border);
+        }
+        
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--hdr-green);
+        }
+        
+        .stat-label {
+            font-size: 0.75em;
+            color: var(--hdr-text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .share-btn {
+            padding: 12px 30px;
+            font-size: 14px;
+            font-weight: bold;
+            background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .share-btn:hover {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+        
+        .timer {
+            margin-top: 20px;
+            color: var(--hdr-text-dim);
+        }
+        
+        .timer-value {
+            font-family: 'Consolas', monospace;
+            font-size: 1.2em;
+            color: var(--hdr-green);
+        }
+        
+        .info-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .info-modal.show {
+            display: flex;
+        }
+        
+        .info-content {
+            background: var(--hdr-bg-lighter);
+            padding: 30px;
+            border-radius: 4px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            border: 1px solid var(--hdr-green);
+            box-shadow: 0 0 30px var(--hdr-green-glow);
+        }
+        
+        .info-content h2 {
+            color: var(--hdr-green);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .info-content p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .info-content ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .info-content li {
+            margin-bottom: 8px;
+        }
+        
+        .close-btn {
+            background: linear-gradient(180deg, var(--hdr-green) 0%, var(--hdr-green-dark) 100%);
+            color: #000;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        
+        .header-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .info-btn {
+            background: transparent;
+            border: 2px solid var(--hdr-green);
+            color: var(--hdr-green);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.2s;
+            margin-left: 10px;
+        }
+        
+        .info-btn:hover {
+            background: var(--hdr-green);
+            color: #000;
+            box-shadow: 0 0 10px var(--hdr-green-glow);
+        }
+        
+        .mode-toggle {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        
+        .mode-btn {
+            padding: 8px 20px;
+            border: 1px solid var(--hdr-border);
+            background: transparent;
+            color: var(--hdr-text-dim);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s;
+        }
+        
+        .mode-btn.active {
+            border-color: var(--hdr-green);
+            color: var(--hdr-green);
+            background: rgba(0, 204, 68, 0.1);
+            box-shadow: 0 0 10px var(--hdr-green-glow);
+        }
+        
+        @media (max-width: 500px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .viewer-frame {
+                height: 350px;
+            }
+            .logo-container img {
+                max-width: 320px;
+            }
+            .guess-columns {
+                flex-direction: column;
+            }
+            .hints-row {
+                flex-direction: column;
+            }
+            .hint-btn {
+                min-width: auto;
+            }
+        }
+        
+        /* Celebration animations */
+        .celebration-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            overflow: hidden;
+        }
+        
+        .falling-sprite {
+            position: absolute;
+            top: -100px;
+            animation: fallAndSpin ease-out forwards;
+        }
+        
+        @keyframes fallAndSpin {
+            0% {
+                transform: translateY(0) rotate(0deg) scale(var(--sprite-scale, 1));
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(calc(100vh + 100px)) rotate(calc(var(--rotate-dir) * 720deg)) scale(var(--sprite-scale, 1));
+                opacity: 0;
+            }
+        }
+        
+        .confetti-particle {
+            position: absolute;
+            top: -20px;
+            border-radius: 2px;
+            animation: confettiFall ease-out forwards;
+        }
+        
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(0) rotate(0deg) scale(1);
+                opacity: 1;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(calc(100vh + 50px)) rotate(720deg) scale(0.5);
+                opacity: 0;
+            }
+        }
+        
+        .falling-star {
+            position: absolute;
+            top: -60px;
+            animation: fallAndSpin ease-out forwards;
+            line-height: 1;
+        }
+        
+        /* Leaderboard styles */
+        .leaderboard-btn {
+            background: transparent;
+            border: 2px solid var(--hdr-green);
+            color: var(--hdr-green);
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s;
+            margin-left: 10px;
+        }
+        
+        .leaderboard-btn:hover {
+            background: var(--hdr-green);
+            color: #000;
+            box-shadow: 0 0 15px var(--hdr-green-glow);
+        }
+        
+        .leaderboard-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .leaderboard-modal.show {
+            display: flex;
+        }
+        
+        .leaderboard-content {
+            background: var(--hdr-bg-card);
+            border: 1px solid var(--hdr-green);
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 0 30px var(--hdr-green-glow);
+        }
+        
+        .leaderboard-content h2 {
+            color: var(--hdr-green);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .leaderboard-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        
+        .leaderboard-tab {
+            padding: 8px 16px;
+            border: 1px solid var(--hdr-border);
+            background: transparent;
+            color: var(--hdr-text-dim);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        
+        .leaderboard-tab.active {
+            border-color: var(--hdr-green);
+            color: var(--hdr-green);
+            background: rgba(0, 204, 68, 0.1);
+        }
+        
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .leaderboard-table th,
+        .leaderboard-table td {
+            padding: 10px 8px;
+            text-align: center;
+            border-bottom: 1px solid var(--hdr-border);
+        }
+        
+        .leaderboard-table th {
+            color: var(--hdr-green);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .leaderboard-table tr:hover {
+            background: rgba(0, 204, 68, 0.05);
+        }
+        
+        .leaderboard-table .rank {
+            font-weight: bold;
+            color: var(--hdr-green);
+        }
+        
+        .leaderboard-table .rank-1 { color: #ffd700; }
+        .leaderboard-table .rank-2 { color: #c0c0c0; }
+        .leaderboard-table .rank-3 { color: #cd7f32; }
+        
+        .leaderboard-table .player-name {
+            text-align: left;
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .leaderboard-table .current-user {
+            background: rgba(0, 204, 68, 0.15);
+        }
+        
+        .leaderboard-loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--hdr-text-dim);
+        }
+        
+        .leaderboard-empty {
+            text-align: center;
+            padding: 40px;
+            color: var(--hdr-text-dim);
+        }
+        
+        .username-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--hdr-bg-dark);
+            border-radius: 4px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .username-section label {
+            color: var(--hdr-text-dim);
+            font-size: 14px;
+        }
+        
+        .username-section input {
+            flex: 1;
+            min-width: 150px;
+            padding: 8px 12px;
+            border: 1px solid var(--hdr-border);
+            border-radius: 4px;
+            background: var(--hdr-bg-lighter);
+            color: var(--hdr-text);
+            font-size: 14px;
+        }
+        
+        .username-section input:focus {
+            border-color: var(--hdr-green);
+            outline: none;
+        }
+        
+        .username-section button {
+            padding: 8px 16px;
+            background: var(--hdr-green);
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        
+        .username-section button:hover {
+            box-shadow: 0 0 10px var(--hdr-green-glow);
+        }
+        
+        .firebase-note {
+            text-align: center;
+            font-size: 11px;
+            color: var(--hdr-text-dim);
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="header-row">
+            <div class="logo-container">
+                <img src="hdrdle-logo.png" alt="HDRdle" />
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <button class="leaderboard-btn" onclick="showLeaderboard()">🏆 Leaderboard</button>
+                    <div class="user-tag" onclick="showLeaderboard()">
+                        <span id="display-username"></span>
+                        <span class="edit-hint">✎</span>
+                    </div>
+                </div>
+                <button class="info-btn" onclick="showInfo()">?</button>
+            </div>
+        </div>
+        <p class="subtitle">Guess the character and move from the hitbox</p>
+        
+        <div class="mode-toggle">
+            <button class="mode-btn active" id="daily-btn" onclick="setMode('daily')">Daily</button>
+            <button class="mode-btn" id="random-btn" onclick="setMode('random')">Random</button>
+        </div>
+        
+        <div class="viewer-frame" id="viewer-frame">
+            <div class="loading" id="loading">Loading hitbox viewer...</div>
+        </div>
+        
+        <div class="hints-section" id="hints-section" style="display:none">
+            <div class="hints-header">
+                <span class="hints-title">💡 Hints (costs guesses)</span>
+                <span class="guesses-remaining" id="guesses-remaining">10 guesses left</span>
+            </div>
+            <div class="hints-row">
+                <button class="hint-btn" id="hint-skeleton" onclick="unlockHint('skeleton')">
+                    Show Skeleton
+                    <span class="hint-cost">(-1 guess)</span>
+                </button>
+                <button class="hint-btn" id="hint-frame" onclick="unlockHint('frame')">
+                    Show Frame #
+                    <span class="hint-cost">(-1 guess)</span>
+                </button>
+                <button class="hint-btn" id="hint-hurtboxes" onclick="unlockHint('hurtboxes')">
+                    Show Hurtboxes
+                    <span class="hint-cost">(-2 guesses)</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="guess-section" id="guess-section" style="display:none">
+            <div class="guess-columns">
+                <div class="guess-column" id="character-column">
+                    <div class="guess-label">Guess the character:</div>
+                    <div class="input-row">
+                        <div class="autocomplete-container" style="flex:1">
+                            <input type="text" class="guess-input" id="character-input" 
+                                   placeholder="Click or type to select..." autocomplete="off">
+                            <div class="autocomplete-list" id="character-autocomplete"></div>
+                        </div>
+                        <button class="submit-btn" id="character-submit" onclick="submitCharacter()">Submit</button>
+                    </div>
+                </div>
+                
+                <div class="guess-column" id="move-column">
+                    <div class="guess-label">Guess the move:</div>
+                    <div class="input-row">
+                        <div class="autocomplete-container" style="flex:1">
+                            <input type="text" class="guess-input" id="move-input" 
+                                   placeholder="Click or type to select..." autocomplete="off">
+                            <div class="autocomplete-list" id="move-autocomplete"></div>
+                        </div>
+                        <button class="submit-btn" id="move-submit" onclick="submitMove()">Submit</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guess-history" id="guess-history"></div>
+        </div>
+        
+        <div class="result-section" id="result-section" style="display:none">
+            <h2 id="result-title">Congratulations!</h2>
+            <div class="answer-reveal">
+                <span class="character" id="answer-character"></span> - 
+                <span class="move" id="answer-move"></span>
+            </div>
+            <div class="view-link" id="view-link"></div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-played">0</div>
+                    <div class="stat-label">Played</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-wins">0</div>
+                    <div class="stat-label">Wins</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-streak">0</div>
+                    <div class="stat-label">Streak</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="stat-best">0</div>
+                    <div class="stat-label">Best</div>
+                </div>
+            </div>
+            <button class="share-btn" onclick="shareResult()">Share Result</button>
+            <button class="submit-btn" id="play-again" onclick="playRandom()" style="display:none; margin-top:10px;">Play Again</button>
+            <div class="timer" id="timer-section">
+                <div>Next puzzle in:</div>
+                <div class="timer-value" id="timer">00:00:00</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-modal" id="info-modal">
+        <div class="info-content">
+            <h2>How to Play</h2>
+            <p>HDRdle is a daily hitbox guessing game for HewDraw Remix.</p>
+            <p><strong>Rules:</strong></p>
+            <ul>
+                <li>You'll see a hitbox visualization from a move</li>
+                <li>Guess the character AND the move (in any order)</li>
+                <li>You have 12 total guesses</li>
+                <li>Green = correct, Red = incorrect</li>
+                <li>Win by correctly guessing both!</li>
+            </ul>
+            <p><strong>Hints:</strong></p>
+            <ul>
+                <li>Spend guesses to reveal helpful information</li>
+                <li>Show Skeleton (-1 guess) - reveals the character's pose</li>
+                <li>Show Frame # (-1 guess) - shows which frame the hitbox is on</li>
+                <li>Show Hurtboxes (-2 guesses) - reveals the character's hurtboxes</li>
+            </ul>
+            <p>A new puzzle is available every day at midnight!</p>
+            <button class="close-btn" onclick="hideInfo()">Got it!</button>
+        </div>
+    </div>
+    
+    <div class="leaderboard-modal" id="leaderboard-modal">
+        <div class="leaderboard-content">
+            <h2>🏆 Leaderboard</h2>
+            
+            <div class="username-section">
+                <label>Your Name:</label>
+                <input type="text" id="username-input" placeholder="Enter display name..." maxlength="20">
+                <button onclick="saveUsername()">Save</button>
+            </div>
+            
+            <div class="leaderboard-tabs">
+                <button class="leaderboard-tab active" onclick="switchLeaderboardTab('streak')">Best Streak</button>
+                <button class="leaderboard-tab" onclick="switchLeaderboardTab('wins')">Total Wins</button>
+                <button class="leaderboard-tab" onclick="switchLeaderboardTab('winrate')">Win Rate</button>
+            </div>
+            
+            <div id="leaderboard-data">
+                <div class="leaderboard-loading">Loading leaderboard...</div>
+            </div>
+            
+            <p class="firebase-note">Leaderboard updates after each daily puzzle</p>
+            
+            <button class="close-btn" onclick="hideLeaderboard()" style="margin-top: 20px;">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // ============================================
+        // FIREBASE CONFIGURATION
+        // ============================================
+        const firebaseConfig = {
+			apiKey: "AIzaSyB_82Fyxja2F1aq-Q3NjNqyuNZF878kD2k",
+			authDomain: "hdrdle-leaderboard.firebaseapp.com",
+			databaseURL: "https://hdrdle-leaderboard-default-rtdb.firebaseio.com",
+			projectId: "hdrdle-leaderboard",
+			storageBucket: "hdrdle-leaderboard.firebasestorage.app",
+			messagingSenderId: "1009842124653",
+			appId: "1:1009842124653:web:e0d44cbf0efdfabbce8c64",
+			measurementId: "G-Q6N0NG879D"
+		};
+
+        
+        // Initialize Firebase (only if config is set up)
+        let firebaseEnabled = false;
+        let database = null;
+        
+        try {
+            if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
+                firebase.initializeApp(firebaseConfig);
+                database = firebase.database();
+                firebaseEnabled = true;
+            } else {
+            }
+        } catch (error) {
+        }
+        
+        // Generate or retrieve user ID
+        function getUserId() {
+            let oderId = localStorage.getItem('hdrdle_user_id');
+            if (!oderId) {
+                oderId = 'user_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+                localStorage.setItem('hdrdle_user_id', oderId);
+            }
+            return oderId;
+        }
+        
+        // Get or set username
+        function getUsername() {
+            return localStorage.getItem('hdrdle_username') || generateDefaultUsername();
+        }
+        
+        // Generate a random default username like "Mario#4821"
+        function generateDefaultUsername() {
+            const SMASH_NAMES = [
+                'Mario', 'DK', 'Link', 'Samus', 'Yoshi', 'Kirby', 'Fox', 'Pikachu',
+                'Luigi', 'Ness', 'Falcon', 'Jigglypuff', 'Peach', 'Daisy', 'Bowser',
+                'Sheik', 'Zelda', 'DrMario', 'Pichu', 'Falco', 'Marth', 'Lucina',
+                'YoungLink', 'Ganondorf', 'Mewtwo', 'Roy', 'Chrom', 'GnW',
+                'MetaKnight', 'Pit', 'DarkPit', 'ZSS', 'Wario', 'Snake', 'Ike',
+                'Squirtle', 'Ivysaur', 'Charizard', 'Diddy', 'Lucas', 'Sonic',
+                'Dedede', 'Olimar', 'Lucario', 'ROB', 'ToonLink', 'Wolf',
+                'Villager', 'MegaMan', 'WiiFit', 'Rosalina', 'LittleMac',
+                'Greninja', 'Palutena', 'PacMan', 'Robin', 'Shulk', 'BowserJr',
+                'DuckHunt', 'Ryu', 'Ken', 'Cloud', 'Corrin', 'Bayonetta',
+                'Inkling', 'Ridley', 'Simon', 'Richter', 'KRool', 'Isabelle',
+                'Incineroar', 'Plant', 'Joker', 'Hero', 'Banjo', 'Terry',
+                'Byleth', 'MinMin', 'Steve', 'Sephiroth', 'Pyra', 'Mythra',
+                'Kazuya', 'Sora', 'MiiBrawler', 'MiiSword', 'MiiGunner',
+                'DarkSamus', 'IceClimbers', 'Popo', 'Nana'
+            ];
+            const name = SMASH_NAMES[Math.floor(Math.random() * SMASH_NAMES.length)];
+            const num = String(Math.floor(Math.random() * 10000)).padStart(4, '0');
+            const defaultName = name + '#' + num;
+            // Persist so they keep the same default across sessions
+            localStorage.setItem('hdrdle_username', defaultName);
+            return defaultName;
+        }
+        
+        function saveUsername() {
+            const input = document.getElementById('username-input');
+            const name = input.value.trim().substring(0, 20);
+            if (name) {
+                localStorage.setItem('hdrdle_username', name);
+                // Update in Firebase only if user already has an entry with games played
+                if (firebaseEnabled) {
+                    const oderId = getUserId();
+                    const ref = database.ref('leaderboard/' + oderId);
+                    ref.once('value').then((snapshot) => {
+                        const data = snapshot.val();
+                        if (data && data.played > 0) {
+                            ref.update({ name: name });
+                        }
+                    });
+                }
+                alert('Username saved! It will appear on the leaderboard after you complete a daily puzzle.');
+                loadLeaderboard();
+                updateUsernameDisplay();
+            }
+        }
+        
+        // Submit score to leaderboard
+        function submitToLeaderboard(won, guessCount) {
+            if (!firebaseEnabled) {
+                return;
+            }
+            
+            const oderId = getUserId();
+            const username = getUsername();
+            const ref = database.ref('leaderboard/' + oderId);
+            
+            ref.once('value').then((snapshot) => {
+                const defaults = {
+                    name: username,
+                    oderId: oderId,
+                    wins: 0,
+                    played: 0,
+                    currentStreak: 0,
+                    bestStreak: 0,
+                    totalGuesses: 0,
+                    lastPlayed: null
+                };
+                
+                // Merge defaults with existing data (existing data takes priority)
+                const existingData = snapshot.val() || {};
+                const existing = { ...defaults, ...existingData };
+                
+                // Check if already played today
+                const today = new Date().toDateString();
+                if (existing.lastPlayed === today) {
+                    return;
+                }
+                
+                // Update stats
+                existing.played += 1;
+                existing.name = username;  // Update name in case it changed
+                existing.lastPlayed = today;
+                
+                if (won) {
+                    existing.wins += 1;
+                    existing.currentStreak += 1;
+                    existing.totalGuesses += guessCount;
+                    if (existing.currentStreak > existing.bestStreak) {
+                        existing.bestStreak = existing.currentStreak;
+                    }
+                } else {
+                    existing.currentStreak = 0;
+                }
+                
+                ref.set(existing).then(() => {
+                }).catch((error) => {
+                });
+            });
+        }
+        
+        // Load leaderboard data
+        let currentLeaderboardTab = 'streak';
+        
+        function loadLeaderboard() {
+            if (!firebaseEnabled) {
+                document.getElementById('leaderboard-data').innerHTML = 
+                    '<div class="leaderboard-empty">Leaderboard not configured.<br>See setup instructions in the code.</div>';
+                return;
+            }
+            
+            document.getElementById('leaderboard-data').innerHTML = 
+                '<div class="leaderboard-loading">Loading leaderboard...</div>';
+            
+            database.ref('leaderboard').once('value').then((snapshot) => {
+                const data = snapshot.val();
+                if (!data) {
+                    document.getElementById('leaderboard-data').innerHTML = 
+                        '<div class="leaderboard-empty">No entries yet. Be the first!</div>';
+                    return;
+                }
+                
+                // Convert to array and sort based on current tab
+                let entries = Object.values(data).filter(e => e.played > 0);
+                
+                switch (currentLeaderboardTab) {
+                    case 'streak':
+                        entries.sort((a, b) => b.bestStreak - a.bestStreak || b.wins - a.wins);
+                        break;
+                    case 'wins':
+                        entries.sort((a, b) => b.wins - a.wins || b.bestStreak - a.bestStreak);
+                        break;
+                    case 'winrate':
+                        entries.sort((a, b) => {
+                            const rateA = a.played > 0 ? a.wins / a.played : 0;
+                            const rateB = b.played > 0 ? b.wins / b.played : 0;
+                            return rateB - rateA || b.wins - a.wins;
+                        });
+                        break;
+                }
+                
+                // Take top 50
+                entries = entries.slice(0, 50);
+                
+                const currentUserId = getUserId();
+                
+                let html = `
+                    <table class="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Player</th>
+                                <th>Wins</th>
+                                <th>Played</th>
+                                <th>Win%</th>
+                                <th>Streak</th>
+                                <th>Best</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+                
+                entries.forEach((entry, index) => {
+                    const rank = index + 1;
+                    const winRate = entry.played > 0 ? Math.round((entry.wins / entry.played) * 100) : 0;
+                    const isCurrentUser = entry.oderId === currentUserId;
+                    const rankClass = rank <= 3 ? `rank-${rank}` : '';
+                    
+                    html += `
+                        <tr class="${isCurrentUser ? 'current-user' : ''}">
+                            <td class="rank ${rankClass}">${rank}</td>
+                            <td class="player-name">${escapeHtml(entry.name || 'Anonymous')}</td>
+                            <td>${entry.wins}</td>
+                            <td>${entry.played}</td>
+                            <td>${winRate}%</td>
+                            <td>${entry.currentStreak}</td>
+                            <td>${entry.bestStreak}</td>
+                        </tr>
+                    `;
+                });
+                
+                html += '</tbody></table>';
+                document.getElementById('leaderboard-data').innerHTML = html;
+                
+            }).catch((error) => {
+                document.getElementById('leaderboard-data').innerHTML = 
+                    '<div class="leaderboard-empty">Error loading leaderboard. Please try again.</div>';
+            });
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function switchLeaderboardTab(tab) {
+            currentLeaderboardTab = tab;
+            
+            // Update tab buttons
+            document.querySelectorAll('.leaderboard-tab').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            loadLeaderboard();
+        }
+        
+        function showLeaderboard() {
+            document.getElementById('leaderboard-modal').classList.add('show');
+            document.getElementById('username-input').value = getUsername();
+            loadLeaderboard();
+        }
+        
+        function hideLeaderboard() {
+            document.getElementById('leaderboard-modal').classList.remove('show');
+        }
+        
+        // ============================================
+        // GAME CODE
+        // ============================================
+        
+        // Base URL for HDR frame data (relative path - assumes hosted on same site as viewer.html)
+        const HDR_DATA_URL = 'data';
+        
+        // All HDR characters with their internal names and display names
+        const CHARACTER_INFO = {
+            'mario': 'Mario',
+            'donkey': 'Donkey Kong',
+            'link': 'Link',
+            'samus': 'Samus',
+            'samusd': 'Dark Samus',
+            'yoshi': 'Yoshi',
+            'kirby': 'Kirby',
+            'fox': 'Fox',
+            'pikachu': 'Pikachu',
+            'luigi': 'Luigi',
+            'ness': 'Ness',
+            'captain': 'Captain Falcon',
+            'purin': 'Jigglypuff',
+            'peach': 'Peach',
+            'daisy': 'Daisy',
+            'koopa': 'Bowser',
+            'iceclimber': 'Ice Climbers',
+            'sheik': 'Sheik',
+            'zelda': 'Zelda',
+            'mariod': 'Dr. Mario',
+            'pichu': 'Pichu',
+            'falco': 'Falco',
+            'marth': 'Marth',
+            'lucina': 'Lucina',
+            'younglink': 'Young Link',
+            'ganon': 'Ganondorf',
+            'mewtwo': 'Mewtwo',
+            'roy': 'Roy',
+            'chrom': 'Chrom',
+            'gamewatch': 'Mr. Game & Watch',
+            'metaknight': 'Meta Knight',
+            'pit': 'Pit',
+            'pitb': 'Dark Pit',
+            'szerosuit': 'Zero Suit Samus',
+            'wario': 'Wario',
+            'snake': 'Snake',
+            'ike': 'Ike',
+            'pzenigame': 'Squirtle',
+            'pfushigisou': 'Ivysaur',
+            'plizardon': 'Charizard',
+            'diddy': 'Diddy Kong',
+            'lucas': 'Lucas',
+            'sonic': 'Sonic',
+            'dedede': 'King Dedede',
+            'pikmin': 'Olimar',
+            'lucario': 'Lucario',
+            'robot': 'R.O.B.',
+            'toonlink': 'Toon Link',
+            'wolf': 'Wolf',
+            'murabito': 'Villager',
+            'rockman': 'Mega Man',
+            'wiifit': 'Wii Fit Trainer',
+            'rosetta': 'Rosalina & Luma',
+            'littlemac': 'Little Mac',
+            'gekkouga': 'Greninja',
+            'palutena': 'Palutena',
+            'pacman': 'Pac-Man',
+            'reflet': 'Robin',
+            'shulk': 'Shulk',
+            'koopajr': 'Bowser Jr.',
+            'duckhunt': 'Duck Hunt',
+            'ryu': 'Ryu',
+            'ken': 'Ken',
+            'cloud': 'Cloud',
+            'kamui': 'Corrin',
+            'bayonetta': 'Bayonetta',
+            'inkling': 'Inkling',
+            'ridley': 'Ridley',
+            'simon': 'Simon',
+            'richter': 'Richter',
+            'krool': 'King K. Rool',
+            'shizue': 'Isabelle',
+            'gaogaen': 'Incineroar',
+            'packun': 'Piranha Plant',
+            'jack': 'Joker',
+            'brave': 'Hero',
+            'buddy': 'Banjo & Kazooie',
+            'dolly': 'Terry',
+            'master': 'Byleth',
+            'tantan': 'Min Min',
+            'pickel': 'Steve',
+            'edge': 'Sephiroth',
+            'eflame': 'Pyra',
+            'elight': 'Mythra',
+            'demon': 'Kazuya',
+            'trail': 'Sora',
+            'miifighter': 'Mii Brawler',
+            'miiswordsman': 'Mii Swordfighter',
+            'miigunner': 'Mii Gunner'
+        };
+        
+        // Move internal names to display names
+        const MOVE_DISPLAY_NAMES = {
+            'jab1': 'Jab',
+            'jab2': 'Jab 2',
+            'jab3': 'Jab 3',
+            'rapid_jab': 'Rapid Jab',
+            'rapid_jab_finisher': 'Rapid Jab Finisher',
+            'ftilt': 'Forward Tilt',
+            'utilt': 'Up Tilt',
+            'dtilt': 'Down Tilt',
+            'dash_attack': 'Dash Attack',
+            'fsmash': 'Forward Smash',
+            'usmash': 'Up Smash',
+            'dsmash': 'Down Smash',
+            'nair': 'Neutral Air',
+            'fair': 'Forward Air',
+            'bair': 'Back Air',
+            'uair': 'Up Air',
+            'dair': 'Down Air',
+            'grab': 'Grab',
+            'dash_grab': 'Dash Grab',
+            'pivot_grab': 'Pivot Grab',
+            'pummel': 'Pummel',
+            'fthrow': 'Forward Throw',
+            'bthrow': 'Back Throw',
+            'uthrow': 'Up Throw',
+            'dthrow': 'Down Throw'
+        };
+        
+        // Moves we want to include in puzzles (common attack moves)
+        const PUZZLE_MOVES = [
+            'jab1', 'ftilt', 'utilt', 'dtilt', 'dash_attack',
+            'fsmash', 'usmash', 'dsmash',
+            'nair', 'fair', 'bair', 'uair', 'dair'
+        ];
+        
+        // Sprite sheet position mapping (internal name -> sprite position)
+        // Sprite sheet is 18 sprites per row, each sprite is 56x55 pixels
+        const SPRITE_POSITIONS = {
+            'mario': 1, 'donkey': 2, 'link': 3, 'samus': 4,
+            'yoshi': 5, 'kirby': 6, 'fox': 7, 'pikachu': 8, 'luigi': 9,
+            'ness': 10, 'captain': 11, 'purin': 12, 'peach': 13, 'koopa': 14,
+            'popo': 15, 'nana': 15, 'iceclimber': 15,
+            'sheik': 16, 'zelda': 17, 'mariod': 18,
+            'pichu': 19, 'falco': 20, 'marth': 21, 'younglink': 22, 'ganon': 23,
+            'mewtwo': 24, 'roy': 25, 'gamewatch': 26, 'metaknight': 27, 'pit': 28,
+            'szerosuit': 29, 'wario': 30, 'snake': 31, 'ike': 32,
+            'pzenigame': 33, 'pfushigisou': 34, 'plizardon': 35,
+            'diddy': 36, 'lucas': 37, 'sonic': 38, 'dedede': 39, 'pikmin': 40,
+            'lucario': 41, 'robot': 42, 'toonlink': 43, 'wolf': 44, 'murabito': 45,
+            'rockman': 46, 'wiifit': 47, 'rosetta': 48, 'littlemac': 49,
+            'gekkouga': 50, 'miifighter': 51, 'miiswordsman': 52, 'miigunner': 53,
+            'palutena': 54, 'pacman': 55, 'reflet': 56, 'shulk': 57, 'koopajr': 58,
+            'duckhunt': 59, 'ryu': 60, 'cloud': 61, 'kamui': 62, 'bayonetta': 63,
+            'inkling': 64, 'ridley': 65, 'simon': 66, 'krool': 67, 'shizue': 68,
+            'gaogaen': 69,
+            'samusd': 70, 'daisy': 71, 'lucina': 72, 'chrom': 73, 'pitb': 74,
+            'ken': 75, 'richter': 76,
+            'packun': 77, 'jack': 78, 'brave': 79, 'buddy': 80, 'dolly': 81,
+            'master': 82, 'tantan': 83, 'pickel': 84, 'edge': 85,
+            'eflame': 86, 'elight': 87, 'demon': 88, 'trail': 89
+        };
+        
+        // Dynamic move list - will be populated on load
+        let MOVE_LIST = [];
+        let puzzlesLoaded = false;
+        
+        // Characters whose data file name differs from their CHARACTER_INFO key
+        // (e.g., Ice Climbers data is stored as popo_hitboxes.json)
+        const CHAR_DATA_FILES = {
+            'iceclimber': 'popo'
+        };
+        
+        // Load all puzzles dynamically from HDR website
+        async function loadAllPuzzles() {
+            const puzzles = [];
+            const loadingStatus = document.getElementById('loading-status');
+            
+            if (loadingStatus) {
+                loadingStatus.textContent = 'Loading character data...';
+                loadingStatus.style.display = 'block';
+            }
+            
+            let loadedCount = 0;
+            const totalChars = Object.keys(CHARACTER_INFO).length;
+            
+            for (const [charId, charName] of Object.entries(CHARACTER_INFO)) {
+                try {
+                    // Map to actual data file name (e.g., iceclimber -> popo)
+                    const dataId = CHAR_DATA_FILES[charId] || charId;
+                    
+                    // Fetch hitbox data for this character
+                    const response = await fetch(`${HDR_DATA_URL}/hitboxes/${dataId}_hitboxes.json`);
+                    if (!response.ok) continue;
+                    
+                    const hitboxData = await response.json();
+                    
+                    // Get available moves
+                    let availableMoves = {};
+                    if (hitboxData.has_stances && hitboxData.stance_data) {
+                        // For stance characters, merge all stance moves
+                        for (const stanceMoves of Object.values(hitboxData.stance_data)) {
+                            Object.assign(availableMoves, stanceMoves);
+                        }
+                    } else if (hitboxData.moves) {
+                        availableMoves = hitboxData.moves;
+                    }
+                    
+                    // Add valid puzzle moves
+                    // Use dataId (not charId) since viewer needs the data-file character name
+                    for (const moveId of PUZZLE_MOVES) {
+                        if (availableMoves[moveId]) {
+                            // Check if move has actual hitbox frames
+                            const moveData = availableMoves[moveId];
+                            if (moveData.hitboxes_by_frame && Object.keys(moveData.hitboxes_by_frame).length > 0) {
+                                const displayMove = MOVE_DISPLAY_NAMES[moveId] || moveId;
+                                puzzles.push([dataId, moveId, displayMove, charName]);
+                            }
+                        }
+                    }
+                    
+                    loadedCount++;
+                    if (loadingStatus) {
+                        loadingStatus.textContent = `Loading characters... ${loadedCount}/${totalChars}`;
+                    }
+                    
+                } catch (error) {
+                }
+            }
+            
+            
+            if (loadingStatus) {
+                loadingStatus.style.display = 'none';
+            }
+            
+            return puzzles;
+        }
+        
+        // Fallback static puzzle list (used if dynamic loading fails)
+        const FALLBACK_MOVE_LIST = [
+            ["mario", "fsmash", "Forward Smash", "Mario"],
+            ["mario", "fair", "Forward Air", "Mario"],
+            ["link", "fsmash", "Forward Smash", "Link"],
+            ["link", "dair", "Down Air", "Link"],
+            ["kirby", "fsmash", "Forward Smash", "Kirby"],
+            ["fox", "usmash", "Up Smash", "Fox"],
+            ["captain", "fair", "Forward Air", "Captain Falcon"],
+            ["koopa", "fsmash", "Forward Smash", "Bowser"],
+            ["marth", "fsmash", "Forward Smash", "Marth"],
+            ["ganon", "ftilt", "Forward Tilt", "Ganondorf"],
+        ];
+
+        // Character list for autocomplete - will be populated after puzzles load
+        let CHARACTERS = [];
+        
+        // Move display names for autocomplete
+        const MOVES = [
+            "Jab", "Forward Tilt", "Up Tilt", "Down Tilt",
+            "Dash Attack", "Forward Smash", "Up Smash", "Down Smash",
+            "Neutral Air", "Forward Air", "Back Air", "Up Air", "Down Air"
+        ];
+
+        // Game state
+        let currentPuzzle = null;
+        let guesses = [];
+        let characterGuessed = false;
+        let moveGuessed = false;
+        let wrongCharacterGuesses = [];  // Track wrong character guesses to filter from dropdown
+        let wrongMoveGuesses = [];       // Track wrong move guesses to filter from dropdown
+        let gameOver = false;
+        let gameMode = 'daily';
+        let currentDisplayFrame = null;  // Track which frame the viewer is showing
+        
+        // Hint state
+        let hints = {
+            skeleton: false,
+            frame: false,
+            hurtboxes: false
+        };
+        const HINT_COSTS = {
+            skeleton: 1,
+            frame: 1,
+            hurtboxes: 2
+        };
+        const MAX_GUESSES = 12;
+
+        // Initialize game
+        async function init() {
+            // Show loading status
+            const viewerFrame = document.getElementById('viewer-frame');
+            if (viewerFrame) {
+                viewerFrame.innerHTML = '<div style="color: var(--hdr-text-dim); text-align: center; padding: 50px;">Loading puzzle data...</div>';
+            }
+            
+            // Try to load puzzles dynamically from HDR website
+            try {
+                const dynamicPuzzles = await loadAllPuzzles();
+                if (dynamicPuzzles.length > 0) {
+                    MOVE_LIST = dynamicPuzzles;
+                } else {
+                    MOVE_LIST = FALLBACK_MOVE_LIST;
+                }
+            } catch (error) {
+                MOVE_LIST = FALLBACK_MOVE_LIST;
+            }
+            
+            // Sort for deterministic order (stable daily puzzles regardless of load order)
+            MOVE_LIST.sort((a, b) => {
+                const charCmp = a[3].localeCompare(b[3]);
+                if (charCmp !== 0) return charCmp;
+                return a[1].localeCompare(b[1]);
+            });
+            
+            // Update character list for autocomplete
+            CHARACTERS = [...new Set(MOVE_LIST.map(m => m[3]))].sort();
+            puzzlesLoaded = true;
+            
+            loadStats();
+            setupAutocomplete();
+            startTimer();
+            updateUsernameDisplay();
+            setMode('daily');
+        }
+        
+        function updateUsernameDisplay() {
+            const el = document.getElementById('display-username');
+            if (el) el.textContent = 'Playing as: ' + getUsername();
+        }
+
+        function setMode(mode) {
+            if (!puzzlesLoaded) {
+                setTimeout(() => setMode(mode), 100);
+                return;
+            }
+            gameMode = mode;
+            document.getElementById('daily-btn').classList.toggle('active', mode === 'daily');
+            document.getElementById('random-btn').classList.toggle('active', mode === 'random');
+            
+            if (mode === 'daily') {
+                checkDailyCompletion();
+            } else {
+                playRandom();
+            }
+        }
+
+        function playRandom() {
+            const randomIndex = Math.floor(Math.random() * MOVE_LIST.length);
+            const puzzle = MOVE_LIST[randomIndex];
+            currentPuzzle = {
+                character: puzzle[0],
+                move: puzzle[1],
+                displayMove: puzzle[2],
+                displayCharacter: puzzle[3]
+            };
+            guesses = [];
+            characterGuessed = false;
+            moveGuessed = false;
+            wrongCharacterGuesses = [];
+            wrongMoveGuesses = [];
+            gameOver = false;
+            currentDisplayFrame = null;
+            hints = { skeleton: false, frame: false, hurtboxes: false };
+            
+            loadViewer();
+            resetUI();
+        }
+
+        // Mulberry32 seeded PRNG - produces deterministic results from a seed
+        function mulberry32(seed) {
+            return function() {
+                seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+                let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+                t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+                return ((t ^ t >>> 14) >>> 0) / 4294967296;
+            };
+        }
+
+        function getDailyPuzzleIndex() {
+            const start = new Date('2025-01-01').getTime();
+            const today = new Date().setHours(0, 0, 0, 0);
+            const daysSinceStart = Math.floor((today - start) / (1000 * 60 * 60 * 24));
+            const rng = mulberry32(daysSinceStart * 2654435761);
+            // Burn a few values for better distribution
+            rng(); rng();
+            return Math.floor(rng() * MOVE_LIST.length);
+        }
+
+        function checkDailyCompletion() {
+            const today = new Date().toDateString();
+            const saved = localStorage.getItem('hdrdle_daily');
+            
+            const puzzleIndex = getDailyPuzzleIndex();
+            const puzzle = MOVE_LIST[puzzleIndex];
+            currentPuzzle = {
+                character: puzzle[0],
+                move: puzzle[1],
+                displayMove: puzzle[2],
+                displayCharacter: puzzle[3]
+            };
+            
+            if (saved) {
+                const data = JSON.parse(saved);
+                const expectedPuzzleId = currentPuzzle.character + '_' + currentPuzzle.move;
+                if (data.date === today && (!data.puzzleId || data.puzzleId === expectedPuzzleId)) {
+                    guesses = data.guesses || [];
+                    characterGuessed = data.characterGuessed || false;
+                    moveGuessed = data.moveGuessed || false;
+                    gameOver = data.gameOver || false;
+                    hints = data.hints || { skeleton: false, frame: false, hurtboxes: false };
+                    currentDisplayFrame = data.currentDisplayFrame || null;
+                    wrongCharacterGuesses = data.wrongCharacterGuesses || [];
+                    wrongMoveGuesses = data.wrongMoveGuesses || [];
+                    
+                    // Pass saved frame to viewer so it loads on that frame
+                    loadViewer(currentDisplayFrame);
+                    renderGuessHistory();
+                    
+                    if (gameOver) {
+                        showResult(data.won);
+                    } else {
+                        resetUI();
+                        // Apply correct styling if already guessed
+                        if (characterGuessed) {
+                            applyCorrectStyling('character');
+                        }
+                        if (moveGuessed) {
+                            applyCorrectStyling('move');
+                        }
+                    }
+                    return;
+                }
+            }
+            
+            guesses = [];
+            characterGuessed = false;
+            moveGuessed = false;
+            gameOver = false;
+            currentDisplayFrame = null;
+            hints = { skeleton: false, frame: false, hurtboxes: false };
+            wrongCharacterGuesses = [];
+            wrongMoveGuesses = [];
+            
+            loadViewer();
+            resetUI();
+        }
+
+        function loadViewer(frameOverride = null) {
+            const frame = document.getElementById('viewer-frame');
+            let viewerUrl = `viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}&hdrdle=true`;
+            
+            // Add hint parameters
+            if (hints.skeleton) viewerUrl += '&showSkeleton=true';
+            if (hints.hurtboxes) viewerUrl += '&showHurtboxes=true';
+            
+            // Add frame parameter if provided (for restoring saved games)
+            if (frameOverride) viewerUrl += `&frame=${frameOverride}`;
+            
+            frame.innerHTML = `<iframe src="${viewerUrl}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
+        }
+        
+        // Listen for messages from viewer iframe (to get current frame)
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.type === 'hdrdleFrame') {
+                currentDisplayFrame = event.data.frame;
+                // Update frame hint button if unlocked
+                if (hints.frame) {
+                    document.getElementById('hint-frame').innerHTML = 
+                        `Frame ${currentDisplayFrame}<span class="hint-cost">(unlocked)</span>`;
+                }
+                // Update view link if game is over (in case frame arrived after result was shown)
+                if (gameOver && currentPuzzle) {
+                    const frameParam = `&frame=${currentDisplayFrame}`;
+                    document.getElementById('view-link').innerHTML = 
+                        `<a href="viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}${frameParam}" target="_blank">View in hitbox viewer →</a>`;
+                    // Also save the frame to localStorage
+                    saveProgress();
+                }
+            }
+        });
+        
+        function unlockHint(hintType) {
+            if (hints[hintType] || gameOver) return;
+            
+            const cost = HINT_COSTS[hintType];
+            const currentGuessCount = guesses.length;
+            const remainingGuesses = MAX_GUESSES - currentGuessCount;
+            
+            if (cost > remainingGuesses) {
+                alert(`Not enough guesses! This hint costs ${cost} guess${cost > 1 ? 'es' : ''}.`);
+                return;
+            }
+            
+            // Add "penalty" guesses for the hint
+            for (let i = 0; i < cost; i++) {
+                guesses.push({ type: 'hint', hint: hintType });
+            }
+            
+            hints[hintType] = true;
+            
+            // Update button appearance
+            const btn = document.getElementById(`hint-${hintType}`);
+            btn.classList.add('unlocked');
+            btn.disabled = true;
+            
+            if (hintType === 'frame' && currentDisplayFrame) {
+                btn.innerHTML = `Frame ${currentDisplayFrame}<span class="hint-cost">(unlocked)</span>`;
+            } else {
+                btn.innerHTML = btn.textContent.split('(')[0].trim() + `<span class="hint-cost">(unlocked)</span>`;
+            }
+            
+            // Reload viewer with new hint if skeleton or hurtboxes
+            if (hintType === 'skeleton' || hintType === 'hurtboxes') {
+                loadViewer();
+            }
+            
+            updateGuessesRemaining();
+            updateHintButtons();
+            saveProgress();
+        }
+        
+        function updateGuessesRemaining() {
+            const remaining = MAX_GUESSES - guesses.length;
+            document.getElementById('guesses-remaining').textContent = `${remaining} guess${remaining !== 1 ? 'es' : ''} left`;
+        }
+        
+        function updateHintButtons() {
+            const remaining = MAX_GUESSES - guesses.length;
+            
+            for (const [hintType, cost] of Object.entries(HINT_COSTS)) {
+                const btn = document.getElementById(`hint-${hintType}`);
+                if (!hints[hintType]) {
+                    btn.disabled = cost > remaining || gameOver;
+                }
+            }
+        }
+
+        function resetUI() {
+            document.getElementById('guess-section').style.display = 'block';
+            document.getElementById('hints-section').style.display = 'block';
+            document.getElementById('result-section').style.display = 'none';
+            
+            // Reset character input
+            const charInput = document.getElementById('character-input');
+            const charSubmit = document.getElementById('character-submit');
+            const charColumn = document.getElementById('character-column');
+            charInput.disabled = false;
+            charInput.value = '';
+            charInput.classList.remove('correct');
+            charSubmit.disabled = false;
+            charSubmit.classList.remove('correct');
+            charColumn.classList.remove('correct');
+            
+            // Reset move input
+            const moveInput = document.getElementById('move-input');
+            const moveSubmit = document.getElementById('move-submit');
+            const moveColumn = document.getElementById('move-column');
+            moveInput.disabled = false;
+            moveInput.value = '';
+            moveInput.classList.remove('correct');
+            moveSubmit.disabled = false;
+            moveSubmit.classList.remove('correct');
+            moveColumn.classList.remove('correct');
+            
+            if (!gameOver) {
+                document.getElementById('guess-history').innerHTML = '';
+            }
+            updateGuessesRemaining();
+            updateHintButtons();
+            resetHintButtons();
+        }
+        
+        function applyCorrectStyling(type) {
+            const input = document.getElementById(`${type}-input`);
+            const submit = document.getElementById(`${type}-submit`);
+            const column = document.getElementById(`${type}-column`);
+            
+            input.disabled = true;
+            input.classList.add('correct');
+            input.value = type === 'character' ? currentPuzzle.displayCharacter : currentPuzzle.displayMove;
+            submit.disabled = true;
+            submit.classList.add('correct');
+            column.classList.add('correct');
+        }
+        
+        function resetHintButtons() {
+            // Reset hint button appearances
+            for (const hintType of Object.keys(HINT_COSTS)) {
+                const btn = document.getElementById(`hint-${hintType}`);
+                if (!hints[hintType]) {
+                    btn.classList.remove('unlocked');
+                    btn.disabled = false;
+                    if (hintType === 'skeleton') {
+                        btn.innerHTML = 'Show Skeleton<span class="hint-cost">(-1 guess)</span>';
+                    } else if (hintType === 'frame') {
+                        btn.innerHTML = 'Show Frame #<span class="hint-cost">(-1 guess)</span>';
+                    } else if (hintType === 'hurtboxes') {
+                        btn.innerHTML = 'Show Hurtboxes<span class="hint-cost">(-2 guesses)</span>';
+                    }
+                } else {
+                    btn.classList.add('unlocked');
+                    btn.disabled = true;
+                    if (hintType === 'frame' && currentDisplayFrame) {
+                        btn.innerHTML = `Frame ${currentDisplayFrame}<span class="hint-cost">(unlocked)</span>`;
+                    } else {
+                        btn.innerHTML = btn.textContent.split('(')[0].trim() + `<span class="hint-cost">(unlocked)</span>`;
+                    }
+                }
+            }
+        }
+
+        function setupAutocomplete() {
+            const charInput = document.getElementById('character-input');
+            const charList = document.getElementById('character-autocomplete');
+            const moveInput = document.getElementById('move-input');
+            const moveList = document.getElementById('move-autocomplete');
+            
+            setupInput(charInput, charList, CHARACTERS, CHARACTER_ALIASES, () => wrongCharacterGuesses);
+            setupInput(moveInput, moveList, MOVES, MOVE_ALIASES, () => wrongMoveGuesses);
+        }
+
+        // Character name aliases for easier searching
+        const CHARACTER_ALIASES = {
+            'rob': 'R.O.B.',
+            'r.o.b': 'R.O.B.',
+            'game and watch': 'Mr. Game & Watch',
+            'game & watch': 'Mr. Game & Watch',
+            'gnw': 'Mr. Game & Watch',
+            'g&w': 'Mr. Game & Watch',
+            'puff': 'Jigglypuff',
+            'jiggs': 'Jigglypuff',
+            'dk': 'Donkey Kong',
+            'dedede': 'King Dedede',
+            'ddd': 'King Dedede',
+            'd3': 'King Dedede',
+            'falcon': 'Captain Falcon',
+            'zss': 'Zero Suit Samus',
+            'zero suit': 'Zero Suit Samus',
+            'pt': 'Pokemon Trainer',
+            'pokemon trainer': 'Pokemon Trainer',
+            'pkmn trainer': 'Pokemon Trainer',
+            'squirtle': 'Squirtle',
+            'ivysaur': 'Ivysaur',
+            'charizard': 'Charizard',
+            'zard': 'Charizard',
+            'pac': 'Pac-Man',
+            'pacman': 'Pac-Man',
+            'pac man': 'Pac-Man',
+            'megaman': 'Mega Man',
+            'mega man': 'Mega Man',
+            'k rool': 'King K. Rool',
+            'krool': 'King K. Rool',
+            'k. rool': 'King K. Rool',
+            'bowser jr': 'Bowser Jr.',
+            'jr': 'Bowser Jr.',
+            'junior': 'Bowser Jr.',
+            'bayo': 'Bayonetta',
+            'minmin': 'Min Min',
+            'min-min': 'Min Min',
+            'banjo': 'Banjo & Kazooie',
+            'banjo kazooie': 'Banjo & Kazooie',
+            'kazooie': 'Banjo & Kazooie',
+            'rosa': 'Rosalina & Luma',
+            'rosalina': 'Rosalina & Luma',
+            'pika': 'Pikachu',
+            'yink': 'Young Link',
+            'tink': 'Toon Link',
+            'toon': 'Toon Link',
+            'doc': 'Dr. Mario',
+            'dr mario': 'Dr. Mario',
+            'mii brawler': 'Mii Brawler',
+            'mii sword': 'Mii Swordfighter',
+            'mii swordfighter': 'Mii Swordfighter',
+            'mii gunner': 'Mii Gunner',
+            'wii fit': 'Wii Fit Trainer',
+            'wft': 'Wii Fit Trainer',
+            'villager': 'Villager',
+            'olimar': 'Olimar',
+            'ics': 'Ice Climbers',
+            'icies': 'Ice Climbers',
+            'ice climber': 'Ice Climbers',
+            'greninja': 'Greninja',
+            'incin': 'Incineroar',
+            'incineroar': 'Incineroar',
+            'plant': 'Piranha Plant',
+            'piranha': 'Piranha Plant',
+            'ppant': 'Piranha Plant',
+            'terry': 'Terry',
+            'byleth': 'Byleth',
+            'joker': 'Joker',
+            'hero': 'Hero',
+            'steve': 'Steve',
+            'seph': 'Sephiroth',
+            'sephy': 'Sephiroth',
+            'kazuya': 'Kazuya',
+            'kaz': 'Kazuya',
+            'sora': 'Sora',
+            'pyra': 'Pyra',
+            'mythra': 'Mythra',
+            'aegis': 'Pyra'
+        };
+
+        // Move name aliases for easier searching (shortcuts)
+        const MOVE_ALIASES = {
+            // Jab
+            'j': 'Jab',
+            'jab': 'Jab',
+            'j1': 'Jab',
+            'jab1': 'Jab',
+            // Tilts
+            'ft': 'Forward Tilt',
+            'ftilt': 'Forward Tilt',
+            'ut': 'Up Tilt',
+            'utilt': 'Up Tilt',
+            'dt': 'Down Tilt',
+            'dtilt': 'Down Tilt',
+            // Smashes
+            'fs': 'Forward Smash',
+            'fsmash': 'Forward Smash',
+            'us': 'Up Smash',
+            'usmash': 'Up Smash',
+            'ds': 'Down Smash',
+            'dsmash': 'Down Smash',
+            // Aerials
+            'na': 'Neutral Air',
+            'nair': 'Neutral Air',
+            'fa': 'Forward Air',
+            'fair': 'Forward Air',
+            'ba': 'Back Air',
+            'bair': 'Back Air',
+            'ua': 'Up Air',
+            'uair': 'Up Air',
+            'da': 'Down Air',
+            'dair': 'Down Air',
+            // Other
+            'dash': 'Dash Attack',
+            'dashattack': 'Dash Attack'
+        };
+
+        function setupInput(input, list, options, aliasDict, getGuessedItems) {
+            let selectedIndex = -1;
+            
+            function showOptions(filterValue = '') {
+                const filter = filterValue.toLowerCase();
+                
+                // Get already-guessed incorrect items to exclude
+                const guessedItems = getGuessedItems ? getGuessedItems() : [];
+                
+                // Filter out already-guessed items
+                let availableOptions = options.filter(opt => 
+                    !guessedItems.some(g => g.toLowerCase() === opt.toLowerCase())
+                );
+                
+                // Check for alias match first
+                let matches;
+                const aliasMatch = aliasDict && aliasDict[filter];
+                
+                if (filter && aliasMatch && availableOptions.some(opt => opt.toLowerCase() === aliasMatch.toLowerCase())) {
+                    // Direct alias match - show that option first
+                    const otherMatches = availableOptions.filter(opt => 
+                        opt.toLowerCase() !== aliasMatch.toLowerCase() && opt.toLowerCase().includes(filter)
+                    );
+                    matches = [aliasMatch, ...otherMatches].slice(0, 15);
+                } else if (filter) {
+                    // Check if any alias partially matches and include those results
+                    const aliasMatches = [];
+                    if (aliasDict) {
+                        for (const [alias, fullName] of Object.entries(aliasDict)) {
+                            if (alias.startsWith(filter) && 
+                                availableOptions.some(opt => opt.toLowerCase() === fullName.toLowerCase()) && 
+                                !aliasMatches.includes(fullName)) {
+                                aliasMatches.push(fullName);
+                            }
+                        }
+                    }
+                    
+                    // Filter by typed text (standard matching)
+                    const textMatches = availableOptions.filter(opt => 
+                        opt.toLowerCase().includes(filter) && !aliasMatches.includes(opt)
+                    );
+                    
+                    // Combine alias matches first, then text matches
+                    matches = [...aliasMatches, ...textMatches].slice(0, 15);
+                } else {
+                    // Show all available options (empty input)
+                    matches = availableOptions.slice(0, 30);
+                }
+                
+                if (matches.length === 0) {
+                    list.classList.remove('show');
+                    return;
+                }
+                
+                list.innerHTML = matches.map((match, i) => 
+                    `<div class="autocomplete-item" data-value="${match}">${match}</div>`
+                ).join('');
+                
+                list.classList.add('show');
+                selectedIndex = -1;
+                
+                // Auto-scroll so the dropdown is visible (prevents it hiding below viewport)
+                requestAnimationFrame(() => {
+                    const listRect = list.getBoundingClientRect();
+                    if (listRect.bottom > window.innerHeight) {
+                        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                });
+                
+                list.querySelectorAll('.autocomplete-item').forEach(item => {
+                    item.addEventListener('click', () => {
+                        input.value = item.dataset.value;
+                        list.classList.remove('show');
+                    });
+                });
+            }
+            
+            // Show dropdown on focus/click
+            input.addEventListener('focus', () => {
+                showOptions(input.value);
+            });
+            
+            input.addEventListener('click', () => {
+                showOptions(input.value);
+            });
+            
+            input.addEventListener('input', () => {
+                showOptions(input.value);
+            });
+            
+            input.addEventListener('keydown', (e) => {
+                const items = list.querySelectorAll('.autocomplete-item');
+                
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    selectedIndex = Math.min(selectedIndex + 1, items.length - 1);
+                    updateSelection(items, selectedIndex);
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    selectedIndex = Math.max(selectedIndex - 1, 0);
+                    updateSelection(items, selectedIndex);
+                } else if (e.key === 'Enter') {
+                    e.preventDefault();
+                    if (selectedIndex >= 0 && items[selectedIndex]) {
+                        input.value = items[selectedIndex].dataset.value;
+                        list.classList.remove('show');
+                    }
+                    if (input.id === 'character-input') {
+                        submitCharacter();
+                    } else {
+                        submitMove();
+                    }
+                } else if (e.key === 'Escape') {
+                    list.classList.remove('show');
+                }
+            });
+            
+            input.addEventListener('blur', () => {
+                setTimeout(() => list.classList.remove('show'), 200);
+            });
+        }
+
+        function updateSelection(items, index) {
+            items.forEach((item, i) => {
+                item.classList.toggle('selected', i === index);
+            });
+        }
+
+        function submitCharacter() {
+            if (gameOver || characterGuessed) return;
+            
+            const input = document.getElementById('character-input');
+            let guess = input.value.trim();
+            
+            if (!guess) return;
+            
+            // Resolve alias if exists
+            const aliasKey = guess.toLowerCase();
+            if (CHARACTER_ALIASES[aliasKey]) {
+                guess = CHARACTER_ALIASES[aliasKey];
+                input.value = guess;  // Update input to show resolved name
+            }
+            
+            const isCorrect = guess.toLowerCase() === currentPuzzle.displayCharacter.toLowerCase();
+            
+            guesses.push({ type: 'character', value: guess, correct: isCorrect });
+            
+            if (isCorrect) {
+                characterGuessed = true;
+                applyCorrectStyling('character');
+                
+                // Check if both are now correct
+                if (moveGuessed) {
+                    endGame(true);
+                    saveProgress();
+                    return;
+                }
+                
+                document.getElementById('move-input').focus();
+            } else {
+                // Track wrong guess to filter from dropdown
+                if (!wrongCharacterGuesses.includes(guess)) {
+                    wrongCharacterGuesses.push(guess);
+                }
+            }
+            
+            renderGuessHistory();
+            input.value = '';
+            
+            // Check if out of guesses and haven't won both
+            if (guesses.length >= MAX_GUESSES && !(characterGuessed && moveGuessed)) {
+                endGame(false);
+            }
+            
+            saveProgress();
+        }
+
+        function submitMove() {
+            if (gameOver || moveGuessed) return;
+            
+            const input = document.getElementById('move-input');
+            let guess = input.value.trim();
+            
+            if (!guess) return;
+            
+            // Resolve alias if exists
+            const aliasKey = guess.toLowerCase();
+            if (MOVE_ALIASES[aliasKey]) {
+                guess = MOVE_ALIASES[aliasKey];
+                input.value = guess;  // Update input to show resolved name
+            }
+            
+            const isCorrect = guess.toLowerCase() === currentPuzzle.displayMove.toLowerCase();
+            
+            guesses.push({ type: 'move', value: guess, correct: isCorrect });
+            
+            if (isCorrect) {
+                moveGuessed = true;
+                applyCorrectStyling('move');
+                
+                // Check if both are now correct
+                if (characterGuessed) {
+                    endGame(true);
+                    saveProgress();
+                    return;
+                }
+                
+                document.getElementById('character-input').focus();
+            } else {
+                // Track wrong guess to filter from dropdown
+                if (!wrongMoveGuesses.includes(guess)) {
+                    wrongMoveGuesses.push(guess);
+                }
+            }
+            
+            renderGuessHistory();
+            input.value = '';
+            
+            // Check if out of guesses and haven't won both
+            if (guesses.length >= MAX_GUESSES && !(characterGuessed && moveGuessed)) {
+                endGame(false);
+            }
+            
+            saveProgress();
+        }
+
+        function renderGuessHistory() {
+            const container = document.getElementById('guess-history');
+            container.innerHTML = guesses
+                .filter(g => g.type !== 'hint')  // Don't show hint "guesses" in history
+                .map(g => `
+                    <div class="guess-row ${g.correct ? 'correct' : 'incorrect'}">
+                        <span class="icon">${g.correct ? '✓' : '✗'}</span>
+                        <span>${g.type === 'character' ? 'Character' : 'Move'}: ${g.value}</span>
+                    </div>
+                `).join('');
+            
+            updateGuessesRemaining();
+            updateHintButtons();
+        }
+
+        function endGame(won) {
+            gameOver = true;
+            showResult(won);
+            updateStats(won);
+            saveProgress();
+            
+            // Submit to leaderboard (daily mode only)
+            if (gameMode === 'daily') {
+                submitToLeaderboard(won, guesses.length);
+            }
+        }
+
+        function showResult(won) {
+            document.getElementById('guess-section').style.display = 'none';
+            document.getElementById('hints-section').style.display = 'none';
+            document.getElementById('result-section').style.display = 'block';
+            document.getElementById('result-section').className = `result-section ${won ? 'win' : 'lose'}`;
+            document.getElementById('result-title').textContent = won ? '🎉 Congratulations!' : '😔 Better luck next time!';
+            
+            document.getElementById('answer-character').textContent = currentPuzzle.displayCharacter;
+            document.getElementById('answer-move').textContent = currentPuzzle.displayMove;
+            
+            const frameParam = currentDisplayFrame ? `&frame=${currentDisplayFrame}` : '';
+            document.getElementById('view-link').innerHTML = 
+                `<a href="viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}${frameParam}" target="_blank">View in hitbox viewer →</a>`;
+            
+            document.getElementById('play-again').style.display = gameMode === 'random' ? 'block' : 'none';
+            document.getElementById('timer-section').style.display = gameMode === 'daily' ? 'block' : 'none';
+            
+            // Reload viewer with full data visible (reveal the answer)
+            const frame = document.getElementById('viewer-frame');
+            const revealUrl = `viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}&hdrdle=true&showSkeleton=true&showHurtboxes=true${frameParam}`;
+            frame.innerHTML = `<iframe src="${revealUrl}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
+            
+            // On win, trigger celebration animation
+            if (won) {
+                triggerCelebration();
+            }
+            
+            displayStats();
+        }
+        
+        function triggerCelebration() {
+            // Create confetti container
+            const container = document.createElement('div');
+            container.className = 'celebration-container';
+            container.id = 'celebration-container';
+            document.body.appendChild(container);
+            
+            // Get sprite position from spritesheet
+            // Spritesheet: 1008x547 pixels, 18 sprites per row
+            // Each cell is 56x60 (56 wide, 60 tall based on colored bar positions)
+            // We show 56x48 to hide number labels at top (~12px)
+            const spriteNum = SPRITE_POSITIONS[currentPuzzle.character] || 1;
+            const col = (spriteNum - 1) % 18;
+            const row = Math.floor((spriteNum - 1) / 18);
+            const cellX = col * 56;
+            const cellY = row * 60;  // Row height is 60px
+            // Offset Y by 12px to hide top numbers
+            const spriteX = cellX;
+            const spriteY = cellY + 12;
+            
+            // Create multiple falling sprites
+            const numSprites = 30;
+            for (let i = 0; i < numSprites; i++) {
+                setTimeout(() => {
+                    createFallingSprite(container, spriteX, spriteY, i);
+                }, i * 100);
+            }
+            
+            // Also add some confetti particles
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    createConfetti(container);
+                }, i * 50);
+            }
+            
+            // Add falling stars
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    createFallingStar(container);
+                }, i * 120);
+            }
+            
+            // Remove container after animation
+            setTimeout(() => {
+                container.remove();
+            }, 6000);
+        }
+        
+        function createFallingSprite(container, spriteX, spriteY, index) {
+            const sprite = document.createElement('div');
+            sprite.className = 'falling-sprite';
+            
+            // Random horizontal position
+            const startX = Math.random() * 100;
+            // Random scale for variety (0.8 to 1.5x)
+            const scale = 0.8 + Math.random() * 0.7;
+            // Random animation duration
+            const duration = 2 + Math.random() * 2;
+            // Random delay
+            const delay = Math.random() * 0.5;
+            // Random rotation direction
+            const rotateDir = Math.random() > 0.5 ? 1 : -1;
+            
+            // Display size is 56x48 (hides number labels at top)
+            sprite.style.cssText = `
+                left: ${startX}%;
+                width: 56px;
+                height: 48px;
+                background-image: url('sprites.png');
+                background-position: -${spriteX}px -${spriteY}px;
+                background-repeat: no-repeat;
+                image-rendering: pixelated;
+                image-rendering: crisp-edges;
+                animation-duration: ${duration}s;
+                animation-delay: ${delay}s;
+                --rotate-dir: ${rotateDir};
+                --sprite-scale: ${scale};
+                filter: drop-shadow(0 0 8px var(--hdr-green-glow));
+            `;
+            
+            container.appendChild(sprite);
+            
+            // Remove after animation
+            setTimeout(() => {
+                sprite.remove();
+            }, (duration + delay) * 1000 + 500);
+        }
+        
+        function createConfetti(container) {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti-particle';
+            
+            // Random properties
+            const startX = Math.random() * 100;
+            const colors = ['#00cc44', '#00ff55', '#ffffff', '#ffff00', '#ff6600'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            const size = 5 + Math.random() * 10;
+            const duration = 2 + Math.random() * 2;
+            const delay = Math.random() * 1;
+            
+            confetti.style.cssText = `
+                left: ${startX}%;
+                width: ${size}px;
+                height: ${size}px;
+                background: ${color};
+                animation-duration: ${duration}s;
+                animation-delay: ${delay}s;
+            `;
+            
+            container.appendChild(confetti);
+            
+            setTimeout(() => {
+                confetti.remove();
+            }, (duration + delay) * 1000 + 500);
+        }
+        
+        function createFallingStar(container) {
+            const star = document.createElement('div');
+            star.className = 'falling-star';
+            
+            // Random properties
+            const startX = Math.random() * 100;
+            const size = 24 + Math.random() * 24;  // 24-48px
+            const duration = 2.5 + Math.random() * 2;
+            const delay = Math.random() * 0.8;
+            const rotateDir = Math.random() > 0.5 ? 1 : -1;
+            
+            star.innerHTML = '⭐';
+            star.style.cssText = `
+                left: ${startX}%;
+                font-size: ${size}px;
+                animation-duration: ${duration}s;
+                animation-delay: ${delay}s;
+                --rotate-dir: ${rotateDir};
+                --sprite-scale: 1;
+                text-shadow: 0 0 10px var(--hdr-green-glow), 0 0 20px rgba(255, 255, 0, 0.5);
+            `;
+            
+            container.appendChild(star);
+            
+            setTimeout(() => {
+                star.remove();
+            }, (duration + delay) * 1000 + 500);
+        }
+
+        function saveProgress() {
+            if (gameMode !== 'daily') return;
+            
+            
+            const data = {
+                date: new Date().toDateString(),
+                puzzleId: currentPuzzle.character + '_' + currentPuzzle.move,
+                guesses,
+                characterGuessed,
+                moveGuessed,
+                gameOver,
+                hints,
+                currentDisplayFrame,
+                wrongCharacterGuesses,
+                wrongMoveGuesses,
+                won: gameOver && characterGuessed && moveGuessed
+            };
+            localStorage.setItem('hdrdle_daily', JSON.stringify(data));
+        }
+
+        function loadStats() {
+            const stats = localStorage.getItem('hdrdle_stats');
+            return stats ? JSON.parse(stats) : {
+                played: 0,
+                wins: 0,
+                currentStreak: 0,
+                bestStreak: 0
+            };
+        }
+
+        function updateStats(won) {
+            if (gameMode !== 'daily') return;
+            
+            const stats = loadStats();
+            stats.played++;
+            
+            if (won) {
+                stats.wins++;
+                stats.currentStreak++;
+                stats.bestStreak = Math.max(stats.bestStreak, stats.currentStreak);
+            } else {
+                stats.currentStreak = 0;
+            }
+            
+            localStorage.setItem('hdrdle_stats', JSON.stringify(stats));
+        }
+
+        function displayStats() {
+            const stats = loadStats();
+            document.getElementById('stat-played').textContent = stats.played;
+            document.getElementById('stat-wins').textContent = stats.wins;
+            document.getElementById('stat-streak').textContent = stats.currentStreak;
+            document.getElementById('stat-best').textContent = stats.bestStreak;
+        }
+
+        function shareResult() {
+            const won = guesses.some(g => g.type === 'move' && g.correct);
+            
+            const squares = guesses.map(g => g.correct ? '🟩' : '🟥').join('');
+            
+            const text = `HDRdle ${new Date().toLocaleDateString()}
+${won ? `Solved in ${guesses.length}/${MAX_GUESSES}` : `X/${MAX_GUESSES}`}
+${squares}
+https://stingers135.github.io/HDR-Move-data/hdrdle.html`;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Result copied to clipboard!');
+            }).catch(() => {
+                alert('Could not copy to clipboard');
+            });
+        }
+
+        function startTimer() {
+            function updateTimer() {
+                const now = new Date();
+                const tomorrow = new Date(now);
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                tomorrow.setHours(0, 0, 0, 0);
+                
+                const diff = tomorrow - now;
+                const hours = Math.floor(diff / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                document.getElementById('timer').textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+            
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        function showInfo() {
+            document.getElementById('info-modal').classList.add('show');
+        }
+
+        function hideInfo() {
+            document.getElementById('info-modal').classList.remove('show');
+        }
+
+        // Start the game
+        init();
+    </script>
+</body>
+</html>

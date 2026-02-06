@@ -21,6 +21,12 @@
         
         .viewer-container { display: flex; height: 100vh; }
         
+        /* HDRDLE MODE: Hide UI via CSS immediately using URL param detection */
+        /* This runs before JS loads, preventing answer from flashing */
+        body.hdrdle-mode .info-panel { display: none !important; }
+        body.hdrdle-mode .controls { display: none !important; }
+        body.hdrdle-mode .canvas-area { flex: 1; }
+        
         /* Left info panel */
         .info-panel {
             width: 280px;
@@ -272,6 +278,16 @@
             color: #000;
         }
     </style>
+    <!-- Immediate script to detect hdrdle mode BEFORE body renders -->
+    <script>
+        if (new URLSearchParams(window.location.search).get('hdrdle') === 'true') {
+            document.write('<style>body{visibility:hidden}</style>');
+            document.addEventListener('DOMContentLoaded', function() {
+                document.body.classList.add('hdrdle-mode');
+                document.body.style.visibility = 'visible';
+            });
+        }
+    </script>
 </head>
 <body>
     <div class="viewer-container">
@@ -335,6 +351,43 @@
         const character = urlParams.get('character') || 'mario';
         const move = urlParams.get('move') || 'fair';
         const stanceParam = urlParams.get('stance') || null;
+        const hdrdleMode = urlParams.get('hdrdle') === 'true';
+        const hdrdleFrame = urlParams.get('frame') ? parseInt(urlParams.get('frame')) : null;
+        const hdrdleShowSkeleton = urlParams.get('showSkeleton') === 'true';
+        const hdrdleShowHurtboxes = urlParams.get('showHurtboxes') === 'true';
+        
+        // Apply hdrdle mode settings after data loads
+        function applyHdrdleMode() {
+            if (!hdrdleMode) return;
+            
+            // Hide controls
+            const controls = document.querySelector('.controls');
+            if (controls) controls.style.display = 'none';
+            
+            // Hide info panel
+            const infoPanel = document.querySelector('.info-panel');
+            if (infoPanel) infoPanel.style.display = 'none';
+            
+            // Make canvas area full width
+            const canvasArea = document.querySelector('.canvas-area');
+            if (canvasArea) canvasArea.style.flex = '1';
+            
+            // Set skeleton and hurtboxes based on hint params (default to off)
+            const showSkeletonCheckbox = document.getElementById('show-skeleton');
+            const showHurtboxesCheckbox = document.getElementById('show-hurtboxes');
+            if (showSkeletonCheckbox) showSkeletonCheckbox.checked = hdrdleShowSkeleton;
+            if (showHurtboxesCheckbox) showHurtboxesCheckbox.checked = hdrdleShowHurtboxes;
+        }
+        
+        // Send current frame to parent window (for hdrdle hints)
+        function notifyParentFrame(frame) {
+            if (hdrdleMode && window.parent !== window) {
+                window.parent.postMessage({
+                    type: 'hdrdleFrame',
+                    frame: frame
+                }, '*');
+            }
+        }
         
         // Animation filename mapping (default)
         const ANIM_FILENAMES = {
@@ -680,6 +733,12 @@
             }
             
             // --- Continuous interpolation for FT_MOTION_RATE only ---
+            // FT_MOTION_RATE takes effect the frame AFTER the call. The extractor
+            // uses 1-indexed real frames (tick count), so we need realFrame + 1 here,
+            // matching the set_rate path (line 720). This replaces the old offset logic
+            // which only added +1 for rate changes at frame <= 0.
+            const ftTargetTime = realFrame + 1;
+            if (ftTargetTime <= 0) return 0;
             let currentAnimFrame = 0;
             let currentRealTime = 0;
             let currentSpeed = 1.0;
@@ -690,8 +749,8 @@
                 const animGap = event.frame - currentAnimFrame;
                 if (animGap > 0 && currentSpeed > 0) {
                     const realGap = animGap / currentSpeed;
-                    if (currentRealTime + realGap >= targetRealTime) {
-                        const realRemaining = targetRealTime - currentRealTime;
+                    if (currentRealTime + realGap >= ftTargetTime) {
+                        const realRemaining = ftTargetTime - currentRealTime;
                         return Math.max(0, currentAnimFrame + realRemaining * currentSpeed);
                     }
                     currentRealTime += realGap;
@@ -706,7 +765,7 @@
                 }
             }
             
-            const realRemaining = targetRealTime - currentRealTime;
+            const realRemaining = ftTargetTime - currentRealTime;
             if (realRemaining > 0 && currentSpeed > 0) {
                 return Math.max(0, currentAnimFrame + realRemaining * currentSpeed);
             }
@@ -934,7 +993,8 @@
         function resizeCanvas() {
             const rect = canvas.parentElement.getBoundingClientRect();
             canvas.width = rect.width;
-            canvas.height = rect.height - 70;
+            // In hdrdle mode, controls are hidden so use full height
+            canvas.height = hdrdleMode ? rect.height : rect.height - 70;
             
             // For dash attacks and other moves that travel far horizontally, start on the left side
             const movesStartLeft = ['dash_attack', 'dash_grab'];
@@ -1182,6 +1242,19 @@
                 named[bone.name.toLowerCase()] = { matrix: worldTransforms[i], parentIndex: bone.parent_index };
             });
             
+            
+            // Virtual bones for ATTACK macros (injected by generator)
+            const identity = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]];
+            if (!named['top']) {
+                named['top'] = { matrix: identity, parentIndex: null };
+            }
+            if (!named['attach']) {
+                // Article hitboxes use 'attach' - map to the 'Throw' bone where articles connect
+                named['attach'] = named['throw'] || named['Throw'] || { matrix: identity, parentIndex: null };
+            }
+            if (!named['hip']) {
+                named['hip'] = named['waist'] || named['hip'] || { matrix: identity, parentIndex: null };
+            }
             return named;
         }
         
@@ -1344,7 +1417,7 @@
                 };
             });
             
-            // Draw skeleton
+            // Draw skeleton (controlled by checkbox, which is set by hdrdle hints)
             if (document.getElementById('show-skeleton').checked) {
                 ctx.strokeStyle = '#555';
                 ctx.lineWidth = 2;
@@ -1387,7 +1460,7 @@
                 }
             }
             
-            // Draw hurtboxes
+            // Draw hurtboxes (controlled by checkbox, which is set by hdrdle hints)
             if (hurtboxData && document.getElementById('show-hurtboxes').checked) {
                 hurtboxData.forEach(hurtbox => {
                     if (!hurtbox.bone_name) return;
@@ -2037,8 +2110,6 @@
                 const animFolder = getAnimFolder(character);
                 const animFilenames = getAnimFilenames(character, move);
                 
-                console.log(`[Anim] Loading animation for ${character}/${move}`);
-                console.log(`[Anim] animFolder: "${animFolder}", charFolder: "${charFolder}", animFilenames:`, animFilenames);
                 
                 // Build list of paths to try
                 const animPaths = [];
@@ -2069,26 +2140,21 @@
                     }
                 }
                 
-                console.log(`[Anim] Trying ${animPaths.length} paths in order:`, animPaths);
                 
                 for (const path of animPaths) {
                     try {
                         const animRes = await fetch(path);
                         if (animRes.ok) {
-                            console.log(`[Anim] ✅ LOADED: ${path}`);
                             animationData = await animRes.json();
                             loaded.push('animation');
                             break;
                         } else {
-                            console.log(`[Anim]    miss: ${path} (${animRes.status})`);
                         }
                     } catch (e) {
-                        console.log(`[Anim]    miss: ${path} (fetch error)`);
                     }
                 }
                 
                 if (!animationData) {
-                    console.log(`[Anim] ❌ No animation found for ${character}/${move}`);
                     failed.push('animation');
                 }
                 
@@ -2237,8 +2303,6 @@
                                 } else if (!rightOK) {
                                     autoFitCenterX = (canvasW - margin) - maxWorldZ * SCALE;
                                 }
-                                if (autoFitCenterY !== null) console.log(`[AutoFit] Repositioned CENTER_Y: ${defaultCY.toFixed(0)} → ${autoFitCenterY.toFixed(0)} (worldY: ${minWorldY.toFixed(1)}..${maxWorldY.toFixed(1)})`);
-                                if (autoFitCenterX !== null) console.log(`[AutoFit] Repositioned CENTER_X: ${defaultCX.toFixed(0)} → ${autoFitCenterX.toFixed(0)} (worldZ: ${minWorldZ.toFixed(1)}..${maxWorldZ.toFixed(1)})`);
                             }
                         } else {
                             // Doesn't fit at default SCALE — zoom out
@@ -2249,15 +2313,50 @@
                             // Center at the new scale
                             autoFitCenterY = (canvasH + (maxWorldY + minWorldY) * SCALE) / 2;
                             autoFitCenterX = (canvasW - (maxWorldZ + minWorldZ) * SCALE) / 2;
-                            console.log(`[AutoFit] Zoomed out to SCALE=${SCALE} and centered (worldY: ${minWorldY.toFixed(1)}..${maxWorldY.toFixed(1)}, worldZ: ${minWorldZ.toFixed(1)}..${maxWorldZ.toFixed(1)})`);
                         }
                     }
                 }
                 
                 resizeCanvas();
                 
+                // In hdrdle mode, apply UI changes and jump to first active hitbox frame
+                if (hdrdleMode) {
+                    // Apply UI changes (hide controls, info panel, uncheck skeleton/hurtboxes)
+                    applyHdrdleMode();
+                    
+                    // Use requestAnimationFrame to ensure browser recalculates layout
+                    requestAnimationFrame(() => {
+                        // Resize canvas now that UI elements are hidden
+                        resizeCanvas();
+                        
+                        if (hitboxData && hitboxData.hitboxes_by_frame) {
+                            const activeFrames = Object.keys(hitboxData.hitboxes_by_frame)
+                                .map(Number)
+                                .filter(f => hitboxData.hitboxes_by_frame[String(f)].length > 0)
+                                .sort((a, b) => a - b);
+                            
+                            if (hdrdleFrame !== null && hdrdleFrame >= 0) {
+                                // Use specified frame (convert from 1-indexed game frame to 0-indexed)
+                                currentFrame = hdrdleFrame - 1;
+                            } else if (activeFrames.length > 0) {
+                                // Use first active frame (convert from 1-indexed game frame to 0-indexed)
+                                currentFrame = activeFrames[0] - 1;
+                            }
+                        }
+                        
+                        // Always notify parent of current frame (for hdrdle hints)
+                        notifyParentFrame(currentFrame + 1);  // Send 1-indexed game frame
+                        
+                        // Force a render with the new settings
+                        render();
+                    });
+                } else if (hdrdleFrame !== null && hdrdleFrame >= 0) {
+                    // Not in hdrdle mode but frame parameter specified - jump to that frame
+                    currentFrame = hdrdleFrame - 1;
+                    render();
+                }
+                
             } catch (error) {
-                console.error('Error loading data:', error);
                 setStatus('Error: ' + error.message);
             }
         }
