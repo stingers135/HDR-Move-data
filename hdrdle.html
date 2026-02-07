@@ -474,6 +474,7 @@
             z-index: 1000;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
         }
         
         .info-modal.show {
@@ -490,6 +491,7 @@
             overflow-y: auto;
             border: 1px solid var(--hdr-green);
             box-shadow: 0 0 30px var(--hdr-green-glow);
+            cursor: default;
         }
         
         .info-content h2 {
@@ -716,6 +718,7 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
+            cursor: pointer;
         }
         
         .leaderboard-modal.show {
@@ -732,6 +735,7 @@
             max-height: 80vh;
             overflow-y: auto;
             box-shadow: 0 0 30px var(--hdr-green-glow);
+            cursor: default;
         }
         
         .leaderboard-content h2 {
@@ -995,8 +999,8 @@
         </div>
     </div>
     
-    <div class="info-modal" id="info-modal">
-        <div class="info-content">
+    <div class="info-modal" id="info-modal" onclick="hideInfo()">
+        <div class="info-content" onclick="event.stopPropagation()">
             <h2>How to Play</h2>
             <p>HDRdle is a daily hitbox guessing game for HewDraw Remix.</p>
             <p><strong>Rules:</strong></p>
@@ -1020,8 +1024,8 @@
         </div>
     </div>
     
-    <div class="leaderboard-modal" id="leaderboard-modal">
-        <div class="leaderboard-content">
+    <div class="leaderboard-modal" id="leaderboard-modal" onclick="hideLeaderboard()">
+        <div class="leaderboard-content" onclick="event.stopPropagation()">
             <h2>🏆 Leaderboard</h2>
             
             <div class="username-section">
