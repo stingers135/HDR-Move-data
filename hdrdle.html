@@ -1188,7 +1188,7 @@
                     }
                 } else {
                     existing.currentStreak = 0;
-                    existing.todayGuessesLeft = 0;
+                    existing.todayGuessesLeft = -1;
                 }
                 
                 ref.set(existing).then(() => {
@@ -1229,7 +1229,7 @@
                 
                 switch (currentLeaderboardTab) {
                     case 'today':
-                        entries.sort((a, b) => (b.todayGuessesLeft || 0) - (a.todayGuessesLeft || 0) || a.totalGuesses - b.totalGuesses);
+                        entries.sort((a, b) => (b.todayGuessesLeft ?? -1) - (a.todayGuessesLeft ?? -1) || b.wins - a.wins || a.totalGuesses - b.totalGuesses);
                         break;
                     case 'streak':
                         entries.sort((a, b) => b.bestStreak - a.bestStreak || b.wins - a.wins);
@@ -1280,7 +1280,7 @@
                     const winRate = entry.played > 0 ? Math.round((entry.wins / entry.played) * 100) : 0;
                     const isCurrentUser = entry.oderId === currentUserId;
                     const rankClass = rank <= 3 ? `rank-${rank}` : '';
-                    const guessesLeft = entry.todayGuessesLeft != null ? entry.todayGuessesLeft : '-';
+                    const guessesLeft = entry.todayGuessesLeft == null ? '-' : entry.todayGuessesLeft < 0 ? '❌' : entry.todayGuessesLeft;
                     
                     html += `
                         <tr class="${isCurrentUser ? 'current-user' : ''}">
