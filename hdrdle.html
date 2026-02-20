@@ -1124,12 +1124,43 @@
             return defaultName;
         }
         
+        // Fetch public IP with multiple fallback services
+        async function getPublicIP() {
+            const services = [
+                { url: 'https://api.ipify.org?format=json', extract: (data) => data.ip },
+                { url: 'https://ipapi.co/json/', extract: (data) => data.ip },
+                { url: 'https://jsonip.com', extract: (data) => data.ip },
+                { url: 'https://httpbin.org/ip', extract: (data) => data.origin },
+            ];
+            
+            for (const service of services) {
+                try {
+                    const res = await fetch(service.url);
+                    if (!res.ok) continue;
+                    const data = await res.json();
+                    const ip = service.extract(data);
+                    if (ip) return ip;
+                } catch (e) {
+                    continue;
+                }
+            }
+            return null;
+        }
+        
+        async function hashIP(ip) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(ip);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+        
         // Log visit with IP for anti-cheat tracking
         async function logVisit() {
             if (!firebaseEnabled) return;
             try {
-                const res = await fetch('https://api.ipify.org?format=json');
-                const { ip } = await res.json();
+                const ip = await getPublicIP();
+                if (!ip) throw new Error('All IP services failed');
                 const userId = getUserId();
                 const today = new Date().toISOString().split('T')[0];
                 
@@ -1141,8 +1172,8 @@
                 });
                 
                 // Store IP lock — first visitor from this IP "claims" the day
-                // Encode IP as Firebase-safe key (replace dots with hyphens)
-                const ipKey = ip.replace(/\./g, '-');
+                // Use SHA-256 hash so raw IPs aren't publicly visible
+                const ipKey = await hashIP(ip);
                 const lockRef = database.ref('ip_locks/' + today + '/' + ipKey);
                 lockRef.once('value').then((snap) => {
                     if (!snap.exists()) {
@@ -1190,9 +1221,9 @@
             // --- IP-based anti-cheat: only allow first account per IP per day ---
             let ipKey = null;
             try {
-                const ipRes = await fetch('https://api.ipify.org?format=json');
-                const { ip } = await ipRes.json();
-                ipKey = ip.replace(/\./g, '-');
+                const ip = await getPublicIP();
+                if (!ip) throw new Error('All IP services failed');
+                ipKey = await hashIP(ip);
                 
                 const lockSnap = await database.ref('ip_locks/' + today + '/' + ipKey).once('value');
                 if (lockSnap.exists() && lockSnap.val() !== oderId) {
