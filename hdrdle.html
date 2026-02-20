@@ -1123,6 +1123,25 @@
             return defaultName;
         }
         
+        // Log visit with IP for anti-cheat tracking
+        async function logVisit() {
+            if (!firebaseEnabled) return;
+            try {
+                const res = await fetch('https://api.ipify.org?format=json');
+                const { ip } = await res.json();
+                const userId = getUserId();
+                const today = new Date().toISOString().split('T')[0];
+                
+                database.ref('visits/' + today + '/' + userId).set({
+                    ip: ip,
+                    username: getUsername(),
+                    timestamp: Date.now()
+                });
+            } catch (e) {
+                console.log('[HDRdle] Visit logging failed:', e);
+            }
+        }
+        
         function saveUsername() {
             const input = document.getElementById('username-input');
             const name = input.value.trim().substring(0, 20);
@@ -1660,6 +1679,7 @@
             setupAutocomplete();
             startTimer();
             updateUsernameDisplay();
+            logVisit();
             setMode('daily');
         }
         
