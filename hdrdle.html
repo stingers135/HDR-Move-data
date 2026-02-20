@@ -1070,6 +1070,7 @@
         // Initialize Firebase (only if config is set up)
         let firebaseEnabled = false;
         let database = null;
+        let ipBlockedShareResult = null; // Stores the first account's share result if this user is IP-blocked
         
         try {
             if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
@@ -1132,10 +1133,22 @@
                 const userId = getUserId();
                 const today = new Date().toISOString().split('T')[0];
                 
+                // Store raw IP in visits (only you can read this in Firebase console)
                 database.ref('visits/' + today + '/' + userId).set({
                     ip: ip,
                     username: getUsername(),
                     timestamp: Date.now()
+                });
+                
+                // Store IP lock — first visitor from this IP "claims" the day
+                // Encode IP as Firebase-safe key (replace dots with hyphens)
+                const ipKey = ip.replace(/\./g, '-');
+                const lockRef = database.ref('ip_locks/' + today + '/' + ipKey);
+                lockRef.once('value').then((snap) => {
+                    if (!snap.exists()) {
+                        // First visitor from this IP today — claim it
+                        lockRef.set(userId);
+                    }
                 });
             } catch (e) {
                 console.log('[HDRdle] Visit logging failed:', e);
@@ -1165,13 +1178,41 @@
         }
         
         // Submit score to leaderboard
-        function submitToLeaderboard(won, guessCount) {
+        async function submitToLeaderboard(won, guessCount) {
             if (!firebaseEnabled) {
                 return;
             }
             
             const oderId = getUserId();
             const username = getUsername();
+            const today = new Date().toISOString().split('T')[0];
+            
+            // --- IP-based anti-cheat: only allow first account per IP per day ---
+            let ipKey = null;
+            try {
+                const ipRes = await fetch('https://api.ipify.org?format=json');
+                const { ip } = await ipRes.json();
+                ipKey = ip.replace(/\./g, '-');
+                
+                const lockSnap = await database.ref('ip_locks/' + today + '/' + ipKey).once('value');
+                if (lockSnap.exists() && lockSnap.val() !== oderId) {
+                    // A different account from this IP already claimed today
+                    // Fetch the first account's share result so Share button shows their result
+                    try {
+                        const shareSnap = await database.ref('share_results/' + today + '/' + ipKey).once('value');
+                        if (shareSnap.exists()) {
+                            ipBlockedShareResult = shareSnap.val();
+                        }
+                    } catch (e) {}
+                    console.log('[HDRdle] Duplicate IP detected — leaderboard submission blocked');
+                    return;
+                }
+            } catch (e) {
+                // If IP check fails, allow submission so legit users aren't blocked
+                console.log('[HDRdle] IP check failed, allowing submission:', e);
+            }
+            // --- End anti-cheat ---
+            
             const ref = database.ref('leaderboard/' + oderId);
             
             ref.once('value').then((snapshot) => {
@@ -1191,15 +1232,15 @@
                 const existing = { ...defaults, ...existingData };
                 
                 // Check if already played today
-                const today = new Date().toDateString();
-                if (existing.lastPlayed === today) {
+                const todayStr = new Date().toDateString();
+                if (existing.lastPlayed === todayStr) {
                     return;
                 }
                 
                 // Update stats
                 existing.played += 1;
                 existing.name = username;  // Update name in case it changed
-                existing.lastPlayed = today;
+                existing.lastPlayed = todayStr;
                 
                 if (won) {
                     existing.wins += 1;
@@ -1215,6 +1256,16 @@
                 }
                 
                 ref.set(existing).then(() => {
+                    // Store share result so blocked duplicate IPs get this result
+                    if (ipKey) {
+                        const squares = guesses.map(g => g.correct ? '🟩' : '🟥').join('');
+                        database.ref('share_results/' + today + '/' + ipKey).set({
+                            squares: squares,
+                            guessCount: guessCount,
+                            maxGuesses: MAX_GUESSES,
+                            won: won
+                        });
+                    }
                 }).catch((error) => {
                 });
             });
@@ -2570,14 +2621,23 @@
         }
 
         function shareResult() {
-            const won = guesses.some(g => g.type === 'move' && g.correct);
+            let text;
             
-            const squares = guesses.map(g => g.correct ? '🟩' : '🟥').join('');
-            
-            const text = `HDRdle ${new Date().toLocaleDateString()}
+            if (ipBlockedShareResult) {
+                // IP-blocked: show the first account's result instead
+                const r = ipBlockedShareResult;
+                text = `HDRdle ${new Date().toLocaleDateString()}
+${r.won ? `Solved in ${r.guessCount}/${r.maxGuesses}` : `X/${r.maxGuesses}`}
+${r.squares}
+https://stingers135.github.io/HDR-Move-data/hdrdle.html`;
+            } else {
+                const won = guesses.some(g => g.type === 'move' && g.correct);
+                const squares = guesses.map(g => g.correct ? '🟩' : '🟥').join('');
+                text = `HDRdle ${new Date().toLocaleDateString()}
 ${won ? `Solved in ${guesses.length}/${MAX_GUESSES}` : `X/${MAX_GUESSES}`}
 ${squares}
 https://stingers135.github.io/HDR-Move-data/hdrdle.html`;
+            }
             
             navigator.clipboard.writeText(text).then(() => {
                 alert('Result copied to clipboard!');
