@@ -1208,12 +1208,7 @@
                 
                 const lockSnap = await database.ref('ip_locks/' + today + '/' + ipKey).once('value');
                 if (lockSnap.exists() && lockSnap.val() !== oderId) {
-                    try {
-                        const shareSnap = await database.ref('share_results/' + today + '/' + ipKey).once('value');
-                        if (shareSnap.exists()) {
-                            ipBlockedShareResult = shareSnap.val();
-                        }
-                    } catch (e) {}
+                    ipBlockedShareResult = true;
                     antiCheatResolve();
                     return;
                 }
@@ -1259,16 +1254,6 @@
                 }
                 
                 ref.set(existing).then(() => {
-                    
-                    if (ipKey) {
-                        const squares = guesses.map(g => g.correct ? '🟩' : '🟥').join('');
-                        database.ref('share_results/' + today + '/' + ipKey).set({
-                            squares: squares,
-                            guessCount: guessCount,
-                            maxGuesses: MAX_GUESSES,
-                            won: won
-                        });
-                    }
                 }).catch((error) => {
                 });
             });
@@ -2768,11 +2753,10 @@
             let text;
             
             if (ipBlockedShareResult) {
-                
-                const r = ipBlockedShareResult;
                 text = `HDRdle ${new Date().toLocaleDateString()}
-${r.won ? `Solved in ${r.guessCount}/${r.maxGuesses}` : `X/${r.maxGuesses}`}
-${r.squares}
+Solved in ∞/${MAX_GUESSES}
+🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+Cheat better next time 🤡
 https://stingers135.github.io/HDR-Move-data/hdrdle.html`;
             } else {
                 const won = guesses.some(g => g.type === 'move' && g.correct);
