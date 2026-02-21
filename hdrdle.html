@@ -1209,6 +1209,12 @@
                 const lockSnap = await database.ref('ip_locks/' + today + '/' + ipKey).once('value');
                 if (lockSnap.exists() && lockSnap.val() !== oderId) {
                     ipBlockedShareResult = true;
+                    database.ref('blocked/' + today + '/' + oderId).set({
+                        username: username,
+                        timestamp: Date.now(),
+                        won: won,
+                        guessCount: guessCount
+                    });
                     antiCheatResolve();
                     return;
                 }
