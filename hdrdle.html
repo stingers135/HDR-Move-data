@@ -1923,7 +1923,9 @@
                     wrongMoveGuesses = data.wrongMoveGuesses || [];
                     
                     // Pass saved frame to viewer so it loads on that frame
-                    loadViewer(currentDisplayFrame);
+                    if (!gameOver) {
+                        loadViewer(currentDisplayFrame);
+                    }
                     renderGuessHistory();
                     
                     if (gameOver) {
@@ -2509,7 +2511,7 @@
             }
         }
 
-        function showResult(won) {
+        async function showResult(won) {
             document.getElementById('guess-section').style.display = 'none';
             document.getElementById('hints-section').style.display = 'none';
             document.getElementById('result-section').style.display = 'block';
@@ -2525,6 +2527,11 @@
             
             document.getElementById('play-again').style.display = gameMode === 'random' ? 'block' : 'none';
             document.getElementById('timer-section').style.display = gameMode === 'daily' ? 'block' : 'none';
+            
+            // Ensure data is prefetched before loading reveal viewer
+            if (!_viewerDataCache) {
+                _viewerDataCache = await prefetchViewerData(currentPuzzle.character, currentPuzzle.move);
+            }
             
             // Reload viewer with full data visible (reveal the answer)
             const frame = document.getElementById('viewer-frame');
