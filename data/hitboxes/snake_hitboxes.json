@@ -1094,6 +1094,120 @@
       },
       "motion_events": []
     },
+    "ftilt2": {
+      "total_frames": 47,
+      "active_frames": [
+        6,
+        7
+      ],
+      "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "handr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "snake",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "bust",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "snake",
+            "move": "ftilt"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "handr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "snake",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "bust",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "snake",
+            "move": "ftilt"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 1.0,
+          "rate_value": 1.1111111111111112
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 5.5,
+          "rate_value": 2.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 6.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
     "utilt": {
       "total_frames": 47,
       "active_frames": [
@@ -9373,121 +9487,7 @@
           "rate_value": 1.0
         }
       ]
-    },
-    "ftilt2": {
-      "total_frames": 17,
-      "active_frames": [
-        6,
-        7
-      ],
-      "hitboxes_by_frame": {
-        "6": [
-          {
-            "id": 0,
-            "bone": "handr",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "snake",
-            "move": "ftilt"
-          },
-          {
-            "id": 1,
-            "bone": "bust",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 6.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "snake",
-            "move": "ftilt"
-          }
-        ],
-        "7": [
-          {
-            "id": 0,
-            "bone": "handr",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "snake",
-            "move": "ftilt"
-          },
-          {
-            "id": 1,
-            "bone": "bust",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 6.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "snake",
-            "move": "ftilt"
-          }
-        ]
-      },
-      "motion_events": [
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 1.0,
-          "rate_value": 1.1111111111111112
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 5.5,
-          "rate_value": 2.0
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 6.0,
-          "rate_value": 1.0
-        }
-      ]
     }
   },
-  "generated_at": "2026-02-20T19:22:35.387527"
+  "generated_at": "2026-02-21T11:13:18.580182"
 }

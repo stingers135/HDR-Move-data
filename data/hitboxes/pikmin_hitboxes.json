@@ -2695,24 +2695,29 @@
       },
       "motion_events": [
         {
-          "type": "range",
-          "frame": 2.0,
-          "start_orig": 2.0,
-          "end_orig": 7.0,
-          "new_duration": 3.0,
-          "scale_factor": 0.6
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 1.0
         },
         {
           "type": "range",
-          "frame": 7.0,
-          "start_orig": 7.0,
-          "end_orig": 23.0,
+          "frame": 2.0,
+          "start_orig": 2.0,
+          "end_orig": 6.0,
+          "new_duration": 2.0,
+          "scale_factor": 0.5
+        },
+        {
+          "type": "range",
+          "frame": 6.0,
+          "start_orig": 6.0,
+          "end_orig": 22.0,
           "new_duration": 20.0,
           "scale_factor": 1.25
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 23.0,
+          "frame": 22.0,
           "rate_value": 1.0
         }
       ],
@@ -2906,20 +2911,12 @@
       },
       "motion_events": [
         {
-          "type": "range",
-          "frame": 1.0,
-          "start_orig": 1.0,
-          "end_orig": 3.0,
-          "new_duration": 1.0,
-          "scale_factor": 0.5
-        },
-        {
           "type": "FT_MOTION_RATE",
-          "frame": 3.0,
+          "frame": 0.0,
           "rate_value": 1.0
         }
       ],
-      "faf": 29
+      "faf": 30
     },
     "bair": {
       "total_frames": 57,
@@ -3754,20 +3751,12 @@
       },
       "motion_events": [
         {
-          "type": "range",
-          "frame": 1.0,
-          "start_orig": 1.0,
-          "end_orig": 3.0,
-          "new_duration": 1.0,
-          "scale_factor": 0.5
-        },
-        {
           "type": "FT_MOTION_RATE",
-          "frame": 3.0,
+          "frame": 0.0,
           "rate_value": 1.0
         }
       ],
-      "faf": 33
+      "faf": 34
     },
     "dair": {
       "total_frames": 59,
@@ -6091,5 +6080,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-02-20T19:22:39.107606"
+  "generated_at": "2026-02-21T11:13:21.172620"
 }

@@ -2507,28 +2507,17 @@
       },
       "motion_events": [
         {
-          "type": "range",
-          "frame": 10.0,
-          "start_orig": 10.0,
-          "end_orig": 19.0,
-          "new_duration": 6.0,
-          "scale_factor": 0.6666666666666666
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 0.8
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 19.0,
-          "rate_value": 1.0
-        },
-        {
-          "type": "range",
           "frame": 35.0,
-          "start_orig": 35.0,
-          "end_orig": 61.0,
-          "new_duration": 29.0,
-          "scale_factor": 1.1153846153846154
+          "rate_value": 1.2
         }
       ],
-      "faf": 61
+      "faf": 60
     },
     "usmash": {
       "total_frames": 63,
@@ -9008,5 +8997,5 @@
       "faf": 50
     }
   },
-  "generated_at": "2026-02-20T19:22:47.166794"
+  "generated_at": "2026-02-21T11:13:26.601400"
 }

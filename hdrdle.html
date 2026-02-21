@@ -1406,7 +1406,7 @@
             'combo5': 'c00attack1combo5', 'combo6': 'c00attack1combo6',
             'combo7': 'c00attack1combo7', 'combo8': 'c00attack1combo8',
             'combo9': 'c00attack1combo9', 'combo10': 'c00attack1combo10',
-            'ftilt': 'c01attacks3s', 'ftilt2': 'c01attacks3s2', 'ftilt3': 'c01attacks3s3',
+            'ftilt': 'c01attacks3s', 'ftilt2': 'c01attacks32', 'ftilt3': 'c01attacks3s3',
             'utilt': 'c02attackhi3', 'dtilt': 'c02attacklw3', 'dtilt2': 'c02attacklw32',
             'fsmash': 'c03attacks4s', 'fsmash2': 'c03attacks4s2', 'fsmash3': 'c03attacks4s3',
             'usmash': 'c04attackhi4', 'dsmash': 'c04attacklw4',
@@ -1455,7 +1455,7 @@
             if (o && o[m]) return o[m];
             if (m === 'jab3') return ['c00attack100end','c00attack13'];
             if (m === 'rapid_jab_finisher') return ['c00attack100end','c00attackend'];
-            if (m === 'ftilt2') return ['c01attacks3s2','c01attacks3s'];
+            if (m === 'ftilt2') return ['c01attacks32','c01attacks3s2','c01attacks3s'];
             return [VIEWER_ANIM_FILENAMES[m] || m];
         }
         

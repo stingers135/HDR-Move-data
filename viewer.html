@@ -410,7 +410,7 @@
             'combo9': 'c00attack1combo9',
             'combo10': 'c00attack1combo10',
             'ftilt': 'c01attacks3s',
-            'ftilt2': 'c01attacks3s2',  // Snake ftilt hit 2
+            'ftilt2': 'c01attacks32',  // Snake/Hero ftilt hit 2
             'ftilt3': 'c01attacks3s3',  // Meta Knight ftilt hit 3
             'utilt': 'c02attackhi3',
             'dtilt': 'c02attacklw3',
@@ -560,9 +560,9 @@
             if (moveType === 'rapid_jab_finisher') {
                 return ['c00attack100end', 'c00attackend'];
             }
-            // ftilt2: snake/metaknight use attacks3s2, packun reuses ftilt anim
+            // ftilt2: Hero uses attacks32, Snake/MK use attacks3s2
             if (moveType === 'ftilt2') {
-                return ['c01attacks3s2', 'c01attacks3s'];
+                return ['c01attacks32', 'c01attacks3s2', 'c01attacks3s'];
             }
             // Return default as single-item array
             return [ANIM_FILENAMES[moveType] || moveType];
