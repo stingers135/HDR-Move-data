@@ -537,6 +537,15 @@
                 'ftilt': ['c02attacks3s'],
                 'nair': ['c05attackairnmelee', 'c05attackairn'],
             },
+            // Bayonetta 3-hit forward tilt uses non-standard animation names
+            'bayonetta': {
+                'ftilt': ['c01attacks3', 'c01attacks3s'],
+                'ftilt_first': ['c01attacks3'],
+                'ftilt2': ['c01attacks32'],
+                'ftilt_second': ['c01attacks32'],
+                'ftilt3': ['c01attacks33'],
+                'ftilt_third': ['c01attacks33'],
+            },
         };
         
         // Helper function to get animation filenames for a character/move
@@ -2029,7 +2038,7 @@
                         allHitboxesCache = allHitboxes;
                         
                         const HITBOX_MOVE_FALLBACK = {
-                            'ftilt2': 'ftilt', 'fsmash2': 'fsmash', 'fsmash3': 'fsmash',
+                            'ftilt2': 'ftilt', 'ftilt3': 'ftilt', 'fsmash2': 'fsmash', 'fsmash3': 'fsmash',
                             'fthrow_forward': 'fthrow', 'fthrow_back': 'fthrow',
                             'fthrow_high': 'fthrow', 'fthrow_low': 'fthrow',
                             'jab1_weak': 'jab1', 'jab1_strong': 'jab1',
@@ -2135,6 +2144,7 @@
                     // Map variant move types to their base move for hitbox lookup
                     const HITBOX_MOVE_FALLBACK = {
                         'ftilt2': 'ftilt',
+                        'ftilt3': 'ftilt',
                         'fsmash2': 'fsmash',
                         'fsmash3': 'fsmash',
                         'fthrow_forward': 'fthrow',

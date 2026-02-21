@@ -1789,7 +1789,8 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [],
+      "faf": 28
     },
     "ftilt2": {
       "total_frames": 60,
@@ -2251,7 +2252,8 @@
           "frame": 8.0,
           "rate_value": 1.0
         }
-      ]
+      ],
+      "faf": 34
     },
     "utilt": {
       "total_frames": 61,
@@ -3961,8 +3963,6 @@
     "usmash": {
       "total_frames": 87,
       "active_frames": [
-        11,
-        12,
         13,
         14,
         15,
@@ -4632,102 +4632,6 @@
             "is_capsule": false,
             "character": "brave",
             "move": "usmash"
-          }
-        ],
-        "11": [
-          {
-            "id": 0,
-            "bone": "top",
-            "damage": 4.0,
-            "angle": 96,
-            "kbg": 100,
-            "fkb": 120,
-            "bkb": 0,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 1.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 1.0
-            },
-            "is_capsule": true,
-            "real_frame": 11,
-            "animation_frame": 11.0
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "damage": 4.0,
-            "angle": 96,
-            "kbg": 100,
-            "fkb": 120,
-            "bkb": 0,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 7.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 7.0
-            },
-            "is_capsule": true,
-            "real_frame": 11,
-            "animation_frame": 11.0
-          }
-        ],
-        "12": [
-          {
-            "id": 0,
-            "bone": "top",
-            "damage": 4.0,
-            "angle": 96,
-            "kbg": 100,
-            "fkb": 120,
-            "bkb": 0,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 1.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 1.0
-            },
-            "is_capsule": true,
-            "real_frame": 12,
-            "animation_frame": 12.0
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "damage": 4.0,
-            "angle": 96,
-            "kbg": 100,
-            "fkb": 120,
-            "bkb": 0,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 7.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 7.0
-            },
-            "is_capsule": true,
-            "real_frame": 12,
-            "animation_frame": 12.0
           }
         ]
       },
@@ -11686,5 +11590,5 @@
       "faf": 33
     }
   },
-  "generated_at": "2026-02-21T11:13:30.315868"
+  "generated_at": "2026-02-21T16:41:28.238767"
 }

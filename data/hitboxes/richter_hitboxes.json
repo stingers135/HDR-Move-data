@@ -5810,15 +5810,17 @@
       },
       "motion_events": [
         {
-          "type": "range",
+          "type": "FT_MOTION_RATE",
           "frame": 1.0,
-          "start_orig": 1.0,
-          "end_orig": 12.0,
-          "new_duration": 9.0,
-          "scale_factor": 0.8181818181818182
+          "rate_value": 0.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 3.0,
+          "rate_value": 1.0
         }
       ],
-      "faf": 35
+      "faf": 41
     },
     "uair": {
       "total_frames": 43,
@@ -8206,5 +8208,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-02-21T11:13:28.214089"
+  "generated_at": "2026-02-21T16:41:25.486563"
 }
