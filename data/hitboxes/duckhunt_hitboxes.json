@@ -2056,6 +2056,221 @@
       ],
       "faf": 30
     },
+    "crawl_attack": {
+      "total_frames": 54,
+      "active_frames": [
+        8,
+        9,
+        10
+      ],
+      "hitboxes_by_frame": {
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 5.0,
+            "angle": 60,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "duckhunt",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 5.0,
+            "angle": 60,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 10.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "duckhunt",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.0,
+            "angle": 70,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 15.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "duckhunt",
+            "move": "crawl_attack"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 5.0,
+            "angle": 60,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "duckhunt",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 5.0,
+            "angle": 60,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 10.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "duckhunt",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.0,
+            "angle": 70,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 15.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "duckhunt",
+            "move": "crawl_attack"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 5.0,
+            "angle": 60,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "duckhunt",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 5.0,
+            "angle": 60,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 10.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "duckhunt",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.0,
+            "angle": 70,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 15.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "duckhunt",
+            "move": "crawl_attack"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 6.0,
+          "new_duration": 7.0,
+          "scale_factor": 1.4
+        }
+      ]
+    },
     "fsmash": {
       "total_frames": 75,
       "active_frames": [
@@ -9851,5 +10066,5 @@
       "faf": 43
     }
   },
-  "generated_at": "2026-02-21T16:41:21.678346"
+  "generated_at": "2026-02-21T18:35:45.635848"
 }

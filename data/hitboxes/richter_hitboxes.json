@@ -3382,6 +3382,224 @@
       ],
       "faf": 35
     },
+    "crawl_attack": {
+      "total_frames": 40,
+      "active_frames": [
+        12,
+        13,
+        14
+      ],
+      "hitboxes_by_frame": {
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 120,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 30.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 6.0,
+            "angle": 361,
+            "kbg": 63,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 6.0,
+            "angle": 361,
+            "kbg": 63,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 29.0
+            },
+            "is_capsule": true,
+            "character": "richter",
+            "move": "crawl_attack"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 10.0,
+            "angle": 120,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 30.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 6.0,
+            "angle": 361,
+            "kbg": 63,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 6.0,
+            "angle": 361,
+            "kbg": 63,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 29.0
+            },
+            "is_capsule": true,
+            "character": "richter",
+            "move": "crawl_attack"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 10.0,
+            "angle": 120,
+            "kbg": 45,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 30.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 6.0,
+            "angle": 361,
+            "kbg": 63,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 6.0,
+            "angle": 361,
+            "kbg": 63,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 29.0
+            },
+            "is_capsule": true,
+            "character": "richter",
+            "move": "crawl_attack"
+          }
+        ]
+      },
+      "motion_events": []
+    },
     "fsmash": {
       "total_frames": 109,
       "active_frames": [
@@ -5810,17 +6028,15 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
+          "type": "range",
           "frame": 1.0,
-          "rate_value": 0.5
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 3.0,
-          "rate_value": 1.0
+          "start_orig": 1.0,
+          "end_orig": 12.0,
+          "new_duration": 9.0,
+          "scale_factor": 0.8181818181818182
         }
       ],
-      "faf": 41
+      "faf": 35
     },
     "uair": {
       "total_frames": 43,
@@ -8208,5 +8424,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-02-21T16:41:25.486563"
+  "generated_at": "2026-02-21T18:35:51.968124"
 }

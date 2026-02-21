@@ -3244,6 +3244,235 @@
       "motion_events": [],
       "faf": 38
     },
+    "crawl_attack": {
+      "total_frames": 42,
+      "active_frames": [
+        12,
+        13,
+        14
+      ],
+      "hitboxes_by_frame": {
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 12.0,
+            "angle": 42,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 2.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 31.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 45,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 2.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 5.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 31.0
+            },
+            "is_capsule": true,
+            "character": "simon",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 4.0,
+            "angle": 45,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "crawl_attack"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 12.0,
+            "angle": 42,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 2.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 31.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 9.0,
+            "angle": 45,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 2.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 5.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 31.0
+            },
+            "is_capsule": true,
+            "character": "simon",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 4.0,
+            "angle": 45,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "crawl_attack"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 12.0,
+            "angle": 42,
+            "kbg": 88,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 2.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 31.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 9.0,
+            "angle": 45,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 2.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 5.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 31.0
+            },
+            "is_capsule": true,
+            "character": "simon",
+            "move": "crawl_attack"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 45,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.4,
+              "z": 5.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "crawl_attack"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 1.0,
+          "rate_value": 0.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 4.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
     "fsmash": {
       "total_frames": 105,
       "active_frames": [
@@ -4890,10 +5119,10 @@
         },
         {
           "type": "desired_rate",
-          "frame": 31.0,
-          "original_frames": 12.0,
-          "desired_frames": 17.0,
-          "scale_factor": 1.4166666666666667
+          "frame": 29.0,
+          "original_frames": 14.0,
+          "desired_frames": 19.0,
+          "scale_factor": 1.3571428571428572
         }
       ],
       "faf": 40
@@ -7670,5 +7899,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-02-21T16:41:25.081388"
+  "generated_at": "2026-02-21T18:35:51.307826"
 }

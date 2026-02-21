@@ -1115,7 +1115,9 @@
             localStorage.setItem('hdrdle_username', defaultName);
             return defaultName;
         }
+        let _cachedIP = null;
         async function getPublicIP() {
+            if (_cachedIP) return _cachedIP;
             const services = [
                 { url: 'https://api.ipify.org?format=json', extract: (data) => data.ip },
                 { url: 'https://ipapi.co/json/', extract: (data) => data.ip },
@@ -1129,7 +1131,10 @@
                     if (!res.ok) continue;
                     const data = await res.json();
                     const ip = service.extract(data);
-                    if (ip) return ip;
+                    if (ip) {
+                        _cachedIP = ip;
+                        return ip;
+                    }
                 } catch (e) {
                     continue;
                 }
