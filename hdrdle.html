@@ -1208,15 +1208,21 @@
                 
                 const lockSnap = await database.ref('ip_locks/' + today + '/' + ipKey).once('value');
                 if (lockSnap.exists() && lockSnap.val() !== oderId) {
-                    ipBlockedShareResult = true;
-                    database.ref('blocked/' + today + '/' + oderId).set({
-                        username: username,
-                        timestamp: Date.now(),
-                        won: won,
-                        guessCount: guessCount
-                    });
-                    antiCheatResolve();
-                    return;
+                    const lockHolderId = lockSnap.val();
+                    const lockHolderSnap = await database.ref('visits/' + today + '/' + lockHolderId).once('value');
+                    const lockHolderUsername = lockHolderSnap.exists() ? lockHolderSnap.val().username : null;
+                    
+                    if (lockHolderUsername !== username) {
+                        ipBlockedShareResult = true;
+                        database.ref('blocked/' + today + '/' + oderId).set({
+                            username: username,
+                            timestamp: Date.now(),
+                            won: won,
+                            guessCount: guessCount
+                        });
+                        antiCheatResolve();
+                        return;
+                    }
                 }
             } catch (e) {
             }
@@ -1893,7 +1899,7 @@
             return Math.floor(rng() * MOVE_LIST.length);
         }
 
-        function checkDailyCompletion() {
+        async function checkDailyCompletion() {
             _viewerDataCache = null;
             const today = new Date().toDateString();
             const saved = localStorage.getItem('hdrdle_daily');
@@ -1930,7 +1936,19 @@
                     
                     if (gameOver) {
                         showResult(data.won);
-                        antiCheatResolve(); // Already submitted on original play
+                        if (firebaseEnabled) {
+                            const oderId = getUserId();
+                            const todayStr = new Date().toDateString();
+                            const snap = await database.ref('leaderboard/' + oderId).once('value');
+                            const entry = snap.val();
+                            if (!entry || entry.lastPlayed !== todayStr) {
+                                submitToLeaderboard(data.won, guesses.length);
+                            } else {
+                                antiCheatResolve();
+                            }
+                        } else {
+                            antiCheatResolve();
+                        }
                     } else {
                         resetUI();
                         // Apply correct styling if already guessed
@@ -1966,7 +1984,6 @@
                 _viewerDataCache = await prefetchViewerData(currentPuzzle.character, currentPuzzle.move);
             }
             
-            // Build viewer URL WITHOUT character/move (anti-cheat: nothing to inspect)
             let viewerUrl = `viewer.html?hdrdle=true&autoPlay=true`;
             if (hints.skeleton) viewerUrl += '&showSkeleton=true';
             if (hints.damage) viewerUrl += '&hideDamage=false';
