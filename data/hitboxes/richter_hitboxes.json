@@ -2627,6 +2627,761 @@
       ],
       "faf": 39
     },
+    "dtilt2": {
+      "total_frames": 43,
+      "active_frames": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 13.0,
+            "angle": 55,
+            "kbg": 93,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 9.0,
+            "angle": 72,
+            "kbg": 48,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "dtilt2"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 7.0,
+          "start_orig": 7.0,
+          "end_orig": 34.0,
+          "new_duration": 18.0,
+          "scale_factor": 0.6666666666666666
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 34.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 35
+    },
     "fsmash": {
       "total_frames": 109,
       "active_frames": [
@@ -5055,15 +5810,17 @@
       },
       "motion_events": [
         {
-          "type": "range",
+          "type": "FT_MOTION_RATE",
           "frame": 1.0,
-          "start_orig": 1.0,
-          "end_orig": 12.0,
-          "new_duration": 9.0,
-          "scale_factor": 0.8181818181818182
+          "rate_value": 0.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 3.0,
+          "rate_value": 1.0
         }
       ],
-      "faf": 35
+      "faf": 41
     },
     "uair": {
       "total_frames": 43,
@@ -7451,5 +8208,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-02-06T16:59:35.263347"
+  "generated_at": "2026-02-20T19:22:49.693470"
 }

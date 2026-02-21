@@ -6384,12 +6384,14 @@
       },
       "motion_events": [
         {
-          "type": "range",
+          "type": "MotionModule::set_rate",
           "frame": 1.0,
-          "start_orig": 1.0,
-          "end_orig": 12.0,
-          "new_duration": 13.0,
-          "scale_factor": 1.1818181818181819
+          "rate_value": 0.8461538461538461
+        },
+        {
+          "type": "MotionModule::set_rate",
+          "frame": 12.0,
+          "rate_value": 1.0
         },
         {
           "type": "FT_MOTION_RATE",
@@ -6397,15 +6399,12 @@
           "rate_value": 1.0
         },
         {
-          "type": "range",
+          "type": "MotionModule::set_rate",
           "frame": 30.0,
-          "start_orig": 30.0,
-          "end_orig": 40.0,
-          "new_duration": 8.0,
-          "scale_factor": 0.8
+          "rate_value": 1.25
         },
         {
-          "type": "FT_MOTION_RATE",
+          "type": "MotionModule::set_rate",
           "frame": 40.0,
           "rate_value": 1.0
         }
@@ -6638,5 +6637,5 @@
       "faf": 41
     }
   },
-  "generated_at": "2026-02-06T16:58:43.325412"
+  "generated_at": "2026-02-20T19:22:24.203837"
 }

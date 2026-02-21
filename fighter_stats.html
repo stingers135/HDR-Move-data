@@ -292,28 +292,101 @@ body {
 }
 
 
-/* Fighter Stats specific styles */
 .stats-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.toggle-trigger {
+    color: var(--hdr-text-dim);
+    font-size: 0.8em;
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.toggle-trigger:hover {
+    color: var(--hdr-green);
+}
+
+.toggle-trigger .arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+    font-size: 0.7em;
+}
+
+.toggle-trigger.open .arrow {
+    transform: rotate(90deg);
+}
+
+.controls {
+    display: none;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+    padding: 10px;
+    background: var(--hdr-bg-card);
+    border: 1px solid var(--hdr-border);
+    border-radius: 4px;
+}
+
+.controls.open {
+    display: flex;
+}
+
+.col-toggle {
+    display: none;
+}
+
+.col-toggle + label {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75em;
+    border: 1px solid var(--hdr-border);
+    border-radius: 3px;
+    color: var(--hdr-text-dim);
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.col-toggle:checked + label {
+    border-color: var(--hdr-green);
+    color: var(--hdr-green);
+    background: rgba(0, 204, 68, 0.1);
+}
+
+.col-toggle + label:hover {
+    border-color: var(--hdr-green);
+}
+
+.table-wrapper {
+    position: relative;
+    overflow-x: auto;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .stats-table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     background: var(--hdr-bg-card);
-    border-radius: 4px;
-    overflow: hidden;
-    font-size: 0.9em;
+    font-size: 0.8em;
     border: 1px solid var(--hdr-border);
+    table-layout: fixed;
 }
 
 .stats-table th {
     background: var(--hdr-bg-lighter);
     color: var(--hdr-green);
-    padding: 12px 8px;
+    padding: 8px 6px;
     text-align: center;
     font-weight: 600;
     cursor: pointer;
@@ -322,9 +395,21 @@ body {
     top: 0;
     z-index: 10;
     text-transform: uppercase;
-    font-size: 0.85em;
-    letter-spacing: 0.5px;
+    font-size: 0.8em;
+    letter-spacing: 0.3px;
     border-bottom: 1px solid var(--hdr-green);
+    overflow: hidden;
+}
+
+.stats-table th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 20;
+    background: var(--hdr-bg-lighter);
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    border-right: 2px solid var(--hdr-green);
 }
 
 .stats-table th:hover {
@@ -342,29 +427,51 @@ body {
 }
 
 .stats-table td {
-    padding: 10px 8px;
+    padding: 6px;
     text-align: center;
     border-bottom: 1px solid var(--hdr-border);
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .stats-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    background: var(--hdr-bg-card);
     text-align: left;
     font-weight: 500;
     color: var(--hdr-green);
+    border-right: 2px solid var(--hdr-green);
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.stats-table tr:hover {
+.stats-table tr:hover td {
     background: rgba(0, 204, 68, 0.05);
 }
 
-.stats-table tbody tr:nth-child(even) {
+.stats-table tr:hover td:first-child {
+    background: var(--hdr-bg-lighter);
+}
+
+.stats-table tbody tr:nth-child(even) td {
     background: rgba(255,255,255,0.02);
 }
 
-.table-container {
-    overflow-x: auto;
-    max-height: 80vh;
-    overflow-y: auto;
+.stats-table tbody tr:nth-child(even) td:first-child {
+    background: var(--hdr-bg-card);
+}
+
+.stats-table tbody tr:nth-child(even):hover td {
+    background: rgba(0, 204, 68, 0.05);
+}
+
+.stats-table tbody tr:nth-child(even):hover td:first-child {
+    background: var(--hdr-bg-lighter);
 }
 
 .back-btn {
@@ -388,6 +495,10 @@ body {
     color: #000;
     box-shadow: 0 0 15px var(--hdr-green-glow);
 }
+
+.hidden-col {
+    display: none;
+}
     </style>
 </head>
 <body>
@@ -397,1544 +508,1655 @@ body {
             <a href="index.html" class="back-btn">← Back to Characters</a>
         </div>
         
-        <p>Click any column header to sort. Movement & physics data for all fighters.</p>
+        <p style="color: var(--hdr-text-dim); margin-bottom: 8px;">Click any column header to sort.</p>
         
-        <div class="table-container">
+        <div class="toggle-trigger" id="toggleTrigger" onclick="this.classList.toggle('open'); document.getElementById('colControls').classList.toggle('open');">
+            <span class="arrow">▶</span> Toggle Columns
+        </div>
+        
+        <div class="controls" id="colControls">
+            <input type="checkbox" class="col-toggle" id="col1" data-col="1" checked><label for="col1">Walk Speed</label>
+            <input type="checkbox" class="col-toggle" id="col2" data-col="2" checked><label for="col2">Run Speed</label>
+            <input type="checkbox" class="col-toggle" id="col3" data-col="3" checked><label for="col3">Dash Speed</label>
+            <input type="checkbox" class="col-toggle" id="col4" data-col="4" checked><label for="col4">Air Accel</label>
+            <input type="checkbox" class="col-toggle" id="col5" data-col="5" checked><label for="col5">Max Air Speed</label>
+            <input type="checkbox" class="col-toggle" id="col6" data-col="6" checked><label for="col6">Air Friction</label>
+            <input type="checkbox" class="col-toggle" id="col7" data-col="7" checked><label for="col7">Weight</label>
+            <input type="checkbox" class="col-toggle" id="col8" data-col="8" checked><label for="col8">Traction</label>
+            <input type="checkbox" class="col-toggle" id="col9" data-col="9" checked><label for="col9">G→A Momentum</label>
+            <input type="checkbox" class="col-toggle" id="col10" data-col="10" checked><label for="col10">Fall Speed</label>
+            <input type="checkbox" class="col-toggle" id="col11" data-col="11" checked><label for="col11">Gravity</label>
+            <input type="checkbox" class="col-toggle" id="col12" data-col="12" checked><label for="col12">Full Hop</label>
+            <input type="checkbox" class="col-toggle" id="col13" data-col="13" checked><label for="col13">Short Hop</label>
+            <input type="checkbox" class="col-toggle" id="col14" data-col="14" checked><label for="col14">Double Jump</label>
+            <input type="checkbox" class="col-toggle" id="col15" data-col="15" checked><label for="col15">Jumpsquat</label>
+        </div>
+        
+        <div class="table-wrapper">
 
             <table class="stats-table" id="statsTable">
                 <thead>
                     <tr>
                         <th data-sort="string">Character</th>
-                        <th data-sort="number">Walk Speed</th>
-                        <th data-sort="number">Run Speed</th>
-                        <th data-sort="number">Dash Speed</th>
-                        <th data-sort="number">Air Accel</th>
-                        <th data-sort="number">Max Air Speed</th>
-                        <th data-sort="number">Weight</th>
-                        <th data-sort="number">Traction</th>
-                        <th data-sort="number">G→A Momentum</th>
-                        <th data-sort="number">Fall Speed</th>
-                        <th data-sort="number">Gravity</th>
-                        <th data-sort="number">Full Hop</th>
-                        <th data-sort="number">Short Hop</th>
-                        <th data-sort="number">Double Jump</th>
-                        <th data-sort="number">Jumpsquat</th>
+                        <th data-sort="number" data-col="1">Walk Speed</th>
+                        <th data-sort="number" data-col="2">Run Speed</th>
+                        <th data-sort="number" data-col="3">Dash Speed</th>
+                        <th data-sort="number" data-col="4">Air Accel</th>
+                        <th data-sort="number" data-col="5">Max Air Speed</th>
+                        <th data-sort="number" data-col="6">Air Friction</th>
+                        <th data-sort="number" data-col="7">Weight</th>
+                        <th data-sort="number" data-col="8">Traction</th>
+                        <th data-sort="number" data-col="9">G→A Momentum</th>
+                        <th data-sort="number" data-col="10">Fall Speed</th>
+                        <th data-sort="number" data-col="11">Gravity</th>
+                        <th data-sort="number" data-col="12">Full Hop</th>
+                        <th data-sort="number" data-col="13">Short Hop</th>
+                        <th data-sort="number" data-col="14">Double Jump</th>
+                        <th data-sort="number" data-col="15">Jumpsquat</th>
                     </tr>
                 </thead>
                 <tbody>
-
                     <tr>
                         <td>Banjo & Kazooie</td>
-                        <td>1.1</td>
-                        <td>1.716</td>
-                        <td>1.525</td>
-                        <td>0.06</td>
-                        <td>0.906</td>
-                        <td>100</td>
-                        <td>0.059</td>
-                        <td>1.5</td>
-                        <td>2.33</td>
-                        <td>0.127</td>
-                        <td>29.8</td>
-                        <td>14.3</td>
-                        <td>32</td>
-                        <td>4</td>
+                        <td data-col="1">1.1</td>
+                        <td data-col="2">1.716</td>
+                        <td data-col="3">1.525</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">0.906</td>
+                        <td data-col="6">0.013</td>
+                        <td data-col="7">100</td>
+                        <td data-col="8">0.059</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.33</td>
+                        <td data-col="11">0.127</td>
+                        <td data-col="12">29.8</td>
+                        <td data-col="13">14.3</td>
+                        <td data-col="14">32</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Bayonetta</td>
-                        <td>0.975</td>
-                        <td>1.65</td>
-                        <td>1.806</td>
-                        <td>0.08</td>
-                        <td>1.03</td>
-                        <td>84</td>
-                        <td>0.069</td>
-                        <td>1.5</td>
-                        <td>2.35</td>
-                        <td>0.132</td>
-                        <td>39</td>
-                        <td>12.5</td>
-                        <td>42</td>
-                        <td>4</td>
+                        <td data-col="1">0.975</td>
+                        <td data-col="2">1.65</td>
+                        <td data-col="3">1.806</td>
+                        <td data-col="4">0.08</td>
+                        <td data-col="5">1.03</td>
+                        <td data-col="6">0.007</td>
+                        <td data-col="7">84</td>
+                        <td data-col="8">0.069</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.35</td>
+                        <td data-col="11">0.132</td>
+                        <td data-col="12">39</td>
+                        <td data-col="13">12.5</td>
+                        <td data-col="14">42</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Bowser</td>
-                        <td>0.901</td>
-                        <td>1.735</td>
-                        <td>1.625</td>
-                        <td>0.055</td>
-                        <td>1.011</td>
-                        <td>117</td>
-                        <td>0.078</td>
-                        <td>1.355</td>
-                        <td>2.12</td>
-                        <td>0.13</td>
-                        <td>33</td>
-                        <td>14.7</td>
-                        <td>32.61</td>
-                        <td>5</td>
+                        <td data-col="1">0.901</td>
+                        <td data-col="2">1.735</td>
+                        <td data-col="3">1.625</td>
+                        <td data-col="4">0.055</td>
+                        <td data-col="5">1.011</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">117</td>
+                        <td data-col="8">0.078</td>
+                        <td data-col="9">1.355</td>
+                        <td data-col="10">2.12</td>
+                        <td data-col="11">0.13</td>
+                        <td data-col="12">33</td>
+                        <td data-col="13">14.7</td>
+                        <td data-col="14">32.61</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Bowser Jr.</td>
-                        <td>1.124</td>
-                        <td>1.724</td>
-                        <td>1.745</td>
-                        <td>0.068</td>
-                        <td>0.98</td>
-                        <td>110</td>
-                        <td>0.07</td>
-                        <td>1.5</td>
-                        <td>2.238</td>
-                        <td>0.111</td>
-                        <td>34.4</td>
-                        <td>15.59</td>
-                        <td>34.4</td>
-                        <td>4</td>
+                        <td data-col="1">1.124</td>
+                        <td data-col="2">1.724</td>
+                        <td data-col="3">1.745</td>
+                        <td data-col="4">0.068</td>
+                        <td data-col="5">0.98</td>
+                        <td data-col="6">0.015</td>
+                        <td data-col="7">110</td>
+                        <td data-col="8">0.07</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.238</td>
+                        <td data-col="11">0.111</td>
+                        <td data-col="12">34.4</td>
+                        <td data-col="13">15.59</td>
+                        <td data-col="14">34.4</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Byleth</td>
-                        <td>1.17</td>
-                        <td>1.51</td>
-                        <td>1.9</td>
-                        <td>0.045</td>
-                        <td>0.853</td>
-                        <td>100</td>
-                        <td>0.06</td>
-                        <td>1.35</td>
-                        <td>2.2</td>
-                        <td>0.109</td>
-                        <td>30</td>
-                        <td>14</td>
-                        <td>28</td>
-                        <td>5</td>
+                        <td data-col="1">1.17</td>
+                        <td data-col="2">1.51</td>
+                        <td data-col="3">1.9</td>
+                        <td data-col="4">0.045</td>
+                        <td data-col="5">0.853</td>
+                        <td data-col="6">0.009</td>
+                        <td data-col="7">100</td>
+                        <td data-col="8">0.06</td>
+                        <td data-col="9">1.35</td>
+                        <td data-col="10">2.2</td>
+                        <td data-col="11">0.109</td>
+                        <td data-col="12">30</td>
+                        <td data-col="13">14</td>
+                        <td data-col="14">28</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Captain Falcon</td>
-                        <td>0.927</td>
-                        <td>2.3</td>
-                        <td>2</td>
-                        <td>0.06</td>
-                        <td>1.12</td>
-                        <td>99</td>
-                        <td>0.08</td>
-                        <td>2.1</td>
-                        <td>2.808</td>
-                        <td>0.13</td>
-                        <td>40.13</td>
-                        <td>12.95</td>
-                        <td>29.94</td>
-                        <td>4</td>
+                        <td data-col="1">0.927</td>
+                        <td data-col="2">2.3</td>
+                        <td data-col="3">2</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1.12</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">99</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">2.1</td>
+                        <td data-col="10">2.808</td>
+                        <td data-col="11">0.13</td>
+                        <td data-col="12">40.13</td>
+                        <td data-col="13">12.95</td>
+                        <td data-col="14">29.94</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Charizard</td>
-                        <td>0.75</td>
-                        <td>2.09</td>
-                        <td>1.5</td>
-                        <td>0.06</td>
-                        <td>1.09</td>
-                        <td>110</td>
-                        <td>0.087</td>
-                        <td>1.5</td>
-                        <td>1.85</td>
-                        <td>0.092</td>
-                        <td>34</td>
-                        <td>15.5</td>
-                        <td>36</td>
-                        <td>4</td>
+                        <td data-col="1">0.75</td>
+                        <td data-col="2">2.09</td>
+                        <td data-col="3">1.5</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1.09</td>
+                        <td data-col="6">0.012</td>
+                        <td data-col="7">110</td>
+                        <td data-col="8">0.087</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">1.85</td>
+                        <td data-col="11">0.092</td>
+                        <td data-col="12">34</td>
+                        <td data-col="13">15.5</td>
+                        <td data-col="14">36</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Chrom</td>
-                        <td>1.218</td>
-                        <td>1.9</td>
-                        <td>1.7</td>
-                        <td>0.04</td>
-                        <td>1.11</td>
-                        <td>90</td>
-                        <td>0.07</td>
-                        <td>1.4</td>
-                        <td>2.6</td>
-                        <td>0.16</td>
-                        <td>29</td>
-                        <td>14.5</td>
-                        <td>29</td>
-                        <td>4</td>
+                        <td data-col="1">1.218</td>
+                        <td data-col="2">1.9</td>
+                        <td data-col="3">1.7</td>
+                        <td data-col="4">0.04</td>
+                        <td data-col="5">1.11</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">90</td>
+                        <td data-col="8">0.07</td>
+                        <td data-col="9">1.4</td>
+                        <td data-col="10">2.6</td>
+                        <td data-col="11">0.16</td>
+                        <td data-col="12">29</td>
+                        <td data-col="13">14.5</td>
+                        <td data-col="14">29</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Cloud</td>
-                        <td>1.205</td>
-                        <td>1.855</td>
-                        <td>1.66</td>
-                        <td>0.06</td>
-                        <td>1.01</td>
-                        <td>101</td>
-                        <td>0.062</td>
-                        <td>1.425</td>
-                        <td>2.4</td>
-                        <td>0.135</td>
-                        <td>36.5</td>
-                        <td>14</td>
-                        <td>34</td>
-                        <td>5</td>
+                        <td data-col="1">1.205</td>
+                        <td data-col="2">1.855</td>
+                        <td data-col="3">1.66</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1.01</td>
+                        <td data-col="6">0.007</td>
+                        <td data-col="7">101</td>
+                        <td data-col="8">0.062</td>
+                        <td data-col="9">1.425</td>
+                        <td data-col="10">2.4</td>
+                        <td data-col="11">0.135</td>
+                        <td data-col="12">36.5</td>
+                        <td data-col="13">14</td>
+                        <td data-col="14">34</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Corrin</td>
-                        <td>1.228</td>
-                        <td>1.722</td>
-                        <td>1.722</td>
-                        <td>0.042</td>
-                        <td>0.966</td>
-                        <td>98</td>
-                        <td>0.083</td>
-                        <td>1.3</td>
-                        <td>2.08</td>
-                        <td>0.1</td>
-                        <td>33</td>
-                        <td>16</td>
-                        <td>31</td>
-                        <td>4</td>
+                        <td data-col="1">1.228</td>
+                        <td data-col="2">1.722</td>
+                        <td data-col="3">1.722</td>
+                        <td data-col="4">0.042</td>
+                        <td data-col="5">0.966</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">98</td>
+                        <td data-col="8">0.083</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">2.08</td>
+                        <td data-col="11">0.1</td>
+                        <td data-col="12">33</td>
+                        <td data-col="13">16</td>
+                        <td data-col="14">31</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Daisy</td>
-                        <td>0.904</td>
-                        <td>1.79</td>
-                        <td>1.69</td>
-                        <td>0.065</td>
-                        <td>1.055</td>
-                        <td>84</td>
-                        <td>0.08</td>
-                        <td>1.65</td>
-                        <td>2.34</td>
-                        <td>0.12</td>
-                        <td>30.03</td>
-                        <td>11.5</td>
-                        <td>28.03</td>
-                        <td>3</td>
+                        <td data-col="1">0.904</td>
+                        <td data-col="2">1.79</td>
+                        <td data-col="3">1.69</td>
+                        <td data-col="4">0.065</td>
+                        <td data-col="5">1.055</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">84</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.65</td>
+                        <td data-col="10">2.34</td>
+                        <td data-col="11">0.12</td>
+                        <td data-col="12">30.03</td>
+                        <td data-col="13">11.5</td>
+                        <td data-col="14">28.03</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Dark Pit</td>
-                        <td>1.259</td>
-                        <td>1.735</td>
-                        <td>1.675</td>
-                        <td>0.07</td>
-                        <td>0.96</td>
-                        <td>82</td>
-                        <td>0.072</td>
-                        <td>1.45</td>
-                        <td>2.42</td>
-                        <td>0.11</td>
-                        <td>33</td>
-                        <td>13.96</td>
-                        <td>31</td>
-                        <td>4</td>
+                        <td data-col="1">1.259</td>
+                        <td data-col="2">1.735</td>
+                        <td data-col="3">1.675</td>
+                        <td data-col="4">0.07</td>
+                        <td data-col="5">0.96</td>
+                        <td data-col="6">0.015</td>
+                        <td data-col="7">82</td>
+                        <td data-col="8">0.072</td>
+                        <td data-col="9">1.45</td>
+                        <td data-col="10">2.42</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">33</td>
+                        <td data-col="13">13.96</td>
+                        <td data-col="14">31</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Dark Samus</td>
-                        <td>1.11</td>
-                        <td>1.61</td>
-                        <td>1.86</td>
-                        <td>0.055</td>
-                        <td>1.01</td>
-                        <td>88</td>
-                        <td>0.06</td>
-                        <td>1.3</td>
-                        <td>1.87</td>
-                        <td>0.1</td>
-                        <td>35</td>
-                        <td>15.39</td>
-                        <td>31</td>
-                        <td>4</td>
+                        <td data-col="1">1.11</td>
+                        <td data-col="2">1.61</td>
+                        <td data-col="3">1.86</td>
+                        <td data-col="4">0.055</td>
+                        <td data-col="5">1.01</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">88</td>
+                        <td data-col="8">0.06</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">1.87</td>
+                        <td data-col="11">0.1</td>
+                        <td data-col="12">35</td>
+                        <td data-col="13">15.39</td>
+                        <td data-col="14">31</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Diddy Kong</td>
-                        <td>1.283</td>
-                        <td>1.9</td>
-                        <td>1.7</td>
-                        <td>0.06</td>
-                        <td>1</td>
-                        <td>85</td>
-                        <td>0.08</td>
-                        <td>1.7</td>
-                        <td>2.55</td>
-                        <td>0.125</td>
-                        <td>41.21</td>
-                        <td>17</td>
-                        <td>33</td>
-                        <td>3</td>
+                        <td data-col="1">1.283</td>
+                        <td data-col="2">1.9</td>
+                        <td data-col="3">1.7</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.012</td>
+                        <td data-col="7">85</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.7</td>
+                        <td data-col="10">2.55</td>
+                        <td data-col="11">0.125</td>
+                        <td data-col="12">41.21</td>
+                        <td data-col="13">17</td>
+                        <td data-col="14">33</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Donkey Kong</td>
-                        <td>1.265</td>
-                        <td>1.76</td>
-                        <td>1.76</td>
-                        <td>0.04</td>
-                        <td>1.105</td>
-                        <td>109</td>
-                        <td>0.08</td>
-                        <td>1.8</td>
-                        <td>2.4</td>
-                        <td>0.12</td>
-                        <td>34</td>
-                        <td>13</td>
-                        <td>34.5</td>
-                        <td>5</td>
+                        <td data-col="1">1.265</td>
+                        <td data-col="2">1.76</td>
+                        <td data-col="3">1.76</td>
+                        <td data-col="4">0.04</td>
+                        <td data-col="5">1.105</td>
+                        <td data-col="6">0.02</td>
+                        <td data-col="7">109</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.8</td>
+                        <td data-col="10">2.4</td>
+                        <td data-col="11">0.12</td>
+                        <td data-col="12">34</td>
+                        <td data-col="13">13</td>
+                        <td data-col="14">34.5</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Dr. Mario</td>
-                        <td>1.12</td>
-                        <td>1.5</td>
-                        <td>1.52</td>
-                        <td>0.054</td>
-                        <td>0.95</td>
-                        <td>100</td>
-                        <td>0.062</td>
-                        <td>1.5</td>
-                        <td>2</td>
-                        <td>0.097</td>
-                        <td>30</td>
-                        <td>12</td>
-                        <td>29.5</td>
-                        <td>4</td>
+                        <td data-col="1">1.12</td>
+                        <td data-col="2">1.5</td>
+                        <td data-col="3">1.52</td>
+                        <td data-col="4">0.054</td>
+                        <td data-col="5">0.95</td>
+                        <td data-col="6">0.011</td>
+                        <td data-col="7">100</td>
+                        <td data-col="8">0.062</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2</td>
+                        <td data-col="11">0.097</td>
+                        <td data-col="12">30</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">29.5</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Duck Hunt</td>
-                        <td>1.213</td>
-                        <td>1.642</td>
-                        <td>1.59</td>
-                        <td>0.076</td>
-                        <td>1.093</td>
-                        <td>85</td>
-                        <td>0.06</td>
-                        <td>1.4</td>
-                        <td>1.91</td>
-                        <td>0.088</td>
-                        <td>34</td>
-                        <td>14.48</td>
-                        <td>33.8</td>
-                        <td>4</td>
+                        <td data-col="1">1.213</td>
+                        <td data-col="2">1.642</td>
+                        <td data-col="3">1.59</td>
+                        <td data-col="4">0.076</td>
+                        <td data-col="5">1.093</td>
+                        <td data-col="6">0.013</td>
+                        <td data-col="7">85</td>
+                        <td data-col="8">0.06</td>
+                        <td data-col="9">1.4</td>
+                        <td data-col="10">1.91</td>
+                        <td data-col="11">0.088</td>
+                        <td data-col="12">34</td>
+                        <td data-col="13">14.48</td>
+                        <td data-col="14">33.8</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Falco</td>
-                        <td>1.4</td>
-                        <td>1.5</td>
-                        <td>1.9</td>
-                        <td>0.08</td>
-                        <td>0.83</td>
-                        <td>80</td>
-                        <td>0.08</td>
-                        <td>1.7</td>
-                        <td>3.1</td>
-                        <td>0.17</td>
-                        <td>50.51</td>
-                        <td>12</td>
-                        <td>41.778</td>
-                        <td>5</td>
+                        <td data-col="1">1.4</td>
+                        <td data-col="2">1.5</td>
+                        <td data-col="3">1.9</td>
+                        <td data-col="4">0.08</td>
+                        <td data-col="5">0.83</td>
+                        <td data-col="6">0.02</td>
+                        <td data-col="7">80</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.7</td>
+                        <td data-col="10">3.1</td>
+                        <td data-col="11">0.17</td>
+                        <td data-col="12">50.51</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">41.778</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Fox</td>
-                        <td>1.6</td>
-                        <td>2.2</td>
-                        <td>1.9</td>
-                        <td>0.08</td>
-                        <td>0.83</td>
-                        <td>75</td>
-                        <td>0.08</td>
-                        <td>1.7</td>
-                        <td>2.8</td>
-                        <td>0.23</td>
-                        <td>35</td>
-                        <td>12</td>
-                        <td>37</td>
-                        <td>3</td>
+                        <td data-col="1">1.6</td>
+                        <td data-col="2">2.2</td>
+                        <td data-col="3">1.9</td>
+                        <td data-col="4">0.08</td>
+                        <td data-col="5">0.83</td>
+                        <td data-col="6">0.02</td>
+                        <td data-col="7">75</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.7</td>
+                        <td data-col="10">2.8</td>
+                        <td data-col="11">0.23</td>
+                        <td data-col="12">35</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">37</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Ganondorf</td>
-                        <td>0.767</td>
-                        <td>1.45</td>
-                        <td>1.4</td>
-                        <td>0.07</td>
-                        <td>0.9</td>
-                        <td>109</td>
-                        <td>0.07</td>
-                        <td>1.8</td>
-                        <td>2</td>
-                        <td>0.13</td>
-                        <td>30.5</td>
-                        <td>14.21</td>
-                        <td>30</td>
-                        <td>5</td>
+                        <td data-col="1">0.767</td>
+                        <td data-col="2">1.45</td>
+                        <td data-col="3">1.4</td>
+                        <td data-col="4">0.07</td>
+                        <td data-col="5">0.9</td>
+                        <td data-col="6">0.02</td>
+                        <td data-col="7">109</td>
+                        <td data-col="8">0.07</td>
+                        <td data-col="9">1.8</td>
+                        <td data-col="10">2</td>
+                        <td data-col="11">0.13</td>
+                        <td data-col="12">30.5</td>
+                        <td data-col="13">14.21</td>
+                        <td data-col="14">30</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Greninja</td>
-                        <td>1.502</td>
-                        <td>1.9</td>
-                        <td>1.775</td>
-                        <td>0.068</td>
-                        <td>1.09</td>
-                        <td>85</td>
-                        <td>0.063</td>
-                        <td>1.46</td>
-                        <td>2.49</td>
-                        <td>0.18</td>
-                        <td>46</td>
-                        <td>15.51</td>
-                        <td>46</td>
-                        <td>5</td>
+                        <td data-col="1">1.502</td>
+                        <td data-col="2">1.9</td>
+                        <td data-col="3">1.775</td>
+                        <td data-col="4">0.068</td>
+                        <td data-col="5">1.09</td>
+                        <td data-col="6">0.011</td>
+                        <td data-col="7">85</td>
+                        <td data-col="8">0.063</td>
+                        <td data-col="9">1.46</td>
+                        <td data-col="10">2.49</td>
+                        <td data-col="11">0.18</td>
+                        <td data-col="12">46</td>
+                        <td data-col="13">15.51</td>
+                        <td data-col="14">46</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Hero</td>
-                        <td>1.1</td>
-                        <td>1.625</td>
-                        <td>1.65</td>
-                        <td>0.06</td>
-                        <td>0.96</td>
-                        <td>101</td>
-                        <td>0.075</td>
-                        <td>1.3</td>
-                        <td>1.98</td>
-                        <td>0.111</td>
-                        <td>29</td>
-                        <td>14.5</td>
-                        <td>28</td>
-                        <td>4</td>
+                        <td data-col="1">1.1</td>
+                        <td data-col="2">1.625</td>
+                        <td data-col="3">1.65</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">0.96</td>
+                        <td data-col="6">0.008</td>
+                        <td data-col="7">101</td>
+                        <td data-col="8">0.075</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">1.98</td>
+                        <td data-col="11">0.111</td>
+                        <td data-col="12">29</td>
+                        <td data-col="13">14.5</td>
+                        <td data-col="14">28</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Ice Climbers</td>
-                        <td>1.108</td>
-                        <td>1.545</td>
-                        <td>1.4</td>
-                        <td>0.051</td>
-                        <td>0.874</td>
-                        <td>88</td>
-                        <td>0.038</td>
-                        <td>1.4</td>
-                        <td>1.61</td>
-                        <td>0.1</td>
-                        <td>34.69</td>
-                        <td>14.75</td>
-                        <td>34.69</td>
-                        <td>4</td>
+                        <td data-col="1">1.108</td>
+                        <td data-col="2">1.545</td>
+                        <td data-col="3">1.4</td>
+                        <td data-col="4">0.051</td>
+                        <td data-col="5">0.874</td>
+                        <td data-col="6">0.02</td>
+                        <td data-col="7">88</td>
+                        <td data-col="8">0.038</td>
+                        <td data-col="9">1.4</td>
+                        <td data-col="10">1.61</td>
+                        <td data-col="11">0.1</td>
+                        <td data-col="12">34.69</td>
+                        <td data-col="13">14.75</td>
+                        <td data-col="14">34.69</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Ike</td>
-                        <td>1.2</td>
-                        <td>1.55</td>
-                        <td>2</td>
-                        <td>0.05</td>
-                        <td>0.925</td>
-                        <td>100</td>
-                        <td>0.08</td>
-                        <td>1.3</td>
-                        <td>2.05</td>
-                        <td>0.103</td>
-                        <td>29.9</td>
-                        <td>14</td>
-                        <td>27</td>
-                        <td>5</td>
+                        <td data-col="1">1.2</td>
+                        <td data-col="2">1.55</td>
+                        <td data-col="3">2</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">0.925</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">100</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">2.05</td>
+                        <td data-col="11">0.103</td>
+                        <td data-col="12">29.9</td>
+                        <td data-col="13">14</td>
+                        <td data-col="14">27</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Incineroar</td>
-                        <td>0.87</td>
-                        <td>1.45</td>
-                        <td>1.6</td>
-                        <td>0.06</td>
-                        <td>0.97</td>
-                        <td>112</td>
-                        <td>0.08</td>
-                        <td>1.45</td>
-                        <td>2.2</td>
-                        <td>0.126</td>
-                        <td>31.6</td>
-                        <td>11</td>
-                        <td>32.8</td>
-                        <td>5</td>
+                        <td data-col="1">0.87</td>
+                        <td data-col="2">1.45</td>
+                        <td data-col="3">1.6</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">0.97</td>
+                        <td data-col="6">0.011</td>
+                        <td data-col="7">112</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.45</td>
+                        <td data-col="10">2.2</td>
+                        <td data-col="11">0.126</td>
+                        <td data-col="12">31.6</td>
+                        <td data-col="13">11</td>
+                        <td data-col="14">32.8</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Inkling</td>
-                        <td>1.134</td>
-                        <td>1.875</td>
-                        <td>1.525</td>
-                        <td>0.068</td>
-                        <td>1.095</td>
-                        <td>94</td>
-                        <td>0.059</td>
-                        <td>1.6</td>
-                        <td>2.05</td>
-                        <td>0.095</td>
-                        <td>33</td>
-                        <td>12.2</td>
-                        <td>33</td>
-                        <td>3</td>
+                        <td data-col="1">1.134</td>
+                        <td data-col="2">1.875</td>
+                        <td data-col="3">1.525</td>
+                        <td data-col="4">0.068</td>
+                        <td data-col="5">1.095</td>
+                        <td data-col="6">0.013</td>
+                        <td data-col="7">94</td>
+                        <td data-col="8">0.059</td>
+                        <td data-col="9">1.6</td>
+                        <td data-col="10">2.05</td>
+                        <td data-col="11">0.095</td>
+                        <td data-col="12">33</td>
+                        <td data-col="13">12.2</td>
+                        <td data-col="14">33</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Isabelle</td>
-                        <td>1.14</td>
-                        <td>1.58</td>
-                        <td>1.665</td>
-                        <td>0.05</td>
-                        <td>0.978</td>
-                        <td>82</td>
-                        <td>0.081</td>
-                        <td>1.45</td>
-                        <td>1.76</td>
-                        <td>0.084</td>
-                        <td>32.5</td>
-                        <td>15.29</td>
-                        <td>32.5</td>
-                        <td>4</td>
+                        <td data-col="1">1.14</td>
+                        <td data-col="2">1.58</td>
+                        <td data-col="3">1.665</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">0.978</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">82</td>
+                        <td data-col="8">0.081</td>
+                        <td data-col="9">1.45</td>
+                        <td data-col="10">1.76</td>
+                        <td data-col="11">0.084</td>
+                        <td data-col="12">32.5</td>
+                        <td data-col="13">15.29</td>
+                        <td data-col="14">32.5</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Ivysaur</td>
-                        <td>1.12</td>
-                        <td>1.58</td>
-                        <td>1.6</td>
-                        <td>0.095</td>
-                        <td>0.9</td>
-                        <td>95</td>
-                        <td>0.075</td>
-                        <td>1.45</td>
-                        <td>2</td>
-                        <td>0.098</td>
-                        <td>28</td>
-                        <td>16.03</td>
-                        <td>28</td>
-                        <td>4</td>
+                        <td data-col="1">1.12</td>
+                        <td data-col="2">1.58</td>
+                        <td data-col="3">1.6</td>
+                        <td data-col="4">0.095</td>
+                        <td data-col="5">0.9</td>
+                        <td data-col="6">0.018</td>
+                        <td data-col="7">95</td>
+                        <td data-col="8">0.075</td>
+                        <td data-col="9">1.45</td>
+                        <td data-col="10">2</td>
+                        <td data-col="11">0.098</td>
+                        <td data-col="12">28</td>
+                        <td data-col="13">16.03</td>
+                        <td data-col="14">28</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Jigglypuff</td>
-                        <td>0.735</td>
-                        <td>1.271</td>
-                        <td>1.45</td>
-                        <td>0.18</td>
-                        <td>1.34</td>
-                        <td>64</td>
-                        <td>0.08</td>
-                        <td>1.35</td>
-                        <td>1.3</td>
-                        <td>0.064</td>
-                        <td>19.79</td>
-                        <td>9.146</td>
-                        <td>19.79</td>
-                        <td>5</td>
+                        <td data-col="1">0.735</td>
+                        <td data-col="2">1.271</td>
+                        <td data-col="3">1.45</td>
+                        <td data-col="4">0.18</td>
+                        <td data-col="5">1.34</td>
+                        <td data-col="6">0.04</td>
+                        <td data-col="7">64</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.35</td>
+                        <td data-col="10">1.3</td>
+                        <td data-col="11">0.064</td>
+                        <td data-col="12">19.79</td>
+                        <td data-col="13">9.146</td>
+                        <td data-col="14">19.79</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Joker</td>
-                        <td>1.25</td>
-                        <td>1.86</td>
-                        <td>1.705</td>
-                        <td>0.065</td>
-                        <td>1.01</td>
-                        <td>87</td>
-                        <td>0.086</td>
-                        <td>1.5</td>
-                        <td>2.45</td>
-                        <td>0.145</td>
-                        <td>32.5</td>
-                        <td>12</td>
-                        <td>32</td>
-                        <td>4</td>
+                        <td data-col="1">1.25</td>
+                        <td data-col="2">1.86</td>
+                        <td data-col="3">1.705</td>
+                        <td data-col="4">0.065</td>
+                        <td data-col="5">1.01</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">87</td>
+                        <td data-col="8">0.086</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.45</td>
+                        <td data-col="11">0.145</td>
+                        <td data-col="12">32.5</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">32</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Kazuya</td>
-                        <td>0.8</td>
-                        <td>1.75</td>
-                        <td>1.8</td>
-                        <td>0.04</td>
-                        <td>0.91</td>
-                        <td>110</td>
-                        <td>0.1</td>
-                        <td>1.45</td>
-                        <td>1.8</td>
-                        <td>0.108</td>
-                        <td>18</td>
-                        <td>12</td>
-                        <td>49</td>
-                        <td>5</td>
+                        <td data-col="1">0.8</td>
+                        <td data-col="2">1.75</td>
+                        <td data-col="3">1.8</td>
+                        <td data-col="4">0.04</td>
+                        <td data-col="5">0.91</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">110</td>
+                        <td data-col="8">0.1</td>
+                        <td data-col="9">1.45</td>
+                        <td data-col="10">1.8</td>
+                        <td data-col="11">0.108</td>
+                        <td data-col="12">18</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">49</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Ken</td>
-                        <td>0.825</td>
-                        <td>1.8</td>
-                        <td>1.825</td>
-                        <td>0.035</td>
-                        <td>1.1</td>
-                        <td>94</td>
-                        <td>0.1</td>
-                        <td>1.5</td>
-                        <td>2.07</td>
-                        <td>0.13</td>
-                        <td>26</td>
-                        <td>13</td>
-                        <td>29.5</td>
-                        <td>5</td>
+                        <td data-col="1">0.825</td>
+                        <td data-col="2">1.8</td>
+                        <td data-col="3">1.825</td>
+                        <td data-col="4">0.035</td>
+                        <td data-col="5">1.1</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">94</td>
+                        <td data-col="8">0.1</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.07</td>
+                        <td data-col="11">0.13</td>
+                        <td data-col="12">26</td>
+                        <td data-col="13">13</td>
+                        <td data-col="14">29.5</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>King Dedede</td>
-                        <td>0.975</td>
-                        <td>1.36</td>
-                        <td>1.48</td>
-                        <td>0.06</td>
-                        <td>0.915</td>
-                        <td>107</td>
-                        <td>0.07</td>
-                        <td>1.16</td>
-                        <td>2.25</td>
-                        <td>0.095</td>
-                        <td>32.85</td>
-                        <td>15.02</td>
-                        <td>32.85</td>
-                        <td>5</td>
+                        <td data-col="1">0.975</td>
+                        <td data-col="2">1.36</td>
+                        <td data-col="3">1.48</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">0.915</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">107</td>
+                        <td data-col="8">0.07</td>
+                        <td data-col="9">1.16</td>
+                        <td data-col="10">2.25</td>
+                        <td data-col="11">0.095</td>
+                        <td data-col="12">32.85</td>
+                        <td data-col="13">15.02</td>
+                        <td data-col="14">32.85</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>King K. Rool</td>
-                        <td>1.03</td>
-                        <td>1.645</td>
-                        <td>1.71</td>
-                        <td>0.055</td>
-                        <td>0.93</td>
-                        <td>116</td>
-                        <td>0.055</td>
-                        <td>1.567</td>
-                        <td>2.3</td>
-                        <td>0.118</td>
-                        <td>33</td>
-                        <td>13.5</td>
-                        <td>32.61</td>
-                        <td>5</td>
+                        <td data-col="1">1.03</td>
+                        <td data-col="2">1.645</td>
+                        <td data-col="3">1.71</td>
+                        <td data-col="4">0.055</td>
+                        <td data-col="5">0.93</td>
+                        <td data-col="6">0.018</td>
+                        <td data-col="7">116</td>
+                        <td data-col="8">0.055</td>
+                        <td data-col="9">1.567</td>
+                        <td data-col="10">2.3</td>
+                        <td data-col="11">0.118</td>
+                        <td data-col="12">33</td>
+                        <td data-col="13">13.5</td>
+                        <td data-col="14">32.61</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Kirby</td>
-                        <td>0.927</td>
-                        <td>1.6</td>
-                        <td>1.524</td>
-                        <td>0.06</td>
-                        <td>1</td>
-                        <td>74</td>
-                        <td>0.08</td>
-                        <td>1.6</td>
-                        <td>1.6</td>
-                        <td>0.082</td>
-                        <td>25.37</td>
-                        <td>12.24</td>
-                        <td>22</td>
-                        <td>4</td>
+                        <td data-col="1">0.927</td>
+                        <td data-col="2">1.6</td>
+                        <td data-col="3">1.524</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.02</td>
+                        <td data-col="7">74</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.6</td>
+                        <td data-col="10">1.6</td>
+                        <td data-col="11">0.082</td>
+                        <td data-col="12">25.37</td>
+                        <td data-col="13">12.24</td>
+                        <td data-col="14">22</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Link</td>
-                        <td>1.217</td>
-                        <td>1.5</td>
-                        <td>1.5</td>
-                        <td>0.06</td>
-                        <td>1</td>
-                        <td>104</td>
-                        <td>0.09</td>
-                        <td>1.3</td>
-                        <td>2.13</td>
-                        <td>0.11</td>
-                        <td>27.8</td>
-                        <td>12.58</td>
-                        <td>25</td>
-                        <td>4</td>
+                        <td data-col="1">1.217</td>
+                        <td data-col="2">1.5</td>
+                        <td data-col="3">1.5</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">104</td>
+                        <td data-col="8">0.09</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">2.13</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">27.8</td>
+                        <td data-col="13">12.58</td>
+                        <td data-col="14">25</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Little Mac</td>
-                        <td>1.386</td>
-                        <td>2.046</td>
-                        <td>1.88</td>
-                        <td>0.034</td>
-                        <td>1.085</td>
-                        <td>90</td>
-                        <td>0.084</td>
-                        <td>1.5</td>
-                        <td>2.165</td>
-                        <td>0.117</td>
-                        <td>28</td>
-                        <td>12.53</td>
-                        <td>27</td>
-                        <td>5</td>
+                        <td data-col="1">1.386</td>
+                        <td data-col="2">2.046</td>
+                        <td data-col="3">1.88</td>
+                        <td data-col="4">0.034</td>
+                        <td data-col="5">1.085</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">90</td>
+                        <td data-col="8">0.084</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.165</td>
+                        <td data-col="11">0.117</td>
+                        <td data-col="12">28</td>
+                        <td data-col="13">12.53</td>
+                        <td data-col="14">27</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Lucario</td>
-                        <td>1.303</td>
-                        <td>1.85</td>
-                        <td>2.05</td>
-                        <td>0.035</td>
-                        <td>1</td>
-                        <td>94</td>
-                        <td>0.095</td>
-                        <td>1.25</td>
-                        <td>2.02</td>
-                        <td>0.125</td>
-                        <td>37.62</td>
-                        <td>15.19</td>
-                        <td>37.62</td>
-                        <td>4</td>
+                        <td data-col="1">1.303</td>
+                        <td data-col="2">1.85</td>
+                        <td data-col="3">2.05</td>
+                        <td data-col="4">0.035</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">94</td>
+                        <td data-col="8">0.095</td>
+                        <td data-col="9">1.25</td>
+                        <td data-col="10">2.02</td>
+                        <td data-col="11">0.125</td>
+                        <td data-col="12">37.62</td>
+                        <td data-col="13">15.19</td>
+                        <td data-col="14">37.62</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Lucas</td>
-                        <td>0.82</td>
-                        <td>1.725</td>
-                        <td>1.625</td>
-                        <td>0.085</td>
-                        <td>1</td>
-                        <td>80</td>
-                        <td>0.048</td>
-                        <td>1.5</td>
-                        <td>2.3</td>
-                        <td>0.125</td>
-                        <td>49</td>
-                        <td>12.5</td>
-                        <td>44.13</td>
-                        <td>4</td>
+                        <td data-col="1">0.82</td>
+                        <td data-col="2">1.725</td>
+                        <td data-col="3">1.625</td>
+                        <td data-col="4">0.085</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.014</td>
+                        <td data-col="7">80</td>
+                        <td data-col="8">0.048</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.3</td>
+                        <td data-col="11">0.125</td>
+                        <td data-col="12">49</td>
+                        <td data-col="13">12.5</td>
+                        <td data-col="14">44.13</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Lucina</td>
-                        <td>1.6</td>
-                        <td>1.85</td>
-                        <td>1.72</td>
-                        <td>0.065</td>
-                        <td>0.99</td>
-                        <td>84</td>
-                        <td>0.068</td>
-                        <td>1.32</td>
-                        <td>2.28</td>
-                        <td>0.091</td>
-                        <td>30.5</td>
-                        <td>14</td>
-                        <td>28.5</td>
-                        <td>4</td>
+                        <td data-col="1">1.6</td>
+                        <td data-col="2">1.85</td>
+                        <td data-col="3">1.72</td>
+                        <td data-col="4">0.065</td>
+                        <td data-col="5">0.99</td>
+                        <td data-col="6">0.006</td>
+                        <td data-col="7">84</td>
+                        <td data-col="8">0.068</td>
+                        <td data-col="9">1.32</td>
+                        <td data-col="10">2.28</td>
+                        <td data-col="11">0.091</td>
+                        <td data-col="12">30.5</td>
+                        <td data-col="13">14</td>
+                        <td data-col="14">28.5</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Luigi</td>
-                        <td>1.1</td>
-                        <td>1.555</td>
-                        <td>1.435</td>
-                        <td>0.045</td>
-                        <td>0.8</td>
-                        <td>100</td>
-                        <td>0.031</td>
-                        <td>1.28</td>
-                        <td>1.71</td>
-                        <td>0.079</td>
-                        <td>44</td>
-                        <td>14</td>
-                        <td>34</td>
-                        <td>4</td>
+                        <td data-col="1">1.1</td>
+                        <td data-col="2">1.555</td>
+                        <td data-col="3">1.435</td>
+                        <td data-col="4">0.045</td>
+                        <td data-col="5">0.8</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">100</td>
+                        <td data-col="8">0.031</td>
+                        <td data-col="9">1.28</td>
+                        <td data-col="10">1.71</td>
+                        <td data-col="11">0.079</td>
+                        <td data-col="12">44</td>
+                        <td data-col="13">14</td>
+                        <td data-col="14">34</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Mario</td>
-                        <td>1.125</td>
-                        <td>1.6</td>
-                        <td>1.62</td>
-                        <td>0.075</td>
-                        <td>1</td>
-                        <td>100</td>
-                        <td>0.061</td>
-                        <td>1.6</td>
-                        <td>1.8</td>
-                        <td>0.095</td>
-                        <td>34</td>
-                        <td>13</td>
-                        <td>33.5</td>
-                        <td>4</td>
+                        <td data-col="1">1.125</td>
+                        <td data-col="2">1.6</td>
+                        <td data-col="3">1.62</td>
+                        <td data-col="4">0.075</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.016</td>
+                        <td data-col="7">100</td>
+                        <td data-col="8">0.061</td>
+                        <td data-col="9">1.6</td>
+                        <td data-col="10">1.8</td>
+                        <td data-col="11">0.095</td>
+                        <td data-col="12">34</td>
+                        <td data-col="13">13</td>
+                        <td data-col="14">33.5</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Marth</td>
-                        <td>1.6</td>
-                        <td>1.8</td>
-                        <td>1.5</td>
-                        <td>0.04</td>
-                        <td>0.9</td>
-                        <td>87</td>
-                        <td>0.06</td>
-                        <td>1.2</td>
-                        <td>2.2</td>
-                        <td>0.085</td>
-                        <td>33.66</td>
-                        <td>13.995</td>
-                        <td>26.24</td>
-                        <td>4</td>
+                        <td data-col="1">1.6</td>
+                        <td data-col="2">1.8</td>
+                        <td data-col="3">1.5</td>
+                        <td data-col="4">0.04</td>
+                        <td data-col="5">0.9</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">87</td>
+                        <td data-col="8">0.06</td>
+                        <td data-col="9">1.2</td>
+                        <td data-col="10">2.2</td>
+                        <td data-col="11">0.085</td>
+                        <td data-col="12">33.66</td>
+                        <td data-col="13">13.995</td>
+                        <td data-col="14">26.24</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Mega Man</td>
-                        <td>1.232</td>
-                        <td>1.542</td>
-                        <td>1.738</td>
-                        <td>0.075</td>
-                        <td>1.08</td>
-                        <td>102</td>
-                        <td>0.076</td>
-                        <td>1.5</td>
-                        <td>2.18</td>
-                        <td>0.11</td>
-                        <td>32.8</td>
-                        <td>11.99</td>
-                        <td>32.8</td>
-                        <td>4</td>
+                        <td data-col="1">1.232</td>
+                        <td data-col="2">1.542</td>
+                        <td data-col="3">1.738</td>
+                        <td data-col="4">0.075</td>
+                        <td data-col="5">1.08</td>
+                        <td data-col="6">0.025</td>
+                        <td data-col="7">102</td>
+                        <td data-col="8">0.076</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.18</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">32.8</td>
+                        <td data-col="13">11.99</td>
+                        <td data-col="14">32.8</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Meta Knight</td>
-                        <td>1.239</td>
-                        <td>2.1</td>
-                        <td>1.765</td>
-                        <td>0.072</td>
-                        <td>1</td>
-                        <td>79</td>
-                        <td>0.09</td>
-                        <td>1.5</td>
-                        <td>2.6</td>
-                        <td>0.13</td>
-                        <td>32</td>
-                        <td>14.32</td>
-                        <td>28.93</td>
-                        <td>4</td>
+                        <td data-col="1">1.239</td>
+                        <td data-col="2">2.1</td>
+                        <td data-col="3">1.765</td>
+                        <td data-col="4">0.072</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.015</td>
+                        <td data-col="7">79</td>
+                        <td data-col="8">0.09</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.6</td>
+                        <td data-col="11">0.13</td>
+                        <td data-col="12">32</td>
+                        <td data-col="13">14.32</td>
+                        <td data-col="14">28.93</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Mewtwo</td>
-                        <td>1.26</td>
-                        <td>1.66</td>
-                        <td>1.45</td>
-                        <td>0.05</td>
-                        <td>1.2</td>
-                        <td>93</td>
-                        <td>0.05</td>
-                        <td>1.4</td>
-                        <td>1.5</td>
-                        <td>0.082</td>
-                        <td>31.11</td>
-                        <td>14.5</td>
-                        <td>57.35</td>
-                        <td>5</td>
+                        <td data-col="1">1.26</td>
+                        <td data-col="2">1.66</td>
+                        <td data-col="3">1.45</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">1.2</td>
+                        <td data-col="6">0.016</td>
+                        <td data-col="7">93</td>
+                        <td data-col="8">0.05</td>
+                        <td data-col="9">1.4</td>
+                        <td data-col="10">1.5</td>
+                        <td data-col="11">0.082</td>
+                        <td data-col="12">31.11</td>
+                        <td data-col="13">14.5</td>
+                        <td data-col="14">57.35</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Mii Brawler</td>
-                        <td>1.26</td>
-                        <td>2.07</td>
-                        <td>1.8</td>
-                        <td>0.053</td>
-                        <td>1.1</td>
-                        <td>85</td>
-                        <td>0.09</td>
-                        <td>1.8</td>
-                        <td>2.5</td>
-                        <td>0.145</td>
-                        <td>30</td>
-                        <td>13</td>
-                        <td>30</td>
-                        <td>4</td>
+                        <td data-col="1">1.26</td>
+                        <td data-col="2">2.07</td>
+                        <td data-col="3">1.8</td>
+                        <td data-col="4">0.053</td>
+                        <td data-col="5">1.1</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">85</td>
+                        <td data-col="8">0.09</td>
+                        <td data-col="9">1.8</td>
+                        <td data-col="10">2.5</td>
+                        <td data-col="11">0.145</td>
+                        <td data-col="12">30</td>
+                        <td data-col="13">13</td>
+                        <td data-col="14">30</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Mii Gunner</td>
-                        <td>1</td>
-                        <td>1.26</td>
-                        <td>1.8</td>
-                        <td>0.045</td>
-                        <td>0.99</td>
-                        <td>101</td>
-                        <td>0.076</td>
-                        <td>1.18</td>
-                        <td>1.78</td>
-                        <td>0.102</td>
-                        <td>30.9</td>
-                        <td>14</td>
-                        <td>29.3</td>
-                        <td>5</td>
+                        <td data-col="1">1</td>
+                        <td data-col="2">1.26</td>
+                        <td data-col="3">1.8</td>
+                        <td data-col="4">0.045</td>
+                        <td data-col="5">0.99</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">101</td>
+                        <td data-col="8">0.076</td>
+                        <td data-col="9">1.18</td>
+                        <td data-col="10">1.78</td>
+                        <td data-col="11">0.102</td>
+                        <td data-col="12">30.9</td>
+                        <td data-col="13">14</td>
+                        <td data-col="14">29.3</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Mii Swordfighter</td>
-                        <td>1.17</td>
-                        <td>1.6</td>
-                        <td>1.81</td>
-                        <td>0.051</td>
-                        <td>1.112</td>
-                        <td>98</td>
-                        <td>0.077</td>
-                        <td>1.32</td>
-                        <td>2.06</td>
-                        <td>0.11</td>
-                        <td>28.5</td>
-                        <td>13</td>
-                        <td>27.5</td>
-                        <td>4</td>
+                        <td data-col="1">1.17</td>
+                        <td data-col="2">1.6</td>
+                        <td data-col="3">1.81</td>
+                        <td data-col="4">0.051</td>
+                        <td data-col="5">1.112</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">98</td>
+                        <td data-col="8">0.077</td>
+                        <td data-col="9">1.32</td>
+                        <td data-col="10">2.06</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">28.5</td>
+                        <td data-col="13">13</td>
+                        <td data-col="14">27.5</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Min Min</td>
-                        <td>1.05</td>
-                        <td>1.54</td>
-                        <td>1.855</td>
-                        <td>0.06</td>
-                        <td>0.86</td>
-                        <td>100</td>
-                        <td>0.084</td>
-                        <td>1.6</td>
-                        <td>1.815</td>
-                        <td>0.11</td>
-                        <td>30.7</td>
-                        <td>12</td>
-                        <td>29</td>
-                        <td>4</td>
+                        <td data-col="1">1.05</td>
+                        <td data-col="2">1.54</td>
+                        <td data-col="3">1.855</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">0.86</td>
+                        <td data-col="6">0.012</td>
+                        <td data-col="7">100</td>
+                        <td data-col="8">0.084</td>
+                        <td data-col="9">1.6</td>
+                        <td data-col="10">1.815</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">30.7</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">29</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Mr. Game & Watch</td>
-                        <td>1.18</td>
-                        <td>1.5</td>
-                        <td>1.5</td>
-                        <td>0.068</td>
-                        <td>1</td>
-                        <td>75</td>
-                        <td>0.06</td>
-                        <td>1.5</td>
-                        <td>1.71</td>
-                        <td>0.095</td>
-                        <td>27.51</td>
-                        <td>11.76</td>
-                        <td>27.51</td>
-                        <td>4</td>
+                        <td data-col="1">1.18</td>
+                        <td data-col="2">1.5</td>
+                        <td data-col="3">1.5</td>
+                        <td data-col="4">0.068</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.016</td>
+                        <td data-col="7">75</td>
+                        <td data-col="8">0.06</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">1.71</td>
+                        <td data-col="11">0.095</td>
+                        <td data-col="12">27.51</td>
+                        <td data-col="13">11.76</td>
+                        <td data-col="14">27.51</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Mythra</td>
-                        <td>1.42</td>
-                        <td>1.89</td>
-                        <td>1.9</td>
-                        <td>0.06</td>
-                        <td>1.125</td>
-                        <td>78</td>
-                        <td>0.091</td>
-                        <td>1.7</td>
-                        <td>2.62</td>
-                        <td>0.134</td>
-                        <td>30.8</td>
-                        <td>13</td>
-                        <td>33</td>
-                        <td>3</td>
+                        <td data-col="1">1.42</td>
+                        <td data-col="2">1.89</td>
+                        <td data-col="3">1.9</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1.125</td>
+                        <td data-col="6">0.012</td>
+                        <td data-col="7">78</td>
+                        <td data-col="8">0.091</td>
+                        <td data-col="9">1.7</td>
+                        <td data-col="10">2.62</td>
+                        <td data-col="11">0.134</td>
+                        <td data-col="12">30.8</td>
+                        <td data-col="13">13</td>
+                        <td data-col="14">33</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Ness</td>
-                        <td>0.877</td>
-                        <td>1.6</td>
-                        <td>1.45</td>
-                        <td>0.06</td>
-                        <td>1.05</td>
-                        <td>94</td>
-                        <td>0.06</td>
-                        <td>1.5</td>
-                        <td>1.83</td>
-                        <td>0.09</td>
-                        <td>34.48</td>
-                        <td>14.65</td>
-                        <td>45.65</td>
-                        <td>4</td>
+                        <td data-col="1">0.877</td>
+                        <td data-col="2">1.6</td>
+                        <td data-col="3">1.45</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1.05</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">94</td>
+                        <td data-col="8">0.06</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">1.83</td>
+                        <td data-col="11">0.09</td>
+                        <td data-col="12">34.48</td>
+                        <td data-col="13">14.65</td>
+                        <td data-col="14">45.65</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Olimar</td>
-                        <td>0.925</td>
-                        <td>1.625</td>
-                        <td>1.56</td>
-                        <td>0.05</td>
-                        <td>1.11</td>
-                        <td>83</td>
-                        <td>0.075</td>
-                        <td>1.315</td>
-                        <td>1.9</td>
-                        <td>0.09</td>
-                        <td>33.5</td>
-                        <td>11.69</td>
-                        <td>33.5</td>
-                        <td>4</td>
+                        <td data-col="1">0.925</td>
+                        <td data-col="2">1.625</td>
+                        <td data-col="3">1.56</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">1.11</td>
+                        <td data-col="6">0.02</td>
+                        <td data-col="7">83</td>
+                        <td data-col="8">0.075</td>
+                        <td data-col="9">1.315</td>
+                        <td data-col="10">1.9</td>
+                        <td data-col="11">0.09</td>
+                        <td data-col="12">33.5</td>
+                        <td data-col="13">11.69</td>
+                        <td data-col="14">33.5</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Pac-Man</td>
-                        <td>1.097</td>
-                        <td>1.62</td>
-                        <td>1.625</td>
-                        <td>0.08</td>
-                        <td>1.095</td>
-                        <td>95</td>
-                        <td>0.07</td>
-                        <td>1.5</td>
-                        <td>1.7</td>
-                        <td>0.085</td>
-                        <td>27</td>
-                        <td>15.48</td>
-                        <td>28</td>
-                        <td>4</td>
+                        <td data-col="1">1.097</td>
+                        <td data-col="2">1.62</td>
+                        <td data-col="3">1.625</td>
+                        <td data-col="4">0.08</td>
+                        <td data-col="5">1.095</td>
+                        <td data-col="6">0.013</td>
+                        <td data-col="7">95</td>
+                        <td data-col="8">0.07</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">1.7</td>
+                        <td data-col="11">0.085</td>
+                        <td data-col="12">27</td>
+                        <td data-col="13">15.48</td>
+                        <td data-col="14">28</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Palutena</td>
-                        <td>1.271</td>
-                        <td>1.815</td>
-                        <td>1.845</td>
-                        <td>0.09</td>
-                        <td>0.959</td>
-                        <td>90</td>
-                        <td>0.079</td>
-                        <td>1.4</td>
-                        <td>1.915</td>
-                        <td>0.124</td>
-                        <td>35.9</td>
-                        <td>14.31</td>
-                        <td>35.9</td>
-                        <td>4</td>
+                        <td data-col="1">1.271</td>
+                        <td data-col="2">1.815</td>
+                        <td data-col="3">1.845</td>
+                        <td data-col="4">0.09</td>
+                        <td data-col="5">0.959</td>
+                        <td data-col="6">0.006</td>
+                        <td data-col="7">90</td>
+                        <td data-col="8">0.079</td>
+                        <td data-col="9">1.4</td>
+                        <td data-col="10">1.915</td>
+                        <td data-col="11">0.124</td>
+                        <td data-col="12">35.9</td>
+                        <td data-col="13">14.31</td>
+                        <td data-col="14">35.9</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Peach</td>
-                        <td>0.904</td>
-                        <td>1.5</td>
-                        <td>1.2</td>
-                        <td>0.07</td>
-                        <td>1.1</td>
-                        <td>90</td>
-                        <td>0.089</td>
-                        <td>1.3</td>
-                        <td>1.5</td>
-                        <td>0.08</td>
-                        <td>30.03</td>
-                        <td>15.66</td>
-                        <td>30.03</td>
-                        <td>4</td>
+                        <td data-col="1">0.904</td>
+                        <td data-col="2">1.5</td>
+                        <td data-col="3">1.2</td>
+                        <td data-col="4">0.07</td>
+                        <td data-col="5">1.1</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">90</td>
+                        <td data-col="8">0.089</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">1.5</td>
+                        <td data-col="11">0.08</td>
+                        <td data-col="12">30.03</td>
+                        <td data-col="13">15.66</td>
+                        <td data-col="14">30.03</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Pichu</td>
-                        <td>1.25</td>
-                        <td>1.82</td>
-                        <td>1.85</td>
-                        <td>0.086</td>
-                        <td>1.05</td>
-                        <td>55</td>
-                        <td>0.096</td>
-                        <td>1.82</td>
-                        <td>2.65</td>
-                        <td>0.165</td>
-                        <td>32</td>
-                        <td>15.43</td>
-                        <td>36.02</td>
-                        <td>3</td>
+                        <td data-col="1">1.25</td>
+                        <td data-col="2">1.82</td>
+                        <td data-col="3">1.85</td>
+                        <td data-col="4">0.086</td>
+                        <td data-col="5">1.05</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">55</td>
+                        <td data-col="8">0.096</td>
+                        <td data-col="9">1.82</td>
+                        <td data-col="10">2.65</td>
+                        <td data-col="11">0.165</td>
+                        <td data-col="12">32</td>
+                        <td data-col="13">15.43</td>
+                        <td data-col="14">36.02</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Pikachu</td>
-                        <td>1.24</td>
-                        <td>1.8</td>
-                        <td>1.8</td>
-                        <td>0.05</td>
-                        <td>0.901</td>
-                        <td>80</td>
-                        <td>0.09</td>
-                        <td>1.8</td>
-                        <td>1.9</td>
-                        <td>0.11</td>
-                        <td>35.5</td>
-                        <td>15</td>
-                        <td>35.5</td>
-                        <td>3</td>
+                        <td data-col="1">1.24</td>
+                        <td data-col="2">1.8</td>
+                        <td data-col="3">1.8</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">0.901</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">80</td>
+                        <td data-col="8">0.09</td>
+                        <td data-col="9">1.8</td>
+                        <td data-col="10">1.9</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">35.5</td>
+                        <td data-col="13">15</td>
+                        <td data-col="14">35.5</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Piranha Plant</td>
-                        <td>1</td>
-                        <td>1.59</td>
-                        <td>1.71</td>
-                        <td>0.05</td>
-                        <td>0.981</td>
-                        <td>109</td>
-                        <td>0.06</td>
-                        <td>1.5</td>
-                        <td>2.2</td>
-                        <td>0.14</td>
-                        <td>37.4</td>
-                        <td>16</td>
-                        <td>38.52</td>
-                        <td>5</td>
+                        <td data-col="1">1</td>
+                        <td data-col="2">1.59</td>
+                        <td data-col="3">1.71</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">0.981</td>
+                        <td data-col="6">0.013</td>
+                        <td data-col="7">109</td>
+                        <td data-col="8">0.06</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.2</td>
+                        <td data-col="11">0.14</td>
+                        <td data-col="12">37.4</td>
+                        <td data-col="13">16</td>
+                        <td data-col="14">38.52</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Pit</td>
-                        <td>1.229</td>
-                        <td>1.82</td>
-                        <td>1.5</td>
-                        <td>0.06</td>
-                        <td>1.01</td>
-                        <td>80</td>
-                        <td>0.07</td>
-                        <td>1.55</td>
-                        <td>1.9</td>
-                        <td>0.095</td>
-                        <td>31</td>
-                        <td>12.96</td>
-                        <td>31</td>
-                        <td>4</td>
+                        <td data-col="1">1.229</td>
+                        <td data-col="2">1.82</td>
+                        <td data-col="3">1.5</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1.01</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">80</td>
+                        <td data-col="8">0.07</td>
+                        <td data-col="9">1.55</td>
+                        <td data-col="10">1.9</td>
+                        <td data-col="11">0.095</td>
+                        <td data-col="12">31</td>
+                        <td data-col="13">12.96</td>
+                        <td data-col="14">31</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Pyra</td>
-                        <td>1.12</td>
-                        <td>1.498</td>
-                        <td>1.725</td>
-                        <td>0.055</td>
-                        <td>1.05</td>
-                        <td>95</td>
-                        <td>0.08</td>
-                        <td>1.3</td>
-                        <td>2.02</td>
-                        <td>0.089</td>
-                        <td>26.3</td>
-                        <td>14.7</td>
-                        <td>29</td>
-                        <td>5</td>
+                        <td data-col="1">1.12</td>
+                        <td data-col="2">1.498</td>
+                        <td data-col="3">1.725</td>
+                        <td data-col="4">0.055</td>
+                        <td data-col="5">1.05</td>
+                        <td data-col="6">0.009</td>
+                        <td data-col="7">95</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">2.02</td>
+                        <td data-col="11">0.089</td>
+                        <td data-col="12">26.3</td>
+                        <td data-col="13">14.7</td>
+                        <td data-col="14">29</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>R.O.B.</td>
-                        <td>1.138</td>
-                        <td>1.66</td>
-                        <td>1.3</td>
-                        <td>0.065</td>
-                        <td>1.08</td>
-                        <td>104</td>
-                        <td>0.07</td>
-                        <td>1.3</td>
-                        <td>2</td>
-                        <td>0.09</td>
-                        <td>38</td>
-                        <td>17.98</td>
-                        <td>38</td>
-                        <td>4</td>
+                        <td data-col="1">1.138</td>
+                        <td data-col="2">1.66</td>
+                        <td data-col="3">1.3</td>
+                        <td data-col="4">0.065</td>
+                        <td data-col="5">1.08</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">104</td>
+                        <td data-col="8">0.07</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">2</td>
+                        <td data-col="11">0.09</td>
+                        <td data-col="12">38</td>
+                        <td data-col="13">17.98</td>
+                        <td data-col="14">38</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Richter</td>
-                        <td>0.9</td>
-                        <td>1.72</td>
-                        <td>1.73</td>
-                        <td>0.05</td>
-                        <td>1.1</td>
-                        <td>96</td>
-                        <td>0.072</td>
-                        <td>1.3</td>
-                        <td>2.23</td>
-                        <td>0.11</td>
-                        <td>28</td>
-                        <td>14</td>
-                        <td>28</td>
-                        <td>4</td>
+                        <td data-col="1">0.9</td>
+                        <td data-col="2">1.72</td>
+                        <td data-col="3">1.73</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">1.1</td>
+                        <td data-col="6">0.013</td>
+                        <td data-col="7">96</td>
+                        <td data-col="8">0.072</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">2.23</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">28</td>
+                        <td data-col="13">14</td>
+                        <td data-col="14">28</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Ridley</td>
-                        <td>1.1</td>
-                        <td>1.815</td>
-                        <td>1.8</td>
-                        <td>0.06</td>
-                        <td>1</td>
-                        <td>98</td>
-                        <td>0.068</td>
-                        <td>1.55</td>
-                        <td>2.19</td>
-                        <td>0.11</td>
-                        <td>34</td>
-                        <td>12.56</td>
-                        <td>32</td>
-                        <td>5</td>
+                        <td data-col="1">1.1</td>
+                        <td data-col="2">1.815</td>
+                        <td data-col="3">1.8</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.02</td>
+                        <td data-col="7">98</td>
+                        <td data-col="8">0.068</td>
+                        <td data-col="9">1.55</td>
+                        <td data-col="10">2.19</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">34</td>
+                        <td data-col="13">12.56</td>
+                        <td data-col="14">32</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Robin</td>
-                        <td>0.998</td>
-                        <td>1.35</td>
-                        <td>1.71</td>
-                        <td>0.05</td>
-                        <td>1.03</td>
-                        <td>93</td>
-                        <td>0.081</td>
-                        <td>1.25</td>
-                        <td>2.25</td>
-                        <td>0.099</td>
-                        <td>33.21</td>
-                        <td>14.52</td>
-                        <td>33.21</td>
-                        <td>5</td>
+                        <td data-col="1">0.998</td>
+                        <td data-col="2">1.35</td>
+                        <td data-col="3">1.71</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">1.03</td>
+                        <td data-col="6">0.008</td>
+                        <td data-col="7">93</td>
+                        <td data-col="8">0.081</td>
+                        <td data-col="9">1.25</td>
+                        <td data-col="10">2.25</td>
+                        <td data-col="11">0.099</td>
+                        <td data-col="12">33.21</td>
+                        <td data-col="13">14.52</td>
+                        <td data-col="14">33.21</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Rosalina & Luma</td>
-                        <td>1.138</td>
-                        <td>1.67</td>
-                        <td>1.735</td>
-                        <td>0.093</td>
-                        <td>1</td>
-                        <td>89</td>
-                        <td>0.057</td>
-                        <td>1.25</td>
-                        <td>1.6</td>
-                        <td>0.081</td>
-                        <td>40</td>
-                        <td>16.17</td>
-                        <td>40</td>
-                        <td>5</td>
+                        <td data-col="1">1.138</td>
+                        <td data-col="2">1.67</td>
+                        <td data-col="3">1.735</td>
+                        <td data-col="4">0.093</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.009</td>
+                        <td data-col="7">89</td>
+                        <td data-col="8">0.057</td>
+                        <td data-col="9">1.25</td>
+                        <td data-col="10">1.6</td>
+                        <td data-col="11">0.081</td>
+                        <td data-col="12">40</td>
+                        <td data-col="13">16.17</td>
+                        <td data-col="14">40</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Roy</td>
-                        <td>1.208</td>
-                        <td>1.805</td>
-                        <td>1.475</td>
-                        <td>0.05</td>
-                        <td>0.95</td>
-                        <td>85</td>
-                        <td>0.06</td>
-                        <td>1.265</td>
-                        <td>2.4</td>
-                        <td>0.115</td>
-                        <td>30.97</td>
-                        <td>13</td>
-                        <td>25</td>
-                        <td>4</td>
+                        <td data-col="1">1.208</td>
+                        <td data-col="2">1.805</td>
+                        <td data-col="3">1.475</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">0.95</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">85</td>
+                        <td data-col="8">0.06</td>
+                        <td data-col="9">1.265</td>
+                        <td data-col="10">2.4</td>
+                        <td data-col="11">0.115</td>
+                        <td data-col="12">30.97</td>
+                        <td data-col="13">13</td>
+                        <td data-col="14">25</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Ryu</td>
-                        <td>0.825</td>
-                        <td>1.578</td>
-                        <td>1.6</td>
-                        <td>0.035</td>
-                        <td>1.1</td>
-                        <td>103</td>
-                        <td>0.1</td>
-                        <td>1.35</td>
-                        <td>1.857</td>
-                        <td>0.12</td>
-                        <td>26</td>
-                        <td>13</td>
-                        <td>29.5</td>
-                        <td>5</td>
+                        <td data-col="1">0.825</td>
+                        <td data-col="2">1.578</td>
+                        <td data-col="3">1.6</td>
+                        <td data-col="4">0.035</td>
+                        <td data-col="5">1.1</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">103</td>
+                        <td data-col="8">0.1</td>
+                        <td data-col="9">1.35</td>
+                        <td data-col="10">1.857</td>
+                        <td data-col="11">0.12</td>
+                        <td data-col="12">26</td>
+                        <td data-col="13">13</td>
+                        <td data-col="14">29.5</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Samus</td>
-                        <td>1.115</td>
-                        <td>1.55</td>
-                        <td>1.674</td>
-                        <td>0.065</td>
-                        <td>0.942</td>
-                        <td>108</td>
-                        <td>0.06</td>
-                        <td>1.34</td>
-                        <td>1.43</td>
-                        <td>0.066</td>
-                        <td>37</td>
-                        <td>19.4</td>
-                        <td>37</td>
-                        <td>4</td>
+                        <td data-col="1">1.115</td>
+                        <td data-col="2">1.55</td>
+                        <td data-col="3">1.674</td>
+                        <td data-col="4">0.065</td>
+                        <td data-col="5">0.942</td>
+                        <td data-col="6">0.013</td>
+                        <td data-col="7">108</td>
+                        <td data-col="8">0.06</td>
+                        <td data-col="9">1.34</td>
+                        <td data-col="10">1.43</td>
+                        <td data-col="11">0.066</td>
+                        <td data-col="12">37</td>
+                        <td data-col="13">19.4</td>
+                        <td data-col="14">37</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Sephiroth</td>
-                        <td>1.105</td>
-                        <td>1.7</td>
-                        <td>1.625</td>
-                        <td>0.04</td>
-                        <td>0.911</td>
-                        <td>80</td>
-                        <td>0.079</td>
-                        <td>1.325</td>
-                        <td>2.33</td>
-                        <td>0.109</td>
-                        <td>30.5</td>
-                        <td>10</td>
-                        <td>34</td>
-                        <td>5</td>
+                        <td data-col="1">1.105</td>
+                        <td data-col="2">1.7</td>
+                        <td data-col="3">1.625</td>
+                        <td data-col="4">0.04</td>
+                        <td data-col="5">0.911</td>
+                        <td data-col="6">0.008</td>
+                        <td data-col="7">80</td>
+                        <td data-col="8">0.079</td>
+                        <td data-col="9">1.325</td>
+                        <td data-col="10">2.33</td>
+                        <td data-col="11">0.109</td>
+                        <td data-col="12">30.5</td>
+                        <td data-col="13">10</td>
+                        <td data-col="14">34</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Sheik</td>
-                        <td>1.43</td>
-                        <td>1.83</td>
-                        <td>1.704</td>
-                        <td>0.085</td>
-                        <td>1.018</td>
-                        <td>90</td>
-                        <td>0.082</td>
-                        <td>1.4</td>
-                        <td>2.15</td>
-                        <td>0.15</td>
-                        <td>39</td>
-                        <td>15.5</td>
-                        <td>40</td>
-                        <td>3</td>
+                        <td data-col="1">1.43</td>
+                        <td data-col="2">1.83</td>
+                        <td data-col="3">1.704</td>
+                        <td data-col="4">0.085</td>
+                        <td data-col="5">1.018</td>
+                        <td data-col="6">0.011</td>
+                        <td data-col="7">90</td>
+                        <td data-col="8">0.082</td>
+                        <td data-col="9">1.4</td>
+                        <td data-col="10">2.15</td>
+                        <td data-col="11">0.15</td>
+                        <td data-col="12">39</td>
+                        <td data-col="13">15.5</td>
+                        <td data-col="14">40</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Shulk</td>
-                        <td>1.175</td>
-                        <td>1.7</td>
-                        <td>1.6</td>
-                        <td>0.042</td>
-                        <td>0.982</td>
-                        <td>96</td>
-                        <td>0.085</td>
-                        <td>1.3</td>
-                        <td>2.18</td>
-                        <td>0.106</td>
-                        <td>33.5</td>
-                        <td>16.2</td>
-                        <td>33.5</td>
-                        <td>4</td>
+                        <td data-col="1">1.175</td>
+                        <td data-col="2">1.7</td>
+                        <td data-col="3">1.6</td>
+                        <td data-col="4">0.042</td>
+                        <td data-col="5">0.982</td>
+                        <td data-col="6">0.006</td>
+                        <td data-col="7">96</td>
+                        <td data-col="8">0.085</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">2.18</td>
+                        <td data-col="11">0.106</td>
+                        <td data-col="12">33.5</td>
+                        <td data-col="13">16.2</td>
+                        <td data-col="14">33.5</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Simon</td>
-                        <td>0.86</td>
-                        <td>1.51</td>
-                        <td>1.745</td>
-                        <td>0.03</td>
-                        <td>0.965</td>
-                        <td>105</td>
-                        <td>0.065</td>
-                        <td>1.25</td>
-                        <td>2</td>
-                        <td>0.085</td>
-                        <td>30</td>
-                        <td>15</td>
-                        <td>30</td>
-                        <td>5</td>
+                        <td data-col="1">0.86</td>
+                        <td data-col="2">1.51</td>
+                        <td data-col="3">1.745</td>
+                        <td data-col="4">0.03</td>
+                        <td data-col="5">0.965</td>
+                        <td data-col="6">0.015</td>
+                        <td data-col="7">105</td>
+                        <td data-col="8">0.065</td>
+                        <td data-col="9">1.25</td>
+                        <td data-col="10">2</td>
+                        <td data-col="11">0.085</td>
+                        <td data-col="12">30</td>
+                        <td data-col="13">15</td>
+                        <td data-col="14">30</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Snake</td>
-                        <td>0.882</td>
-                        <td>1.55</td>
-                        <td>1.35</td>
-                        <td>0.055</td>
-                        <td>0.94</td>
-                        <td>105</td>
-                        <td>0.08</td>
-                        <td>1.1</td>
-                        <td>2.12</td>
-                        <td>0.098</td>
-                        <td>27.62</td>
-                        <td>12</td>
-                        <td>34.07</td>
-                        <td>5</td>
+                        <td data-col="1">0.882</td>
+                        <td data-col="2">1.55</td>
+                        <td data-col="3">1.35</td>
+                        <td data-col="4">0.055</td>
+                        <td data-col="5">0.94</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">105</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.1</td>
+                        <td data-col="10">2.12</td>
+                        <td data-col="11">0.098</td>
+                        <td data-col="12">27.62</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">34.07</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Sonic</td>
-                        <td>1.414</td>
-                        <td>3.5</td>
-                        <td>1.7</td>
-                        <td>0.045</td>
-                        <td>1.11</td>
-                        <td>82</td>
-                        <td>0.085</td>
-                        <td>2</td>
-                        <td>1.98</td>
-                        <td>0.111</td>
-                        <td>35</td>
-                        <td>14.595</td>
-                        <td>35</td>
-                        <td>4</td>
+                        <td data-col="1">1.414</td>
+                        <td data-col="2">3.5</td>
+                        <td data-col="3">1.7</td>
+                        <td data-col="4">0.045</td>
+                        <td data-col="5">1.11</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">82</td>
+                        <td data-col="8">0.085</td>
+                        <td data-col="9">2</td>
+                        <td data-col="10">1.98</td>
+                        <td data-col="11">0.111</td>
+                        <td data-col="12">35</td>
+                        <td data-col="13">14.595</td>
+                        <td data-col="14">35</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Sora</td>
-                        <td>0.82</td>
-                        <td>1.85</td>
-                        <td>1.82</td>
-                        <td>0.05</td>
-                        <td>1.03</td>
-                        <td>85</td>
-                        <td>0.065</td>
-                        <td>1.5</td>
-                        <td>2.14</td>
-                        <td>0.087</td>
-                        <td>33.5</td>
-                        <td>13.2</td>
-                        <td>40</td>
-                        <td>4</td>
+                        <td data-col="1">0.82</td>
+                        <td data-col="2">1.85</td>
+                        <td data-col="3">1.82</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">1.03</td>
+                        <td data-col="6">0.012</td>
+                        <td data-col="7">85</td>
+                        <td data-col="8">0.065</td>
+                        <td data-col="9">1.5</td>
+                        <td data-col="10">2.14</td>
+                        <td data-col="11">0.087</td>
+                        <td data-col="12">33.5</td>
+                        <td data-col="13">13.2</td>
+                        <td data-col="14">40</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Squirtle</td>
-                        <td>1.25</td>
-                        <td>1.625</td>
-                        <td>1.75</td>
-                        <td>0.048</td>
-                        <td>1.05</td>
-                        <td>80</td>
-                        <td>0.055</td>
-                        <td>2.1</td>
-                        <td>2.25</td>
-                        <td>0.128</td>
-                        <td>35</td>
-                        <td>12</td>
-                        <td>37</td>
-                        <td>4</td>
+                        <td data-col="1">1.25</td>
+                        <td data-col="2">1.625</td>
+                        <td data-col="3">1.75</td>
+                        <td data-col="4">0.048</td>
+                        <td data-col="5">1.05</td>
+                        <td data-col="6">0.006</td>
+                        <td data-col="7">80</td>
+                        <td data-col="8">0.055</td>
+                        <td data-col="9">2.1</td>
+                        <td data-col="10">2.25</td>
+                        <td data-col="11">0.128</td>
+                        <td data-col="12">35</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">37</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Steve</td>
-                        <td>0.9</td>
-                        <td>1.495</td>
-                        <td>1.725</td>
-                        <td>0.042</td>
-                        <td>0.91</td>
-                        <td>96</td>
-                        <td>0.068</td>
-                        <td>1.2</td>
-                        <td>1.825</td>
-                        <td>0.087</td>
-                        <td>18.5</td>
-                        <td>10</td>
-                        <td>22.5</td>
-                        <td>5</td>
+                        <td data-col="1">0.9</td>
+                        <td data-col="2">1.495</td>
+                        <td data-col="3">1.725</td>
+                        <td data-col="4">0.042</td>
+                        <td data-col="5">0.91</td>
+                        <td data-col="6">0.006</td>
+                        <td data-col="7">96</td>
+                        <td data-col="8">0.068</td>
+                        <td data-col="9">1.2</td>
+                        <td data-col="10">1.825</td>
+                        <td data-col="11">0.087</td>
+                        <td data-col="12">18.5</td>
+                        <td data-col="13">10</td>
+                        <td data-col="14">22.5</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Terry</td>
-                        <td>0.9</td>
-                        <td>1.65</td>
-                        <td>1.7</td>
-                        <td>0.05</td>
-                        <td>1</td>
-                        <td>104</td>
-                        <td>0.083</td>
-                        <td>1.35</td>
-                        <td>2.05</td>
-                        <td>0.105</td>
-                        <td>27</td>
-                        <td>12</td>
-                        <td>29</td>
-                        <td>4</td>
+                        <td data-col="1">0.9</td>
+                        <td data-col="2">1.65</td>
+                        <td data-col="3">1.7</td>
+                        <td data-col="4">0.05</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.011</td>
+                        <td data-col="7">104</td>
+                        <td data-col="8">0.083</td>
+                        <td data-col="9">1.35</td>
+                        <td data-col="10">2.05</td>
+                        <td data-col="11">0.105</td>
+                        <td data-col="12">27</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">29</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Toon Link</td>
-                        <td>1.248</td>
-                        <td>1.675</td>
-                        <td>1.8</td>
-                        <td>0.07</td>
-                        <td>1.035</td>
-                        <td>85</td>
-                        <td>0.078</td>
-                        <td>1.3</td>
-                        <td>2.06</td>
-                        <td>0.11</td>
-                        <td>33.8</td>
-                        <td>14.32</td>
-                        <td>25</td>
-                        <td>4</td>
+                        <td data-col="1">1.248</td>
+                        <td data-col="2">1.675</td>
+                        <td data-col="3">1.8</td>
+                        <td data-col="4">0.07</td>
+                        <td data-col="5">1.035</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">85</td>
+                        <td data-col="8">0.078</td>
+                        <td data-col="9">1.3</td>
+                        <td data-col="10">2.06</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">33.8</td>
+                        <td data-col="13">14.32</td>
+                        <td data-col="14">25</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Villager</td>
-                        <td>1.112</td>
-                        <td>1.507</td>
-                        <td>1.705</td>
-                        <td>0.06</td>
-                        <td>0.946</td>
-                        <td>85</td>
-                        <td>0.084</td>
-                        <td>1.55</td>
-                        <td>1.649</td>
-                        <td>0.084</td>
-                        <td>32.5</td>
-                        <td>15.09</td>
-                        <td>32.5</td>
-                        <td>4</td>
+                        <td data-col="1">1.112</td>
+                        <td data-col="2">1.507</td>
+                        <td data-col="3">1.705</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">0.946</td>
+                        <td data-col="6">0.018</td>
+                        <td data-col="7">85</td>
+                        <td data-col="8">0.084</td>
+                        <td data-col="9">1.55</td>
+                        <td data-col="10">1.649</td>
+                        <td data-col="11">0.084</td>
+                        <td data-col="12">32.5</td>
+                        <td data-col="13">15.09</td>
+                        <td data-col="14">32.5</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Wario</td>
-                        <td>0.85</td>
-                        <td>1.55</td>
-                        <td>1.4</td>
-                        <td>0.17</td>
-                        <td>1.2</td>
-                        <td>102</td>
-                        <td>0.085</td>
-                        <td>1.4</td>
-                        <td>1.93</td>
-                        <td>0.122</td>
-                        <td>30.5</td>
-                        <td>13.7</td>
-                        <td>30.5</td>
-                        <td>5</td>
+                        <td data-col="1">0.85</td>
+                        <td data-col="2">1.55</td>
+                        <td data-col="3">1.4</td>
+                        <td data-col="4">0.17</td>
+                        <td data-col="5">1.2</td>
+                        <td data-col="6">0.04</td>
+                        <td data-col="7">102</td>
+                        <td data-col="8">0.085</td>
+                        <td data-col="9">1.4</td>
+                        <td data-col="10">1.93</td>
+                        <td data-col="11">0.122</td>
+                        <td data-col="12">30.5</td>
+                        <td data-col="13">13.7</td>
+                        <td data-col="14">30.5</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Wii Fit Trainer</td>
-                        <td>1.244</td>
-                        <td>1.89</td>
-                        <td>1.815</td>
-                        <td>0.076</td>
-                        <td>0.977</td>
-                        <td>96</td>
-                        <td>0.084</td>
-                        <td>1.45</td>
-                        <td>1.816</td>
-                        <td>0.113</td>
-                        <td>35.6</td>
-                        <td>13.18</td>
-                        <td>35.6</td>
-                        <td>3</td>
+                        <td data-col="1">1.244</td>
+                        <td data-col="2">1.89</td>
+                        <td data-col="3">1.815</td>
+                        <td data-col="4">0.076</td>
+                        <td data-col="5">0.977</td>
+                        <td data-col="6">0.01</td>
+                        <td data-col="7">96</td>
+                        <td data-col="8">0.084</td>
+                        <td data-col="9">1.45</td>
+                        <td data-col="10">1.816</td>
+                        <td data-col="11">0.113</td>
+                        <td data-col="12">35.6</td>
+                        <td data-col="13">13.18</td>
+                        <td data-col="14">35.6</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Wolf</td>
-                        <td>1.3</td>
-                        <td>1.8</td>
-                        <td>1.9</td>
-                        <td>0.08</td>
-                        <td>1.2</td>
-                        <td>80</td>
-                        <td>0.09</td>
-                        <td>1.7</td>
-                        <td>2.7</td>
-                        <td>0.16</td>
-                        <td>32.02</td>
-                        <td>12</td>
-                        <td>33</td>
-                        <td>4</td>
+                        <td data-col="1">1.3</td>
+                        <td data-col="2">1.8</td>
+                        <td data-col="3">1.9</td>
+                        <td data-col="4">0.08</td>
+                        <td data-col="5">1.2</td>
+                        <td data-col="6">0.015</td>
+                        <td data-col="7">80</td>
+                        <td data-col="8">0.09</td>
+                        <td data-col="9">1.7</td>
+                        <td data-col="10">2.7</td>
+                        <td data-col="11">0.16</td>
+                        <td data-col="12">32.02</td>
+                        <td data-col="13">12</td>
+                        <td data-col="14">33</td>
+                        <td data-col="15">4</td>
                     </tr>
                     <tr>
                         <td>Yoshi</td>
-                        <td>1.168</td>
-                        <td>1.696</td>
-                        <td>1.45</td>
-                        <td>0.068</td>
-                        <td>1.22</td>
-                        <td>108</td>
-                        <td>0.066</td>
-                        <td>1.596</td>
-                        <td>1.9</td>
-                        <td>0.094</td>
-                        <td>36.09</td>
-                        <td>14.43</td>
-                        <td>51.56</td>
-                        <td>5</td>
+                        <td data-col="1">1.168</td>
+                        <td data-col="2">1.696</td>
+                        <td data-col="3">1.45</td>
+                        <td data-col="4">0.068</td>
+                        <td data-col="5">1.22</td>
+                        <td data-col="6">0.009</td>
+                        <td data-col="7">108</td>
+                        <td data-col="8">0.066</td>
+                        <td data-col="9">1.596</td>
+                        <td data-col="10">1.9</td>
+                        <td data-col="11">0.094</td>
+                        <td data-col="12">36.09</td>
+                        <td data-col="13">14.43</td>
+                        <td data-col="14">51.56</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Young Link</td>
-                        <td>1.26</td>
-                        <td>1.6</td>
-                        <td>1.8</td>
-                        <td>0.06</td>
-                        <td>1</td>
-                        <td>85</td>
-                        <td>0.08</td>
-                        <td>1.2</td>
-                        <td>2.16</td>
-                        <td>0.11</td>
-                        <td>33.66</td>
-                        <td>12.6</td>
-                        <td>33.66</td>
-                        <td>3</td>
+                        <td data-col="1">1.26</td>
+                        <td data-col="2">1.6</td>
+                        <td data-col="3">1.8</td>
+                        <td data-col="4">0.06</td>
+                        <td data-col="5">1</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">85</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.2</td>
+                        <td data-col="10">2.16</td>
+                        <td data-col="11">0.11</td>
+                        <td data-col="12">33.66</td>
+                        <td data-col="13">12.6</td>
+                        <td data-col="14">33.66</td>
+                        <td data-col="15">3</td>
                     </tr>
                     <tr>
                         <td>Zelda</td>
-                        <td>0.874</td>
-                        <td>1.4</td>
-                        <td>1.65</td>
-                        <td>0.07</td>
-                        <td>1.051</td>
-                        <td>90</td>
-                        <td>0.08</td>
-                        <td>1.175</td>
-                        <td>1.5</td>
-                        <td>0.077</td>
-                        <td>31.55</td>
-                        <td>14.24</td>
-                        <td>31.55</td>
-                        <td>5</td>
+                        <td data-col="1">0.874</td>
+                        <td data-col="2">1.4</td>
+                        <td data-col="3">1.65</td>
+                        <td data-col="4">0.07</td>
+                        <td data-col="5">1.051</td>
+                        <td data-col="6">0.006</td>
+                        <td data-col="7">90</td>
+                        <td data-col="8">0.08</td>
+                        <td data-col="9">1.175</td>
+                        <td data-col="10">1.5</td>
+                        <td data-col="11">0.077</td>
+                        <td data-col="12">31.55</td>
+                        <td data-col="13">14.24</td>
+                        <td data-col="14">31.55</td>
+                        <td data-col="15">5</td>
                     </tr>
                     <tr>
                         <td>Zero Suit Samus</td>
-                        <td>1.35</td>
-                        <td>2.05</td>
-                        <td>1.7</td>
-                        <td>0.1</td>
-                        <td>1.005</td>
-                        <td>79</td>
-                        <td>0.072</td>
-                        <td>1.45</td>
-                        <td>2.05</td>
-                        <td>0.135</td>
-                        <td>37.5</td>
-                        <td>13.5</td>
-                        <td>32.5</td>
-                        <td>4</td>
+                        <td data-col="1">1.35</td>
+                        <td data-col="2">2.05</td>
+                        <td data-col="3">1.7</td>
+                        <td data-col="4">0.1</td>
+                        <td data-col="5">1.005</td>
+                        <td data-col="6">0.005</td>
+                        <td data-col="7">79</td>
+                        <td data-col="8">0.072</td>
+                        <td data-col="9">1.45</td>
+                        <td data-col="10">2.05</td>
+                        <td data-col="11">0.135</td>
+                        <td data-col="12">37.5</td>
+                        <td data-col="13">13.5</td>
+                        <td data-col="14">32.5</td>
+                        <td data-col="15">4</td>
                     </tr>
                 </tbody>
             </table>
@@ -1947,7 +2169,18 @@ body {
     </div>
     
     <script>
-        // Table sorting functionality
+        // Column toggle
+        document.querySelectorAll('.col-toggle').forEach(cb => {
+            cb.addEventListener('change', () => {
+                const col = cb.dataset.col;
+                const cells = document.querySelectorAll(`[data-col="${col}"]`);
+                cells.forEach(cell => {
+                    cell.classList.toggle('hidden-col', !cb.checked);
+                });
+            });
+        });
+        
+        // Table sorting
         document.querySelectorAll('#statsTable th').forEach((header, index) => {
             header.addEventListener('click', () => {
                 const table = document.getElementById('statsTable');
@@ -1955,15 +2188,12 @@ body {
                 const rows = Array.from(tbody.querySelectorAll('tr'));
                 const sortType = header.dataset.sort;
                 
-                // Determine sort direction
                 const isAsc = header.classList.contains('sorted-asc');
                 
-                // Remove sort classes from all headers
                 table.querySelectorAll('th').forEach(th => {
                     th.classList.remove('sorted-asc', 'sorted-desc');
                 });
                 
-                // Sort rows
                 rows.sort((a, b) => {
                     let aVal = a.cells[index].textContent.trim();
                     let bVal = b.cells[index].textContent.trim();
@@ -1980,10 +2210,7 @@ body {
                     }
                 });
                 
-                // Update header class
                 header.classList.add(isAsc ? 'sorted-desc' : 'sorted-asc');
-                
-                // Reorder rows
                 rows.forEach(row => tbody.appendChild(row));
             });
         });

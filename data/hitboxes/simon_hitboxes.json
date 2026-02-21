@@ -2038,6 +2038,1212 @@
       ],
       "faf": 32
     },
+    "dtilt2": {
+      "total_frames": 43,
+      "active_frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "hitboxes_by_frame": {
+        "8": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "19": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": -1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 3.0,
+            "offset": {
+              "x": -1.5,
+              "y": 1.5,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 55,
+            "fkb": 0,
+            "bkb": 90,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ],
+        "28": [
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          },
+          {
+            "id": 1,
+            "bone": "footl",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 3.5,
+            "angle": 50,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 2.5,
+            "offset": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": -1.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "simon",
+            "move": "dtilt2"
+          }
+        ]
+      },
+      "motion_events": [],
+      "faf": 38
+    },
     "fsmash": {
       "total_frames": 105,
       "active_frames": [
@@ -3684,10 +4890,10 @@
         },
         {
           "type": "desired_rate",
-          "frame": 31.0,
-          "original_frames": 12.0,
-          "desired_frames": 17.0,
-          "scale_factor": 1.4166666666666667
+          "frame": 29.0,
+          "original_frames": 14.0,
+          "desired_frames": 19.0,
+          "scale_factor": 1.3571428571428572
         }
       ],
       "faf": 40
@@ -6464,5 +7670,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-02-06T16:59:34.512239"
+  "generated_at": "2026-02-20T19:22:49.180009"
 }
