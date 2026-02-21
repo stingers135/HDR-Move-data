@@ -1191,7 +1191,7 @@
                 updateUsernameDisplay();
             }
         }
-        async function submitToLeaderboard(won, guessCount) {
+        async function submitToLeaderboard(won, guessCount, resubmit) {
             if (!firebaseEnabled) {
                 antiCheatResolve();
                 return;
@@ -1225,6 +1225,10 @@
                     }
                 }
             } catch (e) {
+                if (resubmit) {
+                    antiCheatResolve();
+                    return;
+                }
             }
             antiCheatResolve();
             const ref = database.ref('leaderboard/' + oderId);
@@ -1942,7 +1946,7 @@
                             const snap = await database.ref('leaderboard/' + oderId).once('value');
                             const entry = snap.val();
                             if (!entry || entry.lastPlayed !== todayStr) {
-                                submitToLeaderboard(data.won, guesses.length);
+                                submitToLeaderboard(data.won, guesses.length, true);
                             } else {
                                 antiCheatResolve();
                             }
