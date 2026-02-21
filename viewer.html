@@ -350,8 +350,8 @@
     <script>
         // Get parameters from URL
         const urlParams = new URLSearchParams(window.location.search);
-        const character = urlParams.get('character') || 'mario';
-        const move = urlParams.get('move') || 'fair';
+        let character = urlParams.get('character') || '';
+        let move = urlParams.get('move') || '';
         const stanceParam = urlParams.get('stance') || null;
         const hdrdleMode = urlParams.get('hdrdle') === 'true';
         const hdrdleFrame = urlParams.get('frame') ? parseInt(urlParams.get('frame')) : null;
@@ -361,6 +361,9 @@
         const hdrdleHideAngle = urlParams.get('hideAngle') !== 'false';    // default true in hdrdle
         const hdrdleAutoPlay = urlParams.get('autoPlay') === 'true';
         const hdrdleShowFrameCounter = urlParams.get('showFrameCounter') === 'true';
+        
+        // In hdrdle mode, data is sent via postMessage to avoid leaking character/move in network requests
+        let hdrdlePreloadedData = null;
         
         // Apply hdrdle mode settings after data loads
         function applyHdrdleMode() {
@@ -2009,6 +2012,87 @@
             const cacheBust = `?v=${Date.now()}`;
             
             try {
+                // === HDRDLE MODE: use preloaded data (no network requests) ===
+                if (hdrdlePreloadedData) {
+                    if (hdrdlePreloadedData.skeleton) {
+                        skeletonData = hdrdlePreloadedData.skeleton;
+                        loaded.push('skeleton');
+                    } else { failed.push('skeleton'); }
+                    
+                    if (hdrdlePreloadedData.hurtboxes) {
+                        hurtboxData = hdrdlePreloadedData.hurtboxes;
+                        loaded.push('hurtboxes');
+                    } else { failed.push('hurtboxes'); }
+                    
+                    if (hdrdlePreloadedData.allHitboxes) {
+                        const allHitboxes = hdrdlePreloadedData.allHitboxes;
+                        allHitboxesCache = allHitboxes;
+                        
+                        const HITBOX_MOVE_FALLBACK = {
+                            'ftilt2': 'ftilt', 'fsmash2': 'fsmash', 'fsmash3': 'fsmash',
+                            'fthrow_forward': 'fthrow', 'fthrow_back': 'fthrow',
+                            'fthrow_high': 'fthrow', 'fthrow_low': 'fthrow',
+                            'jab1_weak': 'jab1', 'jab1_strong': 'jab1',
+                            'jab2_weak': 'jab2', 'jab2_strong': 'jab2',
+                            'ftilt_weak': 'ftilt', 'ftilt_strong': 'ftilt',
+                            'utilt_weak': 'utilt', 'utilt_strong': 'utilt',
+                            'dtilt_weak': 'dtilt', 'dtilt_strong': 'dtilt',
+                        };
+                        
+                        if (allHitboxes.has_stances && allHitboxes.stance_data && stanceParam) {
+                            currentStance = stanceParam;
+                            const stanceMoves = allHitboxes.stance_data[currentStance] || {};
+                            hitboxData = stanceMoves[move] || null;
+                            if (!hitboxData && HITBOX_MOVE_FALLBACK[move]) hitboxData = stanceMoves[HITBOX_MOVE_FALLBACK[move]] || null;
+                        } else if (allHitboxes.has_stances && allHitboxes.stance_data) {
+                            const stanceNames = allHitboxes.stance_names || Object.keys(allHitboxes.stance_data);
+                            currentStance = stanceNames[0];
+                            const stanceMoves = allHitboxes.stance_data[currentStance] || {};
+                            hitboxData = stanceMoves[move] || null;
+                            if (!hitboxData && HITBOX_MOVE_FALLBACK[move]) hitboxData = stanceMoves[HITBOX_MOVE_FALLBACK[move]] || null;
+                        } else {
+                            hitboxData = allHitboxes.moves ? allHitboxes.moves[move] : null;
+                            if (!hitboxData && HITBOX_MOVE_FALLBACK[move]) hitboxData = allHitboxes.moves ? allHitboxes.moves[HITBOX_MOVE_FALLBACK[move]] : null;
+                        }
+                        
+                        if (hitboxData) {
+                            loaded.push('hitboxes');
+                            motionEvents = hitboxData.motion_events || null;
+                            fafFrame = hitboxData.faf || null;
+                            const fafInfoEl = document.getElementById('faf-info');
+                            const fafValueEl = document.getElementById('faf-value');
+                            if (fafFrame !== null && fafInfoEl && fafValueEl) {
+                                fafInfoEl.style.display = '';
+                                fafValueEl.textContent = fafFrame;
+                            } else if (fafInfoEl) { fafInfoEl.style.display = 'none'; }
+                            if (hitboxData.is_projectile && hitboxData.projectile) {
+                                projectileData = hitboxData.projectile;
+                                projectileSpawnPos = null;
+                            }
+                            let totalHitboxes = 0, capsuleHitboxes = 0;
+                            for (const frameHbs of Object.values(hitboxData.hitboxes_by_frame || {})) {
+                                for (const hb of frameHbs) { totalHitboxes++; if (hb.is_capsule) capsuleHitboxes++; }
+                            }
+                            const allCapsule = totalHitboxes > 0 && capsuleHitboxes === totalHitboxes;
+                            const interpCheckbox = document.getElementById('show-interpolation');
+                            if (allCapsule) {
+                                interpCheckbox.checked = false; interpCheckbox.disabled = true;
+                                interpCheckbox.parentElement.style.opacity = '0.4';
+                            } else {
+                                interpCheckbox.checked = true; interpCheckbox.disabled = false;
+                                interpCheckbox.parentElement.style.opacity = '1';
+                            }
+                            populateHitboxFramesList();
+                        } else { failed.push('hitboxes'); }
+                    } else { failed.push('hitboxes'); }
+                    
+                    if (hdrdlePreloadedData.animation) {
+                        animationData = hdrdlePreloadedData.animation;
+                        loaded.push('animation');
+                    } else { failed.push('animation'); }
+                    
+                } else {
+                // === NORMAL MODE: fetch data from server ===
                 // Load skeleton - try character name, folder name, and special skeleton name
                 let skelRes = await fetch(`data/skeletons/${character}_skeleton.json${cacheBust}`);
                 if (!skelRes.ok && charFolder !== character) {
@@ -2162,32 +2246,15 @@
                 const animFilenames = getAnimFilenames(character, move);
                 
                 
-                // Build list of paths to try
+                // Build list of paths to try - animations are directly in body/
                 const animPaths = [];
-                // HDR mods store override animations in numbered subfolders (c00, c01, ...)
-                // Try subfolders FIRST so HDR overrides take priority over base game animations
-                const subfolders = ['c00', 'c01', 'c02', 'c03', 'c04', 'c05', ''];
                 for (const animFilename of animFilenames) {
-                    for (const sub of subfolders) {
-                        const subPath = sub ? `body/${sub}` : 'body';
-                        // Try animation folder first (handles Mii characters -> miienemyf etc)
-                        animPaths.push(`data/animations/${animFolder}/${subPath}/${animFilename}.json`);
-                        // Also try original character name if different
-                        if (animFolder !== character) {
-                            animPaths.push(`data/animations/${character}/${subPath}/${animFilename}.json`);
-                        }
-                        // Also try charFolder if different from both
-                        if (charFolder !== character && charFolder !== animFolder) {
-                            animPaths.push(`data/animations/${charFolder}/${subPath}/${animFilename}.json`);
-                        }
-                    }
-                    // Also try flat (no body/ folder) as a last resort
-                    animPaths.push(`data/animations/${animFolder}/${animFilename}.json`);
+                    animPaths.push(`data/animations/${animFolder}/body/${animFilename}.json`);
                     if (animFolder !== character) {
-                        animPaths.push(`data/animations/${character}/${animFilename}.json`);
+                        animPaths.push(`data/animations/${character}/body/${animFilename}.json`);
                     }
                     if (charFolder !== character && charFolder !== animFolder) {
-                        animPaths.push(`data/animations/${charFolder}/${animFilename}.json`);
+                        animPaths.push(`data/animations/${charFolder}/body/${animFilename}.json`);
                     }
                 }
                 
@@ -2208,6 +2275,8 @@
                 if (!animationData) {
                     failed.push('animation');
                 }
+                
+                } // end normal fetch mode
                 
                 // Update slider max - use getMaxFrame which accounts for motion rate
                 document.getElementById('frame-slider').max = getMaxFrame();
@@ -2411,7 +2480,27 @@
             }
         }
         
-        loadData();
+        if (hdrdleMode) {
+            // Wait for parent to send data via postMessage (no network leaks)
+            window.addEventListener('message', function hdrdleHandler(event) {
+                if (event.data && event.data.type === 'hdrdleData') {
+                    window.removeEventListener('message', hdrdleHandler);
+                    character = event.data.character || '';
+                    move = event.data.move || '';
+                    hdrdlePreloadedData = event.data;
+                    loadData();
+                }
+            });
+            // Tell parent we're ready to receive data
+            if (window.parent !== window) {
+                window.parent.postMessage({ type: 'hdrdleReady' }, '*');
+            }
+        } else {
+            // Normal mode: default character/move if not specified
+            if (!character) character = 'mario';
+            if (!move) move = 'fair';
+            loadData();
+        }
     </script>
 </body>
 </html>

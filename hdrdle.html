@@ -1067,6 +1067,8 @@
         let firebaseEnabled = false;
         let database = null;
         let ipBlockedShareResult = null;
+        let antiCheatResolve = null;
+        let antiCheatDone = new Promise(r => { antiCheatResolve = r; });
         
         try {
             if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
@@ -1191,6 +1193,7 @@
         }
         async function submitToLeaderboard(won, guessCount) {
             if (!firebaseEnabled) {
+                antiCheatResolve();
                 return;
             }
             
@@ -1211,11 +1214,12 @@
                             ipBlockedShareResult = shareSnap.val();
                         }
                     } catch (e) {}
-                    
+                    antiCheatResolve();
                     return;
                 }
             } catch (e) {
             }
+            antiCheatResolve();
             const ref = database.ref('leaderboard/' + oderId);
             
             ref.once('value').then((snapshot) => {
@@ -1402,6 +1406,119 @@
         // GAME CODE
         // Base URL for HDR frame data (relative path - assumes hosted on same site as viewer.html)
         const HDR_DATA_URL = 'data';
+        
+        // Viewer data resolution (mirrors viewer.html mappings for pre-fetching)
+        const VIEWER_ANIM_FILENAMES = {
+            'jab1': 'c00attack11', 'jab2': 'c00attack12', 'jab3': 'c00attack13',
+            'rapid_jab': 'c00attack100', 'rapid_jab_finisher': 'c00attackend',
+            'combo3': 'c00attack1combo3', 'combo4': 'c00attack1combo4',
+            'combo5': 'c00attack1combo5', 'combo6': 'c00attack1combo6',
+            'combo7': 'c00attack1combo7', 'combo8': 'c00attack1combo8',
+            'combo9': 'c00attack1combo9', 'combo10': 'c00attack1combo10',
+            'ftilt': 'c01attacks3s', 'ftilt2': 'c01attacks3s2', 'ftilt3': 'c01attacks3s3',
+            'utilt': 'c02attackhi3', 'dtilt': 'c02attacklw3', 'dtilt2': 'c02attacklw32',
+            'fsmash': 'c03attacks4s', 'fsmash2': 'c03attacks4s2', 'fsmash3': 'c03attacks4s3',
+            'usmash': 'c04attackhi4', 'dsmash': 'c04attacklw4',
+            'nair': 'c05attackairn', 'fair': 'c05attackairf', 'bair': 'c05attackairb',
+            'uair': 'c05attackairhi', 'dair': 'c05attackairlw',
+            'dash_attack': 'c00attackdash',
+            'grab': 'e00catch', 'dash_grab': 'e00catchdash', 'pivot_grab': 'e00catchturn',
+            'pummel': 'e00catchattack',
+            'fthrow': 'e01throwf', 'bthrow': 'e01throwb', 'uthrow': 'e01throwhi', 'dthrow': 'e01throwlw',
+            'fthrow_forward': 'e01throwff', 'fthrow_back': 'e01throwfb',
+            'fthrow_high': 'e01throwfhi', 'fthrow_low': 'e01throwflw',
+        };
+        const VIEWER_CHAR_OVERRIDES = {
+            'ryu': {
+                'jab1': ['c00attack11w','c00attack11s','c00attack11'],
+                'ftilt': ['c01attacks3sw','c01attacks3ss','c01attacks3s'],
+                'utilt': ['c02attackhi3w','c02attackhi3s','c02attackhi3'],
+                'dtilt': ['c02attacklw3w','c02attacklw3s','c02attacklw3'],
+            },
+            'ken': {
+                'jab1': ['c00attack11w','c00attack11s','c00attack11'],
+                'ftilt': ['c01attacks3sw','c01attacks3ss','c01attacks3s'],
+                'utilt': ['c02attackhi3w','c02attackhi3s','c02attackhi3'],
+                'dtilt': ['c02attacklw3w','c02attacklw3s','c02attacklw3'],
+            },
+            'demon': { 'combo3': ['c00attack1combo3'], 'combo4': ['c00attack1combo4'], 'combo5': ['c00attack1combo5'], 'combo6': ['c00attack1combo6'], 'combo7': ['c00attack1combo7'], 'combo8': ['c00attack1combo8'], 'combo9': ['c00attack1combo9'], 'combo10': ['c00attack1combo10'] },
+            'metaknight': { 'jab1': ['c00attack100','c00attack11'] },
+            'pickel': { 'jab1': ['c01attacks3s','c00attack11'], 'nair': ['c01attacks3s','c05attackairn'] },
+            'popo': { '_folder': 'iceclimber', '_animFolder': 'popo' },
+            'nana': { '_folder': 'iceclimber', '_animFolder': 'popo' },
+            'miifighter': { '_skeleton': 'miienemyf', '_hurtbox': 'miienemyf' },
+            'miiswordsman': { '_skeleton': 'miienemys', '_hurtbox': 'miienemys' },
+            'miigunner': { '_skeleton': 'miienemyg', '_hurtbox': 'miienemyg' },
+            'packun': {
+                'ftilt__Regular': ['c01attacks3sa'], 'ftilt__Prickly': ['c01attacks3s'],
+                'fsmash__Prickly': ['c03attacks4s2'], 'bair__Prickly': ['c05attackairbs'],
+            },
+            'rockman': { 'ftilt': ['c02attacks3s'], 'nair': ['c05attackairnmelee','c05attackairn'] },
+        };
+        function _vGetFolder(c) { const o = VIEWER_CHAR_OVERRIDES[c]; return (o && o['_folder']) || c; }
+        function _vGetSkel(c) { const o = VIEWER_CHAR_OVERRIDES[c]; return (o && o['_skeleton']) || c; }
+        function _vGetHurt(c) { const o = VIEWER_CHAR_OVERRIDES[c]; return (o && o['_hurtbox']) || c; }
+        function _vGetAnimFolder(c) { const o = VIEWER_CHAR_OVERRIDES[c]; return (o && o['_animFolder']) || _vGetFolder(c); }
+        function _vGetAnimFiles(c, m) {
+            const o = VIEWER_CHAR_OVERRIDES[c];
+            if (o && o[m]) return o[m];
+            if (m === 'jab3') return ['c00attack100end','c00attack13'];
+            if (m === 'rapid_jab_finisher') return ['c00attack100end','c00attackend'];
+            if (m === 'ftilt2') return ['c01attacks3s2','c01attacks3s'];
+            return [VIEWER_ANIM_FILENAMES[m] || m];
+        }
+        
+        // Pre-fetches all data the viewer needs, so the iframe makes zero network requests
+        let _viewerDataCache = null;
+        async function prefetchViewerData(char, moveType) {
+            const base = HDR_DATA_URL;
+            const folder = _vGetFolder(char);
+            const skel = _vGetSkel(char);
+            const hurt = _vGetHurt(char);
+            const animFolder = _vGetAnimFolder(char);
+            const animFiles = _vGetAnimFiles(char, moveType);
+            
+            // Fetch skeleton
+            let skeleton = null;
+            for (const name of [...new Set([char, folder, skel])]) {
+                try {
+                    const r = await fetch(`${base}/skeletons/${name}_skeleton.json`);
+                    if (r.ok) { skeleton = await r.json(); break; }
+                } catch(e) {}
+            }
+            
+            // Fetch hurtboxes
+            let hurtboxes = null;
+            for (const name of [...new Set([char, folder, hurt])]) {
+                try {
+                    const r = await fetch(`${base}/hurtboxes/${name}_hurtboxes.json`);
+                    if (r.ok) { hurtboxes = await r.json(); break; }
+                } catch(e) {}
+            }
+            
+            // Fetch hitboxes (full file, viewer extracts the move)
+            let allHitboxes = null;
+            for (const name of [...new Set([char, folder])]) {
+                try {
+                    const r = await fetch(`${base}/hitboxes/${name}_hitboxes.json`);
+                    if (r.ok) { allHitboxes = await r.json(); break; }
+                } catch(e) {}
+            }
+            
+            // Fetch animation - animations are directly in body/
+            let animation = null;
+            for (const animFile of animFiles) {
+                if (animation) break;
+                for (const af of [...new Set([animFolder, char, folder])]) {
+                    try {
+                        const r = await fetch(`${base}/animations/${af}/body/${animFile}.json`);
+                        if (r.ok) { animation = await r.json(); break; }
+                    } catch(e) {}
+                }
+            }
+            
+            return { skeleton, hurtboxes, allHitboxes, animation };
+        }
         
         // All HDR characters with their internal names and display names
         const CHARACTER_INFO = {
@@ -1743,6 +1860,7 @@
         }
 
         function playRandom() {
+            _viewerDataCache = null;
             const randomIndex = Math.floor(Math.random() * MOVE_LIST.length);
             const puzzle = MOVE_LIST[randomIndex];
             currentPuzzle = {
@@ -1785,6 +1903,7 @@
         }
 
         function checkDailyCompletion() {
+            _viewerDataCache = null;
             const today = new Date().toDateString();
             const saved = localStorage.getItem('hdrdle_daily');
             
@@ -1818,6 +1937,7 @@
                     
                     if (gameOver) {
                         showResult(data.won);
+                        antiCheatResolve(); // Already submitted on original play
                     } else {
                         resetUI();
                         // Apply correct styling if already guessed
@@ -1845,20 +1965,41 @@
             resetUI();
         }
 
-        function loadViewer(frameOverride = null) {
+        async function loadViewer(frameOverride = null) {
             const frame = document.getElementById('viewer-frame');
-            let viewerUrl = `viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}&hdrdle=true&autoPlay=true`;
             
-            // Add hint parameters
+            // Pre-fetch all data so the viewer iframe makes zero network requests
+            if (!_viewerDataCache) {
+                _viewerDataCache = await prefetchViewerData(currentPuzzle.character, currentPuzzle.move);
+            }
+            
+            // Build viewer URL WITHOUT character/move (anti-cheat: nothing to inspect)
+            let viewerUrl = `viewer.html?hdrdle=true&autoPlay=true`;
             if (hints.skeleton) viewerUrl += '&showSkeleton=true';
             if (hints.damage) viewerUrl += '&hideDamage=false';
             if (hints.angle) viewerUrl += '&hideAngle=false';
             if (hints.frame) viewerUrl += '&showFrameCounter=true';
-            
-            // Add frame parameter if provided (for restoring saved games)
             if (frameOverride) viewerUrl += `&frame=${frameOverride}`;
+            if (hints.hurtboxes) viewerUrl += '&showHurtboxes=true';
             
             frame.innerHTML = `<iframe src="${viewerUrl}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
+            
+            // Send data to viewer when it signals ready
+            const sendData = (event) => {
+                if (event.data && event.data.type === 'hdrdleReady') {
+                    window.removeEventListener('message', sendData);
+                    const iframe = frame.querySelector('iframe');
+                    if (iframe && iframe.contentWindow) {
+                        iframe.contentWindow.postMessage({
+                            type: 'hdrdleData',
+                            character: currentPuzzle.character,
+                            move: currentPuzzle.move,
+                            ..._viewerDataCache
+                        }, '*');
+                    }
+                }
+            };
+            window.addEventListener('message', sendData);
         }
         
         // Listen for messages from viewer iframe (to get current frame)
@@ -2372,6 +2513,8 @@
             saveProgress();
             if (gameMode === 'daily') {
                 submitToLeaderboard(won, guesses.length);
+            } else {
+                antiCheatResolve();
             }
         }
 
@@ -2394,8 +2537,25 @@
             
             // Reload viewer with full data visible (reveal the answer)
             const frame = document.getElementById('viewer-frame');
-            const revealUrl = `viewer.html?character=${currentPuzzle.character}&move=${currentPuzzle.move}&hdrdle=true&autoPlay=true&showSkeleton=true&showHurtboxes=true&hideDamage=false&hideAngle=false&showFrameCounter=true${frameParam}`;
+            const revealUrl = `viewer.html?hdrdle=true&autoPlay=true&showSkeleton=true&showHurtboxes=true&hideDamage=false&hideAngle=false&showFrameCounter=true${frameParam}`;
             frame.innerHTML = `<iframe src="${revealUrl}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
+            
+            // Send data to reveal viewer when it signals ready
+            const sendRevealData = (event) => {
+                if (event.data && event.data.type === 'hdrdleReady') {
+                    window.removeEventListener('message', sendRevealData);
+                    const iframe = frame.querySelector('iframe');
+                    if (iframe && iframe.contentWindow && _viewerDataCache) {
+                        iframe.contentWindow.postMessage({
+                            type: 'hdrdleData',
+                            character: currentPuzzle.character,
+                            move: currentPuzzle.move,
+                            ..._viewerDataCache
+                        }, '*');
+                    }
+                }
+            };
+            window.addEventListener('message', sendRevealData);
             
             // On win, trigger celebration animation
             if (won) {
@@ -2603,7 +2763,8 @@
             document.getElementById('stat-best').textContent = stats.bestStreak;
         }
 
-        function shareResult() {
+        async function shareResult() {
+            await antiCheatDone;
             let text;
             
             if (ipBlockedShareResult) {
