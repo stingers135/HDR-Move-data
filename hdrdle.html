@@ -1161,16 +1161,26 @@
                     username: getUsername(),
                     timestamp: Date.now()
                 });
-                
-                const ipKey = await hashIP(ip);
-                const lockRef = database.ref('ip_locks/' + today + '/' + ipKey);
-                lockRef.transaction((current) => {
-                    if (current === null) return userId;
-                    return;
-                });
             } catch (e) {
                 
             }
+        }
+        
+        let _lockClaimed = false;
+        async function claimIPLock() {
+            if (_lockClaimed || !firebaseEnabled || gameMode !== 'daily') return;
+            _lockClaimed = true;
+            try {
+                const ip = await getPublicIP();
+                if (!ip) return;
+                const ipKey = await hashIP(ip);
+                const today = new Date().toISOString().split('T')[0];
+                const lockRef = database.ref('ip_locks/' + today + '/' + ipKey);
+                lockRef.transaction((current) => {
+                    if (current === null) return getUserId();
+                    return;
+                });
+            } catch (e) {}
         }
         
         function logGuess(guessData) {
@@ -2063,6 +2073,7 @@
                 guesses.push({ type: 'hint', hint: hintType });
             }
             logGuess({ type: 'hint', hint: hintType, cost: cost });
+            claimIPLock();
             
             hints[hintType] = true;
             
@@ -2442,6 +2453,7 @@
             
             guesses.push({ type: 'character', value: guess, correct: isCorrect });
             logGuess({ type: 'character', value: guess, correct: isCorrect });
+            claimIPLock();
             
             if (isCorrect) {
                 characterGuessed = true;
@@ -2492,6 +2504,7 @@
             
             guesses.push({ type: 'move', value: guess, correct: isCorrect });
             logGuess({ type: 'move', value: guess, correct: isCorrect });
+            claimIPLock();
             
             if (isCorrect) {
                 moveGuessed = true;
