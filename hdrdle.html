@@ -1173,6 +1173,20 @@
             }
         }
         
+        function logGuess(guessData) {
+            if (!firebaseEnabled || gameMode !== 'daily') return;
+            try {
+                const today = new Date().toISOString().split('T')[0];
+                const userId = getUserId();
+                database.ref('guess_log/' + today + '/' + userId).push({
+                    username: getUsername(),
+                    guessNum: guesses.length,
+                    timestamp: Date.now(),
+                    ...guessData
+                });
+            } catch (e) {}
+        }
+        
         function saveUsername() {
             const input = document.getElementById('username-input');
             const name = input.value.trim().substring(0, 20);
@@ -2048,6 +2062,7 @@
             for (let i = 0; i < cost; i++) {
                 guesses.push({ type: 'hint', hint: hintType });
             }
+            logGuess({ type: 'hint', hint: hintType, cost: cost });
             
             hints[hintType] = true;
             
@@ -2426,6 +2441,7 @@
             const isCorrect = guess.toLowerCase() === currentPuzzle.displayCharacter.toLowerCase();
             
             guesses.push({ type: 'character', value: guess, correct: isCorrect });
+            logGuess({ type: 'character', value: guess, correct: isCorrect });
             
             if (isCorrect) {
                 characterGuessed = true;
@@ -2475,6 +2491,7 @@
             const isCorrect = guess.toLowerCase() === currentPuzzle.displayMove.toLowerCase();
             
             guesses.push({ type: 'move', value: guess, correct: isCorrect });
+            logGuess({ type: 'move', value: guess, correct: isCorrect });
             
             if (isCorrect) {
                 moveGuessed = true;
