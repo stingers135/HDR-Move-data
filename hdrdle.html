@@ -1164,11 +1164,9 @@
                 
                 const ipKey = await hashIP(ip);
                 const lockRef = database.ref('ip_locks/' + today + '/' + ipKey);
-                lockRef.once('value').then((snap) => {
-                    if (!snap.exists()) {
-                        
-                        lockRef.set(userId);
-                    }
+                lockRef.transaction((current) => {
+                    if (current === null) return userId;
+                    return;
                 });
             } catch (e) {
                 
@@ -1196,7 +1194,7 @@
                 updateUsernameDisplay();
             }
         }
-        async function submitToLeaderboard(won, guessCount, resubmit) {
+        async function submitToLeaderboard(won, guessCount) {
             if (!firebaseEnabled) {
                 antiCheatResolve();
                 return;
@@ -1230,10 +1228,8 @@
                     }
                 }
             } catch (e) {
-                if (resubmit) {
-                    antiCheatResolve();
-                    return;
-                }
+                antiCheatResolve();
+                return;
             }
             antiCheatResolve();
             const ref = database.ref('leaderboard/' + oderId);
@@ -1951,7 +1947,7 @@
                             const snap = await database.ref('leaderboard/' + oderId).once('value');
                             const entry = snap.val();
                             if (!entry || entry.lastPlayed !== todayStr) {
-                                submitToLeaderboard(data.won, guesses.length, true);
+                                submitToLeaderboard(data.won, guesses.length);
                             } else {
                                 antiCheatResolve();
                             }
