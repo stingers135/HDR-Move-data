@@ -1155,7 +1155,7 @@
                 const ip = await getPublicIP();
                 if (!ip) throw new Error('All IP services failed');
                 const userId = getUserId();
-                const today = new Date().toISOString().split('T')[0];
+                const today = new Date().toLocaleDateString('en-CA');
                 database.ref('visits/' + today + '/' + userId).set({
                     ip: ip,
                     username: getUsername(),
@@ -1174,7 +1174,7 @@
                 const ip = await getPublicIP();
                 if (!ip) return;
                 const ipKey = await hashIP(ip);
-                const today = new Date().toISOString().split('T')[0];
+                const today = new Date().toLocaleDateString('en-CA');
                 const lockRef = database.ref('ip_locks/' + today + '/' + ipKey);
                 lockRef.transaction((current) => {
                     if (current === null) return getUserId();
@@ -1186,7 +1186,7 @@
         function logGuess(guessData) {
             if (!firebaseEnabled || gameMode !== 'daily') return;
             try {
-                const today = new Date().toISOString().split('T')[0];
+                const today = new Date().toLocaleDateString('en-CA');
                 const userId = getUserId();
                 database.ref('guess_log/' + today + '/' + userId).push({
                     username: getUsername(),
@@ -1226,7 +1226,7 @@
             
             const oderId = getUserId();
             const username = getUsername();
-            const today = new Date().toISOString().split('T')[0];
+            const today = new Date().toLocaleDateString('en-CA');
             let ipKey = null;
             try {
                 const ip = await getPublicIP();
