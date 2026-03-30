@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDRdle - Account Recovery</title>
+</head>
+<body>
+    <h1>Account Recovery</h1>
+    <p>Enter your recovery ID to restore your HDRdle streak and stats on this device.</p>
+    <input type="text" id="recovery-input" placeholder="Paste your recovery ID here" size="50">
+    <br><br>
+    <button onclick="recover()">Restore Account</button>
+    <p id="status"></p>
+    <hr>
+    <p>Current ID on this device: <code id="current-id">none</code></p>
+    <script>
+        const currentId = localStorage.getItem('hdrdle_user_id');
+        document.getElementById('current-id').textContent = currentId || 'none';
+
+        function recover() {
+            const input = document.getElementById('recovery-input').value.trim();
+            const status = document.getElementById('status');
+
+            if (!input) {
+                status.textContent = 'Please enter a recovery ID.';
+                return;
+            }
+
+            if (!input.startsWith('user_')) {
+                status.textContent = 'Invalid format. Recovery IDs start with "user_".';
+                return;
+            }
+
+            if (currentId && currentId !== input) {
+                if (!confirm('This will replace your current account on this device. Continue?')) {
+                    return;
+                }
+            }
+
+            localStorage.setItem('hdrdle_user_id', input);
+            status.textContent = 'Account restored! You can now go back to HDRdle.';
+            document.getElementById('current-id').textContent = input;
+        }
+    </script>
+</body>
+</html>
