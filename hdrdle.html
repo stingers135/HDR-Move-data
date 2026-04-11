@@ -1821,6 +1821,7 @@
         let wrongCharacterGuesses = [];  // Track wrong character guesses to filter from dropdown
         let wrongMoveGuesses = [];       // Track wrong move guesses to filter from dropdown
         let gameOver = false;
+        let gameWon = false;
         let gameMode = 'daily';
         let currentDisplayFrame = null;  // Track which frame the viewer is showing
         
@@ -1964,6 +1965,7 @@
                     characterGuessed = data.characterGuessed || false;
                     moveGuessed = data.moveGuessed || false;
                     gameOver = data.gameOver || false;
+                    gameWon = data.won || false;
                     hints = data.hints || { damage: false, angle: false, skeleton: 0 };
                     // Migrate old hint keys
                     if (!('damage' in hints)) hints = { damage: false, angle: false, skeleton: hints.skeleton || 0, frame: false };
@@ -2086,9 +2088,10 @@
             const cost = (hintType === 'skeleton' && hints.skeleton === 3) ? 4 : HINT_COSTS[hintType];
             const currentGuessCount = guesses.length;
             const remainingGuesses = MAX_GUESSES - currentGuessCount;
+            const guessesNeeded = (characterGuessed ? 0 : 1) + (moveGuessed ? 0 : 1);
             
-            if (cost > remainingGuesses) {
-                alert(`Not enough guesses! This hint costs ${cost} guess${cost > 1 ? 'es' : ''}.`);
+            if (remainingGuesses - cost < guessesNeeded) {
+                alert(`Not enough guesses! You need to keep at least ${guessesNeeded} guess${guessesNeeded !== 1 ? 'es' : ''} to answer.`);
                 return;
             }
             
@@ -2124,6 +2127,11 @@
             updateGuessesRemaining();
             updateHintButtons();
             saveProgress();
+            
+            // If hints used all guesses, end game immediately
+            if (guesses.length >= MAX_GUESSES) {
+                endGame(false);
+            }
         }
         
         function updateGuessesRemaining() {
@@ -2133,13 +2141,14 @@
         
         function updateHintButtons() {
             const remaining = MAX_GUESSES - guesses.length;
+            const guessesNeeded = (characterGuessed ? 0 : 1) + (moveGuessed ? 0 : 1);
             
             for (const [hintType, baseCost] of Object.entries(HINT_COSTS)) {
                 const btn = document.getElementById(`hint-${hintType}`);
                 const isMaxed = hintType === 'skeleton' ? hints.skeleton >= 4 : hints[hintType];
                 if (!isMaxed) {
                     const cost = (hintType === 'skeleton' && hints.skeleton === 3) ? 4 : baseCost;
-                    btn.disabled = cost > remaining || gameOver;
+                    btn.disabled = (remaining - cost < guessesNeeded) || gameOver;
                 }
             }
         }
@@ -2493,6 +2502,7 @@
 
         function submitCharacter() {
             if (gameOver || characterGuessed) return;
+            if (guesses.length >= MAX_GUESSES) return;
             
             const input = document.getElementById('character-input');
             let guess = input.value.trim();
@@ -2551,6 +2561,7 @@
 
         function submitMove() {
             if (gameOver || moveGuessed) return;
+            if (guesses.length >= MAX_GUESSES) return;
             
             const input = document.getElementById('move-input');
             let guess = input.value.trim();
@@ -2624,6 +2635,7 @@
 
         function endGame(won) {
             gameOver = true;
+            gameWon = won;
             showResult(won);
             updateStats(won);
             saveProgress();
@@ -2844,7 +2856,7 @@
                 currentDisplayFrame,
                 wrongCharacterGuesses,
                 wrongMoveGuesses,
-                won: gameOver && characterGuessed && moveGuessed
+                won: gameWon
             };
             localStorage.setItem('hdrdle_daily', JSON.stringify(data));
         }
@@ -2895,7 +2907,7 @@ Solved in ∞/${MAX_GUESSES}
 Cheat better next time 🤡
 https://stingers135.github.io/HDR-Move-data/hdrdle.html`;
             } else {
-                const won = guesses.some(g => g.type === 'move' && g.correct);
+                const won = gameWon && characterGuessed && moveGuessed;
                 let skelCount = 0;
                 const squares = guesses.map(g => {
                     if (g.correct) return '🟩';
@@ -2906,7 +2918,7 @@ https://stingers135.github.io/HDR-Move-data/hdrdle.html`;
                     return '🟥';
                 }).join('');
                 text = `HDRdle ${new Date().toLocaleDateString()}
-${won ? `Solved in ${guesses.length}/${MAX_GUESSES}` : `X/${MAX_GUESSES}`}
+${won ? `Solved in ${Math.min(guesses.length, MAX_GUESSES)}/${MAX_GUESSES}` : `X/${MAX_GUESSES}`}
 ${squares}
 https://stingers135.github.io/HDR-Move-data/hdrdle.html`;
             }

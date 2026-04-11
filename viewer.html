@@ -1469,7 +1469,7 @@
                         visibleBones = skeletonData.bones.filter(b => visibleSet.has(b.name));
                     } else if (hdrdleSkeletonLevel === 3) {
                         // 60% of bones, dots only
-                        const depthCutoff = Math.ceil(maxDepth * 0.60);
+                        const depthCutoff = Math.ceil(maxDepth * 0.50);
                         const visibleSet = new Set();
                         skeletonData.bones.forEach((bone, i) => {
                             if (depths[i] <= depthCutoff) visibleSet.add(bone.name);
