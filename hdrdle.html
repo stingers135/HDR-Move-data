@@ -257,6 +257,20 @@
             opacity: 1;
         }
         
+        .guess-input.input-error {
+            border-color: red !important;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.3) !important;
+            animation: shake 0.4s ease;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20% { transform: translateX(-6px); }
+            40% { transform: translateX(6px); }
+            60% { transform: translateX(-4px); }
+            80% { transform: translateX(4px); }
+        }
+        
         .submit-btn.correct {
             background: var(--hdr-green);
             opacity: 0.7;
@@ -929,8 +943,8 @@
                     <span class="hint-cost">(-2 guesses)</span>
                 </button>
                 <button class="hint-btn" id="hint-skeleton" onclick="unlockHint('skeleton')">
-                    Show Skeleton
-                    <span class="hint-cost">(-4 guesses)</span>
+                    Progressively Reveal Pose
+                    <span class="hint-cost">(-2 guesses, 4 uses)</span>
                 </button>
             </div>
         </div>
@@ -1017,7 +1031,7 @@
                 <li>Show Damage (-1 guess) - reveals hitbox damage values</li>
                 <li>Show Angle (-1 guess) - reveals knockback angles</li>
                 <li>Show Frame # (-2 guesses) - shows a live frame counter</li>
-                <li>Show Skeleton (-4 guesses) - reveals the character's pose</li>
+                <li>Progressively Reveal Pose (4 uses: 2+2+2+4 guesses) - gradually reveals the character's skeleton: key joints → connections → more joints → full skeleton</li>
             </ul>
             <p>A new puzzle is available every day at midnight!</p>
             <button class="close-btn" onclick="hideInfo()">Got it!</button>
@@ -1814,13 +1828,13 @@
         let hints = {
             damage: false,
             angle: false,
-            skeleton: false,
+            skeleton: 0,
             frame: false
         };
         const HINT_COSTS = {
             damage: 1,
             angle: 1,
-            skeleton: 4,
+            skeleton: 2,
             frame: 2
         };
         const MAX_GUESSES = 12;
@@ -1902,7 +1916,7 @@
             wrongMoveGuesses = [];
             gameOver = false;
             currentDisplayFrame = null;
-            hints = { damage: false, angle: false, skeleton: false, frame: false };
+            hints = { damage: false, angle: false, skeleton: 0, frame: false };
             
             loadViewer();
             resetUI();
@@ -1950,9 +1964,12 @@
                     characterGuessed = data.characterGuessed || false;
                     moveGuessed = data.moveGuessed || false;
                     gameOver = data.gameOver || false;
-                    hints = data.hints || { damage: false, angle: false, skeleton: false };
+                    hints = data.hints || { damage: false, angle: false, skeleton: 0 };
                     // Migrate old hint keys
-                    if (!('damage' in hints)) hints = { damage: false, angle: false, skeleton: hints.skeleton || false, frame: false };
+                    if (!('damage' in hints)) hints = { damage: false, angle: false, skeleton: hints.skeleton || 0, frame: false };
+                    // Migrate old boolean skeleton to numeric
+                    if (hints.skeleton === true) hints.skeleton = 4;
+                    if (hints.skeleton === false) hints.skeleton = 0;
                     currentDisplayFrame = data.currentDisplayFrame || null;
                     wrongCharacterGuesses = data.wrongCharacterGuesses || [];
                     wrongMoveGuesses = data.wrongMoveGuesses || [];
@@ -1997,7 +2014,7 @@
             moveGuessed = false;
             gameOver = false;
             currentDisplayFrame = null;
-            hints = { damage: false, angle: false, skeleton: false, frame: false };
+            hints = { damage: false, angle: false, skeleton: 0, frame: false };
             wrongCharacterGuesses = [];
             wrongMoveGuesses = [];
             
@@ -2014,7 +2031,7 @@
             }
             
             let viewerUrl = `viewer.html?hdrdle=true&autoPlay=true`;
-            if (hints.skeleton) viewerUrl += '&showSkeleton=true';
+            if (hints.skeleton) viewerUrl += '&skeletonLevel=' + hints.skeleton;
             if (hints.damage) viewerUrl += '&hideDamage=false';
             if (hints.angle) viewerUrl += '&hideAngle=false';
             if (hints.frame) viewerUrl += '&showFrameCounter=true';
@@ -2057,9 +2074,16 @@
         });
         
         function unlockHint(hintType) {
-            if (hints[hintType] || gameOver) return;
+            if (gameOver) return;
+            // Skeleton is progressive (0-4), others are boolean
+            if (hintType === 'skeleton') {
+                if (hints.skeleton >= 4) return;
+            } else {
+                if (hints[hintType]) return;
+            }
             
-            const cost = HINT_COSTS[hintType];
+            // Stage 4 of skeleton costs 4 guesses, all others cost their base
+            const cost = (hintType === 'skeleton' && hints.skeleton === 3) ? 4 : HINT_COSTS[hintType];
             const currentGuessCount = guesses.length;
             const remainingGuesses = MAX_GUESSES - currentGuessCount;
             
@@ -2075,13 +2099,24 @@
             logGuess({ type: 'hint', hint: hintType, cost: cost });
             claimIPLock();
             
-            hints[hintType] = true;
-            
-            // Update button appearance
             const btn = document.getElementById(`hint-${hintType}`);
-            btn.classList.add('unlocked');
-            btn.disabled = true;
-            btn.innerHTML = btn.textContent.split('(')[0].trim() + `<span class="hint-cost">(unlocked)</span>`;
+            if (hintType === 'skeleton') {
+                hints.skeleton++;
+                if (hints.skeleton >= 4) {
+                    btn.classList.add('unlocked');
+                    btn.disabled = true;
+                    btn.innerHTML = `Progressively Reveal Pose<span class="hint-cost">(<span style="color:#00ff88;font-weight:bold">full</span>)</span>`;
+                } else if (hints.skeleton === 3) {
+                    btn.innerHTML = `Progressively Reveal Pose<span class="hint-cost">(<span style="color:#00ff88;font-weight:bold">${hints.skeleton}/4</span>, <span style="color:#ff4444;font-weight:bold">-4 guesses!</span>)</span>`;
+                } else {
+                    btn.innerHTML = `Progressively Reveal Pose<span class="hint-cost">(<span style="color:#00ff88;font-weight:bold">${hints.skeleton}/4</span>, -2 guesses)</span>`;
+                }
+            } else {
+                hints[hintType] = true;
+                btn.classList.add('unlocked');
+                btn.disabled = true;
+                btn.innerHTML = btn.textContent.split('(')[0].trim() + `<span class="hint-cost">(unlocked)</span>`;
+            }
             
             // Reload viewer with updated hint params
             loadViewer();
@@ -2099,9 +2134,11 @@
         function updateHintButtons() {
             const remaining = MAX_GUESSES - guesses.length;
             
-            for (const [hintType, cost] of Object.entries(HINT_COSTS)) {
+            for (const [hintType, baseCost] of Object.entries(HINT_COSTS)) {
                 const btn = document.getElementById(`hint-${hintType}`);
-                if (!hints[hintType]) {
+                const isMaxed = hintType === 'skeleton' ? hints.skeleton >= 4 : hints[hintType];
+                if (!isMaxed) {
+                    const cost = (hintType === 'skeleton' && hints.skeleton === 3) ? 4 : baseCost;
                     btn.disabled = cost > remaining || gameOver;
                 }
             }
@@ -2159,13 +2196,31 @@
             const HINT_LABELS = {
                 damage: 'Show Damage',
                 angle: 'Show Angle',
-                skeleton: 'Show Skeleton',
+                skeleton: 'Progressively Reveal Pose',
                 frame: 'Show Frame #'
             };
             // Reset hint button appearances
             for (const hintType of Object.keys(HINT_COSTS)) {
                 const btn = document.getElementById(`hint-${hintType}`);
-                if (!hints[hintType]) {
+                if (hintType === 'skeleton') {
+                    if (hints.skeleton >= 4) {
+                        btn.classList.add('unlocked');
+                        btn.disabled = true;
+                        btn.innerHTML = `Progressively Reveal Pose<span class="hint-cost">(<span style="color:#00ff88;font-weight:bold">full</span>)</span>`;
+                    } else if (hints.skeleton === 3) {
+                        btn.classList.remove('unlocked');
+                        btn.disabled = false;
+                        btn.innerHTML = `Progressively Reveal Pose<span class="hint-cost">(<span style="color:#00ff88;font-weight:bold">${hints.skeleton}/4</span>, <span style="color:#ff4444;font-weight:bold">-4 guesses!</span>)</span>`;
+                    } else if (hints.skeleton > 0) {
+                        btn.classList.remove('unlocked');
+                        btn.disabled = false;
+                        btn.innerHTML = `Progressively Reveal Pose<span class="hint-cost">(<span style="color:#00ff88;font-weight:bold">${hints.skeleton}/4</span>, -2 guesses)</span>`;
+                    } else {
+                        btn.classList.remove('unlocked');
+                        btn.disabled = false;
+                        btn.innerHTML = `Progressively Reveal Pose<span class="hint-cost">(-2 guesses, 4 uses)</span>`;
+                    }
+                } else if (!hints[hintType]) {
                     btn.classList.remove('unlocked');
                     btn.disabled = false;
                     const cost = HINT_COSTS[hintType];
@@ -2411,8 +2466,10 @@
                     e.preventDefault();
                     if (selectedIndex >= 0 && items[selectedIndex]) {
                         input.value = items[selectedIndex].dataset.value;
-                        list.classList.remove('show');
+                    } else if (items.length > 0 && list.classList.contains('show')) {
+                        input.value = items[0].dataset.value;
                     }
+                    list.classList.remove('show');
                     if (input.id === 'character-input') {
                         submitCharacter();
                     } else {
@@ -2447,6 +2504,13 @@
             if (CHARACTER_ALIASES[aliasKey]) {
                 guess = CHARACTER_ALIASES[aliasKey];
                 input.value = guess;  // Update input to show resolved name
+            }
+            
+            // Validate guess is a real character
+            if (!CHARACTERS.some(c => c.toLowerCase() === guess.toLowerCase())) {
+                input.classList.add('input-error');
+                setTimeout(() => input.classList.remove('input-error'), 600);
+                return;
             }
             
             const isCorrect = guess.toLowerCase() === currentPuzzle.displayCharacter.toLowerCase();
@@ -2498,6 +2562,13 @@
             if (MOVE_ALIASES[aliasKey]) {
                 guess = MOVE_ALIASES[aliasKey];
                 input.value = guess;  // Update input to show resolved name
+            }
+            
+            // Validate guess is a real move
+            if (!MOVES.some(m => m.toLowerCase() === guess.toLowerCase())) {
+                input.classList.add('input-error');
+                setTimeout(() => input.classList.remove('input-error'), 600);
+                return;
             }
             
             const isCorrect = guess.toLowerCase() === currentPuzzle.displayMove.toLowerCase();
@@ -2825,7 +2896,15 @@ Cheat better next time 🤡
 https://stingers135.github.io/HDR-Move-data/hdrdle.html`;
             } else {
                 const won = guesses.some(g => g.type === 'move' && g.correct);
-                const squares = guesses.map(g => g.correct ? '🟩' : '🟥').join('');
+                let skelCount = 0;
+                const squares = guesses.map(g => {
+                    if (g.correct) return '🟩';
+                    if (g.type === 'hint' && g.hint === 'skeleton') {
+                        skelCount++;
+                        if (skelCount > 6) return '👶';
+                    }
+                    return '🟥';
+                }).join('');
                 text = `HDRdle ${new Date().toLocaleDateString()}
 ${won ? `Solved in ${guesses.length}/${MAX_GUESSES}` : `X/${MAX_GUESSES}`}
 ${squares}

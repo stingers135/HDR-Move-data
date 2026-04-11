@@ -356,6 +356,7 @@
         const hdrdleMode = urlParams.get('hdrdle') === 'true';
         const hdrdleFrame = urlParams.get('frame') ? parseInt(urlParams.get('frame')) : null;
         const hdrdleShowSkeleton = urlParams.get('showSkeleton') === 'true';
+        const hdrdleSkeletonLevel = parseInt(urlParams.get('skeletonLevel') || '0');
         const hdrdleShowHurtboxes = urlParams.get('showHurtboxes') === 'true';
         const hdrdleHideDamage = urlParams.get('hideDamage') !== 'false';  // default true in hdrdle
         const hdrdleHideAngle = urlParams.get('hideAngle') !== 'false';    // default true in hdrdle
@@ -380,7 +381,7 @@
             // Set skeleton and hurtboxes based on hint params (default to off)
             const showSkeletonCheckbox = document.getElementById('show-skeleton');
             const showHurtboxesCheckbox = document.getElementById('show-hurtboxes');
-            if (showSkeletonCheckbox) showSkeletonCheckbox.checked = hdrdleShowSkeleton;
+            if (showSkeletonCheckbox) showSkeletonCheckbox.checked = hdrdleShowSkeleton || hdrdleSkeletonLevel > 0;
             if (showHurtboxesCheckbox) showHurtboxesCheckbox.checked = hdrdleShowHurtboxes;
         }
         
@@ -1436,28 +1437,71 @@
             
             // Draw skeleton (controlled by checkbox, which is set by hdrdle hints)
             if (document.getElementById('show-skeleton').checked) {
-                ctx.strokeStyle = '#555';
-                ctx.lineWidth = 2;
+                // Progressive reveal: determine visible bones and whether to show connections
+                let visibleBones = skeletonData.bones;
+                let showConnections = true;
                 
-                // Only draw connections for original bone names (not lowercase duplicates)
-                skeletonData.bones.forEach((bone, i) => {
-                    const pos = positions[bone.name];
-                    if (!pos) return;
-                    
-                    if (bone.parent_index !== null && bone.parent_index >= 0) {
-                        const parentName = skeletonData.bones[bone.parent_index].name;
-                        const parentPos = positions[parentName];
-                        if (parentPos) {
-                            ctx.beginPath();
-                            ctx.moveTo(parentPos.x, parentPos.y);
-                            ctx.lineTo(pos.x, pos.y);
-                            ctx.stroke();
+                if (hdrdleSkeletonLevel > 0 && hdrdleSkeletonLevel < 4) {
+                    const depths = new Array(skeletonData.bones.length).fill(0);
+                    skeletonData.bones.forEach((bone, i) => {
+                        if (bone.parent_index !== null && bone.parent_index >= 0) {
+                            depths[i] = depths[bone.parent_index] + 1;
                         }
+                    });
+                    const maxDepth = Math.max(...depths);
+                    
+                    if (hdrdleSkeletonLevel === 1) {
+                        // Partial dots only
+                        const depthCutoff = Math.ceil(maxDepth * 0.30);
+                        const visibleSet = new Set();
+                        skeletonData.bones.forEach((bone, i) => {
+                            if (depths[i] <= depthCutoff) visibleSet.add(bone.name);
+                        });
+                        visibleBones = skeletonData.bones.filter(b => visibleSet.has(b.name));
+                        showConnections = false;
+                    } else if (hdrdleSkeletonLevel === 2) {
+                        // Partial dots with connections
+                        const depthCutoff = Math.ceil(maxDepth * 0.30);
+                        const visibleSet = new Set();
+                        skeletonData.bones.forEach((bone, i) => {
+                            if (depths[i] <= depthCutoff) visibleSet.add(bone.name);
+                        });
+                        visibleBones = skeletonData.bones.filter(b => visibleSet.has(b.name));
+                    } else if (hdrdleSkeletonLevel === 3) {
+                        // 60% of bones, dots only
+                        const depthCutoff = Math.ceil(maxDepth * 0.60);
+                        const visibleSet = new Set();
+                        skeletonData.bones.forEach((bone, i) => {
+                            if (depths[i] <= depthCutoff) visibleSet.add(bone.name);
+                        });
+                        visibleBones = skeletonData.bones.filter(b => visibleSet.has(b.name));
+                        showConnections = false;
                     }
-                });
+                }
                 
+                // Draw connections (levels 3, 4, and non-hdrdle)
+                if (showConnections) {
+                    ctx.strokeStyle = '#555';
+                    ctx.lineWidth = 2;
+                    visibleBones.forEach((bone, i) => {
+                        const pos = positions[bone.name];
+                        if (!pos) return;
+                        if (bone.parent_index !== null && bone.parent_index >= 0) {
+                            const parentName = skeletonData.bones[bone.parent_index].name;
+                            const parentPos = positions[parentName];
+                            if (parentPos && visibleBones.some(b => b.name === parentName)) {
+                                ctx.beginPath();
+                                ctx.moveTo(parentPos.x, parentPos.y);
+                                ctx.lineTo(pos.x, pos.y);
+                                ctx.stroke();
+                            }
+                        }
+                    });
+                }
+                
+                // Draw bone dots
                 ctx.fillStyle = '#2196F3';
-                skeletonData.bones.forEach(bone => {
+                visibleBones.forEach(bone => {
                     const pos = positions[bone.name];
                     if (!pos) return;
                     ctx.beginPath();
@@ -1469,7 +1513,7 @@
                     ctx.fillStyle = '#2196F3';
                     ctx.font = '10px monospace';
                     ctx.textAlign = 'left';
-                    skeletonData.bones.forEach(bone => {
+                    visibleBones.forEach(bone => {
                         const pos = positions[bone.name];
                         if (!pos) return;
                         ctx.fillText(bone.name, pos.x + 6, pos.y);
