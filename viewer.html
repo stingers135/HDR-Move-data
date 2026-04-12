@@ -2362,13 +2362,23 @@
                         hasData = true;
                     }
                     
-                    // Include skeleton bounds at frame 0 so the character is visible at start
-                    const frame0Positions = calculateWorldTransformsForFrame(0);
-                    if (frame0Positions) {
-                        for (const [boneName, boneData] of Object.entries(frame0Positions)) {
-                            const by = boneData.matrix[3][1];
-                            const bz = boneData.matrix[3][2];
-                            expandBounds(by, bz, 0);
+                    // Include skeleton bounds at frame 0 and all active hitbox frames
+                    const framesToSample = new Set([0]);
+                    if (hitboxData.active_frames) {
+                        hitboxData.active_frames.forEach(f => framesToSample.add(f - 1));
+                    }
+                    // Also sample last frame for full travel distance
+                    if (hitboxData.total_frames) {
+                        framesToSample.add(hitboxData.total_frames - 1);
+                    }
+                    for (const sampleFrame of framesToSample) {
+                        const framePositions = calculateWorldTransformsForFrame(sampleFrame);
+                        if (framePositions) {
+                            for (const [boneName, boneData] of Object.entries(framePositions)) {
+                                const by = boneData.matrix[3][1];
+                                const bz = boneData.matrix[3][2];
+                                expandBounds(by, bz, 0);
+                            }
                         }
                     }
                     
