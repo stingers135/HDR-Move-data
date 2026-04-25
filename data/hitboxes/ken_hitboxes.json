@@ -2177,57 +2177,58 @@
       "total_frames": 57,
       "active_frames": [
         8,
-        9
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
       ],
       "hitboxes_by_frame": {
         "8": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 16.0,
+            "damage": 11.0,
             "angle": 361,
-            "kbg": 90,
+            "kbg": 115,
             "fkb": 0,
-            "bkb": 21,
-            "size": 5.6,
+            "bkb": 20,
+            "size": 4.5,
             "offset": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": -13.0
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": -7.5
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "bair"
           },
           {
             "id": 1,
-            "bone": "top",
+            "bone": "kneel",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 13.0,
+            "damage": 14.0,
             "angle": 361,
-            "kbg": 90,
+            "kbg": 115,
             "fkb": 0,
-            "bkb": 21,
-            "size": 4.6,
+            "bkb": 20,
+            "size": 5.0,
             "offset": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": -15.0
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": -7.5
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "bair"
           }
@@ -2235,51 +2236,439 @@
         "9": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 16.0,
+            "damage": 11.0,
             "angle": 361,
-            "kbg": 90,
+            "kbg": 115,
             "fkb": 0,
-            "bkb": 21,
-            "size": 5.6,
+            "bkb": 20,
+            "size": 4.5,
             "offset": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": -13.0
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": -7.5
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "bair"
           },
           {
             "id": 1,
-            "bone": "top",
+            "bone": "kneel",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 13.0,
+            "damage": 14.0,
             "angle": 361,
-            "kbg": 90,
+            "kbg": 115,
             "fkb": 0,
-            "bkb": 21,
-            "size": 4.6,
+            "bkb": 20,
+            "size": 5.0,
             "offset": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": -15.0
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 11.0,
-              "z": -7.5
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 11.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.5,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 115,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 5.0,
+            "offset": {
+              "x": 3.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "bair"
           }
@@ -2294,33 +2683,70 @@
         5,
         6,
         7,
-        8,
-        9
+        8
       ],
       "hitboxes_by_frame": {
         "5": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legr",
             "animation_frame": 5.0,
             "real_frame": 5,
-            "damage": 6.5,
-            "angle": 75,
-            "kbg": 100,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
             "fkb": 0,
-            "bkb": 20,
-            "size": 5.5,
+            "bkb": 41,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
-              "y": 18.5,
-              "z": 7.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
               "x": 0.0,
-              "y": 19.5,
-              "z": 7.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "uair"
           }
@@ -2328,26 +2754,64 @@
         "6": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legr",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 6.5,
-            "angle": 75,
-            "kbg": 100,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
             "fkb": 0,
-            "bkb": 20,
-            "size": 5.5,
+            "bkb": 41,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
-              "y": 18.5,
-              "z": 7.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
               "x": 0.0,
-              "y": 19.5,
-              "z": 7.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "uair"
           }
@@ -2355,26 +2819,64 @@
         "7": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legr",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 6.5,
-            "angle": 75,
-            "kbg": 100,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
             "fkb": 0,
-            "bkb": 20,
-            "size": 5.5,
+            "bkb": 41,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
-              "y": 18.5,
-              "z": 7.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
               "x": 0.0,
-              "y": 19.5,
-              "z": 7.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "uair"
           }
@@ -2382,53 +2884,64 @@
         "8": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legr",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 6.5,
-            "angle": 75,
-            "kbg": 100,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
             "fkb": 0,
-            "bkb": 20,
-            "size": 5.5,
+            "bkb": 41,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
-              "y": 18.5,
-              "z": 7.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
-              "x": 0.0,
-              "y": 19.5,
-              "z": 7.5
-            },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "uair"
-          }
-        ],
-        "9": [
+          },
           {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 6.5,
-            "angle": 75,
-            "kbg": 100,
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
             "fkb": 0,
-            "bkb": 20,
-            "size": 5.5,
+            "bkb": 41,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
-              "y": 18.5,
-              "z": 7.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.0,
+            "angle": 78,
+            "kbg": 96,
+            "fkb": 0,
+            "bkb": 41,
+            "size": 3.5,
+            "offset": {
               "x": 0.0,
-              "y": 19.5,
-              "z": 7.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "uair"
           }
@@ -2907,26 +3420,64 @@
         "7": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 12.0,
-            "angle": 50,
-            "kbg": 65,
+            "angle": 55,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 80,
-            "size": 4.2,
+            "bkb": 40,
+            "size": 4.0,
             "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 10.0
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 55,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 7.2
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.0,
+            "angle": 55,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.2,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "dash_attack"
           }
@@ -2934,26 +3485,64 @@
         "8": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 12.0,
-            "angle": 50,
-            "kbg": 65,
+            "angle": 55,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 80,
-            "size": 4.2,
+            "bkb": 40,
+            "size": 4.0,
             "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 10.0
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 55,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 7.2
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.0,
+            "angle": 55,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.2,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "dash_attack"
           }
@@ -2961,26 +3550,64 @@
         "9": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 12.0,
-            "angle": 50,
-            "kbg": 65,
+            "angle": 55,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 80,
-            "size": 4.2,
+            "bkb": 40,
+            "size": 4.0,
             "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 10.0
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 55,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 7.2
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 55,
+            "kbg": 95,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.2,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "dash_attack"
           }
@@ -2988,26 +3615,64 @@
         "10": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 8.0,
-            "angle": 80,
-            "kbg": 60,
+            "angle": 55,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 80,
-            "size": 3.5,
+            "bkb": 38,
+            "size": 4.0,
             "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 8.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 4.0,
+            "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 7.2
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 3.7,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "dash_attack"
           }
@@ -3015,26 +3680,64 @@
         "11": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 8.0,
-            "angle": 80,
-            "kbg": 60,
+            "angle": 55,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 80,
-            "size": 3.5,
+            "bkb": 38,
+            "size": 4.0,
             "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 8.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 4.0,
+            "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 7.2
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 3.7,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "dash_attack"
           }
@@ -3042,26 +3745,64 @@
         "12": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 8.0,
-            "angle": 80,
-            "kbg": 60,
+            "angle": 55,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 80,
-            "size": 3.5,
+            "bkb": 38,
+            "size": 4.0,
             "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 8.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 4.0,
+            "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 7.2
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 3.7,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "dash_attack"
           }
@@ -3069,26 +3810,64 @@
         "13": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 8.0,
-            "angle": 80,
-            "kbg": 60,
+            "angle": 55,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 80,
-            "size": 3.5,
+            "bkb": 38,
+            "size": 4.0,
             "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 8.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 4.0,
+            "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 7.2
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 3.7,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "dash_attack"
           }
@@ -3096,26 +3875,64 @@
         "14": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 8.0,
-            "angle": 80,
-            "kbg": 60,
+            "angle": 55,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 80,
-            "size": 3.5,
+            "bkb": 38,
+            "size": 4.0,
             "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 8.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 4.0,
+            "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 7.2
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 3.7,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "dash_attack"
           }
@@ -3123,26 +3940,64 @@
         "15": [
           {
             "id": 0,
-            "bone": "top",
+            "bone": "legl",
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 8.0,
-            "angle": 80,
-            "kbg": 60,
+            "angle": 55,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 80,
-            "size": 3.5,
+            "bkb": 38,
+            "size": 4.0,
             "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 8.5
+              "y": 0.0,
+              "z": 0.0
             },
-            "offset2": {
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 1,
+            "bone": "kneel",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 4.0,
+            "offset": {
               "x": 0.0,
-              "y": 9.0,
-              "z": 7.2
+              "y": 0.0,
+              "z": 0.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dash_attack"
+          },
+          {
+            "id": 2,
+            "bone": "kneel",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 8.0,
+            "angle": 55,
+            "kbg": 108,
+            "fkb": 0,
+            "bkb": 38,
+            "size": 3.7,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "ken",
             "move": "dash_attack"
           }
@@ -3667,9 +4522,7 @@
         45,
         46,
         47,
-        48,
-        49,
-        50
+        48
       ],
       "hitboxes_by_frame": {
         "41": [
@@ -3678,11 +4531,11 @@
             "bone": "top",
             "animation_frame": 41.0,
             "real_frame": 41,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 73,
             "fkb": 0,
-            "bkb": 75,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -3701,11 +4554,11 @@
             "bone": "top",
             "animation_frame": 42.0,
             "real_frame": 42,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 73,
             "fkb": 0,
-            "bkb": 75,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -3724,11 +4577,11 @@
             "bone": "top",
             "animation_frame": 43.0,
             "real_frame": 43,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 73,
             "fkb": 0,
-            "bkb": 75,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -3747,11 +4600,11 @@
             "bone": "top",
             "animation_frame": 44.0,
             "real_frame": 44,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 73,
             "fkb": 0,
-            "bkb": 75,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -3770,11 +4623,11 @@
             "bone": "top",
             "animation_frame": 45.0,
             "real_frame": 45,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 73,
             "fkb": 0,
-            "bkb": 75,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -3793,11 +4646,11 @@
             "bone": "top",
             "animation_frame": 46.0,
             "real_frame": 46,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 73,
             "fkb": 0,
-            "bkb": 75,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -3816,11 +4669,11 @@
             "bone": "top",
             "animation_frame": 47.0,
             "real_frame": 47,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 73,
             "fkb": 0,
-            "bkb": 75,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -3839,57 +4692,11 @@
             "bone": "top",
             "animation_frame": 48.0,
             "real_frame": 48,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
+            "damage": 10.0,
+            "angle": 45,
+            "kbg": 73,
             "fkb": 0,
-            "bkb": 75,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "ken",
-            "move": "bthrow"
-          }
-        ],
-        "49": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 49.0,
-            "real_frame": 49,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "ken",
-            "move": "bthrow"
-          }
-        ],
-        "50": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 50.0,
-            "real_frame": 50,
-            "damage": 12.0,
-            "angle": 52,
-            "kbg": 45,
-            "fkb": 0,
-            "bkb": 75,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -4590,6 +5397,245 @@
         }
       ]
     },
+    "ftilt_weak": {
+      "total_frames": 19,
+      "active_frames": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 6.8,
+            "angle": 65,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 6.8,
+            "angle": 85,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 12.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "ftilt"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 6.8,
+            "angle": 65,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 6.8,
+            "angle": 85,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 12.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "ftilt"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.8,
+            "angle": 65,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.8,
+            "angle": 85,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 12.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "ftilt"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.8,
+            "angle": 65,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 6.8,
+            "angle": 85,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 62,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 12.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "ftilt"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 5.0,
+          "new_duration": 2.0,
+          "scale_factor": 0.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 5.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 12.0,
+          "rate_value": 0.8
+        }
+      ]
+    },
     "ftilt_strong": {
       "total_frames": 23,
       "active_frames": [
@@ -5043,7 +6089,1103 @@
           "scale_factor": 0.42857142857142855
         }
       ]
+    },
+    "utilt_strong": {
+      "total_frames": 27,
+      "active_frames": [
+        7,
+        8,
+        9,
+        10,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 3,
+            "bone": "legr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 4,
+            "bone": "kneer",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 5,
+            "bone": "footr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 3,
+            "bone": "legr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 4,
+            "bone": "kneer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 5,
+            "bone": "footr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 3,
+            "bone": "legr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 4,
+            "bone": "kneer",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 5,
+            "bone": "footr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 3,
+            "bone": "legr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 4,
+            "bone": "kneer",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 5,
+            "bone": "footr",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 3.0,
+            "angle": 280,
+            "kbg": 120,
+            "fkb": 30,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "legr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "kneer",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          },
+          {
+            "id": 2,
+            "bone": "footr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 4.0,
+            "angle": 90,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 59,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "utilt"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 8.0,
+          "new_duration": 6.0,
+          "scale_factor": 0.8571428571428571
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 8.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dtilt_weak": {
+      "total_frames": 15,
+      "active_frames": [
+        5
+      ],
+      "hitboxes_by_frame": {
+        "5": [
+          {
+            "id": 0,
+            "bone": "legl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 310,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 306,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.5,
+              "z": 9.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dtilt"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 302,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 14.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dtilt"
+          },
+          {
+            "id": 3,
+            "bone": "legl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 4.0,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dtilt"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 2.5,
+              "z": 9.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dtilt"
+          },
+          {
+            "id": 5,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.5,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 14.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ken",
+            "move": "dtilt"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 1.1,
+          "new_duration": 2.0,
+          "scale_factor": 19.999999999999982
+        },
+        {
+          "type": "range",
+          "frame": 1.1,
+          "start_orig": 1.1,
+          "end_orig": 2.0,
+          "new_duration": 1.0,
+          "scale_factor": 1.1111111111111112
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 2.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 4.0,
+          "start_orig": 4.0,
+          "end_orig": 5.0,
+          "new_duration": 2.0,
+          "scale_factor": 2.0
+        },
+        {
+          "type": "range",
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 8.0,
+          "new_duration": 2.0,
+          "scale_factor": 0.6666666666666666
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 8.0,
+          "rate_value": 1.0
+        }
+      ]
+    },
+    "dtilt_strong": {
+      "total_frames": 18,
+      "active_frames": [
+        7,
+        8
+      ],
+      "hitboxes_by_frame": {
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 6.0,
+            "angle": 74,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 57,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 2.8,
+              "z": 12.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.8,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 57,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 2.2,
+              "z": 15.7
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.8,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "dtilt"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.0,
+            "angle": 74,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 57,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 2.8,
+              "z": 12.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.8,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "dtilt"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 6.0,
+            "angle": 80,
+            "kbg": 46,
+            "fkb": 0,
+            "bkb": 57,
+            "size": 3.3,
+            "offset": {
+              "x": 0.0,
+              "y": 2.2,
+              "z": 15.7
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.8,
+              "z": 7.0
+            },
+            "is_capsule": true,
+            "character": "ken",
+            "move": "dtilt"
+          }
+        ]
+      },
+      "motion_events": []
     }
   },
-  "generated_at": "2026-02-21T18:35:47.079583"
+  "generated_at": "2026-04-25T08:48:57.649008"
 }

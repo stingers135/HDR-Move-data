@@ -7871,12 +7871,12 @@
       "total_frames": 78,
       "active_frames": [
         21,
-        26,
         27,
         28,
         29,
         30,
-        31
+        31,
+        32
       ],
       "hitboxes_by_frame": {
         "21": [
@@ -7898,29 +7898,6 @@
             },
             "offset2": null,
             "is_capsule": false,
-            "character": "daisy",
-            "move": "dthrow"
-          }
-        ],
-        "26": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 26.0,
-            "real_frame": 26,
-            "damage": 5.0,
-            "angle": 145,
-            "kbg": 70,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
             "character": "daisy",
             "move": "dthrow"
           }
@@ -8039,6 +8016,29 @@
             "character": "daisy",
             "move": "dthrow"
           }
+        ],
+        "32": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 32.0,
+            "real_frame": 32,
+            "damage": 5.0,
+            "angle": 145,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "daisy",
+            "move": "dthrow"
+          }
         ]
       },
       "motion_events": [
@@ -8051,5 +8051,5 @@
       "faf": 37
     }
   },
-  "generated_at": "2026-02-21T18:35:16.733799"
+  "generated_at": "2026-04-25T08:48:36.433643"
 }

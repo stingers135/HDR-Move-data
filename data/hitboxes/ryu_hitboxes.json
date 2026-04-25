@@ -69,80 +69,11 @@
     "jab3": {
       "total_frames": 64,
       "active_frames": [
-        9,
         10,
-        11
+        11,
+        12
       ],
       "hitboxes_by_frame": {
-        "9": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 11.0,
-            "angle": 53,
-            "kbg": 65,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 12.0,
-              "z": 7.5
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 12.0,
-              "z": 4.0
-            },
-            "is_capsule": true,
-            "character": "ryu",
-            "move": "jab3"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 11.0,
-            "angle": 53,
-            "kbg": 65,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 3.0,
-            "offset": {
-              "x": 0.0,
-              "y": 7.0,
-              "z": 3.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ryu",
-            "move": "jab3"
-          },
-          {
-            "id": 2,
-            "bone": "hip",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 11.0,
-            "angle": 53,
-            "kbg": 65,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 3.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ryu",
-            "move": "jab3"
-          }
-        ],
         "10": [
           {
             "id": 0,
@@ -264,6 +195,75 @@
             "bone": "hip",
             "animation_frame": 11.0,
             "real_frame": 11,
+            "damage": 11.0,
+            "angle": 53,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ryu",
+            "move": "jab3"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 11.0,
+            "angle": 53,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 12.0,
+              "z": 7.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 12.0,
+              "z": 4.0
+            },
+            "is_capsule": true,
+            "character": "ryu",
+            "move": "jab3"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 11.0,
+            "angle": 53,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 3.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ryu",
+            "move": "jab3"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 12.0,
+            "real_frame": 12,
             "damage": 11.0,
             "angle": 53,
             "kbg": 65,
@@ -326,82 +326,13 @@
       "faf": 24
     },
     "combo3": {
-      "total_frames": 21,
+      "total_frames": 22,
       "active_frames": [
-        9,
         10,
-        11
+        11,
+        12
       ],
       "hitboxes_by_frame": {
-        "9": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 11.0,
-            "angle": 53,
-            "kbg": 65,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 12.0,
-              "z": 7.5
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 12.0,
-              "z": 4.0
-            },
-            "is_capsule": true,
-            "character": "ryu",
-            "move": "combo3"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 11.0,
-            "angle": 53,
-            "kbg": 65,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 3.0,
-            "offset": {
-              "x": 0.0,
-              "y": 7.0,
-              "z": 3.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ryu",
-            "move": "combo3"
-          },
-          {
-            "id": 2,
-            "bone": "hip",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 11.0,
-            "angle": 53,
-            "kbg": 65,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 3.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ryu",
-            "move": "combo3"
-          }
-        ],
         "10": [
           {
             "id": 0,
@@ -523,6 +454,75 @@
             "bone": "hip",
             "animation_frame": 11.0,
             "real_frame": 11,
+            "damage": 11.0,
+            "angle": 53,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ryu",
+            "move": "combo3"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 11.0,
+            "angle": 53,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 12.0,
+              "z": 7.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 12.0,
+              "z": 4.0
+            },
+            "is_capsule": true,
+            "character": "ryu",
+            "move": "combo3"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 11.0,
+            "angle": 53,
+            "kbg": 65,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": 3.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ryu",
+            "move": "combo3"
+          },
+          {
+            "id": 2,
+            "bone": "hip",
+            "animation_frame": 12.0,
+            "real_frame": 12,
             "damage": 11.0,
             "angle": 53,
             "kbg": 65,
@@ -6018,103 +6018,13 @@
       "faf": 41
     },
     "jab1_weak": {
-      "total_frames": 14,
+      "total_frames": 15,
       "active_frames": [
-        2,
         3,
-        4
+        4,
+        5
       ],
       "hitboxes_by_frame": {
-        "2": [
-          {
-            "id": 0,
-            "bone": "shoulderl",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 4.0,
-            "angle": 361,
-            "kbg": 12,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 3.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ryu",
-            "move": "jab1"
-          },
-          {
-            "id": 1,
-            "bone": "arml",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 4.0,
-            "angle": 361,
-            "kbg": 12,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ryu",
-            "move": "jab1"
-          },
-          {
-            "id": 2,
-            "bone": "handl",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 4.0,
-            "angle": 361,
-            "kbg": 12,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ryu",
-            "move": "jab1"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 4.0,
-            "angle": 361,
-            "kbg": 12,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 3.0,
-            "offset": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 6.5
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 10.0
-            },
-            "is_capsule": true,
-            "character": "ryu",
-            "move": "jab1"
-          }
-        ],
         "3": [
           {
             "id": 0,
@@ -6274,6 +6184,96 @@
             "bone": "top",
             "animation_frame": 4.0,
             "real_frame": 4,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 12,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 6.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "ryu",
+            "move": "jab1"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 12,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ryu",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 12,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ryu",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "handl",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 12,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ryu",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
             "damage": 4.0,
             "angle": 361,
             "kbg": 12,
@@ -8526,5 +8526,5 @@
       "motion_events": []
     }
   },
-  "generated_at": "2026-02-21T18:35:46.304506"
+  "generated_at": "2026-04-25T08:48:57.053960"
 }

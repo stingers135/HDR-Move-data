@@ -15,14 +15,14 @@
             "bone": "haver",
             "animation_frame": 4.0,
             "real_frame": 4,
-            "damage": 2.5,
-            "angle": 45,
-            "kbg": 100,
-            "fkb": 35,
-            "bkb": 0,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
             "size": 2.3,
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -36,7 +36,7 @@
             "bone": "top",
             "animation_frame": 4.0,
             "real_frame": 4,
-            "damage": 2.5,
+            "damage": 1.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 20,
@@ -45,12 +45,12 @@
             "offset": {
               "x": 0.0,
               "y": 3.3,
-              "z": 3.0
+              "z": 5.4
             },
             "offset2": {
               "x": 0.0,
               "y": 3.3,
-              "z": 5.5
+              "z": 10.5
             },
             "is_capsule": true,
             "character": "pickel",
@@ -74,6 +74,73 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 4.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "jab1"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 10.5
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "jab1"
           },
@@ -126,48 +193,69 @@
             "move": "jab1"
           },
           {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 2.5,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 20,
-            "bkb": 0,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 3.3,
-              "z": 3.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 3.3,
-              "z": 5.5
-            },
-            "is_capsule": true,
-            "character": "pickel",
-            "move": "jab1"
-          },
-          {
-            "id": 1,
+            "id": 2,
             "bone": "haver",
             "animation_frame": 5.0,
             "real_frame": 5,
-            "damage": 2.5,
-            "angle": 45,
-            "kbg": 100,
-            "fkb": 35,
-            "bkb": 0,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
             "size": 2.3,
             "offset": {
-              "x": 0.0,
-              "y": 0.0,
+              "x": 2.0,
+              "y": 4.5,
               "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "haver",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "jab1"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 10.5
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "jab1"
           },
@@ -220,48 +308,69 @@
             "move": "jab1"
           },
           {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 2.5,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 20,
-            "bkb": 0,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 3.3,
-              "z": 3.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 3.3,
-              "z": 5.5
-            },
-            "is_capsule": true,
-            "character": "pickel",
-            "move": "jab1"
-          },
-          {
-            "id": 1,
+            "id": 2,
             "bone": "haver",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 2.5,
-            "angle": 45,
-            "kbg": 100,
-            "fkb": 35,
-            "bkb": 0,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
             "size": 2.3,
             "offset": {
-              "x": 0.0,
-              "y": 0.0,
+              "x": 2.0,
+              "y": 4.5,
               "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "haver",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "jab1"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 10.5
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "jab1"
           },
@@ -309,6 +418,52 @@
             "bone": "haver",
             "animation_frame": 4.0,
             "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 20,
+            "bkb": 0,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 3.3,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.3,
+              "z": 10.5
+            },
+            "is_capsule": true,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
             "damage": 2.5,
             "angle": 45,
             "kbg": 100,
@@ -322,6 +477,73 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 4.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 3,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 10.5
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "ftilt"
           },
@@ -374,6 +596,73 @@
             "move": "ftilt"
           },
           {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 4.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 3,
+            "bone": "haver",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 10.5
+            },
+            "is_capsule": true,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
             "id": 0,
             "bone": "top",
             "animation_frame": 5.0,
@@ -418,6 +707,73 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 4.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 3,
+            "bone": "haver",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "ftilt"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 10.5
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "ftilt"
           },
@@ -468,6 +824,27 @@
         "4": [
           {
             "id": 0,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
+          },
+          {
+            "id": 0,
             "bone": "armr",
             "animation_frame": 4.0,
             "real_frame": 4,
@@ -480,6 +857,27 @@
             "offset": {
               "x": 0.6,
               "y": 0.4,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.5,
+            "offset": {
+              "x": -2.0,
+              "y": 4.2,
               "z": 0.0
             },
             "offset2": null,
@@ -509,6 +907,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.5,
+            "offset": {
+              "x": -2.0,
+              "y": 4.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
           }
         ],
         "6": [
@@ -526,6 +945,27 @@
             "offset": {
               "x": 0.6,
               "y": 0.4,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.5,
+            "offset": {
+              "x": -2.0,
+              "y": 4.2,
               "z": 0.0
             },
             "offset2": null,
@@ -555,6 +995,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.5,
+            "offset": {
+              "x": -2.0,
+              "y": 4.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
           }
         ],
         "8": [
@@ -572,6 +1033,27 @@
             "offset": {
               "x": 0.6,
               "y": 0.4,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.5,
+            "offset": {
+              "x": -2.0,
+              "y": 4.2,
               "z": 0.0
             },
             "offset2": null,
@@ -601,6 +1083,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.5,
+            "offset": {
+              "x": -2.0,
+              "y": 4.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
           }
         ],
         "10": [
@@ -618,6 +1121,27 @@
             "offset": {
               "x": 0.6,
               "y": 0.4,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.5,
+            "offset": {
+              "x": -2.0,
+              "y": 4.2,
               "z": 0.0
             },
             "offset2": null,
@@ -647,6 +1171,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.5,
+            "offset": {
+              "x": -2.0,
+              "y": 4.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
           }
         ],
         "12": [
@@ -664,6 +1209,27 @@
             "offset": {
               "x": 0.6,
               "y": 0.4,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "utilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 85,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 65,
+            "size": 4.5,
+            "offset": {
+              "x": -2.0,
+              "y": 4.2,
               "z": 0.0
             },
             "offset2": null,
@@ -695,94 +1261,11 @@
         14,
         15,
         16,
-        17
+        17,
+        18
       ],
       "hitboxes_by_frame": {
         "1": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 1.0,
-            "real_frame": 1,
-            "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 1.0,
-            "real_frame": 1,
-            "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 1.0,
-            "real_frame": 1,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 1.0,
-            "real_frame": 1,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
           {
             "id": 0,
             "bone": "top",
@@ -910,93 +1393,9 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "dtilt"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
           }
         ],
         "3": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 3.0,
-            "real_frame": 3,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 3.0,
-            "real_frame": 3,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
           {
             "id": 0,
             "bone": "top",
@@ -1082,93 +1481,9 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "dtilt"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
           }
         ],
         "5": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
           {
             "id": 0,
             "bone": "top",
@@ -1254,93 +1569,9 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "dtilt"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
           }
         ],
         "7": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
           {
             "id": 0,
             "bone": "top",
@@ -1426,93 +1657,9 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "dtilt"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
           }
         ],
         "9": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
           {
             "id": 0,
             "bone": "top",
@@ -1598,93 +1745,9 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "dtilt"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 10.0,
-            "real_frame": 10,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 10.0,
-            "real_frame": 10,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
           }
         ],
         "11": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 11.0,
-            "real_frame": 11,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 11.0,
-            "real_frame": 11,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
           {
             "id": 0,
             "bone": "top",
@@ -1770,93 +1833,9 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "dtilt"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
           }
         ],
         "13": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
           {
             "id": 0,
             "bone": "top",
@@ -1942,48 +1921,6 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "dtilt"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 7.0,
-            "angle": 80,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 3.2,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
           }
         ],
         "15": [
@@ -2028,93 +1965,9 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "dtilt"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 7.0,
-            "angle": 54,
-            "kbg": 110,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 7.0,
-            "angle": 54,
-            "kbg": 110,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
           }
         ],
         "16": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 7.0,
-            "angle": 54,
-            "kbg": 110,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 7.0,
-            "angle": 54,
-            "kbg": 110,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "offset": {
-              "x": 0.0,
-              "y": 2.8,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "dtilt"
-          },
           {
             "id": 0,
             "bone": "top",
@@ -2200,12 +2053,14 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "dtilt"
-          },
+          }
+        ],
+        "18": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
+            "animation_frame": 18.0,
+            "real_frame": 18,
             "damage": 7.0,
             "angle": 54,
             "kbg": 110,
@@ -2225,8 +2080,8 @@
           {
             "id": 1,
             "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
+            "animation_frame": 18.0,
+            "real_frame": 18,
             "damage": 7.0,
             "angle": 54,
             "kbg": 110,
@@ -2273,6 +2128,48 @@
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
+            "damage": 1.0,
+            "angle": 42,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.0,
+            "angle": 42,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.4,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 10.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fsmash"
+          },
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
             "damage": 12.0,
             "angle": 361,
             "kbg": 85,
@@ -2309,6 +2206,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "fsmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.0,
+            "angle": 42,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 14.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fsmash"
           }
         ],
         "12": [
@@ -2353,6 +2271,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "fsmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 42,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 14.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fsmash"
           }
         ],
         "13": [
@@ -2392,6 +2331,27 @@
               "x": 0.0,
               "y": 8.0,
               "z": 10.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fsmash"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.0,
+            "angle": 42,
+            "kbg": 90,
+            "fkb": 0,
+            "bkb": 34,
+            "size": 4.6,
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 14.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -2427,6 +2387,27 @@
         "12": [
           {
             "id": 0,
+            "bone": "weaponr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 100,
+            "kbg": 92,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "usmash"
+          },
+          {
+            "id": 0,
             "bone": "top",
             "animation_frame": 12.0,
             "real_frame": 12,
@@ -2440,6 +2421,27 @@
               "x": 0.0,
               "y": 9.0,
               "z": 3.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "weaponr",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 100,
+            "kbg": 92,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 2.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2468,6 +2470,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "weaponr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.0,
+            "angle": 100,
+            "kbg": 92,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "usmash"
           }
         ],
         "14": [
@@ -2486,6 +2509,27 @@
               "x": 0.0,
               "y": 9.0,
               "z": 3.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "weaponr",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.0,
+            "angle": 100,
+            "kbg": 92,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 2.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2514,6 +2558,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "weaponr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.0,
+            "angle": 100,
+            "kbg": 92,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "usmash"
           }
         ],
         "16": [
@@ -2532,6 +2597,27 @@
               "x": 0.0,
               "y": 9.0,
               "z": 3.6
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "weaponr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.0,
+            "angle": 100,
+            "kbg": 92,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 2.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3375,14 +3461,14 @@
             "bone": "haver",
             "animation_frame": 4.0,
             "real_frame": 4,
-            "damage": 2.5,
-            "angle": 45,
-            "kbg": 100,
-            "fkb": 35,
-            "bkb": 0,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
             "size": 2.3,
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -3396,7 +3482,7 @@
             "bone": "top",
             "animation_frame": 4.0,
             "real_frame": 4,
-            "damage": 2.5,
+            "damage": 1.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 20,
@@ -3405,12 +3491,12 @@
             "offset": {
               "x": 0.0,
               "y": 3.3,
-              "z": 3.0
+              "z": 5.4
             },
             "offset2": {
               "x": 0.0,
               "y": 3.3,
-              "z": 5.5
+              "z": 10.5
             },
             "is_capsule": true,
             "character": "pickel",
@@ -3434,6 +3520,73 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "nair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 4.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "nair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 10.5
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "nair"
           },
@@ -3486,48 +3639,69 @@
             "move": "nair"
           },
           {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 2.5,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 20,
-            "bkb": 0,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 3.3,
-              "z": 3.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 3.3,
-              "z": 5.5
-            },
-            "is_capsule": true,
-            "character": "pickel",
-            "move": "nair"
-          },
-          {
-            "id": 1,
+            "id": 2,
             "bone": "haver",
             "animation_frame": 5.0,
             "real_frame": 5,
-            "damage": 2.5,
-            "angle": 45,
-            "kbg": 100,
-            "fkb": 35,
-            "bkb": 0,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
             "size": 2.3,
             "offset": {
-              "x": 0.0,
-              "y": 0.0,
+              "x": 2.0,
+              "y": 4.5,
               "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "haver",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "nair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 10.5
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "nair"
           },
@@ -3580,48 +3754,69 @@
             "move": "nair"
           },
           {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 2.5,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 20,
-            "bkb": 0,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 3.3,
-              "z": 3.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 3.3,
-              "z": 5.5
-            },
-            "is_capsule": true,
-            "character": "pickel",
-            "move": "nair"
-          },
-          {
-            "id": 1,
+            "id": 2,
             "bone": "haver",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 2.5,
-            "angle": 45,
-            "kbg": 100,
-            "fkb": 35,
-            "bkb": 0,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
             "size": 2.3,
             "offset": {
-              "x": 0.0,
-              "y": 0.0,
+              "x": 2.0,
+              "y": 4.5,
               "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "nair"
+          },
+          {
+            "id": 3,
+            "bone": "haver",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 2.0,
+              "y": 9.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "nair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.3,
+            "offset": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.8,
+              "z": 10.5
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "nair"
           },
@@ -3671,6 +3866,27 @@
             "bone": "haver",
             "animation_frame": 8.0,
             "real_frame": 8,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 8.0,
+            "real_frame": 8,
             "damage": 2.5,
             "angle": 45,
             "kbg": 100,
@@ -3684,6 +3900,73 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 10.2
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "fair"
           }
@@ -3707,6 +3990,73 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 10.2
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "fair"
           }
@@ -3753,6 +4103,52 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 10.2
+            },
+            "is_capsule": true,
+            "character": "pickel",
+            "move": "fair"
           }
         ],
         "11": [
@@ -3797,6 +4193,52 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 10.2
+            },
+            "is_capsule": true,
+            "character": "pickel",
+            "move": "fair"
           }
         ],
         "12": [
@@ -3841,10 +4283,61 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "fair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 10.2
+            },
+            "is_capsule": true,
+            "character": "pickel",
+            "move": "fair"
           }
         ]
       },
       "motion_events": [
+        {
+          "type": "MotionModule::set_rate",
+          "frame": 2.0,
+          "rate_value": 1.0
+        },
         {
           "type": "MotionModule::set_rate",
           "frame": 8.0,
@@ -3852,7 +4345,22 @@
         },
         {
           "type": "MotionModule::set_rate",
+          "frame": 19.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "MotionModule::set_rate",
+          "frame": 3.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "MotionModule::set_rate",
           "frame": 8.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "MotionModule::set_rate",
+          "frame": 16.0,
           "rate_value": 1.0
         },
         {
@@ -3879,6 +4387,27 @@
             "bone": "haver",
             "animation_frame": 12.0,
             "real_frame": 12,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "bair"
+          },
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
             "damage": 2.5,
             "angle": 45,
             "kbg": 100,
@@ -3889,6 +4418,27 @@
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -0.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -3934,6 +4484,52 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "bair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -10.2
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "bair"
           }
@@ -3980,6 +4576,52 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "bair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -10.2
+            },
+            "is_capsule": true,
+            "character": "pickel",
+            "move": "bair"
           }
         ],
         "14": [
@@ -4022,6 +4664,52 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "pickel",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "bair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -10.2
+            },
+            "is_capsule": true,
             "character": "pickel",
             "move": "bair"
           }
@@ -4068,6 +4756,52 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "bair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -10.2
+            },
+            "is_capsule": true,
+            "character": "pickel",
+            "move": "bair"
           }
         ],
         "16": [
@@ -4112,14 +4846,75 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "bair"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.0,
+            "angle": 55,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -5.4
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": -10.2
+            },
+            "is_capsule": true,
+            "character": "pickel",
+            "move": "bair"
           }
         ]
       },
       "motion_events": [
         {
           "type": "MotionModule::set_rate",
+          "frame": 2.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "MotionModule::set_rate",
           "frame": 12.0,
           "rate_value": 1.5
+        },
+        {
+          "type": "MotionModule::set_rate",
+          "frame": 19.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "MotionModule::set_rate",
+          "frame": 5.0,
+          "rate_value": 1.0
         },
         {
           "type": "MotionModule::set_rate",
@@ -4137,7 +4932,7 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 31
+      "faf": 35
     },
     "uair": {
       "total_frames": 25,
@@ -4152,6 +4947,27 @@
         "3": [
           {
             "id": 0,
+            "bone": "haver",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 75,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "uair"
+          },
+          {
+            "id": 0,
             "bone": "armr",
             "animation_frame": 3.0,
             "real_frame": 3,
@@ -4164,6 +4980,27 @@
             "offset": {
               "x": 0.6,
               "y": 0.4,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 75,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.5,
+            "offset": {
+              "x": -1.0,
+              "y": 4.2,
               "z": 0.0
             },
             "offset2": null,
@@ -4193,6 +5030,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 75,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.5,
+            "offset": {
+              "x": -1.0,
+              "y": 4.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "uair"
           }
         ],
         "5": [
@@ -4210,6 +5068,27 @@
             "offset": {
               "x": 0.6,
               "y": 0.4,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 1.0,
+            "angle": 75,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.5,
+            "offset": {
+              "x": -1.0,
+              "y": 4.2,
               "z": 0.0
             },
             "offset2": null,
@@ -4239,6 +5118,27 @@
             "is_capsule": false,
             "character": "pickel",
             "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 75,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.5,
+            "offset": {
+              "x": -1.0,
+              "y": 4.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "uair"
           }
         ],
         "7": [
@@ -4256,6 +5156,27 @@
             "offset": {
               "x": 0.6,
               "y": 0.4,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 1.0,
+            "angle": 75,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 4.5,
+            "offset": {
+              "x": -1.0,
+              "y": 4.2,
               "z": 0.0
             },
             "offset2": null,
@@ -9526,8 +10447,6 @@
     "uthrow": {
       "total_frames": 47,
       "active_frames": [
-        12,
-        13,
         19,
         20,
         21,
@@ -9537,52 +10456,6 @@
         25
       ],
       "hitboxes_by_frame": {
-        "12": [
-          {
-            "id": 0,
-            "bone": "push",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 3.0,
-            "angle": 80,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 6.0,
-            "offset": {
-              "x": 0.0,
-              "y": 10.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "uthrow"
-          }
-        ],
-        "13": [
-          {
-            "id": 0,
-            "bone": "push",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 3.0,
-            "angle": 80,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 6.0,
-            "offset": {
-              "x": 0.0,
-              "y": 10.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "uthrow"
-          }
-        ],
         "19": [
           {
             "id": 0,
@@ -10009,5 +10882,5 @@
       "faf": 30
     }
   },
-  "generated_at": "2026-02-21T18:36:01.217622"
+  "generated_at": "2026-04-25T08:49:09.416034"
 }

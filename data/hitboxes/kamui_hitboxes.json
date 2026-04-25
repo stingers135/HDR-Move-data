@@ -2507,17 +2507,28 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 0.8
+          "type": "range",
+          "frame": 10.0,
+          "start_orig": 10.0,
+          "end_orig": 19.0,
+          "new_duration": 6.0,
+          "scale_factor": 0.6666666666666666
         },
         {
           "type": "FT_MOTION_RATE",
+          "frame": 19.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
           "frame": 35.0,
-          "rate_value": 1.2
+          "start_orig": 35.0,
+          "end_orig": 61.0,
+          "new_duration": 29.0,
+          "scale_factor": 1.1153846153846154
         }
       ],
-      "faf": 60
+      "faf": 61
     },
     "usmash": {
       "total_frames": 63,
@@ -6186,11 +6197,101 @@
     "bair": {
       "total_frames": 55,
       "active_frames": [
+        13,
+        14,
         15,
         16,
         17
       ],
       "hitboxes_by_frame": {
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 13.5,
+            "angle": 361,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 10.75,
+              "z": -17.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "kamui",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 13.5,
+            "angle": 361,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -10.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "kamui",
+            "move": "bair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 13.5,
+            "angle": 361,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 6.5,
+            "offset": {
+              "x": 0.0,
+              "y": 10.75,
+              "z": -17.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "kamui",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 13.5,
+            "angle": 361,
+            "kbg": 82,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -10.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "kamui",
+            "move": "bair"
+          }
+        ],
         "15": [
           {
             "id": 0,
@@ -8997,5 +9098,5 @@
       "faf": 50
     }
   },
-  "generated_at": "2026-02-21T18:35:48.409348"
+  "generated_at": "2026-04-25T08:48:58.773347"
 }

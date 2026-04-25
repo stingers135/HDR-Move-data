@@ -5079,7 +5079,8 @@
         10,
         11,
         59,
-        60
+        60,
+        61
       ],
       "hitboxes_by_frame": {
         "9": [
@@ -5180,6 +5181,29 @@
             "bone": "top",
             "animation_frame": 60.0,
             "real_frame": 60,
+            "damage": 1.0,
+            "angle": 80,
+            "kbg": 200,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 7.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dthrow"
+          }
+        ],
+        "61": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 61.0,
+            "real_frame": 61,
             "damage": 2.0,
             "angle": 60,
             "kbg": 130,
@@ -5328,5 +5352,5 @@
       "faf": 24
     }
   },
-  "generated_at": "2026-02-21T18:35:27.665776"
+  "generated_at": "2026-04-25T08:48:42.177157"
 }

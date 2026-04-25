@@ -8314,11 +8314,16 @@
       "total_frames": 90,
       "active_frames": [
         14,
-        15,
-        16,
-        17,
         18,
-        19
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
       ],
       "hitboxes_by_frame": {
         "14": [
@@ -8344,75 +8349,6 @@
             "move": "dthrow"
           }
         ],
-        "15": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 1.0,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 0,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "plizardon",
-            "move": "dthrow"
-          }
-        ],
-        "16": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 1.0,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 0,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "plizardon",
-            "move": "dthrow"
-          }
-        ],
-        "17": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 1.0,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 0,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "plizardon",
-            "move": "dthrow"
-          }
-        ],
         "18": [
           {
             "id": 0,
@@ -8420,18 +8356,18 @@
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 1.0,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 0,
-            "size": 5.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
             "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 2.0
+              "x": 0,
+              "y": 0,
+              "z": 0
             },
             "offset2": null,
-            "is_capsule": false,
+            "is_throw": true,
             "character": "plizardon",
             "move": "dthrow"
           }
@@ -8443,18 +8379,202 @@
             "animation_frame": 19.0,
             "real_frame": 19,
             "damage": 1.0,
-            "angle": 361,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 0,
-            "size": 5.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
             "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 2.0
+              "x": 0,
+              "y": 0,
+              "z": 0
             },
             "offset2": null,
-            "is_capsule": false,
+            "is_throw": true,
+            "character": "plizardon",
+            "move": "dthrow"
+          }
+        ],
+        "20": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "plizardon",
+            "move": "dthrow"
+          }
+        ],
+        "21": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "plizardon",
+            "move": "dthrow"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "plizardon",
+            "move": "dthrow"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "plizardon",
+            "move": "dthrow"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "plizardon",
+            "move": "dthrow"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "plizardon",
+            "move": "dthrow"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "plizardon",
+            "move": "dthrow"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 1,
+            "bkb": 1,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
             "character": "plizardon",
             "move": "dthrow"
           }
@@ -8492,6 +8612,14 @@
         },
         {
           "type": "range",
+          "frame": 24.0,
+          "start_orig": 24.0,
+          "end_orig": 49.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.04
+        },
+        {
+          "type": "range",
           "frame": 49.0,
           "start_orig": 49.0,
           "end_orig": 55.0,
@@ -8504,8 +8632,8 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 43
+      "faf": 38
     }
   },
-  "generated_at": "2026-02-21T18:35:33.389319"
+  "generated_at": "2026-04-25T08:48:46.680883"
 }

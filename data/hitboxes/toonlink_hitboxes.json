@@ -3840,7 +3840,8 @@
         18,
         19,
         20,
-        21
+        21,
+        22
       ],
       "hitboxes_by_frame": {
         "6": [
@@ -4866,6 +4867,71 @@
             "bone": "sword2",
             "animation_frame": 21.0,
             "real_frame": 21,
+            "damage": 8.0,
+            "angle": 80,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.5,
+            "offset": {
+              "x": 5.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "toonlink",
+            "move": "uair"
+          }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 8.0,
+            "angle": 80,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "toonlink",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "sword2",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 8.0,
+            "angle": 80,
+            "kbg": 126,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 4.0,
+            "offset": {
+              "x": 1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "toonlink",
+            "move": "uair"
+          },
+          {
+            "id": 2,
+            "bone": "sword2",
+            "animation_frame": 22.0,
+            "real_frame": 22,
             "damage": 8.0,
             "angle": 80,
             "kbg": 126,
@@ -8200,5 +8266,5 @@
       "faf": 50
     }
   },
-  "generated_at": "2026-02-21T18:35:37.936651"
+  "generated_at": "2026-04-25T08:48:50.321815"
 }

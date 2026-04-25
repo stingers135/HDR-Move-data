@@ -2085,27 +2085,25 @@
         22,
         23,
         24,
-        25,
-        26,
-        27
+        25
       ],
       "hitboxes_by_frame": {
         "22": [
           {
             "id": 0,
-            "bone": "hip",
+            "bone": "top",
             "animation_frame": 22.0,
             "real_frame": 22,
-            "damage": 23.0,
+            "damage": 24.0,
             "angle": 361,
-            "kbg": 98,
+            "kbg": 97,
             "fkb": 0,
-            "bkb": 25,
-            "size": 7.0,
+            "bkb": 28,
+            "size": 8.0,
             "offset": {
-              "x": -10.0,
-              "y": 0.0,
-              "z": 0.0
+              "x": 0.0,
+              "y": 8.5,
+              "z": 20.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2114,19 +2112,19 @@
           },
           {
             "id": 1,
-            "bone": "hip",
+            "bone": "top",
             "animation_frame": 22.0,
             "real_frame": 22,
-            "damage": 20.0,
+            "damage": 24.0,
             "angle": 361,
-            "kbg": 98,
+            "kbg": 97,
             "fkb": 0,
-            "bkb": 25,
-            "size": 5.5,
+            "bkb": 28,
+            "size": 6.0,
             "offset": {
-              "x": -1.0,
-              "y": 0.0,
-              "z": 0.0
+              "x": 0.0,
+              "y": 8.5,
+              "z": 10.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2137,19 +2135,19 @@
         "23": [
           {
             "id": 0,
-            "bone": "hip",
+            "bone": "top",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 23.0,
+            "damage": 24.0,
             "angle": 361,
-            "kbg": 98,
+            "kbg": 97,
             "fkb": 0,
-            "bkb": 25,
-            "size": 7.0,
+            "bkb": 28,
+            "size": 8.0,
             "offset": {
-              "x": -10.0,
-              "y": 0.0,
-              "z": 0.0
+              "x": 0.0,
+              "y": 8.5,
+              "z": 20.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2158,19 +2156,19 @@
           },
           {
             "id": 1,
-            "bone": "hip",
+            "bone": "top",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 20.0,
+            "damage": 24.0,
             "angle": 361,
-            "kbg": 98,
+            "kbg": 97,
             "fkb": 0,
-            "bkb": 25,
-            "size": 5.5,
+            "bkb": 28,
+            "size": 6.0,
             "offset": {
-              "x": -1.0,
-              "y": 0.0,
-              "z": 0.0
+              "x": 0.0,
+              "y": 8.5,
+              "z": 10.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2181,19 +2179,19 @@
         "24": [
           {
             "id": 0,
-            "bone": "hip",
+            "bone": "top",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 17.0,
+            "damage": 24.0,
             "angle": 361,
-            "kbg": 103,
+            "kbg": 97,
             "fkb": 0,
-            "bkb": 10,
-            "size": 6.0,
+            "bkb": 28,
+            "size": 8.0,
             "offset": {
-              "x": -9.0,
-              "y": 0.0,
-              "z": 0.0
+              "x": 0.0,
+              "y": 8.5,
+              "z": 20.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2202,19 +2200,19 @@
           },
           {
             "id": 1,
-            "bone": "hip",
+            "bone": "top",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 14.0,
+            "damage": 24.0,
             "angle": 361,
-            "kbg": 103,
+            "kbg": 97,
             "fkb": 0,
-            "bkb": 10,
-            "size": 5.0,
+            "bkb": 28,
+            "size": 6.0,
             "offset": {
-              "x": -1.0,
-              "y": 0.0,
-              "z": 0.0
+              "x": 0.0,
+              "y": 8.5,
+              "z": 10.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2225,19 +2223,19 @@
         "25": [
           {
             "id": 0,
-            "bone": "hip",
+            "bone": "top",
             "animation_frame": 25.0,
             "real_frame": 25,
-            "damage": 17.0,
+            "damage": 24.0,
             "angle": 361,
-            "kbg": 103,
+            "kbg": 97,
             "fkb": 0,
-            "bkb": 10,
-            "size": 6.0,
+            "bkb": 28,
+            "size": 8.0,
             "offset": {
-              "x": -9.0,
-              "y": 0.0,
-              "z": 0.0
+              "x": 0.0,
+              "y": 8.5,
+              "z": 20.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2246,107 +2244,19 @@
           },
           {
             "id": 1,
-            "bone": "hip",
+            "bone": "top",
             "animation_frame": 25.0,
             "real_frame": 25,
-            "damage": 14.0,
+            "damage": 24.0,
             "angle": 361,
-            "kbg": 103,
+            "kbg": 97,
             "fkb": 0,
-            "bkb": 10,
-            "size": 5.0,
-            "offset": {
-              "x": -1.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "koopa",
-            "move": "fsmash"
-          }
-        ],
-        "26": [
-          {
-            "id": 0,
-            "bone": "hip",
-            "animation_frame": 26.0,
-            "real_frame": 26,
-            "damage": 17.0,
-            "angle": 361,
-            "kbg": 103,
-            "fkb": 0,
-            "bkb": 10,
+            "bkb": 28,
             "size": 6.0,
             "offset": {
-              "x": -9.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "koopa",
-            "move": "fsmash"
-          },
-          {
-            "id": 1,
-            "bone": "hip",
-            "animation_frame": 26.0,
-            "real_frame": 26,
-            "damage": 14.0,
-            "angle": 361,
-            "kbg": 103,
-            "fkb": 0,
-            "bkb": 10,
-            "size": 5.0,
-            "offset": {
-              "x": -1.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "koopa",
-            "move": "fsmash"
-          }
-        ],
-        "27": [
-          {
-            "id": 0,
-            "bone": "hip",
-            "animation_frame": 27.0,
-            "real_frame": 27,
-            "damage": 17.0,
-            "angle": 361,
-            "kbg": 103,
-            "fkb": 0,
-            "bkb": 10,
-            "size": 6.0,
-            "offset": {
-              "x": -9.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "koopa",
-            "move": "fsmash"
-          },
-          {
-            "id": 1,
-            "bone": "hip",
-            "animation_frame": 27.0,
-            "real_frame": 27,
-            "damage": 14.0,
-            "angle": 361,
-            "kbg": 103,
-            "fkb": 0,
-            "bkb": 10,
-            "size": 5.0,
-            "offset": {
-              "x": -1.0,
-              "y": 0.0,
-              "z": 0.0
+              "x": 0.0,
+              "y": 8.5,
+              "z": 10.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -8318,5 +8228,5 @@
       "faf": 60
     }
   },
-  "generated_at": "2026-02-21T18:35:17.662751"
+  "generated_at": "2026-04-25T08:48:36.823537"
 }

@@ -4,100 +4,10 @@
     "jab1": {
       "total_frames": 42,
       "active_frames": [
-        2,
-        3
+        3,
+        4
       ],
       "hitboxes_by_frame": {
-        "2": [
-          {
-            "id": 0,
-            "bone": "handl",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 2.0,
-            "angle": 361,
-            "kbg": 10,
-            "fkb": 0,
-            "bkb": 35,
-            "size": 3.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "shulk",
-            "move": "jab1"
-          },
-          {
-            "id": 1,
-            "bone": "arml",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 2.0,
-            "angle": 361,
-            "kbg": 10,
-            "fkb": 0,
-            "bkb": 35,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "shulk",
-            "move": "jab1"
-          },
-          {
-            "id": 2,
-            "bone": "shoulderl",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 2.0,
-            "angle": 361,
-            "kbg": 10,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "shulk",
-            "move": "jab1"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 2.0,
-            "angle": 361,
-            "kbg": 10,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 2.0,
-            "offset": {
-              "x": 0.0,
-              "y": 4.5,
-              "z": 7.5
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 4.5,
-              "z": 5.0
-            },
-            "is_capsule": true,
-            "character": "shulk",
-            "move": "jab1"
-          }
-        ],
         "3": [
           {
             "id": 0,
@@ -167,6 +77,96 @@
             "bone": "top",
             "animation_frame": 3.0,
             "real_frame": 3,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 2.0,
+            "offset": {
+              "x": 0.0,
+              "y": 4.5,
+              "z": 7.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 4.5,
+              "z": 5.0
+            },
+            "is_capsule": true,
+            "character": "shulk",
+            "move": "jab1"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "handl",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "shulk",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "arml",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 35,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "shulk",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "shoulderl",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 10,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "shulk",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
             "damage": 2.0,
             "angle": 361,
             "kbg": 10,
@@ -10228,5 +10228,5 @@
       "faf": 42
     }
   },
-  "generated_at": "2026-02-21T18:35:44.521536"
+  "generated_at": "2026-04-25T08:48:55.651767"
 }

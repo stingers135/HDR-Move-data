@@ -602,26 +602,48 @@
     "jab3": {
       "total_frames": 34,
       "active_frames": [
-        4,
-        5
+        2,
+        3,
+        4
       ],
       "hitboxes_by_frame": {
-        "4": [
+        "2": [
           {
             "id": 0,
-            "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 5.0,
-            "angle": 60,
-            "kbg": 100,
+            "bone": "arml",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.5,
+            "bkb": 1,
+            "size": 3.2,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "jab3"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
-              "y": 8.0,
-              "z": 6.0
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -630,19 +652,40 @@
           },
           {
             "id": 2,
-            "bone": "arml",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 5.0,
-            "angle": 60,
-            "kbg": 100,
+            "bone": "bust",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.2,
+            "bkb": 1,
+            "size": 3.0,
             "offset": {
-              "x": 2.0,
+              "x": 0.0,
               "y": 0.0,
               "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "jab3"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 6.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -650,22 +693,43 @@
             "move": "jab3"
           }
         ],
-        "5": [
+        "3": [
           {
             "id": 0,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 5.0,
-            "angle": 60,
-            "kbg": 100,
+            "bone": "arml",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.5,
+            "bkb": 1,
+            "size": 3.2,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "jab3"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
-              "y": 8.0,
-              "z": 6.0
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -674,19 +738,126 @@
           },
           {
             "id": 2,
-            "bone": "arml",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 5.0,
-            "angle": 60,
-            "kbg": 100,
+            "bone": "bust",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 1,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "jab3"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "jab3"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
             "size": 3.2,
             "offset": {
               "x": 2.0,
               "y": 0.0,
               "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "jab3"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "jab3"
+          },
+          {
+            "id": 2,
+            "bone": "bust",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "jab3"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 6.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1063,28 +1234,50 @@
       "faf": 35
     },
     "combo3": {
-      "total_frames": 15,
+      "total_frames": 14,
       "active_frames": [
-        4,
-        5
+        2,
+        3,
+        4
       ],
       "hitboxes_by_frame": {
-        "4": [
+        "2": [
           {
             "id": 0,
-            "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 5.0,
-            "angle": 60,
-            "kbg": 100,
+            "bone": "arml",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.5,
+            "bkb": 1,
+            "size": 3.2,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "combo3"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
-              "y": 8.0,
-              "z": 6.0
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1093,19 +1286,40 @@
           },
           {
             "id": 2,
-            "bone": "arml",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 5.0,
-            "angle": 60,
-            "kbg": 100,
+            "bone": "bust",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.2,
+            "bkb": 1,
+            "size": 3.0,
             "offset": {
-              "x": 2.0,
+              "x": 0.0,
               "y": 0.0,
               "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "combo3"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 6.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1113,22 +1327,43 @@
             "move": "combo3"
           }
         ],
-        "5": [
+        "3": [
           {
             "id": 0,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 5.0,
-            "angle": 60,
-            "kbg": 100,
+            "bone": "arml",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.5,
+            "bkb": 1,
+            "size": 3.2,
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "combo3"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.0,
             "offset": {
               "x": 0.0,
-              "y": 8.0,
-              "z": 6.0
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1137,19 +1372,126 @@
           },
           {
             "id": 2,
-            "bone": "arml",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 5.0,
-            "angle": 60,
-            "kbg": 100,
+            "bone": "bust",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 1,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "combo3"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "combo3"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "arml",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
             "size": 3.2,
             "offset": {
               "x": 2.0,
               "y": 0.0,
               "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "combo3"
+          },
+          {
+            "id": 1,
+            "bone": "shoulderl",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "combo3"
+          },
+          {
+            "id": 2,
+            "bone": "bust",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "littlemac",
+            "move": "combo3"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 1.0,
+            "angle": 1,
+            "kbg": 1,
+            "fkb": 0,
+            "bkb": 1,
+            "size": 3.5,
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 6.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7516,5 +7858,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-02-21T18:35:41.571031"
+  "generated_at": "2026-04-25T08:48:53.223778"
 }

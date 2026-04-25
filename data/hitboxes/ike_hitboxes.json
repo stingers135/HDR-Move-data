@@ -6691,13 +6691,120 @@
     "fair": {
       "total_frames": 69,
       "active_frames": [
+        13,
         14,
         15,
         16,
-        17,
-        18
+        17
       ],
       "hitboxes_by_frame": {
+        "13": [
+          {
+            "id": 0,
+            "bone": "claviclec",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 2.5,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ike",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 2.7,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ike",
+            "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "sword",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 15.0,
+            "angle": 361,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 2.5,
+              "z": -1.8
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ike",
+            "move": "fair"
+          },
+          {
+            "id": 3,
+            "bone": "sword",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 14.0,
+            "angle": 361,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 7.0,
+              "z": -1.8
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ike",
+            "move": "fair"
+          },
+          {
+            "id": 4,
+            "bone": "sword",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 10.0,
+            "angle": 35,
+            "kbg": 105,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.8,
+            "offset": {
+              "x": 0.0,
+              "y": 11.5,
+              "z": -1.8
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "ike",
+            "move": "fair"
+          }
+        ],
         "14": [
           {
             "id": 0,
@@ -7109,113 +7216,6 @@
             "bone": "sword",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 10.0,
-            "angle": 35,
-            "kbg": 105,
-            "fkb": 0,
-            "bkb": 20,
-            "size": 3.8,
-            "offset": {
-              "x": 0.0,
-              "y": 11.5,
-              "z": -1.8
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "fair"
-          }
-        ],
-        "18": [
-          {
-            "id": 0,
-            "bone": "claviclec",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 14.0,
-            "angle": 361,
-            "kbg": 105,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 2.5,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "fair"
-          },
-          {
-            "id": 1,
-            "bone": "armr",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 14.0,
-            "angle": 361,
-            "kbg": 105,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 2.7,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "fair"
-          },
-          {
-            "id": 2,
-            "bone": "sword",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 15.0,
-            "angle": 361,
-            "kbg": 105,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 3.8,
-            "offset": {
-              "x": 0.0,
-              "y": 2.5,
-              "z": -1.8
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "fair"
-          },
-          {
-            "id": 3,
-            "bone": "sword",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 14.0,
-            "angle": 361,
-            "kbg": 105,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 3.8,
-            "offset": {
-              "x": 0.0,
-              "y": 7.0,
-              "z": -1.8
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "ike",
-            "move": "fair"
-          },
-          {
-            "id": 4,
-            "bone": "sword",
-            "animation_frame": 18.0,
-            "real_frame": 18,
             "damage": 10.0,
             "angle": 35,
             "kbg": 105,
@@ -10990,5 +10990,5 @@
       "faf": 60
     }
   },
-  "generated_at": "2026-02-21T18:35:31.723428"
+  "generated_at": "2026-04-25T08:48:45.348633"
 }

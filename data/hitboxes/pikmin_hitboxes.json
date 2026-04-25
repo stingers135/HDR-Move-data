@@ -3197,13 +3197,7 @@
           }
         ]
       },
-      "motion_events": [
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 1.0
-        }
-      ],
+      "motion_events": [],
       "faf": 35
     },
     "uair": {
@@ -4495,13 +4489,7 @@
           }
         ]
       },
-      "motion_events": [
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 1.0
-        }
-      ],
+      "motion_events": [],
       "faf": 36
     },
     "dash_attack": {
@@ -5044,19 +5032,8 @@
           }
         ]
       },
-      "motion_events": [
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 1.0
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 14.0,
-          "rate_value": 0.5
-        }
-      ],
-      "faf": 24
+      "motion_events": [],
+      "faf": 35
     },
     "bthrow": {
       "total_frames": 54,
@@ -5388,19 +5365,8 @@
           }
         ]
       },
-      "motion_events": [
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 1.0
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 20.0,
-          "rate_value": 0.5
-        }
-      ],
-      "faf": 30
+      "motion_events": [],
+      "faf": 40
     },
     "uthrow": {
       "total_frames": 61,
@@ -5732,19 +5698,8 @@
           }
         ]
       },
-      "motion_events": [
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 1.0
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 21.0,
-          "rate_value": 0.5
-        }
-      ],
-      "faf": 35
+      "motion_events": [],
+      "faf": 49
     },
     "dthrow": {
       "total_frames": 49,
@@ -6076,20 +6031,9 @@
           }
         ]
       },
-      "motion_events": [
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 1.0
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 30.0,
-          "rate_value": 0.5
-        }
-      ],
-      "faf": 40
+      "motion_events": [],
+      "faf": 50
     }
   },
-  "generated_at": "2026-02-21T18:35:36.556738"
+  "generated_at": "2026-04-25T08:48:49.254030"
 }

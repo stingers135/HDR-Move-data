@@ -7984,11 +7984,55 @@
     "uthrow": {
       "total_frames": 64,
       "active_frames": [
+        33,
         34,
-        35,
-        36
+        35
       ],
       "hitboxes_by_frame": {
+        "33": [
+          {
+            "id": 0,
+            "bone": "havel",
+            "animation_frame": 33.0,
+            "real_frame": 33,
+            "damage": 3.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 5.0,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "nana",
+            "move": "uthrow"
+          },
+          {
+            "id": 1,
+            "bone": "havel",
+            "animation_frame": 33.0,
+            "real_frame": 33,
+            "damage": 3.0,
+            "angle": 70,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "nana",
+            "move": "uthrow"
+          }
+        ],
         "34": [
           {
             "id": 0,
@@ -8036,53 +8080,9 @@
         "35": [
           {
             "id": 0,
-            "bone": "havel",
-            "animation_frame": 35.0,
-            "real_frame": 35,
-            "damage": 3.0,
-            "angle": 70,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 5.0,
-            "offset": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "nana",
-            "move": "uthrow"
-          },
-          {
-            "id": 1,
-            "bone": "havel",
-            "animation_frame": 35.0,
-            "real_frame": 35,
-            "damage": 3.0,
-            "angle": 70,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 4.0,
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "nana",
-            "move": "uthrow"
-          }
-        ],
-        "36": [
-          {
-            "id": 0,
             "bone": "top",
-            "animation_frame": 36.0,
-            "real_frame": 36,
+            "animation_frame": 35.0,
+            "real_frame": 35,
             "damage": 5.0,
             "angle": 88,
             "kbg": 26,
@@ -8118,351 +8118,15 @@
     "dthrow": {
       "total_frames": 68,
       "active_frames": [
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51
+        2
       ],
       "hitboxes_by_frame": {
-        "37": [
+        "2": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 37.0,
-            "real_frame": 37,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "38": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 38.0,
-            "real_frame": 38,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "39": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 39.0,
-            "real_frame": 39,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "40": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 40.0,
-            "real_frame": 40,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "41": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 41.0,
-            "real_frame": 41,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "42": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 42.0,
-            "real_frame": 42,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "43": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 43.0,
-            "real_frame": 43,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "44": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 44.0,
-            "real_frame": 44,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "45": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 45.0,
-            "real_frame": 45,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "46": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 46.0,
-            "real_frame": 46,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "47": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 47.0,
-            "real_frame": 47,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "48": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 48.0,
-            "real_frame": 48,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "49": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 49.0,
-            "real_frame": 49,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "50": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 50.0,
-            "real_frame": 50,
-            "damage": 6.0,
-            "angle": 80,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "nana",
-            "move": "dthrow"
-          }
-        ],
-        "51": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 51.0,
-            "real_frame": 51,
+            "animation_frame": 2.0,
+            "real_frame": 2,
             "damage": 6.0,
             "angle": 80,
             "kbg": 120,
@@ -8484,6 +8148,11 @@
       "motion_events": [
         {
           "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 0.008888888888888889
+        },
+        {
+          "type": "FT_MOTION_RATE",
           "frame": 36.0,
           "rate_value": 1.0
         },
@@ -8493,8 +8162,8 @@
           "rate_value": 1.4166666666666667
         }
       ],
-      "faf": 55
+      "faf": 21
     }
   },
-  "generated_at": "2026-02-21T18:35:18.878376"
+  "generated_at": "2026-04-25T08:48:37.339178"
 }

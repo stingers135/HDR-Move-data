@@ -8736,6 +8736,7 @@
     "uthrow": {
       "total_frames": 59,
       "active_frames": [
+        11,
         12,
         13,
         14,
@@ -8744,10 +8745,32 @@
         17,
         18,
         19,
-        20,
-        21
+        20
       ],
       "hitboxes_by_frame": {
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 2.0,
+            "angle": 90,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "fox",
+            "move": "uthrow"
+          }
+        ],
         "12": [
           {
             "id": 0,
@@ -8938,29 +8961,6 @@
             "bone": "top",
             "animation_frame": 20.0,
             "real_frame": 20,
-            "damage": 2.0,
-            "angle": 90,
-            "kbg": 110,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "fox",
-            "move": "uthrow"
-          }
-        ],
-        "21": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 21.0,
-            "real_frame": 21,
             "damage": 2.0,
             "angle": 90,
             "kbg": 110,
@@ -9253,5 +9253,5 @@
       "faf": 50
     }
   },
-  "generated_at": "2026-02-21T18:35:13.755614"
+  "generated_at": "2026-04-25T08:48:34.718662"
 }
