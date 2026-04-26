@@ -853,7 +853,7 @@ tr.stance-unavailable .view-btn {
         </table>
 
         <div class="footer">
-            <p>Generated on 2026-04-25 23:21:06 Eastern Daylight Time</p>
+            <p>Generated on 2026-04-26 08:43:05 Eastern Daylight Time</p>
         </div>
     </div>
     
@@ -982,7 +982,11 @@ tr.stance-unavailable .view-btn {
                 // Get all cells
                 const cells = row.querySelectorAll('td');
                 
-                // Determine table type by checking for specific column structures
+                // Determine table type by checking for specific column structures.
+                // Each table has a different column layout — writing the wrong field
+                // into the wrong column produces silent display bugs (e.g. Joker
+                // grabs once showed damage='0' in the Startup Frame column).
+                // If you add stance entries for a new table type, add a branch here.
                 const isThrowTable = row.closest('#table-throws-sub') !== null;
                 const isGrabTable = row.closest('#table-grabs-sub') !== null;
                 
@@ -1006,6 +1010,21 @@ tr.stance-unavailable .view-btn {
                     if (moveData.bkb !== undefined) cells[5].textContent = moveData.bkb;
                     if (moveData.frame !== undefined && cells[6]) cells[6].textContent = moveData.frame;
                     if (moveData.faf !== undefined && cells[7]) cells[7].textContent = moveData.faf;
+                    
+                    // Joker Arsene-form: HDR's game_landingair* slows the landing
+                    // animation when summoned, adding extra real frames per aerial.
+                    // Offsets come from fighters/jack/src/acmd/aerials.rs and are
+                    // applied on top of the prcxml base value (which is what the
+                    // table cell currently holds after the restore loop above).
+                    if ('ridley' === 'jack' && stanceName === 'Arsene'
+                        && cells.length >= 10 && cells[8]) {
+                        const offsets = { nair: 3, fair: 5, bair: 5, uair: 3, dair: 5 };
+                        const off = offsets[moveKey];
+                        if (off !== undefined) {
+                            const base = parseFloat(cells[8].textContent) || 0;
+                            cells[8].textContent = String(base + off);
+                        }
+                    }
                     
                     // Recalculate shield advantage for aerials (tables with 10+ columns)
                     if (cells.length >= 10 && cells[1] && cells[8]) {
