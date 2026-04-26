@@ -442,6 +442,12 @@ tr.stance-unavailable .view-btn {
 
         </div>
 
+        <div class="stance-selector" id="stance-selector">
+            <span class="stance-label">Form:</span>
+            <button class="stance-btn active" onclick="setStance('Joker')">Joker</button>
+            <button class="stance-btn" onclick="setStance('Arsene')">Arsene</button>
+        </div>
+
         <div class="section-header" id="section-jabs">
             <h2>Jab & Dash Attacks</h2>
         </div>
@@ -493,19 +499,19 @@ tr.stance-unavailable .view-btn {
                     <td>0</td>
                     <td>60</td>
                     <td class="frame">3</td>
-                    <td class="frame">33</td>
+                    <td class="frame">28</td>
                     <td><button class="view-btn" onclick="openViewer('jack', 'jab3')">View</button></td>
                 </tr>
 
                 <tr data-move="dash_attack">
                     <td class="move-name">Dash Attack</td>
-                    <td class="damage">12</td>
-                    <td class="angle">85</td>
-                    <td>67</td>
+                    <td class="damage">7</td>
+                    <td class="angle">75</td>
+                    <td>115</td>
                     <td>0</td>
-                    <td>50</td>
+                    <td>37</td>
                     <td class="frame">7</td>
-                    <td class="frame">41</td>
+                    <td class="frame">39</td>
                     <td><button class="view-btn" onclick="openViewer('jack', 'dash_attack')">View</button></td>
                 </tr>
 
@@ -533,13 +539,13 @@ tr.stance-unavailable .view-btn {
 
                 <tr data-move="ftilt">
                     <td class="move-name">Forward Tilt</td>
-                    <td class="damage">10</td>
+                    <td class="damage">5</td>
                     <td class="angle">40</td>
-                    <td>65</td>
+                    <td>110</td>
                     <td>0</td>
-                    <td>60</td>
+                    <td>45</td>
                     <td class="frame">8</td>
-                    <td class="frame">37</td>
+                    <td class="frame">35</td>
                     <td><button class="view-btn" onclick="openViewer('jack', 'ftilt')">View</button></td>
                 </tr>
 
@@ -593,7 +599,7 @@ tr.stance-unavailable .view-btn {
                     <td class="move-name">Forward Smash</td>
                     <td class="damage">14</td>
                     <td class="angle">361</td>
-                    <td>120</td>
+                    <td>112</td>
                     <td>0</td>
                     <td>40</td>
                     <td class="frame">15</td>
@@ -609,7 +615,7 @@ tr.stance-unavailable .view-btn {
                     <td>0</td>
                     <td>43</td>
                     <td class="frame">9</td>
-                    <td class="frame">58</td>
+                    <td class="frame">53</td>
                     <td><button class="view-btn" onclick="openViewer('jack', 'usmash')">View</button></td>
                 </tr>
 
@@ -621,7 +627,7 @@ tr.stance-unavailable .view-btn {
                     <td>0</td>
                     <td>30</td>
                     <td class="frame">12</td>
-                    <td class="frame">58</td>
+                    <td class="frame">54</td>
                     <td><button class="view-btn" onclick="openViewer('jack', 'dsmash')">View</button></td>
                 </tr>
 
@@ -665,43 +671,43 @@ tr.stance-unavailable .view-btn {
 
                 <tr data-move="fair">
                     <td class="move-name">Forward Air</td>
-                    <td class="damage">9</td>
+                    <td class="damage">6</td>
                     <td class="angle">361</td>
-                    <td>110</td>
+                    <td>125</td>
                     <td>0</td>
-                    <td>58</td>
+                    <td>40</td>
                     <td class="frame">7</td>
-                    <td class="frame">49</td>
+                    <td class="frame">44</td>
                     <td class="frame">9</td>
-                    <td class="disadvantage">-3</td>
+                    <td class="disadvantage">-4</td>
                     <td><button class="view-btn" onclick="openViewer('jack', 'fair')">View</button></td>
                 </tr>
 
                 <tr data-move="bair">
                     <td class="move-name">Back Air</td>
-                    <td class="damage">14</td>
+                    <td class="damage">11</td>
                     <td class="angle">45</td>
-                    <td>87</td>
+                    <td>90</td>
                     <td>0</td>
-                    <td>58</td>
+                    <td>50</td>
                     <td class="frame">6</td>
                     <td class="frame">38</td>
                     <td class="frame">9</td>
-                    <td class="">0</td>
+                    <td class="">-1</td>
                     <td><button class="view-btn" onclick="openViewer('jack', 'bair')">View</button></td>
                 </tr>
 
                 <tr data-move="uair">
                     <td class="move-name">Up Air</td>
-                    <td class="damage">10</td>
+                    <td class="damage">4</td>
                     <td class="angle">80</td>
-                    <td>106</td>
+                    <td>130</td>
                     <td>0</td>
-                    <td>50</td>
+                    <td>53</td>
                     <td class="frame">5</td>
-                    <td class="frame">44</td>
+                    <td class="frame">40</td>
                     <td class="frame">12</td>
-                    <td class="disadvantage">-5</td>
+                    <td class="disadvantage">-8</td>
                     <td><button class="view-btn" onclick="openViewer('jack', 'uair')">View</button></td>
                 </tr>
 
@@ -713,7 +719,7 @@ tr.stance-unavailable .view-btn {
                     <td>0</td>
                     <td>40</td>
                     <td class="frame">10</td>
-                    <td class="frame">51</td>
+                    <td class="frame">45</td>
                     <td class="frame">10</td>
                     <td class="disadvantage">-3</td>
                     <td><button class="view-btn" onclick="openViewer('jack', 'dair')">View</button></td>
@@ -829,7 +835,7 @@ tr.stance-unavailable .view-btn {
         </table>
 
         <div class="footer">
-            <p>Generated on 2026-04-25 08:51:40 Eastern Daylight Time</p>
+            <p>Generated on 2026-04-25 23:21:06 Eastern Daylight Time</p>
         </div>
     </div>
     
@@ -846,7 +852,8 @@ tr.stance-unavailable .view-btn {
         let currentStance = null;
         const stanceSelector = document.getElementById('stance-selector');
         if (stanceSelector) {
-            currentStance = 'Regular';
+            const activeBtn = stanceSelector.querySelector('.stance-btn.active');
+            if (activeBtn) currentStance = activeBtn.textContent.trim();
         }
         
         function openViewer(character, move) {
@@ -888,76 +895,57 @@ tr.stance-unavailable .view-btn {
         // pipeline's motion-rate-computed values are preserved by the restore loop.
         // Damage values use floor-to-1-decimal rounding per standard.
         const STANCE_DATA = {
-            'Regular': {
-                'jab1':     { damage: '2.1', angle: '361', kbg: '25', fkb: '0', bkb: '20' },
-                'jab2':     { damage: '1.9', angle: '361', kbg: '25', fkb: '0', bkb: '15' },
-                'jab3':     { damage: '3.9', angle: '40', kbg: '70', fkb: '0', bkb: '60' },
-                'dash_attack': { damage: '10.8', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
-                'ftilt':    { damage: '9', angle: '361', kbg: '120', fkb: '0', bkb: '40', name: 'Forward Tilt (Fire)' },
-                'ftilt_second': { damage: 'N/A', available: false, name: 'Forward Tilt (Hit 2)' },
-                'utilt':    { damage: '8.1', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
-                'dtilt':    { damage: '7.2', angle: '86', kbg: '75', fkb: '0', bkb: '60' },
-                'fsmash':   { damage: '13.5', angle: '45', kbg: '110', fkb: '0', bkb: '25', name: 'Forward Smash' },
-                'usmash':   { damage: '11.2', angle: '90', kbg: '86', fkb: '0', bkb: '90' },
-                'dsmash':   { damage: '6.3', angle: '175', kbg: '99', fkb: '80', bkb: '0' },
-                'nair':     { damage: '2.7', angle: '55', kbg: '125', fkb: '0', bkb: '40' },
-                'fair':     { damage: '9.9', angle: '40', kbg: '94', fkb: '0', bkb: '30' },
-                'bair':     { damage: '13.5', angle: '50', kbg: '108', fkb: '0', bkb: '25', name: 'Back Air' },
-                'uair':     { damage: '8.1', angle: '75', kbg: '87', fkb: '0', bkb: '63' },
-                'dair':     { damage: '11.7', angle: '270', kbg: '67', fkb: '0', bkb: '20' },
-                'pummel':   { damage: '1.4' },
-                'fthrow':   { damage: '2.7', angle: '45', kbg: '65', bkb: '70' },
-                'bthrow':   { damage: '11', angle: '135', kbg: '87', bkb: '60' },
-                'uthrow':   { damage: '5', angle: '90', kbg: '100', bkb: '82' },
-                'dthrow':   { damage: '2.2', angle: '66', kbg: '100', bkb: '0' },
+            'Joker': {
+                'bair': { damage: '11', angle: '45', kbg: '90', fkb: '0', bkb: '50', frame: '6', faf: '38' },
+                'bthrow': { damage: '9', angle: '134', kbg: '85', fkb: '0', bkb: '52', frame: '14', faf: '33' },
+                'combo3': { damage: '5', angle: '361', kbg: '80', fkb: '0', bkb: '60', frame: '3' },
+                'dair': { damage: '10', angle: '361', kbg: '100', fkb: '0', bkb: '40', frame: '10', faf: '45' },
+                'dash_attack': { damage: '7', angle: '75', kbg: '115', fkb: '0', bkb: '37', frame: '7', faf: '39' },
+                'dash_grab': { damage: '0', frame: '8', faf: '43' },
+                'dsmash': { damage: '13', angle: '32', kbg: '106', fkb: '0', bkb: '30', frame: '12', faf: '54' },
+                'dthrow': { damage: '7', angle: '79', kbg: '95', fkb: '0', bkb: '55', frame: '23', faf: '41' },
+                'dtilt': { damage: '9', angle: '39', kbg: '35', fkb: '0', bkb: '60', frame: '8', faf: '32' },
+                'fair': { damage: '6', angle: '361', kbg: '125', fkb: '0', bkb: '40', frame: '7', faf: '44' },
+                'fsmash': { damage: '14', angle: '361', kbg: '112', fkb: '0', bkb: '40', frame: '15', faf: '61' },
+                'fthrow': { damage: '8', angle: '45', kbg: '65', fkb: '0', bkb: '65', frame: '9', faf: '26' },
+                'ftilt': { damage: '5', angle: '40', kbg: '110', fkb: '0', bkb: '45', frame: '8', faf: '35' },
+                'grab': { damage: '0', frame: '7', faf: '36' },
+                'jab1': { damage: '3', angle: '361', kbg: '30', fkb: '0', bkb: '32', frame: '4', faf: '18' },
+                'jab2': { damage: '3', angle: '75', kbg: '30', fkb: '0', bkb: '25', frame: '3', faf: '18' },
+                'jab3': { damage: '5', angle: '361', kbg: '80', fkb: '0', bkb: '60', frame: '3', faf: '28' },
+                'nair': { damage: '9', angle: '52', kbg: '87', fkb: '0', bkb: '47', frame: '10', faf: '42' },
+                'pivot_grab': { damage: '0', frame: '9', faf: '38' },
+                'pummel': { damage: '1.5', angle: '361', kbg: '100', fkb: '30', bkb: '0', frame: '1', faf: '7' },
+                'uair': { damage: '4', angle: '80', kbg: '130', fkb: '0', bkb: '53', frame: '5', faf: '40' },
+                'usmash': { damage: '12', angle: '83', kbg: '116', fkb: '0', bkb: '43', frame: '9', faf: '53' },
+                'uthrow': { damage: '7', angle: '90', kbg: '72', fkb: '0', bkb: '70', frame: '16', faf: '35' },
+                'utilt': { damage: '5', angle: '90', kbg: '116', fkb: '0', bkb: '75', frame: '8', faf: '32' },
             },
-            'Putrid': {
-                'jab1':     { damage: '1.8', angle: '361', kbg: '25', fkb: '0', bkb: '20' },
-                'jab2':     { damage: '1.6', angle: '361', kbg: '25', fkb: '0', bkb: '15' },
-                'jab3':     { damage: 'N/A', available: false },
-                'dash_attack': { damage: '9', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
-                'ftilt':    { damage: '4.6', angle: '366', kbg: '20', fkb: '0', bkb: '20', frame: '7', faf: '35', name: 'Forward Tilt (Hit 1)' },
-                'ftilt_second': { damage: '5.1', angle: '361', kbg: '125', fkb: '0', bkb: '40', frame: '5', faf: '30', name: 'Forward Tilt (Poison Bite)' },
-                'utilt':    { damage: '5.8', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
-                'dtilt':    { damage: '6', angle: '86', kbg: '75', fkb: '0', bkb: '70' },
-                'fsmash':   { damage: '9.7', angle: '45', kbg: '140', fkb: '0', bkb: '25', name: 'Forward Smash' },
-                'usmash':   { damage: '10.6', angle: '90', kbg: '86', fkb: '0', bkb: '90' },
-                'dsmash':   { damage: '10.5', angle: '32', kbg: '99', fkb: '0', bkb: '25' },
-                'nair':     { damage: '2.2', angle: '55', kbg: '125', fkb: '0', bkb: '40' },
-                'fair':     { damage: '8.2', angle: '40', kbg: '94', fkb: '0', bkb: '30' },
-                'bair':     { damage: '4.5', angle: '50', kbg: '108', fkb: '0', bkb: '25', name: 'Back Air (Poison Multi-hit)' },
-                'uair':     { damage: '5.8', angle: '105', kbg: '87', fkb: '0', bkb: '68' },
-                'dair':     { damage: '9.7', angle: '270', kbg: '67', fkb: '0', bkb: '20' },
-                'pummel':   { damage: '1.7' },
-                'fthrow':   { damage: '1.9', angle: '45', kbg: '65', bkb: '70' },
-                'bthrow':   { damage: '11', angle: '135', kbg: '77', bkb: '60' },
-                'uthrow':   { damage: '5', angle: '90', kbg: '100', bkb: '82' },
-                'dthrow':   { damage: '2.1', angle: '68', kbg: '100', bkb: '0' },
-            },
-            'Prickly': {
-                'jab1':     { damage: '2.7', angle: '361', kbg: '25', fkb: '0', bkb: '20' },
-                'jab2':     { damage: '2.5', angle: '361', kbg: '25', fkb: '0', bkb: '15' },
-                'jab3':     { damage: '5.7', angle: '30', kbg: '70', fkb: '0', bkb: '75' },
-                'rapid_jab':          { available: false },
-                'rapid_jab_finisher': { available: false },
-                'dash_attack': { damage: '13.8', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
-                'ftilt':    { damage: '10.5', angle: '361', kbg: '125', fkb: '0', bkb: '40', frame: '7', faf: '30', name: 'Forward Tilt (Heavy Bite)' },
-                'ftilt_second': { damage: 'N/A', available: false, name: 'Forward Tilt (Hit 2)' },
-                'utilt':    { damage: '11.7', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
-                'dtilt':    { damage: '9.2', angle: '86', kbg: '75', fkb: '0', bkb: '60' },
-                'fsmash':   { damage: '25', angle: '45', kbg: '100', fkb: '0', bkb: '25', frame: '26', faf: '70', name: 'Forward Smash (Lunge)' },
-                'usmash':   { damage: '13.1', angle: '90', kbg: '86', fkb: '0', bkb: '90' },
-                'dsmash':   { damage: '16.1', angle: '32', kbg: '99', fkb: '0', bkb: '25' },
-                'nair':     { damage: '3.4', angle: '55', kbg: '125', fkb: '0', bkb: '40' },
-                'fair':     { damage: '12.6', angle: '40', kbg: '94', fkb: '0', bkb: '30', frame: '11', faf: '39' },
-                'bair':     { damage: '19.5', angle: '45', kbg: '95', fkb: '0', bkb: '25', frame: '18', faf: '62', name: 'Back Air (Prickly)' },
-                'uair':     { damage: '11.7', angle: '75', kbg: '87', fkb: '0', bkb: '53' },
-                'dair':     { damage: '14.9', angle: '270', kbg: '67', fkb: '0', bkb: '20' },
-                'pummel':   { damage: '1.4' },
-                'fthrow':   { damage: '3.9', angle: '35', kbg: '77', bkb: '70' },
-                'bthrow':   { damage: '11', angle: '135', kbg: '77', bkb: '60' },
-                'uthrow':   { damage: '5', angle: '90', kbg: '100', bkb: '82' },
-                'dthrow':   { damage: '2.6', angle: '70', kbg: '100', bkb: '0' },
+            'Arsene': {
+                'bair': { damage: '14', angle: '45', kbg: '87', fkb: '0', bkb: '58', frame: '6', faf: '38' },
+                'bthrow': { damage: '9', angle: '134', kbg: '85', fkb: '0', bkb: '52', frame: '14', faf: '33' },
+                'combo3': { damage: '5', angle: '361', kbg: '80', fkb: '0', bkb: '60', frame: '3' },
+                'dair': { damage: '10', angle: '270', kbg: '63', fkb: '0', bkb: '31', frame: '10', faf: '51' },
+                'dash_attack': { damage: '12', angle: '85', kbg: '67', fkb: '0', bkb: '50', frame: '9', faf: '43' },
+                'dash_grab': { damage: '0', frame: '8', faf: '43' },
+                'dsmash': { damage: '13', angle: '32', kbg: '106', fkb: '0', bkb: '30', frame: '12', faf: '58' },
+                'dthrow': { damage: '7', angle: '79', kbg: '95', fkb: '0', bkb: '55', frame: '23', faf: '41' },
+                'dtilt': { damage: '9', angle: '39', kbg: '35', fkb: '0', bkb: '60', frame: '8', faf: '32' },
+                'fair': { damage: '9', angle: '361', kbg: '110', fkb: '0', bkb: '58', frame: '7', faf: '49' },
+                'fsmash': { damage: '14', angle: '361', kbg: '120', fkb: '0', bkb: '40', frame: '15', faf: '61' },
+                'fthrow': { damage: '8', angle: '45', kbg: '65', fkb: '0', bkb: '65', frame: '9', faf: '26' },
+                'ftilt': { damage: '10', angle: '40', kbg: '65', fkb: '0', bkb: '60', frame: '8', faf: '37' },
+                'grab': { damage: '0', frame: '7', faf: '36' },
+                'jab1': { damage: '3', angle: '361', kbg: '30', fkb: '0', bkb: '32', frame: '4', faf: '18' },
+                'jab2': { damage: '3', angle: '75', kbg: '30', fkb: '0', bkb: '25', frame: '3', faf: '18' },
+                'jab3': { damage: '5', angle: '361', kbg: '80', fkb: '0', bkb: '60', frame: '3', faf: '33' },
+                'nair': { damage: '9', angle: '52', kbg: '87', fkb: '0', bkb: '47', frame: '10', faf: '50' },
+                'pivot_grab': { damage: '0', frame: '9', faf: '38' },
+                'pummel': { damage: '1.5', angle: '361', kbg: '100', fkb: '30', bkb: '0', frame: '1', faf: '7' },
+                'uair': { damage: '10', angle: '80', kbg: '106', fkb: '0', bkb: '50', frame: '5', faf: '44' },
+                'usmash': { damage: '12', angle: '83', kbg: '116', fkb: '0', bkb: '43', frame: '9', faf: '58' },
+                'uthrow': { damage: '7', angle: '90', kbg: '72', fkb: '0', bkb: '70', frame: '16', faf: '35' },
+                'utilt': { damage: '5', angle: '90', kbg: '116', fkb: '0', bkb: '75', frame: '8', faf: '32' },
             },
         };
         
@@ -1029,8 +1017,13 @@ tr.stance-unavailable .view-btn {
                 
                 // Determine table type by checking for specific column structures
                 const isThrowTable = row.closest('#table-throws-sub') !== null;
+                const isGrabTable = row.closest('#table-grabs-sub') !== null;
                 
-                if (isThrowTable) {
+                if (isGrabTable) {
+                    // Grabs table: Move(0), Startup Frame(1), Viewer(2)
+                    // Only the frame matters here — grabs have no damage/angle/kbg/bkb.
+                    if (moveData.frame !== undefined && cells[1]) cells[1].textContent = moveData.frame;
+                } else if (isThrowTable) {
                     // Throws table: Move(0), Damage(1), Angle(2), KBG(3), BKB(4), FAF(5), Viewer(6)
                     if (moveData.damage !== undefined) cells[1].textContent = moveData.damage;
                     if (moveData.angle !== undefined) cells[2].textContent = moveData.angle;
@@ -1064,9 +1057,9 @@ tr.stance-unavailable .view-btn {
             });
         }
         
-        // Apply Regular stance on load for stance characters
+        // Apply default stance on load for stance characters
         if (currentStance) {
-            setStance('Regular');
+            setStance(currentStance);
         }
         
         // Table sorting

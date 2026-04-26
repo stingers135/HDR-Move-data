@@ -817,7 +817,7 @@ tr.stance-unavailable .view-btn {
         </table>
 
         <div class="footer">
-            <p>Generated on 2026-04-25 08:51:40 Eastern Daylight Time</p>
+            <p>Generated on 2026-04-25 23:21:06 Eastern Daylight Time</p>
         </div>
     </div>
     
@@ -834,7 +834,8 @@ tr.stance-unavailable .view-btn {
         let currentStance = null;
         const stanceSelector = document.getElementById('stance-selector');
         if (stanceSelector) {
-            currentStance = 'Regular';
+            const activeBtn = stanceSelector.querySelector('.stance-btn.active');
+            if (activeBtn) currentStance = activeBtn.textContent.trim();
         }
         
         function openViewer(character, move) {
@@ -876,77 +877,7 @@ tr.stance-unavailable .view-btn {
         // pipeline's motion-rate-computed values are preserved by the restore loop.
         // Damage values use floor-to-1-decimal rounding per standard.
         const STANCE_DATA = {
-            'Regular': {
-                'jab1':     { damage: '2.1', angle: '361', kbg: '25', fkb: '0', bkb: '20' },
-                'jab2':     { damage: '1.9', angle: '361', kbg: '25', fkb: '0', bkb: '15' },
-                'jab3':     { damage: '3.9', angle: '40', kbg: '70', fkb: '0', bkb: '60' },
-                'dash_attack': { damage: '10.8', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
-                'ftilt':    { damage: '9', angle: '361', kbg: '120', fkb: '0', bkb: '40', name: 'Forward Tilt (Fire)' },
-                'ftilt_second': { damage: 'N/A', available: false, name: 'Forward Tilt (Hit 2)' },
-                'utilt':    { damage: '8.1', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
-                'dtilt':    { damage: '7.2', angle: '86', kbg: '75', fkb: '0', bkb: '60' },
-                'fsmash':   { damage: '13.5', angle: '45', kbg: '110', fkb: '0', bkb: '25', name: 'Forward Smash' },
-                'usmash':   { damage: '11.2', angle: '90', kbg: '86', fkb: '0', bkb: '90' },
-                'dsmash':   { damage: '6.3', angle: '175', kbg: '99', fkb: '80', bkb: '0' },
-                'nair':     { damage: '2.7', angle: '55', kbg: '125', fkb: '0', bkb: '40' },
-                'fair':     { damage: '9.9', angle: '40', kbg: '94', fkb: '0', bkb: '30' },
-                'bair':     { damage: '13.5', angle: '50', kbg: '108', fkb: '0', bkb: '25', name: 'Back Air' },
-                'uair':     { damage: '8.1', angle: '75', kbg: '87', fkb: '0', bkb: '63' },
-                'dair':     { damage: '11.7', angle: '270', kbg: '67', fkb: '0', bkb: '20' },
-                'pummel':   { damage: '1.4' },
-                'fthrow':   { damage: '2.7', angle: '45', kbg: '65', bkb: '70' },
-                'bthrow':   { damage: '11', angle: '135', kbg: '87', bkb: '60' },
-                'uthrow':   { damage: '5', angle: '90', kbg: '100', bkb: '82' },
-                'dthrow':   { damage: '2.2', angle: '66', kbg: '100', bkb: '0' },
-            },
-            'Putrid': {
-                'jab1':     { damage: '1.8', angle: '361', kbg: '25', fkb: '0', bkb: '20' },
-                'jab2':     { damage: '1.6', angle: '361', kbg: '25', fkb: '0', bkb: '15' },
-                'jab3':     { damage: 'N/A', available: false },
-                'dash_attack': { damage: '9', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
-                'ftilt':    { damage: '4.6', angle: '366', kbg: '20', fkb: '0', bkb: '20', frame: '7', faf: '35', name: 'Forward Tilt (Hit 1)' },
-                'ftilt_second': { damage: '5.1', angle: '361', kbg: '125', fkb: '0', bkb: '40', frame: '5', faf: '30', name: 'Forward Tilt (Poison Bite)' },
-                'utilt':    { damage: '5.8', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
-                'dtilt':    { damage: '6', angle: '86', kbg: '75', fkb: '0', bkb: '70' },
-                'fsmash':   { damage: '9.7', angle: '45', kbg: '140', fkb: '0', bkb: '25', name: 'Forward Smash' },
-                'usmash':   { damage: '10.6', angle: '90', kbg: '86', fkb: '0', bkb: '90' },
-                'dsmash':   { damage: '10.5', angle: '32', kbg: '99', fkb: '0', bkb: '25' },
-                'nair':     { damage: '2.2', angle: '55', kbg: '125', fkb: '0', bkb: '40' },
-                'fair':     { damage: '8.2', angle: '40', kbg: '94', fkb: '0', bkb: '30' },
-                'bair':     { damage: '4.5', angle: '50', kbg: '108', fkb: '0', bkb: '25', name: 'Back Air (Poison Multi-hit)' },
-                'uair':     { damage: '5.8', angle: '105', kbg: '87', fkb: '0', bkb: '68' },
-                'dair':     { damage: '9.7', angle: '270', kbg: '67', fkb: '0', bkb: '20' },
-                'pummel':   { damage: '1.7' },
-                'fthrow':   { damage: '1.9', angle: '45', kbg: '65', bkb: '70' },
-                'bthrow':   { damage: '11', angle: '135', kbg: '77', bkb: '60' },
-                'uthrow':   { damage: '5', angle: '90', kbg: '100', bkb: '82' },
-                'dthrow':   { damage: '2.1', angle: '68', kbg: '100', bkb: '0' },
-            },
-            'Prickly': {
-                'jab1':     { damage: '2.7', angle: '361', kbg: '25', fkb: '0', bkb: '20' },
-                'jab2':     { damage: '2.5', angle: '361', kbg: '25', fkb: '0', bkb: '15' },
-                'jab3':     { damage: '5.7', angle: '30', kbg: '70', fkb: '0', bkb: '75' },
-                'rapid_jab':          { available: false },
-                'rapid_jab_finisher': { available: false },
-                'dash_attack': { damage: '13.8', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
-                'ftilt':    { damage: '10.5', angle: '361', kbg: '125', fkb: '0', bkb: '40', frame: '7', faf: '30', name: 'Forward Tilt (Heavy Bite)' },
-                'ftilt_second': { damage: 'N/A', available: false, name: 'Forward Tilt (Hit 2)' },
-                'utilt':    { damage: '11.7', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
-                'dtilt':    { damage: '9.2', angle: '86', kbg: '75', fkb: '0', bkb: '60' },
-                'fsmash':   { damage: '25', angle: '45', kbg: '100', fkb: '0', bkb: '25', frame: '26', faf: '70', name: 'Forward Smash (Lunge)' },
-                'usmash':   { damage: '13.1', angle: '90', kbg: '86', fkb: '0', bkb: '90' },
-                'dsmash':   { damage: '16.1', angle: '32', kbg: '99', fkb: '0', bkb: '25' },
-                'nair':     { damage: '3.4', angle: '55', kbg: '125', fkb: '0', bkb: '40' },
-                'fair':     { damage: '12.6', angle: '40', kbg: '94', fkb: '0', bkb: '30', frame: '11', faf: '39' },
-                'bair':     { damage: '19.5', angle: '45', kbg: '95', fkb: '0', bkb: '25', frame: '18', faf: '62', name: 'Back Air (Prickly)' },
-                'uair':     { damage: '11.7', angle: '75', kbg: '87', fkb: '0', bkb: '53' },
-                'dair':     { damage: '14.9', angle: '270', kbg: '67', fkb: '0', bkb: '20' },
-                'pummel':   { damage: '1.4' },
-                'fthrow':   { damage: '3.9', angle: '35', kbg: '77', bkb: '70' },
-                'bthrow':   { damage: '11', angle: '135', kbg: '77', bkb: '60' },
-                'uthrow':   { damage: '5', angle: '90', kbg: '100', bkb: '82' },
-                'dthrow':   { damage: '2.6', angle: '70', kbg: '100', bkb: '0' },
-            },
+
         };
         
         // Save original row data on page load (before any stance is applied)
@@ -1017,8 +948,13 @@ tr.stance-unavailable .view-btn {
                 
                 // Determine table type by checking for specific column structures
                 const isThrowTable = row.closest('#table-throws-sub') !== null;
+                const isGrabTable = row.closest('#table-grabs-sub') !== null;
                 
-                if (isThrowTable) {
+                if (isGrabTable) {
+                    // Grabs table: Move(0), Startup Frame(1), Viewer(2)
+                    // Only the frame matters here — grabs have no damage/angle/kbg/bkb.
+                    if (moveData.frame !== undefined && cells[1]) cells[1].textContent = moveData.frame;
+                } else if (isThrowTable) {
                     // Throws table: Move(0), Damage(1), Angle(2), KBG(3), BKB(4), FAF(5), Viewer(6)
                     if (moveData.damage !== undefined) cells[1].textContent = moveData.damage;
                     if (moveData.angle !== undefined) cells[2].textContent = moveData.angle;
@@ -1052,9 +988,9 @@ tr.stance-unavailable .view-btn {
             });
         }
         
-        // Apply Regular stance on load for stance characters
+        // Apply default stance on load for stance characters
         if (currentStance) {
-            setStance('Regular');
+            setStance(currentStance);
         }
         
         // Table sorting

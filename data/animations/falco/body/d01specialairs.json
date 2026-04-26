@@ -1,0 +1,3834 @@
+{
+  "major_version": 2,
+  "minor_version": 0,
+  "final_frame_index": 5.0,
+  "groups": [
+    {
+      "group_type": "Transform",
+      "nodes": [
+        {
+          "name": "ArmL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0444932,
+                      "y": -0.0092313,
+                      "z": 0.202939,
+                      "w": 0.978136
+                    },
+                    "translation": {
+                      "x": 2.66652,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ArmR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.000158413,
+                      "y": 0.0000410021,
+                      "z": 0.251603,
+                      "w": 0.96783
+                    },
+                    "translation": {
+                      "x": 2.66652,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Bust",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0170341,
+                      "y": -0.0381266,
+                      "z": 0.1935,
+                      "w": 0.980211
+                    },
+                    "translation": {
+                      "x": 1.18052,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ClavicleC",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0743046,
+                      "w": 0.997236
+                    },
+                    "translation": {
+                      "x": 1.26254,
+                      "y": -0.00230558,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ClavicleL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.00000242008,
+                      "y": -0.707106,
+                      "z": 0.00000242007,
+                      "w": 0.707108
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.695804
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ClavicleR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.00000241987,
+                      "y": 0.707106,
+                      "z": 0.00000241986,
+                      "w": 0.707108
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.695804
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL10",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.05,
+                      "y": 0.0,
+                      "z": -0.16
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL11",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.017252,
+                      "y": 0.103095,
+                      "z": -0.164143,
+                      "w": 0.980883
+                    },
+                    "translation": {
+                      "x": 1.08564,
+                      "y": -0.103359,
+                      "z": -0.450893
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL12",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.104529,
+                      "w": 0.994522
+                    },
+                    "translation": {
+                      "x": 0.470314,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL13",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.130526,
+                      "w": 0.991445
+                    },
+                    "translation": {
+                      "x": 0.63022,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL20",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.070278,
+                      "y": -0.0314177,
+                      "z": 0.0196826,
+                      "w": 0.996838
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.16
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL21",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.174125,
+                      "w": 0.984724
+                    },
+                    "translation": {
+                      "x": 1.11747,
+                      "y": -0.0964116,
+                      "z": -0.0683371
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL22",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.104529,
+                      "w": 0.994522
+                    },
+                    "translation": {
+                      "x": 0.410421,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL23",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.130526,
+                      "w": 0.991445
+                    },
+                    "translation": {
+                      "x": 0.493824,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL30",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.105338,
+                      "y": -0.0223712,
+                      "z": 0.0374311,
+                      "w": 0.99348
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.16
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL31",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0725956,
+                      "y": -0.105869,
+                      "z": -0.175622,
+                      "w": 0.976052
+                    },
+                    "translation": {
+                      "x": 0.992001,
+                      "y": -0.0894753,
+                      "z": 0.268456
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL32",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.0664991,
+                      "w": 0.997786
+                    },
+                    "translation": {
+                      "x": 0.38989,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL33",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.131185,
+                      "w": 0.991358
+                    },
+                    "translation": {
+                      "x": 0.296804,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL40",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.175103,
+                      "y": -0.0252397,
+                      "z": 0.0575616,
+                      "w": 0.982542
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.16
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL41",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.183758,
+                      "y": -0.242146,
+                      "z": -0.145345,
+                      "w": 0.941527
+                    },
+                    "translation": {
+                      "x": 0.756404,
+                      "y": -0.0999621,
+                      "z": 0.673482
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL42",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0466406,
+                      "w": 0.998912
+                    },
+                    "translation": {
+                      "x": 0.279846,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL43",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.129504,
+                      "w": 0.991579
+                    },
+                    "translation": {
+                      "x": 0.2494,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL51",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.749975,
+                      "y": 0.374987,
+                      "z": 0.251655,
+                      "w": 0.483313
+                    },
+                    "translation": {
+                      "x": 0.12,
+                      "y": 0.116289,
+                      "z": -0.526703
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL52",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.000898839,
+                      "y": -0.0568981,
+                      "z": -0.172773,
+                      "w": 0.983316
+                    },
+                    "translation": {
+                      "x": 0.424723,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerL53",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.182235,
+                      "w": 0.983255
+                    },
+                    "translation": {
+                      "x": 0.427606,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR10",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.05,
+                      "y": 0.0,
+                      "z": 0.16
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR11",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0172519,
+                      "y": -0.103095,
+                      "z": -0.164144,
+                      "w": 0.980883
+                    },
+                    "translation": {
+                      "x": 1.08564,
+                      "y": -0.103359,
+                      "z": 0.450893
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR12",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.104529,
+                      "w": 0.994522
+                    },
+                    "translation": {
+                      "x": 0.470314,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR13",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.130526,
+                      "w": 0.991445
+                    },
+                    "translation": {
+                      "x": 0.63022,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR20",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.070278,
+                      "y": 0.0314177,
+                      "z": 0.0196826,
+                      "w": 0.996838
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.16
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR21",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.174125,
+                      "w": 0.984724
+                    },
+                    "translation": {
+                      "x": 1.11747,
+                      "y": -0.0964116,
+                      "z": 0.0683371
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR22",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.104529,
+                      "w": 0.994522
+                    },
+                    "translation": {
+                      "x": 0.410421,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR23",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.130526,
+                      "w": 0.991445
+                    },
+                    "translation": {
+                      "x": 0.493824,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR30",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.105338,
+                      "y": 0.0223712,
+                      "z": 0.0374311,
+                      "w": 0.99348
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.16
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR31",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.0725956,
+                      "y": 0.105869,
+                      "z": -0.175622,
+                      "w": 0.976052
+                    },
+                    "translation": {
+                      "x": 0.992001,
+                      "y": -0.0894753,
+                      "z": -0.268456
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR32",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.0664991,
+                      "w": 0.997786
+                    },
+                    "translation": {
+                      "x": 0.38989,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR33",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.131185,
+                      "w": 0.991358
+                    },
+                    "translation": {
+                      "x": 0.296804,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR40",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.175103,
+                      "y": 0.0252397,
+                      "z": 0.0575616,
+                      "w": 0.982542
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.16
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR41",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.183758,
+                      "y": 0.242146,
+                      "z": -0.145345,
+                      "w": 0.941527
+                    },
+                    "translation": {
+                      "x": 0.756404,
+                      "y": -0.0999621,
+                      "z": -0.673482
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR42",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0466406,
+                      "w": 0.998912
+                    },
+                    "translation": {
+                      "x": 0.279846,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR43",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.129504,
+                      "w": 0.991579
+                    },
+                    "translation": {
+                      "x": 0.2494,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR51",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.749975,
+                      "y": -0.374987,
+                      "z": 0.251655,
+                      "w": 0.483313
+                    },
+                    "translation": {
+                      "x": 0.12,
+                      "y": 0.116289,
+                      "z": 0.526703
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR52",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.036405,
+                      "y": 0.125597,
+                      "z": -0.17397,
+                      "w": 0.97603
+                    },
+                    "translation": {
+                      "x": 0.424723,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FingerR53",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.182235,
+                      "w": 0.983255
+                    },
+                    "translation": {
+                      "x": 0.427606,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FootL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.05135,
+                      "y": 0.145683,
+                      "z": 0.243805,
+                      "w": 0.957444
+                    },
+                    "translation": {
+                      "x": 3.32088,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FootR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.122198,
+                      "y": -0.0430298,
+                      "z": -0.086892,
+                      "w": 0.987758
+                    },
+                    "translation": {
+                      "x": 3.32088,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "HandL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.707086,
+                      "y": -0.00000889476,
+                      "z": -0.0000830693,
+                      "w": 0.707128
+                    },
+                    "translation": {
+                      "x": 2.43263,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "HandR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.70712,
+                      "y": -0.0000567602,
+                      "z": 0.000111366,
+                      "w": 0.707093
+                    },
+                    "translation": {
+                      "x": 2.43419,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "HaveL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.5,
+                      "y": 0.5,
+                      "z": -0.5,
+                      "w": 0.5
+                    },
+                    "translation": {
+                      "x": 1.08863,
+                      "y": 0.288555,
+                      "z": -0.129597
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "HaveR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "z": 0.5,
+                      "w": 0.5
+                    },
+                    "translation": {
+                      "x": 1.08746,
+                      "y": 0.288558,
+                      "z": 0.129598
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Head",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0523227,
+                      "y": 0.0258347,
+                      "z": -0.51774,
+                      "w": 0.853545
+                    },
+                    "translation": {
+                      "x": 1.19018,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Hip",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.623216,
+                      "y": -0.155263,
+                      "z": 0.6214,
+                      "w": 0.448728
+                    },
+                    "translation": {
+                      "x": -0.627524,
+                      "y": -2.14931,
+                      "z": 1.1635
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "KneeL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.0829909,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 0.99655
+                    },
+                    "translation": {
+                      "x": 3.17866,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "KneeR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.128467,
+                      "y": 0.0353805,
+                      "z": 0.889901,
+                      "w": 0.436258
+                    },
+                    "translation": {
+                      "x": 3.17866,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "LegC",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.17026,
+                      "w": 0.985399
+                    },
+                    "translation": {
+                      "x": -0.463991,
+                      "y": 0.383359,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "LegL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.136731,
+                      "y": 0.198256,
+                      "z": -0.931172,
+                      "w": 0.273711
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 1.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "LegR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.314313,
+                      "y": 0.107437,
+                      "z": 0.732013,
+                      "w": 0.594829
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -1.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Mouth",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.7071,
+                      "w": 0.707114
+                    },
+                    "translation": {
+                      "x": -0.153134,
+                      "y": 0.38568,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Neck",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.200572,
+                      "y": 0.0719038,
+                      "z": -0.113372,
+                      "w": 0.970437
+                    },
+                    "translation": {
+                      "x": 1.99543,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Reflector",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.120922,
+                      "y": -0.944604,
+                      "z": -0.221888,
+                      "w": 0.209444
+                    },
+                    "translation": {
+                      "x": 0.540351,
+                      "y": -0.109414,
+                      "z": 1.40944
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Rot",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 8.48057,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShoulderL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.480834,
+                      "y": -0.225095,
+                      "z": -0.213756,
+                      "w": 0.820024
+                    },
+                    "translation": {
+                      "x": 1.19718,
+                      "y": -0.264709,
+                      "z": 0.566747
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShoulderR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.344964,
+                      "y": 0.0868276,
+                      "z": -0.277696,
+                      "w": 0.892382
+                    },
+                    "translation": {
+                      "x": 1.19719,
+                      "y": -0.264709,
+                      "z": -0.566799
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Tail1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.817174,
+                      "w": 0.576391
+                    },
+                    "translation": {
+                      "x": -0.244449,
+                      "y": -0.967301,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Tail2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 2.98252,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Throw",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": -8.48057,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ToeL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.707107,
+                      "w": 0.707107
+                    },
+                    "translation": {
+                      "x": 0.79757,
+                      "y": -1.98394,
+                      "z": 0.0973036
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ToeR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.707107,
+                      "w": 0.707107
+                    },
+                    "translation": {
+                      "x": 0.797573,
+                      "y": -1.98395,
+                      "z": -0.097307
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Trans",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  },
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 9.199998
+                    }
+                  },
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 18.400002
+                    }
+                  },
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 27.599998
+                    }
+                  },
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 36.799995
+                    }
+                  },
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 46.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Waist",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.00990367,
+                      "y": -0.0305039,
+                      "z": -0.0478401,
+                      "w": 0.99834
+                    },
+                    "translation": {
+                      "x": 1.20007,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group_type": "Visibility",
+      "nodes": [
+        {
+          "name": "Falco_Appeal_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Attack_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Attack_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Blink_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Bound_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Capture_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Capture_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Catch_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Cliff_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Down_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Escape_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_FaceN_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_FaceN_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Furafura_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Halfblink_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Heavyattack_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Heavyattack_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Heavyhit_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Heavyouch_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Hot",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Ouch_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Ouch_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Talk_mayu",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_Talk_mouth",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_big_eye",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Falco_normal_eye",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "falco_blaster",
+          "tracks": [
+            {
+              "name": "Visibility",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group_type": "Material",
+      "nodes": [
+        {
+          "name": "EyeL",
+          "tracks": [
+            {
+              "name": "CustomBoolean1",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            },
+            {
+              "name": "CustomBoolean11",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            },
+            {
+              "name": "CustomBoolean3",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            },
+            {
+              "name": "CustomBoolean4",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            },
+            {
+              "name": "CustomBoolean6",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            },
+            {
+              "name": "CustomVector0",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector11",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 0.25,
+                    "y": 0.02,
+                    "z": 0.01,
+                    "w": 1.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector13",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector27",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector29",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector30",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 0.5,
+                    "y": 1.5,
+                    "z": 1.0,
+                    "w": 1.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector31",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 0.06,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector6",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 0.0,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector8",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "nfTexture1[0]",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "UvTransform": [
+                  {
+                    "scale_u": 1.0,
+                    "scale_v": 1.0,
+                    "rotation": 0.0,
+                    "translate_u": 0.0,
+                    "translate_v": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "nfTexture1[0].PatternIndex",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "PatternIndex": [
+                  1
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "EyeR",
+          "tracks": [
+            {
+              "name": "CustomBoolean1",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            },
+            {
+              "name": "CustomBoolean11",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            },
+            {
+              "name": "CustomBoolean3",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            },
+            {
+              "name": "CustomBoolean4",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  true
+                ]
+              }
+            },
+            {
+              "name": "CustomBoolean6",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Boolean": [
+                  false
+                ]
+              }
+            },
+            {
+              "name": "CustomVector0",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector11",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 0.25,
+                    "y": 0.02,
+                    "z": 0.01,
+                    "w": 1.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector13",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector27",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector29",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector30",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 0.5,
+                    "y": 1.5,
+                    "z": 1.0,
+                    "w": 1.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector31",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": -0.03,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector6",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 0.0,
+                    "w": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "CustomVector8",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Vector4": [
+                  {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0,
+                    "w": 1.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "nfTexture1[0]",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "UvTransform": [
+                  {
+                    "scale_u": 1.0,
+                    "scale_v": 1.0,
+                    "rotation": 0.0,
+                    "translate_u": 0.0,
+                    "translate_v": 0.0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "nfTexture1[0].PatternIndex",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "PatternIndex": [
+                  1
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

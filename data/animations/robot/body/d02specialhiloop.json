@@ -1,0 +1,1196 @@
+{
+  "major_version": 2,
+  "minor_version": 0,
+  "final_frame_index": 1.0,
+  "groups": [
+    {
+      "group_type": "Transform",
+      "nodes": [
+        {
+          "name": "CoverD1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.0000131327,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": -6.28958,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CoverD2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.707107,
+                      "y": 0.0,
+                      "z": -0.707107,
+                      "w": 0.0
+                    },
+                    "translation": {
+                      "x": 0.472936,
+                      "y": -1.10779,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CoverU1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.499992,
+                      "w": 0.86603
+                    },
+                    "translation": {
+                      "x": -0.725357,
+                      "y": -5.9851,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CoverU2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 1.12502,
+                      "y": -0.593828,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CoverU3",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.5,
+                      "y": -0.5,
+                      "z": 0.5,
+                      "w": 0.5
+                    },
+                    "translation": {
+                      "x": -1.35579,
+                      "y": -0.023443,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FinBL1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.612373,
+                      "y": -0.612372,
+                      "z": -0.353553,
+                      "w": 0.353553
+                    },
+                    "translation": {
+                      "x": -1.6112,
+                      "y": 1.02366,
+                      "z": 1.76577
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FinBL2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 5.29994,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FinBR1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.612373,
+                      "y": 0.612373,
+                      "z": -0.353553,
+                      "w": 0.353553
+                    },
+                    "translation": {
+                      "x": -1.6112,
+                      "y": 1.02364,
+                      "z": -1.76578
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FinBR2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 5.29994,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FinFL1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.353553,
+                      "y": -0.353553,
+                      "z": -0.612372,
+                      "w": 0.612373
+                    },
+                    "translation": {
+                      "x": -1.6112,
+                      "y": -1.02364,
+                      "z": 1.76578
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FinFL2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 5.29994,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FinFR1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.354037,
+                      "y": 0.353071,
+                      "z": -0.612093,
+                      "w": 0.612651
+                    },
+                    "translation": {
+                      "x": -1.6112,
+                      "y": -1.02366,
+                      "z": -1.76577
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "FinFR2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 5.29994,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Knee1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.154019,
+                      "w": 0.988068
+                    },
+                    "translation": {
+                      "x": -0.76863,
+                      "y": -1.7012,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Legspring1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.139351,
+                      "w": 0.990243
+                    },
+                    "translation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Legspring2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.290204,
+                      "w": 0.956965
+                    },
+                    "translation": {
+                      "x": -0.2,
+                      "y": 1.5,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftBL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.6446,
+                      "y": -0.579688,
+                      "z": -0.333306,
+                      "w": 0.37062
+                    },
+                    "translation": {
+                      "x": -0.756804,
+                      "y": 2.8789,
+                      "z": 4.99142
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftBL1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.926328,
+                      "w": 0.376719
+                    },
+                    "translation": {
+                      "x": 0.619116,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftBL2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.955568,
+                      "w": 0.294771
+                    },
+                    "translation": {
+                      "x": 0.738809,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftBL3",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 1.34391,
+                      "y": 0.030572,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftBR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.644601,
+                      "y": 0.579688,
+                      "z": -0.333306,
+                      "w": 0.370619
+                    },
+                    "translation": {
+                      "x": -0.756803,
+                      "y": 2.8789,
+                      "z": -4.99142
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftBR1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.926328,
+                      "w": 0.376719
+                    },
+                    "translation": {
+                      "x": 0.619116,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftBR2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.955568,
+                      "w": 0.294771
+                    },
+                    "translation": {
+                      "x": 0.738811,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftBR3",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 1.34392,
+                      "y": 0.030574,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftFR",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.370627,
+                      "y": 0.333301,
+                      "z": -0.579699,
+                      "w": 0.64459
+                    },
+                    "translation": {
+                      "x": -0.756894,
+                      "y": -2.87888,
+                      "z": -4.99142
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftFR1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.926328,
+                      "w": 0.376719
+                    },
+                    "translation": {
+                      "x": 0.619116,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftFR2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.955568,
+                      "w": 0.294771
+                    },
+                    "translation": {
+                      "x": 0.738809,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftFR3",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 1.34391,
+                      "y": 0.030572,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftL",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": -0.370625,
+                      "y": -0.333299,
+                      "z": -0.579699,
+                      "w": 0.644591
+                    },
+                    "translation": {
+                      "x": -0.756894,
+                      "y": -2.87888,
+                      "z": 4.99142
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftL1",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": -0.926328,
+                      "w": 0.376719
+                    },
+                    "translation": {
+                      "x": 0.619116,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftL2",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.955568,
+                      "w": 0.294771
+                    },
+                    "translation": {
+                      "x": 0.73881,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "ShaftL3",
+          "tracks": [
+            {
+              "name": "Transform",
+              "compensate_scale": false,
+              "transform_flags": {
+                "override_translation": false,
+                "override_rotation": false,
+                "override_scale": false,
+                "override_compensate_scale": false
+              },
+              "values": {
+                "Transform": [
+                  {
+                    "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                    },
+                    "rotation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                    },
+                    "translation": {
+                      "x": 1.34391,
+                      "y": 0.0305718,
+                      "z": 0.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1773,11 +1773,25 @@
                         }
                     }
                     
+                    // Color the hitbox based on its situation (ground/air/both).
+                    // Default red is "both"; ground-only and air-only are tinted to make
+                    // it obvious which hitboxes only connect in which state. Move-data is
+                    // unchanged — only the visual rendering varies.
+                    let fillColor = 'rgba(244, 67, 54, 0.4)';   // red (both)
+                    let strokeColor = 'rgba(244, 67, 54, 0.9)';
+                    if (hitbox.situation === 'G') {
+                        fillColor = 'rgba(102, 187, 106, 0.4)';   // green (ground only)
+                        strokeColor = 'rgba(102, 187, 106, 0.9)';
+                    } else if (hitbox.situation === 'A') {
+                        fillColor = 'rgba(66, 165, 245, 0.4)';    // blue (air only)
+                        strokeColor = 'rgba(66, 165, 245, 0.9)';
+                    }
+                    
                     drawCapsule(
                         { x: startX, y: startY },
                         { x: endX, y: endY },
                         curr.size * SCALE,
-                        'rgba(244, 67, 54, 0.4)', 'rgba(244, 67, 54, 0.9)'
+                        fillColor, strokeColor
                     );
                     
                     // Draw damage/angle labels at midpoint for capsules, current pos otherwise
@@ -1870,11 +1884,19 @@
                 return;
             }
             
+            // Format situation tag matching the canvas color (ground=green, air=blue, both=red).
+            // Empty string when situation is 'GA' so the common case stays uncluttered.
+            function situationTag(sit) {
+                if (sit === 'G') return ' <span style="color: rgba(102, 187, 106, 1); font-size: 0.85em; font-weight: normal;">[ground only]</span>';
+                if (sit === 'A') return ' <span style="color: rgba(66, 165, 245, 1); font-size: 0.85em; font-weight: normal;">[air only]</span>';
+                return '';
+            }
+            
             let html = '';
             hitboxes.forEach(hb => {
                 html += `
                     <div class="hitbox-card">
-                        <strong>ID ${hb.id}</strong> (${hb.bone})
+                        <strong>ID ${hb.id}</strong> (${hb.bone})${situationTag(hb.situation)}
                         <div class="stat"><span class="stat-label">Damage:</span><span class="stat-value">${hb.damage || 'N/A'}%</span></div>
                         <div class="stat"><span class="stat-label">Angle:</span><span class="stat-value">${hb.angle || 'N/A'}°</span></div>
                         <div class="stat"><span class="stat-label">KBG:</span><span class="stat-value">${hb.kbg || 'N/A'}</span></div>
@@ -2302,6 +2324,12 @@
                 
                 
                 // Build list of paths to try - animations are directly in body/
+                // Joker note: Arsene form uses the same Joker body animation here.
+                // The doyle/ folder animations are for rendering Arsene as a separate
+                // puppet (the visual summon mirrors Joker's moves), which we don't do.
+                // Hitboxes in Arsene form still attach to Joker's bones (knife, armr,
+                // etc.) for the animated parts, plus extra `top`-offset hitboxes for
+                // Arsene's reach — both render correctly off the body/ animation.
                 const animPaths = [];
                 for (const animFilename of animFilenames) {
                     animPaths.push(`data/animations/${animFolder}/body/${animFilename}.json`);
