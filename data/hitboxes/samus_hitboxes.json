@@ -1296,11 +1296,7 @@
         10,
         11,
         12,
-        13,
-        14,
-        15,
-        16,
-        17
+        13
       ],
       "hitboxes_by_frame": {
         "10": [
@@ -1445,7 +1441,7 @@
             "bone": "armr",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 10.0,
+            "damage": 13.0,
             "angle": 361,
             "kbg": 102,
             "fkb": 0,
@@ -1467,7 +1463,7 @@
             "bone": "armr",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 10.0,
+            "damage": 13.0,
             "angle": 361,
             "kbg": 102,
             "fkb": 0,
@@ -1489,7 +1485,7 @@
             "bone": "armr",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 12.0,
+            "damage": 15.0,
             "angle": 361,
             "kbg": 106,
             "fkb": 0,
@@ -1513,7 +1509,7 @@
             "bone": "armr",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 10.0,
+            "damage": 13.0,
             "angle": 361,
             "kbg": 102,
             "fkb": 0,
@@ -1535,7 +1531,7 @@
             "bone": "armr",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 10.0,
+            "damage": 13.0,
             "angle": 361,
             "kbg": 102,
             "fkb": 0,
@@ -1557,279 +1553,7 @@
             "bone": "armr",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 12.0,
-            "angle": 361,
-            "kbg": 106,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 5.0,
-            "situation": "GA",
-            "offset": {
-              "x": 8.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          }
-        ],
-        "14": [
-          {
-            "id": 0,
-            "bone": "armr",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 102,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          },
-          {
-            "id": 1,
-            "bone": "armr",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 102,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": -4.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 12.0,
-            "angle": 361,
-            "kbg": 106,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 5.0,
-            "situation": "GA",
-            "offset": {
-              "x": 8.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          }
-        ],
-        "15": [
-          {
-            "id": 0,
-            "bone": "armr",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 102,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          },
-          {
-            "id": 1,
-            "bone": "armr",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 102,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": -4.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 12.0,
-            "angle": 361,
-            "kbg": 106,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 5.0,
-            "situation": "GA",
-            "offset": {
-              "x": 8.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          }
-        ],
-        "16": [
-          {
-            "id": 0,
-            "bone": "armr",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 102,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          },
-          {
-            "id": 1,
-            "bone": "armr",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 102,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": -4.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 12.0,
-            "angle": 361,
-            "kbg": 106,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 5.0,
-            "situation": "GA",
-            "offset": {
-              "x": 8.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          }
-        ],
-        "17": [
-          {
-            "id": 0,
-            "bone": "armr",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 102,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          },
-          {
-            "id": 1,
-            "bone": "armr",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 10.0,
-            "angle": 361,
-            "kbg": 102,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": -4.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fsmash"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 12.0,
+            "damage": 15.0,
             "angle": 361,
             "kbg": 106,
             "fkb": 0,
@@ -1852,15 +1576,69 @@
       "faf": 54
     },
     "usmash": {
-      "total_frames": 63,
+      "total_frames": 66,
       "active_frames": [
+        12,
         13,
         14,
-        23,
+        15,
+        16,
+        17,
         24,
-        25
+        25,
+        26
       ],
       "hitboxes_by_frame": {
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 3.0,
+            "angle": 368,
+            "kbg": 70,
+            "fkb": 100,
+            "bkb": 0,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 3.5
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": -6.0
+            },
+            "is_capsule": true,
+            "character": "samus",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 3.0,
+            "angle": 90,
+            "kbg": 100,
+            "fkb": 60,
+            "bkb": 0,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "samus",
+            "move": "usmash"
+          }
+        ],
         "13": [
           {
             "id": 0,
@@ -1872,15 +1650,19 @@
             "kbg": 70,
             "fkb": 100,
             "bkb": 0,
-            "size": 4.0,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
-              "z": 8.0
+              "z": 3.5
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": -6.0
+            },
+            "is_capsule": true,
             "character": "samus",
             "move": "usmash"
           },
@@ -1890,16 +1672,16 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 3.0,
-            "angle": 368,
-            "kbg": 70,
-            "fkb": 100,
+            "angle": 90,
+            "kbg": 100,
+            "fkb": 60,
             "bkb": 0,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 3.5,
-              "z": -5.5
+              "y": 10.0,
+              "z": -0.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -1909,43 +1691,21 @@
         ],
         "14": [
           {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 3.0,
-            "angle": 368,
-            "kbg": 70,
-            "fkb": 100,
-            "bkb": 0,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 8.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "usmash"
-          },
-          {
             "id": 1,
-            "bone": "top",
+            "bone": "armr",
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 3.0,
-            "angle": 368,
-            "kbg": 70,
-            "fkb": 100,
+            "angle": 97,
+            "kbg": 100,
+            "fkb": 50,
             "bkb": 0,
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": -5.5
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1953,23 +1713,71 @@
             "move": "usmash"
           }
         ],
-        "23": [
+        "15": [
           {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 23.0,
-            "real_frame": 23,
-            "damage": 11.0,
-            "angle": 90,
-            "kbg": 115,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 8.0,
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 3.0,
+            "angle": 97,
+            "kbg": 100,
+            "fkb": 50,
+            "bkb": 0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
-              "y": 28.0,
-              "z": 1.0
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "samus",
+            "move": "usmash"
+          }
+        ],
+        "16": [
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 3.0,
+            "angle": 97,
+            "kbg": 100,
+            "fkb": 50,
+            "bkb": 0,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "samus",
+            "move": "usmash"
+          }
+        ],
+        "17": [
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 3.0,
+            "angle": 97,
+            "kbg": 100,
+            "fkb": 50,
+            "bkb": 0,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1983,9 +1791,9 @@
             "bone": "top",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 11.0,
+            "damage": 13.0,
             "angle": 90,
-            "kbg": 115,
+            "kbg": 102,
             "fkb": 0,
             "bkb": 50,
             "size": 8.0,
@@ -2007,9 +1815,33 @@
             "bone": "top",
             "animation_frame": 25.0,
             "real_frame": 25,
-            "damage": 11.0,
+            "damage": 13.0,
             "angle": 90,
-            "kbg": 115,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 8.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 28.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "samus",
+            "move": "usmash"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 13.0,
+            "angle": 90,
+            "kbg": 102,
             "fkb": 0,
             "bkb": 50,
             "size": 8.0,
@@ -2026,22 +1858,8 @@
           }
         ]
       },
-      "motion_events": [
-        {
-          "type": "range",
-          "frame": 15.0,
-          "start_orig": 15.0,
-          "end_orig": 25.0,
-          "new_duration": 8.0,
-          "scale_factor": 0.8
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 25.0,
-          "rate_value": 1.0
-        }
-      ],
-      "faf": 60
+      "motion_events": [],
+      "faf": 55
     },
     "dsmash": {
       "total_frames": 72,
@@ -3560,32 +3378,34 @@
     "fair": {
       "total_frames": 63,
       "active_frames": [
+        5,
         6,
-        7,
+        11,
         12,
-        16,
         17,
-        21,
-        22,
-        26,
-        27
+        18,
+        23,
+        24,
+        28,
+        29,
+        30
       ],
       "hitboxes_by_frame": {
-        "6": [
+        "5": [
           {
             "id": 0,
             "bone": "armr",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 3.0,
-            "angle": 365,
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 5.0,
+            "angle": 85,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
-              "x": 10.0,
+              "x": 8.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -3597,39 +3417,17 @@
           {
             "id": 1,
             "bone": "armr",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 3.0,
-            "angle": 18,
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 5.0,
+            "angle": 85,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 3.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fair"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 3.0,
-            "angle": 18,
-            "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
-            "size": 3.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -3639,21 +3437,21 @@
             "move": "fair"
           }
         ],
-        "7": [
+        "6": [
           {
             "id": 0,
             "bone": "armr",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 3.0,
-            "angle": 365,
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 85,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
-              "x": 10.0,
+              "x": 8.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -3665,17 +3463,41 @@
           {
             "id": 1,
             "bone": "armr",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 3.0,
-            "angle": 18,
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 5.0,
+            "angle": 85,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 3.0,
+              "x": -1.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "samus",
+            "move": "fair"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 5.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.5,
+            "situation": "GA",
+            "offset": {
+              "x": 8.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -3685,19 +3507,19 @@
             "move": "fair"
           },
           {
-            "id": 2,
+            "id": 1,
             "bone": "armr",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 3.0,
-            "angle": 18,
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
-            "size": 3.0,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -3713,15 +3535,15 @@
             "bone": "armr",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 1.8,
-            "angle": 365,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
-              "x": 10.0,
+              "x": 8.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -3735,105 +3557,15 @@
             "bone": "armr",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 1.8,
-            "angle": 18,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 3.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fair"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 1.8,
-            "angle": 18,
-            "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
-            "size": 3.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fair"
-          }
-        ],
-        "16": [
-          {
-            "id": 0,
-            "bone": "armr",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 1.8,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
-            "size": 6.5,
-            "situation": "GA",
-            "offset": {
-              "x": 10.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fair"
-          },
-          {
-            "id": 1,
-            "bone": "armr",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 1.8,
-            "angle": 18,
-            "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 3.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fair"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 1.8,
-            "angle": 18,
-            "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
-            "size": 3.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -3849,15 +3581,15 @@
             "bone": "armr",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 1.8,
-            "angle": 365,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
-              "x": 10.0,
+              "x": 8.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -3871,37 +3603,15 @@
             "bone": "armr",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 1.8,
-            "angle": 18,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 3.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fair"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 1.8,
-            "angle": 18,
-            "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
-            "size": 3.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -3911,21 +3621,21 @@
             "move": "fair"
           }
         ],
-        "21": [
+        "18": [
           {
             "id": 0,
             "bone": "armr",
-            "animation_frame": 21.0,
-            "real_frame": 21,
-            "damage": 1.8,
-            "angle": 365,
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
-              "x": 10.0,
+              "x": 8.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -3937,39 +3647,17 @@
           {
             "id": 1,
             "bone": "armr",
-            "animation_frame": 21.0,
-            "real_frame": 21,
-            "damage": 1.8,
-            "angle": 18,
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 3.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fair"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 21.0,
-            "real_frame": 21,
-            "damage": 1.8,
-            "angle": 18,
-            "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
-            "size": 3.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -3979,21 +3667,21 @@
             "move": "fair"
           }
         ],
-        "22": [
+        "23": [
           {
             "id": 0,
             "bone": "armr",
-            "animation_frame": 22.0,
-            "real_frame": 22,
-            "damage": 1.8,
-            "angle": 365,
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
-              "x": 10.0,
+              "x": 8.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -4005,17 +3693,17 @@
           {
             "id": 1,
             "bone": "armr",
-            "animation_frame": 22.0,
-            "real_frame": 22,
-            "damage": 1.8,
-            "angle": 18,
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
+            "fkb": 0,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 3.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -4023,21 +3711,45 @@
             "is_capsule": false,
             "character": "samus",
             "move": "fair"
-          },
+          }
+        ],
+        "24": [
           {
-            "id": 2,
+            "id": 0,
             "bone": "armr",
-            "animation_frame": 22.0,
-            "real_frame": 22,
-            "damage": 1.8,
-            "angle": 18,
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 5.0,
+            "angle": 80,
             "kbg": 100,
-            "fkb": 49,
-            "bkb": 0,
-            "size": 3.0,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 8.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "samus",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 5.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -4047,23 +3759,23 @@
             "move": "fair"
           }
         ],
-        "26": [
+        "28": [
           {
             "id": 0,
             "bone": "armr",
-            "animation_frame": 26.0,
-            "real_frame": 26,
-            "damage": 6.0,
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 5.0,
             "angle": 361,
-            "kbg": 150,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
-            "size": 7.0,
+            "bkb": 20,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
-              "x": 10.0,
+              "x": 8.5,
               "y": 0.0,
-              "z": 2.0
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4073,41 +3785,19 @@
           {
             "id": 1,
             "bone": "armr",
-            "animation_frame": 26.0,
-            "real_frame": 26,
-            "damage": 6.0,
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 5.0,
             "angle": 361,
-            "kbg": 150,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
-            "size": 4.5,
+            "bkb": 20,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 3.0,
+              "x": -1.0,
               "y": 0.0,
-              "z": 2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "samus",
-            "move": "fair"
-          },
-          {
-            "id": 2,
-            "bone": "armr",
-            "animation_frame": 26.0,
-            "real_frame": 26,
-            "damage": 6.0,
-            "angle": 361,
-            "kbg": 150,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 2.0
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4115,23 +3805,23 @@
             "move": "fair"
           }
         ],
-        "27": [
+        "29": [
           {
             "id": 0,
             "bone": "armr",
-            "animation_frame": 27.0,
-            "real_frame": 27,
-            "damage": 6.0,
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 5.0,
             "angle": 361,
-            "kbg": 150,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
-            "size": 7.0,
+            "bkb": 20,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
-              "x": 10.0,
+              "x": 8.5,
               "y": 0.0,
-              "z": 2.0
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4141,19 +3831,43 @@
           {
             "id": 1,
             "bone": "armr",
-            "animation_frame": 27.0,
-            "real_frame": 27,
-            "damage": 6.0,
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 5.0,
             "angle": 361,
-            "kbg": 150,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
-            "size": 4.5,
+            "bkb": 20,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 3.0,
+              "x": -1.0,
               "y": 0.0,
-              "z": 2.0
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "samus",
+            "move": "fair"
+          }
+        ],
+        "30": [
+          {
+            "id": 0,
+            "bone": "armr",
+            "animation_frame": 30.0,
+            "real_frame": 30,
+            "damage": 5.0,
+            "angle": 361,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 6.5,
+            "situation": "GA",
+            "offset": {
+              "x": 8.5,
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4161,21 +3875,21 @@
             "move": "fair"
           },
           {
-            "id": 2,
+            "id": 1,
             "bone": "armr",
-            "animation_frame": 27.0,
-            "real_frame": 27,
-            "damage": 6.0,
+            "animation_frame": 30.0,
+            "real_frame": 30,
+            "damage": 5.0,
             "angle": 361,
-            "kbg": 150,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
-            "size": 3.5,
+            "bkb": 20,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
-              "z": 2.0
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4184,19 +3898,8 @@
           }
         ]
       },
-      "motion_events": [
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 8.0,
-          "rate_value": 0.8
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 32.0,
-          "rate_value": 1.0
-        }
-      ],
-      "faf": 48
+      "motion_events": [],
+      "faf": 50
     },
     "bair": {
       "total_frames": 54,
@@ -4533,11 +4236,11 @@
             "bone": "toer",
             "animation_frame": 5.0,
             "real_frame": 5,
-            "damage": 2.0,
+            "damage": 3.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4555,11 +4258,11 @@
             "bone": "kneer",
             "animation_frame": 5.0,
             "real_frame": 5,
-            "damage": 2.0,
+            "damage": 3.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 35,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4579,11 +4282,11 @@
             "bone": "toer",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 2.0,
+            "damage": 3.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4601,11 +4304,11 @@
             "bone": "kneer",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 2.0,
+            "damage": 3.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 35,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4625,11 +4328,11 @@
             "bone": "toer",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4647,11 +4350,11 @@
             "bone": "kneer",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4671,11 +4374,11 @@
             "bone": "toer",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4693,11 +4396,11 @@
             "bone": "kneer",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4717,11 +4420,11 @@
             "bone": "toer",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4739,11 +4442,11 @@
             "bone": "kneer",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4763,11 +4466,11 @@
             "bone": "toer",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4785,11 +4488,11 @@
             "bone": "kneer",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4809,11 +4512,11 @@
             "bone": "toer",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4831,11 +4534,11 @@
             "bone": "kneer",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4855,11 +4558,11 @@
             "bone": "toer",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4877,11 +4580,11 @@
             "bone": "kneer",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4901,11 +4604,11 @@
             "bone": "toer",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4923,11 +4626,11 @@
             "bone": "kneer",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4947,11 +4650,11 @@
             "bone": "toer",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4969,11 +4672,11 @@
             "bone": "kneer",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -4993,11 +4696,11 @@
             "bone": "toer",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -5015,11 +4718,11 @@
             "bone": "kneer",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -5039,11 +4742,11 @@
             "bone": "toer",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 366,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -5061,11 +4764,11 @@
             "bone": "kneer",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 2.0,
+            "damage": 1.0,
             "angle": 84,
-            "kbg": 40,
+            "kbg": 53,
             "fkb": 0,
-            "bkb": 34,
+            "bkb": 32,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -5086,8 +4789,8 @@
             "animation_frame": 19.0,
             "real_frame": 19,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 4.5,
@@ -5108,8 +4811,8 @@
             "animation_frame": 19.0,
             "real_frame": 19,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 6.5,
@@ -5132,8 +4835,8 @@
             "animation_frame": 20.0,
             "real_frame": 20,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 4.5,
@@ -5154,8 +4857,8 @@
             "animation_frame": 20.0,
             "real_frame": 20,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 6.5,
@@ -5178,8 +4881,8 @@
             "animation_frame": 21.0,
             "real_frame": 21,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 4.5,
@@ -5200,8 +4903,8 @@
             "animation_frame": 21.0,
             "real_frame": 21,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 6.5,
@@ -5224,8 +4927,8 @@
             "animation_frame": 22.0,
             "real_frame": 22,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 4.5,
@@ -5246,8 +4949,8 @@
             "animation_frame": 22.0,
             "real_frame": 22,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 6.5,
@@ -5270,8 +4973,8 @@
             "animation_frame": 23.0,
             "real_frame": 23,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 4.5,
@@ -5292,8 +4995,8 @@
             "animation_frame": 23.0,
             "real_frame": 23,
             "damage": 4.0,
-            "angle": 76,
-            "kbg": 200,
+            "angle": 50,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
             "size": 6.5,
@@ -7706,156 +7409,18 @@
     "bthrow": {
       "total_frames": 62,
       "active_frames": [
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
         18,
         19,
         20,
-        21
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
       ],
       "hitboxes_by_frame": {
-        "12": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 10.0,
-            "angle": 50,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "samus",
-            "move": "bthrow"
-          }
-        ],
-        "13": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 10.0,
-            "angle": 50,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "samus",
-            "move": "bthrow"
-          }
-        ],
-        "14": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 10.0,
-            "angle": 50,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "samus",
-            "move": "bthrow"
-          }
-        ],
-        "15": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 10.0,
-            "angle": 50,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "samus",
-            "move": "bthrow"
-          }
-        ],
-        "16": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 10.0,
-            "angle": 50,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "samus",
-            "move": "bthrow"
-          }
-        ],
-        "17": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 10.0,
-            "angle": 50,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "samus",
-            "move": "bthrow"
-          }
-        ],
         "18": [
           {
             "id": 0,
@@ -7947,10 +7512,162 @@
             "character": "samus",
             "move": "bthrow"
           }
+        ],
+        "22": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 10.0,
+            "angle": 50,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "samus",
+            "move": "bthrow"
+          }
+        ],
+        "23": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 10.0,
+            "angle": 50,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "samus",
+            "move": "bthrow"
+          }
+        ],
+        "24": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 10.0,
+            "angle": 50,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "samus",
+            "move": "bthrow"
+          }
+        ],
+        "25": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 10.0,
+            "angle": 50,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "samus",
+            "move": "bthrow"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 10.0,
+            "angle": 50,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "samus",
+            "move": "bthrow"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 10.0,
+            "angle": 50,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "samus",
+            "move": "bthrow"
+          }
         ]
       },
-      "motion_events": [],
-      "faf": 50
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 2.0,
+          "start_orig": 2.0,
+          "end_orig": 7.0,
+          "new_duration": 11.0,
+          "scale_factor": 2.2
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 7.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 56
     },
     "uthrow": {
       "total_frames": 55,
@@ -8266,5 +7983,5 @@
       "faf": 38
     }
   },
-  "generated_at": "2026-04-25T23:06:11.924741"
+  "generated_at": "2026-05-13T15:23:35.382777"
 }

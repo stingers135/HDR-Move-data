@@ -5379,7 +5379,7 @@
         "9": [
           {
             "id": 0,
-            "bone": "legr",
+            "bone": "footr",
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 7.0,
@@ -5387,7 +5387,7 @@
             "kbg": 100,
             "fkb": 0,
             "bkb": 20,
-            "size": 3.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5423,7 +5423,7 @@
           },
           {
             "id": 2,
-            "bone": "footr",
+            "bone": "legr",
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 7.0,
@@ -5431,7 +5431,7 @@
             "kbg": 100,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5447,7 +5447,7 @@
         "10": [
           {
             "id": 0,
-            "bone": "legr",
+            "bone": "footr",
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 7.0,
@@ -5455,7 +5455,7 @@
             "kbg": 100,
             "fkb": 0,
             "bkb": 20,
-            "size": 3.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5491,7 +5491,7 @@
           },
           {
             "id": 2,
-            "bone": "footr",
+            "bone": "legr",
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 7.0,
@@ -5499,7 +5499,7 @@
             "kbg": 100,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5515,7 +5515,7 @@
         "11": [
           {
             "id": 0,
-            "bone": "legr",
+            "bone": "footr",
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 7.0,
@@ -5523,7 +5523,7 @@
             "kbg": 100,
             "fkb": 0,
             "bkb": 20,
-            "size": 3.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5559,7 +5559,7 @@
           },
           {
             "id": 2,
-            "bone": "footr",
+            "bone": "legr",
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 7.0,
@@ -5567,7 +5567,7 @@
             "kbg": 100,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5583,7 +5583,7 @@
         "12": [
           {
             "id": 0,
-            "bone": "legr",
+            "bone": "footr",
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 7.0,
@@ -5591,7 +5591,7 @@
             "kbg": 100,
             "fkb": 0,
             "bkb": 20,
-            "size": 3.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5627,7 +5627,7 @@
           },
           {
             "id": 2,
-            "bone": "footr",
+            "bone": "legr",
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 7.0,
@@ -5635,7 +5635,7 @@
             "kbg": 100,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -6492,7 +6492,7 @@
             "offset": {
               "x": 0.0,
               "y": 9.0,
-              "z": 5.0
+              "z": 4.3
             },
             "offset2": {
               "x": 0.0,
@@ -6520,7 +6520,7 @@
             "offset": {
               "x": 0.0,
               "y": 9.0,
-              "z": 5.0
+              "z": 4.3
             },
             "offset2": {
               "x": 0.0,
@@ -8506,8 +8506,7 @@
       "total_frames": 55,
       "active_frames": [
         9,
-        10,
-        11
+        10
       ],
       "hitboxes_by_frame": {
         "9": [
@@ -8537,33 +8536,9 @@
         "10": [
           {
             "id": 0,
-            "bone": "kneer",
+            "bone": "top",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 2.0,
-            "angle": 45,
-            "kbg": 130,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 3.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "szerosuit",
-            "move": "uthrow"
-          }
-        ],
-        "11": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 11.0,
-            "real_frame": 11,
             "damage": 4.0,
             "angle": 105,
             "kbg": 100,
@@ -8587,13 +8562,21 @@
           "type": "range",
           "frame": 1.0,
           "start_orig": 1.0,
-          "end_orig": 2.0,
+          "end_orig": 2.25,
           "new_duration": 6.0,
-          "scale_factor": 6.0
+          "scale_factor": 4.8
+        },
+        {
+          "type": "range",
+          "frame": 2.25,
+          "start_orig": 2.25,
+          "end_orig": 3.0,
+          "new_duration": 1.0,
+          "scale_factor": 1.3333333333333333
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 2.0,
+          "frame": 3.0,
           "rate_value": 1.0
         }
       ],
@@ -8705,5 +8688,5 @@
       "faf": 41
     }
   },
-  "generated_at": "2026-04-25T23:06:19.671715"
+  "generated_at": "2026-05-13T15:23:53.129563"
 }

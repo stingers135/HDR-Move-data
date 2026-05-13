@@ -7881,7 +7881,7 @@
             "offset": {
               "x": 0.0,
               "y": 5.0,
-              "z": -5.0
+              "z": -6.0
             },
             "offset2": {
               "x": 0.0,
@@ -7909,7 +7909,7 @@
             "offset": {
               "x": 0.0,
               "y": 5.0,
-              "z": -5.0
+              "z": -6.0
             },
             "offset2": {
               "x": 0.0,
@@ -8009,7 +8009,7 @@
             "animation_frame": 25.0,
             "real_frame": 25,
             "damage": 5.0,
-            "angle": 45,
+            "angle": 42,
             "kbg": 60,
             "fkb": 0,
             "bkb": 70,
@@ -8419,17 +8419,353 @@
     "dthrow": {
       "total_frames": 68,
       "active_frames": [
-        2
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
       ],
       "hitboxes_by_frame": {
-        "2": [
+        "37": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 2.0,
-            "real_frame": 2,
+            "animation_frame": 37.0,
+            "real_frame": 37,
             "damage": 6.0,
-            "angle": 80,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "38": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 38.0,
+            "real_frame": 38,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "39": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 39.0,
+            "real_frame": 39,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "40": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 40.0,
+            "real_frame": 40,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "41": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 41.0,
+            "real_frame": 41,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "42": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 42.0,
+            "real_frame": 42,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "43": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 43.0,
+            "real_frame": 43,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "44": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 44.0,
+            "real_frame": 44,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "45": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 45.0,
+            "real_frame": 45,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "46": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 46.0,
+            "real_frame": 46,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "47": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 47.0,
+            "real_frame": 47,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "48": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 48.0,
+            "real_frame": 48,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "49": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 49.0,
+            "real_frame": 49,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "50": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 50.0,
+            "real_frame": 50,
+            "damage": 6.0,
+            "angle": 72,
+            "kbg": 120,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "popo",
+            "move": "dthrow"
+          }
+        ],
+        "51": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 51.0,
+            "real_frame": 51,
+            "damage": 6.0,
+            "angle": 72,
             "kbg": 120,
             "fkb": 0,
             "bkb": 45,
@@ -8449,11 +8785,6 @@
       "motion_events": [
         {
           "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 0.008888888888888889
-        },
-        {
-          "type": "FT_MOTION_RATE",
           "frame": 36.0,
           "rate_value": 1.0
         },
@@ -8463,8 +8794,8 @@
           "rate_value": 1.4166666666666667
         }
       ],
-      "faf": 21
+      "faf": 55
     }
   },
-  "generated_at": "2026-04-25T23:06:15.173396"
+  "generated_at": "2026-05-13T15:23:41.160446"
 }

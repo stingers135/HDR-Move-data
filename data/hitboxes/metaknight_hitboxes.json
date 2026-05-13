@@ -26,18 +26,18 @@
             "angle": 361,
             "kbg": 8,
             "fkb": 0,
-            "bkb": 40,
-            "size": 7.0,
+            "bkb": 30,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.5,
-              "z": 8.0
+              "z": 7.5
             },
             "offset2": {
               "x": 0.0,
               "y": 6.5,
-              "z": 13.5
+              "z": 13.0
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -54,18 +54,18 @@
             "angle": 361,
             "kbg": 8,
             "fkb": 0,
-            "bkb": 40,
-            "size": 7.0,
+            "bkb": 30,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.5,
-              "z": 8.0
+              "z": 7.5
             },
             "offset2": {
               "x": 0.0,
               "y": 6.5,
-              "z": 13.5
+              "z": 13.0
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -82,18 +82,18 @@
             "angle": 361,
             "kbg": 8,
             "fkb": 0,
-            "bkb": 40,
-            "size": 7.0,
+            "bkb": 30,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.5,
-              "z": 8.0
+              "z": 7.5
             },
             "offset2": {
               "x": 0.0,
               "y": 6.5,
-              "z": 13.5
+              "z": 13.0
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -110,18 +110,18 @@
             "angle": 361,
             "kbg": 8,
             "fkb": 0,
-            "bkb": 40,
-            "size": 7.0,
+            "bkb": 30,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.5,
-              "z": 8.0
+              "z": 7.5
             },
             "offset2": {
               "x": 0.0,
               "y": 6.5,
-              "z": 13.5
+              "z": 13.0
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -138,7 +138,7 @@
             "angle": 361,
             "kbg": 8,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -166,7 +166,7 @@
             "angle": 361,
             "kbg": 8,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -1277,44 +1277,40 @@
     "dtilt": {
       "total_frames": 35,
       "active_frames": [
-        4,
-        5
+        6,
+        7
       ],
       "hitboxes_by_frame": {
-        "4": [
+        "6": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 5.0,
-            "angle": 40,
-            "kbg": 116,
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 7.0,
+            "angle": 64,
+            "kbg": 60,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 50,
             "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 2.1,
-              "z": 8.0
-            },
-            "offset2": {
-              "x": 0.0,
               "y": 2.5,
-              "z": 4.0
+              "z": 1.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "metaknight",
             "move": "dtilt"
           },
           {
             "id": 1,
             "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
+            "animation_frame": 6.0,
+            "real_frame": 6,
             "damage": 5.0,
-            "angle": 40,
+            "angle": 44,
             "kbg": 116,
             "fkb": 0,
             "bkb": 30,
@@ -1335,40 +1331,36 @@
             "move": "dtilt"
           }
         ],
-        "5": [
+        "7": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 5.0,
-            "angle": 40,
-            "kbg": 116,
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 7.0,
+            "angle": 64,
+            "kbg": 60,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 50,
             "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 2.1,
-              "z": 8.0
-            },
-            "offset2": {
-              "x": 0.0,
               "y": 2.5,
-              "z": 4.0
+              "z": 1.0
             },
-            "is_capsule": true,
+            "offset2": null,
+            "is_capsule": false,
             "character": "metaknight",
             "move": "dtilt"
           },
           {
             "id": 1,
             "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
+            "animation_frame": 7.0,
+            "real_frame": 7,
             "damage": 5.0,
-            "angle": 40,
+            "angle": 44,
             "kbg": 116,
             "fkb": 0,
             "bkb": 30,
@@ -1395,23 +1387,34 @@
           "type": "range",
           "frame": 1.0,
           "start_orig": 1.0,
-          "end_orig": 3.0,
+          "end_orig": 1.2,
           "new_duration": 3.0,
-          "scale_factor": 1.5
+          "scale_factor": 15.000000000000004
+        },
+        {
+          "type": "range",
+          "frame": 1.2,
+          "start_orig": 1.2,
+          "end_orig": 2.0,
+          "new_duration": 1.0,
+          "scale_factor": 1.25
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 3.0,
+          "frame": 2.0,
           "rate_value": 1.0
         },
         {
-          "type": "FT_MOTION_RATE",
+          "type": "range",
           "frame": 10.0,
-          "rate_value": 0.75
+          "start_orig": 10.0,
+          "end_orig": 23.0,
+          "new_duration": 8.0,
+          "scale_factor": 0.6153846153846154
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 22.0,
+          "frame": 23.0,
           "rate_value": 1.0
         }
       ],
@@ -2491,7 +2494,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2513,7 +2516,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2535,7 +2538,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
@@ -2559,7 +2562,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2581,7 +2584,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2603,7 +2606,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
@@ -2627,7 +2630,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2649,7 +2652,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2671,7 +2674,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
@@ -2695,7 +2698,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2717,7 +2720,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2739,7 +2742,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
@@ -2763,7 +2766,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2785,7 +2788,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2807,7 +2810,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 20,
             "size": 6.5,
             "situation": "GA",
             "offset": {
@@ -2827,7 +2830,7 @@
             "bone": "haver",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -2849,7 +2852,7 @@
             "bone": "haver",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -2871,7 +2874,7 @@
             "bone": "top",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -2895,7 +2898,7 @@
             "bone": "haver",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -2917,7 +2920,7 @@
             "bone": "haver",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -2939,7 +2942,7 @@
             "bone": "top",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -2963,7 +2966,7 @@
             "bone": "haver",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -2985,7 +2988,7 @@
             "bone": "haver",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3007,7 +3010,7 @@
             "bone": "top",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3031,7 +3034,7 @@
             "bone": "haver",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3053,7 +3056,7 @@
             "bone": "haver",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3075,7 +3078,7 @@
             "bone": "top",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3099,7 +3102,7 @@
             "bone": "haver",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3121,7 +3124,7 @@
             "bone": "haver",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3143,7 +3146,7 @@
             "bone": "top",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3167,7 +3170,7 @@
             "bone": "haver",
             "animation_frame": 18.0,
             "real_frame": 18,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3189,7 +3192,7 @@
             "bone": "haver",
             "animation_frame": 18.0,
             "real_frame": 18,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3211,7 +3214,7 @@
             "bone": "top",
             "animation_frame": 18.0,
             "real_frame": 18,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3235,7 +3238,7 @@
             "bone": "haver",
             "animation_frame": 19.0,
             "real_frame": 19,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3257,7 +3260,7 @@
             "bone": "haver",
             "animation_frame": 19.0,
             "real_frame": 19,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3279,7 +3282,7 @@
             "bone": "top",
             "animation_frame": 19.0,
             "real_frame": 19,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3303,7 +3306,7 @@
             "bone": "haver",
             "animation_frame": 20.0,
             "real_frame": 20,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3325,7 +3328,7 @@
             "bone": "haver",
             "animation_frame": 20.0,
             "real_frame": 20,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3347,7 +3350,7 @@
             "bone": "top",
             "animation_frame": 20.0,
             "real_frame": 20,
-            "damage": 4.0,
+            "damage": 6.0,
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
@@ -3374,8 +3377,8 @@
       "active_frames": [
         7,
         8,
-        11,
-        12
+        13,
+        14
       ],
       "hitboxes_by_frame": {
         "7": [
@@ -3385,19 +3388,23 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 3.0,
-            "angle": 70,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 6.5,
+            "angle": 65,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.0,
-              "z": 11.5
+              "y": 4.5,
+              "z": 12.0
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 12.0
+            },
+            "is_capsule": true,
             "character": "metaknight",
             "move": "fair"
           },
@@ -3407,21 +3414,21 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 3.0,
-            "angle": 70,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 6.5,
+            "angle": 65,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 1.5,
-              "z": 9.0
+              "y": 1.0,
+              "z": 10.0
             },
             "offset2": {
               "x": 0.0,
-              "y": 8.5,
-              "z": 9.0
+              "y": 9.0,
+              "z": 10.0
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -3435,19 +3442,23 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 3.0,
-            "angle": 70,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 6.5,
+            "angle": 65,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.0,
-              "z": 11.5
+              "y": 4.5,
+              "z": 12.0
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 5.5,
+              "z": 12.0
+            },
+            "is_capsule": true,
             "character": "metaknight",
             "move": "fair"
           },
@@ -3457,49 +3468,49 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 3.0,
-            "angle": 70,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
+            "angle": 65,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 10.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 9.0,
+              "z": 10.0
+            },
+            "is_capsule": true,
+            "character": "metaknight",
+            "move": "fair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 130,
+            "fkb": 0,
+            "bkb": 30,
             "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 1.5,
-              "z": 9.0
+              "y": 3.5,
+              "z": 12.0
             },
             "offset2": {
               "x": 0.0,
-              "y": 8.5,
-              "z": 9.0
-            },
-            "is_capsule": true,
-            "character": "metaknight",
-            "move": "fair"
-          }
-        ],
-        "11": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 11.0,
-            "real_frame": 11,
-            "damage": 4.0,
-            "angle": 361,
-            "kbg": 130,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 7.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 11.5
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 11.5
+              "y": 6.5,
+              "z": 12.0
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -3508,52 +3519,52 @@
           {
             "id": 1,
             "bone": "top",
-            "animation_frame": 11.0,
-            "real_frame": 11,
+            "animation_frame": 13.0,
+            "real_frame": 13,
             "damage": 4.0,
             "angle": 361,
             "kbg": 130,
             "fkb": 0,
             "bkb": 30,
-            "size": 7.0,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 1.5,
-              "z": 9.0
+              "y": 1.0,
+              "z": 9.5
             },
             "offset2": {
               "x": 0.0,
-              "y": 8.5,
-              "z": 9.0
+              "y": 9.0,
+              "z": 9.5
             },
             "is_capsule": true,
             "character": "metaknight",
             "move": "fair"
           }
         ],
-        "12": [
+        "14": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 12.0,
-            "real_frame": 12,
+            "animation_frame": 14.0,
+            "real_frame": 14,
             "damage": 4.0,
             "angle": 361,
             "kbg": 130,
             "fkb": 0,
             "bkb": 30,
-            "size": 7.0,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 4.0,
-              "z": 11.5
+              "y": 3.5,
+              "z": 12.0
             },
             "offset2": {
               "x": 0.0,
-              "y": 6.0,
-              "z": 11.5
+              "y": 6.5,
+              "z": 12.0
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -3562,24 +3573,24 @@
           {
             "id": 1,
             "bone": "top",
-            "animation_frame": 12.0,
-            "real_frame": 12,
+            "animation_frame": 14.0,
+            "real_frame": 14,
             "damage": 4.0,
             "angle": 361,
             "kbg": 130,
             "fkb": 0,
             "bkb": 30,
-            "size": 7.0,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 1.5,
-              "z": 9.0
+              "y": 1.0,
+              "z": 9.5
             },
             "offset2": {
               "x": 0.0,
-              "y": 8.5,
-              "z": 9.0
+              "y": 9.0,
+              "z": 9.5
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -3597,22 +3608,28 @@
           "scale_factor": 0.75
         },
         {
-          "type": "FT_MOTION_RATE",
+          "type": "range",
           "frame": 9.0,
-          "rate_value": 1.0
+          "start_orig": 9.0,
+          "end_orig": 9.6,
+          "new_duration": 2.0,
+          "scale_factor": 3.3333333333333353
+        },
+        {
+          "type": "range",
+          "frame": 9.6,
+          "start_orig": 9.6,
+          "end_orig": 12.0,
+          "new_duration": 4.0,
+          "scale_factor": 1.6666666666666665
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 10.0,
-          "rate_value": 2.0
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 11.0,
+          "frame": 12.0,
           "rate_value": 1.0
         }
       ],
-      "faf": 35
+      "faf": 37
     },
     "bair": {
       "total_frames": 40,
@@ -3636,8 +3653,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 4.0,
-              "z": -11.5
+              "y": 2.6,
+              "z": -11.3
             },
             "offset2": {
               "x": 0.0,
@@ -3688,13 +3705,13 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.5,
-              "z": -6.5
+              "y": -2.525,
+              "z": -5.3
             },
             "offset2": {
               "x": 0.0,
-              "y": 4.0,
-              "z": -11.5
+              "y": 2.6,
+              "z": -11.3
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -3714,8 +3731,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.5,
-              "z": -6.5
+              "y": -2.525,
+              "z": -5.3
             },
             "offset2": {
               "x": 0.0,
@@ -3742,8 +3759,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 4.0,
-              "z": -11.5
+              "y": 2.6,
+              "z": -11.3
             },
             "offset2": {
               "x": 0.0,
@@ -3794,13 +3811,13 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.5,
-              "z": -6.5
+              "y": -2.525,
+              "z": -5.3
             },
             "offset2": {
               "x": 0.0,
-              "y": 4.0,
-              "z": -11.5
+              "y": 2.6,
+              "z": -11.3
             },
             "is_capsule": true,
             "character": "metaknight",
@@ -3820,8 +3837,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.5,
-              "z": -6.5
+              "y": -2.525,
+              "z": -5.3
             },
             "offset2": {
               "x": 0.0,
@@ -3864,10 +3881,10 @@
             "animation_frame": 2.0,
             "real_frame": 2,
             "damage": 4.0,
-            "angle": 67,
-            "kbg": 128,
+            "angle": 68,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 35,
             "size": 4.4,
             "situation": "GA",
             "offset": {
@@ -3890,10 +3907,10 @@
             "animation_frame": 2.0,
             "real_frame": 2,
             "damage": 4.0,
-            "angle": 67,
-            "kbg": 128,
+            "angle": 68,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 35,
             "size": 4.4,
             "situation": "GA",
             "offset": {
@@ -3916,10 +3933,10 @@
             "animation_frame": 2.0,
             "real_frame": 2,
             "damage": 4.0,
-            "angle": 67,
-            "kbg": 128,
+            "angle": 68,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 35,
             "size": 4.4,
             "situation": "GA",
             "offset": {
@@ -3942,10 +3959,10 @@
             "animation_frame": 2.0,
             "real_frame": 2,
             "damage": 4.0,
-            "angle": 67,
-            "kbg": 128,
+            "angle": 68,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 35,
             "size": 4.4,
             "situation": "GA",
             "offset": {
@@ -3970,10 +3987,10 @@
             "animation_frame": 3.0,
             "real_frame": 3,
             "damage": 4.0,
-            "angle": 67,
-            "kbg": 128,
+            "angle": 68,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 35,
             "size": 4.4,
             "situation": "GA",
             "offset": {
@@ -3996,10 +4013,10 @@
             "animation_frame": 3.0,
             "real_frame": 3,
             "damage": 4.0,
-            "angle": 67,
-            "kbg": 128,
+            "angle": 68,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 35,
             "size": 4.4,
             "situation": "GA",
             "offset": {
@@ -4022,10 +4039,10 @@
             "animation_frame": 3.0,
             "real_frame": 3,
             "damage": 4.0,
-            "angle": 67,
-            "kbg": 128,
+            "angle": 68,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 35,
             "size": 4.4,
             "situation": "GA",
             "offset": {
@@ -4048,10 +4065,10 @@
             "animation_frame": 3.0,
             "real_frame": 3,
             "damage": 4.0,
-            "angle": 67,
-            "kbg": 128,
+            "angle": 68,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 35,
             "size": 4.4,
             "situation": "GA",
             "offset": {
@@ -4098,7 +4115,7 @@
             "animation_frame": 4.0,
             "real_frame": 4,
             "damage": 6.0,
-            "angle": 70,
+            "angle": 72,
             "kbg": 108,
             "fkb": 0,
             "bkb": 30,
@@ -4124,7 +4141,7 @@
             "animation_frame": 4.0,
             "real_frame": 4,
             "damage": 6.0,
-            "angle": 70,
+            "angle": 72,
             "kbg": 108,
             "fkb": 0,
             "bkb": 30,
@@ -4150,7 +4167,7 @@
             "animation_frame": 4.0,
             "real_frame": 4,
             "damage": 6.0,
-            "angle": 70,
+            "angle": 72,
             "kbg": 108,
             "fkb": 0,
             "bkb": 30,
@@ -4176,7 +4193,7 @@
             "animation_frame": 4.0,
             "real_frame": 4,
             "damage": 6.0,
-            "angle": 70,
+            "angle": 72,
             "kbg": 108,
             "fkb": 0,
             "bkb": 30,
@@ -4204,7 +4221,7 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 6.0,
-            "angle": 70,
+            "angle": 72,
             "kbg": 108,
             "fkb": 0,
             "bkb": 30,
@@ -4230,7 +4247,7 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 6.0,
-            "angle": 70,
+            "angle": 72,
             "kbg": 108,
             "fkb": 0,
             "bkb": 30,
@@ -4256,7 +4273,7 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 6.0,
-            "angle": 70,
+            "angle": 72,
             "kbg": 108,
             "fkb": 0,
             "bkb": 30,
@@ -4282,7 +4299,7 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 6.0,
-            "angle": 70,
+            "angle": 72,
             "kbg": 108,
             "fkb": 0,
             "bkb": 30,
@@ -4742,7 +4759,7 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 39
+      "faf": 37
     },
     "grab": {
       "total_frames": 31,
@@ -4766,7 +4783,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.5,
-              "z": 0.0
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
@@ -4794,7 +4811,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.5,
-              "z": 0.0
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
@@ -5012,10 +5029,10 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 6.0,
-            "angle": 40,
-            "kbg": 100,
+            "angle": 64,
+            "kbg": 87,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 58,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -5036,10 +5053,10 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 6.0,
-            "angle": 60,
-            "kbg": 100,
+            "angle": 64,
+            "kbg": 87,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 58,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -5058,10 +5075,10 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 6.0,
-            "angle": 60,
-            "kbg": 100,
+            "angle": 64,
+            "kbg": 87,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 58,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -5082,7 +5099,7 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 3.0,
-            "angle": 65,
+            "angle": 64,
             "kbg": 140,
             "fkb": 0,
             "bkb": 50,
@@ -5117,10 +5134,10 @@
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 7.0,
-            "angle": 75,
-            "kbg": 100,
+            "angle": 54,
+            "kbg": 78,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 69,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -5139,10 +5156,10 @@
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 7.0,
-            "angle": 75,
-            "kbg": 100,
+            "angle": 54,
+            "kbg": 78,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 69,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -5163,10 +5180,10 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 7.0,
-            "angle": 75,
-            "kbg": 100,
+            "angle": 54,
+            "kbg": 78,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 69,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -5185,10 +5202,10 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 7.0,
-            "angle": 75,
-            "kbg": 100,
+            "angle": 54,
+            "kbg": 78,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 69,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -5209,7 +5226,7 @@
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 3.0,
-            "angle": 45,
+            "angle": 54,
             "kbg": 140,
             "fkb": 0,
             "bkb": 60,
@@ -5232,20 +5249,45 @@
     "uthrow": {
       "total_frames": 84,
       "active_frames": [
+        45,
         46
       ],
       "hitboxes_by_frame": {
+        "45": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 45.0,
+            "real_frame": 45,
+            "damage": 8.0,
+            "angle": 90,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 112,
+            "size": 7.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "uthrow"
+          }
+        ],
         "46": [
           {
             "id": 0,
             "bone": "top",
             "animation_frame": 46.0,
             "real_frame": 46,
-            "damage": 10.0,
-            "angle": 83,
-            "kbg": 85,
+            "damage": 2.0,
+            "angle": 90,
+            "kbg": 150,
             "fkb": 0,
-            "bkb": 70,
+            "bkb": 98,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5268,9 +5310,8 @@
         9,
         10,
         11,
-        59,
-        60,
-        61
+        58,
+        59
       ],
       "hitboxes_by_frame": {
         "9": [
@@ -5345,65 +5386,41 @@
             "move": "dthrow"
           }
         ],
+        "58": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 58.0,
+            "real_frame": 58,
+            "damage": 1.0,
+            "angle": 32,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 70,
+            "size": 7.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "metaknight",
+            "move": "dthrow"
+          }
+        ],
         "59": [
           {
             "id": 0,
             "bone": "top",
             "animation_frame": 59.0,
             "real_frame": 59,
-            "damage": 1.0,
-            "angle": 80,
-            "kbg": 200,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 7.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "metaknight",
-            "move": "dthrow"
-          }
-        ],
-        "60": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 60.0,
-            "real_frame": 60,
-            "damage": 1.0,
-            "angle": 80,
-            "kbg": 200,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 7.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "metaknight",
-            "move": "dthrow"
-          }
-        ],
-        "61": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 61.0,
-            "real_frame": 61,
             "damage": 2.0,
-            "angle": 60,
-            "kbg": 130,
+            "angle": 32,
+            "kbg": 60,
             "fkb": 0,
-            "bkb": 62,
+            "bkb": 75,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5424,12 +5441,20 @@
           "rate_value": 0.8
         },
         {
+          "type": "range",
+          "frame": 73.0,
+          "start_orig": 73.0,
+          "end_orig": 80.0,
+          "new_duration": 14.0,
+          "scale_factor": 2.0
+        },
+        {
           "type": "FT_MOTION_RATE",
-          "frame": 82.0,
+          "frame": 80.0,
           "rate_value": 1.0
         }
       ],
-      "faf": 71
+      "faf": 79
     },
     "ftilt3": {
       "total_frames": 13,
@@ -5445,7 +5470,7 @@
             "animation_frame": 2.0,
             "real_frame": 2,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 68,
             "kbg": 100,
             "fkb": 0,
             "bkb": 51,
@@ -5471,7 +5496,7 @@
             "animation_frame": 2.0,
             "real_frame": 2,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 68,
             "kbg": 100,
             "fkb": 0,
             "bkb": 51,
@@ -5499,7 +5524,7 @@
             "animation_frame": 3.0,
             "real_frame": 3,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 68,
             "kbg": 100,
             "fkb": 0,
             "bkb": 51,
@@ -5525,7 +5550,7 @@
             "animation_frame": 3.0,
             "real_frame": 3,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 68,
             "kbg": 100,
             "fkb": 0,
             "bkb": 51,
@@ -5551,5 +5576,5 @@
       "faf": 24
     }
   },
-  "generated_at": "2026-04-25T23:06:18.843288"
+  "generated_at": "2026-05-13T15:23:50.397943"
 }

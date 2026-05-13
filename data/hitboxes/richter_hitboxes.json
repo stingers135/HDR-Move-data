@@ -11,28 +11,6 @@
       "hitboxes_by_frame": {
         "5": [
           {
-            "id": 0,
-            "bone": "kneel",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 3.0,
-            "angle": 73,
-            "kbg": 40,
-            "fkb": 0,
-            "bkb": 25,
-            "size": 3.0,
-            "situation": "GA",
-            "offset": {
-              "x": -4.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "richter",
-            "move": "jab1"
-          },
-          {
             "id": 1,
             "bone": "kneel",
             "animation_frame": 5.0,
@@ -66,6 +44,72 @@
             "bkb": 25,
             "size": 3.5,
             "situation": "GA",
+            "offset": {
+              "x": 4.3,
+              "y": -0.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "jab1"
+          },
+          {
+            "id": 0,
+            "bone": "kneel",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 73,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.0,
+            "situation": "GA",
+            "offset": {
+              "x": -4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "jab1"
+          },
+          {
+            "id": 4,
+            "bone": "kneel",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 320,
+            "kbg": 25,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.4,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "jab1"
+          },
+          {
+            "id": 5,
+            "bone": "kneel",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 3.0,
+            "angle": 320,
+            "kbg": 25,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.5,
+            "situation": "A",
             "offset": {
               "x": 4.3,
               "y": -0.2,
@@ -137,7 +181,7 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.0,
-            "situation": "GA",
+            "situation": "G",
             "offset": {
               "x": 0.4,
               "y": 0.0,
@@ -159,7 +203,51 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.5,
-            "situation": "GA",
+            "situation": "G",
+            "offset": {
+              "x": 4.3,
+              "y": -0.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "jab1"
+          },
+          {
+            "id": 4,
+            "bone": "kneel",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 320,
+            "kbg": 25,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.4,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "jab1"
+          },
+          {
+            "id": 5,
+            "bone": "kneel",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 3.0,
+            "angle": 320,
+            "kbg": 25,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.5,
+            "situation": "A",
             "offset": {
               "x": 4.3,
               "y": -0.2,
@@ -231,7 +319,7 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.0,
-            "situation": "GA",
+            "situation": "G",
             "offset": {
               "x": 0.4,
               "y": 0.0,
@@ -253,7 +341,51 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.5,
-            "situation": "GA",
+            "situation": "G",
+            "offset": {
+              "x": 4.3,
+              "y": -0.2,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "jab1"
+          },
+          {
+            "id": 4,
+            "bone": "kneel",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 320,
+            "kbg": 25,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.4,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "jab1"
+          },
+          {
+            "id": 5,
+            "bone": "kneel",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 320,
+            "kbg": 25,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.5,
+            "situation": "A",
             "offset": {
               "x": 4.3,
               "y": -0.2,
@@ -1473,8 +1605,8 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 10.0,
-            "angle": 110,
-            "kbg": 45,
+            "angle": 103,
+            "kbg": 49,
             "fkb": 0,
             "bkb": 75,
             "size": 3.8,
@@ -1495,7 +1627,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -1517,7 +1649,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -1545,8 +1677,8 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 10.0,
-            "angle": 110,
-            "kbg": 45,
+            "angle": 103,
+            "kbg": 49,
             "fkb": 0,
             "bkb": 75,
             "size": 3.8,
@@ -1567,7 +1699,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -1589,7 +1721,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -1617,8 +1749,8 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 10.0,
-            "angle": 110,
-            "kbg": 45,
+            "angle": 103,
+            "kbg": 49,
             "fkb": 0,
             "bkb": 75,
             "size": 3.8,
@@ -1639,7 +1771,7 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -1661,7 +1793,7 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -1684,7 +1816,7 @@
         ]
       },
       "motion_events": [],
-      "faf": 30
+      "faf": 35
     },
     "utilt": {
       "total_frames": 49,
@@ -3537,8 +3669,8 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 10.0,
-            "angle": 120,
-            "kbg": 45,
+            "angle": 111,
+            "kbg": 43,
             "fkb": 0,
             "bkb": 75,
             "size": 3.8,
@@ -3559,7 +3691,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -3581,7 +3713,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -3609,8 +3741,8 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 10.0,
-            "angle": 120,
-            "kbg": 45,
+            "angle": 111,
+            "kbg": 43,
             "fkb": 0,
             "bkb": 75,
             "size": 3.8,
@@ -3631,7 +3763,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -3653,7 +3785,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -3681,8 +3813,8 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 10.0,
-            "angle": 120,
-            "kbg": 45,
+            "angle": 111,
+            "kbg": 43,
             "fkb": 0,
             "bkb": 75,
             "size": 3.8,
@@ -3703,7 +3835,7 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -3725,7 +3857,7 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 6.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 63,
             "fkb": 0,
             "bkb": 40,
@@ -4969,10 +5101,10 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 48
+      "faf": 54
     },
     "nair": {
-      "total_frames": 54,
+      "total_frames": 52,
       "active_frames": [
         10,
         11,
@@ -4992,7 +5124,7 @@
             "bone": "top",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 10.0,
+            "damage": 11.0,
             "angle": 45,
             "kbg": 105,
             "fkb": 0,
@@ -5001,8 +5133,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 12.3,
-              "z": 7.0
+              "y": 14.8,
+              "z": 5.6
             },
             "offset2": {
               "x": 0.0,
@@ -5042,7 +5174,7 @@
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 10.0,
+            "damage": 11.0,
             "angle": 45,
             "kbg": 105,
             "fkb": 0,
@@ -5051,8 +5183,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 11.0,
-              "z": 7.5
+              "y": 13.3,
+              "z": 6.6
             },
             "offset2": {
               "x": 0.0,
@@ -5092,7 +5224,7 @@
             "bone": "top",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 10.0,
+            "damage": 11.0,
             "angle": 45,
             "kbg": 105,
             "fkb": 0,
@@ -5101,8 +5233,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 10.0,
-              "z": 7.0
+              "y": 12.0,
+              "z": 6.8
             },
             "offset2": {
               "x": 0.0,
@@ -5142,7 +5274,7 @@
             "bone": "top",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 9.0,
+            "damage": 10.0,
             "angle": 45,
             "kbg": 95,
             "fkb": 0,
@@ -5151,8 +5283,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 11.2,
-              "z": 1.0
+              "y": 12.9,
+              "z": 1.3
             },
             "offset2": {
               "x": 0.0,
@@ -5192,7 +5324,7 @@
             "bone": "top",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 9.0,
+            "damage": 10.0,
             "angle": 45,
             "kbg": 95,
             "fkb": 0,
@@ -5201,8 +5333,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 13.0,
-              "z": -1.0
+              "y": 14.5,
+              "z": -0.4
             },
             "offset2": {
               "x": 0.0,
@@ -5242,7 +5374,7 @@
             "bone": "top",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 9.0,
+            "damage": 10.0,
             "angle": 45,
             "kbg": 95,
             "fkb": 0,
@@ -5251,8 +5383,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 15.5,
-              "z": -5.0
+              "y": 16.7,
+              "z": -4.2
             },
             "offset2": {
               "x": 0.0,
@@ -5292,7 +5424,7 @@
             "bone": "top",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 8.0,
+            "damage": 9.0,
             "angle": 45,
             "kbg": 85,
             "fkb": 0,
@@ -5301,8 +5433,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 16.5,
-              "z": -7.0
+              "y": 17.7,
+              "z": -6.0
             },
             "offset2": {
               "x": 0.0,
@@ -5342,7 +5474,7 @@
             "bone": "top",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 8.0,
+            "damage": 9.0,
             "angle": 45,
             "kbg": 85,
             "fkb": 0,
@@ -5351,8 +5483,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 18.0,
-              "z": -7.5
+              "y": 19.2,
+              "z": -6.7
             },
             "offset2": {
               "x": 0.0,
@@ -5392,7 +5524,7 @@
             "bone": "top",
             "animation_frame": 18.0,
             "real_frame": 18,
-            "damage": 8.0,
+            "damage": 9.0,
             "angle": 45,
             "kbg": 85,
             "fkb": 0,
@@ -5401,8 +5533,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 20.5,
-              "z": -8.5
+              "y": 21.8,
+              "z": -7.8
             },
             "offset2": {
               "x": 0.0,
@@ -5464,7 +5596,7 @@
             "bone": "top",
             "animation_frame": 19.0,
             "real_frame": 19,
-            "damage": 8.0,
+            "damage": 9.0,
             "angle": 45,
             "kbg": 85,
             "fkb": 0,
@@ -5473,8 +5605,8 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 21.0,
-              "z": -10.9
+              "y": 22.4,
+              "z": -10.3
             },
             "offset2": {
               "x": 0.0,
@@ -5493,11 +5625,83 @@
     "fair": {
       "total_frames": 52,
       "active_frames": [
+        14,
         15,
-        16,
-        17
+        16
       ],
       "hitboxes_by_frame": {
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 10.0,
+            "angle": 108,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 80,
+            "size": 3.8,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 36.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "fair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 4.0,
+            "angle": 361,
+            "kbg": 50,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 5.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "richter",
+            "move": "fair"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 2.3,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 34.0
+            },
+            "is_capsule": true,
+            "character": "richter",
+            "move": "fair"
+          }
+        ],
         "15": [
           {
             "id": 0,
@@ -5505,8 +5709,8 @@
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 10.0,
-            "angle": 120,
-            "kbg": 40,
+            "angle": 108,
+            "kbg": 30,
             "fkb": 0,
             "bkb": 80,
             "size": 3.8,
@@ -5577,8 +5781,8 @@
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 10.0,
-            "angle": 120,
-            "kbg": 40,
+            "angle": 108,
+            "kbg": 30,
             "fkb": 0,
             "bkb": 80,
             "size": 3.8,
@@ -5620,78 +5824,6 @@
             "bone": "top",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 40,
-            "fkb": 0,
-            "bkb": 55,
-            "size": 2.3,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 8.0,
-              "z": 7.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 8.0,
-              "z": 34.0
-            },
-            "is_capsule": true,
-            "character": "richter",
-            "move": "fair"
-          }
-        ],
-        "17": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 10.0,
-            "angle": 120,
-            "kbg": 40,
-            "fkb": 0,
-            "bkb": 80,
-            "size": 3.8,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 8.0,
-              "z": 36.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "richter",
-            "move": "fair"
-          },
-          {
-            "id": 1,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 4.0,
-            "angle": 361,
-            "kbg": 50,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 5.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 8.0,
-              "z": 5.5
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "richter",
-            "move": "fair"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
             "damage": 7.0,
             "angle": 361,
             "kbg": 40,
@@ -5715,8 +5847,22 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 42
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 15.0,
+          "new_duration": 13.0,
+          "scale_factor": 0.9285714285714286
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 15.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 39
     },
     "bair": {
       "total_frames": 63,
@@ -6289,7 +6435,7 @@
       "faf": 35
     },
     "uair": {
-      "total_frames": 43,
+      "total_frames": 37,
       "active_frames": [
         6,
         7,
@@ -6717,7 +6863,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 1.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6741,7 +6887,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 1.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6765,7 +6911,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6789,7 +6935,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6813,7 +6959,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6837,7 +6983,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6861,7 +7007,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6885,7 +7031,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6909,7 +7055,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6933,7 +7079,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6957,7 +7103,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -6981,7 +7127,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7005,7 +7151,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7029,7 +7175,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7053,7 +7199,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7077,7 +7223,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7101,7 +7247,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7125,7 +7271,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7149,7 +7295,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7173,7 +7319,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7197,7 +7343,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7221,7 +7367,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7245,7 +7391,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7269,7 +7415,7 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
+              "y": 1.5,
               "z": 0.0
             },
             "offset2": null,
@@ -7515,7 +7661,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": 0.0
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
@@ -7632,7 +7778,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": -4.0
+              "z": -6.5
             },
             "offset2": {
               "x": 0.0,
@@ -7660,7 +7806,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": -4.0
+              "z": -6.5
             },
             "offset2": {
               "x": 0.0,
@@ -7714,8 +7860,6 @@
     "fthrow": {
       "total_frames": 58,
       "active_frames": [
-        24,
-        25,
         26,
         27,
         28,
@@ -7723,55 +7867,11 @@
         30,
         31,
         32,
-        33
+        33,
+        34,
+        35
       ],
       "hitboxes_by_frame": {
-        "24": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 24.0,
-            "real_frame": 24,
-            "damage": 8.0,
-            "angle": 43,
-            "kbg": 83,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "richter",
-            "move": "fthrow"
-          }
-        ],
-        "25": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 25.0,
-            "real_frame": 25,
-            "damage": 8.0,
-            "angle": 43,
-            "kbg": 83,
-            "fkb": 0,
-            "bkb": 75,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "richter",
-            "move": "fthrow"
-          }
-        ],
         "26": [
           {
             "id": 0,
@@ -7955,10 +8055,67 @@
             "character": "richter",
             "move": "fthrow"
           }
+        ],
+        "34": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 34.0,
+            "real_frame": 34,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "richter",
+            "move": "fthrow"
+          }
+        ],
+        "35": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 35.0,
+            "real_frame": 35,
+            "damage": 8.0,
+            "angle": 43,
+            "kbg": 83,
+            "fkb": 0,
+            "bkb": 75,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "richter",
+            "move": "fthrow"
+          }
         ]
       },
-      "motion_events": [],
-      "faf": 42
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 2.0,
+          "rate_value": 2.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 4.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 44
     },
     "bthrow": {
       "total_frames": 54,
@@ -8231,7 +8388,7 @@
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8254,7 +8411,7 @@
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8277,7 +8434,7 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8300,7 +8457,7 @@
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8323,7 +8480,7 @@
             "animation_frame": 19.0,
             "real_frame": 19,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8346,7 +8503,7 @@
             "animation_frame": 20.0,
             "real_frame": 20,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8369,7 +8526,7 @@
             "animation_frame": 21.0,
             "real_frame": 21,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8392,7 +8549,7 @@
             "animation_frame": 22.0,
             "real_frame": 22,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8415,7 +8572,7 @@
             "animation_frame": 23.0,
             "real_frame": 23,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8438,7 +8595,7 @@
             "animation_frame": 24.0,
             "real_frame": 24,
             "damage": 6.0,
-            "angle": 89,
+            "angle": 103,
             "kbg": 70,
             "fkb": 0,
             "bkb": 65,
@@ -8470,7 +8627,7 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 39
+      "faf": 37
     },
     "dthrow": {
       "total_frames": 60,
@@ -8494,10 +8651,10 @@
             "animation_frame": 24.0,
             "real_frame": 24,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8517,10 +8674,10 @@
             "animation_frame": 25.0,
             "real_frame": 25,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8540,10 +8697,10 @@
             "animation_frame": 26.0,
             "real_frame": 26,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8563,10 +8720,10 @@
             "animation_frame": 27.0,
             "real_frame": 27,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8586,10 +8743,10 @@
             "animation_frame": 28.0,
             "real_frame": 28,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8609,10 +8766,10 @@
             "animation_frame": 29.0,
             "real_frame": 29,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8632,10 +8789,10 @@
             "animation_frame": 30.0,
             "real_frame": 30,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8655,10 +8812,10 @@
             "animation_frame": 31.0,
             "real_frame": 31,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8678,10 +8835,10 @@
             "animation_frame": 32.0,
             "real_frame": 32,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8701,10 +8858,10 @@
             "animation_frame": 33.0,
             "real_frame": 33,
             "damage": 8.0,
-            "angle": 58,
-            "kbg": 50,
+            "angle": 65,
+            "kbg": 64,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -8722,5 +8879,5 @@
       "faf": 40
     }
   },
-  "generated_at": "2026-04-25T23:06:29.292367"
+  "generated_at": "2026-05-13T15:24:17.552828"
 }

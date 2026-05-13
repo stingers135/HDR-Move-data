@@ -5803,7 +5803,7 @@
             "bone": "tail2",
             "animation_frame": 4.0,
             "real_frame": 4,
-            "damage": 5.0,
+            "damage": 4.0,
             "angle": 100,
             "kbg": 60,
             "fkb": 0,
@@ -5825,55 +5825,11 @@
             "bone": "tail4",
             "animation_frame": 4.0,
             "real_frame": 4,
-            "damage": 5.0,
+            "damage": 4.0,
             "angle": 100,
             "kbg": 60,
             "fkb": 0,
             "bkb": 90,
-            "size": 5.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 2.5
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pikachu",
-            "move": "uair"
-          },
-          {
-            "id": 0,
-            "bone": "tail1",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 8.0,
-            "angle": 20,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pikachu",
-            "move": "uair"
-          },
-          {
-            "id": 1,
-            "bone": "tail4",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 8.0,
-            "angle": 20,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 45,
             "size": 5.0,
             "situation": "GA",
             "offset": {
@@ -5982,6 +5938,50 @@
         "7": [
           {
             "id": 0,
+            "bone": "tail1",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.0,
+            "angle": 20,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikachu",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "tail4",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.0,
+            "angle": 20,
+            "kbg": 60,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 5.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 2.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikachu",
+            "move": "uair"
+          },
+          {
+            "id": 0,
             "bone": "tail2",
             "animation_frame": 7.0,
             "real_frame": 7,
@@ -6075,16 +6075,24 @@
       "motion_events": [
         {
           "type": "range",
-          "frame": 4.0,
-          "start_orig": 4.0,
-          "end_orig": 10.0,
-          "new_duration": 4.0,
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 6.5,
+          "new_duration": 1.0,
           "scale_factor": 0.6666666666666666
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 10.0,
+          "frame": 6.5,
           "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 9.5,
+          "start_orig": 9.5,
+          "end_orig": 11.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.6666666666666666
         },
         {
           "type": "range",
@@ -7176,7 +7184,7 @@
             "offset": {
               "x": 0.0,
               "y": 5.5,
-              "z": 0.0
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
@@ -7204,7 +7212,7 @@
             "offset": {
               "x": 0.0,
               "y": 5.5,
-              "z": 0.0
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
@@ -7243,7 +7251,7 @@
             "offset": {
               "x": 0.0,
               "y": 5.5,
-              "z": 0.0
+              "z": 3.5
             },
             "offset2": {
               "x": 0.0,
@@ -7271,7 +7279,7 @@
             "offset": {
               "x": 0.0,
               "y": 5.5,
-              "z": 0.0
+              "z": 3.5
             },
             "offset2": {
               "x": 0.0,
@@ -7310,7 +7318,7 @@
             "offset": {
               "x": 0.0,
               "y": 5.5,
-              "z": 0.0
+              "z": -3.5
             },
             "offset2": {
               "x": 0.0,
@@ -7338,7 +7346,7 @@
             "offset": {
               "x": 0.0,
               "y": 5.5,
-              "z": 0.0
+              "z": -3.5
             },
             "offset2": {
               "x": 0.0,
@@ -8490,5 +8498,5 @@
       "faf": 44
     }
   },
-  "generated_at": "2026-04-25T23:06:13.145797"
+  "generated_at": "2026-05-13T15:23:37.359780"
 }

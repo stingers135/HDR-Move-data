@@ -8269,28 +8269,29 @@
     "dair": {
       "total_frames": 59,
       "active_frames": [
-        14,
-        15,
+        12,
+        13,
+        19,
         20,
         21
       ],
       "hitboxes_by_frame": {
-        "14": [
+        "12": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
+            "animation_frame": 12.0,
+            "real_frame": 12,
             "damage": 5.0,
-            "angle": 255,
-            "kbg": 20,
+            "angle": 365,
+            "kbg": 31,
             "fkb": 0,
-            "bkb": 20,
-            "size": 4.5,
-            "situation": "A",
+            "bkb": 30,
+            "size": 5.5,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -2.0,
+              "y": -1.0,
               "z": 0.0
             },
             "offset2": null,
@@ -8301,62 +8302,18 @@
           {
             "id": 1,
             "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
+            "animation_frame": 12.0,
+            "real_frame": 12,
             "damage": 5.0,
-            "angle": 130,
-            "kbg": 20,
+            "angle": 365,
+            "kbg": 31,
             "fkb": 0,
-            "bkb": 20,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": -4.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "duckhunt",
-            "move": "dair"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 5.0,
-            "angle": 275,
-            "kbg": 20,
-            "fkb": 0,
-            "bkb": 20,
+            "bkb": 30,
             "size": 4.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -2.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "duckhunt",
-            "move": "dair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 5.0,
-            "angle": 275,
-            "kbg": 20,
-            "fkb": 0,
-            "bkb": 20,
-            "size": 3.5,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": -4.0,
+              "y": -3.5,
               "z": 0.0
             },
             "offset2": null,
@@ -8365,22 +8322,22 @@
             "move": "dair"
           }
         ],
-        "15": [
+        "13": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
+            "animation_frame": 13.0,
+            "real_frame": 13,
             "damage": 5.0,
-            "angle": 255,
-            "kbg": 20,
+            "angle": 365,
+            "kbg": 31,
             "fkb": 0,
-            "bkb": 20,
-            "size": 4.5,
-            "situation": "A",
+            "bkb": 30,
+            "size": 5.5,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -2.0,
+              "y": -1.0,
               "z": 0.0
             },
             "offset2": null,
@@ -8391,66 +8348,50 @@
           {
             "id": 1,
             "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
+            "animation_frame": 13.0,
+            "real_frame": 13,
             "damage": 5.0,
-            "angle": 130,
-            "kbg": 20,
+            "angle": 365,
+            "kbg": 31,
             "fkb": 0,
-            "bkb": 20,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": -4.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "duckhunt",
-            "move": "dair"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 5.0,
-            "angle": 275,
-            "kbg": 20,
-            "fkb": 0,
-            "bkb": 20,
+            "bkb": 30,
             "size": 4.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -2.0,
+              "y": -3.5,
               "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
             "character": "duckhunt",
             "move": "dair"
-          },
+          }
+        ],
+        "19": [
           {
-            "id": 3,
+            "id": 0,
             "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 5.0,
-            "angle": 275,
-            "kbg": 20,
+            "animation_frame": 19.0,
+            "real_frame": 19,
+            "damage": 7.0,
+            "angle": 270,
+            "kbg": 60,
             "fkb": 0,
-            "bkb": 20,
-            "size": 3.5,
-            "situation": "G",
+            "bkb": 34,
+            "size": 5.5,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -4.0,
-              "z": 0.0
+              "y": 0.0,
+              "z": 3.5
             },
-            "offset2": null,
-            "is_capsule": false,
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 5.25
+            },
+            "is_capsule": true,
             "character": "duckhunt",
             "move": "dair"
           }
@@ -8475,8 +8416,8 @@
             },
             "offset2": {
               "x": 0.0,
-              "y": -5.0,
-              "z": 0.0
+              "y": 2.0,
+              "z": 4.0
             },
             "is_capsule": true,
             "character": "duckhunt",
@@ -8503,8 +8444,8 @@
             },
             "offset2": {
               "x": 0.0,
-              "y": -5.0,
-              "z": 0.0
+              "y": -2.0,
+              "z": 3.0
             },
             "is_capsule": true,
             "character": "duckhunt",
@@ -8512,8 +8453,35 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 50
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 4.0,
+          "start_orig": 4.0,
+          "end_orig": 14.0,
+          "new_duration": 8.0,
+          "scale_factor": 0.8
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 14.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 16.0,
+          "start_orig": 16.0,
+          "end_orig": 19.0,
+          "new_duration": 5.0,
+          "scale_factor": 1.6666666666666667
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 19.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 46
     },
     "dash_attack": {
       "total_frames": 49,
@@ -9457,7 +9425,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": 0.0
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
@@ -9485,7 +9453,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": 0.0
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
@@ -9602,7 +9570,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": -4.0
+              "z": -5.5
             },
             "offset2": {
               "x": 0.0,
@@ -9630,7 +9598,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": -4.0
+              "z": -5.5
             },
             "offset2": {
               "x": 0.0,
@@ -10431,15 +10399,15 @@
     "dthrow": {
       "total_frames": 66,
       "active_frames": [
-        24
+        21
       ],
       "hitboxes_by_frame": {
-        "24": [
+        "21": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 24.0,
-            "real_frame": 24,
+            "animation_frame": 21.0,
+            "real_frame": 21,
             "damage": 5.0,
             "angle": 80,
             "kbg": 40,
@@ -10458,9 +10426,23 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 43
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 20.0,
+          "new_duration": 12.0,
+          "scale_factor": 0.8
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 20.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 40
     }
   },
-  "generated_at": "2026-04-25T23:06:26.588427"
+  "generated_at": "2026-05-13T15:24:10.557646"
 }

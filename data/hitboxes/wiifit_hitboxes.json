@@ -15,10 +15,10 @@
             "animation_frame": 4.0,
             "real_frame": 4,
             "damage": 3.0,
-            "angle": 361,
-            "kbg": 25,
+            "angle": 45,
+            "kbg": 10,
             "fkb": 0,
-            "bkb": 15,
+            "bkb": 23,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -37,12 +37,12 @@
             "animation_frame": 4.0,
             "real_frame": 4,
             "damage": 3.0,
-            "angle": 361,
-            "kbg": 25,
+            "angle": 45,
+            "kbg": 10,
             "fkb": 0,
-            "bkb": 20,
+            "bkb": 23,
             "size": 2.75,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": -3.0,
               "y": 0.0,
@@ -82,20 +82,20 @@
             "real_frame": 4,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 30,
+            "kbg": 20,
             "fkb": 0,
             "bkb": 20,
             "size": 2.5,
-            "situation": "GA",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 6.0,
-              "z": 4.0
+              "z": 3.5
             },
             "offset2": {
               "x": 0.0,
               "y": 6.0,
-              "z": 6.5
+              "z": 7.0
             },
             "is_capsule": true,
             "character": "wiifit",
@@ -109,10 +109,10 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 3.0,
-            "angle": 361,
-            "kbg": 25,
+            "angle": 45,
+            "kbg": 10,
             "fkb": 0,
-            "bkb": 15,
+            "bkb": 23,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -131,12 +131,12 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 3.0,
-            "angle": 361,
-            "kbg": 25,
+            "angle": 45,
+            "kbg": 10,
             "fkb": 0,
-            "bkb": 20,
+            "bkb": 23,
             "size": 2.75,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": -3.0,
               "y": 0.0,
@@ -176,20 +176,20 @@
             "real_frame": 5,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 30,
+            "kbg": 20,
             "fkb": 0,
             "bkb": 20,
             "size": 2.5,
-            "situation": "GA",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 6.0,
-              "z": 4.0
+              "z": 3.5
             },
             "offset2": {
               "x": 0.0,
               "y": 6.0,
-              "z": 6.5
+              "z": 7.0
             },
             "is_capsule": true,
             "character": "wiifit",
@@ -411,10 +411,10 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 3.0,
-            "angle": 361,
-            "kbg": 50,
+            "angle": 270,
+            "kbg": 86,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 50,
             "size": 1.8,
             "situation": "G",
             "offset": {
@@ -461,10 +461,10 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 3.0,
-            "angle": 361,
-            "kbg": 50,
+            "angle": 270,
+            "kbg": 86,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 50,
             "size": 1.8,
             "situation": "G",
             "offset": {
@@ -522,10 +522,10 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 3.0,
-            "angle": 361,
-            "kbg": 50,
+            "angle": 270,
+            "kbg": 86,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 50,
             "size": 1.8,
             "situation": "G",
             "offset": {
@@ -572,10 +572,10 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 3.0,
-            "angle": 361,
-            "kbg": 50,
+            "angle": 270,
+            "kbg": 86,
             "fkb": 0,
-            "bkb": 10,
+            "bkb": 50,
             "size": 1.8,
             "situation": "G",
             "offset": {
@@ -1376,7 +1376,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.3,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.5,
@@ -1394,7 +1394,7 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1420,7 +1420,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": -1.5,
@@ -1460,7 +1460,7 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1488,7 +1488,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.3,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.5,
@@ -1506,7 +1506,7 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1532,7 +1532,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": -1.5,
@@ -1572,7 +1572,7 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1600,7 +1600,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.3,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.5,
@@ -1618,7 +1618,7 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1644,7 +1644,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": -1.5,
@@ -1684,7 +1684,7 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1712,7 +1712,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.3,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.5,
@@ -1730,7 +1730,7 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1756,7 +1756,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": -1.5,
@@ -1796,7 +1796,7 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1824,7 +1824,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.3,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.5,
@@ -1842,7 +1842,7 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1868,7 +1868,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": -1.5,
@@ -1908,7 +1908,7 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1936,7 +1936,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.3,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.5,
@@ -1954,7 +1954,7 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -1980,7 +1980,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": -1.5,
@@ -2020,7 +2020,7 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -2048,7 +2048,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.3,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.5,
@@ -2066,7 +2066,7 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -2092,7 +2092,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": -1.5,
@@ -2132,7 +2132,7 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -2160,7 +2160,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.3,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.5,
@@ -2178,7 +2178,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -2204,7 +2204,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": -1.5,
@@ -2244,7 +2244,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 10.0,
-            "angle": 75,
+            "angle": 78,
             "kbg": 102,
             "fkb": 0,
             "bkb": 45,
@@ -2986,7 +2986,7 @@
             "real_frame": 14,
             "damage": 18.0,
             "angle": 90,
-            "kbg": 97,
+            "kbg": 88,
             "fkb": 0,
             "bkb": 31,
             "size": 2.8,
@@ -3102,7 +3102,7 @@
             "real_frame": 15,
             "damage": 18.0,
             "angle": 90,
-            "kbg": 97,
+            "kbg": 88,
             "fkb": 0,
             "bkb": 31,
             "size": 2.8,
@@ -4278,29 +4278,29 @@
         6,
         7,
         8,
-        9,
         10,
         11,
-        12
+        12,
+        13
       ],
       "hitboxes_by_frame": {
         "6": [
           {
             "id": 0,
-            "bone": "handr",
+            "bone": "hip",
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 78,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.0,
+            "bkb": 30,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": -0.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -4313,10 +4313,10 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 80,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -4331,20 +4331,20 @@
           },
           {
             "id": 2,
-            "bone": "hip",
+            "bone": "kneel",
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 5.0,
-            "angle": 90,
-            "kbg": 72,
+            "angle": 80,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": -0.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4353,15 +4353,15 @@
           },
           {
             "id": 3,
-            "bone": "kneel",
+            "bone": "handr",
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 82,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.5,
+            "bkb": 30,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4379,10 +4379,10 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 82,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -4399,20 +4399,20 @@
         "7": [
           {
             "id": 0,
-            "bone": "handr",
+            "bone": "hip",
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 78,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.0,
+            "bkb": 30,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": -0.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -4425,10 +4425,10 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 80,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -4443,20 +4443,20 @@
           },
           {
             "id": 2,
-            "bone": "hip",
+            "bone": "kneel",
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 5.0,
-            "angle": 90,
-            "kbg": 72,
+            "angle": 80,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": -0.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4465,15 +4465,15 @@
           },
           {
             "id": 3,
-            "bone": "kneel",
+            "bone": "handr",
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 82,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.5,
+            "bkb": 30,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4491,10 +4491,10 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 82,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -4511,20 +4511,20 @@
         "8": [
           {
             "id": 0,
-            "bone": "handr",
+            "bone": "hip",
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 78,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.0,
+            "bkb": 30,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
+              "z": -0.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -4537,10 +4537,10 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 80,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -4555,20 +4555,20 @@
           },
           {
             "id": 2,
-            "bone": "hip",
+            "bone": "kneel",
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 5.0,
-            "angle": 90,
-            "kbg": 72,
+            "angle": 80,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": -0.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4577,15 +4577,15 @@
           },
           {
             "id": 3,
-            "bone": "kneel",
+            "bone": "handr",
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 82,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
-            "size": 3.5,
+            "bkb": 30,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4603,61 +4603,15 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 5.0,
-            "angle": 110,
-            "kbg": 72,
+            "angle": 82,
+            "kbg": 134,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "wiifit",
-            "move": "nair"
-          }
-        ],
-        "9": [
-          {
-            "id": 0,
-            "bone": "hip",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 6.0,
-            "angle": 361,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 2.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 5.0,
-              "z": 4.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "wiifit",
-            "move": "nair"
-          },
-          {
-            "id": 1,
-            "bone": "hip",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 6.0,
-            "angle": 361,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 7.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 5.0,
               "z": 0.0
             },
             "offset2": null,
@@ -4677,7 +4631,7 @@
             "kbg": 80,
             "fkb": 0,
             "bkb": 45,
-            "size": 2.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4699,7 +4653,7 @@
             "kbg": 80,
             "fkb": 0,
             "bkb": 45,
-            "size": 7.0,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4723,7 +4677,7 @@
             "kbg": 80,
             "fkb": 0,
             "bkb": 45,
-            "size": 2.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4745,7 +4699,7 @@
             "kbg": 80,
             "fkb": 0,
             "bkb": 45,
-            "size": 7.0,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4769,7 +4723,7 @@
             "kbg": 80,
             "fkb": 0,
             "bkb": 45,
-            "size": 2.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4791,7 +4745,53 @@
             "kbg": 80,
             "fkb": 0,
             "bkb": 45,
-            "size": 7.0,
+            "size": 6.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "nair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "hip",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 6.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 3.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 4.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "nair"
+          },
+          {
+            "id": 1,
+            "bone": "hip",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 6.0,
+            "angle": 361,
+            "kbg": 80,
+            "fkb": 0,
+            "bkb": 45,
+            "size": 6.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4815,12 +4815,20 @@
           "scale_factor": 0.625
         },
         {
-          "type": "FT_MOTION_RATE",
+          "type": "range",
           "frame": 9.0,
+          "start_orig": 9.0,
+          "end_orig": 10.0,
+          "new_duration": 2.0,
+          "scale_factor": 2.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 10.0,
           "rate_value": 1.0
         }
       ],
-      "faf": 33
+      "faf": 34
     },
     "fair": {
       "total_frames": 54,
@@ -4848,7 +4856,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.5,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -4893,7 +4901,7 @@
             "fkb": 0,
             "bkb": 15,
             "size": 3.5,
-            "situation": "GA",
+            "situation": "G",
             "offset": {
               "x": 4.0,
               "y": 0.0,
@@ -4906,6 +4914,28 @@
           },
           {
             "id": 3,
+            "bone": "kneer",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 10.0,
+            "angle": 294,
+            "kbg": 68,
+            "fkb": 0,
+            "bkb": 15,
+            "size": 3.5,
+            "situation": "A",
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
+          },
+          {
+            "id": 4,
             "bone": "top",
             "animation_frame": 7.0,
             "real_frame": 7,
@@ -4938,7 +4968,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.5,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -4983,7 +5013,7 @@
             "fkb": 0,
             "bkb": 15,
             "size": 3.5,
-            "situation": "GA",
+            "situation": "G",
             "offset": {
               "x": 4.0,
               "y": 0.0,
@@ -4996,6 +5026,28 @@
           },
           {
             "id": 3,
+            "bone": "kneer",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 10.0,
+            "angle": 294,
+            "kbg": 68,
+            "fkb": 0,
+            "bkb": 15,
+            "size": 3.5,
+            "situation": "A",
+            "offset": {
+              "x": 4.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
+          },
+          {
+            "id": 4,
             "bone": "top",
             "animation_frame": 8.0,
             "real_frame": 8,
@@ -5028,7 +5080,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -5091,6 +5143,28 @@
             "real_frame": 9,
             "damage": 7.5,
             "angle": 55,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 12.0,
+            "angle": 50,
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
@@ -5118,7 +5192,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -5181,6 +5255,28 @@
             "real_frame": 10,
             "damage": 7.5,
             "angle": 55,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 12.0,
+            "angle": 50,
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
@@ -5208,7 +5304,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -5271,6 +5367,28 @@
             "real_frame": 11,
             "damage": 7.5,
             "angle": 55,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 12.0,
+            "angle": 50,
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
@@ -5298,7 +5416,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -5361,6 +5479,28 @@
             "real_frame": 12,
             "damage": 7.5,
             "angle": 55,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 12.0,
+            "angle": 50,
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
@@ -5388,7 +5528,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -5451,6 +5591,28 @@
             "real_frame": 13,
             "damage": 7.5,
             "angle": 55,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 12.0,
+            "angle": 50,
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
@@ -5478,7 +5640,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -5541,6 +5703,28 @@
             "real_frame": 14,
             "damage": 7.5,
             "angle": 55,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 12.0,
+            "angle": 50,
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
@@ -5568,7 +5752,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -5645,6 +5829,28 @@
             "is_capsule": false,
             "character": "wiifit",
             "move": "fair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 12.0,
+            "angle": 50,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
           }
         ],
         "16": [
@@ -5658,7 +5864,7 @@
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
-            "size": 4.0,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 3.0,
@@ -5721,6 +5927,28 @@
             "real_frame": 16,
             "damage": 7.5,
             "angle": 55,
+            "kbg": 102,
+            "fkb": 0,
+            "bkb": 20,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 11.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "wiifit",
+            "move": "fair"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 12.0,
+            "angle": 50,
             "kbg": 102,
             "fkb": 0,
             "bkb": 20,
@@ -6343,11 +6571,11 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.5,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 8.0,
@@ -6365,11 +6593,11 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 4.0,
@@ -6387,10 +6615,10 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 44,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6411,11 +6639,11 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.5,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 8.0,
@@ -6433,11 +6661,11 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 4.0,
@@ -6455,10 +6683,10 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 44,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6479,11 +6707,11 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.5,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 8.0,
@@ -6501,11 +6729,11 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 4.0,
@@ -6523,10 +6751,10 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 44,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6547,11 +6775,11 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.5,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 8.0,
@@ -6569,11 +6797,11 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 4.0,
@@ -6591,10 +6819,10 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 44,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6615,11 +6843,11 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.5,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 8.0,
@@ -6637,11 +6865,11 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 44,
+            "size": 1.0,
             "situation": "GA",
             "offset": {
               "x": 4.0,
@@ -6659,10 +6887,10 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 10.0,
-            "angle": 72,
-            "kbg": 82,
+            "angle": 75,
+            "kbg": 95,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 44,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7155,7 +7383,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 8.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7231,7 +7459,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 8.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7307,7 +7535,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 8.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7383,7 +7611,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 8.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7459,7 +7687,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 8.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7535,7 +7763,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 8.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7611,7 +7839,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 8.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7687,7 +7915,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 8.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -7769,16 +7997,16 @@
             "kbg": null,
             "fkb": null,
             "bkb": null,
-            "size": 4.0,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
               "y": 8.6,
-              "z": 0.0
+              "z": 3.5
             },
             "offset2": {
               "x": 0.0,
               "y": 8.6,
-              "z": 8.7
+              "z": 7.2
             },
             "is_capsule": true,
             "character": "wiifit",
@@ -7797,16 +8025,16 @@
             "kbg": null,
             "fkb": null,
             "bkb": null,
-            "size": 4.0,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
               "y": 8.6,
-              "z": 0.0
+              "z": 3.5
             },
             "offset2": {
               "x": 0.0,
               "y": 8.6,
-              "z": 8.7
+              "z": 7.2
             },
             "is_capsule": true,
             "character": "wiifit",
@@ -7847,7 +8075,7 @@
             "kbg": null,
             "fkb": null,
             "bkb": null,
-            "size": 4.0,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -7875,7 +8103,7 @@
             "kbg": null,
             "fkb": null,
             "bkb": null,
-            "size": 4.0,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -7914,7 +8142,7 @@
             "kbg": null,
             "fkb": null,
             "bkb": null,
-            "size": 4.0,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
               "y": 8.5,
@@ -7923,7 +8151,7 @@
             "offset2": {
               "x": 0.0,
               "y": 8.5,
-              "z": -13.65
+              "z": -13.0
             },
             "is_capsule": true,
             "character": "wiifit",
@@ -7942,7 +8170,7 @@
             "kbg": null,
             "fkb": null,
             "bkb": null,
-            "size": 4.0,
+            "size": 3.5,
             "offset": {
               "x": 0.0,
               "y": 8.5,
@@ -7951,7 +8179,7 @@
             "offset2": {
               "x": 0.0,
               "y": 8.5,
-              "z": -13.65
+              "z": -13.0
             },
             "is_capsule": true,
             "character": "wiifit",
@@ -8662,5 +8890,5 @@
       "faf": 50
     }
   },
-  "generated_at": "2026-04-25T23:06:24.210716"
+  "generated_at": "2026-05-13T15:24:04.639032"
 }

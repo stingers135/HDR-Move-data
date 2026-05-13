@@ -402,11 +402,80 @@
     "ftilt": {
       "total_frames": 37,
       "active_frames": [
+        6,
         7,
         8,
         9
       ],
       "hitboxes_by_frame": {
+        "6": [
+          {
+            "id": 0,
+            "bone": "shoulderl",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 7.0,
+            "angle": 361,
+            "kbg": 77,
+            "fkb": 0,
+            "bkb": 54,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": -2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "robot",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "arml1",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 77,
+            "fkb": 0,
+            "bkb": 54,
+            "size": 4.25,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "robot",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "handl1",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 77,
+            "fkb": 0,
+            "bkb": 54,
+            "size": 4.5,
+            "situation": "GA",
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "robot",
+            "move": "ftilt"
+          }
+        ],
         "7": [
           {
             "id": 0,
@@ -432,15 +501,15 @@
           },
           {
             "id": 1,
-            "bone": "shoulderl",
+            "bone": "arml1",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 7.0,
+            "damage": 8.0,
             "angle": 361,
             "kbg": 77,
             "fkb": 0,
             "bkb": 54,
-            "size": 4.0,
+            "size": 4.25,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -454,50 +523,6 @@
           },
           {
             "id": 2,
-            "bone": "arml1",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 8.0,
-            "angle": 361,
-            "kbg": 77,
-            "fkb": 0,
-            "bkb": 54,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "ftilt"
-          },
-          {
-            "id": 3,
-            "bone": "arml1",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 8.0,
-            "angle": 361,
-            "kbg": 77,
-            "fkb": 0,
-            "bkb": 54,
-            "size": 4.5,
-            "situation": "GA",
-            "offset": {
-              "x": 2.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "ftilt"
-          },
-          {
-            "id": 4,
             "bone": "handl1",
             "animation_frame": 7.0,
             "real_frame": 7,
@@ -544,15 +569,15 @@
           },
           {
             "id": 1,
-            "bone": "shoulderl",
+            "bone": "arml1",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 7.0,
+            "damage": 8.0,
             "angle": 361,
             "kbg": 77,
             "fkb": 0,
             "bkb": 54,
-            "size": 4.0,
+            "size": 4.25,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -566,50 +591,6 @@
           },
           {
             "id": 2,
-            "bone": "arml1",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 8.0,
-            "angle": 361,
-            "kbg": 77,
-            "fkb": 0,
-            "bkb": 54,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "ftilt"
-          },
-          {
-            "id": 3,
-            "bone": "arml1",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 8.0,
-            "angle": 361,
-            "kbg": 77,
-            "fkb": 0,
-            "bkb": 54,
-            "size": 4.5,
-            "situation": "GA",
-            "offset": {
-              "x": 2.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "ftilt"
-          },
-          {
-            "id": 4,
             "bone": "handl1",
             "animation_frame": 8.0,
             "real_frame": 8,
@@ -656,15 +637,15 @@
           },
           {
             "id": 1,
-            "bone": "shoulderl",
+            "bone": "arml1",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 7.0,
+            "damage": 8.0,
             "angle": 361,
             "kbg": 77,
             "fkb": 0,
             "bkb": 54,
-            "size": 4.0,
+            "size": 4.25,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -678,50 +659,6 @@
           },
           {
             "id": 2,
-            "bone": "arml1",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 8.0,
-            "angle": 361,
-            "kbg": 77,
-            "fkb": 0,
-            "bkb": 54,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "ftilt"
-          },
-          {
-            "id": 3,
-            "bone": "arml1",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 8.0,
-            "angle": 361,
-            "kbg": 77,
-            "fkb": 0,
-            "bkb": 54,
-            "size": 4.5,
-            "situation": "GA",
-            "offset": {
-              "x": 2.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "ftilt"
-          },
-          {
-            "id": 4,
             "bone": "handl1",
             "animation_frame": 9.0,
             "real_frame": 9,
@@ -5253,7 +5190,8 @@
         23,
         24,
         25,
-        26
+        26,
+        27
       ],
       "hitboxes_by_frame": {
         "7": [
@@ -5263,16 +5201,16 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 2.5,
-            "angle": 85,
-            "kbg": 80,
+            "angle": 107,
+            "kbg": 35,
             "fkb": 0,
-            "bkb": 35,
+            "bkb": 47,
             "size": 7.5,
             "situation": "G",
             "offset": {
               "x": 0.0,
-              "y": 15.0,
-              "z": 0.0
+              "y": 14.5,
+              "z": -0.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5285,16 +5223,16 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 2.5,
-            "angle": 85,
-            "kbg": 80,
+            "angle": 117,
+            "kbg": 35,
             "fkb": 0,
             "bkb": 35,
-            "size": 9.5,
-            "situation": "G",
+            "size": 7.5,
+            "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 14.5,
+              "z": -0.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5307,38 +5245,16 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 2.5,
-            "angle": 367,
-            "kbg": 80,
+            "angle": 217,
+            "kbg": 35,
             "fkb": 0,
-            "bkb": 45,
-            "size": 7.5,
-            "situation": "A",
+            "bkb": 35,
+            "size": 8.75,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 15.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 2.5,
-            "angle": 367,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 9.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 23.25,
+              "z": -1.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5353,16 +5269,16 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 2.5,
-            "angle": 85,
-            "kbg": 80,
+            "angle": 107,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 35,
+            "bkb": 47,
             "size": 7.5,
             "situation": "G",
             "offset": {
               "x": 0.0,
-              "y": 15.0,
-              "z": 0.0
+              "y": 14.5,
+              "z": -0.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5375,16 +5291,16 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 2.5,
-            "angle": 85,
-            "kbg": 80,
+            "angle": 117,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 35,
-            "size": 9.5,
-            "situation": "G",
+            "bkb": 33,
+            "size": 7.5,
+            "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 14.5,
+              "z": -0.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5397,38 +5313,16 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 2.5,
-            "angle": 367,
-            "kbg": 80,
+            "angle": 217,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 45,
-            "size": 7.5,
-            "situation": "A",
+            "bkb": 33,
+            "size": 8.75,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 15.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 2.5,
-            "angle": 367,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 9.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 23.25,
+              "z": -1.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5443,16 +5337,16 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 2.5,
-            "angle": 85,
-            "kbg": 80,
+            "angle": 107,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 35,
+            "bkb": 47,
             "size": 7.5,
             "situation": "G",
             "offset": {
               "x": 0.0,
-              "y": 15.0,
-              "z": 0.0
+              "y": 14.5,
+              "z": -0.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5465,16 +5359,16 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 2.5,
-            "angle": 85,
-            "kbg": 80,
+            "angle": 117,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 35,
-            "size": 9.5,
-            "situation": "G",
+            "bkb": 33,
+            "size": 7.5,
+            "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 14.5,
+              "z": -0.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5487,38 +5381,16 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 2.5,
-            "angle": 367,
-            "kbg": 80,
+            "angle": 217,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 45,
-            "size": 7.5,
-            "situation": "A",
+            "bkb": 33,
+            "size": 8.75,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 15.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 2.5,
-            "angle": 367,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 9.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 23.25,
+              "z": -1.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5533,16 +5405,16 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 2.5,
-            "angle": 85,
-            "kbg": 80,
+            "angle": 107,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 35,
+            "bkb": 47,
             "size": 7.5,
             "situation": "G",
             "offset": {
               "x": 0.0,
-              "y": 15.0,
-              "z": 0.0
+              "y": 14.5,
+              "z": -0.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5555,16 +5427,16 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 2.5,
-            "angle": 85,
-            "kbg": 80,
+            "angle": 117,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 35,
-            "size": 9.5,
-            "situation": "G",
+            "bkb": 33,
+            "size": 7.5,
+            "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 14.5,
+              "z": -0.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5577,38 +5449,16 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 2.5,
-            "angle": 367,
-            "kbg": 80,
+            "angle": 217,
+            "kbg": 33,
             "fkb": 0,
-            "bkb": 45,
-            "size": 7.5,
-            "situation": "A",
+            "bkb": 33,
+            "size": 8.75,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 15.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "robot",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 2.5,
-            "angle": 367,
-            "kbg": 80,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 9.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 23.25,
+              "z": -1.75
             },
             "offset2": null,
             "is_capsule": false,
@@ -5623,16 +5473,16 @@
             "animation_frame": 23.0,
             "real_frame": 23,
             "damage": 4.0,
-            "angle": 70,
-            "kbg": 105,
+            "angle": 106,
+            "kbg": 123,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 60,
             "size": 8.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.0,
-              "z": 0.0
+              "z": -0.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -5645,16 +5495,16 @@
             "animation_frame": 23.0,
             "real_frame": 23,
             "damage": 4.0,
-            "angle": 70,
-            "kbg": 105,
+            "angle": 106,
+            "kbg": 123,
             "fkb": 0,
-            "bkb": 65,
-            "size": 10.0,
+            "bkb": 60,
+            "size": 9.25,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 23.5,
+              "z": -1.25
             },
             "offset2": null,
             "is_capsule": false,
@@ -5669,16 +5519,16 @@
             "animation_frame": 24.0,
             "real_frame": 24,
             "damage": 4.0,
-            "angle": 70,
-            "kbg": 105,
+            "angle": 106,
+            "kbg": 123,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 60,
             "size": 8.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.0,
-              "z": 0.0
+              "z": -0.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -5691,16 +5541,16 @@
             "animation_frame": 24.0,
             "real_frame": 24,
             "damage": 4.0,
-            "angle": 70,
-            "kbg": 105,
+            "angle": 106,
+            "kbg": 123,
             "fkb": 0,
-            "bkb": 65,
-            "size": 10.0,
+            "bkb": 60,
+            "size": 9.25,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 23.5,
+              "z": -1.25
             },
             "offset2": null,
             "is_capsule": false,
@@ -5715,16 +5565,16 @@
             "animation_frame": 25.0,
             "real_frame": 25,
             "damage": 4.0,
-            "angle": 70,
-            "kbg": 105,
+            "angle": 106,
+            "kbg": 123,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 60,
             "size": 8.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.0,
-              "z": 0.0
+              "z": -0.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -5737,16 +5587,16 @@
             "animation_frame": 25.0,
             "real_frame": 25,
             "damage": 4.0,
-            "angle": 70,
-            "kbg": 105,
+            "angle": 106,
+            "kbg": 123,
             "fkb": 0,
-            "bkb": 65,
-            "size": 10.0,
+            "bkb": 60,
+            "size": 9.25,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 23.5,
+              "z": -1.25
             },
             "offset2": null,
             "is_capsule": false,
@@ -5761,16 +5611,16 @@
             "animation_frame": 26.0,
             "real_frame": 26,
             "damage": 4.0,
-            "angle": 70,
-            "kbg": 105,
+            "angle": 106,
+            "kbg": 123,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 60,
             "size": 8.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.0,
-              "z": 0.0
+              "z": -0.5
             },
             "offset2": null,
             "is_capsule": false,
@@ -5783,16 +5633,62 @@
             "animation_frame": 26.0,
             "real_frame": 26,
             "damage": 4.0,
-            "angle": 70,
-            "kbg": 105,
+            "angle": 106,
+            "kbg": 123,
             "fkb": 0,
-            "bkb": 65,
-            "size": 10.0,
+            "bkb": 60,
+            "size": 9.25,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
-              "z": 0.0
+              "y": 23.5,
+              "z": -1.25
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "robot",
+            "move": "uair"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 4.0,
+            "angle": 106,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 8.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": -0.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "robot",
+            "move": "uair"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 4.0,
+            "angle": 106,
+            "kbg": 123,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 9.25,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 23.5,
+              "z": -1.25
             },
             "offset2": null,
             "is_capsule": false,
@@ -6654,7 +6550,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 0.0
+              "z": 4.5
             },
             "offset2": {
               "x": 0.0,
@@ -6682,7 +6578,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 0.0
+              "z": 4.5
             },
             "offset2": {
               "x": 0.0,
@@ -6737,7 +6633,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 4.0
+              "z": 4.5
             },
             "offset2": {
               "x": 0.0,
@@ -6765,7 +6661,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 4.0
+              "z": 4.5
             },
             "offset2": {
               "x": 0.0,
@@ -6810,7 +6706,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": -2.0
+              "z": -4.5
             },
             "offset2": {
               "x": 0.0,
@@ -6838,7 +6734,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": -2.0
+              "z": -4.5
             },
             "offset2": {
               "x": 0.0,
@@ -7886,5 +7782,5 @@
       "faf": 69
     }
   },
-  "generated_at": "2026-04-25T23:06:23.040069"
+  "generated_at": "2026-05-13T15:24:01.892120"
 }

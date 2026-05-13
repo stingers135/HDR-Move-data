@@ -917,8 +917,6 @@
     "ftilt": {
       "total_frames": 83,
       "active_frames": [
-        12,
-        13,
         14,
         15,
         16,
@@ -935,117 +933,28 @@
         27,
         28,
         29,
-        30
+        30,
+        31,
+        32,
+        33
       ],
       "hitboxes_by_frame": {
-        "12": [
-          {
-            "id": 1,
-            "bone": "stick",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 6.0,
-            "angle": 90,
-            "kbg": 100,
-            "fkb": 25,
-            "bkb": 0,
-            "size": 4.3,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 5.5,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "palutena",
-            "move": "ftilt"
-          },
-          {
-            "id": 0,
-            "bone": "stick",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 6.0,
-            "angle": 45,
-            "kbg": 100,
-            "fkb": 45,
-            "bkb": 0,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": -5.5,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "palutena",
-            "move": "ftilt"
-          }
-        ],
-        "13": [
-          {
-            "id": 1,
-            "bone": "stick",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 6.0,
-            "angle": 90,
-            "kbg": 100,
-            "fkb": 25,
-            "bkb": 0,
-            "size": 4.3,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 5.5,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "palutena",
-            "move": "ftilt"
-          },
-          {
-            "id": 0,
-            "bone": "stick",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 6.0,
-            "angle": 45,
-            "kbg": 100,
-            "fkb": 45,
-            "bkb": 0,
-            "size": 3.3,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": -5.5,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "palutena",
-            "move": "ftilt"
-          }
-        ],
         "14": [
           {
             "id": 1,
             "bone": "stick",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 6.0,
-            "angle": 90,
-            "kbg": 100,
-            "fkb": 25,
-            "bkb": 0,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
             "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1058,16 +967,16 @@
             "bone": "stick",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 6.0,
-            "angle": 45,
-            "kbg": 100,
-            "fkb": 45,
-            "bkb": 0,
-            "size": 3.3,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1082,16 +991,16 @@
             "bone": "stick",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 6.0,
-            "angle": 285,
-            "kbg": 100,
-            "fkb": 25,
-            "bkb": 0,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
             "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1104,16 +1013,16 @@
             "bone": "stick",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 6.0,
-            "angle": 100,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 3.3,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1128,16 +1037,16 @@
             "bone": "stick",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 6.0,
-            "angle": 285,
-            "kbg": 100,
-            "fkb": 25,
-            "bkb": 0,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
             "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1150,16 +1059,16 @@
             "bone": "stick",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 6.0,
-            "angle": 100,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 3.3,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1174,16 +1083,16 @@
             "bone": "stick",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 6.0,
-            "angle": 285,
-            "kbg": 100,
-            "fkb": 25,
-            "bkb": 0,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
             "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1196,16 +1105,16 @@
             "bone": "stick",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 6.0,
-            "angle": 100,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 3.3,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1220,16 +1129,16 @@
             "bone": "stick",
             "animation_frame": 18.0,
             "real_frame": 18,
-            "damage": 6.0,
-            "angle": 20,
-            "kbg": 100,
-            "fkb": 35,
-            "bkb": 0,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
             "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1242,16 +1151,16 @@
             "bone": "stick",
             "animation_frame": 18.0,
             "real_frame": 18,
-            "damage": 6.0,
-            "angle": 85,
-            "kbg": 100,
-            "fkb": 30,
-            "bkb": 0,
-            "size": 3.3,
+            "damage": 11.0,
+            "angle": 55,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1266,16 +1175,16 @@
             "bone": "stick",
             "animation_frame": 19.0,
             "real_frame": 19,
-            "damage": 6.0,
-            "angle": 20,
-            "kbg": 100,
-            "fkb": 35,
-            "bkb": 0,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
             "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1288,16 +1197,16 @@
             "bone": "stick",
             "animation_frame": 19.0,
             "real_frame": 19,
-            "damage": 6.0,
-            "angle": 85,
-            "kbg": 100,
-            "fkb": 30,
-            "bkb": 0,
-            "size": 3.3,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1312,16 +1221,16 @@
             "bone": "stick",
             "animation_frame": 20.0,
             "real_frame": 20,
-            "damage": 6.0,
-            "angle": 20,
-            "kbg": 100,
-            "fkb": 35,
-            "bkb": 0,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
             "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1334,16 +1243,16 @@
             "bone": "stick",
             "animation_frame": 20.0,
             "real_frame": 20,
-            "damage": 6.0,
-            "angle": 85,
-            "kbg": 100,
-            "fkb": 30,
-            "bkb": 0,
-            "size": 3.3,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1358,16 +1267,16 @@
             "bone": "stick",
             "animation_frame": 21.0,
             "real_frame": 21,
-            "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1380,16 +1289,16 @@
             "bone": "stick",
             "animation_frame": 21.0,
             "real_frame": 21,
-            "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 4.3,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1404,16 +1313,16 @@
             "bone": "stick",
             "animation_frame": 22.0,
             "real_frame": 22,
-            "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1426,16 +1335,16 @@
             "bone": "stick",
             "animation_frame": 22.0,
             "real_frame": 22,
-            "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 4.3,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1450,16 +1359,16 @@
             "bone": "stick",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1472,16 +1381,16 @@
             "bone": "stick",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 4.3,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1496,16 +1405,16 @@
             "bone": "stick",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1518,16 +1427,16 @@
             "bone": "stick",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "damage": 9.0,
+            "angle": 50,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 4.3,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1543,15 +1452,15 @@
             "animation_frame": 25.0,
             "real_frame": 25,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1565,15 +1474,15 @@
             "animation_frame": 25.0,
             "real_frame": 25,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 4.3,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1589,15 +1498,15 @@
             "animation_frame": 26.0,
             "real_frame": 26,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1611,15 +1520,15 @@
             "animation_frame": 26.0,
             "real_frame": 26,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 4.3,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1635,15 +1544,15 @@
             "animation_frame": 27.0,
             "real_frame": 27,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1657,15 +1566,15 @@
             "animation_frame": 27.0,
             "real_frame": 27,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 4.3,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1681,15 +1590,15 @@
             "animation_frame": 28.0,
             "real_frame": 28,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1703,15 +1612,15 @@
             "animation_frame": 28.0,
             "real_frame": 28,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 4.3,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1727,15 +1636,15 @@
             "animation_frame": 29.0,
             "real_frame": 29,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1749,15 +1658,15 @@
             "animation_frame": 29.0,
             "real_frame": 29,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 4.3,
+            "bkb": 44,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1773,15 +1682,15 @@
             "animation_frame": 30.0,
             "real_frame": 30,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
-            "size": 5.3,
+            "bkb": 44,
+            "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 5.5,
+              "y": 4.9,
               "z": 0.0
             },
             "offset2": null,
@@ -1795,15 +1704,153 @@
             "animation_frame": 30.0,
             "real_frame": 30,
             "damage": 7.0,
-            "angle": 40,
-            "kbg": 110,
+            "angle": 45,
+            "kbg": 111,
             "fkb": 0,
-            "bkb": 54,
+            "bkb": 44,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "ftilt"
+          }
+        ],
+        "31": [
+          {
+            "id": 1,
+            "bone": "stick",
+            "animation_frame": 31.0,
+            "real_frame": 31,
+            "damage": 7.0,
+            "angle": 45,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
             "size": 4.3,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -5.5,
+              "y": 4.9,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "ftilt"
+          },
+          {
+            "id": 0,
+            "bone": "stick",
+            "animation_frame": 31.0,
+            "real_frame": 31,
+            "damage": 7.0,
+            "angle": 45,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "ftilt"
+          }
+        ],
+        "32": [
+          {
+            "id": 1,
+            "bone": "stick",
+            "animation_frame": 32.0,
+            "real_frame": 32,
+            "damage": 7.0,
+            "angle": 45,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 4.3,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 4.9,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "ftilt"
+          },
+          {
+            "id": 0,
+            "bone": "stick",
+            "animation_frame": 32.0,
+            "real_frame": 32,
+            "damage": 7.0,
+            "angle": 45,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "ftilt"
+          }
+        ],
+        "33": [
+          {
+            "id": 1,
+            "bone": "stick",
+            "animation_frame": 33.0,
+            "real_frame": 33,
+            "damage": 7.0,
+            "angle": 45,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 4.3,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 4.9,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "ftilt"
+          },
+          {
+            "id": 0,
+            "bone": "stick",
+            "animation_frame": 33.0,
+            "real_frame": 33,
+            "damage": 7.0,
+            "angle": 45,
+            "kbg": 111,
+            "fkb": 0,
+            "bkb": 44,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": -6.5,
               "z": 0.0
             },
             "offset2": null,
@@ -1815,22 +1862,49 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 0.6875
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 9.0,
+          "new_duration": 11.0,
+          "scale_factor": 1.375
         },
         {
-          "type": "FT_MOTION_RATE",
+          "type": "range",
+          "frame": 9.0,
+          "start_orig": 9.0,
+          "end_orig": 16.0,
+          "new_duration": 2.0,
+          "scale_factor": 0.2857142857142857
+        },
+        {
+          "type": "range",
           "frame": 16.0,
-          "rate_value": 0.667
+          "start_orig": 16.0,
+          "end_orig": 44.0,
+          "new_duration": 20.0,
+          "scale_factor": 0.7142857142857143
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 41.0,
+          "frame": 44.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 50.0,
+          "start_orig": 50.0,
+          "end_orig": 64.0,
+          "new_duration": 10.0,
+          "scale_factor": 0.7142857142857143
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 64.0,
           "rate_value": 1.0
         }
       ],
-      "faf": 52
+      "faf": 50
     },
     "utilt": {
       "total_frames": 84,
@@ -2944,12 +3018,12 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 23.0,
+              "y": 21.0,
               "z": 10.5
             },
             "offset2": {
               "x": 0.0,
-              "y": 23.0,
+              "y": 21.0,
               "z": -5.0
             },
             "is_capsule": true,
@@ -2970,12 +3044,12 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 17.0,
+              "y": 15.0,
               "z": 10.5
             },
             "offset2": {
               "x": 0.0,
-              "y": 17.0,
+              "y": 15.0,
               "z": -5.0
             },
             "is_capsule": true,
@@ -2998,12 +3072,12 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 23.0,
+              "y": 21.0,
               "z": 10.5
             },
             "offset2": {
               "x": 0.0,
-              "y": 23.0,
+              "y": 21.0,
               "z": -5.0
             },
             "is_capsule": true,
@@ -3024,12 +3098,12 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 17.0,
+              "y": 15.0,
               "z": 10.5
             },
             "offset2": {
               "x": 0.0,
-              "y": 17.0,
+              "y": 15.0,
               "z": -5.0
             },
             "is_capsule": true,
@@ -3052,12 +3126,12 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 23.0,
+              "y": 21.0,
               "z": 10.5
             },
             "offset2": {
               "x": 0.0,
-              "y": 23.0,
+              "y": 21.0,
               "z": -5.0
             },
             "is_capsule": true,
@@ -3078,12 +3152,12 @@
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 17.0,
+              "y": 15.0,
               "z": 10.5
             },
             "offset2": {
               "x": 0.0,
-              "y": 17.0,
+              "y": 15.0,
               "z": -5.0
             },
             "is_capsule": true,
@@ -3094,14 +3168,25 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
+          "type": "range",
           "frame": 1.0,
-          "rate_value": 0.778
+          "start_orig": 1.0,
+          "end_orig": 9.0,
+          "new_duration": 7.0,
+          "scale_factor": 0.875
         },
         {
           "type": "FT_MOTION_RATE",
           "frame": 9.0,
           "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 10.0,
+          "start_orig": 10.0,
+          "end_orig": 30.0,
+          "new_duration": 11.0,
+          "scale_factor": 0.55
         },
         {
           "type": "FT_MOTION_RATE",
@@ -3143,7 +3228,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -3177,28 +3262,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 10.0,
-            "real_frame": 10,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -3241,7 +3304,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -3275,28 +3338,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 11.0,
-            "real_frame": 11,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -3339,7 +3380,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -3373,28 +3414,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -3437,7 +3456,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -3471,28 +3490,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -3535,7 +3532,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -3569,28 +3566,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -3633,7 +3608,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -3667,28 +3642,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -3731,7 +3684,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -3765,28 +3718,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -3829,7 +3760,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -3863,28 +3794,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -3927,7 +3836,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -3961,28 +3870,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -4025,7 +3912,7 @@
             "fkb": 0,
             "bkb": 45,
             "size": 3.5,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.5,
@@ -4059,28 +3946,6 @@
               "z": 21.0
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "dtilt"
-          },
-          {
-            "id": 2,
-            "bone": "top",
-            "animation_frame": 19.0,
-            "real_frame": 19,
-            "damage": 7.0,
-            "angle": 67,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 3.5,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "dtilt"
           },
@@ -7971,11 +7836,11 @@
             "bone": "legl",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 10.0,
+            "damage": 9.0,
             "angle": 50,
-            "kbg": 82,
+            "kbg": 93,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -7993,11 +7858,11 @@
             "bone": "kneel",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 10.0,
+            "damage": 9.0,
             "angle": 50,
-            "kbg": 82,
+            "kbg": 93,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -8015,11 +7880,11 @@
             "bone": "kneel",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 12.0,
-            "angle": 361,
-            "kbg": 81,
+            "damage": 11.0,
+            "angle": 50,
+            "kbg": 93,
             "fkb": 0,
-            "bkb": 38,
+            "bkb": 35,
             "size": 4.5,
             "situation": "GA",
             "offset": {
@@ -8039,11 +7904,11 @@
             "bone": "legl",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 10.0,
+            "damage": 9.0,
             "angle": 50,
-            "kbg": 82,
+            "kbg": 93,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -8061,11 +7926,11 @@
             "bone": "kneel",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 10.0,
+            "damage": 9.0,
             "angle": 50,
-            "kbg": 82,
+            "kbg": 93,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -8083,11 +7948,11 @@
             "bone": "kneel",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 12.0,
-            "angle": 361,
-            "kbg": 81,
+            "damage": 11.0,
+            "angle": 50,
+            "kbg": 93,
             "fkb": 0,
-            "bkb": 38,
+            "bkb": 35,
             "size": 4.5,
             "situation": "GA",
             "offset": {
@@ -8107,11 +7972,11 @@
             "bone": "legl",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 10.0,
+            "damage": 9.0,
             "angle": 50,
-            "kbg": 82,
+            "kbg": 93,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -8129,11 +7994,11 @@
             "bone": "kneel",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 10.0,
+            "damage": 9.0,
             "angle": 50,
-            "kbg": 82,
+            "kbg": 93,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -8151,11 +8016,11 @@
             "bone": "kneel",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 12.0,
-            "angle": 361,
-            "kbg": 81,
+            "damage": 11.0,
+            "angle": 50,
+            "kbg": 93,
             "fkb": 0,
-            "bkb": 38,
+            "bkb": 35,
             "size": 4.5,
             "situation": "GA",
             "offset": {
@@ -8175,11 +8040,11 @@
             "bone": "legl",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 53,
-            "kbg": 82,
+            "kbg": 90,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8197,11 +8062,11 @@
             "bone": "kneel",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 53,
-            "kbg": 82,
+            "kbg": 90,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8219,11 +8084,11 @@
             "bone": "kneel",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 53,
-            "kbg": 82,
+            "kbg": 90,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -8243,11 +8108,11 @@
             "bone": "legl",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 53,
-            "kbg": 82,
+            "kbg": 90,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8265,11 +8130,11 @@
             "bone": "kneel",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 53,
-            "kbg": 82,
+            "kbg": 90,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8287,11 +8152,11 @@
             "bone": "kneel",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 53,
-            "kbg": 82,
+            "kbg": 90,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -8311,11 +8176,11 @@
             "bone": "legl",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 53,
-            "kbg": 82,
+            "kbg": 90,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8333,11 +8198,11 @@
             "bone": "kneel",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 53,
-            "kbg": 82,
+            "kbg": 90,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8355,11 +8220,11 @@
             "bone": "kneel",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 53,
-            "kbg": 82,
+            "kbg": 90,
             "fkb": 0,
-            "bkb": 37,
+            "bkb": 35,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -8429,12 +8294,12 @@
             "kbg": 98,
             "fkb": 0,
             "bkb": 31,
-            "size": 6.7,
+            "size": 6.2,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 10.7,
-              "z": -13.7
+              "y": 10.4,
+              "z": -13.3
             },
             "offset2": null,
             "is_capsule": false,
@@ -8475,12 +8340,12 @@
             "kbg": 98,
             "fkb": 0,
             "bkb": 31,
-            "size": 6.7,
+            "size": 6.2,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 10.7,
-              "z": -13.7
+              "y": 10.4,
+              "z": -13.3
             },
             "offset2": null,
             "is_capsule": false,
@@ -8521,12 +8386,12 @@
             "kbg": 98,
             "fkb": 0,
             "bkb": 31,
-            "size": 6.7,
+            "size": 6.2,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 10.7,
-              "z": -13.7
+              "y": 10.4,
+              "z": -13.3
             },
             "offset2": null,
             "is_capsule": false,
@@ -8579,21 +8444,21 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 3.0,
-            "angle": 105,
+            "angle": 110,
             "kbg": 100,
             "fkb": 45,
             "bkb": 0,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "G",
             "offset": {
               "x": 0.0,
-              "y": 20.0,
-              "z": 5.0
+              "y": 18.0,
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
-              "y": 20.0,
-              "z": -5.0
+              "y": 18.0,
+              "z": -4.0
             },
             "is_capsule": true,
             "character": "palutena",
@@ -8601,6 +8466,28 @@
           },
           {
             "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 3.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
+            "size": 4.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "uair"
+          },
+          {
+            "id": 2,
             "bone": "top",
             "animation_frame": 10.0,
             "real_frame": 10,
@@ -8622,7 +8509,7 @@
             "move": "uair"
           },
           {
-            "id": 2,
+            "id": 3,
             "bone": "top",
             "animation_frame": 10.0,
             "real_frame": 10,
@@ -8648,7 +8535,7 @@
             "move": "uair"
           },
           {
-            "id": 3,
+            "id": 4,
             "bone": "top",
             "animation_frame": 10.0,
             "real_frame": 10,
@@ -8670,28 +8557,6 @@
               "z": -7.5
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "uair"
-          },
-          {
-            "id": 4,
-            "bone": "top",
-            "animation_frame": 10.0,
-            "real_frame": 10,
-            "damage": 3.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 4.0,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 16.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "uair"
           }
@@ -8703,21 +8568,21 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 3.0,
-            "angle": 105,
+            "angle": 110,
             "kbg": 100,
             "fkb": 45,
             "bkb": 0,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "G",
             "offset": {
               "x": 0.0,
-              "y": 20.0,
-              "z": 5.0
+              "y": 18.0,
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
-              "y": 20.0,
-              "z": -5.0
+              "y": 18.0,
+              "z": -4.0
             },
             "is_capsule": true,
             "character": "palutena",
@@ -8725,6 +8590,28 @@
           },
           {
             "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 3.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
+            "size": 4.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "uair"
+          },
+          {
+            "id": 2,
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
@@ -8746,7 +8633,7 @@
             "move": "uair"
           },
           {
-            "id": 2,
+            "id": 3,
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
@@ -8772,7 +8659,7 @@
             "move": "uair"
           },
           {
-            "id": 3,
+            "id": 4,
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
@@ -8794,28 +8681,6 @@
               "z": -7.5
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "uair"
-          },
-          {
-            "id": 4,
-            "bone": "top",
-            "animation_frame": 11.0,
-            "real_frame": 11,
-            "damage": 3.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 4.0,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 16.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "uair"
           }
@@ -8827,21 +8692,21 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 3.0,
-            "angle": 105,
+            "angle": 110,
             "kbg": 100,
             "fkb": 45,
             "bkb": 0,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "G",
             "offset": {
               "x": 0.0,
-              "y": 20.0,
-              "z": 5.0
+              "y": 18.0,
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
-              "y": 20.0,
-              "z": -5.0
+              "y": 18.0,
+              "z": -4.0
             },
             "is_capsule": true,
             "character": "palutena",
@@ -8849,6 +8714,28 @@
           },
           {
             "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 3.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
+            "size": 4.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "uair"
+          },
+          {
+            "id": 2,
             "bone": "top",
             "animation_frame": 12.0,
             "real_frame": 12,
@@ -8870,7 +8757,7 @@
             "move": "uair"
           },
           {
-            "id": 2,
+            "id": 3,
             "bone": "top",
             "animation_frame": 12.0,
             "real_frame": 12,
@@ -8896,7 +8783,7 @@
             "move": "uair"
           },
           {
-            "id": 3,
+            "id": 4,
             "bone": "top",
             "animation_frame": 12.0,
             "real_frame": 12,
@@ -8918,28 +8805,6 @@
               "z": -7.5
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "uair"
-          },
-          {
-            "id": 4,
-            "bone": "top",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 3.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 4.0,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 16.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "uair"
           }
@@ -8951,21 +8816,21 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 3.0,
-            "angle": 105,
+            "angle": 110,
             "kbg": 100,
             "fkb": 45,
             "bkb": 0,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "G",
             "offset": {
               "x": 0.0,
-              "y": 20.0,
-              "z": 5.0
+              "y": 18.0,
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
-              "y": 20.0,
-              "z": -5.0
+              "y": 18.0,
+              "z": -4.0
             },
             "is_capsule": true,
             "character": "palutena",
@@ -8973,6 +8838,28 @@
           },
           {
             "id": 1,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 3.0,
+            "angle": 365,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
+            "size": 4.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 16.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "palutena",
+            "move": "uair"
+          },
+          {
+            "id": 2,
             "bone": "top",
             "animation_frame": 13.0,
             "real_frame": 13,
@@ -8994,7 +8881,7 @@
             "move": "uair"
           },
           {
-            "id": 2,
+            "id": 3,
             "bone": "top",
             "animation_frame": 13.0,
             "real_frame": 13,
@@ -9020,7 +8907,7 @@
             "move": "uair"
           },
           {
-            "id": 3,
+            "id": 4,
             "bone": "top",
             "animation_frame": 13.0,
             "real_frame": 13,
@@ -9042,28 +8929,6 @@
               "z": -7.5
             },
             "is_capsule": true,
-            "character": "palutena",
-            "move": "uair"
-          },
-          {
-            "id": 4,
-            "bone": "top",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 3.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 40,
-            "bkb": 0,
-            "size": 4.0,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 16.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
             "character": "palutena",
             "move": "uair"
           }
@@ -9079,7 +8944,7 @@
             "kbg": 105,
             "fkb": 0,
             "bkb": 59,
-            "size": 6.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -9111,7 +8976,7 @@
             "offset2": {
               "x": 0.0,
               "y": 22.0,
-              "z": 8.0
+              "z": 7.5
             },
             "is_capsule": true,
             "character": "palutena",
@@ -9137,7 +9002,7 @@
             "offset2": {
               "x": 0.0,
               "y": 22.0,
-              "z": -8.0
+              "z": -7.5
             },
             "is_capsule": true,
             "character": "palutena",
@@ -9153,11 +9018,11 @@
             "kbg": 105,
             "fkb": 0,
             "bkb": 59,
-            "size": 6.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 17.0,
+              "y": 15.0,
               "z": 0.0
             },
             "offset2": null,
@@ -9177,7 +9042,7 @@
             "kbg": 105,
             "fkb": 0,
             "bkb": 59,
-            "size": 6.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -9209,7 +9074,7 @@
             "offset2": {
               "x": 0.0,
               "y": 22.0,
-              "z": 8.0
+              "z": 7.5
             },
             "is_capsule": true,
             "character": "palutena",
@@ -9235,7 +9100,7 @@
             "offset2": {
               "x": 0.0,
               "y": 22.0,
-              "z": -8.0
+              "z": -7.5
             },
             "is_capsule": true,
             "character": "palutena",
@@ -9251,11 +9116,11 @@
             "kbg": 105,
             "fkb": 0,
             "bkb": 59,
-            "size": 6.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 17.0,
+              "y": 15.0,
               "z": 0.0
             },
             "offset2": null,
@@ -9275,7 +9140,7 @@
             "kbg": 105,
             "fkb": 0,
             "bkb": 59,
-            "size": 6.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -9307,7 +9172,7 @@
             "offset2": {
               "x": 0.0,
               "y": 22.0,
-              "z": 8.0
+              "z": 7.5
             },
             "is_capsule": true,
             "character": "palutena",
@@ -9333,7 +9198,7 @@
             "offset2": {
               "x": 0.0,
               "y": 22.0,
-              "z": -8.0
+              "z": -7.5
             },
             "is_capsule": true,
             "character": "palutena",
@@ -9349,11 +9214,11 @@
             "kbg": 105,
             "fkb": 0,
             "bkb": 59,
-            "size": 6.0,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 17.0,
+              "y": 15.0,
               "z": 0.0
             },
             "offset2": null,
@@ -10386,12 +10251,12 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 0.0
+              "z": 4.2
             },
             "offset2": {
               "x": 0.0,
               "y": 8.0,
-              "z": 9.0
+              "z": 7.5
             },
             "is_capsule": true,
             "character": "palutena",
@@ -10414,12 +10279,12 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 0.0
+              "z": 4.2
             },
             "offset2": {
               "x": 0.0,
               "y": 8.0,
-              "z": 9.0
+              "z": 7.5
             },
             "is_capsule": true,
             "character": "palutena",
@@ -10453,12 +10318,12 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 4.0
+              "z": 5.2
             },
             "offset2": {
               "x": 0.0,
               "y": 8.0,
-              "z": 12.4
+              "z": 10.9
             },
             "is_capsule": true,
             "character": "palutena",
@@ -10481,12 +10346,12 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 4.0
+              "z": 5.2
             },
             "offset2": {
               "x": 0.0,
               "y": 8.0,
-              "z": 12.4
+              "z": 10.9
             },
             "is_capsule": true,
             "character": "palutena",
@@ -10520,12 +10385,12 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": -4.0
+              "z": -5.2
             },
             "offset2": {
               "x": 0.0,
               "y": 8.0,
-              "z": -18.6
+              "z": -15.1
             },
             "is_capsule": true,
             "character": "palutena",
@@ -10548,12 +10413,12 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": -4.0
+              "z": -5.2
             },
             "offset2": {
               "x": 0.0,
               "y": 8.0,
-              "z": -18.6
+              "z": -15.1
             },
             "is_capsule": true,
             "character": "palutena",
@@ -10629,7 +10494,21 @@
           }
         ]
       },
-      "motion_events": [],
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 20.0,
+          "start_orig": 20.0,
+          "end_orig": 47.0,
+          "new_duration": 18.0,
+          "scale_factor": 0.6666666666666666
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 47.0,
+          "rate_value": 1.0
+        }
+      ],
       "faf": 38
     },
     "bthrow": {
@@ -10746,5 +10625,5 @@
       "faf": 39
     }
   },
-  "generated_at": "2026-04-25T23:06:25.200222"
+  "generated_at": "2026-05-13T15:24:07.108577"
 }

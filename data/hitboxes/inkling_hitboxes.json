@@ -7775,7 +7775,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": 0.0
+              "z": 5.0
             },
             "offset2": {
               "x": 0.0,
@@ -7803,7 +7803,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": 0.0
+              "z": 5.0
             },
             "offset2": {
               "x": 0.0,
@@ -7909,7 +7909,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": -4.0
+              "z": -5.5
             },
             "offset2": {
               "x": 0.0,
@@ -7937,7 +7937,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": -4.0
+              "z": -5.5
             },
             "offset2": {
               "x": 0.0,
@@ -8063,8 +8063,6 @@
     "bthrow": {
       "total_frames": 67,
       "active_frames": [
-        17,
-        18,
         19,
         20,
         21,
@@ -8072,55 +8070,11 @@
         23,
         24,
         25,
-        26
+        26,
+        27,
+        28
       ],
       "hitboxes_by_frame": {
-        "17": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 97,
-            "fkb": 0,
-            "bkb": 55,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "inkling",
-            "move": "bthrow"
-          }
-        ],
-        "18": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 97,
-            "fkb": 0,
-            "bkb": 55,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "inkling",
-            "move": "bthrow"
-          }
-        ],
         "19": [
           {
             "id": 0,
@@ -8304,10 +8258,67 @@
             "character": "inkling",
             "move": "bthrow"
           }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 9.0,
+            "angle": 45,
+            "kbg": 97,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "inkling",
+            "move": "bthrow"
+          }
+        ],
+        "28": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 9.0,
+            "angle": 45,
+            "kbg": 97,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "inkling",
+            "move": "bthrow"
+          }
         ]
       },
-      "motion_events": [],
-      "faf": 37
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 2.0,
+          "rate_value": 2.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 4.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 39
     },
     "uthrow": {
       "total_frames": 69,
@@ -8426,5 +8437,5 @@
       "faf": 33
     }
   },
-  "generated_at": "2026-04-25T23:06:28.344027"
+  "generated_at": "2026-05-13T15:24:15.339341"
 }

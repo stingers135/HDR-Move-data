@@ -1358,6 +1358,1743 @@
       "motion_events": [],
       "faf": 29
     },
+    "fsmash": {
+      "total_frames": 43,
+      "active_frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "hitboxes_by_frame": {
+        "1": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 4.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 4.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "2": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 4.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 4.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "3": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 4.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 4.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "16": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "17": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ],
+        "18": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 8.4,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 33,
+            "size": 3.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "fsmash"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 50
+    },
+    "usmash": {
+      "total_frames": 49,
+      "active_frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "hitboxes_by_frame": {
+        "1": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ],
+        "2": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 6.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ],
+        "3": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 14.0,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 5.0,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "usmash"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 40
+    },
+    "dsmash": {
+      "total_frames": 46,
+      "active_frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "hitboxes_by_frame": {
+        "1": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 4.5,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 1.0,
+            "real_frame": 1,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 4.5,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          }
+        ],
+        "2": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 4.5,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 2.0,
+            "real_frame": 2,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 4.5,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          }
+        ],
+        "3": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 4.5,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 3.0,
+            "real_frame": 3,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 4.5,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "head1",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          },
+          {
+            "id": 1,
+            "bone": "head1",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 12.6,
+            "angle": null,
+            "kbg": null,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.5,
+            "situation": "A",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dsmash"
+          }
+        ]
+      },
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 39
+    },
     "nair": {
       "total_frames": 42,
       "active_frames": [
@@ -4869,6 +6606,315 @@
       "motion_events": [],
       "faf": 38
     },
+    "dash_grab": {
+      "total_frames": 54,
+      "active_frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hitboxes_by_frame": {
+        "4": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "5": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "6": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "9": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "10": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 10.0,
+            "real_frame": 10,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 4.0,
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pikmin",
+            "move": "dash_grab",
+            "is_grab": true
+          }
+        ]
+      },
+      "motion_events": [],
+      "faf": 50
+    },
     "pummel": {
       "total_frames": 21,
       "active_frames": [
@@ -4906,113 +6952,24 @@
     "fthrow": {
       "total_frames": 53,
       "active_frames": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
+        14,
+        15,
+        16,
+        17,
+        18
       ],
       "hitboxes_by_frame": {
-        "0": [
+        "14": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 5.6,
-            "angle": 361,
-            "kbg": 60,
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 65,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "fthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "fthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 11.9,
-            "angle": 361,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "fthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "fthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 65,
+            "bkb": 75,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5025,17 +6982,17 @@
             "move": "fthrow"
           }
         ],
-        "1": [
+        "15": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 1.0,
-            "real_frame": 1,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 75,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5048,17 +7005,17 @@
             "move": "fthrow"
           }
         ],
-        "2": [
+        "16": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
+            "animation_frame": 16.0,
+            "real_frame": 16,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 75,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5071,17 +7028,17 @@
             "move": "fthrow"
           }
         ],
-        "3": [
+        "17": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 3.0,
-            "real_frame": 3,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
+            "animation_frame": 17.0,
+            "real_frame": 17,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 75,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5094,132 +7051,17 @@
             "move": "fthrow"
           }
         ],
-        "4": [
+        "18": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
+            "animation_frame": 18.0,
+            "real_frame": 18,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 65,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "fthrow"
-          }
-        ],
-        "5": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "fthrow"
-          }
-        ],
-        "6": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "fthrow"
-          }
-        ],
-        "7": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "fthrow"
-          }
-        ],
-        "8": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "fthrow"
-          }
-        ],
-        "9": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 7.0,
-            "angle": 361,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 65,
+            "bkb": 75,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5233,119 +7075,41 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 35
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 14.0,
+          "rate_value": 0.5
+        }
+      ],
+      "faf": 24
     },
     "bthrow": {
       "total_frames": 54,
       "active_frames": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
+        20,
+        21,
+        22,
+        23,
+        24
       ],
       "hitboxes_by_frame": {
-        "0": [
+        "20": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.2,
-            "angle": 45,
-            "kbg": 60,
+            "animation_frame": 20.0,
+            "real_frame": 20,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "bthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "bthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 15.3,
-            "angle": 45,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "bthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "bthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 50,
+            "bkb": 84,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5358,17 +7122,17 @@
             "move": "bthrow"
           }
         ],
-        "1": [
+        "21": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 1.0,
-            "real_frame": 1,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 84,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5381,17 +7145,17 @@
             "move": "bthrow"
           }
         ],
-        "2": [
+        "22": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 84,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5404,17 +7168,17 @@
             "move": "bthrow"
           }
         ],
-        "3": [
+        "23": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 3.0,
-            "real_frame": 3,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 84,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5427,132 +7191,17 @@
             "move": "bthrow"
           }
         ],
-        "4": [
+        "24": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "bthrow"
-          }
-        ],
-        "5": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "bthrow"
-          }
-        ],
-        "6": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "bthrow"
-          }
-        ],
-        "7": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "bthrow"
-          }
-        ],
-        "8": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "bthrow"
-          }
-        ],
-        "9": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 9.0,
-            "angle": 45,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 50,
+            "bkb": 84,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5566,326 +7215,37 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 40
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 20.0,
+          "rate_value": 0.5
+        }
+      ],
+      "faf": 30
     },
     "uthrow": {
       "total_frames": 61,
       "active_frames": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
+        21
       ],
       "hitboxes_by_frame": {
-        "0": [
+        "21": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 5.4,
-            "angle": 85,
-            "kbg": 80,
+            "animation_frame": 21.0,
+            "real_frame": 21,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 81,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 79,
-            "fkb": 0,
-            "bkb": 81,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 12.5,
-            "angle": 85,
-            "kbg": 66,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 77,
-            "fkb": 0,
-            "bkb": 82,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          }
-        ],
-        "1": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 1.0,
-            "real_frame": 1,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          }
-        ],
-        "2": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          }
-        ],
-        "3": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 3.0,
-            "real_frame": 3,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          }
-        ],
-        "4": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          }
-        ],
-        "5": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          }
-        ],
-        "6": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          }
-        ],
-        "7": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          }
-        ],
-        "8": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "uthrow"
-          }
-        ],
-        "9": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 7.0,
-            "angle": 85,
-            "kbg": 76,
-            "fkb": 0,
-            "bkb": 83,
+            "bkb": 60,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -5899,326 +7259,237 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 49
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 21.0,
+          "rate_value": 0.5
+        }
+      ],
+      "faf": 35
     },
     "dthrow": {
       "total_frames": 49,
       "active_frames": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
       ],
       "hitboxes_by_frame": {
-        "0": [
+        "22": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 5.6,
-            "angle": 60,
-            "kbg": 60,
+            "animation_frame": 22.0,
+            "real_frame": 22,
+            "damage": 1.0,
+            "angle": null,
+            "kbg": null,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 50,
+            "size": 7.0,
+            "situation": "GA",
             "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
             },
             "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "dthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "dthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 11.9,
-            "angle": 60,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "dthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "dthrow"
-          },
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 0.0,
-            "real_frame": 0,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
+            "is_capsule": false,
             "character": "pikmin",
             "move": "dthrow"
           }
         ],
-        "1": [
+        "23": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 1.0,
-            "real_frame": 1,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
+            "animation_frame": 23.0,
+            "real_frame": 23,
+            "damage": 1.0,
+            "angle": null,
+            "kbg": null,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 50,
+            "size": 7.0,
+            "situation": "GA",
             "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
             },
             "offset2": null,
-            "is_throw": true,
+            "is_capsule": false,
             "character": "pikmin",
             "move": "dthrow"
           }
         ],
-        "2": [
+        "24": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 2.0,
-            "real_frame": 2,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
+            "animation_frame": 24.0,
+            "real_frame": 24,
+            "damage": 1.0,
+            "angle": null,
+            "kbg": null,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 50,
+            "size": 7.0,
+            "situation": "GA",
             "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
             },
             "offset2": null,
-            "is_throw": true,
+            "is_capsule": false,
             "character": "pikmin",
             "move": "dthrow"
           }
         ],
-        "3": [
+        "25": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 3.0,
-            "real_frame": 3,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
+            "animation_frame": 25.0,
+            "real_frame": 25,
+            "damage": 1.0,
+            "angle": null,
+            "kbg": null,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 50,
+            "size": 7.0,
+            "situation": "GA",
             "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
             },
             "offset2": null,
-            "is_throw": true,
+            "is_capsule": false,
             "character": "pikmin",
             "move": "dthrow"
           }
         ],
-        "4": [
+        "26": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 1.0,
+            "angle": null,
+            "kbg": null,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 50,
+            "size": 7.0,
+            "situation": "GA",
             "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
             },
             "offset2": null,
-            "is_throw": true,
+            "is_capsule": false,
             "character": "pikmin",
             "move": "dthrow"
           }
         ],
-        "5": [
+        "27": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 1.0,
+            "angle": null,
+            "kbg": null,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 50,
+            "size": 7.0,
+            "situation": "GA",
             "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
             },
             "offset2": null,
-            "is_throw": true,
+            "is_capsule": false,
             "character": "pikmin",
             "move": "dthrow"
           }
         ],
-        "6": [
+        "28": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
+            "animation_frame": 28.0,
+            "real_frame": 28,
+            "damage": 1.0,
+            "angle": null,
+            "kbg": null,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 50,
+            "size": 7.0,
+            "situation": "GA",
             "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
             },
             "offset2": null,
-            "is_throw": true,
+            "is_capsule": false,
             "character": "pikmin",
             "move": "dthrow"
           }
         ],
-        "7": [
+        "29": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
+            "animation_frame": 29.0,
+            "real_frame": 29,
+            "damage": 1.0,
+            "angle": null,
+            "kbg": null,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 50,
+            "size": 7.0,
+            "situation": "GA",
             "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
+              "x": 0.0,
+              "y": 4.0,
+              "z": 0.0
             },
             "offset2": null,
-            "is_throw": true,
+            "is_capsule": false,
             "character": "pikmin",
             "move": "dthrow"
           }
         ],
-        "8": [
+        "30": [
           {
             "id": 0,
             "bone": "top",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
+            "animation_frame": 30.0,
+            "real_frame": 30,
+            "damage": 1.0,
+            "angle": 0,
+            "kbg": 0,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "pikmin",
-            "move": "dthrow"
-          }
-        ],
-        "9": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 7.0,
-            "angle": 60,
-            "kbg": 60,
-            "fkb": 0,
-            "bkb": 60,
+            "bkb": 84,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -6232,9 +7503,20 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 50
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 0.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 30.0,
+          "rate_value": 0.5
+        }
+      ],
+      "faf": 40
     }
   },
-  "generated_at": "2026-04-25T23:06:22.651700"
+  "generated_at": "2026-05-13T15:24:00.702268"
 }

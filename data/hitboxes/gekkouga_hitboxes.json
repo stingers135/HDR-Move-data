@@ -4,7 +4,8 @@
     "jab1": {
       "total_frames": 27,
       "active_frames": [
-        3
+        3,
+        4
       ],
       "hitboxes_by_frame": {
         "3": [
@@ -17,7 +18,7 @@
             "angle": 60,
             "kbg": 30,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 22,
             "size": 2.0,
             "situation": "GA",
             "offset": {
@@ -39,7 +40,7 @@
             "angle": 70,
             "kbg": 30,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 22,
             "size": 2.0,
             "situation": "GA",
             "offset": {
@@ -61,29 +62,7 @@
             "angle": 80,
             "kbg": 30,
             "fkb": 0,
-            "bkb": 30,
-            "size": 2.2,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 7.3,
-              "z": 13.5
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "jab1"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 3.0,
-            "real_frame": 3,
-            "damage": 2.0,
-            "angle": 80,
-            "kbg": 30,
-            "fkb": 0,
-            "bkb": 30,
+            "bkb": 22,
             "size": 2.2,
             "situation": "GA",
             "offset": {
@@ -101,6 +80,100 @@
             "bone": "top",
             "animation_frame": 3.0,
             "real_frame": 3,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 2.2,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 13.5
+            },
+            "is_capsule": true,
+            "character": "gekkouga",
+            "move": "jab1"
+          }
+        ],
+        "4": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 2.0,
+            "angle": 60,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 22,
+            "size": 2.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 7.3,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "gekkouga",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 2.0,
+            "angle": 70,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 22,
+            "size": 2.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 7.3,
+              "z": 10.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "gekkouga",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
+            "damage": 2.0,
+            "angle": 80,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 22,
+            "size": 2.2,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 7.3,
+              "z": 13.5
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "gekkouga",
+            "move": "jab1"
+          },
+          {
+            "id": 4,
+            "bone": "top",
+            "animation_frame": 4.0,
+            "real_frame": 4,
             "damage": 2.0,
             "angle": 361,
             "kbg": 15,
@@ -142,9 +215,9 @@
             "real_frame": 3,
             "damage": 2.0,
             "angle": 60,
-            "kbg": 50,
+            "kbg": 40,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 22,
             "size": 2.5,
             "situation": "GA",
             "offset": {
@@ -164,9 +237,9 @@
             "real_frame": 3,
             "damage": 2.0,
             "angle": 70,
-            "kbg": 50,
+            "kbg": 40,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 22,
             "size": 2.8,
             "situation": "GA",
             "offset": {
@@ -186,9 +259,9 @@
             "real_frame": 3,
             "damage": 2.0,
             "angle": 90,
-            "kbg": 50,
+            "kbg": 40,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 22,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -236,9 +309,9 @@
             "real_frame": 4,
             "damage": 2.0,
             "angle": 60,
-            "kbg": 50,
+            "kbg": 40,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 22,
             "size": 2.5,
             "situation": "GA",
             "offset": {
@@ -258,9 +331,9 @@
             "real_frame": 4,
             "damage": 2.0,
             "angle": 70,
-            "kbg": 50,
+            "kbg": 40,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 22,
             "size": 2.8,
             "situation": "GA",
             "offset": {
@@ -280,9 +353,9 @@
             "real_frame": 4,
             "damage": 2.0,
             "angle": 90,
-            "kbg": 50,
+            "kbg": 40,
             "fkb": 0,
-            "bkb": 30,
+            "bkb": 22,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -341,9 +414,9 @@
             "real_frame": 5,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -363,9 +436,9 @@
             "real_frame": 5,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 3.4,
             "situation": "GA",
             "offset": {
@@ -385,9 +458,9 @@
             "real_frame": 5,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -409,9 +482,9 @@
             "real_frame": 6,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -431,9 +504,9 @@
             "real_frame": 6,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 3.4,
             "situation": "GA",
             "offset": {
@@ -453,9 +526,9 @@
             "real_frame": 6,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -672,7 +745,7 @@
             "angle": 45,
             "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.2,
             "situation": "GA",
             "offset": {
@@ -694,7 +767,7 @@
             "angle": 45,
             "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.8,
             "situation": "GA",
             "offset": {
@@ -716,7 +789,7 @@
             "angle": 45,
             "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.8,
             "situation": "GA",
             "offset": {
@@ -740,7 +813,7 @@
             "angle": 45,
             "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.2,
             "situation": "GA",
             "offset": {
@@ -762,7 +835,7 @@
             "angle": 45,
             "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.8,
             "situation": "GA",
             "offset": {
@@ -784,7 +857,7 @@
             "angle": 45,
             "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.8,
             "situation": "GA",
             "offset": {
@@ -828,9 +901,9 @@
             "real_frame": 5,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -850,9 +923,9 @@
             "real_frame": 5,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 3.4,
             "situation": "GA",
             "offset": {
@@ -872,9 +945,9 @@
             "real_frame": 5,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -896,9 +969,9 @@
             "real_frame": 6,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -918,9 +991,9 @@
             "real_frame": 6,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 3.4,
             "situation": "GA",
             "offset": {
@@ -940,9 +1013,9 @@
             "real_frame": 6,
             "damage": 3.0,
             "angle": 361,
-            "kbg": 100,
+            "kbg": 120,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 40,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -1281,7 +1354,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1303,7 +1376,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1325,7 +1398,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1349,7 +1422,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1371,7 +1444,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1393,7 +1466,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1417,7 +1490,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1439,7 +1512,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1461,7 +1534,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1485,7 +1558,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1507,7 +1580,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1529,7 +1602,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1553,7 +1626,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1575,7 +1648,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1597,7 +1670,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1621,7 +1694,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1643,7 +1716,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1665,7 +1738,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1689,7 +1762,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1711,7 +1784,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1733,7 +1806,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.5,
               "y": 0.0,
               "z": 0.0
             },
@@ -1765,10 +1838,10 @@
             "real_frame": 5,
             "damage": 6.0,
             "angle": 65,
-            "kbg": 80,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.0,
+            "bkb": 52,
+            "size": 2.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1786,11 +1859,11 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 6.0,
-            "angle": 77,
-            "kbg": 80,
+            "angle": 75,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.5,
+            "bkb": 52,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1809,10 +1882,10 @@
             "real_frame": 5,
             "damage": 7.0,
             "angle": 85,
-            "kbg": 59,
+            "kbg": 66,
             "fkb": 0,
-            "bkb": 66,
-            "size": 5.0,
+            "bkb": 60,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 6.0,
@@ -1833,10 +1906,10 @@
             "real_frame": 6,
             "damage": 6.0,
             "angle": 65,
-            "kbg": 80,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.0,
+            "bkb": 52,
+            "size": 2.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1854,11 +1927,11 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 6.0,
-            "angle": 77,
-            "kbg": 80,
+            "angle": 75,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.5,
+            "bkb": 52,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1877,10 +1950,10 @@
             "real_frame": 6,
             "damage": 7.0,
             "angle": 85,
-            "kbg": 59,
+            "kbg": 66,
             "fkb": 0,
-            "bkb": 66,
-            "size": 5.0,
+            "bkb": 60,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 6.0,
@@ -1901,10 +1974,10 @@
             "real_frame": 7,
             "damage": 6.0,
             "angle": 65,
-            "kbg": 80,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.0,
+            "bkb": 52,
+            "size": 2.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1922,11 +1995,11 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 6.0,
-            "angle": 77,
-            "kbg": 80,
+            "angle": 75,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.5,
+            "bkb": 52,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1945,10 +2018,10 @@
             "real_frame": 7,
             "damage": 7.0,
             "angle": 85,
-            "kbg": 59,
+            "kbg": 66,
             "fkb": 0,
-            "bkb": 66,
-            "size": 5.0,
+            "bkb": 60,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 6.0,
@@ -1969,10 +2042,10 @@
             "real_frame": 8,
             "damage": 6.0,
             "angle": 65,
-            "kbg": 80,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.0,
+            "bkb": 52,
+            "size": 2.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1990,11 +2063,11 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 6.0,
-            "angle": 77,
-            "kbg": 80,
+            "angle": 75,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.5,
+            "bkb": 52,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -2013,10 +2086,10 @@
             "real_frame": 8,
             "damage": 7.0,
             "angle": 85,
-            "kbg": 59,
+            "kbg": 66,
             "fkb": 0,
-            "bkb": 66,
-            "size": 5.0,
+            "bkb": 60,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 6.0,
@@ -2037,10 +2110,10 @@
             "real_frame": 9,
             "damage": 6.0,
             "angle": 65,
-            "kbg": 80,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.0,
+            "bkb": 52,
+            "size": 2.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -2058,11 +2131,11 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 6.0,
-            "angle": 77,
-            "kbg": 80,
+            "angle": 75,
+            "kbg": 92,
             "fkb": 0,
-            "bkb": 62,
-            "size": 4.5,
+            "bkb": 52,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -2081,10 +2154,10 @@
             "real_frame": 9,
             "damage": 7.0,
             "angle": 85,
-            "kbg": 59,
+            "kbg": 66,
             "fkb": 0,
-            "bkb": 66,
-            "size": 5.0,
+            "bkb": 60,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 6.0,
@@ -2099,7 +2172,7 @@
         ]
       },
       "motion_events": [],
-      "faf": 23
+      "faf": 25
     },
     "fsmash": {
       "total_frames": 59,
@@ -4260,10 +4333,10 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 9.0,
-            "angle": 60,
-            "kbg": 80,
+            "angle": 52,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -4282,10 +4355,10 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 9.0,
-            "angle": 60,
-            "kbg": 80,
+            "angle": 52,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -4304,10 +4377,10 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 9.0,
-            "angle": 60,
-            "kbg": 80,
+            "angle": 52,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.7,
             "situation": "GA",
             "offset": {
@@ -4372,10 +4445,10 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 9.0,
-            "angle": 60,
-            "kbg": 80,
+            "angle": 52,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -4394,10 +4467,10 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 9.0,
-            "angle": 60,
-            "kbg": 80,
+            "angle": 52,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -4416,10 +4489,10 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 9.0,
-            "angle": 60,
-            "kbg": 80,
+            "angle": 52,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.7,
             "situation": "GA",
             "offset": {
@@ -4484,10 +4557,10 @@
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 9.0,
-            "angle": 60,
-            "kbg": 80,
+            "angle": 52,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -4506,10 +4579,10 @@
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 9.0,
-            "angle": 60,
-            "kbg": 80,
+            "angle": 52,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -4528,10 +4601,10 @@
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 9.0,
-            "angle": 60,
-            "kbg": 80,
+            "angle": 52,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 30,
             "size": 3.7,
             "situation": "GA",
             "offset": {
@@ -4621,13 +4694,13 @@
             "bone": "footr",
             "animation_frame": 4.0,
             "real_frame": 4,
-            "damage": 3.0,
-            "angle": 367,
+            "damage": 2.5,
+            "angle": 365,
             "kbg": 100,
-            "fkb": 0,
+            "fkb": 40,
             "bkb": 0,
-            "size": 5.5,
-            "situation": "A",
+            "size": 5.0,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": -1.5,
@@ -4643,13 +4716,13 @@
             "bone": "kneer",
             "animation_frame": 4.0,
             "real_frame": 4,
-            "damage": 3.0,
-            "angle": 35,
+            "damage": 2.5,
+            "angle": 365,
             "kbg": 100,
-            "fkb": 100,
+            "fkb": 40,
             "bkb": 0,
-            "size": 4.3,
-            "situation": "A",
+            "size": 4.0,
+            "situation": "GA",
             "offset": {
               "x": -1.0,
               "y": 0.0,
@@ -4665,79 +4738,13 @@
             "bone": "legr",
             "animation_frame": 4.0,
             "real_frame": 4,
-            "damage": 3.0,
-            "angle": 35,
+            "damage": 2.5,
+            "angle": 365,
             "kbg": 100,
-            "fkb": 130,
+            "fkb": 40,
             "bkb": 0,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "bair"
-          },
-          {
-            "id": 3,
-            "bone": "footr",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 3.0,
-            "angle": 80,
-            "kbg": 100,
-            "fkb": 80,
-            "bkb": 0,
-            "size": 5.5,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": -1.5,
-              "z": 0.5
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "bair"
-          },
-          {
-            "id": 4,
-            "bone": "kneer",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 3.0,
-            "angle": 75,
-            "kbg": 100,
-            "fkb": 110,
-            "bkb": 0,
-            "size": 4.3,
-            "situation": "G",
-            "offset": {
-              "x": -1.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "bair"
-          },
-          {
-            "id": 5,
-            "bone": "legr",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 3.0,
-            "angle": 65,
-            "kbg": 100,
-            "fkb": 140,
-            "bkb": 0,
-            "size": 3.5,
-            "situation": "G",
+            "size": 3.0,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -4758,10 +4765,10 @@
             "damage": 2.5,
             "angle": 365,
             "kbg": 100,
-            "fkb": 0,
+            "fkb": 40,
             "bkb": 0,
-            "size": 5.5,
-            "situation": "A",
+            "size": 5.0,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": -1.5,
@@ -4778,12 +4785,12 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 2.5,
-            "angle": 40,
+            "angle": 365,
             "kbg": 100,
-            "fkb": 105,
+            "fkb": 40,
             "bkb": 0,
-            "size": 4.3,
-            "situation": "A",
+            "size": 4.0,
+            "situation": "GA",
             "offset": {
               "x": -1.0,
               "y": 0.0,
@@ -4800,78 +4807,12 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 2.5,
-            "angle": 35,
+            "angle": 365,
             "kbg": 100,
-            "fkb": 140,
+            "fkb": 40,
             "bkb": 0,
-            "size": 3.5,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "bair"
-          },
-          {
-            "id": 3,
-            "bone": "footr",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 2.5,
-            "angle": 80,
-            "kbg": 100,
-            "fkb": 80,
-            "bkb": 0,
-            "size": 5.5,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": -1.5,
-              "z": -0.5
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "bair"
-          },
-          {
-            "id": 4,
-            "bone": "kneer",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 2.5,
-            "angle": 75,
-            "kbg": 100,
-            "fkb": 100,
-            "bkb": 0,
-            "size": 4.3,
-            "situation": "G",
-            "offset": {
-              "x": -1.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "bair"
-          },
-          {
-            "id": 5,
-            "bone": "legr",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 2.5,
-            "angle": 65,
-            "kbg": 100,
-            "fkb": 130,
-            "bkb": 0,
-            "size": 3.5,
-            "situation": "G",
+            "size": 3.0,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -4894,7 +4835,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 60,
-            "size": 5.8,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4941,7 +4882,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -4962,7 +4903,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 60,
-            "size": 5.8,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5009,7 +4950,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -5030,7 +4971,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 60,
-            "size": 5.8,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5077,7 +5018,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -5098,7 +5039,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 60,
-            "size": 5.8,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5145,7 +5086,7 @@
             "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": -1.0,
               "y": 0.0,
               "z": 0.0
             },
@@ -5203,15 +5144,15 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5225,12 +5166,12 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -5247,37 +5188,15 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5293,15 +5212,15 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5315,12 +5234,12 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -5337,37 +5256,15 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 8.0,
-            "real_frame": 8,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5383,15 +5280,15 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5405,12 +5302,12 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -5427,37 +5324,15 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5473,15 +5348,15 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5495,12 +5370,12 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -5517,37 +5392,15 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 10.0,
-            "real_frame": 10,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5563,15 +5416,15 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5585,12 +5438,12 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -5607,37 +5460,15 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 11.0,
-            "real_frame": 11,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5653,15 +5484,15 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5675,12 +5506,12 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -5697,37 +5528,15 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5743,15 +5552,15 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5765,12 +5574,12 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -5787,37 +5596,15 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5833,15 +5620,15 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5855,12 +5642,12 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -5877,37 +5664,15 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 14.0,
-            "real_frame": 14,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5923,15 +5688,15 @@
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -5945,12 +5710,12 @@
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -5967,37 +5732,15 @@
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -6013,15 +5756,15 @@
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -6035,12 +5778,12 @@
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -6057,37 +5800,15 @@
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -6103,15 +5824,15 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -6125,12 +5846,12 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -6147,37 +5868,15 @@
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -6193,15 +5892,15 @@
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
             "situation": "A",
             "offset": {
               "x": 0.0,
-              "y": 24.0,
+              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -6215,12 +5914,12 @@
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 1.0,
-            "angle": 366,
-            "kbg": 100,
+            "angle": 365,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "A",
+            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -6237,37 +5936,15 @@
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
+            "angle": 366,
+            "kbg": 64,
             "fkb": 0,
             "bkb": 30,
             "size": 5.0,
-            "situation": "G",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "gekkouga",
-            "move": "uair"
-          },
-          {
-            "id": 3,
-            "bone": "top",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 1.0,
-            "angle": 365,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 30,
-            "size": 5.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 19.0,
               "z": 0.0
             },
             "offset2": null,
@@ -6283,10 +5960,10 @@
             "animation_frame": 23.0,
             "real_frame": 23,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 72,
             "kbg": 140,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 18,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -6305,10 +5982,10 @@
             "animation_frame": 23.0,
             "real_frame": 23,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 72,
             "kbg": 140,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 18,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -6329,10 +6006,10 @@
             "animation_frame": 24.0,
             "real_frame": 24,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 72,
             "kbg": 140,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 18,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -6351,10 +6028,10 @@
             "animation_frame": 24.0,
             "real_frame": 24,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 72,
             "kbg": 140,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 18,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -6375,10 +6052,10 @@
             "animation_frame": 25.0,
             "real_frame": 25,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 72,
             "kbg": 140,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 18,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -6397,10 +6074,10 @@
             "animation_frame": 25.0,
             "real_frame": 25,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 72,
             "kbg": 140,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 18,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -6421,10 +6098,10 @@
             "animation_frame": 26.0,
             "real_frame": 26,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 72,
             "kbg": 140,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 18,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -6443,10 +6120,10 @@
             "animation_frame": 26.0,
             "real_frame": 26,
             "damage": 6.0,
-            "angle": 75,
+            "angle": 72,
             "kbg": 140,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 18,
             "size": 6.0,
             "situation": "GA",
             "offset": {
@@ -6509,7 +6186,7 @@
             "kbg": 95,
             "fkb": 0,
             "bkb": 21,
-            "size": 4.3,
+            "size": 5.2,
             "situation": "G",
             "offset": {
               "x": 0.0,
@@ -6531,7 +6208,7 @@
             "kbg": 80,
             "fkb": 0,
             "bkb": 21,
-            "size": 4.3,
+            "size": 5.2,
             "situation": "A",
             "offset": {
               "x": 0.0,
@@ -6577,7 +6254,7 @@
             "kbg": 95,
             "fkb": 0,
             "bkb": 21,
-            "size": 4.3,
+            "size": 5.2,
             "situation": "G",
             "offset": {
               "x": 0.0,
@@ -6599,7 +6276,7 @@
             "kbg": 80,
             "fkb": 0,
             "bkb": 21,
-            "size": 4.3,
+            "size": 5.2,
             "situation": "A",
             "offset": {
               "x": 0.0,
@@ -6645,7 +6322,7 @@
             "kbg": 95,
             "fkb": 0,
             "bkb": 21,
-            "size": 4.3,
+            "size": 5.2,
             "situation": "G",
             "offset": {
               "x": 0.0,
@@ -6667,7 +6344,7 @@
             "kbg": 80,
             "fkb": 0,
             "bkb": 21,
-            "size": 4.3,
+            "size": 5.2,
             "situation": "A",
             "offset": {
               "x": 0.0,
@@ -8270,38 +7947,10 @@
     "grab": {
       "total_frames": 47,
       "active_frames": [
-        9,
-        10
+        10,
+        11
       ],
       "hitboxes_by_frame": {
-        "9": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 0,
-            "angle": null,
-            "kbg": null,
-            "fkb": null,
-            "bkb": null,
-            "size": 3.6,
-            "offset": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 0.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 6.0,
-              "z": 17.0
-            },
-            "is_capsule": true,
-            "character": "gekkouga",
-            "move": "grab",
-            "is_grab": true
-          }
-        ],
         "10": [
           {
             "id": 0,
@@ -8317,12 +7966,40 @@
             "offset": {
               "x": 0.0,
               "y": 6.0,
-              "z": 0.0
+              "z": 3.6
             },
             "offset2": {
               "x": 0.0,
               "y": 6.0,
-              "z": 17.0
+              "z": 16.0
+            },
+            "is_capsule": true,
+            "character": "gekkouga",
+            "move": "grab",
+            "is_grab": true
+          }
+        ],
+        "11": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 0,
+            "angle": null,
+            "kbg": null,
+            "fkb": null,
+            "bkb": null,
+            "size": 3.6,
+            "offset": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 3.6
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 6.0,
+              "z": 16.0
             },
             "is_capsule": true,
             "character": "gekkouga",
@@ -8331,19 +8008,8 @@
           }
         ]
       },
-      "motion_events": [
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 1.0,
-          "rate_value": 0.5
-        },
-        {
-          "type": "FT_MOTION_RATE",
-          "frame": 3.0,
-          "rate_value": 1.0
-        }
-      ],
-      "faf": 37
+      "motion_events": [],
+      "faf": 38
     },
     "dash_grab": {
       "total_frames": 51,
@@ -8439,7 +8105,7 @@
             "offset2": {
               "x": 0.0,
               "y": 6.0,
-              "z": -24.55
+              "z": -22.0
             },
             "is_capsule": true,
             "character": "gekkouga",
@@ -8467,7 +8133,7 @@
             "offset2": {
               "x": 0.0,
               "y": 6.0,
-              "z": -24.55
+              "z": -22.0
             },
             "is_capsule": true,
             "character": "gekkouga",
@@ -9001,8 +8667,6 @@
     "uthrow": {
       "total_frames": 59,
       "active_frames": [
-        16,
-        17,
         18,
         19,
         20,
@@ -9010,55 +8674,11 @@
         22,
         23,
         24,
-        25
+        25,
+        26,
+        27
       ],
       "hitboxes_by_frame": {
-        "16": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "gekkouga",
-            "move": "uthrow"
-          }
-        ],
-        "17": [
-          {
-            "id": 0,
-            "bone": "top",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "offset2": null,
-            "is_throw": true,
-            "character": "gekkouga",
-            "move": "uthrow"
-          }
-        ],
         "18": [
           {
             "id": 0,
@@ -9066,10 +8686,10 @@
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
+            "angle": 88,
+            "kbg": 106,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -9089,10 +8709,10 @@
             "animation_frame": 19.0,
             "real_frame": 19,
             "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
+            "angle": 88,
+            "kbg": 106,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -9112,10 +8732,10 @@
             "animation_frame": 20.0,
             "real_frame": 20,
             "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
+            "angle": 88,
+            "kbg": 106,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -9135,10 +8755,10 @@
             "animation_frame": 21.0,
             "real_frame": 21,
             "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
+            "angle": 88,
+            "kbg": 106,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -9158,10 +8778,10 @@
             "animation_frame": 22.0,
             "real_frame": 22,
             "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
+            "angle": 88,
+            "kbg": 106,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -9181,10 +8801,10 @@
             "animation_frame": 23.0,
             "real_frame": 23,
             "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
+            "angle": 88,
+            "kbg": 106,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -9204,10 +8824,10 @@
             "animation_frame": 24.0,
             "real_frame": 24,
             "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
+            "angle": 88,
+            "kbg": 106,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -9227,10 +8847,56 @@
             "animation_frame": 25.0,
             "real_frame": 25,
             "damage": 5.0,
-            "angle": 93,
-            "kbg": 120,
+            "angle": 88,
+            "kbg": 106,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "gekkouga",
+            "move": "uthrow"
+          }
+        ],
+        "26": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 26.0,
+            "real_frame": 26,
+            "damage": 5.0,
+            "angle": 88,
+            "kbg": 106,
+            "fkb": 0,
+            "bkb": 50,
+            "size": 4.0,
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "offset2": null,
+            "is_throw": true,
+            "character": "gekkouga",
+            "move": "uthrow"
+          }
+        ],
+        "27": [
+          {
+            "id": 0,
+            "bone": "top",
+            "animation_frame": 27.0,
+            "real_frame": 27,
+            "damage": 5.0,
+            "angle": 88,
+            "kbg": 106,
+            "fkb": 0,
+            "bkb": 50,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -9244,8 +8910,19 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 43
+      "motion_events": [
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 5.0,
+          "rate_value": 2.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 7.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 45
     },
     "dthrow": {
       "total_frames": 59,
@@ -9484,5 +9161,5 @@
       "faf": 38
     }
   },
-  "generated_at": "2026-04-25T23:06:24.979352"
+  "generated_at": "2026-05-13T15:24:06.480708"
 }

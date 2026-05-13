@@ -3239,7 +3239,8 @@
         11,
         12,
         13,
-        14
+        14,
+        15
       ],
       "hitboxes_by_frame": {
         "10": [
@@ -3377,6 +3378,72 @@
           }
         ],
         "11": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 3.0,
+            "angle": 75,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "trail",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 3.0,
+            "angle": 75,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "trail",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 8.25,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "trail",
+            "move": "ftilt"
+          },
           {
             "id": 2,
             "bone": "haver",
@@ -3647,6 +3714,74 @@
             "character": "trail",
             "move": "ftilt"
           }
+        ],
+        "15": [
+          {
+            "id": 0,
+            "bone": "haver",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "trail",
+            "move": "ftilt"
+          },
+          {
+            "id": 1,
+            "bone": "haver",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 8.0,
+            "angle": 361,
+            "kbg": 110,
+            "fkb": 0,
+            "bkb": 48,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 4.0,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "trail",
+            "move": "ftilt"
+          },
+          {
+            "id": 2,
+            "bone": "haver",
+            "animation_frame": 15.0,
+            "real_frame": 15,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 20,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 8.25,
+              "z": -2.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "trail",
+            "move": "ftilt"
+          }
         ]
       },
       "motion_events": [
@@ -3663,6 +3798,24 @@
         {
           "type": "FT_MOTION_RATE",
           "frame": 6.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 11.0,
+          "start_orig": 11.0,
+          "end_orig": 12.5,
+          "new_duration": 1.0,
+          "scale_factor": 0.6666666666666666
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 12.5,
+          "rate_value": 2.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 13.0,
           "rate_value": 1.0
         },
         {
@@ -4804,11 +4957,11 @@
             "bone": "haver",
             "animation_frame": 26.0,
             "real_frame": 26,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -4826,11 +4979,11 @@
             "bone": "haver",
             "animation_frame": 26.0,
             "real_frame": 26,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -4848,11 +5001,11 @@
             "bone": "haver",
             "animation_frame": 26.0,
             "real_frame": 26,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -4872,11 +5025,11 @@
             "bone": "haver",
             "animation_frame": 27.0,
             "real_frame": 27,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -4894,11 +5047,11 @@
             "bone": "haver",
             "animation_frame": 27.0,
             "real_frame": 27,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -4916,11 +5069,11 @@
             "bone": "haver",
             "animation_frame": 27.0,
             "real_frame": 27,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -4940,11 +5093,11 @@
             "bone": "haver",
             "animation_frame": 28.0,
             "real_frame": 28,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -4962,11 +5115,11 @@
             "bone": "haver",
             "animation_frame": 28.0,
             "real_frame": 28,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -4984,11 +5137,11 @@
             "bone": "haver",
             "animation_frame": 28.0,
             "real_frame": 28,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -5008,11 +5161,11 @@
             "bone": "haver",
             "animation_frame": 29.0,
             "real_frame": 29,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -5030,11 +5183,11 @@
             "bone": "haver",
             "animation_frame": 29.0,
             "real_frame": 29,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -5052,11 +5205,11 @@
             "bone": "haver",
             "animation_frame": 29.0,
             "real_frame": 29,
-            "damage": 4.5,
-            "angle": 86,
-            "kbg": 132,
+            "damage": 5.0,
+            "angle": 81,
+            "kbg": 135,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 55,
             "size": 3.8,
             "situation": "GA",
             "offset": {
@@ -5094,9 +5247,19 @@
           "type": "FT_MOTION_RATE",
           "frame": 33.0,
           "rate_value": 1.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 38.0,
+          "rate_value": 1.75
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 41.0,
+          "rate_value": 1.0
         }
       ],
-      "faf": 47
+      "faf": 49
     },
     "dtilt": {
       "total_frames": 48,
@@ -5492,7 +5655,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 15.0,
-            "angle": 40,
+            "angle": 361,
             "kbg": 105,
             "fkb": 0,
             "bkb": 30,
@@ -5514,7 +5677,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 15.0,
-            "angle": 40,
+            "angle": 361,
             "kbg": 105,
             "fkb": 0,
             "bkb": 30,
@@ -5536,7 +5699,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 15.0,
-            "angle": 40,
+            "angle": 361,
             "kbg": 105,
             "fkb": 0,
             "bkb": 30,
@@ -5560,7 +5723,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 15.0,
-            "angle": 40,
+            "angle": 361,
             "kbg": 105,
             "fkb": 0,
             "bkb": 30,
@@ -5582,7 +5745,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 15.0,
-            "angle": 40,
+            "angle": 361,
             "kbg": 105,
             "fkb": 0,
             "bkb": 30,
@@ -5604,7 +5767,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 15.0,
-            "angle": 40,
+            "angle": 361,
             "kbg": 105,
             "fkb": 0,
             "bkb": 30,
@@ -5628,7 +5791,7 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 15.0,
-            "angle": 40,
+            "angle": 361,
             "kbg": 105,
             "fkb": 0,
             "bkb": 30,
@@ -5650,7 +5813,7 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 15.0,
-            "angle": 40,
+            "angle": 361,
             "kbg": 105,
             "fkb": 0,
             "bkb": 30,
@@ -5672,7 +5835,7 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 15.0,
-            "angle": 40,
+            "angle": 361,
             "kbg": 105,
             "fkb": 0,
             "bkb": 30,
@@ -5695,11 +5858,11 @@
             "bone": "haver",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 13.5,
-            "angle": 40,
-            "kbg": 108,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 35,
+            "bkb": 30,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -5717,11 +5880,11 @@
             "bone": "haver",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 13.5,
-            "angle": 40,
-            "kbg": 108,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 35,
+            "bkb": 30,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -5739,11 +5902,11 @@
             "bone": "haver",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 13.5,
-            "angle": 40,
-            "kbg": 108,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 105,
             "fkb": 0,
-            "bkb": 35,
+            "bkb": 30,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -5802,7 +5965,33 @@
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 0.6,
+            "damage": 1.0,
+            "angle": 84,
+            "kbg": 100,
+            "fkb": 100,
+            "bkb": 0,
+            "size": 3.2,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 7.4,
+              "z": 1.2
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.4,
+              "z": 1.2
+            },
+            "is_capsule": true,
+            "character": "trail",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 11.0,
+            "real_frame": 11,
+            "damage": 1.0,
             "angle": 100,
             "kbg": 100,
             "fkb": 100,
@@ -5812,7 +6001,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.4,
-              "z": 2.2
+              "z": 1.2
             },
             "offset2": {
               "x": 0.0,
@@ -5824,11 +6013,11 @@
             "move": "usmash"
           },
           {
-            "id": 1,
+            "id": 2,
             "bone": "top",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 0.6,
+            "damage": 1.0,
             "angle": 120,
             "kbg": 100,
             "fkb": 100,
@@ -5838,7 +6027,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.4,
-              "z": 2.2
+              "z": 1.2
             },
             "offset2": {
               "x": 0.0,
@@ -5856,7 +6045,33 @@
             "bone": "top",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 0.6,
+            "damage": 1.0,
+            "angle": 84,
+            "kbg": 100,
+            "fkb": 100,
+            "bkb": 0,
+            "size": 3.2,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 7.4,
+              "z": 1.2
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 7.4,
+              "z": 1.2
+            },
+            "is_capsule": true,
+            "character": "trail",
+            "move": "usmash"
+          },
+          {
+            "id": 1,
+            "bone": "top",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 1.0,
             "angle": 100,
             "kbg": 100,
             "fkb": 100,
@@ -5866,7 +6081,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.4,
-              "z": 2.2
+              "z": 1.2
             },
             "offset2": {
               "x": 0.0,
@@ -5878,11 +6093,11 @@
             "move": "usmash"
           },
           {
-            "id": 1,
+            "id": 2,
             "bone": "top",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 0.6,
+            "damage": 1.0,
             "angle": 120,
             "kbg": 100,
             "fkb": 100,
@@ -5892,7 +6107,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.4,
-              "z": 2.2
+              "z": 1.2
             },
             "offset2": {
               "x": 0.0,
@@ -5915,7 +6130,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 52,
-            "size": 3.5,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5959,7 +6174,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 52,
-            "size": 3.5,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -5983,7 +6198,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 52,
-            "size": 3.5,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -6027,7 +6242,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 52,
-            "size": 3.5,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -6051,7 +6266,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 52,
-            "size": 3.5,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -6095,7 +6310,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 52,
-            "size": 3.5,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -6119,7 +6334,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 52,
-            "size": 3.5,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -6163,7 +6378,7 @@
             "kbg": 90,
             "fkb": 0,
             "bkb": 52,
-            "size": 3.5,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -6273,32 +6488,6 @@
             "offset": {
               "x": 0.0,
               "y": 4.0,
-              "z": -6.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 6.0
-            },
-            "is_capsule": true,
-            "character": "trail",
-            "move": "dsmash"
-          },
-          {
-            "id": 1,
-            "bone": "throw",
-            "animation_frame": 17.0,
-            "real_frame": 17,
-            "damage": 12.0,
-            "angle": 76,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
               "z": -12.0
             },
             "offset2": {
@@ -6327,32 +6516,6 @@
             "offset": {
               "x": 0.0,
               "y": 4.0,
-              "z": -6.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 6.0
-            },
-            "is_capsule": true,
-            "character": "trail",
-            "move": "dsmash"
-          },
-          {
-            "id": 1,
-            "bone": "throw",
-            "animation_frame": 18.0,
-            "real_frame": 18,
-            "damage": 12.0,
-            "angle": 76,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
               "z": -12.0
             },
             "offset2": {
@@ -6368,32 +6531,6 @@
         "19": [
           {
             "id": 0,
-            "bone": "throw",
-            "animation_frame": 19.0,
-            "real_frame": 19,
-            "damage": 12.0,
-            "angle": 76,
-            "kbg": 90,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": -6.0
-            },
-            "offset2": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": 6.0
-            },
-            "is_capsule": true,
-            "character": "trail",
-            "move": "dsmash"
-          },
-          {
-            "id": 1,
             "bone": "throw",
             "animation_frame": 19.0,
             "real_frame": 19,
@@ -6461,7 +6598,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6483,7 +6620,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6505,7 +6642,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6529,7 +6666,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6551,7 +6688,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6573,7 +6710,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6597,7 +6734,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6619,7 +6756,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6641,7 +6778,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6665,7 +6802,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6687,7 +6824,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6709,7 +6846,7 @@
             "angle": 361,
             "kbg": 114,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6729,11 +6866,11 @@
             "bone": "haver",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 12.0,
+            "damage": 9.0,
             "angle": 361,
-            "kbg": 114,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6751,11 +6888,11 @@
             "bone": "haver",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 12.0,
+            "damage": 9.0,
             "angle": 361,
-            "kbg": 114,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6773,11 +6910,11 @@
             "bone": "haver",
             "animation_frame": 12.0,
             "real_frame": 12,
-            "damage": 12.0,
+            "damage": 9.0,
             "angle": 361,
-            "kbg": 114,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6801,7 +6938,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6823,7 +6960,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6845,7 +6982,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6869,7 +7006,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6891,7 +7028,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6913,7 +7050,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6937,7 +7074,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6959,7 +7096,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -6981,7 +7118,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7005,7 +7142,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7027,7 +7164,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7049,7 +7186,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7073,7 +7210,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7095,7 +7232,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7117,7 +7254,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7141,7 +7278,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7163,7 +7300,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7185,7 +7322,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7209,7 +7346,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7231,7 +7368,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -7253,7 +7390,7 @@
             "angle": 361,
             "kbg": 100,
             "fkb": 0,
-            "bkb": 25,
+            "bkb": 20,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8335,9 +8472,7 @@
         11,
         12,
         13,
-        14,
-        15,
-        16
+        14
       ],
       "hitboxes_by_frame": {
         "9": [
@@ -8348,9 +8483,9 @@
             "real_frame": 9,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8370,9 +8505,9 @@
             "real_frame": 9,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8392,9 +8527,9 @@
             "real_frame": 9,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8416,9 +8551,9 @@
             "real_frame": 10,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8438,9 +8573,9 @@
             "real_frame": 10,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8460,9 +8595,9 @@
             "real_frame": 10,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8484,9 +8619,9 @@
             "real_frame": 11,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8506,9 +8641,9 @@
             "real_frame": 11,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8528,9 +8663,9 @@
             "real_frame": 11,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8552,9 +8687,9 @@
             "real_frame": 12,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8574,9 +8709,9 @@
             "real_frame": 12,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8596,9 +8731,9 @@
             "real_frame": 12,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8620,9 +8755,9 @@
             "real_frame": 13,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8642,9 +8777,9 @@
             "real_frame": 13,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8664,9 +8799,9 @@
             "real_frame": 13,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8688,9 +8823,9 @@
             "real_frame": 14,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8710,9 +8845,9 @@
             "real_frame": 14,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8732,145 +8867,9 @@
             "real_frame": 14,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 70,
+            "kbg": 98,
             "fkb": 0,
-            "bkb": 65,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 8.25,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "trail",
-            "move": "uair"
-          }
-        ],
-        "15": [
-          {
-            "id": 0,
-            "bone": "haver",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 10.0,
-            "angle": 75,
-            "kbg": 70,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "trail",
-            "move": "uair"
-          },
-          {
-            "id": 1,
-            "bone": "haver",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 10.0,
-            "angle": 75,
-            "kbg": 70,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "trail",
-            "move": "uair"
-          },
-          {
-            "id": 2,
-            "bone": "haver",
-            "animation_frame": 15.0,
-            "real_frame": 15,
-            "damage": 10.0,
-            "angle": 75,
-            "kbg": 70,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 8.25,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "trail",
-            "move": "uair"
-          }
-        ],
-        "16": [
-          {
-            "id": 0,
-            "bone": "haver",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 10.0,
-            "angle": 75,
-            "kbg": 70,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "trail",
-            "move": "uair"
-          },
-          {
-            "id": 1,
-            "bone": "haver",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 10.0,
-            "angle": 75,
-            "kbg": 70,
-            "fkb": 0,
-            "bkb": 65,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 4.0,
-              "z": -2.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "trail",
-            "move": "uair"
-          },
-          {
-            "id": 2,
-            "bone": "haver",
-            "animation_frame": 16.0,
-            "real_frame": 16,
-            "damage": 10.0,
-            "angle": 75,
-            "kbg": 70,
-            "fkb": 0,
-            "bkb": 65,
+            "bkb": 36,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8894,12 +8893,27 @@
         {
           "type": "MotionModule::set_rate",
           "frame": 5.0,
-          "rate_value": 0.9
+          "rate_value": 1.0
         },
         {
           "type": "MotionModule::set_rate",
-          "frame": 9.5,
-          "rate_value": 1.3125
+          "frame": 9.0,
+          "rate_value": 0.75
+        },
+        {
+          "type": "MotionModule::set_rate",
+          "frame": 9.75,
+          "rate_value": 1.0
+        },
+        {
+          "type": "MotionModule::set_rate",
+          "frame": 10.75,
+          "rate_value": 1.25
+        },
+        {
+          "type": "MotionModule::set_rate",
+          "frame": 12.0,
+          "rate_value": 2.0
         },
         {
           "type": "MotionModule::set_rate",
@@ -8907,7 +8921,7 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 39
+      "faf": 37
     },
     "dair": {
       "total_frames": 75,
@@ -8929,9 +8943,9 @@
             "real_frame": 8,
             "damage": 8.0,
             "angle": 62,
-            "kbg": 70,
+            "kbg": 83,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8951,9 +8965,9 @@
             "real_frame": 8,
             "damage": 8.0,
             "angle": 62,
-            "kbg": 70,
+            "kbg": 83,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8973,9 +8987,9 @@
             "real_frame": 8,
             "damage": 8.0,
             "angle": 62,
-            "kbg": 70,
+            "kbg": 83,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -8995,9 +9009,9 @@
             "real_frame": 8,
             "damage": 8.0,
             "angle": 62,
-            "kbg": 70,
+            "kbg": 83,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9017,9 +9031,9 @@
             "real_frame": 8,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9039,9 +9053,9 @@
             "real_frame": 8,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9151,9 +9165,9 @@
             "real_frame": 9,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9173,9 +9187,9 @@
             "real_frame": 9,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9285,9 +9299,9 @@
             "real_frame": 10,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9307,9 +9321,9 @@
             "real_frame": 10,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9419,9 +9433,9 @@
             "real_frame": 11,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9441,9 +9455,9 @@
             "real_frame": 11,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9553,9 +9567,9 @@
             "real_frame": 12,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9575,9 +9589,9 @@
             "real_frame": 12,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9687,9 +9701,9 @@
             "real_frame": 13,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9709,9 +9723,9 @@
             "real_frame": 13,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9821,9 +9835,9 @@
             "real_frame": 14,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -9843,9 +9857,9 @@
             "real_frame": 14,
             "damage": 8.0,
             "angle": 58,
-            "kbg": 80,
+            "kbg": 108,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 38,
             "size": 3.5,
             "situation": "GA",
             "offset": {
@@ -11149,7 +11163,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 0.0
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
@@ -11177,7 +11191,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": 0.0
+              "z": 4.0
             },
             "offset2": {
               "x": 0.0,
@@ -11305,7 +11319,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": -4.6
+              "z": -6.0
             },
             "offset2": {
               "x": 0.0,
@@ -11333,7 +11347,7 @@
             "offset": {
               "x": 0.0,
               "y": 6.6,
-              "z": -4.6
+              "z": -6.0
             },
             "offset2": {
               "x": 0.0,
@@ -11478,11 +11492,11 @@
             "bone": "top",
             "animation_frame": 34.0,
             "real_frame": 34,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -11501,11 +11515,11 @@
             "bone": "top",
             "animation_frame": 35.0,
             "real_frame": 35,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -11524,11 +11538,11 @@
             "bone": "top",
             "animation_frame": 36.0,
             "real_frame": 36,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -11547,11 +11561,11 @@
             "bone": "top",
             "animation_frame": 37.0,
             "real_frame": 37,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -11570,11 +11584,11 @@
             "bone": "top",
             "animation_frame": 38.0,
             "real_frame": 38,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -11593,11 +11607,11 @@
             "bone": "top",
             "animation_frame": 39.0,
             "real_frame": 39,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -11616,11 +11630,11 @@
             "bone": "top",
             "animation_frame": 40.0,
             "real_frame": 40,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -11639,11 +11653,11 @@
             "bone": "top",
             "animation_frame": 41.0,
             "real_frame": 41,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -11662,11 +11676,11 @@
             "bone": "top",
             "animation_frame": 42.0,
             "real_frame": 42,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -11685,11 +11699,11 @@
             "bone": "top",
             "animation_frame": 43.0,
             "real_frame": 43,
-            "damage": 11.0,
-            "angle": 44,
-            "kbg": 84,
+            "damage": 10.0,
+            "angle": 55,
+            "kbg": 65,
             "fkb": 0,
-            "bkb": 56,
+            "bkb": 70,
             "size": 4.0,
             "offset": {
               "x": 0,
@@ -12192,5 +12206,5 @@
       "faf": 34
     }
   },
-  "generated_at": "2026-04-25T23:06:36.143315"
+  "generated_at": "2026-05-13T15:24:35.228788"
 }

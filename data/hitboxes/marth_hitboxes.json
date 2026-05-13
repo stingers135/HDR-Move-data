@@ -4,147 +4,11 @@
     "jab1": {
       "total_frames": 34,
       "active_frames": [
-        4,
-        5,
-        6
+        6,
+        7,
+        8
       ],
       "hitboxes_by_frame": {
-        "4": [
-          {
-            "id": 0,
-            "bone": "sword2",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 3.0,
-            "angle": 78,
-            "kbg": 30,
-            "fkb": 0,
-            "bkb": 55,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.6
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "jab1"
-          },
-          {
-            "id": 1,
-            "bone": "armr",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 3.0,
-            "angle": 65,
-            "kbg": 30,
-            "fkb": 0,
-            "bkb": 55,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "jab1"
-          },
-          {
-            "id": 2,
-            "bone": "sword2",
-            "animation_frame": 4.0,
-            "real_frame": 4,
-            "damage": 5.0,
-            "angle": 90,
-            "kbg": 30,
-            "fkb": 0,
-            "bkb": 55,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "jab1"
-          }
-        ],
-        "5": [
-          {
-            "id": 0,
-            "bone": "sword2",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 3.0,
-            "angle": 78,
-            "kbg": 30,
-            "fkb": 0,
-            "bkb": 55,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.6
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "jab1"
-          },
-          {
-            "id": 1,
-            "bone": "armr",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 3.0,
-            "angle": 65,
-            "kbg": 30,
-            "fkb": 0,
-            "bkb": 55,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "jab1"
-          },
-          {
-            "id": 2,
-            "bone": "sword2",
-            "animation_frame": 5.0,
-            "real_frame": 5,
-            "damage": 5.0,
-            "angle": 90,
-            "kbg": 30,
-            "fkb": 0,
-            "bkb": 55,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 6.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "jab1"
-          }
-        ],
         "6": [
           {
             "id": 0,
@@ -161,7 +25,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -195,6 +59,142 @@
             "bone": "sword2",
             "animation_frame": 6.0,
             "real_frame": 6,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "jab1"
+          }
+        ],
+        "7": [
+          {
+            "id": 0,
+            "bone": "sword2",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 78,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 3.0,
+            "angle": 65,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "sword2",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 5.0,
+            "angle": 90,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "jab1"
+          }
+        ],
+        "8": [
+          {
+            "id": 0,
+            "bone": "sword2",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 78,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "jab1"
+          },
+          {
+            "id": 1,
+            "bone": "armr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 3.0,
+            "angle": 65,
+            "kbg": 30,
+            "fkb": 0,
+            "bkb": 55,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "jab1"
+          },
+          {
+            "id": 2,
+            "bone": "sword2",
+            "animation_frame": 8.0,
+            "real_frame": 8,
             "damage": 5.0,
             "angle": 90,
             "kbg": 30,
@@ -214,8 +214,22 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 26
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 2.0,
+          "new_duration": 3.0,
+          "scale_factor": 3.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 2.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 28
     },
     "jab2": {
       "total_frames": 30,
@@ -244,7 +258,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -312,7 +326,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -380,7 +394,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -448,7 +462,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -516,7 +530,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -584,7 +598,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -659,13 +673,13 @@
             "angle": 361,
             "kbg": 75,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -681,7 +695,7 @@
             "angle": 361,
             "kbg": 75,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -699,11 +713,11 @@
             "bone": "sword2",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 11.5,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 70,
+            "bkb": 65,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -727,13 +741,13 @@
             "angle": 361,
             "kbg": 75,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -749,7 +763,7 @@
             "angle": 361,
             "kbg": 75,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -767,11 +781,11 @@
             "bone": "sword2",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 11.5,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 70,
+            "bkb": 65,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -795,13 +809,13 @@
             "angle": 361,
             "kbg": 75,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -817,7 +831,7 @@
             "angle": 361,
             "kbg": 75,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -835,11 +849,11 @@
             "bone": "sword2",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 11.5,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 70,
+            "bkb": 65,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -863,13 +877,13 @@
             "angle": 361,
             "kbg": 75,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -885,7 +899,7 @@
             "angle": 361,
             "kbg": 75,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -903,11 +917,11 @@
             "bone": "sword2",
             "animation_frame": 11.0,
             "real_frame": 11,
-            "damage": 11.5,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 70,
+            "bkb": 65,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -960,7 +974,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -972,12 +986,12 @@
             "bone": "shoulderr",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 9.0,
-            "angle": 361,
-            "kbg": 118,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1028,7 +1042,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1040,12 +1054,12 @@
             "bone": "shoulderr",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 9.0,
-            "angle": 361,
-            "kbg": 118,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1096,7 +1110,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1108,12 +1122,12 @@
             "bone": "shoulderr",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 9.0,
-            "angle": 361,
-            "kbg": 118,
+            "damage": 8.0,
+            "angle": 95,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1153,7 +1167,7 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 10.0,
-            "angle": 85,
+            "angle": 80,
             "kbg": 120,
             "fkb": 0,
             "bkb": 40,
@@ -1162,7 +1176,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1175,11 +1189,11 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 9.0,
-            "angle": 361,
-            "kbg": 118,
+            "angle": 95,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1221,7 +1235,7 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 10.0,
-            "angle": 85,
+            "angle": 80,
             "kbg": 120,
             "fkb": 0,
             "bkb": 40,
@@ -1230,7 +1244,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1243,11 +1257,11 @@
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 9.0,
-            "angle": 361,
-            "kbg": 118,
+            "angle": 95,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1289,7 +1303,7 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 10.0,
-            "angle": 85,
+            "angle": 80,
             "kbg": 120,
             "fkb": 0,
             "bkb": 40,
@@ -1298,7 +1312,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1311,11 +1325,11 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 9.0,
-            "angle": 361,
-            "kbg": 118,
+            "angle": 95,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1357,7 +1371,7 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 10.0,
-            "angle": 85,
+            "angle": 80,
             "kbg": 120,
             "fkb": 0,
             "bkb": 40,
@@ -1366,7 +1380,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1379,11 +1393,11 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 9.0,
-            "angle": 361,
-            "kbg": 118,
+            "angle": 95,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1425,7 +1439,7 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 10.0,
-            "angle": 85,
+            "angle": 80,
             "kbg": 120,
             "fkb": 0,
             "bkb": 40,
@@ -1434,7 +1448,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1447,11 +1461,11 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 9.0,
-            "angle": 361,
-            "kbg": 118,
+            "angle": 95,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1493,7 +1507,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 10.0,
-            "angle": 85,
+            "angle": 80,
             "kbg": 120,
             "fkb": 0,
             "bkb": 40,
@@ -1502,7 +1516,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1515,11 +1529,11 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 9.0,
-            "angle": 361,
-            "kbg": 118,
+            "angle": 95,
+            "kbg": 120,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1586,17 +1600,17 @@
             "bone": "sword2",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 30,
             "kbg": 40,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1605,7 +1619,7 @@
           },
           {
             "id": 1,
-            "bone": "armr",
+            "bone": "kneer",
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 8.0,
@@ -1613,7 +1627,7 @@
             "kbg": 40,
             "fkb": 0,
             "bkb": 25,
-            "size": 4.0,
+            "size": 2.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1627,6 +1641,28 @@
           },
           {
             "id": 2,
+            "bone": "armr",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 8.0,
+            "angle": 30,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "dtilt"
+          },
+          {
+            "id": 3,
             "bone": "sword2",
             "animation_frame": 7.0,
             "real_frame": 7,
@@ -1635,7 +1671,7 @@
             "kbg": 40,
             "fkb": 0,
             "bkb": 50,
-            "size": 4.0,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1654,17 +1690,17 @@
             "bone": "sword2",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 30,
             "kbg": 40,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1673,7 +1709,7 @@
           },
           {
             "id": 1,
-            "bone": "armr",
+            "bone": "kneer",
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 8.0,
@@ -1681,7 +1717,7 @@
             "kbg": 40,
             "fkb": 0,
             "bkb": 25,
-            "size": 4.0,
+            "size": 2.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1695,6 +1731,28 @@
           },
           {
             "id": 2,
+            "bone": "armr",
+            "animation_frame": 8.0,
+            "real_frame": 8,
+            "damage": 8.0,
+            "angle": 30,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "dtilt"
+          },
+          {
+            "id": 3,
             "bone": "sword2",
             "animation_frame": 8.0,
             "real_frame": 8,
@@ -1703,7 +1761,7 @@
             "kbg": 40,
             "fkb": 0,
             "bkb": 50,
-            "size": 4.0,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1722,17 +1780,17 @@
             "bone": "sword2",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 9.0,
+            "damage": 8.0,
             "angle": 30,
             "kbg": 40,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1741,7 +1799,7 @@
           },
           {
             "id": 1,
-            "bone": "armr",
+            "bone": "kneer",
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 8.0,
@@ -1749,7 +1807,7 @@
             "kbg": 40,
             "fkb": 0,
             "bkb": 25,
-            "size": 4.0,
+            "size": 2.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1763,6 +1821,28 @@
           },
           {
             "id": 2,
+            "bone": "armr",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 8.0,
+            "angle": 30,
+            "kbg": 40,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 3.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "dtilt"
+          },
+          {
+            "id": 3,
             "bone": "sword2",
             "animation_frame": 9.0,
             "real_frame": 9,
@@ -1771,7 +1851,7 @@
             "kbg": 40,
             "fkb": 0,
             "bkb": 50,
-            "size": 4.0,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -1803,16 +1883,16 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 14.0,
-            "angle": 38,
-            "kbg": 72,
+            "angle": 361,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1825,10 +1905,10 @@
             "animation_frame": 10.0,
             "real_frame": 10,
             "damage": 14.0,
-            "angle": 38,
-            "kbg": 72,
+            "angle": 361,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -1848,9 +1928,9 @@
             "real_frame": 10,
             "damage": 20.0,
             "angle": 361,
-            "kbg": 81,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 80,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -1871,16 +1951,16 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 14.0,
-            "angle": 38,
-            "kbg": 72,
+            "angle": 361,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1893,10 +1973,10 @@
             "animation_frame": 11.0,
             "real_frame": 11,
             "damage": 14.0,
-            "angle": 38,
-            "kbg": 72,
+            "angle": 361,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -1916,9 +1996,9 @@
             "real_frame": 11,
             "damage": 20.0,
             "angle": 361,
-            "kbg": 81,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 80,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -1939,16 +2019,16 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 14.0,
-            "angle": 38,
-            "kbg": 72,
+            "angle": 361,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -1961,10 +2041,10 @@
             "animation_frame": 12.0,
             "real_frame": 12,
             "damage": 14.0,
-            "angle": 38,
-            "kbg": 72,
+            "angle": 361,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 52,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -1984,9 +2064,9 @@
             "real_frame": 12,
             "damage": 20.0,
             "angle": 361,
-            "kbg": 81,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 65,
+            "bkb": 80,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2048,7 +2128,7 @@
           "scale_factor": 0.5652173913043478
         }
       ],
-      "faf": 47
+      "faf": 48
     },
     "usmash": {
       "total_frames": 79,
@@ -2067,7 +2147,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 3.0,
-            "angle": 125,
+            "angle": 120,
             "kbg": 100,
             "fkb": 155,
             "bkb": 0,
@@ -2089,20 +2169,20 @@
           },
           {
             "id": 1,
-            "bone": "sword1",
+            "bone": "armr",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 14.0,
-            "angle": 89,
-            "kbg": 85,
+            "damage": 15.0,
+            "angle": 90,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 1.0
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2111,20 +2191,20 @@
           },
           {
             "id": 2,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 18.0,
-            "angle": 89,
+            "damage": 15.0,
+            "angle": 90,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.6,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 8.3
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2133,20 +2213,20 @@
           },
           {
             "id": 3,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 13.0,
             "real_frame": 13,
-            "damage": 14.0,
+            "damage": 18.0,
             "angle": 90,
-            "kbg": 85,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 60,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": -3.0
+              "z": 6.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2161,7 +2241,7 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 3.0,
-            "angle": 125,
+            "angle": 120,
             "kbg": 100,
             "fkb": 155,
             "bkb": 0,
@@ -2183,20 +2263,20 @@
           },
           {
             "id": 1,
-            "bone": "sword1",
+            "bone": "armr",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 14.0,
-            "angle": 89,
-            "kbg": 85,
+            "damage": 15.0,
+            "angle": 90,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 1.0
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2205,20 +2285,20 @@
           },
           {
             "id": 2,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 18.0,
-            "angle": 89,
+            "damage": 15.0,
+            "angle": 90,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.6,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 8.3
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2227,20 +2307,20 @@
           },
           {
             "id": 3,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 14.0,
             "real_frame": 14,
-            "damage": 14.0,
+            "damage": 18.0,
             "angle": 90,
-            "kbg": 85,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 60,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": -3.0
+              "z": 6.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2251,20 +2331,20 @@
         "15": [
           {
             "id": 1,
-            "bone": "sword1",
+            "bone": "armr",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 14.0,
-            "angle": 89,
-            "kbg": 85,
+            "damage": 15.0,
+            "angle": 90,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 1.0
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2273,20 +2353,20 @@
           },
           {
             "id": 2,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 18.0,
-            "angle": 89,
+            "damage": 15.0,
+            "angle": 90,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.6,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 8.3
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2295,20 +2375,20 @@
           },
           {
             "id": 3,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 14.0,
+            "damage": 18.0,
             "angle": 90,
-            "kbg": 85,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 60,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": -3.0
+              "z": 6.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2319,20 +2399,20 @@
         "16": [
           {
             "id": 1,
-            "bone": "sword1",
+            "bone": "armr",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 14.0,
-            "angle": 89,
-            "kbg": 85,
+            "damage": 15.0,
+            "angle": 90,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 1.0
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2341,20 +2421,20 @@
           },
           {
             "id": 2,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 18.0,
-            "angle": 89,
+            "damage": 15.0,
+            "angle": 90,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.6,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 8.3
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2363,20 +2443,20 @@
           },
           {
             "id": 3,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 14.0,
+            "damage": 18.0,
             "angle": 90,
-            "kbg": 85,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 60,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": -3.0
+              "z": 6.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2387,20 +2467,20 @@
         "17": [
           {
             "id": 1,
-            "bone": "sword1",
+            "bone": "armr",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 14.0,
-            "angle": 89,
-            "kbg": 85,
+            "damage": 15.0,
+            "angle": 90,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 1.0
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2409,20 +2489,20 @@
           },
           {
             "id": 2,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 18.0,
-            "angle": 89,
+            "damage": 15.0,
+            "angle": 90,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.6,
+            "bkb": 30,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 8.3
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2431,20 +2511,20 @@
           },
           {
             "id": 3,
-            "bone": "sword1",
+            "bone": "sword2",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 14.0,
+            "damage": 18.0,
             "angle": 90,
-            "kbg": 85,
+            "kbg": 80,
             "fkb": 0,
-            "bkb": 40,
-            "size": 5.8,
+            "bkb": 60,
+            "size": 5.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": -3.0
+              "z": 6.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2475,7 +2555,7 @@
             "real_frame": 6,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
             "bkb": 60,
             "size": 4.0,
@@ -2483,7 +2563,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2497,10 +2577,10 @@
             "real_frame": 6,
             "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -2514,14 +2594,14 @@
           },
           {
             "id": 2,
-            "bone": "hip",
+            "bone": "kneer",
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -2540,10 +2620,10 @@
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 15.0,
-            "angle": 80,
-            "kbg": 93,
+            "angle": 70,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2565,7 +2645,7 @@
             "real_frame": 7,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
             "bkb": 60,
             "size": 4.0,
@@ -2573,7 +2653,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2587,10 +2667,10 @@
             "real_frame": 7,
             "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -2604,14 +2684,14 @@
           },
           {
             "id": 2,
-            "bone": "hip",
+            "bone": "kneer",
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -2630,10 +2710,10 @@
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 15.0,
-            "angle": 80,
-            "kbg": 93,
+            "angle": 70,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2655,7 +2735,7 @@
             "real_frame": 8,
             "damage": 10.0,
             "angle": 75,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
             "bkb": 60,
             "size": 4.0,
@@ -2663,7 +2743,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2677,10 +2757,10 @@
             "real_frame": 8,
             "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 60,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -2694,14 +2774,14 @@
           },
           {
             "id": 2,
-            "bone": "hip",
+            "bone": "kneer",
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 60,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -2720,10 +2800,10 @@
             "animation_frame": 8.0,
             "real_frame": 8,
             "damage": 15.0,
-            "angle": 80,
-            "kbg": 93,
+            "angle": 70,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2743,17 +2823,17 @@
             "bone": "sword2",
             "animation_frame": 22.0,
             "real_frame": 22,
-            "damage": 11.0,
+            "damage": 10.0,
             "angle": 75,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2765,12 +2845,12 @@
             "bone": "armr",
             "animation_frame": 22.0,
             "real_frame": 22,
-            "damage": 11.0,
+            "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -2784,14 +2864,14 @@
           },
           {
             "id": 2,
-            "bone": "hip",
+            "bone": "kneel",
             "animation_frame": 22.0,
             "real_frame": 22,
-            "damage": 11.0,
+            "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -2809,11 +2889,11 @@
             "bone": "sword2",
             "animation_frame": 22.0,
             "real_frame": 22,
-            "damage": 16.0,
-            "angle": 80,
-            "kbg": 89,
+            "damage": 15.0,
+            "angle": 70,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2833,17 +2913,17 @@
             "bone": "sword2",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 11.0,
+            "damage": 10.0,
             "angle": 75,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2855,12 +2935,12 @@
             "bone": "armr",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 11.0,
+            "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -2874,14 +2954,14 @@
           },
           {
             "id": 2,
-            "bone": "hip",
+            "bone": "kneel",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 11.0,
+            "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -2899,11 +2979,11 @@
             "bone": "sword2",
             "animation_frame": 23.0,
             "real_frame": 23,
-            "damage": 16.0,
-            "angle": 80,
-            "kbg": 89,
+            "damage": 15.0,
+            "angle": 70,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -2923,17 +3003,17 @@
             "bone": "sword2",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 11.0,
+            "damage": 10.0,
             "angle": 75,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -2945,12 +3025,12 @@
             "bone": "armr",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 11.0,
+            "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -2964,14 +3044,14 @@
           },
           {
             "id": 2,
-            "bone": "hip",
+            "bone": "kneel",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 11.0,
+            "damage": 10.0,
             "angle": 361,
-            "kbg": 93,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 30,
             "size": 3.0,
             "situation": "GA",
             "offset": {
@@ -2989,11 +3069,11 @@
             "bone": "sword2",
             "animation_frame": 24.0,
             "real_frame": 24,
-            "damage": 16.0,
-            "angle": 80,
-            "kbg": 89,
+            "damage": 15.0,
+            "angle": 70,
+            "kbg": 100,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 60,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -3057,20 +3137,20 @@
         "6": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "bust",
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 4.0,
-            "angle": 90,
+            "angle": 100,
             "kbg": 50,
             "fkb": 0,
             "bkb": 40,
-            "size": 3.5,
-            "situation": "G",
+            "size": 3.0,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 6.5
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3079,20 +3159,20 @@
           },
           {
             "id": 1,
-            "bone": "sword2",
+            "bone": "armr",
             "animation_frame": 6.0,
             "real_frame": 6,
             "damage": 4.0,
             "angle": 100,
             "kbg": 50,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "situation": "G",
+            "bkb": 40,
+            "size": 3.0,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 0.6
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3101,50 +3181,6 @@
           },
           {
             "id": 2,
-            "bone": "armr",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 4.0,
-            "angle": 100,
-            "kbg": 50,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "nair"
-          },
-          {
-            "id": 3,
-            "bone": "hip",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 4.0,
-            "angle": 100,
-            "kbg": 50,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "nair"
-          },
-          {
-            "id": 4,
             "bone": "sword2",
             "animation_frame": 6.0,
             "real_frame": 6,
@@ -3152,9 +3188,9 @@
             "angle": 90,
             "kbg": 50,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 50,
             "size": 3.5,
-            "situation": "A",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": -1.0,
@@ -3166,7 +3202,7 @@
             "move": "nair"
           },
           {
-            "id": 5,
+            "id": 3,
             "bone": "sword2",
             "animation_frame": 6.0,
             "real_frame": 6,
@@ -3176,55 +3212,11 @@
             "fkb": 0,
             "bkb": 40,
             "size": 4.0,
-            "situation": "A",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": -1.0,
-              "z": 0.6
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "nair"
-          },
-          {
-            "id": 6,
-            "bone": "armr",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 4.0,
-            "angle": 100,
-            "kbg": 50,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "nair"
-          },
-          {
-            "id": 7,
-            "bone": "hip",
-            "animation_frame": 6.0,
-            "real_frame": 6,
-            "damage": 4.0,
-            "angle": 100,
-            "kbg": 50,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3235,20 +3227,20 @@
         "7": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "bust",
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 4.0,
-            "angle": 90,
+            "angle": 100,
             "kbg": 50,
             "fkb": 0,
             "bkb": 40,
-            "size": 3.5,
-            "situation": "G",
+            "size": 3.0,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 6.5
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3257,20 +3249,20 @@
           },
           {
             "id": 1,
-            "bone": "sword2",
+            "bone": "armr",
             "animation_frame": 7.0,
             "real_frame": 7,
             "damage": 4.0,
             "angle": 100,
             "kbg": 50,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "situation": "G",
+            "bkb": 40,
+            "size": 3.0,
+            "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 0.6
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3279,50 +3271,6 @@
           },
           {
             "id": 2,
-            "bone": "armr",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 4.0,
-            "angle": 100,
-            "kbg": 50,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "nair"
-          },
-          {
-            "id": 3,
-            "bone": "hip",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 4.0,
-            "angle": 100,
-            "kbg": 50,
-            "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
-            "situation": "G",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "nair"
-          },
-          {
-            "id": 4,
             "bone": "sword2",
             "animation_frame": 7.0,
             "real_frame": 7,
@@ -3330,9 +3278,9 @@
             "angle": 90,
             "kbg": 50,
             "fkb": 0,
-            "bkb": 40,
+            "bkb": 50,
             "size": 3.5,
-            "situation": "A",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": -1.0,
@@ -3344,7 +3292,7 @@
             "move": "nair"
           },
           {
-            "id": 5,
+            "id": 3,
             "bone": "sword2",
             "animation_frame": 7.0,
             "real_frame": 7,
@@ -3354,55 +3302,11 @@
             "fkb": 0,
             "bkb": 40,
             "size": 4.0,
-            "situation": "A",
+            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": -1.0,
-              "z": 0.6
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "nair"
-          },
-          {
-            "id": 6,
-            "bone": "armr",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 4.0,
-            "angle": 100,
-            "kbg": 50,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "nair"
-          },
-          {
-            "id": 7,
-            "bone": "hip",
-            "animation_frame": 7.0,
-            "real_frame": 7,
-            "damage": 4.0,
-            "angle": 100,
-            "kbg": 50,
-            "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
-            "situation": "A",
-            "offset": {
-              "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3413,20 +3317,20 @@
         "15": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "bust",
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 0.6
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3442,8 +3346,8 @@
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -3460,11 +3364,11 @@
             "bone": "sword2",
             "animation_frame": 15.0,
             "real_frame": 15,
-            "damage": 10.0,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 42,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -3479,20 +3383,20 @@
           },
           {
             "id": 3,
-            "bone": "hip",
+            "bone": "sword2",
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 55,
+            "bkb": 45,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
+              "y": -1.0,
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3503,20 +3407,20 @@
         "16": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "bust",
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 0.6
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3532,8 +3436,8 @@
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -3550,11 +3454,11 @@
             "bone": "sword2",
             "animation_frame": 16.0,
             "real_frame": 16,
-            "damage": 10.0,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 42,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -3569,20 +3473,20 @@
           },
           {
             "id": 3,
-            "bone": "hip",
+            "bone": "sword2",
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 55,
+            "bkb": 45,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
+              "y": -1.0,
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3593,20 +3497,20 @@
         "17": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "bust",
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 0.6
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3622,8 +3526,8 @@
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -3640,11 +3544,11 @@
             "bone": "sword2",
             "animation_frame": 17.0,
             "real_frame": 17,
-            "damage": 10.0,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 42,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -3659,20 +3563,20 @@
           },
           {
             "id": 3,
-            "bone": "hip",
+            "bone": "sword2",
             "animation_frame": 17.0,
             "real_frame": 17,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 55,
+            "bkb": 45,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
+              "y": -1.0,
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3683,20 +3587,20 @@
         "18": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "bust",
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 0.6
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3712,8 +3616,8 @@
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -3730,11 +3634,11 @@
             "bone": "sword2",
             "animation_frame": 18.0,
             "real_frame": 18,
-            "damage": 10.0,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 42,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -3749,20 +3653,20 @@
           },
           {
             "id": 3,
-            "bone": "hip",
+            "bone": "sword2",
             "animation_frame": 18.0,
             "real_frame": 18,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 55,
+            "bkb": 45,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
+              "y": -1.0,
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3773,20 +3677,20 @@
         "19": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "bust",
             "animation_frame": 19.0,
             "real_frame": 19,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 0.6
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3802,8 +3706,8 @@
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -3820,11 +3724,11 @@
             "bone": "sword2",
             "animation_frame": 19.0,
             "real_frame": 19,
-            "damage": 10.0,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 42,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -3839,20 +3743,20 @@
           },
           {
             "id": 3,
-            "bone": "hip",
+            "bone": "sword2",
             "animation_frame": 19.0,
             "real_frame": 19,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 55,
+            "bkb": 45,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
+              "y": -1.0,
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3863,20 +3767,20 @@
         "20": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "bust",
             "animation_frame": 20.0,
             "real_frame": 20,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 0.6
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3892,8 +3796,8 @@
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -3910,11 +3814,11 @@
             "bone": "sword2",
             "animation_frame": 20.0,
             "real_frame": 20,
-            "damage": 10.0,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 42,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -3929,20 +3833,20 @@
           },
           {
             "id": 3,
-            "bone": "hip",
+            "bone": "sword2",
             "animation_frame": 20.0,
             "real_frame": 20,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 55,
+            "bkb": 45,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
+              "y": -1.0,
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3953,20 +3857,20 @@
         "21": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "bust",
             "animation_frame": 21.0,
             "real_frame": 21,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": -1.0,
-              "z": 0.6
+              "y": 0.0,
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -3982,8 +3886,8 @@
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
-            "size": 4.0,
+            "bkb": 45,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
@@ -4000,11 +3904,11 @@
             "bone": "sword2",
             "animation_frame": 21.0,
             "real_frame": 21,
-            "damage": 10.0,
+            "damage": 12.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 50,
+            "bkb": 42,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -4019,20 +3923,20 @@
           },
           {
             "id": 3,
-            "bone": "hip",
+            "bone": "sword2",
             "animation_frame": 21.0,
             "real_frame": 21,
             "damage": 10.0,
             "angle": 361,
             "kbg": 80,
             "fkb": 0,
-            "bkb": 55,
+            "bkb": 45,
             "size": 4.0,
             "situation": "GA",
             "offset": {
               "x": 0.0,
-              "y": 0.0,
-              "z": 0.0
+              "y": -1.0,
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4070,7 +3974,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4138,7 +4042,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4206,7 +4110,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4274,7 +4178,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4342,7 +4246,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4424,7 +4328,10 @@
         8,
         9,
         10,
-        11
+        11,
+        12,
+        13,
+        14
       ],
       "hitboxes_by_frame": {
         "7": [
@@ -4443,7 +4350,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4511,7 +4418,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4579,7 +4486,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4647,7 +4554,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4715,7 +4622,7 @@
             "offset": {
               "x": 2.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4749,6 +4656,210 @@
             "bone": "sword2",
             "animation_frame": 11.0,
             "real_frame": 11,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "bair"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "sword2",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "claviclec",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "sword2",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "bair"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "sword2",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "claviclec",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "sword2",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 13.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 6.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "bair"
+          }
+        ],
+        "14": [
+          {
+            "id": 0,
+            "bone": "sword2",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 10.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "bair"
+          },
+          {
+            "id": 1,
+            "bone": "claviclec",
+            "animation_frame": 14.0,
+            "real_frame": 14,
+            "damage": 9.0,
+            "angle": 361,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 25,
+            "size": 4.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "bair"
+          },
+          {
+            "id": 2,
+            "bone": "sword2",
+            "animation_frame": 14.0,
+            "real_frame": 14,
             "damage": 13.0,
             "angle": 361,
             "kbg": 70,
@@ -4810,20 +4921,20 @@
         "5": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "claviclec",
             "animation_frame": 5.0,
             "real_frame": 5,
-            "damage": 13.0,
-            "angle": 90,
+            "damage": 10.0,
+            "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
+            "bkb": 30,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 1.5,
+              "x": 0.0,
               "y": 0.0,
-              "z": 6.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4835,17 +4946,17 @@
             "bone": "sword2",
             "animation_frame": 5.0,
             "real_frame": 5,
-            "damage": 10.0,
-            "angle": 80,
+            "damage": 13.0,
+            "angle": 90,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 30,
-            "size": 4.0,
+            "bkb": 40,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
-              "x": 2.0,
+              "x": 1.5,
               "y": 0.0,
-              "z": 0.6
+              "z": 7.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4854,20 +4965,20 @@
           },
           {
             "id": 2,
-            "bone": "claviclec",
+            "bone": "sword2",
             "animation_frame": 5.0,
             "real_frame": 5,
-            "damage": 9.0,
+            "damage": 10.0,
             "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 18,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4878,20 +4989,20 @@
         "6": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "claviclec",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 13.0,
-            "angle": 90,
+            "damage": 10.0,
+            "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
+            "bkb": 30,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 1.5,
+              "x": 0.0,
               "y": 0.0,
-              "z": 6.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4903,17 +5014,17 @@
             "bone": "sword2",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 10.0,
-            "angle": 80,
+            "damage": 13.0,
+            "angle": 90,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 30,
-            "size": 4.0,
+            "bkb": 40,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
-              "x": 2.0,
+              "x": 1.5,
               "y": 0.0,
-              "z": 0.6
+              "z": 7.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4922,20 +5033,20 @@
           },
           {
             "id": 2,
-            "bone": "claviclec",
+            "bone": "sword2",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 9.0,
+            "damage": 10.0,
             "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 18,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4946,20 +5057,20 @@
         "7": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "claviclec",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 13.0,
-            "angle": 90,
+            "damage": 10.0,
+            "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
+            "bkb": 30,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 1.5,
+              "x": 0.0,
               "y": 0.0,
-              "z": 6.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4971,17 +5082,17 @@
             "bone": "sword2",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 10.0,
-            "angle": 80,
+            "damage": 13.0,
+            "angle": 90,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 30,
-            "size": 4.0,
+            "bkb": 40,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
-              "x": 2.0,
+              "x": 1.5,
               "y": 0.0,
-              "z": 0.6
+              "z": 7.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -4990,20 +5101,20 @@
           },
           {
             "id": 2,
-            "bone": "claviclec",
+            "bone": "sword2",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 9.0,
+            "damage": 10.0,
             "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 18,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5014,20 +5125,20 @@
         "8": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "claviclec",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 13.0,
-            "angle": 90,
+            "damage": 10.0,
+            "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
+            "bkb": 30,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 1.5,
+              "x": 0.0,
               "y": 0.0,
-              "z": 6.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5039,17 +5150,17 @@
             "bone": "sword2",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 10.0,
-            "angle": 80,
+            "damage": 13.0,
+            "angle": 90,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 30,
-            "size": 4.0,
+            "bkb": 40,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
-              "x": 2.0,
+              "x": 1.5,
               "y": 0.0,
-              "z": 0.6
+              "z": 7.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5058,20 +5169,20 @@
           },
           {
             "id": 2,
-            "bone": "claviclec",
+            "bone": "sword2",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 9.0,
+            "damage": 10.0,
             "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 18,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5082,20 +5193,20 @@
         "9": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "claviclec",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 13.0,
-            "angle": 90,
+            "damage": 10.0,
+            "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
+            "bkb": 30,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 1.5,
+              "x": 0.0,
               "y": 0.0,
-              "z": 6.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5107,17 +5218,17 @@
             "bone": "sword2",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 10.0,
-            "angle": 80,
+            "damage": 13.0,
+            "angle": 90,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 30,
-            "size": 4.0,
+            "bkb": 40,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
-              "x": 2.0,
+              "x": 1.5,
               "y": 0.0,
-              "z": 0.6
+              "z": 7.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5126,20 +5237,20 @@
           },
           {
             "id": 2,
-            "bone": "claviclec",
+            "bone": "sword2",
             "animation_frame": 9.0,
             "real_frame": 9,
-            "damage": 9.0,
+            "damage": 10.0,
             "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 18,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5150,20 +5261,20 @@
         "10": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "claviclec",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 13.0,
-            "angle": 90,
+            "damage": 10.0,
+            "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 45,
-            "size": 3.5,
+            "bkb": 30,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 1.5,
+              "x": 0.0,
               "y": 0.0,
-              "z": 6.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5175,17 +5286,17 @@
             "bone": "sword2",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 10.0,
-            "angle": 80,
+            "damage": 13.0,
+            "angle": 90,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 30,
-            "size": 4.0,
+            "bkb": 40,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
-              "x": 2.0,
+              "x": 1.5,
               "y": 0.0,
-              "z": 0.6
+              "z": 7.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5194,20 +5305,20 @@
           },
           {
             "id": 2,
-            "bone": "claviclec",
+            "bone": "sword2",
             "animation_frame": 10.0,
             "real_frame": 10,
-            "damage": 9.0,
+            "damage": 10.0,
             "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 18,
-            "size": 4.0,
+            "bkb": 30,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5245,20 +5356,20 @@
         "6": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "shoulderr",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 13.0,
-            "angle": 290,
-            "kbg": 54,
+            "damage": 10.0,
+            "angle": 80,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 32,
-            "size": 3.5,
+            "bkb": 40,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 1.5,
+              "x": 0.0,
               "y": 0.0,
-              "z": 6.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5270,17 +5381,17 @@
             "bone": "sword2",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 10.0,
-            "angle": 80,
-            "kbg": 70,
+            "damage": 13.0,
+            "angle": 290,
+            "kbg": 54,
             "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
+            "bkb": 32,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
-              "x": 2.0,
+              "x": 1.5,
               "y": 0.0,
-              "z": 0.6
+              "z": 7.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5289,20 +5400,20 @@
           },
           {
             "id": 2,
-            "bone": "shoulderr",
+            "bone": "sword2",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 9.0,
-            "angle": 361,
+            "damage": 10.0,
+            "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 20,
-            "size": 4.0,
+            "bkb": 40,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5313,20 +5424,20 @@
         "7": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "shoulderr",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 13.0,
-            "angle": 290,
-            "kbg": 54,
+            "damage": 10.0,
+            "angle": 80,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 32,
-            "size": 3.5,
+            "bkb": 40,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 1.5,
+              "x": 0.0,
               "y": 0.0,
-              "z": 6.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5338,17 +5449,17 @@
             "bone": "sword2",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 10.0,
-            "angle": 80,
-            "kbg": 70,
+            "damage": 13.0,
+            "angle": 290,
+            "kbg": 54,
             "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
+            "bkb": 32,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
-              "x": 2.0,
+              "x": 1.5,
               "y": 0.0,
-              "z": 0.6
+              "z": 7.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5357,20 +5468,20 @@
           },
           {
             "id": 2,
-            "bone": "shoulderr",
+            "bone": "sword2",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 9.0,
-            "angle": 361,
+            "damage": 10.0,
+            "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 20,
-            "size": 4.0,
+            "bkb": 40,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5381,20 +5492,20 @@
         "8": [
           {
             "id": 0,
-            "bone": "sword2",
+            "bone": "shoulderr",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 13.0,
-            "angle": 290,
-            "kbg": 54,
+            "damage": 10.0,
+            "angle": 80,
+            "kbg": 70,
             "fkb": 0,
-            "bkb": 32,
-            "size": 3.5,
+            "bkb": 40,
+            "size": 4.0,
             "situation": "GA",
             "offset": {
-              "x": 1.5,
+              "x": 0.0,
               "y": 0.0,
-              "z": 6.5
+              "z": 0.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5406,17 +5517,17 @@
             "bone": "sword2",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 10.0,
-            "angle": 80,
-            "kbg": 70,
+            "damage": 13.0,
+            "angle": 290,
+            "kbg": 54,
             "fkb": 0,
-            "bkb": 40,
-            "size": 4.0,
+            "bkb": 32,
+            "size": 3.0,
             "situation": "GA",
             "offset": {
-              "x": 2.0,
+              "x": 1.5,
               "y": 0.0,
-              "z": 0.6
+              "z": 7.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5425,20 +5536,20 @@
           },
           {
             "id": 2,
-            "bone": "shoulderr",
+            "bone": "sword2",
             "animation_frame": 8.0,
             "real_frame": 8,
-            "damage": 9.0,
-            "angle": 361,
+            "damage": 10.0,
+            "angle": 80,
             "kbg": 70,
             "fkb": 0,
-            "bkb": 20,
-            "size": 4.0,
+            "bkb": 40,
+            "size": 3.5,
             "situation": "GA",
             "offset": {
-              "x": 0.0,
+              "x": 2.0,
               "y": 0.0,
-              "z": 0.0
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5449,29 +5560,7 @@
         "9": [
           {
             "id": 0,
-            "bone": "sword2",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 13.0,
-            "angle": 290,
-            "kbg": 54,
-            "fkb": 0,
-            "bkb": 32,
-            "size": 3.5,
-            "situation": "GA",
-            "offset": {
-              "x": 1.5,
-              "y": 0.0,
-              "z": 6.5
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "dair"
-          },
-          {
-            "id": 1,
-            "bone": "sword2",
+            "bone": "shoulderr",
             "animation_frame": 9.0,
             "real_frame": 9,
             "damage": 10.0,
@@ -5479,28 +5568,6 @@
             "kbg": 70,
             "fkb": 0,
             "bkb": 40,
-            "size": 4.0,
-            "situation": "GA",
-            "offset": {
-              "x": 2.0,
-              "y": 0.0,
-              "z": 0.6
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "marth",
-            "move": "dair"
-          },
-          {
-            "id": 2,
-            "bone": "shoulderr",
-            "animation_frame": 9.0,
-            "real_frame": 9,
-            "damage": 9.0,
-            "angle": 361,
-            "kbg": 70,
-            "fkb": 0,
-            "bkb": 20,
             "size": 4.0,
             "situation": "GA",
             "offset": {
@@ -5512,10 +5579,76 @@
             "is_capsule": false,
             "character": "marth",
             "move": "dair"
+          },
+          {
+            "id": 1,
+            "bone": "sword2",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 13.0,
+            "angle": 290,
+            "kbg": 54,
+            "fkb": 0,
+            "bkb": 32,
+            "size": 3.0,
+            "situation": "GA",
+            "offset": {
+              "x": 1.5,
+              "y": 0.0,
+              "z": 7.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "dair"
+          },
+          {
+            "id": 2,
+            "bone": "sword2",
+            "animation_frame": 9.0,
+            "real_frame": 9,
+            "damage": 10.0,
+            "angle": 80,
+            "kbg": 70,
+            "fkb": 0,
+            "bkb": 40,
+            "size": 3.5,
+            "situation": "GA",
+            "offset": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 1.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "marth",
+            "move": "dair"
           }
         ]
       },
-      "motion_events": [],
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 4.0,
+          "start_orig": 4.0,
+          "end_orig": 5.25,
+          "new_duration": 1.0,
+          "scale_factor": 0.8
+        },
+        {
+          "type": "range",
+          "frame": 5.25,
+          "start_orig": 5.25,
+          "end_orig": 6.0,
+          "new_duration": 1.0,
+          "scale_factor": 1.3333333333333333
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 6.0,
+          "rate_value": 1.0
+        }
+      ],
       "faf": 60
     },
     "dash_attack": {
@@ -5543,7 +5676,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5556,7 +5689,7 @@
             "animation_frame": 13.0,
             "real_frame": 13,
             "damage": 9.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 60,
             "fkb": 0,
             "bkb": 35,
@@ -5611,7 +5744,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5624,7 +5757,7 @@
             "animation_frame": 14.0,
             "real_frame": 14,
             "damage": 9.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 60,
             "fkb": 0,
             "bkb": 35,
@@ -5679,7 +5812,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5692,7 +5825,7 @@
             "animation_frame": 15.0,
             "real_frame": 15,
             "damage": 9.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 60,
             "fkb": 0,
             "bkb": 35,
@@ -5747,7 +5880,7 @@
             "offset": {
               "x": 0.0,
               "y": 0.0,
-              "z": 0.6
+              "z": 1.0
             },
             "offset2": null,
             "is_capsule": false,
@@ -5760,7 +5893,7 @@
             "animation_frame": 16.0,
             "real_frame": 16,
             "damage": 9.0,
-            "angle": 361,
+            "angle": 45,
             "kbg": 60,
             "fkb": 0,
             "bkb": 35,
@@ -5825,7 +5958,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 0.0
+              "z": 7.0
             },
             "offset2": {
               "x": 0.0,
@@ -5853,7 +5986,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 0.0
+              "z": 7.0
             },
             "offset2": {
               "x": 0.0,
@@ -5970,7 +6103,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": -4.0
+              "z": -5.0
             },
             "offset2": {
               "x": 0.0,
@@ -5998,7 +6131,7 @@
             "offset": {
               "x": 0.0,
               "y": 7.0,
-              "z": -4.0
+              "z": -5.0
             },
             "offset2": {
               "x": 0.0,
@@ -7046,5 +7179,5 @@
       "faf": 41
     }
   },
-  "generated_at": "2026-04-25T23:06:16.972465"
+  "generated_at": "2026-05-13T15:23:45.446015"
 }

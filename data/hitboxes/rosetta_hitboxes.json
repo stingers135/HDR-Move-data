@@ -14,10 +14,10 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 2.0,
-            "angle": 361,
-            "kbg": 35,
-            "fkb": 0,
-            "bkb": 25,
+            "angle": 70,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
             "size": 3.2,
             "situation": "GA",
             "offset": {
@@ -36,10 +36,10 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 2.0,
-            "angle": 180,
-            "kbg": 20,
-            "fkb": 0,
-            "bkb": 20,
+            "angle": 82,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
             "size": 3.2,
             "situation": "GA",
             "offset": {
@@ -58,10 +58,10 @@
             "animation_frame": 5.0,
             "real_frame": 5,
             "damage": 2.0,
-            "angle": 361,
-            "kbg": 20,
-            "fkb": 0,
-            "bkb": 20,
+            "angle": 82,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
             "size": 3.2,
             "situation": "GA",
             "offset": {
@@ -71,6 +71,32 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "rosetta",
+            "move": "jab1"
+          },
+          {
+            "id": 3,
+            "bone": "top",
+            "animation_frame": 5.0,
+            "real_frame": 5,
+            "damage": 2.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 3.2,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 6.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 3.5,
+              "z": 11.0
+            },
+            "is_capsule": true,
             "character": "rosetta",
             "move": "jab1"
           }
@@ -103,11 +129,11 @@
             "bone": "top",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 2.0,
-            "angle": 361,
-            "kbg": 30,
-            "fkb": 0,
-            "bkb": 25,
+            "damage": 1.0,
+            "angle": 74,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
             "size": 4.2,
             "situation": "GA",
             "offset": {
@@ -125,11 +151,11 @@
             "bone": "top",
             "animation_frame": 6.0,
             "real_frame": 6,
-            "damage": 2.0,
-            "angle": 361,
-            "kbg": 25,
-            "fkb": 0,
-            "bkb": 25,
+            "damage": 1.0,
+            "angle": 82,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
             "size": 4.2,
             "situation": "GA",
             "offset": {
@@ -141,6 +167,32 @@
             "is_capsule": false,
             "character": "rosetta",
             "move": "jab2"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 6.0,
+            "real_frame": 6,
+            "damage": 1.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.2,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 12.5
+            },
+            "is_capsule": true,
+            "character": "rosetta",
+            "move": "jab2"
           }
         ],
         "7": [
@@ -149,11 +201,11 @@
             "bone": "top",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 2.0,
-            "angle": 361,
-            "kbg": 30,
-            "fkb": 0,
-            "bkb": 25,
+            "damage": 1.0,
+            "angle": 74,
+            "kbg": 100,
+            "fkb": 40,
+            "bkb": 0,
             "size": 4.2,
             "situation": "GA",
             "offset": {
@@ -171,11 +223,11 @@
             "bone": "top",
             "animation_frame": 7.0,
             "real_frame": 7,
-            "damage": 2.0,
-            "angle": 361,
-            "kbg": 25,
-            "fkb": 0,
-            "bkb": 25,
+            "damage": 1.0,
+            "angle": 82,
+            "kbg": 100,
+            "fkb": 30,
+            "bkb": 0,
             "size": 4.2,
             "situation": "GA",
             "offset": {
@@ -185,6 +237,32 @@
             },
             "offset2": null,
             "is_capsule": false,
+            "character": "rosetta",
+            "move": "jab2"
+          },
+          {
+            "id": 2,
+            "bone": "top",
+            "animation_frame": 7.0,
+            "real_frame": 7,
+            "damage": 1.0,
+            "angle": 361,
+            "kbg": 15,
+            "fkb": 0,
+            "bkb": 30,
+            "size": 4.2,
+            "situation": "G",
+            "offset": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 7.0
+            },
+            "offset2": {
+              "x": 0.0,
+              "y": 5.0,
+              "z": 12.5
+            },
+            "is_capsule": true,
             "character": "rosetta",
             "move": "jab2"
           }
@@ -6572,7 +6650,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 0.0
+              "z": 6.5
             },
             "offset2": {
               "x": 0.0,
@@ -6600,7 +6678,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 0.0
+              "z": 6.5
             },
             "offset2": {
               "x": 0.0,
@@ -6650,7 +6728,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 4.0
+              "z": 4.5
             },
             "offset2": {
               "x": 0.0,
@@ -6678,7 +6756,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": 4.0
+              "z": 4.5
             },
             "offset2": {
               "x": 0.0,
@@ -6738,7 +6816,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": -4.0
+              "z": -4.5
             },
             "offset2": {
               "x": 0.0,
@@ -6766,7 +6844,7 @@
             "offset": {
               "x": 0.0,
               "y": 8.0,
-              "z": -4.0
+              "z": -4.5
             },
             "offset2": {
               "x": 0.0,
@@ -6971,5 +7049,5 @@
       "faf": 36
     }
   },
-  "generated_at": "2026-04-25T23:06:24.472744"
+  "generated_at": "2026-05-13T15:24:05.189911"
 }
