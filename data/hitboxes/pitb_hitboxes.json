@@ -19,7 +19,6 @@
             "fkb": 0,
             "bkb": 30,
             "size": 1.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -45,7 +44,6 @@
             "fkb": 0,
             "bkb": 30,
             "size": 1.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -71,7 +69,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 1.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -97,7 +94,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 1.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -116,13 +112,32 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
+          "type": "range",
           "frame": 1.0,
-          "rate_value": 0.75
+          "start_orig": 1.0,
+          "end_orig": 5.0,
+          "new_duration": 3.0,
+          "scale_factor": 0.75
+        },
+        {
+          "type": "range",
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 5.5,
+          "new_duration": 1.0,
+          "scale_factor": 2.0
+        },
+        {
+          "type": "range",
+          "frame": 5.5,
+          "start_orig": 5.5,
+          "end_orig": 7.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.6666666666666666
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 5.0,
+          "frame": 7.0,
           "rate_value": 1.0
         }
       ],
@@ -147,7 +162,6 @@
             "fkb": 0,
             "bkb": 28,
             "size": 2.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -173,7 +187,6 @@
             "fkb": 0,
             "bkb": 28,
             "size": 3.2,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -199,7 +212,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 3.2,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -225,7 +237,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 3.2,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -253,7 +264,6 @@
             "fkb": 0,
             "bkb": 28,
             "size": 2.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -279,7 +289,6 @@
             "fkb": 0,
             "bkb": 28,
             "size": 3.2,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -305,7 +314,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 3.2,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -331,7 +339,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 3.2,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -348,7 +355,29 @@
           }
         ]
       },
-      "motion_events": [],
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 5.5,
+          "new_duration": 1.0,
+          "scale_factor": 2.0
+        },
+        {
+          "type": "range",
+          "frame": 5.5,
+          "start_orig": 5.5,
+          "end_orig": 7.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.6666666666666666
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 7.0,
+          "rate_value": 1.0
+        }
+      ],
       "faf": 21
     },
     "jab3": {
@@ -369,7 +398,6 @@
             "fkb": 0,
             "bkb": 60,
             "size": 5.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -386,8 +414,30 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 30
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 3.0,
+          "start_orig": 3.0,
+          "end_orig": 4.0,
+          "new_duration": 3.0,
+          "scale_factor": 3.0
+        },
+        {
+          "type": "range",
+          "frame": 4.0,
+          "start_orig": 4.0,
+          "end_orig": 32.0,
+          "new_duration": 25.0,
+          "scale_factor": 0.8928571428571429
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 32.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 29
     },
     "rapid_jab": {
       "total_frames": 17,
@@ -414,7 +464,6 @@
             "fkb": 0,
             "bkb": 8,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -442,7 +491,6 @@
             "fkb": 0,
             "bkb": 8,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -470,7 +518,6 @@
             "fkb": 0,
             "bkb": 8,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -498,7 +545,6 @@
             "fkb": 0,
             "bkb": 8,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -526,7 +572,6 @@
             "fkb": 0,
             "bkb": 8,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -554,7 +599,6 @@
             "fkb": 0,
             "bkb": 8,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -582,7 +626,6 @@
             "fkb": 0,
             "bkb": 8,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -610,7 +653,6 @@
             "fkb": 0,
             "bkb": 8,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -648,7 +690,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.3,
@@ -670,7 +711,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.3,
@@ -692,7 +732,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.3,
@@ -716,7 +755,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.3,
@@ -738,7 +776,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.3,
@@ -760,7 +797,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 4.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.3,
@@ -794,7 +830,6 @@
             "fkb": 0,
             "bkb": 60,
             "size": 5.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 8.0,
@@ -811,7 +846,29 @@
           }
         ]
       },
-      "motion_events": []
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 3.0,
+          "start_orig": 3.0,
+          "end_orig": 4.0,
+          "new_duration": 3.0,
+          "scale_factor": 3.0
+        },
+        {
+          "type": "range",
+          "frame": 4.0,
+          "start_orig": 4.0,
+          "end_orig": 32.0,
+          "new_duration": 25.0,
+          "scale_factor": 0.8928571428571429
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 32.0,
+          "rate_value": 1.0
+        }
+      ]
     },
     "ftilt": {
       "total_frames": 59,
@@ -835,7 +892,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -861,7 +917,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -889,7 +944,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -915,7 +969,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -943,7 +996,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -969,7 +1021,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -997,7 +1048,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -1023,7 +1073,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -1051,7 +1100,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -1077,7 +1125,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -1094,8 +1141,22 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 36
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 9.0,
+          "new_duration": 7.0,
+          "scale_factor": 0.875
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 9.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 35
     },
     "utilt": {
       "total_frames": 57,
@@ -1119,7 +1180,6 @@
             "fkb": 85,
             "bkb": 0,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1147,7 +1207,6 @@
             "fkb": 85,
             "bkb": 0,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1175,7 +1234,6 @@
             "fkb": 85,
             "bkb": 0,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1203,7 +1261,6 @@
             "fkb": 0,
             "bkb": 70,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1231,7 +1288,6 @@
             "fkb": 0,
             "bkb": 70,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1250,12 +1306,20 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
+          "type": "range",
           "frame": 17.0,
-          "rate_value": 0.85
+          "start_orig": 17.0,
+          "end_orig": 34.0,
+          "new_duration": 11.0,
+          "scale_factor": 0.6470588235294118
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 34.0,
+          "rate_value": 1.0
         }
       ],
-      "faf": 34
+      "faf": 31
     },
     "dtilt": {
       "total_frames": 51,
@@ -1276,7 +1340,6 @@
             "fkb": 0,
             "bkb": 70,
             "size": 2.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.0,
@@ -1304,7 +1367,6 @@
             "fkb": 0,
             "bkb": 70,
             "size": 2.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.0,
@@ -1323,9 +1385,17 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
+          "type": "range",
           "frame": 8.0,
-          "rate_value": 0.72
+          "start_orig": 8.0,
+          "end_orig": 30.0,
+          "new_duration": 16.0,
+          "scale_factor": 0.7272727272727273
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 30.0,
+          "rate_value": 1.0
         }
       ],
       "faf": 24
@@ -1350,7 +1420,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 6.0,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 7.0,
@@ -1372,7 +1441,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 6.0,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 7.0,
@@ -1394,7 +1462,6 @@
             "fkb": 53,
             "bkb": 0,
             "size": 6.0,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 7.0,
@@ -1420,7 +1487,6 @@
             "fkb": 15,
             "bkb": 0,
             "size": 6.0,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 7.0,
@@ -1448,7 +1514,6 @@
             "fkb": 0,
             "bkb": 42,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -1476,7 +1541,6 @@
             "fkb": 0,
             "bkb": 42,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 7.5,
@@ -1493,7 +1557,29 @@
           }
         ]
       },
-      "motion_events": [],
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 10.0,
+          "start_orig": 10.0,
+          "end_orig": 21.0,
+          "new_duration": 6.0,
+          "scale_factor": 0.5454545454545454
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 21.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 24.0,
+          "start_orig": 24.0,
+          "end_orig": 55.0,
+          "new_duration": 36.0,
+          "scale_factor": 1.1612903225806452
+        }
+      ],
       "faf": 55
     },
     "usmash": {
@@ -1517,7 +1603,6 @@
             "fkb": 20,
             "bkb": 40,
             "size": 4.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1543,7 +1628,6 @@
             "fkb": 33,
             "bkb": 40,
             "size": 4.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1569,7 +1653,6 @@
             "fkb": 20,
             "bkb": 40,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 28.0,
@@ -1591,7 +1674,6 @@
             "fkb": 20,
             "bkb": 40,
             "size": 4.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1617,7 +1699,6 @@
             "fkb": 33,
             "bkb": 40,
             "size": 4.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1645,7 +1726,6 @@
             "fkb": 140,
             "bkb": 0,
             "size": 4.0,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 14.0,
@@ -1667,7 +1747,6 @@
             "fkb": 140,
             "bkb": 0,
             "size": 4.0,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 14.0,
@@ -1691,7 +1770,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 28.0,
@@ -1713,7 +1791,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 5.2,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1735,7 +1812,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 5.2,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1759,7 +1835,6 @@
             "fkb": 0,
             "bkb": 66,
             "size": 5.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 34.0,
@@ -1781,7 +1856,6 @@
             "fkb": 0,
             "bkb": 66,
             "size": 5.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 24.0,
@@ -1803,7 +1877,6 @@
             "fkb": 0,
             "bkb": 66,
             "size": 5.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 31.0,
@@ -1825,7 +1898,6 @@
             "fkb": 0,
             "bkb": 66,
             "size": 5.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 31.0,
@@ -1838,8 +1910,43 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 55
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 7.0,
+          "start_orig": 7.0,
+          "end_orig": 9.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.5
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 9.0,
+          "rate_value": 1.0
+        },
+        {
+          "type": "range",
+          "frame": 10.0,
+          "start_orig": 10.0,
+          "end_orig": 12.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.5
+        },
+        {
+          "type": "range",
+          "frame": 12.0,
+          "start_orig": 12.0,
+          "end_orig": 16.0,
+          "new_duration": 1.0,
+          "scale_factor": 0.25
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 16.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 50
     },
     "dsmash": {
       "total_frames": 57,
@@ -1863,7 +1970,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.7,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.3,
@@ -1885,7 +1991,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.8,
@@ -1907,7 +2012,6 @@
             "fkb": 0,
             "bkb": 35,
             "size": 3.4,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.0,
@@ -1931,7 +2035,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.7,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.3,
@@ -1953,7 +2056,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 3.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.8,
@@ -1975,7 +2077,6 @@
             "fkb": 0,
             "bkb": 35,
             "size": 3.4,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.0,
@@ -1999,7 +2100,6 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.7,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.3,
@@ -2021,7 +2121,6 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.8,
@@ -2043,7 +2142,6 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.4,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.0,
@@ -2067,7 +2165,6 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.7,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.3,
@@ -2089,7 +2186,6 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.8,
@@ -2111,7 +2207,6 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.4,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.0,
@@ -2135,7 +2230,6 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.7,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 3.3,
@@ -2157,7 +2251,6 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.8,
@@ -2179,7 +2272,6 @@
             "fkb": 0,
             "bkb": 25,
             "size": 3.4,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 2.0,
@@ -2227,7 +2319,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2249,7 +2340,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -2271,7 +2361,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2293,7 +2382,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2315,7 +2403,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2339,7 +2426,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2361,7 +2447,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -2383,7 +2468,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2405,7 +2489,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2427,7 +2510,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2451,7 +2533,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2473,7 +2554,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -2495,7 +2575,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2517,7 +2596,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2539,7 +2617,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2563,7 +2640,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2585,7 +2661,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -2607,7 +2682,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2629,7 +2703,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2651,7 +2724,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2675,7 +2747,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2697,7 +2768,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -2719,7 +2789,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2741,7 +2810,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2763,7 +2831,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2787,7 +2854,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2809,7 +2875,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -2831,7 +2896,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2853,7 +2917,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2875,7 +2938,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2899,7 +2961,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -2921,7 +2982,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -2943,7 +3003,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2965,7 +3024,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -2987,7 +3045,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3011,7 +3068,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3033,7 +3089,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -3055,7 +3110,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3077,7 +3131,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3099,7 +3152,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3123,7 +3175,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3145,7 +3196,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -3167,7 +3217,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3189,7 +3238,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3211,7 +3259,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3235,7 +3282,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3257,7 +3303,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -3279,7 +3324,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3301,7 +3345,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3323,7 +3366,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3347,7 +3389,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3369,7 +3410,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -3391,7 +3431,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3413,7 +3452,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3435,7 +3473,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3459,7 +3496,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3481,7 +3517,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -3503,7 +3538,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3525,7 +3559,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3547,7 +3580,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3571,7 +3603,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3593,7 +3624,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -3615,7 +3645,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3637,7 +3666,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3659,7 +3687,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3683,7 +3710,6 @@
             "fkb": 50,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3705,7 +3731,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 13.0,
@@ -3727,7 +3752,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3749,7 +3773,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 2.5,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": 12.5,
@@ -3771,7 +3794,6 @@
             "fkb": 65,
             "bkb": 0,
             "size": 3.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.6,
@@ -3795,7 +3817,6 @@
             "fkb": 0,
             "bkb": 60,
             "size": 9.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.5,
@@ -3808,8 +3829,22 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 48
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 24.0,
+          "new_duration": 11.0,
+          "scale_factor": 0.5789473684210527
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 24.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 40
     },
     "fair": {
       "total_frames": 66,
@@ -3834,7 +3869,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 2.3,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 5.0,
@@ -3862,7 +3896,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 2.3,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 5.0,
@@ -3890,7 +3923,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 2.3,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 5.0,
@@ -3918,7 +3950,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 2.3,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 5.0,
@@ -3946,7 +3977,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 5.0,
@@ -3974,7 +4004,6 @@
             "fkb": 0,
             "bkb": 20,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 5.0,
@@ -3991,7 +4020,29 @@
           }
         ]
       },
-      "motion_events": [],
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 12.0,
+          "start_orig": 12.0,
+          "end_orig": 24.0,
+          "new_duration": 9.0,
+          "scale_factor": 0.75
+        },
+        {
+          "type": "range",
+          "frame": 24.0,
+          "start_orig": 24.0,
+          "end_orig": 39.0,
+          "new_duration": 18.0,
+          "scale_factor": 1.2
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 39.0,
+          "rate_value": 1.0
+        }
+      ],
       "faf": 40
     },
     "bair": {
@@ -4014,7 +4065,6 @@
             "fkb": 0,
             "bkb": 30,
             "size": 3.7,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.2,
@@ -4040,7 +4090,6 @@
             "fkb": 0,
             "bkb": 30,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.2,
@@ -4068,7 +4117,6 @@
             "fkb": 0,
             "bkb": 30,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.2,
@@ -4094,7 +4142,6 @@
             "fkb": 0,
             "bkb": 30,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.2,
@@ -4122,7 +4169,6 @@
             "fkb": 0,
             "bkb": 30,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.2,
@@ -4148,7 +4194,6 @@
             "fkb": 0,
             "bkb": 30,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 6.2,
@@ -4165,8 +4210,22 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 38
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 10.0,
+          "start_orig": 10.0,
+          "end_orig": 11.0,
+          "new_duration": 3.0,
+          "scale_factor": 3.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 11.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 40
     },
     "uair": {
       "total_frames": 59,
@@ -4195,7 +4254,6 @@
             "fkb": 80,
             "bkb": 0,
             "size": 2.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -4217,7 +4275,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -4239,7 +4296,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4261,7 +4317,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4285,7 +4340,6 @@
             "fkb": 80,
             "bkb": 0,
             "size": 2.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -4307,7 +4361,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -4329,7 +4382,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4351,7 +4403,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4375,7 +4426,6 @@
             "fkb": 80,
             "bkb": 0,
             "size": 2.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -4397,7 +4447,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -4419,7 +4468,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4441,7 +4489,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4465,7 +4512,6 @@
             "fkb": 80,
             "bkb": 0,
             "size": 2.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -4487,7 +4533,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -4509,7 +4554,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4531,7 +4575,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4555,7 +4598,6 @@
             "fkb": 80,
             "bkb": 0,
             "size": 2.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -4577,7 +4619,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -4599,7 +4640,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4621,7 +4661,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4645,7 +4684,6 @@
             "fkb": 80,
             "bkb": 0,
             "size": 2.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -4667,7 +4705,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -4689,7 +4726,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4711,7 +4747,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4735,7 +4770,6 @@
             "fkb": 80,
             "bkb": 0,
             "size": 2.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -4757,7 +4791,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -4779,7 +4812,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4801,7 +4833,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4825,7 +4856,6 @@
             "fkb": 80,
             "bkb": 0,
             "size": 2.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -4847,7 +4877,6 @@
             "fkb": 20,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 19.0,
@@ -4869,7 +4898,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4891,7 +4919,6 @@
             "fkb": 60,
             "bkb": 0,
             "size": 3.8,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4915,7 +4942,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -4937,7 +4963,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 5.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4959,7 +4984,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 5.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -4981,7 +5005,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 5.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 17.0,
@@ -5005,7 +5028,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 4.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.6,
@@ -5027,7 +5049,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 5.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -5049,7 +5070,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 5.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 16.8,
@@ -5071,7 +5091,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 5.6,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 17.0,
@@ -5086,17 +5105,20 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
-          "frame": 1.0,
-          "rate_value": 0.818
+          "type": "range",
+          "frame": 5.0,
+          "start_orig": 5.0,
+          "end_orig": 13.0,
+          "new_duration": 4.0,
+          "scale_factor": 0.5
         },
         {
           "type": "FT_MOTION_RATE",
-          "frame": 12.0,
+          "frame": 13.0,
           "rate_value": 1.0
         }
       ],
-      "faf": 38
+      "faf": 36
     },
     "dair": {
       "total_frames": 54,
@@ -5118,7 +5140,6 @@
             "fkb": 0,
             "bkb": 0,
             "size": 4.0,
-            "situation": "G",
             "offset": {
               "x": 0.0,
               "y": -4.0,
@@ -5144,7 +5165,6 @@
             "fkb": 0,
             "bkb": 10,
             "size": 4.0,
-            "situation": "A",
             "offset": {
               "x": 0.0,
               "y": -4.0,
@@ -5170,7 +5190,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -5194,7 +5213,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": -4.0,
@@ -5216,7 +5234,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -5238,7 +5255,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -5262,7 +5278,6 @@
             "fkb": 0,
             "bkb": 50,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": -4.0,
@@ -5284,7 +5299,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -5306,7 +5320,6 @@
             "fkb": 0,
             "bkb": 40,
             "size": 6.0,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -5319,8 +5332,22 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 38
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 9.0,
+          "start_orig": 9.0,
+          "end_orig": 10.0,
+          "new_duration": 2.0,
+          "scale_factor": 2.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 10.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 39
     },
     "dash_attack": {
       "total_frames": 54,
@@ -5342,7 +5369,6 @@
             "fkb": 0,
             "bkb": 80,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.5,
@@ -5370,7 +5396,6 @@
             "fkb": 0,
             "bkb": 80,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.5,
@@ -5398,7 +5423,6 @@
             "fkb": 0,
             "bkb": 80,
             "size": 3.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 4.5,
@@ -5415,8 +5439,22 @@
           }
         ]
       },
-      "motion_events": [],
-      "faf": 35
+      "motion_events": [
+        {
+          "type": "range",
+          "frame": 7.0,
+          "start_orig": 7.0,
+          "end_orig": 8.0,
+          "new_duration": 3.0,
+          "scale_factor": 3.0
+        },
+        {
+          "type": "FT_MOTION_RATE",
+          "frame": 8.0,
+          "rate_value": 1.0
+        }
+      ],
+      "faf": 37
     },
     "grab": {
       "total_frames": 39,
@@ -5648,7 +5686,6 @@
             "fkb": 30,
             "bkb": 0,
             "size": 5.5,
-            "situation": "GA",
             "offset": {
               "x": 0.0,
               "y": 9.0,
@@ -6027,5 +6064,5 @@
       "faf": 36
     }
   },
-  "generated_at": "2026-05-13T15:23:52.038548"
+  "generated_at": "2026-05-13T22:26:04.602840"
 }

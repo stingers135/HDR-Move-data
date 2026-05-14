@@ -669,7 +669,7 @@ tr.stance-unavailable .view-btn {
                     <td>115</td>
                     <td>0</td>
                     <td class="frame">17</td>
-                    <td class="frame">69</td>
+                    <td class="frame">66</td>
                     <td><button class="view-btn" onclick="openViewer('bayonetta', 'dsmash')">View</button></td>
                 </tr>
 
@@ -877,7 +877,7 @@ tr.stance-unavailable .view-btn {
         </table>
 
         <div class="footer">
-            <p>Generated on 2026-05-13 16:02:44 Eastern Daylight Time</p>
+            <p>Generated on 2026-05-13 22:39:48 Eastern Daylight Time</p>
         </div>
     </div>
     
@@ -935,77 +935,91 @@ tr.stance-unavailable .view-btn {
         // (different scripts or stance-conditional FT_DESIRED_RATE). For all other moves, the
         // pipeline's motion-rate-computed values are preserved by the restore loop.
         // Damage values use floor-to-1-decimal rounding per standard.
+        //
+        // Stance multipliers (HEAD/BITE/OTHER):
+        //   Regular:  1.00 / 1.00 / 1.00
+        //   Putrid:   0.75 / 0.75 / 0.75
+        //   Prickly:  1.30 / 1.00 / 0.90
+        //
+        // Throws: Each throw on hit instantly switches to its destination form, so each
+        // throw is listed ONLY in its destination form's column (and as `available: false`
+        // in the others). UThrow is the exception — it does not change form and is
+        // identical across all three columns.
+        //   bthrow → Piranha column only
+        //   dthrow → Putrid column only
+        //   fthrow → Prickly column only
+        //   uthrow → all columns (same values)
         const STANCE_DATA = {
             'Regular': {
-                'jab1':     { damage: '2.1', angle: '361', kbg: '25', fkb: '0', bkb: '20' },
-                'jab2':     { damage: '1.9', angle: '361', kbg: '25', fkb: '0', bkb: '15' },
-                'jab3':     { damage: '3.9', angle: '40', kbg: '70', fkb: '0', bkb: '60' },
-                'dash_attack': { damage: '10.8', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
-                'ftilt':    { damage: '9', angle: '361', kbg: '120', fkb: '0', bkb: '40', name: 'Forward Tilt (Fire)' },
+                'jab1':     { damage: '2', angle: '80', kbg: '100', fkb: '20', bkb: '0' },
+                'jab2':     { damage: '2', angle: '80', kbg: '15', fkb: '0', bkb: '30' },
+                'jab3':     { damage: '5', angle: '38', kbg: '70', fkb: '0', bkb: '50' },
+                'dash_attack': { damage: '12', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
+                'ftilt':    { damage: '11', angle: '361', kbg: '102', fkb: '0', bkb: '40' },
                 'ftilt_second': { damage: 'N/A', available: false, name: 'Forward Tilt (Hit 2)' },
-                'utilt':    { damage: '8.1', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
-                'dtilt':    { damage: '7.2', angle: '86', kbg: '75', fkb: '0', bkb: '60' },
-                'fsmash':   { damage: '13.5', angle: '45', kbg: '110', fkb: '0', bkb: '25', name: 'Forward Smash' },
-                'usmash':   { damage: '11.2', angle: '90', kbg: '86', fkb: '0', bkb: '90' },
-                'dsmash':   { damage: '6.3', angle: '175', kbg: '99', fkb: '80', bkb: '0' },
-                'nair':     { damage: '2.7', angle: '55', kbg: '125', fkb: '0', bkb: '40' },
-                'fair':     { damage: '9.9', angle: '40', kbg: '94', fkb: '0', bkb: '30' },
-                'bair':     { damage: '13.5', angle: '50', kbg: '108', fkb: '0', bkb: '25', name: 'Back Air' },
-                'uair':     { damage: '8.1', angle: '75', kbg: '87', fkb: '0', bkb: '63' },
-                'dair':     { damage: '11.7', angle: '270', kbg: '67', fkb: '0', bkb: '20' },
+                'utilt':    { damage: '9', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
+                'dtilt':    { damage: '8', angle: '80', kbg: '54', fkb: '0', bkb: '60' },
+                'fsmash':   { damage: '15', angle: '45', kbg: '110', fkb: '0', bkb: '25', faf: '54' },
+                'usmash':   { damage: '13', angle: '90', kbg: '109', fkb: '0', bkb: '46', faf: '50' },
+                'dsmash':   { damage: '13', angle: '94', kbg: '64', fkb: '0', bkb: '48', frame: '8', faf: '42' },
+                'nair':     { damage: '3', angle: '51', kbg: '141', fkb: '0', bkb: '20', faf: '47' },
+                'fair':     { damage: '11', angle: '361', kbg: '72', fkb: '0', bkb: '40' },
+                'bair':     { damage: '15', angle: '50', kbg: '108', fkb: '0', bkb: '25' },
+                'uair':     { damage: '10', angle: '64', kbg: '72', fkb: '0', bkb: '38' },
+                'dair':     { damage: '13', angle: '270', kbg: '62', fkb: '0', bkb: '20' },
                 'pummel':   { damage: '1.4' },
-                'fthrow':   { damage: '2.7', angle: '45', kbg: '65', bkb: '70' },
-                'bthrow':   { damage: '11', angle: '135', kbg: '87', bkb: '60' },
-                'uthrow':   { damage: '5', angle: '90', kbg: '100', bkb: '82' },
-                'dthrow':   { damage: '2.2', angle: '66', kbg: '100', bkb: '0' },
+                'bthrow':   { damage: '9', angle: '65', kbg: '40', bkb: '60', faf: '33' },
+                'uthrow':   { damage: '11', angle: '90', kbg: '91', bkb: '57', faf: '42' },
+                'fthrow':   { damage: 'N/A', available: false },
+                'dthrow':   { damage: 'N/A', available: false },
             },
             'Putrid': {
-                'jab1':     { damage: '1.8', angle: '361', kbg: '25', fkb: '0', bkb: '20' },
-                'jab2':     { damage: '1.6', angle: '361', kbg: '25', fkb: '0', bkb: '15' },
+                'jab1':     { damage: '1.5', angle: '80', kbg: '100', fkb: '20', bkb: '0' },
+                'jab2':     { damage: '1.5', angle: '80', kbg: '15', fkb: '0', bkb: '30' },
                 'jab3':     { damage: 'N/A', available: false },
                 'dash_attack': { damage: '9', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
-                'ftilt':    { damage: '4.6', angle: '366', kbg: '20', fkb: '0', bkb: '20', frame: '7', faf: '35', name: 'Forward Tilt (Hit 1)' },
-                'ftilt_second': { damage: '5.1', angle: '361', kbg: '125', fkb: '0', bkb: '40', frame: '5', faf: '30', name: 'Forward Tilt (Poison Bite)' },
-                'utilt':    { damage: '5.8', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
-                'dtilt':    { damage: '6', angle: '86', kbg: '75', fkb: '0', bkb: '70' },
-                'fsmash':   { damage: '9.7', angle: '45', kbg: '140', fkb: '0', bkb: '25', name: 'Forward Smash' },
-                'usmash':   { damage: '10.6', angle: '90', kbg: '86', fkb: '0', bkb: '90' },
-                'dsmash':   { damage: '10.5', angle: '32', kbg: '99', fkb: '0', bkb: '25' },
-                'nair':     { damage: '2.2', angle: '55', kbg: '125', fkb: '0', bkb: '40' },
-                'fair':     { damage: '8.2', angle: '40', kbg: '94', fkb: '0', bkb: '30' },
-                'bair':     { damage: '4.5', angle: '50', kbg: '108', fkb: '0', bkb: '25', name: 'Back Air (Poison Multi-hit)' },
-                'uair':     { damage: '5.8', angle: '105', kbg: '87', fkb: '0', bkb: '68' },
-                'dair':     { damage: '9.7', angle: '270', kbg: '67', fkb: '0', bkb: '20' },
+                'ftilt':    { damage: '4.1', angle: '366', kbg: '20', fkb: '0', bkb: '20', frame: '7', faf: '35', name: 'Forward Tilt (Hit 1)' },
+                'ftilt_second': { damage: '4.5', angle: '361', kbg: '125', fkb: '0', bkb: '40', frame: '6', faf: '30', name: 'Forward Tilt (Poison Bite)' },
+                'utilt':    { damage: '6.7', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
+                'dtilt':    { damage: '6', angle: '80', kbg: '54', fkb: '0', bkb: '60' },
+                'fsmash':   { damage: '11.2', angle: '45', kbg: '140', fkb: '0', bkb: '25', faf: '54' },
+                'usmash':   { damage: '9.7', angle: '90', kbg: '149', fkb: '0', bkb: '46', faf: '50' },
+                'dsmash':   { damage: '9.7', angle: '35', kbg: '99', fkb: '0', bkb: '25', frame: '8', faf: '42' },
+                'nair':     { damage: '2.2', angle: '51', kbg: '141', fkb: '0', bkb: '20', faf: '47' },
+                'fair':     { damage: '8.2', angle: '361', kbg: '72', fkb: '0', bkb: '50' },
+                'bair':     { damage: '6', angle: '50', kbg: '108', fkb: '0', bkb: '25' },
+                'uair':     { damage: '7.5', angle: '64', kbg: '80', fkb: '0', bkb: '48' },
+                'dair':     { damage: '9.7', angle: '270', kbg: '62', fkb: '0', bkb: '20' },
                 'pummel':   { damage: '1.7' },
-                'fthrow':   { damage: '1.9', angle: '45', kbg: '65', bkb: '70' },
-                'bthrow':   { damage: '11', angle: '135', kbg: '77', bkb: '60' },
-                'uthrow':   { damage: '5', angle: '90', kbg: '100', bkb: '82' },
-                'dthrow':   { damage: '2.1', angle: '68', kbg: '100', bkb: '0' },
+                'dthrow':   { damage: '5', angle: '84', kbg: '163', bkb: '41', faf: '57' },
+                'uthrow':   { damage: '11', angle: '90', kbg: '91', bkb: '57', faf: '42' },
+                'fthrow':   { damage: 'N/A', available: false },
+                'bthrow':   { damage: 'N/A', available: false },
             },
             'Prickly': {
-                'jab1':     { damage: '2.7', angle: '361', kbg: '25', fkb: '0', bkb: '20' },
-                'jab2':     { damage: '2.5', angle: '361', kbg: '25', fkb: '0', bkb: '15' },
-                'jab3':     { damage: '5.7', angle: '30', kbg: '70', fkb: '0', bkb: '75' },
+                'jab1':     { damage: '1.8', angle: '80', kbg: '100', fkb: '20', bkb: '0' },
+                'jab2':     { damage: '1.8', angle: '80', kbg: '15', fkb: '0', bkb: '30' },
+                'jab3':     { damage: '6.5', angle: '38', kbg: '122', fkb: '0', bkb: '50' },
                 'rapid_jab':          { available: false },
                 'rapid_jab_finisher': { available: false },
-                'dash_attack': { damage: '13.8', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
-                'ftilt':    { damage: '10.5', angle: '361', kbg: '125', fkb: '0', bkb: '40', frame: '7', faf: '30', name: 'Forward Tilt (Heavy Bite)' },
+                'dash_attack': { damage: '10.8', angle: '45', kbg: '100', fkb: '0', bkb: '45' },
+                'ftilt':    { damage: '13', angle: '361', kbg: '105', fkb: '0', bkb: '40', frame: '10', faf: '34', name: 'Forward Tilt (Head Bash)' },
                 'ftilt_second': { damage: 'N/A', available: false, name: 'Forward Tilt (Hit 2)' },
                 'utilt':    { damage: '11.7', angle: '85', kbg: '100', fkb: '0', bkb: '55' },
-                'dtilt':    { damage: '9.2', angle: '86', kbg: '75', fkb: '0', bkb: '60' },
-                'fsmash':   { damage: '25', angle: '45', kbg: '100', fkb: '0', bkb: '25', frame: '26', faf: '70', name: 'Forward Smash (Lunge)' },
-                'usmash':   { damage: '13.1', angle: '90', kbg: '86', fkb: '0', bkb: '90' },
-                'dsmash':   { damage: '16.1', angle: '32', kbg: '99', fkb: '0', bkb: '25' },
-                'nair':     { damage: '3.4', angle: '55', kbg: '125', fkb: '0', bkb: '40' },
-                'fair':     { damage: '12.6', angle: '40', kbg: '94', fkb: '0', bkb: '30', frame: '11', faf: '39' },
-                'bair':     { damage: '19.5', angle: '45', kbg: '95', fkb: '0', bkb: '25', frame: '18', faf: '62', name: 'Back Air (Prickly)' },
-                'uair':     { damage: '11.7', angle: '75', kbg: '87', fkb: '0', bkb: '53' },
-                'dair':     { damage: '14.9', angle: '270', kbg: '67', fkb: '0', bkb: '20' },
+                'dtilt':    { damage: '7.2', angle: '80', kbg: '54', fkb: '0', bkb: '60' },
+                'fsmash':   { damage: '19.5', angle: '45', kbg: '100', fkb: '0', bkb: '25', frame: '19', faf: '57' },
+                'usmash':   { damage: '13', angle: '90', kbg: '109', fkb: '0', bkb: '46', faf: '53' },
+                'dsmash':   { damage: '11.7', angle: '35', kbg: '99', fkb: '0', bkb: '25', frame: '11', faf: '45' },
+                'nair':     { damage: '2.7', angle: '51', kbg: '141', fkb: '0', bkb: '20', faf: '50' },
+                'fair':     { damage: '9.9', angle: '361', kbg: '72', fkb: '0', bkb: '40' },
+                'bair':     { damage: '19', angle: '45', kbg: '95', fkb: '0', bkb: '25', frame: '18', faf: '62' },
+                'uair':     { damage: '13', angle: '75', kbg: '90', fkb: '0', bkb: '60' },
+                'dair':     { damage: '11.7', angle: '270', kbg: '62', fkb: '0', bkb: '20' },
                 'pummel':   { damage: '1.4' },
-                'fthrow':   { damage: '3.9', angle: '35', kbg: '77', bkb: '70' },
-                'bthrow':   { damage: '11', angle: '135', kbg: '77', bkb: '60' },
-                'uthrow':   { damage: '5', angle: '90', kbg: '100', bkb: '82' },
-                'dthrow':   { damage: '2.6', angle: '70', kbg: '100', bkb: '0' },
+                'fthrow':   { damage: '14', angle: '361', kbg: '60', bkb: '50', faf: '47' },
+                'uthrow':   { damage: '11', angle: '90', kbg: '91', bkb: '57', faf: '42' },
+                'bthrow':   { damage: 'N/A', available: false },
+                'dthrow':   { damage: 'N/A', available: false },
             },
         };
         

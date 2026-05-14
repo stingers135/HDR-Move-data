@@ -528,11 +528,20 @@
             },
             // Piranha Plant stance-specific animations
             // Key format: 'move__StanceName' checked first, then 'move', then default
+            //
+            // Animation file map (game scripts):
+            //   c01attacks3sa  = Regular ftilt (fire breath)
+            //   c01attacks3s   = Putrid ftilt hit 1 (poison poke)
+            //   c01attacks32  = Putrid ftilt hit 2 (poison bite follow-up)
+            //   c01attacks3ss  = Prickly ftilt (head bash) — NEW dedicated animation
+            //   c05attackairbs = Prickly bair (spike) — still its own animation
+            //   c03attacks4    = Standard fsmash (now shared by Prickly too)
             'packun': {
                 'ftilt__Regular': ['c01attacks3sa'],       // Fire breath animation
-                'ftilt__Prickly': ['c01attacks3s'],        // Same animation as Putrid ftilt
-                'fsmash__Prickly': ['c03attacks4s2'],      // Prickly lunge animation
-                'bair__Prickly': ['c05attackairbs'],       // Prickly bair-S (spike)
+                'ftilt__Putrid':  ['c01attacks3s'],        // Putrid poison poke (hit 1)
+                'ftilt2__Putrid': ['c01attacks32'],       // Putrid poison bite (hit 2)
+                'ftilt__Prickly': ['c01attacks3ss'],       // Prickly head bash (dedicated anim)
+                'bair__Prickly':  ['c05attackairbs'],      // Prickly bair-S (spike)
             },
             // Mega Man uses non-standard slot prefixes
             'rockman': {
@@ -1297,18 +1306,6 @@
             return boneName;
         }
         
-        // Some animations "park" unused bones thousands of units off-screen
-        // (e.g. Game & Watch's HaveL/HaveR item-attach bones during frames where
-        // no item is held). If we include these in camera bounds or skeleton
-        // lines, the camera zooms out catastrophically and a bogus line gets
-        // drawn from the parent bone all the way to the parked position.
-        // Smash characters live in roughly a 50-unit cube; 500 is a safe cutoff.
-        const PARKED_BONE_THRESHOLD_SQ = 500 * 500;
-        function isParkedMatrix(m) {
-            const x = m[3][0], y = m[3][1], z = m[3][2];
-            return (x*x + y*y + z*z) > PARKED_BONE_THRESHOLD_SQ;
-        }
-        
         // Calculate hitbox screen positions for a given frame
         function calculateHitboxPositionsForFrame(realFrame, positions) {
             if (!hitboxData) return {};
@@ -1498,14 +1495,9 @@
                     visibleBones.forEach((bone, i) => {
                         const pos = positions[bone.name];
                         if (!pos) return;
-                        // Skip parked bones (e.g. G&W HaveL parked off-screen
-                        // during item-less frames) so we don't draw a giant
-                        // line shooting off across the canvas.
-                        if (isParkedMatrix(pos.matrix)) return;
                         if (bone.parent_index !== null && bone.parent_index >= 0) {
                             const parentName = skeletonData.bones[bone.parent_index].name;
                             const parentPos = positions[parentName];
-                            if (parentPos && isParkedMatrix(parentPos.matrix)) return;
                             if (parentPos && visibleBones.some(b => b.name === parentName)) {
                                 ctx.beginPath();
                                 ctx.moveTo(parentPos.x, parentPos.y);
@@ -1790,25 +1782,11 @@
                         }
                     }
                     
-                    // Color the hitbox based on its situation (ground/air/both).
-                    // Default red is "both"; ground-only and air-only are tinted to make
-                    // it obvious which hitboxes only connect in which state. Move-data is
-                    // unchanged — only the visual rendering varies.
-                    let fillColor = 'rgba(244, 67, 54, 0.4)';   // red (both)
-                    let strokeColor = 'rgba(244, 67, 54, 0.9)';
-                    if (hitbox.situation === 'G') {
-                        fillColor = 'rgba(102, 187, 106, 0.4)';   // green (ground only)
-                        strokeColor = 'rgba(102, 187, 106, 0.9)';
-                    } else if (hitbox.situation === 'A') {
-                        fillColor = 'rgba(66, 165, 245, 0.4)';    // blue (air only)
-                        strokeColor = 'rgba(66, 165, 245, 0.9)';
-                    }
-                    
                     drawCapsule(
                         { x: startX, y: startY },
                         { x: endX, y: endY },
                         curr.size * SCALE,
-                        fillColor, strokeColor
+                        'rgba(244, 67, 54, 0.4)', 'rgba(244, 67, 54, 0.9)'
                     );
                     
                     // Draw damage/angle labels at midpoint for capsules, current pos otherwise
@@ -1901,19 +1879,11 @@
                 return;
             }
             
-            // Format situation tag matching the canvas color (ground=green, air=blue, both=red).
-            // Empty string when situation is 'GA' so the common case stays uncluttered.
-            function situationTag(sit) {
-                if (sit === 'G') return ' <span style="color: rgba(102, 187, 106, 1); font-size: 0.85em; font-weight: normal;">[ground only]</span>';
-                if (sit === 'A') return ' <span style="color: rgba(66, 165, 245, 1); font-size: 0.85em; font-weight: normal;">[air only]</span>';
-                return '';
-            }
-            
             let html = '';
             hitboxes.forEach(hb => {
                 html += `
                     <div class="hitbox-card">
-                        <strong>ID ${hb.id}</strong> (${hb.bone})${situationTag(hb.situation)}
+                        <strong>ID ${hb.id}</strong> (${hb.bone})
                         <div class="stat"><span class="stat-label">Damage:</span><span class="stat-value">${hb.damage || 'N/A'}%</span></div>
                         <div class="stat"><span class="stat-label">Angle:</span><span class="stat-value">${hb.angle || 'N/A'}°</span></div>
                         <div class="stat"><span class="stat-label">KBG:</span><span class="stat-value">${hb.kbg || 'N/A'}</span></div>
@@ -2341,12 +2311,6 @@
                 
                 
                 // Build list of paths to try - animations are directly in body/
-                // Joker note: Arsene form uses the same Joker body animation here.
-                // The doyle/ folder animations are for rendering Arsene as a separate
-                // puppet (the visual summon mirrors Joker's moves), which we don't do.
-                // Hitboxes in Arsene form still attach to Joker's bones (knife, armr,
-                // etc.) for the animated parts, plus extra `top`-offset hitboxes for
-                // Arsene's reach — both render correctly off the body/ animation.
                 const animPaths = [];
                 for (const animFilename of animFilenames) {
                     animPaths.push(`data/animations/${animFolder}/body/${animFilename}.json`);
@@ -2420,11 +2384,6 @@
                         const framePositions = calculateWorldTransformsForFrame(sampleFrame);
                         if (framePositions) {
                             for (const [boneName, boneData] of Object.entries(framePositions)) {
-                                // Skip bones the animation has parked far off-screen
-                                // (e.g. G&W HaveL during item-less frames). Including
-                                // them would force the camera to zoom out so far the
-                                // character becomes a single pixel.
-                                if (isParkedMatrix(boneData.matrix)) continue;
                                 const by = boneData.matrix[3][1];
                                 const bz = boneData.matrix[3][2];
                                 expandBounds(by, bz, 0);
