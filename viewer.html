@@ -317,7 +317,28 @@
                 <label><input type="checkbox" id="show-hitboxes" checked> Show Hitboxes</label>
                 <label><input type="checkbox" id="show-interpolation" checked> Interpolate Hitboxes</label>
                 <label><input type="checkbox" id="show-names"> Show Bone Names</label>
+                <label><input type="checkbox" id="show-grid"> Show Grid</label>
             </div>
+            
+            <!-- DEBUG: Anim Override - uncomment to re-enable manual anim frame testing
+            <h3 style="margin-top: 16px;">Debug: Anim Override</h3>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px; font-size: 0.9em;">
+                <label style="display: flex; align-items: center; gap: 6px;">
+                    <input type="checkbox" id="anim-override-enabled"> Override anim frame
+                </label>
+                <div style="display: flex; align-items: center; gap: 4px;">
+                    <button class="btn" id="anim-override-minus-1" style="padding: 4px 8px; min-width: 32px;">-1</button>
+                    <button class="btn" id="anim-override-minus" style="padding: 4px 8px; min-width: 32px;">-.1</button>
+                    <input type="number" id="anim-override-value" value="0" step="0.1" style="width: 70px; padding: 4px; background: #1a1a1a; color: #fff; border: 1px solid #444; border-radius: 3px; text-align: center;">
+                    <button class="btn" id="anim-override-plus" style="padding: 4px 8px; min-width: 32px;">+.1</button>
+                    <button class="btn" id="anim-override-plus-1" style="padding: 4px 8px; min-width: 32px;">+1</button>
+                </div>
+                <div style="color: #888; font-size: 0.85em;">
+                    Computed: <span id="anim-computed-display">-</span>
+                </div>
+            </div>
+            -->
+            
             
             <div class="status-msg" id="status-msg"></div>
         </div>
@@ -528,20 +549,11 @@
             },
             // Piranha Plant stance-specific animations
             // Key format: 'move__StanceName' checked first, then 'move', then default
-            //
-            // Animation file map (game scripts):
-            //   c01attacks3sa  = Regular ftilt (fire breath)
-            //   c01attacks3s   = Putrid ftilt hit 1 (poison poke)
-            //   c01attacks32  = Putrid ftilt hit 2 (poison bite follow-up)
-            //   c01attacks3ss  = Prickly ftilt (head bash) — NEW dedicated animation
-            //   c05attackairbs = Prickly bair (spike) — still its own animation
-            //   c03attacks4    = Standard fsmash (now shared by Prickly too)
             'packun': {
                 'ftilt__Regular': ['c01attacks3sa'],       // Fire breath animation
-                'ftilt__Putrid':  ['c01attacks3s'],        // Putrid poison poke (hit 1)
-                'ftilt2__Putrid': ['c01attacks32'],       // Putrid poison bite (hit 2)
-                'ftilt__Prickly': ['c01attacks3ss'],       // Prickly head bash (dedicated anim)
-                'bair__Prickly':  ['c05attackairbs'],      // Prickly bair-S (spike)
+                'ftilt__Prickly': ['c01attacks3s'],        // Same animation as Putrid ftilt
+                'fsmash__Prickly': ['c03attacks4s2'],      // Prickly lunge animation
+                'bair__Prickly': ['c05attackairbs'],       // Prickly bair-S (spike)
             },
             // Mega Man uses non-standard slot prefixes
             'rockman': {
@@ -664,6 +676,16 @@
         // FT_MOTION_RATE rate_value is a duration multiplier (speed = 1/rate)
         // Output: 0-indexed animation frame for array lookup
         function getAnimationFrame(realFrame) {
+            /* DEBUG: Anim Override - uncomment to re-enable
+            const overrideEnabled = document.getElementById('anim-override-enabled');
+            if (overrideEnabled && overrideEnabled.checked) {
+                const overrideVal = document.getElementById('anim-override-value');
+                if (overrideVal) {
+                    const v = parseFloat(overrideVal.value);
+                    if (!isNaN(v)) return Math.max(0, v);
+                }
+            }
+            */
             if (!motionEvents || motionEvents.length === 0) {
                 return realFrame;
             }
@@ -741,9 +763,15 @@
             // --- Handle MotionModule::set_rate specially (discrete tick behavior) ---
             const hasSetRateEvents = sortedEvents.some(e => e.type === 'MotionModule::set_rate');
             if (hasSetRateEvents) {
-                // set_rate needs discrete tick simulation
-                // realFrame is 0-indexed, but "Frame N" means N ticks have passed
-                return simulateSetRate(realFrame + 1, sortedEvents);
+                // set_rate uses discrete tick simulation. Events that fire before
+                // tick 1 (i.e., at frame <= 1.0) set the initial speed for the
+                // entire simulation; subsequent events fire after the tick that
+                // crosses their threshold (advance-then-fire). numTicks = realFrame
+                // because realFrame is already 0-indexed (Frame 1 displayed = 0 ticks
+                // of advance from the neutral starting pose).
+                // Empirically verified against Mewtwo bair: 8 ticks at speed 1.5068
+                // gives anim 12.05 at game frame 9, matching in-game observation.
+                return simulateSetRate(realFrame, sortedEvents);
             }
             
             // --- Handle FT_MOTION_RATE_RANGE via tick-by-tick simulation ---
@@ -873,8 +901,17 @@
         }
         
         // Separate simulation for MotionModule::set_rate events.
-        // set_rate has different timing: rate change takes effect on the tick AFTER
-        // the threshold is crossed, giving it a +1 frame offset compared to FT_MOTION_RATE.
+        // Empirical observation (Mewtwo bair, game frame 9 ≈ anim 12.05):
+        // All 8 ticks of the pre-hitbox phase run at the fast rate (1.5068),
+        // and the second rate change (to 1.0) doesn't slow down the tick during
+        // which the threshold is crossed.
+        //
+        // Model: events fire AFTER the tick's advance (the new speed applies to
+        // the NEXT tick), EXCEPT that any events whose threshold would be reached
+        // by tick 1 at the default speed are fired pre-tick-1 (i.e., as if their
+        // rate was active from the very start of the simulation). This matches
+        // the script semantics where set_rate commands queued before the first
+        // script-advance are considered "initial configuration".
         function simulateSetRate(numTicks, sortedEvents) {
             if (numTicks <= 0) return 0;
             
@@ -890,11 +927,25 @@
             }
             events.sort((a, b) => a.frame - b.frame);
             
+            // Pre-tick-1: fire any events whose threshold would already be reached
+            // by tick 1 at the default speed (i.e., threshold <= 1.0). These set
+            // the *initial* rate for the entire simulation.
+            for (let i = 0; i < events.length; i++) {
+                const event = events[i];
+                if (event.fired) continue;
+                if (event.frame <= 1.0 + 0.001) {
+                    event.fired = true;
+                    speed = event.rate_value > 0 ? event.rate_value : 1.0;
+                }
+            }
+            
+            // Main loop: advance-then-fire model for remaining events.
+            // The rate change takes effect on the tick AFTER the threshold is crossed.
             for (let tick = 1; tick <= numTicks; tick++) {
-                // 1. Advance animation first
+                // 1. Advance animation by current speed
                 anim += speed;
                 
-                // 2. Check for set_rate events after advancing (fire when anim >= threshold)
+                // 2. Check for events that fire this tick (anim has now reached threshold)
                 for (let i = 0; i < events.length; i++) {
                     const event = events[i];
                     if (event.fired) continue;
@@ -1399,8 +1450,72 @@
             return hitboxPositions;
         }
         
+        function drawGrid() {
+            // World-unit grid. SCALE = pixels per world unit.
+            // Lines are at integer world-Z (horizontal axis) and integer world-Y (vertical axis).
+            // Origin: (CENTER_X, CENTER_Y).
+            // Thin lines every 1 unit, slightly thicker every 5 units, with axes highlighted.
+            const w = canvas.width;
+            const h = canvas.height;
+            
+            ctx.save();
+            
+            // Compute world-unit range that covers the canvas
+            const minWorldZ = Math.floor((0 - CENTER_X) / SCALE) - 1;
+            const maxWorldZ = Math.ceil((w - CENTER_X) / SCALE) + 1;
+            const minWorldY = Math.floor((CENTER_Y - h) / SCALE) - 1;
+            const maxWorldY = Math.ceil(CENTER_Y / SCALE) + 1;
+            
+            // Vertical lines (constant world-Z)
+            for (let z = minWorldZ; z <= maxWorldZ; z++) {
+                const screenX = z * SCALE + CENTER_X;
+                if (z === 0) {
+                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.25)';
+                    ctx.lineWidth = 1.5;
+                } else if (z % 5 === 0) {
+                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
+                    ctx.lineWidth = 1;
+                } else {
+                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+                    ctx.lineWidth = 1;
+                }
+                ctx.beginPath();
+                ctx.moveTo(screenX, 0);
+                ctx.lineTo(screenX, h);
+                ctx.stroke();
+            }
+            
+            // Horizontal lines (constant world-Y)
+            for (let y = minWorldY; y <= maxWorldY; y++) {
+                const screenY = -y * SCALE + CENTER_Y;
+                if (y === 0) {
+                    // World Y=0 is the floor — make it gold/yellow like in-game
+                    ctx.strokeStyle = 'rgba(255, 200, 50, 0.45)';
+                    ctx.lineWidth = 1.5;
+                } else if (y % 5 === 0) {
+                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
+                    ctx.lineWidth = 1;
+                } else {
+                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+                    ctx.lineWidth = 1;
+                }
+                ctx.beginPath();
+                ctx.moveTo(0, screenY);
+                ctx.lineTo(w, screenY);
+                ctx.stroke();
+            }
+            
+            ctx.restore();
+        }
+        
         function render() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw background grid if enabled
+            const gridCheckbox = document.getElementById('show-grid');
+            if (gridCheckbox && gridCheckbox.checked) {
+                drawGrid();
+            }
             
             // Display frames as 1-indexed (game convention)
             document.getElementById('frame-num').textContent = currentFrame + 1;
@@ -1416,6 +1531,27 @@
             } else {
                 document.getElementById('anim-frame-display').textContent = '';
             }
+            
+            /* DEBUG: Anim Override computed display - uncomment to re-enable
+            const computedDisplay = document.getElementById('anim-computed-display');
+            const overrideCheckbox = document.getElementById('anim-override-enabled');
+            if (computedDisplay && overrideCheckbox) {
+                // Temporarily disable override to read the underlying computation
+                const wasChecked = overrideCheckbox.checked;
+                overrideCheckbox.checked = false;
+                const computedVal = Math.max(0, getAnimationFrame(currentFrame));
+                overrideCheckbox.checked = wasChecked;
+                
+                if (wasChecked) {
+                    const overrideVal = parseFloat(document.getElementById('anim-override-value').value) || 0;
+                    const delta = overrideVal - computedVal;
+                    const deltaStr = (delta >= 0 ? '+' : '') + delta.toFixed(2);
+                    computedDisplay.textContent = `${computedVal.toFixed(2)} (Δ ${deltaStr})`;
+                } else {
+                    computedDisplay.textContent = computedVal.toFixed(2);
+                }
+            }
+            */
             
             if (!skeletonData) {
                 ctx.fillStyle = '#666';
@@ -1962,9 +2098,51 @@
             render();
         });
         
-        ['show-skeleton', 'show-hurtboxes', 'show-hitboxes', 'show-interpolation', 'show-names'].forEach(id => {
+        ['show-skeleton', 'show-hurtboxes', 'show-hitboxes', 'show-interpolation', 'show-names', 'show-grid'].forEach(id => {
             document.getElementById(id).addEventListener('change', render);
         });
+        
+        /* DEBUG: Anim Override wiring - uncomment to re-enable
+        (function setupAnimOverride() {
+            const checkbox = document.getElementById('anim-override-enabled');
+            const valueInput = document.getElementById('anim-override-value');
+            const plusBtn = document.getElementById('anim-override-plus');
+            const minusBtn = document.getElementById('anim-override-minus');
+            const plusBigBtn = document.getElementById('anim-override-plus-1');
+            const minusBigBtn = document.getElementById('anim-override-minus-1');
+            
+            if (!checkbox || !valueInput) return;
+            
+            const stepBy = (delta) => {
+                const cur = parseFloat(valueInput.value) || 0;
+                valueInput.value = Math.max(0, cur + delta).toFixed(2).replace(/\.?0+$/, '') || '0';
+                if (!checkbox.checked) checkbox.checked = true;
+                render();
+            };
+            
+            // When enabling, seed value from the currently-computed anim frame
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                    // Temporarily disable to read the underlying computed value
+                    checkbox.checked = false;
+                    const computed = getAnimationFrame(currentFrame);
+                    checkbox.checked = true;
+                    valueInput.value = computed.toFixed(2).replace(/\.?0+$/, '') || '0';
+                }
+                render();
+            });
+            
+            valueInput.addEventListener('input', () => {
+                if (!checkbox.checked) checkbox.checked = true;
+                render();
+            });
+            
+            if (plusBtn) plusBtn.addEventListener('click', () => stepBy(0.1));
+            if (minusBtn) minusBtn.addEventListener('click', () => stepBy(-0.1));
+            if (plusBigBtn) plusBigBtn.addEventListener('click', () => stepBy(1.0));
+            if (minusBigBtn) minusBigBtn.addEventListener('click', () => stepBy(-1.0));
+        })();
+        */
         
         // Load data
         function populateHitboxFramesList() {
