@@ -1918,11 +1918,26 @@
                         }
                     }
                     
+                    // Color the hitbox based on its situation (ground/air/both).
+                    // Red is the default (both ground and air). Ground-only and air-only
+                    // hitboxes get distinct colors so it's obvious at a glance which
+                    // hitboxes only connect in which state. Move data is unchanged —
+                    // only the visual rendering varies.
+                    let fillColor = 'rgba(244, 67, 54, 0.4)';   // red (both)
+                    let strokeColor = 'rgba(244, 67, 54, 0.9)';
+                    if (hitbox.situation === 'G') {
+                        fillColor = 'rgba(102, 187, 106, 0.4)';   // green (ground only)
+                        strokeColor = 'rgba(102, 187, 106, 0.9)';
+                    } else if (hitbox.situation === 'A') {
+                        fillColor = 'rgba(66, 165, 245, 0.4)';    // blue (air only)
+                        strokeColor = 'rgba(66, 165, 245, 0.9)';
+                    }
+                    
                     drawCapsule(
                         { x: startX, y: startY },
                         { x: endX, y: endY },
                         curr.size * SCALE,
-                        'rgba(244, 67, 54, 0.4)', 'rgba(244, 67, 54, 0.9)'
+                        fillColor, strokeColor
                     );
                     
                     // Draw damage/angle labels at midpoint for capsules, current pos otherwise
@@ -2017,9 +2032,17 @@
             
             let html = '';
             hitboxes.forEach(hb => {
+                // Show a small colored tag for ground-only / air-only hitboxes.
+                // GA hitboxes (the common case) get no tag to keep the list clean.
+                let situationTag = '';
+                if (hb.situation === 'G') {
+                    situationTag = ' <span style="color: rgb(102, 187, 106); font-size: 0.85em; font-style: italic;">[ground only]</span>';
+                } else if (hb.situation === 'A') {
+                    situationTag = ' <span style="color: rgb(66, 165, 245); font-size: 0.85em; font-style: italic;">[air only]</span>';
+                }
                 html += `
                     <div class="hitbox-card">
-                        <strong>ID ${hb.id}</strong> (${hb.bone})
+                        <strong>ID ${hb.id}</strong> (${hb.bone})${situationTag}
                         <div class="stat"><span class="stat-label">Damage:</span><span class="stat-value">${hb.damage || 'N/A'}%</span></div>
                         <div class="stat"><span class="stat-label">Angle:</span><span class="stat-value">${hb.angle || 'N/A'}°</span></div>
                         <div class="stat"><span class="stat-label">KBG:</span><span class="stat-value">${hb.kbg || 'N/A'}</span></div>

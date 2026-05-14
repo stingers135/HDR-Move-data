@@ -847,7 +847,7 @@ tr.stance-unavailable .view-btn {
         </table>
 
         <div class="footer">
-            <p>Generated on 2026-05-14 10:20:11 Eastern Daylight Time</p>
+            <p>Generated on 2026-05-14 17:55:07 Eastern Daylight Time</p>
         </div>
     </div>
     
@@ -864,7 +864,10 @@ tr.stance-unavailable .view-btn {
         let currentStance = null;
         const stanceSelector = document.getElementById('stance-selector');
         if (stanceSelector) {
-            currentStance = 'Regular';
+            // Read default stance from the initially-active button so each stance
+            // character can pick its own (packun → 'Regular', jack → 'Joker', ...)
+            const activeBtn = stanceSelector.querySelector('.stance-btn.active');
+            currentStance = activeBtn ? activeBtn.textContent : null;
         }
         
         function openViewer(character, move) {
@@ -991,6 +994,7 @@ tr.stance-unavailable .view-btn {
                 'bthrow':   { damage: 'N/A', available: false },
                 'dthrow':   { damage: 'N/A', available: false },
             },
+
         };
         
         // Save original row data on page load (before any stance is applied)
@@ -1059,10 +1063,19 @@ tr.stance-unavailable .view-btn {
                 // Get all cells
                 const cells = row.querySelectorAll('td');
                 
-                // Determine table type by checking for specific column structures
+                // Determine table type by checking for specific column structures.
+                // Each table has a different column layout — writing the wrong field
+                // into the wrong column produces silent display bugs (e.g. Joker
+                // grabs once showed damage='0' in the Startup Frame column).
+                // If you add stance entries for a new table type, add a branch here.
                 const isThrowTable = row.closest('#table-throws-sub') !== null;
+                const isGrabTable = row.closest('#table-grabs-sub') !== null;
                 
-                if (isThrowTable) {
+                if (isGrabTable) {
+                    // Grabs table: Move(0), Startup Frame(1), Viewer(2)
+                    // Only the frame matters here — grabs have no damage/angle/kbg/bkb.
+                    if (moveData.frame !== undefined && cells[1]) cells[1].textContent = moveData.frame;
+                } else if (isThrowTable) {
                     // Throws table: Move(0), Damage(1), Angle(2), KBG(3), BKB(4), FAF(5), Viewer(6)
                     if (moveData.damage !== undefined) cells[1].textContent = moveData.damage;
                     if (moveData.angle !== undefined) cells[2].textContent = moveData.angle;
@@ -1096,9 +1109,9 @@ tr.stance-unavailable .view-btn {
             });
         }
         
-        // Apply Regular stance on load for stance characters
+        // Apply the default stance on load for stance characters
         if (currentStance) {
-            setStance('Regular');
+            setStance(currentStance);
         }
         
         // Table sorting
