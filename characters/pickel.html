@@ -819,7 +819,7 @@ tr.stance-unavailable .view-btn {
         </table>
 
         <div class="footer">
-            <p>Generated on 2026-05-14 17:55:07 Eastern Daylight Time</p>
+            <p>Generated on 2026-05-14 18:30:36 Eastern Daylight Time</p>
         </div>
     </div>
     
@@ -1063,6 +1063,22 @@ tr.stance-unavailable .view-btn {
                     if (moveData.bkb !== undefined) cells[5].textContent = moveData.bkb;
                     if (moveData.frame !== undefined && cells[6]) cells[6].textContent = moveData.frame;
                     if (moveData.faf !== undefined && cells[7]) cells[7].textContent = moveData.faf;
+                    
+                    // Joker Arsene-form landing lag offset: HDR's game_landingair*
+                    // functions slow the landing animation via FT_MOTION_RATE when
+                    // in Arsene form, so aerials take base+offset real frames to land.
+                    // The base prcxml value is what's in cells[8] after the
+                    // originalRowData restore at the top of setStance; we add the
+                    // offset here so the shield-advantage recalc below picks up
+                    // the corrected value automatically.
+                    if (cells.length >= 10 && cells[8] && stanceName === 'Arsene') {
+                        const jokerOffsets = { nair: 3, fair: 5, bair: 5, uair: 3, dair: 5 };
+                        const offset = jokerOffsets[moveKey];
+                        if (offset !== undefined) {
+                            const base = parseFloat(cells[8].textContent) || 0;
+                            cells[8].textContent = String(base + offset);
+                        }
+                    }
                     
                     // Recalculate shield advantage for aerials (tables with 10+ columns)
                     if (cells.length >= 10 && cells[1] && cells[8]) {

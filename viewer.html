@@ -1357,6 +1357,18 @@
             return boneName;
         }
         
+        // Some animations "park" unused bones thousands of units off-screen
+        // (e.g. Game & Watch's HaveL/HaveR item-attach bones during frames where
+        // no item is held). If we include these in camera bounds or skeleton
+        // lines, the camera zooms out catastrophically and a bogus line gets
+        // drawn from the parent bone all the way to the parked position.
+        // Smash characters live in roughly a 50-unit cube; 500 is a safe cutoff.
+        const PARKED_BONE_THRESHOLD_SQ = 500 * 500;
+        function isParkedMatrix(m) {
+            const x = m[3][0], y = m[3][1], z = m[3][2];
+            return (x*x + y*y + z*z) > PARKED_BONE_THRESHOLD_SQ;
+        }
+        
         // Calculate hitbox screen positions for a given frame
         function calculateHitboxPositionsForFrame(realFrame, positions) {
             if (!hitboxData) return {};
@@ -1631,9 +1643,14 @@
                     visibleBones.forEach((bone, i) => {
                         const pos = positions[bone.name];
                         if (!pos) return;
+                        // Skip parked bones (e.g. G&W HaveL parked off-screen
+                        // during item-less frames) so we don't draw a giant
+                        // line shooting off across the canvas.
+                        if (isParkedMatrix(pos.matrix)) return;
                         if (bone.parent_index !== null && bone.parent_index >= 0) {
                             const parentName = skeletonData.bones[bone.parent_index].name;
                             const parentPos = positions[parentName];
+                            if (parentPos && isParkedMatrix(parentPos.matrix)) return;
                             if (parentPos && visibleBones.some(b => b.name === parentName)) {
                                 ctx.beginPath();
                                 ctx.moveTo(parentPos.x, parentPos.y);
@@ -2585,6 +2602,11 @@
                         const framePositions = calculateWorldTransformsForFrame(sampleFrame);
                         if (framePositions) {
                             for (const [boneName, boneData] of Object.entries(framePositions)) {
+                                // Skip parked bones (e.g. G&W HaveL parked off-screen
+                                // during item-less frames). Including them would force
+                                // the camera to zoom out so far the character becomes
+                                // a single pixel.
+                                if (isParkedMatrix(boneData.matrix)) continue;
                                 const by = boneData.matrix[3][1];
                                 const bz = boneData.matrix[3][2];
                                 expandBounds(by, bz, 0);
