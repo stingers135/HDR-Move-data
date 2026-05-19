@@ -1368,14 +1368,27 @@
             return boneName;
         }
         
-        // Some animations "park" unused bones thousands of units off-screen
-        // (e.g. Game & Watch's HaveL/HaveR item-attach bones during frames where
-        // no item is held). If we include these in camera bounds or skeleton
-        // lines, the camera zooms out catastrophically and a bogus line gets
-        // drawn from the parent bone all the way to the parked position.
-        // Smash characters live in roughly a 50-unit cube; 500 is a safe cutoff.
+        // Some animations "park" unused bones away from the character (e.g.
+        // Game & Watch's HaveL/HaveR item-attach bones during frames where no
+        // item is held). If we include these in camera bounds or skeleton
+        // lines, the camera zooms out and a bogus line gets drawn from the
+        // parent bone all the way to the parked position.
+        //
+        // Two filters:
+        //   1. Name-based: HaveL/HaveR are item-attachment anchors with no
+        //      mesh of their own. They serve no visualization purpose and
+        //      should always be skipped regardless of position. This catches
+        //      the modest-parking case (e.g. Kirby's rapid_jab parks HaveL
+        //      at local x≈-38, which is only ~60 world units from origin —
+        //      well under any reasonable distance threshold, but still far
+        //      enough behind the character to wreck centering).
+        //   2. Distance-based: catches anything else parked off in the
+        //      thousands-of-units zone (G&W convention). Smash characters
+        //      live in roughly a 50-unit cube; 500 leaves headroom.
         const PARKED_BONE_THRESHOLD_SQ = 500 * 500;
-        function isParkedMatrix(m) {
+        const ITEM_ATTACH_BONES = new Set(['havel', 'haver']);
+        function isParkedMatrix(m, boneName) {
+            if (boneName && ITEM_ATTACH_BONES.has(boneName.toLowerCase())) return true;
             const x = m[3][0], y = m[3][1], z = m[3][2];
             return (x*x + y*y + z*z) > PARKED_BONE_THRESHOLD_SQ;
         }
@@ -1655,13 +1668,14 @@
                         const pos = positions[bone.name];
                         if (!pos) return;
                         // Skip parked bones (e.g. G&W HaveL parked off-screen
-                        // during item-less frames) so we don't draw a giant
-                        // line shooting off across the canvas.
-                        if (isParkedMatrix(pos.matrix)) return;
+                        // during item-less frames, or Kirby's HaveL parked
+                        // ~60 units behind the character on rapid_jab) so we
+                        // don't draw a giant line shooting off across the canvas.
+                        if (isParkedMatrix(pos.matrix, bone.name)) return;
                         if (bone.parent_index !== null && bone.parent_index >= 0) {
                             const parentName = skeletonData.bones[bone.parent_index].name;
                             const parentPos = positions[parentName];
-                            if (parentPos && isParkedMatrix(parentPos.matrix)) return;
+                            if (parentPos && isParkedMatrix(parentPos.matrix, parentName)) return;
                             if (parentPos && visibleBones.some(b => b.name === parentName)) {
                                 ctx.beginPath();
                                 ctx.moveTo(parentPos.x, parentPos.y);
@@ -1677,6 +1691,7 @@
                 visibleBones.forEach(bone => {
                     const pos = positions[bone.name];
                     if (!pos) return;
+                    if (isParkedMatrix(pos.matrix, bone.name)) return;
                     ctx.beginPath();
                     ctx.arc(pos.x, pos.y, 4, 0, 2 * Math.PI);
                     ctx.fill();
@@ -1689,6 +1704,7 @@
                     visibleBones.forEach(bone => {
                         const pos = positions[bone.name];
                         if (!pos) return;
+                        if (isParkedMatrix(pos.matrix, bone.name)) return;
                         ctx.fillText(bone.name, pos.x + 6, pos.y);
                     });
                 }
@@ -2614,10 +2630,11 @@
                         if (framePositions) {
                             for (const [boneName, boneData] of Object.entries(framePositions)) {
                                 // Skip parked bones (e.g. G&W HaveL parked off-screen
-                                // during item-less frames). Including them would force
-                                // the camera to zoom out so far the character becomes
-                                // a single pixel.
-                                if (isParkedMatrix(boneData.matrix)) continue;
+                                // during item-less frames, or Kirby's HaveL parked
+                                // ~60 units behind the character on rapid_jab).
+                                // Including them would shift/zoom the camera so the
+                                // character is no longer centered.
+                                if (isParkedMatrix(boneData.matrix, boneName)) continue;
                                 const by = boneData.matrix[3][1];
                                 const bz = boneData.matrix[3][2];
                                 expandBounds(by, bz, 0);

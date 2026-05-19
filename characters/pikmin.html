@@ -1471,7 +1471,7 @@ tr.stance-unavailable .view-btn {
         </table>
 
         <div class="footer">
-            <p>Generated on 2026-05-18 22:03:03 Eastern Daylight Time</p>
+            <p>Generated on 2026-05-19 10:24:06 Eastern Daylight Time</p>
         </div>
     </div>
     
@@ -1494,6 +1494,13 @@ tr.stance-unavailable .view-btn {
             currentStance = activeBtn ? activeBtn.textContent : null;
         }
         
+        // Track whether the viewer modal has pushed a history entry. The
+        // browser back button should close the modal instead of navigating
+        // away from the character page. We push a state on open and pop it
+        // on close (via X / Escape / outside-click) — and listen for popstate
+        // to close the modal when the user hits the actual back button.
+        let viewerHistoryActive = false;
+        
         function openViewer(character, move) {
             const modal = document.getElementById('viewer-modal');
             const iframe = document.getElementById('viewer-iframe');
@@ -1503,6 +1510,13 @@ tr.stance-unavailable .view-btn {
             }
             iframe.src = url;
             modal.classList.add('active');
+            // Push history state so browser back closes the modal. Only push
+            // if not already pushed (in case the user opens a second move
+            // while the viewer is still up).
+            if (!viewerHistoryActive) {
+                history.pushState({ viewerOpen: true }, '');
+                viewerHistoryActive = true;
+            }
         }
         
         function closeViewer() {
@@ -1510,7 +1524,28 @@ tr.stance-unavailable .view-btn {
             const iframe = document.getElementById('viewer-iframe');
             modal.classList.remove('active');
             iframe.src = '';
+            // Pop our pushed history entry so the back stack stays clean.
+            // The popstate handler checks `viewerHistoryActive` to know whether
+            // the back originated from us (don't re-close) vs the user.
+            if (viewerHistoryActive) {
+                viewerHistoryActive = false;
+                history.back();
+            }
         }
+        
+        // Browser back button: close the modal if it's open.
+        window.addEventListener('popstate', function(e) {
+            if (viewerHistoryActive) {
+                // The user pressed back while the modal was open. Clear the
+                // flag first so closeViewer() doesn't try to history.back()
+                // again (we're already at the right history position).
+                viewerHistoryActive = false;
+                const modal = document.getElementById('viewer-modal');
+                const iframe = document.getElementById('viewer-iframe');
+                modal.classList.remove('active');
+                iframe.src = '';
+            }
+        });
         
         // Close modal on escape key
         document.addEventListener('keydown', function(e) {
