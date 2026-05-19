@@ -3787,9 +3787,12 @@
       },
       "motion_events": [
         {
-          "type": "FT_MOTION_RATE",
-          "frame": 0.0,
-          "rate_value": 0.5714285714285714
+          "type": "range",
+          "frame": 1.0,
+          "start_orig": 1.0,
+          "end_orig": 8.0,
+          "new_duration": 4.0,
+          "scale_factor": 0.5714285714285714
         },
         {
           "type": "FT_MOTION_RATE",
@@ -3797,7 +3800,7 @@
           "rate_value": 1.0
         }
       ],
-      "faf": 36
+      "faf": 35
     },
     "fair": {
       "total_frames": 71,
@@ -8685,5 +8688,5 @@
       "faf": 41
     }
   },
-  "generated_at": "2026-05-18T20:41:09.739357"
+  "generated_at": "2026-05-18T20:56:20.001259"
 }
