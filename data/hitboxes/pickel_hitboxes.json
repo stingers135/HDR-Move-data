@@ -9760,54 +9760,6 @@
         25
       ],
       "hitboxes_by_frame": {
-        "12": [
-          {
-            "id": 0,
-            "bone": "push",
-            "animation_frame": 12.0,
-            "real_frame": 12,
-            "damage": 3.0,
-            "angle": 80,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 6.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 10.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "uthrow"
-          }
-        ],
-        "13": [
-          {
-            "id": 0,
-            "bone": "push",
-            "animation_frame": 13.0,
-            "real_frame": 13,
-            "damage": 3.0,
-            "angle": 80,
-            "kbg": 100,
-            "fkb": 0,
-            "bkb": 60,
-            "size": 6.0,
-            "situation": "GA",
-            "offset": {
-              "x": 0.0,
-              "y": 10.0,
-              "z": 0.0
-            },
-            "offset2": null,
-            "is_capsule": false,
-            "character": "pickel",
-            "move": "uthrow"
-          }
-        ],
         "19": [
           {
             "id": 0,
@@ -9965,6 +9917,54 @@
             },
             "offset2": null,
             "is_throw": true,
+            "character": "pickel",
+            "move": "uthrow"
+          }
+        ],
+        "12": [
+          {
+            "id": 0,
+            "bone": "push",
+            "animation_frame": 12.0,
+            "real_frame": 12,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 6.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
+            "character": "pickel",
+            "move": "uthrow"
+          }
+        ],
+        "13": [
+          {
+            "id": 0,
+            "bone": "push",
+            "animation_frame": 13.0,
+            "real_frame": 13,
+            "damage": 3.0,
+            "angle": 80,
+            "kbg": 100,
+            "fkb": 0,
+            "bkb": 60,
+            "size": 6.0,
+            "situation": "GA",
+            "offset": {
+              "x": 0.0,
+              "y": 10.0,
+              "z": 0.0
+            },
+            "offset2": null,
+            "is_capsule": false,
             "character": "pickel",
             "move": "uthrow"
           }
@@ -10234,5 +10234,5 @@
       "faf": 30
     }
   },
-  "generated_at": "2026-05-14T18:01:01.493456"
+  "generated_at": "2026-05-18T20:41:33.976465"
 }

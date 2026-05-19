@@ -518,6 +518,17 @@
             'metaknight': {
                 'jab1': ['c00attack100', 'c00attack11'],
             },
+            // Sephiroth's HDR jab uses the vanilla jab3 animation file
+            // (c00attack13.nuanmb) as a straight replacement — HDR didn't ship a
+            // custom animation, it just swapped which existing file plays for
+            // jab1. Without this override the viewer would load c00attack11
+            // (vanilla jab1) and HDR's hitboxes would render against the wrong
+            // animation. jab2 and jab3 are removed from the move table for
+            // Sephiroth (see character_html_generator.py), so no overrides for
+            // those are needed here.
+            'edge': {
+                'jab1': ['c00attack13'],
+            },
             // Steve uses ftilt for jab/nair
             'pickel': {
                 'jab1': ['c01attacks3s', 'c00attack11'],
